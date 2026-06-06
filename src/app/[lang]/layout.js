@@ -5,7 +5,8 @@ import { BASE_URL, LOCALES } from '@/lib/pageMeta'
 export async function generateMetadata({ params }) {
   const locale = params?.lang || 'en'
   const t = await getTranslation(locale)
-  const currentUrl = `${BASE_URL}/${locale}`
+  // English mirrors the locale-less root pages — canonicalize back to root.
+  const currentUrl = locale === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${locale}`
 
   return {
     metadataBase: new URL(BASE_URL),
@@ -28,7 +29,10 @@ export async function generateMetadata({ params }) {
     },
     alternates: {
       canonical: currentUrl,
-      languages: Object.fromEntries(LOCALES.map(l => [l, `${BASE_URL}/${l}`])),
+      languages: {
+        'x-default': `${BASE_URL}/`,
+        ...Object.fromEntries(LOCALES.map(l => [l, l === 'en' ? `${BASE_URL}/` : `${BASE_URL}/${l}`])),
+      },
     },
     robots: 'index, follow',
   }

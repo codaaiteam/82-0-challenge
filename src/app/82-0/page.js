@@ -6,6 +6,11 @@ import SeoSections from '../Components/SeoSections';
 import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
+import { rootMetadata } from '@/lib/pageMeta';
+
+export async function generateMetadata() {
+  return rootMetadata('whatIs', '/82-0');
+}
 
 export default async function WhatIs820({ params }) {
   const locale = params?.lang || 'en';

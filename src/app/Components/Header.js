@@ -15,25 +15,24 @@ export default function Header() {
   const pathname = usePathname();
   const currentLang = params?.lang || 'en';
   const { t } = useTranslations();
+  // English canonical URLs are locale-less — link to root paths.
+  const prefix = currentLang === 'en' ? '' : `/${currentLang}`;
 
   const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de'];
 
   const changeLanguage = (newLocale) => {
     const segments = pathname.split('/');
-    // If current path starts with a locale, replace it
-    if (LOCALES.includes(segments[1])) {
-      segments[1] = newLocale;
-    } else {
-      // No locale prefix — insert one after the leading empty string
-      segments.splice(1, 0, newLocale);
-    }
-    router.push(segments.join('/'));
+    // Strip any existing locale prefix
+    if (LOCALES.includes(segments[1])) segments.splice(1, 1);
+    // English lives at the locale-less root paths
+    if (newLocale !== 'en') segments.splice(1, 0, newLocale);
+    router.push(segments.join('/') || '/');
   };
 
   return (
     <header className={styles.header}>
       <div className={styles.headerContent}>
-        <Link href={`/${currentLang}`} className={styles.logoLink}>
+        <Link href={prefix || '/'} className={styles.logoLink}>
           <Image src="/logo-site.png" alt="82-0 Challenge logo" width={28} height={28} className={styles.logoImg} />
           <span className={styles.logoText}>{t?.header?.siteName || '82-0 Challenge'}</span>
         </Link>
@@ -57,16 +56,16 @@ export default function Header() {
         </button>
 
         <nav className={`${styles.mainNav} ${isNavOpen ? styles.open : ''}`}>
-          <Link href={`/${currentLang}`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+          <Link href={prefix || '/'} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             {t?.header?.home || 'Home'}
           </Link>
-          <Link href={`/${currentLang}/82-0`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+          <Link href={`${prefix}/82-0`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             {t?.header?.whatIs || 'What Is 82-0?'}
           </Link>
-          <Link href={`/${currentLang}/how-to-play`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+          <Link href={`${prefix}/how-to-play`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             {t?.header?.howToPlay || 'How to Play'}
           </Link>
-          <Link href={`/${currentLang}/team-builder`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+          <Link href={`${prefix}/team-builder`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             {t?.header?.teamBuilder || 'Team Builder'}
           </Link>
         </nav>

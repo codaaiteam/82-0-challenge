@@ -6,11 +6,17 @@ import SeoSections from '../Components/SeoSections';
 import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
+import { rootMetadata } from '@/lib/pageMeta';
+
+export async function generateMetadata() {
+  return rootMetadata('howToPlay', '/how-to-play');
+}
 
 export default async function HowToPlay({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
   const page = t.pages.howToPlay;
+  const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return (
     <>
@@ -35,7 +41,7 @@ export default async function HowToPlay({ params }) {
               ))}
             </div>
             <div className={styles.centerCta}>
-              <Link href={`/${locale}#game`} className={styles.heroCta}>
+              <Link href={`${prefix}/#game`} className={styles.heroCta}>
                 {t.hero.cta}
               </Link>
             </div>

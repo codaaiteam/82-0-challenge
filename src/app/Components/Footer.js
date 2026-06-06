@@ -2,16 +2,18 @@ import Link from 'next/link';
 import styles from './Footer.module.css';
 
 const Footer = ({ t, lang = 'en' }) => {
+  // English canonical URLs are locale-less — link to root paths.
+  const prefix = lang === 'en' ? '' : `/${lang}`;
   return (
     <footer className={styles.footer}>
       <div className={styles.footerLinks}>
         <div className={styles.footerSection}>
           <h3>{t?.footer?.pages || 'Pages'}</h3>
-          <Link href={`/${lang}`}>{t?.header?.home || 'Home'}</Link>
-          <Link href={`/${lang}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
-          <Link href={`/${lang}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
-          <Link href={`/${lang}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
-          <Link href={`/${lang}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
+          <Link href={prefix || '/'}>{t?.header?.home || 'Home'}</Link>
+          <Link href={`${prefix}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
+          <Link href={`${prefix}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
+          <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
+          <Link href={`${prefix}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
         </div>
 
         <div className={styles.footerSection}>
@@ -23,8 +25,8 @@ const Footer = ({ t, lang = 'en' }) => {
 
         <div className={styles.footerSection}>
           <h3>{t?.footer?.legal || 'Legal'}</h3>
-          <Link href={`/${lang}/privacy`}>{t?.footer?.privacy || 'Privacy Policy'}</Link>
-          <Link href={`/${lang}/terms`}>{t?.footer?.terms || 'Terms of Use'}</Link>
+          <Link href={`${prefix}/privacy`}>{t?.footer?.privacy || 'Privacy Policy'}</Link>
+          <Link href={`${prefix}/terms`}>{t?.footer?.terms || 'Terms of Use'}</Link>
         </div>
 
         <div className={styles.footerSection}>

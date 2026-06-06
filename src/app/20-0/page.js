@@ -9,11 +9,17 @@ import SeoSections from '../Components/SeoSections';
 import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
+import { rootMetadata } from '@/lib/pageMeta';
+
+export async function generateMetadata() {
+  return rootMetadata('twentyZero', '/20-0');
+}
 
 export default async function TwentyZero({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
   const page = t.pages.twentyZero;
+  const prefix = locale === 'en' ? '' : `/${locale}`;
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -49,7 +55,7 @@ export default async function TwentyZero({ params }) {
         <section className={styles.howtoSection}>
           <div className={styles.container}>
             <div className={styles.centerCta}>
-              <Link href={`/${locale}#game`} className={styles.heroCta}>
+              <Link href={`${prefix}/#game`} className={styles.heroCta}>
                 {page.playCta}
               </Link>
             </div>

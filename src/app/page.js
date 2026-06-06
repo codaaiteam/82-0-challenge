@@ -10,6 +10,11 @@ import SeoSections from './Components/SeoSections';
 import SquadCta from './Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
+import { rootMetadata } from '@/lib/pageMeta';
+
+export async function generateMetadata() {
+  return rootMetadata(null, '');
+}
 
 export default async function Home({ params }) {
   const locale = params?.lang || 'en';

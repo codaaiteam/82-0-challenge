@@ -24,24 +24,27 @@ module.exports = {
   additionalPaths: async (config) => {
     const paths = [];
     const lastmod = new Date().toISOString();
+    // English canonical pages live at locale-less root paths; /en/* mirrors
+    // canonicalize to them, so only non-English locales get locale URLs.
+    const nonEnglish = languages.filter(l => l !== 'en');
 
-    // Language homepages
-    languages.forEach(lang => {
+    // Homepages
+    paths.push({ loc: '/', priority: 1.0, changefreq: 'daily', lastmod });
+    nonEnglish.forEach(lang => {
       paths.push({ loc: `/${lang}`, priority: 1.0, changefreq: 'daily', lastmod });
     });
 
-    // Content pages (each language)
+    // Content pages
     contentPages.forEach(page => {
-      languages.forEach(lang => {
+      paths.push({ loc: page, priority: 0.9, changefreq: 'daily', lastmod });
+      nonEnglish.forEach(lang => {
         paths.push({ loc: `/${lang}${page}`, priority: 0.9, changefreq: 'daily', lastmod });
       });
     });
 
     // Static pages (privacy, terms)
     staticPages.forEach(page => {
-      languages.forEach(lang => {
-        paths.push({ loc: `/${lang}${page}`, priority: 0.4, changefreq: 'monthly', lastmod });
-      });
+      paths.push({ loc: page, priority: 0.4, changefreq: 'monthly', lastmod });
     });
 
     return paths;
