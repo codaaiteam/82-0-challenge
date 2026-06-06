@@ -32,9 +32,10 @@
   opacity: 0.8;
 }
 
-.logoBall {
-  font-size: 1.2rem;
-  line-height: 1;
+.logoImg {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
 }
 
 .logoText {

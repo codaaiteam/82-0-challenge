@@ -20,8 +20,8 @@ export async function pageMetadata(lang, pageKey, path = '') {
       canonical: url,
       languages: Object.fromEntries(LOCALES.map(l => [l, `${BASE_URL}/${l}${path}`])),
     },
-    openGraph: { title, description, url, type: 'website' },
-    twitter: { card: 'summary_large_image', title, description },
+    openGraph: { title, description, url, type: 'website', images: [{ url: '/og.png' }] },
+    twitter: { card: 'summary_large_image', title, description, images: ['/og.png'] },
   };
 }
 

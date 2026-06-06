@@ -18,11 +18,13 @@ export async function generateMetadata({ params }) {
       type: 'website',
       url: currentUrl,
       locale: locale,
+      images: [{ url: '/og.png' }],
     },
     twitter: {
       card: 'summary_large_image',
       title: t.seoTitle,
       description: t.seoDescription,
+      images: ['/og.png'],
     },
     alternates: {
       canonical: currentUrl,
