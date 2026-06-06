@@ -1,12 +1,12 @@
 {
   "layout": { "language": "de" },
-  "seoTitle": "82-0 Challenge: Das virale Team-Builder-Spiel spielen",
-  "seoDescription": "Spiele die 82-0 Challenge als Team-Builder. Wähle Spieler aus zufälligen Teams und Epochen, stelle eine perfekte Aufstellung zusammen und finde heraus, ob dein Team ungeschlagen bleibt.",
-  "keywords": "82-0, 82-0 challenge, 82-0 challenge spiel, 82-0 spiel, 82-0 team builder, 82-0 challenge spielen, 82-0 challenge regeln, virales basketball team builder spiel",
+  "seoTitle": "82-0 Challenge: Spiele das virale Team-Builder-Game",
+  "seoDescription": "Spiele die virale 82-0 Challenge. Dreh den Slot Machine, drafte Basketball-Legenden aus zufälligen Teams und Epochen und finde heraus, ob dein Lineup ungeschlagen bleibt.",
+  "keywords": "82-0, 82-0 Challenge, 82-0 Challenge Game, 82-0 Game, 82-0 Team Builder, wie spielt man 82-0, 82-0 Challenge Regeln, virales Basketball Team Builder",
 
   "header": {
     "siteName": "82-0 Challenge",
-    "home": "Startseite",
+    "home": "Start",
     "whatIs": "Was ist 82-0?",
     "howToPlay": "So wird gespielt",
     "teamBuilder": "Team Builder"
@@ -14,28 +14,45 @@
 
   "hero": {
     "title": "82-0 Challenge",
-    "subtitle": "Kannst du ein Team zusammenstellen, das 82-0 schafft? Wähle aus jedem zufälligen Team und jeder Epoche genau einen Spieler. Baue deine Aufstellung und sieh dir deine finale Bilanz an.",
+    "subtitle": "Kannst du ein Team bauen, das 82-0 schafft? Dreh den Slot Machine, drafte pro Runde eine Legende aus einem zufälligen Team und einer zufälligen Epoche und beobachte, wie die Simulation deine Saison hochrechnet.",
     "cta": "Challenge starten"
   },
 
   "game": {
+    "chooseMode": "Wähle deinen Modus",
+    "chooseModeSub": "Wie willst du dein All-Time-Team bauen?",
+    "modeClassic": "Classic",
+    "modeClassicDesc": "Alle Spielerstats sind sichtbar — triff fundierte Entscheidungen anhand der Zahlen.",
+    "modeHoopiq": "HoopIQ",
+    "modeHoopiqDesc": "Die Stats sind verborgen — drafte aus dem Gedächtnis und stelle dein Basketball-Wissen auf die Probe.",
+    "playClassic": "Classic spielen",
+    "playHoopiq": "HoopIQ spielen",
     "roundOf": "Runde {round} von {total}",
-    "rerollButton": "Team & Epoche neu auslosen",
-    "pickPrompt": "Wähle einen Spieler aus diesem Team und dieser Epoche für deine Aufstellung.",
-    "select": "Auswählen",
-    "off": "OFF",
-    "def": "DEF",
-    "sht": "3PT",
-    "yourLineup": "Deine Aufstellung",
-    "resultRecord": "Deine finale Bilanz",
-    "teamRating": "Team-Rating",
+    "team": "Team",
+    "era": "Epoche",
+    "spin": "Spin",
+    "spinning": "Dreht…",
+    "spinHint": "Drück SPIN, um ein zufälliges Team und eine Epoche zu ziehen, und wähle dann deinen Spieler.",
+    "rerollTeam": "Team überspringen",
+    "rerollEra": "Epoche überspringen",
+    "filterAll": "Alle",
+    "playersAvailable": "{count} Spieler",
+    "placing": "Platzierung: {name} — tippe auf eine leuchtende Position auf dem Court",
+    "ppg": "PPG",
+    "rpg": "RPG",
+    "apg": "APG",
+    "spg": "SPG",
+    "bpg": "BPG",
+    "projectedRecord": "Prognostizierte Bilanz",
+    "pts": "Pkt",
     "bestPick": "Bester Pick",
     "weakness": "Schwäche",
     "playAgain": "Nochmal spielen",
     "copyResult": "Ergebnis kopieren",
     "copied": "Kopiert!",
     "shareOnX": "Auf X teilen",
-    "shareText": "Ich habe in der 82-0 Challenge {record} geschafft. Schaffst du es, mein Team zu schlagen?",
+    "switchMode": "Modus wechseln",
+    "shareText": "Ich habe in der 82-0 Challenge eine {record} Bilanz geschafft. Schlägst du mein Team?",
     "titles": {
       "perfect": "Perfekte Saison",
       "almost": "Fast ungeschlagen",
@@ -44,13 +61,12 @@
       "playoff": "Playoff-Team"
     },
     "weaknesses": {
-      "noCenter": "Kein echter Center",
-      "noPG": "Kein Spielmacher",
-      "weakDefense": "Defense lässt sich ausnutzen",
-      "weakShooting": "Zu wenig Wurfkraft",
-      "weakPlaymaking": "Wer leitet den Angriff?",
-      "weakRebounding": "Schwach unter den Brettern",
-      "none": "Keine — ausgewogener Kader"
+      "weakScoring": "Nicht genug Scoring-Power",
+      "weakRebounding": "Schwach am Brett",
+      "weakPlaymaking": "Wer leitet das Angriffsspiel?",
+      "weakSteals": "Perimeter-Defense leckt",
+      "weakBlocks": "Kein Schutz am Korb",
+      "none": "Keine — kompletter Kader"
     }
   },
 
@@ -59,49 +75,50 @@
       {
         "h2": "Was ist die 82-0 Challenge?",
         "paragraphs": [
-          "Die 82-0 Challenge ist ein virales Basketball-Team-Builder-Spiel, das sich um eine einfache Frage dreht: Kannst du eine Starting Five zusammenstellen, die so dominant ist, dass sie jedes einzelne Spiel einer 82-Spiele-Saison gewinnt? Eine 82-0-Bilanz hat es in der Geschichte des Profi-Basketballs nie gegeben — die beste Hauptrunde aller Zeiten lag bei 73 Siegen — und genau das macht die 82-0 Challenge so süchtig machend. Du jagst etwas, das noch nie jemandem gelungen ist.",
-          "Das 82-0 Challenge Spiel wurde in den sozialen Medien zum Hit, als Fans darüber stritten, welche Kombination von Spielern aus verschiedenen Teams und Epochen realistisch ungeschlagen bleiben könnte. Könnten fünf Legenden aus unterschiedlichen Jahrzehnten wirklich alles gewinnen? Würde ein Team aus reinen Scorern in der Verteidigung auseinanderfallen? Diese Seite verwandelt genau diese Debatte in ein spielbares 82-0 Spiel, das du in unter einer Minute durchspielst."
+          "Die 82-0 Challenge ist ein virales Basketball-Team-Builder-Game, das sich um eine einfache Frage dreht: Kannst du ein Starting Five zusammenstellen, das so dominant ist, dass es jedes einzelne Spiel einer Saison über 82 Partien gewinnen würde? Eine 82-0 Bilanz hat es in der gesamten Geschichte des Profibasketballs nie gegeben — die beste Regular Season aller Zeiten lag bei 73 Siegen — und genau das macht die 82-0 Challenge so süchtig machend. Du jagst etwas, das noch nie jemand geschafft hat.",
+          "Das 82-0 Challenge Game ging in den sozialen Medien durch die Decke, als Fans darüber stritten, welche Kombination aus Spielern verschiedener Teams und Epochen realistisch ungeschlagen bleiben könnte. Könnten fünf Legenden aus fünf verschiedenen Jahrzehnten wirklich alles gewinnen? Würde ein Team aus reinen Scorern in der Defense auseinanderfallen? Diese Seite verwandelt genau diese Debatte in ein spielbares 82-0 Game, das du in unter zwei Minuten durchhast."
         ]
       },
       {
         "h2": "So funktioniert die 82-0 Challenge",
         "paragraphs": [
-          "Unser 82-0 Team Builder gibt dir fünf Runden. In jeder Runde lost das Spiel zufällig ein Team und eine Epoche aus — zum Beispiel Chicago in den 1990ern oder Golden State in den 2010ern — und zeigt dir eine Handvoll Spieler-Archetypen aus dieser Kombination. Du wählst pro Runde genau einen Spieler. Nach fünf Runden ist deine Aufstellung fixiert, und das Spiel simuliert eine komplette 82-Spiele-Saison auf Basis der Gesamtstärke, Offense, Defense, Wurfkraft, Spielgestaltung, Reboundstärke, Star-Power und positionellen Balance deines Kaders.",
-          "Außerdem bekommst du drei Rerolls pro Durchgang. Wenn dir das ausgeloste Team und die Epoche überhaupt nicht passen, verbrauchst du einen Reroll und losst neu — aber setze sie klug ein, denn eine schlechte letzte Runde ohne übrige Rerolls kann eine ansonsten perfekte Aufstellung versenken."
+          "Jede der fünf Runden beginnt mit einem Slot Machine. Er dreht ein zufälliges Franchise und ein zufälliges Jahrzehnt aus — Chicago in den 1990ern, Boston in den 1960ern, Denver in den 2020ern — und zeigt dir die echten Spieler aus diesem Team und dieser Epoche mit ihren historischen Stats: Punkte, Rebounds, Assists, Steals und Blocks pro Spiel. Du wählst einen Spieler und platzierst ihn auf einer der fünf Court-Positionen, die er tatsächlich gespielt hat. Jede Position kann nur einmal besetzt werden, ein Kader aus fünf Point Guards ist also per Design unmöglich.",
+          "Pro Spiel bekommst du einen Team-Skip und einen Era-Skip. Setze sie klug ein — verbrennst du sie früh bei einer schwachen Ziehung, sitzt du in den letzten Runden auf dem fest, was der Slot Machine dir hinwirft. Nach fünf Picks rechnet die Simulations-Engine dein Lineup über eine komplette Saison von 82 Spielen hoch."
         ]
       },
       {
         "h2": "Warum 82-0 so schwer ist",
         "paragraphs": [
-          "Selbst eine Aufstellung aus fünf Superstars schafft in diesem Spiel nur selten 82-0, und das ist Absicht. Die Simulation belohnt Ausgewogenheit, nicht nur reines Talent. Ein Team ohne Point Guard tut sich schwer, den Angriff zu strukturieren. Ein Team ohne Center wird unter den Brettern zerlegt. Pack drei Shooting Guards zusammen, und das Spacing geht nicht mehr auf. Genau wie im echten Basketball verlangt die perfekte Saison den perfekten Kader — Elite-Talent auf jeder Position, das jede Fähigkeit abdeckt.",
-          "Hinzu kommt, dass die Simulation jeder Saison eine Prise Zufall beimischt. Selbst ein Dream Team mit Rating 99 kann das ein oder andere Spiel verlieren, denn genau das macht eine ungeschlagene Saison zur Legende. Wenn du es endlich auf 82-0 schaffst, hast du es dir verdient."
+          "Die Simulations-Engine summiert die fünf statistischen Kategorien deines Lineups — Scoring, Rebounding, Playmaking, Steals und Blocks — und schickt die Gesamtsumme durch eine nichtlineare Siegkurve. Der Zusammenhang zwischen Stats und Siegen ist nicht linear: Je stärker dein Team wird, desto deutlich schwerer ist jeder zusätzliche Sieg zu holen. Der Sprung von 70 auf 75 Siege erfordert weit mehr Kaderstärke als der von 55 auf 60.",
+          "Zusätzlich zur Kurve ist jede Kategorie limitiert. Ein Defizit in auch nur einem Bereich — kein Schutz am Korb, kein Playmaking — deckelt dein Maximum und tötet die perfekte Saison, egal wie hoch deine Scoring-Summe ist. Und unterschiedliche Jahrzehnte haben unterschiedliche statistische Rahmenbedingungen: 30 Punkte pro Spiel im schnellen Tempo der 1960er sind nicht dasselbe wert wie 30 in den 2020ern, und die Engine passt jede Statline entsprechend an die Epoche an."
         ]
       },
       {
-        "h2": "Die Regeln der 82-0 Challenge",
+        "h2": "82-0 Challenge Regeln",
         "paragraphs": [
-          "Die Regeln der 82-0 Challenge sind simpel. Erstens: Jede Runde liefert dir eine zufällige Kombination aus Team und Epoche. Zweitens: Du musst genau einen Spieler aus den gezeigten Kandidaten wählen. Drittens: Du hast drei Rerolls pro Spiel, um ein Team und eine Epoche zu tauschen, die dir nicht gefallen. Viertens: Nach fünf Picks ist deine Aufstellung final und deine Saison wird simuliert. Fünftens: Dein Ergebnis ist eine Saisonbilanz zwischen 0-82 und 82-0, dazu ein Team-Rating, dein bester Pick und die größte Schwäche deines Kaders. Teile es und fordere deine Freunde heraus, es zu schlagen."
+          "Die Regeln der 82-0 Challenge sind einfach. Erstens: In jeder Runde weist der Slot Machine ein zufälliges Team und Jahrzehnt zu. Zweitens: Wähle genau einen Spieler aus diesem Kader. Drittens: Platziere ihn auf einer offenen Court-Position, die er tatsächlich gespielt hat — PG, SG, SF, PF oder C. Viertens: Du hast einen Team-Skip und einen Era-Skip für das gesamte Spiel. Fünftens: Nach fünf Picks simuliert die Engine deine Saison und prognostiziert eine Endbilanz zwischen 0-82 und 82-0, mit einer Schulnote, deinem besten Pick und der größten Schwäche deines Kaders. Teile sie und fordere deine Freunde heraus, sie zu schlagen."
         ]
       },
       {
         "h2": "Tipps für ein besseres Team",
         "paragraphs": [
-          "Decke die Positionen ab. Die Simulation gibt echte Boni dafür, dass du einen Point Guard und einen Center aufstellst und mindestens vier der fünf Positionen abdeckst. Eine Aufstellung aus fünf Forwards mag spaßig aussehen, kostet aber Siege.",
-          "Setze auf Two-Way-Spieler. Offense liefert die Highlights, aber Defense gewinnt die simulierten Meisterschaften — die Verteidigung wird in der Endwertung genauso stark gewichtet wie der Angriff. Ein ausgewogener Star mit Rating 95 hilft oft mehr als ein eindimensionaler Scorer mit Rating 97.",
-          "Verbrauche Rerolls früh, nicht spät. Wenn dir Runde eins ein schwaches Team und eine schwache Epoche beschert, losse sofort neu. Alle drei Rerolls bis Runde fünf aufzusparen bedeutet meist, sie zu verschwenden.",
-          "Jage Star-Power zuletzt. Star-Power zählt, ist aber der kleinste Faktor in der Formel. Gesamt-Rating, Offense und Defense entscheiden die meisten deiner Siege."
+          "Maximiere die Summen in allen fünf Kategorien. Die Engine kennt keine Synergie-Abzüge — sie belohnt rohe, epochenangepasste Produktion. Aber denk an die Limits: Ein Lineup mit null Blocks oder null Playmaking deckelt dein Maximum, egal wie viel es punktet.",
+          "Achte auf deine Positionen. Jeder Pick muss in einen offenen Court-Slot passen, den der Spieler tatsächlich gespielt hat. Draftest du früh einen Flügelspieler auf Small Forward, kann dir das später einen besseren Flügel verbauen — behalte deine verbleibenden Slots im Kopf, bevor du dich festlegst.",
+          "Kenne deine Epochen. Ein 25-Punkte-Scorer aus den 2000ern schlägt nach der Epochenanpassung oft einen 30-Punkte-Scorer aus den 1960ern. Vom Tempo aufgeblähte Zahlen älterer Jahrzehnte werden von der Engine still und leise nach unten korrigiert.",
+          "Verbrauche Skips früh, nicht spät. Wirft dir die erste Runde einen dünnen Kader hin, skippe sofort. Beide Skips für Runde fünf aufzusparen, heißt meist, sie zu verschwenden.",
+          "Willst du eine echte Prüfung? Spiel den HoopIQ-Modus — die Stats sind verborgen und du draftest komplett aus dem Gedächtnis. Das ist der schnellste Weg herauszufinden, wer Basketball-Geschichte wirklich kennt."
         ]
       },
       {
-        "h2": "Alternativen zur 82-0 Challenge",
+        "h2": "82-0 Challenge Alternativen",
         "paragraphs": [
-          "Wenn dir die 82-0 Challenge gefällt, wirst du wahrscheinlich auch andere Draft-Sportspiele mögen: Aufstellungs-Builder, Epochen-Debatten, GOAT-Brackets und Fantasy-Drafts kratzen alle am selben Juckreiz. Doch das 82-0-Format sticht hervor, weil es dir eine konkrete, simulierte Antwort liefert statt einer endlosen Diskussion. Dein Team bleibt entweder ungeschlagen oder eben nicht — und es gibt immer noch einen weiteren Durchgang."
+          "Wenn dir die 82-0 Challenge gefällt, wirst du wahrscheinlich auch andere Draft-Sportspiele mögen: Lineup-Builder, Epochen-Debatten, GOAT-Brackets und Fantasy-Drafts kratzen alle dasselbe Jucken. Aber das 82-0 Format sticht heraus, weil es dir eine konkrete, simulierte Antwort statt einer endlosen Diskussion gibt. Dein Team bleibt entweder ungeschlagen oder eben nicht — und es gibt immer einen weiteren Durchlauf."
         ]
       },
       {
-        "h2": "Baue dein eigenes KI-Charakter-Team",
+        "h2": "Bau dein eigenes AI Character Squad",
         "paragraphs": [
-          "Du willst mehr als nur ein Basketballteam zusammenstellen? Mit dem AI Character Squad Builder kannst du ein Team aus Fantasy-Helden, Anime-Figuren oder völlig eigenen Kreationen draften, eine Geschichte über sie generieren und sie sogar in ein illustriertes Bilderbuch verwandeln. Wenn du Teambuilding liebst, ist das der nächste logische Schritt."
+          "Willst du mehr als ein Basketball-Team bauen? Mit dem AI Character Squad Builder draftest du ein Squad aus Fantasy-Helden, Anime-Charakteren oder völlig eigenen Kreationen, generierst eine Geschichte über sie und verwandelst sie sogar in ein illustriertes Bilderbuch. Wenn du Team-Building liebst, ist das der natürliche nächste Schritt."
         ]
       }
     ]
@@ -110,99 +127,99 @@
   "faq": {
     "sectionTitle": "Häufig gestellte Fragen",
     "q1": "Was ist die 82-0 Challenge?",
-    "a1": "Die 82-0 Challenge ist ein virales Basketball-Team-Builder-Spiel, bei dem du eine Aufstellung aus fünf Spielern aus zufälligen Teams und Epochen draftest und versuchst, einen Kader zusammenzustellen, der gut genug ist, um eine komplette 82-Spiele-Saison ungeschlagen zu überstehen.",
+    "a1": "Die 82-0 Challenge ist ein virales Basketball-Team-Builder-Game, bei dem du ein Lineup aus fünf echten Legenden aus zufälligen Teams und Epochen draftest, und eine Simulations-Engine hochrechnet, ob dein Kader eine komplette Saison über 82 Spiele ungeschlagen bleiben könnte.",
     "q2": "Wie spielt man die 82-0 Challenge?",
-    "a2": "In jeder Runde gibt dir das Spiel ein zufälliges Team und eine Epoche. Wähle einen Spieler aus den gezeigten Kandidaten. Nach fünf Runden wird deine Aufstellung durch eine komplette Saison simuliert und du erhältst eine finale Bilanz. Du hast drei Rerolls pro Spiel, um Kombinationen aus Team und Epoche zu tauschen, die dir nicht gefallen.",
+    "a2": "In jeder Runde weist ein Slot Machine ein zufälliges Team und Jahrzehnt zu. Wähle einen Spieler aus diesem Kader und platziere ihn auf einer offenen Court-Position, die er tatsächlich gespielt hat. Du bekommst pro Spiel einen Team-Skip und einen Era-Skip. Nach fünf Picks simuliert die Engine deine Saison und prognostiziert deine Endbilanz.",
     "q3": "Was bedeutet 82-0?",
-    "a3": "Eine Hauptrunde im Profi-Basketball umfasst 82 Spiele. Eine 82-0-Bilanz bedeutet, jedes einzelne Spiel zu gewinnen — eine perfekte, ungeschlagene Saison, die es in der Liga-Geschichte noch nie gegeben hat.",
+    "a3": "Eine Regular Season im Profibasketball umfasst 82 Spiele. Eine 82-0 Bilanz bedeutet, jedes einzelne Spiel zu gewinnen — eine perfekte, ungeschlagene Saison, die es in der Liga-Geschichte nie gegeben hat.",
     "q4": "Kann ein Team wirklich 82-0 schaffen?",
-    "a4": "Im echten Leben ist es noch nie passiert. Die beste Hauptrunde aller Zeiten lag bei 73 Siegen. In diesem Spiel hat eine nahezu perfekte, ideal ausbalancierte Aufstellung eine Chance auf 82-0 — doch das ist bewusst selten.",
+    "a4": "In der Realität ist es nie passiert. Die beste Regular Season aller Zeiten lag bei 73 Siegen. In diesem Spiel hat ein Lineup, das jede statistische Kategorie gleichzeitig ausreizt, eine echte Chance auf 82-0 — aber das ist per Design selten.",
     "q5": "Ist das ein offizielles NBA-Spiel?",
-    "a5": "Nein. Dies ist ein unabhängiges, von Fans erstelltes Team-Builder-Spiel. Es ist nicht mit der NBA oder einer anderen professionellen Basketballliga verbunden, wird von ihr nicht unterstützt oder gesponsert. Alle Spieler-Archetypen sind fiktiv.",
-    "q6": "Wie wird die finale Bilanz berechnet?",
-    "a6": "Deine Aufstellung wird nach Gesamtstärke, Offense, Defense, Wurfkraft, Spielgestaltung, Reboundstärke, Star-Power und positioneller Balance bewertet. Dieser Wert wird in eine Saisonbilanz umgerechnet, mit einer Prise Zufall für die Dramatik."
+    "a5": "Nein. Dies ist ein unabhängiges, von Fans gemachtes Team-Builder-Game. Es ist nicht mit der NBA oder einer professionellen Basketball-Liga verbunden, wird nicht von ihr unterstützt oder gesponsert. Spielernamen und historische Statistiken werden ausschließlich zu Informations- und Unterhaltungszwecken verwendet.",
+    "q6": "Wie wird die Endbilanz berechnet?",
+    "a6": "Die Engine summiert die epochenangepassten Punkte, Rebounds, Assists, Steals und Blocks deines Lineups und schickt die Gesamtsumme dann durch eine nichtlineare Siegprognose-Kurve. Jede Kategorie ist limitiert — eine eklatante Schwäche deckelt deine Bilanz, egal wie stark der Rest des Kaders ist."
   },
 
   "pages": {
     "whatIs": {
-      "title": "82-0: Was ist das virale 82-0 Challenge Spiel?",
-      "description": "Was bedeutet 82-0? Erfahre, woher die virale 82-0 Challenge stammt, wie das Spiel funktioniert, und spiele den 82-0 Team Builder direkt hier.",
+      "title": "82-0: Was ist das virale 82-0 Challenge Game?",
+      "description": "Was bedeutet 82-0? Erfahre, woher die virale 82-0 Challenge kommt, wie der Slot-Machine-Team-Builder funktioniert, und spiel sie gleich hier.",
       "h1": "Was ist 82-0?",
-      "intro": "82-0 ist die perfekte Basketball-Saison, die es nie gegeben hat — 82 Siege, null Niederlagen. Hier erfährst du, worum es bei der viralen 82-0 Challenge geht, plus ein Team Builder zum selbst Ausprobieren.",
+      "intro": "82-0 ist die perfekte Basketball-Saison, die es nie gegeben hat — 82 Siege, null Niederlagen. Hier erfährst du, worum es bei der viralen 82-0 Challenge geht, plus ein Team Builder, mit dem du es selbst versuchen kannst.",
       "sections": [
         {
           "h2": "Was bedeutet 82-0?",
           "paragraphs": [
-            "Eine Hauptrunde im Profi-Basketball umfasst 82 Spiele. 82-0 zu erreichen bedeutet, jedes einzelne davon zu gewinnen — eine perfekte Saison. Kein Team in der Liga-Geschichte hat das je geschafft. Am nächsten kam man mit 73 Siegen, was heißt, dass selbst das beste Team aller Zeiten noch neunmal verlor. Genau diese Lücke zwischen 'das Beste aller Zeiten' und 'perfekt' steht hinter der Zahl 82-0, und deshalb hat der Begriff in Basketball-Debatten so viel Gewicht.",
-            "Weil eine perfekte Saison nie passiert ist, wurde 82-0 zum Sinnbild für einen unerreichbaren Maßstab. Wenn Fans sagen, eine Aufstellung würde '82-0 gehen', meinen sie, dass sie so überstark ist, dass sie über die normale Konkurrenz hinauswächst."
+            "Eine Regular Season im Profibasketball umfasst 82 Spiele. 82-0 zu schaffen bedeutet, jedes einzelne davon zu gewinnen — eine perfekte Saison. Kein Team in der Liga-Geschichte hat das je geschafft. Am nächsten kam jemand mit 73 Siegen, was heißt, dass selbst das beste Team aller Zeiten neunmal verloren hat. Diese Lücke zwischen 'das Beste aller Zeiten' und 'perfekt' ist genau das, wofür die Zahl 82-0 steht, und deshalb hat der Ausdruck in Basketball-Debatten so viel Gewicht.",
+            "Weil eine perfekte Saison nie passiert ist, wurde 82-0 zum Kürzel für einen unmöglichen Maßstab. Wenn Fans sagen, ein Lineup würde '82-0 gehen', meinen sie, dass es so stark besetzt ist, dass es den normalen Wettbewerb übersteigt."
           ]
         },
         {
           "h2": "Was ist die 82-0 Challenge?",
           "paragraphs": [
-            "Die 82-0 Challenge ist ein Team-Builder-Spiel, das aus genau dieser Debatte entstanden ist. Die Prämisse: Du draftest eine Aufstellung aus fünf Spielern, hast aber keine freie Wahl — jeder Pick stammt aus einem zufällig ausgelosten Team und einer Epoche. Chicago in den 1990ern. Boston in den 1980ern. Denver in den 2020ern. Aus jeder Auslosung wählst du einen Spieler, und nach fünf Picks stellt sich deinem Kader die Frage: Würde dieses Team 82-0 schaffen?",
-            "Das Format wurde viral, weil es zu gleichen Teilen aus Strategie und Glück besteht. Mal beschert dir die Zufallsauslosung ein Dream Team. Mal musst du zwischen einem Verteidigungsspezialisten und einem eindimensionalen Scorer wählen, und deine perfekte Saison stirbt schon in Runde drei. Jeder Durchgang ist eine neue Diskussion."
+            "Die 82-0 Challenge ist ein Team-Building-Spiel, das aus genau dieser Debatte geboren wurde. Die Prämisse: Du draftest ein Lineup aus fünf echten Basketball-Legenden, aber du hast keine freie Wahl — jeder Pick kommt aus einem zufällig gezogenen Team und Jahrzehnt. Chicago in den 1990ern. Boston in den 1960ern. Denver in den 2020ern. Aus jeder Ziehung wählst du einen Spieler, platzierst ihn auf einer Court-Position, die er tatsächlich gespielt hat, und nach fünf Picks stellt sich deinem Kader die Frage: Würde dieses Team 82-0 gehen?",
+            "Das Format ging viral, weil es zu gleichen Teilen aus Strategie und Glück besteht. Manchmal reicht dir der Slot Machine eine Dynastie. Manchmal wählst du in Runde fünf ohne verbleibende Skips zwischen Rollenspielern, und deine perfekte Saison stirbt auf der Stelle. Jeder Durchlauf ist eine neue Diskussion."
           ]
         },
         {
-          "h2": "Wie funktioniert das 82-0 Spiel hier?",
+          "h2": "Wie funktioniert das 82-0 Game hier?",
           "paragraphs": [
-            "Unsere Version des 82-0 Challenge Spiels läuft komplett in deinem Browser. Fünf Runden, ein Pick pro Runde, drei Rerolls. Jeder Spieler ist ein fiktiver Archetyp mit Ratings für Offense, Defense, Wurfkraft, Spielgestaltung, Reboundstärke und Star-Power. Wenn deine Aufstellung komplett ist, bewertet der Simulator deinen Kader — inklusive Boni für positionelle Balance — und rechnet ihn in eine finale Saisonbilanz zwischen 0-82 und 82-0 um. Du kannst direkt auf dieser Seite spielen, ohne Download oder Anmeldung."
+            "Unsere Version des 82-0 Challenge Game läuft komplett in deinem Browser. Fünf Runden, ein Pick pro Runde, ein Team-Skip und ein Era-Skip. Jeder Spieler trägt seine echte historische Statline — Punkte, Rebounds, Assists, Steals und Blocks pro Spiel — epochenangepasst durch die Simulations-Engine, denn 30 Punkte in den 1960ern sind nicht 30 Punkte in den 2020ern. Wenn dein Lineup komplett ist, schickt die Engine deine Gesamtsummen durch eine nichtlineare Siegkurve und prognostiziert eine Endbilanz zwischen 0-82 und 82-0. Kein Download, keine Anmeldung — und wenn du eine echte Prüfung willst, verbirgt der HoopIQ-Modus die Stats und zwingt dich, aus dem Gedächtnis zu draften."
           ]
         },
         {
           "h2": "Warum geht 82-0 viral?",
           "paragraphs": [
-            "Basketball-Diskussionen endeten früher mit einem 'wir sind uns uneinig'. Das 82-0-Format gibt ihnen eine Anzeigetafel. Spieler teilen ihre finalen Bilanzen — 78-4, 80-2, das seltene perfekte 82-0 — und Freunde versuchen sofort, sie zu schlagen. Es ist ein Ein-Minuten-Spiel mit unendlichem Wiederspielwert, aufgebaut auf einer Debatte, die Fans seit Jahrzehnten führen: Welche fünf Spieler aus der gesamten Geschichte ergeben das unschlagbare Team?"
+            "Basketball-Diskussionen endeten früher mit 'einigen wir uns darauf, uneinig zu sein'. Das 82-0 Format gibt ihnen eine Anzeigetafel. Spieler teilen ihre prognostizierten Bilanzen — 78-4, 80-2, das seltene perfekte 82-0 — und Freunde versuchen sofort, sie zu schlagen. Es ist ein Zwei-Minuten-Spiel mit unendlichem Wiederspielwert, aufgebaut auf einer Debatte, die Fans seit Jahrzehnten führen: Welche fünf Spieler aus der gesamten Geschichte bilden das unschlagbare Team?"
           ]
         }
       ]
     },
     "howToPlay": {
       "title": "So spielst du die 82-0 Challenge",
-      "description": "Lerne in fünf Schritten, wie du die 82-0 Challenge spielst: zufälliges Team und Epoche bekommen, Spieler wählen, eine 5-Spieler-Aufstellung bauen und deine simulierte Saisonbilanz erhalten.",
+      "description": "Lerne in fünf Schritten, wie man die 82-0 Challenge spielt: dreh den Slot Machine, drafte echte Legenden aus zufälligen Teams und Epochen, besetze alle fünf Positionen und erhalte deine prognostizierte Saisonbilanz.",
       "h1": "So spielst du die 82-0 Challenge",
-      "intro": "Fünf Runden. Fünf Picks. Eine Frage: Kann dein Team 82-0 schaffen? Hier erfährst du genau, wie das Spiel funktioniert.",
+      "intro": "Fünf Runden. Fünf Picks. Eine Frage: Kann dein Team 82-0 gehen? Hier erfährst du genau, wie das Spiel funktioniert.",
       "steps": [
-        { "title": "Zufälliges Team & Epoche bekommen", "desc": "Jede Runde lost eine Kombination aus Team und Jahrzehnt aus — etwa Chicago 1990er oder Golden State 2010er. Gefällt dir das nicht? Du hast 3 Rerolls pro Spiel." },
-        { "title": "Einen Spieler wählen", "desc": "Du siehst bis zu fünf Spieler-Archetypen aus diesem Team und dieser Epoche, jeder mit Ratings für Offense, Defense, Wurfkraft und mehr. Wähle genau einen." },
-        { "title": "Eine 5-Spieler-Aufstellung bauen", "desc": "Wiederhole das über fünf Runden. Achte auf deine Positionen — der Simulator belohnt Aufstellungen mit einem Point Guard, einem Center und guter positioneller Abdeckung." },
-        { "title": "Deine simulierte Bilanz erhalten", "desc": "Das Spiel bewertet deinen Kader nach Talent, Balance und Star-Power und simuliert dann eine komplette 82-Spiele-Saison. Von 0-82 bis zum perfekten 82-0 ist alles möglich." },
-        { "title": "Dein Ergebnis teilen", "desc": "Kopiere deine Bilanz oder teile sie auf X und fordere deine Freunde heraus, sie zu schlagen. Dann leg gleich nochmal los — jedes Spiel ist anders." }
+        { "title": "Dreh den Slot Machine", "desc": "Jede Runde zieht ein zufälliges Franchise und Jahrzehnt — etwa Chicago 1990er oder Boston 1960er. Gefällt es dir nicht? Du hast pro Spiel einen Team-Skip und einen Era-Skip." },
+        { "title": "Wähle einen Spieler", "desc": "Durchstöbere den echten Kader aus diesem Team und dieser Epoche, mit historischen PPG, RPG, APG, SPG und BPG. Im HoopIQ-Modus sind die Stats verborgen — drafte aus dem Gedächtnis." },
+        { "title": "Platziere ihn auf dem Court", "desc": "Jeder Pick muss eine offene Position besetzen, die der Spieler tatsächlich gespielt hat — PG, SG, SF, PF oder C. Jeder Platz kann nur einmal genutzt werden." },
+        { "title": "Erhalte deine prognostizierte Bilanz", "desc": "Die Engine summiert deine epochenangepassten Stats und schickt sie durch eine nichtlineare Siegkurve. Eine schwache Kategorie kann dein Maximum deckeln — Balance gewinnt Saisons." },
+        { "title": "Teile dein Ergebnis", "desc": "Kopiere deine Bilanz oder teile sie auf X und fordere deine Freunde heraus, sie zu schlagen. Dann leg gleich nochmal los — jeder Spin ist anders." }
       ],
       "sections": [
         {
-          "h2": "Strategie: So schaffst du wirklich 82-0",
+          "h2": "Strategie: So gehst du wirklich 82-0",
           "paragraphs": [
-            "Ungeschlagen zu bleiben verlangt nahezu perfekte Picks in allen fünf Runden. Ziele auf die höchsten Gesamt-Ratings, aber ignoriere niemals die Position: Eine Aufstellung ohne Center oder Point Guard kassiert einen Scoring-Abzug, der dich fast immer die perfekte Saison kostet. Defense wird genauso stark gewichtet wie Offense, also schlagen Two-Way-Stars die reinen Scorer. Und nutze deine Rerolls aggressiv in den frühen Runden — ein schwacher erster Pick ist ein Loch, aus dem du dich später nicht mehr herausgräbst.",
-            "Selbst ein Kader mit Rating 98+ hat nur eine Chance auf 82-0, keine Garantie. Das ist Absicht. Die perfekte Saison soll sich anfühlen wie ein Stück Geschichte, das gerade geschrieben wird."
+            "Ungeschlagen zu bleiben erfordert, alle fünf statistischen Kategorien gleichzeitig zu maximieren. Ziele auf die größten epochenangepassten Produzenten ab, ignoriere aber nie die Limits: Ein Lineup ohne Shot-Blocking oder ohne Playmaking deckelt sein Maximum, egal wie viel es punktet. Positionen fügen eine zweite Ebene hinzu — ein Superstar, den du nicht platzieren kannst, ist ein Superstar, den du nicht draften kannst, also achte darauf, welche Court-Slots offen bleiben, bevor du einen Pick festlegst.",
+            "Nutze deine Skips aggressiv in den frühen Runden — ein dünner Kader in Runde eins ist ein Loch, aus dem du dich später nicht herausgraben kannst. Und denk daran, dass die Kurve nichtlinear ist: Selbst ein Kader mit 95 Punkten hat nur eine Chance auf 82-0, nie eine Garantie. Die perfekte Saison sollte sich anfühlen wie Geschichte, die geschrieben wird."
           ]
         },
         {
-          "h2": "Die Regeln der 82-0 Challenge auf einen Blick",
+          "h2": "82-0 Challenge Regeln auf einen Blick",
           "paragraphs": [
-            "Ein Pick pro Runde, fünf Runden insgesamt. Drei Rerolls pro Spiel, die Team, Epoche und Kandidaten der aktuellen Runde neu auslosen. Einmal getroffene Picks sind endgültig. Die simulierte Bilanz basiert auf den kombinierten Ratings deiner Aufstellung und der positionellen Balance, mit einer kleinen Zufallsvarianz, damit jede Saison lebendig wirkt. Keine Konten, keine Downloads, keine Kosten — einfach die Seite öffnen und spielen."
+            "Fünf Runden, ein Pick pro Runde. Der Slot Machine weist in jeder Runde ein zufälliges Team und Jahrzehnt zu; Jahrzehnte können sich wiederholen. Ein Team-Skip und ein Era-Skip pro Spiel. Jeder Pick muss eine offene Court-Position besetzen, die der Spieler tatsächlich gespielt hat. Die prognostizierte Bilanz ergibt sich aus den summierten, epochenangepassten Stats deines Lineups, die durch eine nichtlineare Siegkurve laufen, mit Kategorie-Limits, die eindimensionale Kader bestrafen. Zwei Modi: Classic zeigt alle Stats, HoopIQ verbirgt sie. Keine Konten, keine Downloads, keine Kosten — einfach die Seite öffnen und spielen."
           ]
         }
       ]
     },
     "teamBuilder": {
       "title": "82-0 Team Builder",
-      "description": "Baue deine Traum-Basketball-Aufstellung mit dem 82-0 Team Builder. Fünf Runden, zufällige Teams und Epochen, simulierte Saisonbilanz. Bleibst du ungeschlagen?",
+      "description": "Bau dein All-Time-Basketball-Lineup mit dem 82-0 Team Builder. Slot-Machine-Ziehungen, echte Legenden aus sieben Jahrzehnten, simulierte Saisonbilanz. Schaffst du es, ungeschlagen zu bleiben?",
       "h1": "82-0 Team Builder",
-      "intro": "Drafte deine Fünf. Jage die perfekte Saison. Der Team Builder ist direkt darunter — viel Erfolg.",
+      "intro": "Drafte deine Fünf. Jage die perfekte Saison. Der Team Builder ist direkt unten — viel Glück.",
       "sections": [
         {
           "h2": "Über den 82-0 Team Builder",
           "paragraphs": [
-            "Dieser Team Builder ist das Herzstück der 82-0 Challenge. Jeder Durchgang lost fünf zufällige Kombinationen aus Team und Epoche aus den ikonischsten Dynastien des Basketballs — Boston in den 1980ern, Chicago in den 1990ern, Los Angeles in den 2000ern, Golden State in den 2010ern, Denver in den 2020ern und mehr. Jede Kombination bietet eine Reihe fiktiver Spieler-Archetypen, die über sechs Fähigkeiten bewertet sind, und die Aufstellung, die du draftest, wird durch eine komplette 82-Spiele-Saison simuliert.",
-            "Weil die Auslosungen zufällig sind, gleicht kein Durchgang dem anderen. Im einen Spiel wählst du zwischen Legenden, im nächsten quetschst du Siege aus Rollenspielern heraus. Der Team Builder belohnt cleveres Draften: positionelle Balance, Two-Way-Spiel und das richtige Gespür, wann man einen Reroll verbrennt. Bauen, simulieren, teilen, wiederholen — und sieh, wie nah du dem unmöglichen 82-0 kommst."
+            "Dieser Team Builder ist das Herz der 82-0 Challenge. Jeder Durchlauf dreht fünf zufällige Franchise-und-Jahrzehnt-Kombinationen aus, die sieben Jahrzehnte Basketball-Geschichte umspannen — von der Celtics-Dynastie der 1960er bis zu den Champions der 2020er. Jede Ziehung bietet die echten Spieler aus diesem Team und dieser Epoche mit ihren historischen Pro-Spiel-Stats über fünf Kategorien, und das Lineup, das du draftest, wird über eine komplette Saison von 82 Spielen simuliert.",
+            "Weil die Ziehungen zufällig sind, gleicht kein Durchlauf dem anderen. In einem Spiel wählst du zwischen Legenden; im nächsten quetschst du Siege aus Rollenspielern ohne verbleibende Skips. Der Team Builder belohnt kluges Draften: Epochenbewusstsein, Kategorie-Balance, Positions-Management und das genaue Gespür dafür, wann man einen Skip verbrennt. Bauen, simulieren, teilen, wiederholen — und sieh, wie nah du dem unmöglichen 82-0 kommst."
           ]
         },
         {
-          "h2": "Was macht eine siegreiche Aufstellung aus?",
+          "h2": "Was macht ein siegreiches Lineup aus?",
           "paragraphs": [
-            "Der Simulator gewichtet die Gesamtstärke am stärksten, gefolgt von Offense und Defense zu gleichen Teilen, dann Wurfkraft, Spielgestaltung, Reboundstärke und Star-Power. Balance-Boni sind real: Sowohl einen Point Guard als auch einen Center aufzustellen und mindestens vier Positionen abzudecken, kann mehrere Siege ausmachen. Strafen für Positions-Stacking sind ebenso real — drei Spieler auf derselben Position kosten dich klammheimlich die perfekte Saison. Drafte wie ein General Manager, nicht wie ein Fan."
+            "Die Engine summiert fünf Kategorien — Punkte, Rebounds, Assists, Steals und Blocks — nachdem sie jede Statline an das Tempo und das Scoring-Umfeld ihrer Epoche angepasst hat. Die Siegkurve ist nichtlinear, jeder zusätzliche Sieg kostet also mehr Kaderstärke als der vorige, und jede Kategorie ist limitiert: Ein einziges eklatantes Loch deckelt deine prognostizierte Bilanz, egal wie stark der Rest des Kaders ist. Drafte wie ein General Manager, nicht wie ein Fan."
           ]
         }
       ]
@@ -210,8 +227,8 @@
   },
 
   "cta": {
-    "title": "Baue mehr als nur ein Basketballteam.",
-    "desc": "Erstelle ein KI-Charakter-Team, generiere eine Geschichte und verwandle sie mit dem AI Character Squad Builder in ein Bilderbuch.",
+    "title": "Bau mehr als nur ein Basketball-Team.",
+    "desc": "Erstelle ein AI Character Squad, generiere eine Geschichte und verwandle sie mit dem AI Character Squad Builder in ein Bilderbuch.",
     "button": "AI Character Squad Builder ausprobieren"
   },
 
@@ -222,7 +239,7 @@
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
-    "disclaimer": "Dies ist ein unabhängiges, von Fans erstelltes Team-Builder-Spiel. Es ist nicht mit der NBA oder einer anderen professionellen Basketballliga verbunden, wird von ihr nicht unterstützt oder gesponsert. Alle Spieler-Archetypen auf dieser Seite sind fiktiv. Es werden keine offiziellen Logos, Spielernamen oder Fotografien verwendet.",
+    "disclaimer": "82-0 Challenge ist ein unabhängiges, von Fans gemachtes Projekt. Es ist nicht mit der NBA oder einer professionellen Basketball-Liga oder einem Team verbunden, wird nicht von ihr unterstützt oder gesponsert. Spielernamen und historische Statistiken sind öffentlich verfügbare Fakten, die ausschließlich zu Informations- und Unterhaltungszwecken verwendet werden. Es werden keine offiziellen Logos, Marken oder Fotos genutzt.",
     "copyright": "© 2026 82-0 Challenge"
   }
 }

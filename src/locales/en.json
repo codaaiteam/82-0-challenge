@@ -1,7 +1,7 @@
 {
   "layout": { "language": "en" },
   "seoTitle": "82-0 Challenge: Play the Viral Team Builder Game",
-  "seoDescription": "Play an 82-0 style team builder challenge. Pick players from random teams and eras, build a perfect lineup, and see if your team can go undefeated.",
+  "seoDescription": "Play the viral 82-0 challenge. Spin the slot machine, draft basketball legends from random teams and eras, and see if your lineup can go undefeated.",
   "keywords": "82-0, 82-0 challenge, 82-0 challenge game, 82-0 game, 82-0 team builder, how to play 82-0, 82-0 challenge rules, viral basketball team builder",
 
   "header": {
@@ -14,27 +14,44 @@
 
   "hero": {
     "title": "82-0 Challenge",
-    "subtitle": "Can you build a team that goes 82-0? Pick one player from each random team and era. Build your lineup and see your final record.",
+    "subtitle": "Can you build a team that goes 82-0? Spin the slot machine, draft one legend per round from a random team and era, and watch the simulation project your season.",
     "cta": "Start Challenge"
   },
 
   "game": {
+    "chooseMode": "Choose Your Mode",
+    "chooseModeSub": "How do you want to build your all-time team?",
+    "modeClassic": "Classic",
+    "modeClassicDesc": "Full player stats are visible — make informed picks based on the numbers.",
+    "modeHoopiq": "HoopIQ",
+    "modeHoopiqDesc": "Stats are hidden — draft from memory and test your basketball knowledge.",
+    "playClassic": "Play Classic",
+    "playHoopiq": "Play HoopIQ",
     "roundOf": "Round {round} of {total}",
-    "rerollButton": "Reroll Team & Era",
-    "pickPrompt": "Pick one player from this team and era to add to your lineup.",
-    "select": "Select",
-    "off": "OFF",
-    "def": "DEF",
-    "sht": "3PT",
-    "yourLineup": "Your Lineup",
-    "resultRecord": "Your Final Record",
-    "teamRating": "Team Rating",
+    "team": "Team",
+    "era": "Era",
+    "spin": "Spin",
+    "spinning": "Spinning…",
+    "spinHint": "Hit SPIN to draw a random team and era, then pick your player.",
+    "rerollTeam": "Skip Team",
+    "rerollEra": "Skip Era",
+    "filterAll": "All",
+    "playersAvailable": "{count} players",
+    "placing": "Placing: {name} — tap a glowing court position",
+    "ppg": "PPG",
+    "rpg": "RPG",
+    "apg": "APG",
+    "spg": "SPG",
+    "bpg": "BPG",
+    "projectedRecord": "Projected Record",
+    "pts": "pts",
     "bestPick": "Best Pick",
     "weakness": "Weakness",
     "playAgain": "Play Again",
     "copyResult": "Copy Result",
     "copied": "Copied!",
     "shareOnX": "Share on X",
+    "switchMode": "Switch Mode",
     "shareText": "I went {record} in the 82-0 Challenge. Can you beat my team?",
     "titles": {
       "perfect": "Perfect Season",
@@ -44,13 +61,12 @@
       "playoff": "Playoff Team"
     },
     "weaknesses": {
-      "noCenter": "No true center",
-      "noPG": "No floor general",
-      "weakDefense": "Defense could get exposed",
-      "weakShooting": "Not enough shooting",
-      "weakPlaymaking": "Who runs the offense?",
+      "weakScoring": "Not enough scoring punch",
       "weakRebounding": "Soft on the glass",
-      "none": "None — balanced roster"
+      "weakPlaymaking": "Who runs the offense?",
+      "weakSteals": "Perimeter defense leaks",
+      "weakBlocks": "No rim protection",
+      "none": "None — complete roster"
     }
   },
 
@@ -60,36 +76,37 @@
         "h2": "What Is the 82-0 Challenge?",
         "paragraphs": [
           "The 82-0 challenge is a viral basketball team builder game built around one simple question: can you assemble a starting five so dominant that it would win every single game of an 82-game season? An 82-0 record has never happened in professional basketball history — the best regular season ever recorded was 73 wins — which is exactly what makes the 82-0 challenge so addictive. You are chasing something that has never been done.",
-          "The 82-0 challenge game took off on social media as fans argued about which combination of players from different teams and eras could realistically go undefeated. Could five legends from different decades actually win them all? Would a team of pure scorers fall apart on defense? This site turns that debate into a playable 82-0 game you can finish in under a minute."
+          "The 82-0 challenge game took off on social media as fans argued about which combination of players from different teams and eras could realistically go undefeated. Could five legends from five different decades actually win them all? Would a team of pure scorers fall apart on defense? This site turns that debate into a playable 82-0 game you can finish in under two minutes."
         ]
       },
       {
         "h2": "How the 82-0 Challenge Works",
         "paragraphs": [
-          "Our 82-0 team builder gives you five rounds. In each round, the game randomly draws a team and an era — for example Chicago in the 1990s, or Golden State in the 2010s — and shows you a handful of player archetypes from that combination. You pick exactly one player per round. After five rounds your lineup is locked, and the game simulates a full 82-game season based on your roster's overall talent, offense, defense, shooting, playmaking, rebounding, star power, and positional balance.",
-          "You also get three rerolls per run. If you hate the team and era the game hands you, burn a reroll and spin again — but use them wisely, because a bad final round with no rerolls left can sink an otherwise perfect lineup."
+          "Each of the five rounds starts with a slot machine. It spins up a random franchise and a random decade — Chicago in the 1990s, Boston in the 1960s, Denver in the 2020s — and shows you the real players from that team and era with their historical stats: points, rebounds, assists, steals, and blocks per game. You pick one player, then place him at one of the five court positions he actually played. Each position can only be filled once, so a roster of five point guards is impossible by design.",
+          "You get one team skip and one era skip per game. Use them wisely — burn them early on a weak draw and you are stuck with whatever the slot machine hands you in the final rounds. After five picks, the simulation engine projects your lineup across a full 82-game season."
         ]
       },
       {
         "h2": "Why 82-0 Is So Hard",
         "paragraphs": [
-          "Even a lineup of five superstars rarely goes 82-0 in this game, and that is by design. The simulation rewards balance, not just raw talent. A team with no point guard struggles to run an offense. A team with no center gets destroyed on the boards. Stack three shooting guards and the spacing math stops working. Just like in real basketball, the perfect season demands the perfect roster — elite talent at every position, covering every skill.",
-          "On top of that, the simulation adds a little randomness to every season. A 99-rated dream team might still drop a game or two, because that is what makes going undefeated legendary. When you finally hit 82-0, you earned it."
+          "The simulation engine aggregates your lineup's five statistical categories — scoring, rebounding, playmaking, steals, and blocks — and runs the total through a non-linear win curve. The relationship between stats and wins is not linear: as your team gets stronger, each additional win becomes significantly harder to earn. Going from 70 to 75 wins takes far more roster strength than going from 55 to 60.",
+          "On top of the curve, every category is gated. A deficiency in even one area — no rim protection, no playmaking — caps your ceiling and kills the perfect season, no matter how high your scoring total is. And different decades have different statistical environments: 30 points per game in the fast-paced 1960s is not worth the same as 30 in the 2020s, and the engine era-adjusts every stat line accordingly."
         ]
       },
       {
         "h2": "82-0 Challenge Rules",
         "paragraphs": [
-          "The 82-0 challenge rules are simple. One: each round gives you a random team and era combination. Two: you must pick exactly one player from the candidates shown. Three: you have three rerolls per game to swap out a team and era you don't like. Four: after five picks your lineup is final and your season is simulated. Five: your result is a season record between 0-82 and 82-0, plus a team rating, your best pick, and your roster's biggest weakness. Share it and challenge your friends to beat it."
+          "The 82-0 challenge rules are simple. One: each round, the slot machine assigns a random team and decade. Two: pick exactly one player from that roster. Three: place him at an open court position he actually played — PG, SG, SF, PF, or C. Four: you have one team skip and one era skip for the whole game. Five: after five picks, the engine simulates your season and projects a final record between 0-82 and 82-0, with a letter grade, your best pick, and your roster's biggest weakness. Share it and challenge your friends to beat it."
         ]
       },
       {
         "h2": "Tips to Build a Better Team",
         "paragraphs": [
-          "Cover the positions. The simulation gives real bonuses for fielding a point guard and a center, and for covering at least four of the five positions. A lineup of five forwards might look fun, but it bleeds wins.",
-          "Prioritize two-way players. Offense wins highlights, but defense wins simulated championships — defense is weighted as heavily as offense in the final score. A balanced 95-rated star often helps more than a one-dimensional 97-rated scorer.",
-          "Spend rerolls early, not late. If round one hands you a weak team and era, reroll immediately. Saving all three rerolls until round five usually means wasting them.",
-          "Chase star power last. Star power matters, but it is the smallest factor in the formula. Overall rating, offense, and defense decide most of your wins."
+          "Maximize totals across all five categories. The engine has no synergy penalties — it rewards raw, era-adjusted production. But remember the gates: a lineup with zero blocks or zero playmaking caps your ceiling no matter how much it scores.",
+          "Mind your positions. Every pick must fit an open court slot the player actually played. Drafting a wing early at small forward can lock you out of a better wing later — keep your remaining slots in mind before you commit.",
+          "Know your eras. A 25-point scorer from the 2000s often beats a 30-point scorer from the 1960s after era adjustment. Pace-inflated numbers from older decades are quietly deflated by the engine.",
+          "Spend skips early, not late. If round one hands you a thin roster, skip immediately. Saving both skips for round five usually means wasting them.",
+          "Want a real test? Play HoopIQ mode — stats are hidden and you draft entirely from memory. It is the fastest way to find out who actually knows basketball history."
         ]
       },
       {
@@ -110,23 +127,23 @@
   "faq": {
     "sectionTitle": "Frequently Asked Questions",
     "q1": "What is the 82-0 challenge?",
-    "a1": "The 82-0 challenge is a viral basketball team builder game where you draft a five-player lineup from random teams and eras and try to build a roster good enough to go undefeated across an entire 82-game season.",
+    "a1": "The 82-0 challenge is a viral basketball team builder game where you draft a five-player lineup of real legends from random teams and eras, and a simulation engine projects whether your roster could go undefeated across an entire 82-game season.",
     "q2": "How do you play the 82-0 challenge?",
-    "a2": "Each round the game gives you a random team and era. Pick one player from the candidates shown. After five rounds, your lineup is simulated through a full season and you get a final record. You have three rerolls per game to swap out team and era combinations you don't like.",
+    "a2": "Each round, a slot machine assigns a random team and decade. Pick one player from that roster and place him at an open court position he actually played. You get one team skip and one era skip per game. After five picks, the engine simulates your season and projects your final record.",
     "q3": "What does 82-0 mean?",
     "a3": "A professional basketball regular season is 82 games long. An 82-0 record means winning every single game — a perfect, undefeated season that has never happened in league history.",
     "q4": "Can a team really go 82-0?",
-    "a4": "It has never happened in real life. The best regular season ever was 73 wins. In this game, a near-perfect, perfectly balanced lineup has a chance at 82-0 — but it is rare by design.",
+    "a4": "It has never happened in real life. The best regular season ever was 73 wins. In this game, a lineup that maxes out every statistical category simultaneously has a real shot at 82-0 — but it is rare by design.",
     "q5": "Is this an official NBA game?",
-    "a5": "No. This is an independent fan-made style team builder game. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league. All player archetypes are fictional.",
+    "a5": "No. This is an independent fan-made team builder game. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league. Player names and historical statistics are used for informational and entertainment purposes only.",
     "q6": "How is the final record calculated?",
-    "a6": "Your lineup is scored on overall talent, offense, defense, shooting, playmaking, rebounding, star power, and positional balance. That score is converted into a season record, with a little randomness for drama."
+    "a6": "The engine aggregates your lineup's era-adjusted points, rebounds, assists, steals, and blocks, then runs the total through a non-linear win-projection curve. Each category is gated — one glaring weakness caps your record no matter how strong the rest of the roster is."
   },
 
   "pages": {
     "whatIs": {
       "title": "82-0: What Is the Viral 82-0 Challenge Game?",
-      "description": "What does 82-0 mean? Learn where the viral 82-0 challenge came from, how the game works, and play the 82-0 team builder right here.",
+      "description": "What does 82-0 mean? Learn where the viral 82-0 challenge came from, how the slot-machine team builder works, and play it right here.",
       "h1": "What Is 82-0?",
       "intro": "82-0 is the perfect basketball season that has never happened — 82 wins, zero losses. Here's what the viral 82-0 challenge is all about, and a team builder so you can try it yourself.",
       "sections": [
@@ -140,69 +157,69 @@
         {
           "h2": "What Is the 82-0 Challenge?",
           "paragraphs": [
-            "The 82-0 challenge is a team building game born from that debate. The premise: you draft a five-player lineup, but you don't get free choice — each pick comes from a randomly drawn team and era. Chicago in the 1990s. Boston in the 1980s. Denver in the 2020s. From each draw, you pick one player, and after five picks your roster faces the question: would this team go 82-0?",
-            "The format went viral because it is equal parts strategy and luck. Sometimes the random draws hand you a dream team. Sometimes you are forced to choose between a defensive specialist and a one-dimensional scorer, and your perfect season dies in round three. Every run is a new argument."
+            "The 82-0 challenge is a team building game born from that debate. The premise: you draft a five-player lineup of real basketball legends, but you don't get free choice — every pick comes from a randomly drawn team and decade. Chicago in the 1990s. Boston in the 1960s. Denver in the 2020s. From each draw you pick one player, place him at a court position he actually played, and after five picks your roster faces the question: would this team go 82-0?",
+            "The format went viral because it is equal parts strategy and luck. Sometimes the slot machine hands you a dynasty. Sometimes you are choosing between role players in round five with no skips left, and your perfect season dies on the spot. Every run is a new argument."
           ]
         },
         {
           "h2": "How Does the 82-0 Game Work Here?",
           "paragraphs": [
-            "Our version of the 82-0 challenge game runs entirely in your browser. Five rounds, one pick per round, three rerolls. Every player is a fictional archetype with ratings for offense, defense, shooting, playmaking, rebounding, and star power. When your lineup is complete, the simulator scores your roster — including positional balance bonuses — and converts it into a final season record between 0-82 and 82-0. You can play directly on this page, no download or sign-up required."
+            "Our version of the 82-0 challenge game runs entirely in your browser. Five rounds, one pick per round, one team skip and one era skip. Every player carries his real historical stat line — points, rebounds, assists, steals, and blocks per game — era-adjusted by the simulation engine, because 30 points in the 1960s is not 30 points in the 2020s. When your lineup is complete, the engine runs your aggregate totals through a non-linear win curve and projects a final record between 0-82 and 82-0. No download, no sign-up — and if you want a real test, HoopIQ mode hides the stats and makes you draft from memory."
           ]
         },
         {
           "h2": "Why Is 82-0 Going Viral?",
           "paragraphs": [
-            "Basketball arguments used to end in 'agree to disagree'. The 82-0 format gives them a scoreboard. Players share their final records — 78-4, 80-2, the rare perfect 82-0 — and friends immediately try to beat them. It is a one-minute game with infinite replayability, built on top of a debate fans have been having for decades: which five players, across all of history, make the unbeatable team?"
+            "Basketball arguments used to end in 'agree to disagree'. The 82-0 format gives them a scoreboard. Players share their projected records — 78-4, 80-2, the rare perfect 82-0 — and friends immediately try to beat them. It is a two-minute game with infinite replayability, built on top of a debate fans have been having for decades: which five players, across all of history, make the unbeatable team?"
           ]
         }
       ]
     },
     "howToPlay": {
       "title": "How to Play the 82-0 Challenge",
-      "description": "Learn how to play the 82-0 challenge in five steps: get a random team and era, pick your players, build a 5-player lineup, and get your simulated season record.",
+      "description": "Learn how to play the 82-0 challenge in five steps: spin the slot machine, draft real legends from random teams and eras, fill all five positions, and get your projected season record.",
       "h1": "How to Play the 82-0 Challenge",
       "intro": "Five rounds. Five picks. One question: can your team go 82-0? Here's exactly how the game works.",
       "steps": [
-        { "title": "Get a Random Team & Era", "desc": "Each round draws a team and decade combination — like Chicago 1990s or Golden State 2010s. Don't like it? You have 3 rerolls per game." },
-        { "title": "Pick One Player", "desc": "You'll see up to five player archetypes from that team and era, each with ratings for offense, defense, shooting and more. Choose exactly one." },
-        { "title": "Build a 5-Player Lineup", "desc": "Repeat for five rounds. Watch your positions — the simulator rewards lineups with a point guard, a center, and good positional coverage." },
-        { "title": "Get Your Simulated Record", "desc": "The game scores your roster on talent, balance, and star power, then simulates a full 82-game season. Anything from 0-82 to a perfect 82-0 is possible." },
-        { "title": "Share Your Result", "desc": "Copy your record or share it on X and challenge your friends to beat it. Then run it back — every game is different." }
+        { "title": "Spin the Slot Machine", "desc": "Each round draws a random franchise and decade — like Chicago 1990s or Boston 1960s. Don't like it? You have one team skip and one era skip per game." },
+        { "title": "Pick One Player", "desc": "Browse the real roster from that team and era, with historical PPG, RPG, APG, SPG and BPG. In HoopIQ mode the stats are hidden — draft from memory." },
+        { "title": "Place Him on the Court", "desc": "Every pick must fill an open position the player actually played — PG, SG, SF, PF, or C. Each spot can only be used once." },
+        { "title": "Get Your Projected Record", "desc": "The engine aggregates your era-adjusted stats and runs them through a non-linear win curve. One weak category can cap your ceiling — balance wins seasons." },
+        { "title": "Share Your Result", "desc": "Copy your record or share it on X and challenge your friends to beat it. Then run it back — every spin is different." }
       ],
       "sections": [
         {
           "h2": "Strategy: How to Actually Go 82-0",
           "paragraphs": [
-            "Going undefeated requires near-perfect picks in all five rounds. Target the highest overall ratings, but never ignore position: a lineup missing a center or a point guard takes a scoring penalty that almost always costs you the perfect season. Defense is weighted as heavily as offense, so two-way stars beat pure scorers. And use your rerolls aggressively in the early rounds — a weak first pick is a hole you cannot dig out of later.",
-            "Even a 98+ rated roster only has a chance at 82-0, not a guarantee. That is intentional. The perfect season should feel like history being made."
+            "Going undefeated requires maximizing all five statistical categories at once. Target the biggest era-adjusted producers, but never ignore the gates: a lineup with no shot-blocking or no playmaking caps its ceiling no matter how much it scores. Positions add a second layer — a superstar you cannot place is a superstar you cannot draft, so watch which court slots remain open before you commit a pick.",
+            "Use your skips aggressively in the early rounds — a thin roster in round one is a hole you cannot dig out of later. And remember the curve is non-linear: even a 95-point roster only has a chance at 82-0, never a guarantee. The perfect season should feel like history being made."
           ]
         },
         {
           "h2": "82-0 Challenge Rules at a Glance",
           "paragraphs": [
-            "One pick per round, five rounds total. Three rerolls per game, which re-randomize the current round's team, era, and candidates. Picks are final once made. The simulated record is based on your lineup's combined ratings and positional balance, with a small random variance so every season feels alive. There are no accounts, no downloads, and no cost — just open the page and play."
+            "Five rounds, one pick per round. The slot machine assigns a random team and decade each round; decades can repeat. One team skip and one era skip per game. Every pick must fill an open court position the player actually played. The projected record comes from your lineup's aggregate era-adjusted stats run through a non-linear win curve, with category gates that punish one-dimensional rosters. Two modes: Classic shows full stats, HoopIQ hides them. No accounts, no downloads, no cost — just open the page and play."
           ]
         }
       ]
     },
     "teamBuilder": {
       "title": "82-0 Team Builder",
-      "description": "Build your dream basketball lineup with the 82-0 team builder. Five rounds, random teams and eras, simulated season record. Can you go undefeated?",
+      "description": "Build your all-time basketball lineup with the 82-0 team builder. Slot machine draws, real legends from seven decades, simulated season record. Can you go undefeated?",
       "h1": "82-0 Team Builder",
       "intro": "Draft your five. Chase the perfect season. The team builder is right below — good luck.",
       "sections": [
         {
           "h2": "About the 82-0 Team Builder",
           "paragraphs": [
-            "This team builder is the heart of the 82-0 challenge. Every run draws five random team and era combinations from basketball's most iconic dynasties — 1980s Boston, 1990s Chicago, 2000s Los Angeles, 2010s Golden State, 2020s Denver, and more. Each combination offers a set of fictional player archetypes rated across six skills, and the lineup you draft gets simulated through a full 82-game season.",
-            "Because the draws are random, no two runs are alike. One game you are choosing between legends; the next you are squeezing wins out of role players. The team builder rewards smart drafting: positional balance, two-way play, and knowing when to burn a reroll. Build, simulate, share, repeat — and see how close you can get to the impossible 82-0."
+            "This team builder is the heart of the 82-0 challenge. Every run spins up five random franchise-and-decade combinations spanning seven decades of basketball history — from the 1960s Celtics dynasty to the 2020s champions. Each draw offers the real players from that team and era, carrying their historical per-game stats across five categories, and the lineup you draft is simulated through a full 82-game season.",
+            "Because the draws are random, no two runs are alike. One game you are choosing between legends; the next you are squeezing wins out of role players with no skips left. The team builder rewards smart drafting: era awareness, category balance, position management, and knowing exactly when to burn a skip. Build, simulate, share, repeat — and see how close you can get to the impossible 82-0."
           ]
         },
         {
           "h2": "What Makes a Winning Lineup?",
           "paragraphs": [
-            "The simulator weighs overall talent most, followed by offense and defense equally, then shooting, playmaking, rebounding, and star power. Balance bonuses are real: fielding both a point guard and a center, and covering at least four positions, can swing several wins. Position-stacking penalties are real too — three players at the same spot will quietly cost you the perfect season. Draft like a general manager, not a fan."
+            "The engine aggregates five categories — points, rebounds, assists, steals, and blocks — after adjusting every stat line for its era's pace and scoring environment. The win curve is non-linear, so each additional win costs more roster strength than the last, and every category is gated: one glaring hole caps your projected record no matter how strong the rest of the roster is. Draft like a general manager, not a fan."
           ]
         }
       ]
@@ -222,7 +239,7 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "contact": "Contact",
-    "disclaimer": "This is an independent fan-made style team builder game. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league. All player archetypes on this site are fictional. No official logos, player names, or photographs are used.",
+    "disclaimer": "82-0 Challenge is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league or team. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only. No official logos, trademarks, or photographs are used.",
     "copyright": "© 2026 82-0 Challenge"
   }
 }

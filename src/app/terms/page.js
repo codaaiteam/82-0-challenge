@@ -25,16 +25,17 @@ export default function TermsOfUse() {
         <h2>2. Description of Service</h2>
         <p>
           The Site provides a free browser-based fantasy team builder game. Players draft a
-          five-player lineup from generic, fictional basketball player archetypes and receive
-          a simulated season record. The game is for entertainment purposes only.
+          five-player lineup of historical basketball players and receive a simulated season
+          record based on aggregate statistics. The game is for entertainment purposes only.
         </p>
 
         <h2>3. Not Affiliated with the NBA</h2>
         <p>
-          82-0 Challenge is an independent fan-made style team builder game. It is not affiliated
-          with, endorsed by, or sponsored by the NBA or any professional basketball league or team.
-          No official logos, trademarks, player names, or photographs are used. All player archetypes
-          on this Site are fictional.
+          82-0 Challenge is an independent fan-made project. It is not affiliated with, endorsed
+          by, or sponsored by the NBA or any professional basketball league or team. Player names
+          and historical statistics are publicly available facts used for informational and
+          entertainment purposes only. No official logos, trademarks, or photographs are used.
+          Simulated records are randomly generated for fun and have no predictive value.
         </p>
 
         <h2>4. Acceptable Use</h2>
@@ -47,7 +48,7 @@ export default function TermsOfUse() {
 
         <h2>5. Intellectual Property</h2>
         <p>
-          The Site&apos;s original design, code, fictional player data, and content are owned by us.
+          The Site&apos;s original design, code, and content are owned by us.
           You may share your game results freely.
         </p>
 

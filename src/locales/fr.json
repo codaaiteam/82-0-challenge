@@ -1,56 +1,72 @@
 {
   "layout": { "language": "fr" },
-  "seoTitle": "Défi 82-0 : le jeu viral de composition d'équipe à essayer",
-  "seoDescription": "Lancez-vous dans le défi 82-0, le jeu de composition d'équipe. Choisissez des joueurs parmi des franchises et des époques tirées au hasard, montez un cinq parfait et découvrez si votre équipe peut rester invaincue.",
-  "keywords": "82-0, défi 82-0, jeu défi 82-0, jeu 82-0, composition d'équipe 82-0, comment jouer au 82-0, règles du défi 82-0, jeu viral de basket",
+  "seoTitle": "Défi 82-0 : jouez au jeu viral de composition d'équipe",
+  "seoDescription": "Jouez au défi 82-0 viral. Lancez la machine à sous, draftez des légendes du basket issues d'équipes et d'époques aléatoires, et voyez si votre cinq peut rester invaincu.",
+  "keywords": "82-0, défi 82-0, jeu défi 82-0, jeu 82-0, créateur d'équipe 82-0, comment jouer au 82-0, règles du défi 82-0, créateur d'équipe de basket viral",
 
   "header": {
-    "siteName": "82-0 Challenge",
+    "siteName": "Défi 82-0",
     "home": "Accueil",
     "whatIs": "C'est quoi le 82-0 ?",
     "howToPlay": "Comment jouer",
-    "teamBuilder": "Composer son équipe"
+    "teamBuilder": "Créateur d'équipe"
   },
 
   "hero": {
-    "title": "82-0 Challenge",
-    "subtitle": "Saurez-vous bâtir une équipe qui finit 82-0 ? Choisissez un joueur dans chaque franchise et chaque époque tirées au sort. Composez votre cinq et découvrez votre bilan final.",
+    "title": "Défi 82-0",
+    "subtitle": "Saurez-vous bâtir une équipe qui finit 82-0 ? Lancez la machine à sous, draftez une légende par tour depuis une équipe et une époque aléatoires, et regardez la simulation projeter votre saison.",
     "cta": "Lancer le défi"
   },
 
   "game": {
-    "roundOf": "Manche {round} sur {total}",
-    "rerollButton": "Retirer franchise et époque",
-    "pickPrompt": "Choisissez un joueur de cette franchise et de cette époque pour l'ajouter à votre cinq.",
-    "select": "Choisir",
-    "off": "ATT",
-    "def": "DÉF",
-    "sht": "3PT",
-    "yourLineup": "Votre cinq majeur",
-    "resultRecord": "Votre bilan final",
-    "teamRating": "Note de l'équipe",
+    "chooseMode": "Choisissez votre mode",
+    "chooseModeSub": "Comment voulez-vous bâtir votre équipe de tous les temps ?",
+    "modeClassic": "Classique",
+    "modeClassicDesc": "Toutes les statistiques des joueurs sont visibles — faites des choix éclairés à partir des chiffres.",
+    "modeHoopiq": "HoopIQ",
+    "modeHoopiqDesc": "Les stats sont masquées — draftez de mémoire et testez vos connaissances du basket.",
+    "playClassic": "Jouer en Classique",
+    "playHoopiq": "Jouer en HoopIQ",
+    "roundOf": "Tour {round} sur {total}",
+    "team": "Équipe",
+    "era": "Époque",
+    "spin": "Lancer",
+    "spinning": "Ça tourne…",
+    "spinHint": "Appuyez sur LANCER pour tirer une équipe et une époque au hasard, puis choisissez votre joueur.",
+    "rerollTeam": "Passer l'équipe",
+    "rerollEra": "Passer l'époque",
+    "filterAll": "Tous",
+    "playersAvailable": "{count} joueurs",
+    "placing": "Placement : {name} — touchez une position lumineuse sur le terrain",
+    "ppg": "PPG",
+    "rpg": "RPG",
+    "apg": "APG",
+    "spg": "SPG",
+    "bpg": "BPG",
+    "projectedRecord": "Bilan projeté",
+    "pts": "pts",
     "bestPick": "Meilleur choix",
     "weakness": "Point faible",
     "playAgain": "Rejouer",
     "copyResult": "Copier le résultat",
     "copied": "Copié !",
     "shareOnX": "Partager sur X",
-    "shareText": "J'ai terminé {record} au défi 82-0. Tu peux faire mieux que mon équipe ?",
+    "switchMode": "Changer de mode",
+    "shareText": "J'ai fini {record} au défi 82-0. Saurez-vous battre mon équipe ?",
     "titles": {
       "perfect": "Saison parfaite",
       "almost": "Presque invaincu",
-      "favorite": "Grand favori au titre",
-      "contender": "Prétendant au titre",
+      "favorite": "Favori au titre",
+      "contender": "Prétendant",
       "playoff": "Équipe de playoffs"
     },
     "weaknesses": {
-      "noCenter": "Aucun vrai pivot",
-      "noPG": "Aucun vrai meneur",
-      "weakDefense": "La défense risque de craquer",
-      "weakShooting": "Pas assez d'adresse extérieure",
-      "weakPlaymaking": "Qui orchestre le jeu ?",
-      "weakRebounding": "Faible au rebond",
-      "none": "Aucun — effectif équilibré"
+      "weakScoring": "Pas assez de puissance offensive",
+      "weakRebounding": "Trop tendre au rebond",
+      "weakPlaymaking": "Qui dirige l'attaque ?",
+      "weakSteals": "La défense périmétrique fuit",
+      "weakBlocks": "Aucune protection du cercle",
+      "none": "Aucun — effectif complet"
     }
   },
 
@@ -59,49 +75,50 @@
       {
         "h2": "C'est quoi le défi 82-0 ?",
         "paragraphs": [
-          "Le défi 82-0 est un jeu viral de composition d'équipe de basket construit autour d'une seule question toute simple : saurez-vous assembler un cinq majeur assez dominant pour remporter chacun des matchs d'une saison de 82 rencontres ? Un bilan de 82-0 ne s'est jamais produit dans l'histoire du basket professionnel — la meilleure saison régulière jamais enregistrée s'arrête à 73 victoires — et c'est précisément ce qui rend le défi 82-0 aussi addictif. Vous courez après un exploit que personne n'a jamais réalisé.",
-          "Le jeu du défi 82-0 a explosé sur les réseaux sociaux pendant que les fans débattaient pour savoir quelle combinaison de joueurs venus de franchises et d'époques différentes pourrait rester invaincue. Cinq légendes de décennies différentes pourraient-elles vraiment tout gagner ? Une équipe de purs scoreurs s'effondrerait-elle en défense ? Ce site transforme ce débat en un véritable jeu 82-0 que vous bouclez en moins d'une minute."
+          "Le défi 82-0 est un jeu viral de composition d'équipe de basket bâti autour d'une question toute simple : pouvez-vous assembler un cinq majeur si dominateur qu'il remporterait chaque match d'une saison de 82 rencontres ? Un bilan de 82-0 ne s'est jamais produit dans l'histoire du basket professionnel — la meilleure saison régulière jamais enregistrée fut de 73 victoires — et c'est précisément ce qui rend le défi 82-0 si addictif. Vous courez après quelque chose qui n'a jamais été accompli.",
+          "Le jeu du défi 82-0 a explosé sur les réseaux sociaux quand les fans se sont mis à débattre de quelle combinaison de joueurs issus d'équipes et d'époques différentes pourrait réellement rester invaincue. Cinq légendes de cinq décennies différentes pourraient-elles vraiment tout gagner ? Une équipe de purs scoreurs s'effondrerait-elle en défense ? Ce site transforme ce débat en un jeu 82-0 jouable que vous pouvez terminer en moins de deux minutes."
         ]
       },
       {
         "h2": "Comment fonctionne le défi 82-0",
         "paragraphs": [
-          "Notre outil de composition 82-0 vous propose cinq manches. À chaque manche, le jeu tire au sort une franchise et une époque — par exemple Chicago dans les années 1990, ou Golden State dans les années 2010 — et vous présente une poignée d'archétypes de joueurs issus de cette combinaison. Vous choisissez exactement un joueur par manche. Au bout de cinq manches, votre cinq est verrouillé, et le jeu simule une saison complète de 82 matchs en fonction du talent global de votre effectif, de son attaque, de sa défense, de son adresse, de sa création de jeu, de son rebond, de son star power et de son équilibre aux postes.",
-          "Vous disposez aussi de trois retirages par partie. Si la franchise et l'époque que le jeu vous propose ne vous plaisent pas, brûlez un retirage et relancez — mais utilisez-les avec discernement, car une mauvaise dernière manche sans retirage en réserve peut couler un cinq par ailleurs parfait."
+          "Chacun des cinq tours commence par une machine à sous. Elle tire une franchise aléatoire et une décennie aléatoire — Chicago dans les années 1990, Boston dans les années 1960, Denver dans les années 2020 — et vous montre les vrais joueurs de cette équipe et de cette époque avec leurs statistiques historiques : points, rebonds, passes décisives, interceptions et contres par match. Vous choisissez un joueur, puis vous le placez à l'une des cinq positions du terrain qu'il occupait réellement. Chaque position ne peut être occupée qu'une seule fois, donc un effectif de cinq meneurs est impossible par conception.",
+          "Vous disposez d'un saut d'équipe et d'un saut d'époque par partie. Utilisez-les avec sagesse — gaspillez-les tôt sur un mauvais tirage et vous serez coincé avec ce que la machine à sous vous donne dans les derniers tours. Après cinq choix, le moteur de simulation projette votre cinq sur une saison complète de 82 matchs."
         ]
       },
       {
-        "h2": "Pourquoi le 82-0 est aussi difficile",
+        "h2": "Pourquoi le 82-0 est si difficile",
         "paragraphs": [
-          "Même un cinq de cinq superstars finit rarement 82-0 dans ce jeu, et c'est voulu. La simulation récompense l'équilibre, pas seulement le talent brut. Une équipe sans meneur peine à orchestrer son attaque. Une équipe sans pivot se fait dominer au rebond. Empilez trois arrières et les calculs d'espacement ne tiennent plus. Comme dans le vrai basket, la saison parfaite exige l'effectif parfait — du talent d'élite à chaque poste, couvrant chaque compétence.",
-          "En plus de cela, la simulation ajoute une part de hasard à chaque saison. Une dream team notée 99 peut quand même lâcher un match ou deux, parce que c'est justement ce qui rend une saison invaincue légendaire. Le jour où vous atteignez enfin le 82-0, vous l'aurez mérité."
+          "Le moteur de simulation additionne les cinq catégories statistiques de votre cinq — scoring, rebond, création de jeu, interceptions et contres — et fait passer le total dans une courbe de victoires non linéaire. La relation entre les stats et les victoires n'est pas linéaire : plus votre équipe devient forte, plus chaque victoire supplémentaire devient difficile à décrocher. Passer de 70 à 75 victoires demande bien plus de force d'effectif que passer de 55 à 60.",
+          "En plus de la courbe, chaque catégorie est verrouillée. Une carence dans ne serait-ce qu'un seul domaine — aucune protection du cercle, aucune création de jeu — plafonne votre potentiel et tue la saison parfaite, peu importe la hauteur de votre total au scoring. Et chaque décennie a son propre environnement statistique : 30 points par match dans les années 1960 au rythme effréné ne valent pas la même chose que 30 dans les années 2020, et le moteur ajuste chaque ligne de stats selon l'époque."
         ]
       },
       {
-        "h2": "Les règles du défi 82-0",
+        "h2": "Règles du défi 82-0",
         "paragraphs": [
-          "Les règles du défi 82-0 sont simples. Un : chaque manche vous donne une combinaison de franchise et d'époque tirée au hasard. Deux : vous devez choisir exactement un joueur parmi les candidats proposés. Trois : vous avez trois retirages par partie pour écarter une franchise et une époque qui ne vous conviennent pas. Quatre : après cinq choix, votre cinq est définitif et votre saison est simulée. Cinq : votre résultat est un bilan de saison compris entre 0-82 et 82-0, accompagné d'une note d'équipe, de votre meilleur choix et du plus gros point faible de votre effectif. Partagez-le et mettez vos amis au défi de faire mieux."
+          "Les règles du défi 82-0 sont simples. Un : à chaque tour, la machine à sous attribue une équipe et une décennie aléatoires. Deux : choisissez exactement un joueur de cet effectif. Trois : placez-le à une position libre du terrain qu'il occupait réellement — PG, SG, SF, PF ou C. Quatre : vous avez un saut d'équipe et un saut d'époque pour toute la partie. Cinq : après cinq choix, le moteur simule votre saison et projette un bilan final compris entre 0-82 et 82-0, avec une note alphabétique, votre meilleur choix et le plus gros point faible de votre effectif. Partagez-le et défiez vos amis de faire mieux."
         ]
       },
       {
-        "h2": "Astuces pour bâtir une meilleure équipe",
+        "h2": "Conseils pour bâtir une meilleure équipe",
         "paragraphs": [
-          "Couvrez les postes. La simulation accorde de vrais bonus si vous alignez un meneur et un pivot, et si vous couvrez au moins quatre des cinq postes. Un cinq composé de cinq ailiers peut sembler amusant, mais il perd des victoires en chemin.",
-          "Privilégiez les joueurs des deux côtés du terrain. L'attaque fait les highlights, mais c'est la défense qui remporte les titres simulés — la défense pèse autant que l'attaque dans la note finale. Une star équilibrée notée 95 aide souvent plus qu'un scoreur unidimensionnel noté 97.",
-          "Dépensez vos retirages tôt, pas tard. Si la première manche vous file une franchise et une époque faibles, retirez immédiatement. Garder vos trois retirages jusqu'à la cinquième manche revient le plus souvent à les gaspiller.",
-          "Courez après le star power en dernier. Le star power compte, mais c'est le plus petit facteur de la formule. La note globale, l'attaque et la défense décident de la plupart de vos victoires."
+          "Maximisez vos totaux dans les cinq catégories. Le moteur n'inflige aucune pénalité de synergie — il récompense la production brute, ajustée à l'époque. Mais souvenez-vous des verrous : un cinq sans aucun contre ou sans aucune création de jeu plafonne votre potentiel, peu importe combien il marque.",
+          "Pensez à vos positions. Chaque choix doit correspondre à une place libre du terrain que le joueur occupait réellement. Drafter un ailier tôt en ailier petit format peut vous priver d'un meilleur ailier plus tard — gardez vos places restantes en tête avant de vous engager.",
+          "Connaissez vos époques. Un scoreur à 25 points des années 2000 bat souvent un scoreur à 30 points des années 1960 après ajustement à l'époque. Les chiffres gonflés par le rythme des décennies anciennes sont discrètement dégonflés par le moteur.",
+          "Dépensez vos sauts tôt, pas tard. Si le premier tour vous donne un effectif maigre, sautez immédiatement. Garder les deux sauts pour le cinquième tour revient généralement à les gaspiller.",
+          "Vous voulez un vrai test ? Jouez en mode HoopIQ — les stats sont masquées et vous draftez entièrement de mémoire. C'est le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
         ]
       },
       {
-        "h2": "Des alternatives au défi 82-0",
+        "h2": "Alternatives au défi 82-0",
         "paragraphs": [
-          "Si vous aimez le défi 82-0, vous apprécierez sûrement d'autres jeux sportifs façon draft : les compositions d'équipe, les débats sur les époques, les brackets du GOAT et les drafts fantasy grattent tous la même envie. Mais le format 82-0 se démarque parce qu'il vous donne une réponse concrète et simulée plutôt qu'une dispute sans fin. Votre équipe reste invaincue ou non — et il y a toujours une partie de plus à lancer."
+          "Si vous aimez le défi 82-0, vous apprécierez probablement d'autres jeux sportifs de style draft : créateurs de cinq, débats d'époques, brackets de GOAT et drafts fantasy grattent tous la même démangeaison. Mais le format 82-0 se démarque parce qu'il vous donne une réponse concrète et simulée au lieu d'une dispute sans fin. Votre équipe reste invaincue ou non — et il y a toujours une nouvelle partie."
         ]
       },
       {
-        "h2": "Composez votre propre escouade de personnages IA",
+        "h2": "Créez votre propre escouade de personnages IA",
         "paragraphs": [
-          "Envie de bâtir bien plus qu'une équipe de basket ? Avec AI Character Squad Builder, vous pouvez recruter une escouade de héros fantasy, de personnages d'anime ou de créations totalement originales, générer une histoire à leur sujet et même la transformer en livre illustré. Si vous adorez composer des équipes, c'est la suite logique."
+          "Vous voulez bâtir plus qu'une équipe de basket ? Avec AI Character Squad Builder, vous pouvez drafter une escouade de héros de fantasy, de personnages d'anime ou de créations entièrement originales, générer une histoire à leur sujet et même la transformer en livre illustré. Si vous adorez la composition d'équipe, c'est la suite logique."
         ]
       }
     ]
@@ -110,99 +127,99 @@
   "faq": {
     "sectionTitle": "Questions fréquentes",
     "q1": "C'est quoi le défi 82-0 ?",
-    "a1": "Le défi 82-0 est un jeu viral de composition d'équipe de basket dans lequel vous draftez un cinq de cinq joueurs parmi des franchises et des époques tirées au hasard, en essayant de monter un effectif assez fort pour rester invaincu sur toute une saison de 82 matchs.",
+    "a1": "Le défi 82-0 est un jeu viral de composition d'équipe de basket où vous draftez un cinq de vraies légendes issues d'équipes et d'époques aléatoires, et un moteur de simulation projette si votre effectif pourrait rester invaincu sur toute une saison de 82 matchs.",
     "q2": "Comment joue-t-on au défi 82-0 ?",
-    "a2": "À chaque manche, le jeu vous propose une franchise et une époque tirées au hasard. Choisissez un joueur parmi les candidats affichés. Après cinq manches, votre cinq est simulé sur une saison complète et vous obtenez un bilan final. Vous avez trois retirages par partie pour écarter les combinaisons de franchise et d'époque qui ne vous plaisent pas.",
-    "q3": "Que veut dire 82-0 ?",
-    "a3": "Une saison régulière de basket professionnel compte 82 matchs. Un bilan de 82-0 signifie gagner chacun de ces matchs — une saison parfaite et invaincue qui ne s'est jamais produite dans l'histoire de la ligue.",
+    "a2": "À chaque tour, une machine à sous attribue une équipe et une décennie aléatoires. Choisissez un joueur de cet effectif et placez-le à une position libre du terrain qu'il occupait réellement. Vous avez un saut d'équipe et un saut d'époque par partie. Après cinq choix, le moteur simule votre saison et projette votre bilan final.",
+    "q3": "Que signifie 82-0 ?",
+    "a3": "Une saison régulière de basket professionnel dure 82 matchs. Un bilan de 82-0 signifie gagner chaque match — une saison parfaite et invaincue qui ne s'est jamais produite dans l'histoire de la ligue.",
     "q4": "Une équipe peut-elle vraiment finir 82-0 ?",
-    "a4": "Cela ne s'est jamais produit dans la réalité. La meilleure saison régulière de l'histoire s'arrête à 73 victoires. Dans ce jeu, un cinq quasi parfait et parfaitement équilibré a une chance d'atteindre le 82-0 — mais c'est rare, et c'est voulu.",
+    "a4": "Cela ne s'est jamais produit dans la réalité. La meilleure saison régulière fut de 73 victoires. Dans ce jeu, un cinq qui maximise simultanément chaque catégorie statistique a une vraie chance d'atteindre 82-0 — mais c'est rare par conception.",
     "q5": "Est-ce un jeu officiel de la NBA ?",
-    "a5": "Non. C'est un jeu de composition d'équipe indépendant, à la manière des créations de fans. Il n'est ni affilié à la NBA ou à une quelconque ligue de basket professionnel, ni soutenu ou sponsorisé par elles. Tous les archétypes de joueurs sont fictifs.",
+    "a5": "Non. Il s'agit d'un jeu de composition d'équipe indépendant créé par des fans. Il n'est ni affilié à la NBA ou à une quelconque ligue de basket professionnel, ni approuvé ou sponsorisé par celles-ci. Les noms des joueurs et les statistiques historiques sont utilisés à des fins d'information et de divertissement uniquement.",
     "q6": "Comment le bilan final est-il calculé ?",
-    "a6": "Votre cinq est noté sur le talent global, l'attaque, la défense, l'adresse, la création de jeu, le rebond, le star power et l'équilibre aux postes. Cette note est convertie en bilan de saison, avec une petite part de hasard pour le suspense."
+    "a6": "Le moteur additionne les points, rebonds, passes décisives, interceptions et contres de votre cinq ajustés à l'époque, puis fait passer le total dans une courbe de projection de victoires non linéaire. Chaque catégorie est verrouillée — un point faible flagrant plafonne votre bilan, peu importe la solidité du reste de l'effectif."
   },
 
   "pages": {
     "whatIs": {
       "title": "82-0 : c'est quoi le jeu viral du défi 82-0 ?",
-      "description": "Que veut dire 82-0 ? Découvrez l'origine du défi 82-0 devenu viral, comment fonctionne le jeu, et lancez-vous dans la composition d'équipe 82-0 ici même.",
+      "description": "Que signifie 82-0 ? Découvrez d'où vient le défi 82-0 viral, comment fonctionne le créateur d'équipe à machine à sous, et jouez-y ici même.",
       "h1": "C'est quoi le 82-0 ?",
-      "intro": "Le 82-0, c'est la saison de basket parfaite qui ne s'est jamais produite — 82 victoires, zéro défaite. Voici tout ce qu'il faut savoir sur le défi 82-0 devenu viral, avec un outil de composition pour que vous puissiez l'essayer vous-même.",
+      "intro": "82-0, c'est la saison de basket parfaite qui ne s'est jamais produite — 82 victoires, zéro défaite. Voici tout ce qu'il faut savoir sur le défi 82-0 viral, et un créateur d'équipe pour l'essayer vous-même.",
       "sections": [
         {
-          "h2": "Que veut dire 82-0 ?",
+          "h2": "Que signifie 82-0 ?",
           "paragraphs": [
-            "Une saison régulière de basket professionnel compte 82 matchs. Finir 82-0, c'est les remporter tous sans exception — une saison parfaite. Aucune équipe de l'histoire de la ligue ne l'a jamais réalisé. Le plus près qu'on en soit arrivé, c'est 73 victoires, ce qui veut dire que même la plus grande équipe de tous les temps a quand même perdu neuf fois. Cet écart entre « la plus grande de l'histoire » et « la parfaite », c'est ce que représente le chiffre 82-0, et c'est pour cela que l'expression pèse autant dans les débats de basket.",
-            "Parce qu'une saison parfaite ne s'est jamais produite, le 82-0 est devenu le symbole d'un standard impossible. Quand les fans disent qu'un cinq « finirait 82-0 », ils veulent dire qu'il est tellement chargé qu'il transcende la concurrence ordinaire."
+            "Une saison régulière de basket professionnel dure 82 matchs. Finir 82-0 signifie les gagner tous — une saison parfaite. Aucune équipe dans l'histoire de la ligue ne l'a jamais fait. Le plus proche qu'on ait atteint, c'est 73 victoires, ce qui veut dire que même la plus grande équipe de tous les temps a quand même perdu neuf fois. Cet écart entre « la plus grande de tous les temps » et « la parfaite », c'est ce que représente le chiffre 82-0, et c'est pourquoi l'expression pèse autant dans les débats sur le basket.",
+            "Parce qu'une saison parfaite ne s'est jamais produite, le 82-0 est devenu le raccourci d'un standard impossible. Quand les fans disent qu'un cinq « finirait 82-0 », ils veulent dire qu'il est tellement chargé qu'il transcende la compétition normale."
           ]
         },
         {
           "h2": "C'est quoi le défi 82-0 ?",
           "paragraphs": [
-            "Le défi 82-0 est un jeu de composition d'équipe né de ce débat. Le principe : vous draftez un cinq de cinq joueurs, mais vous n'avez pas le choix libre — chaque sélection provient d'une franchise et d'une époque tirées au hasard. Chicago dans les années 1990. Boston dans les années 1980. Denver dans les années 2020. À chaque tirage, vous choisissez un joueur, et après cinq sélections, votre effectif fait face à la question : cette équipe finirait-elle 82-0 ?",
-            "Le format est devenu viral parce qu'il mêle à parts égales stratégie et chance. Parfois, les tirages au sort vous offrent une dream team. Parfois, vous êtes forcé de choisir entre un spécialiste défensif et un scoreur unidimensionnel, et votre saison parfaite meurt dès la troisième manche. Chaque partie est un nouveau débat."
+            "Le défi 82-0 est un jeu de composition d'équipe né de ce débat. Le principe : vous draftez un cinq de vraies légendes du basket, mais vous n'avez pas le choix libre — chaque pick provient d'une équipe et d'une décennie tirées au hasard. Chicago dans les années 1990. Boston dans les années 1960. Denver dans les années 2020. À chaque tirage, vous choisissez un joueur, vous le placez à une position du terrain qu'il occupait réellement, et après cinq choix, votre effectif affronte la question : cette équipe finirait-elle 82-0 ?",
+            "Le format est devenu viral parce qu'il mêle à parts égales stratégie et chance. Parfois la machine à sous vous tend une dynastie. Parfois vous devez choisir entre des role players au cinquième tour sans saut restant, et votre saison parfaite meurt sur-le-champ. Chaque partie est un nouveau débat."
           ]
         },
         {
           "h2": "Comment fonctionne le jeu 82-0 ici ?",
           "paragraphs": [
-            "Notre version du jeu du défi 82-0 tourne entièrement dans votre navigateur. Cinq manches, un choix par manche, trois retirages. Chaque joueur est un archétype fictif doté de notes en attaque, défense, adresse, création de jeu, rebond et star power. Une fois votre cinq complet, le simulateur note votre effectif — bonus d'équilibre aux postes compris — et le convertit en bilan de saison final compris entre 0-82 et 82-0. Vous pouvez jouer directement sur cette page, sans téléchargement ni inscription."
+            "Notre version du jeu du défi 82-0 tourne entièrement dans votre navigateur. Cinq tours, un choix par tour, un saut d'équipe et un saut d'époque. Chaque joueur porte sa vraie ligne de stats historique — points, rebonds, passes décisives, interceptions et contres par match — ajustée à l'époque par le moteur de simulation, car 30 points dans les années 1960, ce n'est pas 30 points dans les années 2020. Une fois votre cinq complet, le moteur fait passer vos totaux cumulés dans une courbe de victoires non linéaire et projette un bilan final compris entre 0-82 et 82-0. Aucun téléchargement, aucune inscription — et si vous voulez un vrai test, le mode HoopIQ masque les stats et vous oblige à drafter de mémoire."
           ]
         },
         {
           "h2": "Pourquoi le 82-0 devient-il viral ?",
           "paragraphs": [
-            "Les débats de basket se terminaient avant par un « on n'est pas d'accord, point ». Le format 82-0 leur donne un tableau d'affichage. Les joueurs partagent leur bilan final — 78-4, 80-2, le rarissime 82-0 parfait — et leurs amis cherchent aussitôt à faire mieux. C'est un jeu d'une minute à la rejouabilité infinie, bâti sur un débat que les fans entretiennent depuis des décennies : quels cinq joueurs, à travers toute l'histoire, forment l'équipe imbattable ?"
+            "Les débats sur le basket se terminaient autrefois par un « on n'est pas d'accord, point ». Le format 82-0 leur donne un tableau d'affichage. Les joueurs partagent leurs bilans projetés — 78-4, 80-2, le rare 82-0 parfait — et leurs amis tentent aussitôt de faire mieux. C'est un jeu de deux minutes à rejouabilité infinie, bâti sur un débat que les fans ont depuis des décennies : quels cinq joueurs, dans toute l'histoire, forment l'équipe imbattable ?"
           ]
         }
       ]
     },
     "howToPlay": {
       "title": "Comment jouer au défi 82-0",
-      "description": "Découvrez comment jouer au défi 82-0 en cinq étapes : recevez une franchise et une époque au hasard, choisissez vos joueurs, composez un cinq et obtenez votre bilan de saison simulé.",
+      "description": "Apprenez à jouer au défi 82-0 en cinq étapes : lancez la machine à sous, draftez de vraies légendes depuis des équipes et époques aléatoires, complétez les cinq positions et obtenez votre bilan de saison projeté.",
       "h1": "Comment jouer au défi 82-0",
-      "intro": "Cinq manches. Cinq choix. Une seule question : votre équipe peut-elle finir 82-0 ? Voici exactement comment le jeu fonctionne.",
+      "intro": "Cinq tours. Cinq choix. Une question : votre équipe peut-elle finir 82-0 ? Voici exactement comment le jeu fonctionne.",
       "steps": [
-        { "title": "Recevez une franchise et une époque au hasard", "desc": "Chaque manche tire une combinaison de franchise et de décennie — comme Chicago années 1990 ou Golden State années 2010. Ça ne vous plaît pas ? Vous avez 3 retirages par partie." },
-        { "title": "Choisissez un joueur", "desc": "Vous verrez jusqu'à cinq archétypes de joueurs issus de cette franchise et de cette époque, chacun noté en attaque, défense, adresse et plus encore. Choisissez-en exactement un." },
-        { "title": "Composez un cinq majeur", "desc": "Répétez l'opération sur cinq manches. Surveillez vos postes — le simulateur récompense les cinq qui alignent un meneur, un pivot et une bonne couverture des postes." },
-        { "title": "Obtenez votre bilan simulé", "desc": "Le jeu note votre effectif sur le talent, l'équilibre et le star power, puis simule une saison complète de 82 matchs. Tout est possible, du 0-82 au 82-0 parfait." },
-        { "title": "Partagez votre résultat", "desc": "Copiez votre bilan ou partagez-le sur X et mettez vos amis au défi de faire mieux. Puis relancez une partie — chaque manche est différente." }
+        { "title": "Lancez la machine à sous", "desc": "Chaque tour tire une franchise et une décennie aléatoires — comme Chicago années 1990 ou Boston années 1960. Vous n'aimez pas ? Vous avez un saut d'équipe et un saut d'époque par partie." },
+        { "title": "Choisissez un joueur", "desc": "Parcourez le vrai effectif de cette équipe et de cette époque, avec les PPG, RPG, APG, SPG et BPG historiques. En mode HoopIQ, les stats sont masquées — draftez de mémoire." },
+        { "title": "Placez-le sur le terrain", "desc": "Chaque choix doit occuper une position libre que le joueur occupait réellement — PG, SG, SF, PF ou C. Chaque place ne peut servir qu'une fois." },
+        { "title": "Obtenez votre bilan projeté", "desc": "Le moteur additionne vos stats ajustées à l'époque et les fait passer dans une courbe de victoires non linéaire. Une seule catégorie faible peut plafonner votre potentiel — l'équilibre gagne des saisons." },
+        { "title": "Partagez votre résultat", "desc": "Copiez votre bilan ou partagez-le sur X et défiez vos amis de faire mieux. Puis relancez — chaque tirage est différent." }
       ],
       "sections": [
         {
           "h2": "Stratégie : comment finir vraiment 82-0",
           "paragraphs": [
-            "Rester invaincu exige des choix quasi parfaits sur les cinq manches. Visez les meilleures notes globales, mais ne négligez jamais les postes : un cinq sans pivot ni meneur subit un malus de scoring qui coûte presque toujours la saison parfaite. La défense pèse autant que l'attaque, donc les stars des deux côtés du terrain battent les purs scoreurs. Et utilisez vos retirages de manière agressive dans les premières manches — un mauvais premier choix est un trou dont vous ne pourrez plus sortir ensuite.",
-            "Même un effectif noté 98 et plus n'a qu'une chance d'atteindre le 82-0, sans garantie. C'est intentionnel. La saison parfaite doit donner l'impression d'écrire l'histoire."
+            "Rester invaincu exige de maximiser les cinq catégories statistiques en même temps. Visez les plus gros producteurs ajustés à l'époque, mais n'ignorez jamais les verrous : un cinq sans contre ni création de jeu plafonne son potentiel, peu importe combien il marque. Les positions ajoutent une seconde couche — une superstar que vous ne pouvez pas placer est une superstar que vous ne pouvez pas drafter, alors surveillez les places encore libres sur le terrain avant d'engager un pick.",
+            "Utilisez vos sauts de manière agressive dans les premiers tours — un effectif maigre au premier tour est un trou dont vous ne pourrez plus sortir. Et souvenez-vous que la courbe est non linéaire : même un cinq à 95 points n'a qu'une chance d'atteindre 82-0, jamais une garantie. La saison parfaite doit donner l'impression d'écrire l'histoire."
           ]
         },
         {
           "h2": "Les règles du défi 82-0 en un coup d'œil",
           "paragraphs": [
-            "Un choix par manche, cinq manches au total. Trois retirages par partie, qui re-tirent au hasard la franchise, l'époque et les candidats de la manche en cours. Les choix sont définitifs une fois faits. Le bilan simulé repose sur les notes combinées de votre cinq et son équilibre aux postes, avec une petite variance aléatoire pour que chaque saison semble vivante. Aucun compte, aucun téléchargement, et c'est gratuit — il suffit d'ouvrir la page et de jouer."
+            "Cinq tours, un choix par tour. La machine à sous attribue une équipe et une décennie aléatoires à chaque tour ; les décennies peuvent se répéter. Un saut d'équipe et un saut d'époque par partie. Chaque choix doit occuper une position libre du terrain que le joueur occupait réellement. Le bilan projeté découle des stats cumulées de votre cinq, ajustées à l'époque et passées dans une courbe de victoires non linéaire, avec des verrous de catégorie qui punissent les effectifs unidimensionnels. Deux modes : Classique montre toutes les stats, HoopIQ les masque. Aucun compte, aucun téléchargement, aucun coût — il suffit d'ouvrir la page et de jouer."
           ]
         }
       ]
     },
     "teamBuilder": {
-      "title": "Composer son équipe 82-0",
-      "description": "Composez votre cinq de rêve avec l'outil 82-0. Cinq manches, des franchises et des époques au hasard, un bilan de saison simulé. Saurez-vous rester invaincu ?",
-      "h1": "Composer son équipe 82-0",
-      "intro": "Draftez vos cinq joueurs. Courez après la saison parfaite. L'outil de composition est juste en dessous — bonne chance.",
+      "title": "Créateur d'équipe 82-0",
+      "description": "Bâtissez votre cinq de basket de tous les temps avec le créateur d'équipe 82-0. Tirages à la machine à sous, vraies légendes de sept décennies, bilan de saison simulé. Saurez-vous rester invaincu ?",
+      "h1": "Créateur d'équipe 82-0",
+      "intro": "Draftez vos cinq. Courez après la saison parfaite. Le créateur d'équipe est juste en dessous — bonne chance.",
       "sections": [
         {
-          "h2": "À propos de l'outil de composition 82-0",
+          "h2": "À propos du créateur d'équipe 82-0",
           "paragraphs": [
-            "Cet outil de composition est le cœur du défi 82-0. Chaque partie tire cinq combinaisons de franchise et d'époque au hasard parmi les dynasties les plus emblématiques du basket — le Boston des années 1980, le Chicago des années 1990, le Los Angeles des années 2000, le Golden State des années 2010, le Denver des années 2020, et bien d'autres. Chaque combinaison propose un ensemble d'archétypes de joueurs fictifs notés sur six compétences, et le cinq que vous draftez est simulé sur une saison complète de 82 matchs.",
-            "Comme les tirages sont aléatoires, aucune partie ne ressemble à une autre. Une fois, vous choisissez entre des légendes ; la fois suivante, vous arrachez des victoires avec des role players. L'outil de composition récompense le drafting intelligent : l'équilibre aux postes, le jeu des deux côtés du terrain et le bon timing pour brûler un retirage. Composez, simulez, partagez, recommencez — et voyez à quel point vous pouvez vous approcher de l'impossible 82-0."
+            "Ce créateur d'équipe est le cœur du défi 82-0. Chaque partie génère cinq combinaisons aléatoires de franchise et de décennie couvrant sept décennies d'histoire du basket — de la dynastie des Celtics des années 1960 aux champions des années 2020. Chaque tirage propose les vrais joueurs de cette équipe et de cette époque, portant leurs statistiques historiques par match dans cinq catégories, et le cinq que vous draftez est simulé sur une saison complète de 82 matchs.",
+            "Parce que les tirages sont aléatoires, aucune partie ne ressemble à une autre. Une partie, vous choisissez entre des légendes ; la suivante, vous arrachez des victoires à des role players sans saut restant. Le créateur d'équipe récompense le drafting intelligent : conscience des époques, équilibre des catégories, gestion des positions, et savoir exactement quand griller un saut. Bâtissez, simulez, partagez, recommencez — et voyez à quel point vous pouvez vous approcher de l'impossible 82-0."
           ]
         },
         {
           "h2": "Qu'est-ce qui fait un cinq gagnant ?",
           "paragraphs": [
-            "Le simulateur pèse d'abord le talent global, puis l'attaque et la défense à égalité, ensuite l'adresse, la création de jeu, le rebond et le star power. Les bonus d'équilibre comptent vraiment : aligner à la fois un meneur et un pivot, et couvrir au moins quatre postes, peut faire basculer plusieurs victoires. Les malus de surcharge à un poste comptent tout autant — trois joueurs au même poste vous coûteront discrètement la saison parfaite. Draftez comme un manager général, pas comme un fan."
+            "Le moteur additionne cinq catégories — points, rebonds, passes décisives, interceptions et contres — après avoir ajusté chaque ligne de stats au rythme et à l'environnement offensif de son époque. La courbe de victoires est non linéaire, donc chaque victoire supplémentaire coûte plus de force d'effectif que la précédente, et chaque catégorie est verrouillée : un seul trou flagrant plafonne votre bilan projeté, peu importe la solidité du reste de l'effectif. Draftez comme un manager général, pas comme un fan."
           ]
         }
       ]
@@ -210,7 +227,7 @@
   },
 
   "cta": {
-    "title": "Bâtissez bien plus qu'une équipe de basket.",
+    "title": "Bâtissez plus qu'une équipe de basket.",
     "desc": "Créez une escouade de personnages IA, générez une histoire et transformez-la en livre illustré avec AI Character Squad Builder.",
     "button": "Essayer AI Character Squad Builder"
   },
@@ -222,7 +239,7 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
-    "disclaimer": "Ceci est un jeu de composition d'équipe indépendant, à la manière des créations de fans. Il n'est ni affilié à la NBA ou à une quelconque ligue de basket professionnel, ni soutenu ou sponsorisé par elles. Tous les archétypes de joueurs présents sur ce site sont fictifs. Aucun logo, nom de joueur ou photographie officiels ne sont utilisés.",
-    "copyright": "© 2026 82-0 Challenge"
+    "disclaimer": "Le Défi 82-0 est un projet indépendant créé par des fans. Il n'est ni affilié à la NBA ou à une quelconque ligue ou équipe de basket professionnel, ni approuvé ou sponsorisé par celles-ci. Les noms des joueurs et les statistiques historiques sont des faits accessibles au public, utilisés à des fins d'information et de divertissement uniquement. Aucun logo, marque ou photographie officiels ne sont utilisés.",
+    "copyright": "© 2026 Défi 82-0"
   }
 }
