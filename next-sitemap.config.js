@@ -6,6 +6,7 @@ const contentPages = [
   '/82-0',
   '/how-to-play',
   '/team-builder',
+  '/20-0',
 ];
 
 const staticPages = [

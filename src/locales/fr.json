@@ -203,6 +203,42 @@
         }
       ]
     },
+    "twentyZero": {
+      "title": "Défi 20-0 : c'est quoi le jeu viral de la saison NFL parfaite ?",
+      "description": "C'est quoi le défi 20-0 ? Découvrez comment fonctionne le créateur d'effectif NFL viral — des effectifs de 12 légendes, la simulation d'une saison de 20 matchs, et la quête d'un parcours parfait jusqu'au Super Bowl.",
+      "h1": "C'est quoi le défi 20-0 ?",
+      "intro": "Le 20-0 est le cousin NFL du défi de basket viral 82-0 : draftez un effectif de légendes du football américain et découvrez si elles pourraient gagner chaque match sur la route d'une saison parfaite jusqu'au Super Bowl.",
+      "playCta": "Jouer au défi de basket 82-0",
+      "sections": [
+        {
+          "h2": "Que signifie 20-0 au football américain ?",
+          "paragraphs": [
+            "Un champion NFL moderne dispute une saison régulière de 17 matchs plus trois matchs de playoffs sur la route du Super Bowl (avec un bye au premier tour). Gagnez-les tous et vous finissez 20-0 — une saison parfaite. Cela n'a pour ainsi dire jamais été réalisé dans le format moderne : les Miami Dolphins de 1972 ont fameusement fini 17-0 sous l'ancien calendrier, et les New England Patriots de 2007 ont échoué à une victoire au Super Bowl de la perfection, terminant 18-1. Cet écart entre « grand de tous les temps » et « littéralement parfait », c'est ce que représente le chiffre 20-0.",
+            "Tout comme le 82-0 au basket, le 20-0 est devenu le raccourci d'un standard impossible — un effectif si chargé qu'il ne perdrait pas un seul match de toute l'année."
+          ]
+        },
+        {
+          "h2": "C'est quoi le jeu du défi 20-0 ?",
+          "paragraphs": [
+            "Le défi 20-0 est un créateur d'effectif NFL viral de la même famille que le défi de basket 82-0. Le jeu tire des franchises NFL de tous les temps au hasard et vous draftez un effectif de 12 légendes, position par position — quarterback, postes offensifs, ligne et défense. Les viviers de joueurs puisent dans l'histoire statistique moderne, donc chaque choix porte de vrais chiffres de production plutôt que des impressions.",
+            "Une fois les douze places de l'effectif occupées, le moteur de simulation déroule une saison complète de 20 matchs : dix-sept matchs de saison régulière plus trois tours de playoffs. Un parcours parfait à 20-0 remporte le Super Bowl, et vous pouvez partager votre bilan final et défier vos amis de faire mieux. Il existe aussi un format de défi quotidien où tout le monde dans le monde obtient les mêmes tirages et une seule tentative."
+          ]
+        },
+        {
+          "h2": "20-0 contre 82-0 : même jeu, sport différent",
+          "paragraphs": [
+            "Les deux défis reposent sur la même idée centrale : des tirages d'équipes aléatoires, une draft bâtie sur de vraies stats historiques, et une simulation qui décide si votre cinq survit invaincu à toute une saison. Les différences viennent des sports eux-mêmes. Le 82-0 du basket demande cinq joueurs et récompense des catégories statistiques équilibrées sur une longue saison ; le 20-0 du football demande douze places d'effectif et se joue sur des matchs moins nombreux et plus décisifs — un seul mauvais dimanche simulé met fin à une saison parfaite.",
+            "Si vous êtes arrivé ici en chassant la tendance du 20-0, vous êtes dans la bonne famille de jeux. Notre site héberge la version basket : lancez la machine à sous, draftez cinq légendes issues de sept décennies d'histoire, et voyez si votre cinq peut faire ce qu'aucune vraie équipe n'a jamais accompli."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "C'est quoi le défi 20-0 ?", "a": "Le défi 20-0 est un jeu viral de création d'effectif NFL où vous draftez un effectif de 12 légendes du football américain issues d'équipes tirées au hasard, puis une simulation déroule une saison de 20 matchs — 17 matchs de saison régulière plus 3 tours de playoffs. Finir 20-0 signifie une saison parfaite couronnée par le Super Bowl." },
+        { "q": "Une équipe NFL a-t-elle déjà fini 20-0 ?", "a": "Non. Les Miami Dolphins de 1972 ont fini 17-0 sous le calendrier plus court de leur époque, et les New England Patriots de 2007 ont fini 18-1, perdant uniquement le Super Bowl. Une saison parfaite à 20-0 dans le format moderne ne s'est jamais produite." },
+        { "q": "Le 20-0 est-il lié au défi 82-0 ?", "a": "Oui — le 20-0 est la version NFL du défi de basket viral 82-0. Les deux utilisent des tirages d'équipes aléatoires, des drafts bâties sur de vraies stats historiques et une simulation de saison qui décide si votre effectif reste invaincu." },
+        { "q": "Puis-je jouer à un jeu de style 20-0 ici ?", "a": "Ce site héberge la version basket du format : le défi 82-0. Tirez des équipes et des époques aléatoires, draftez cinq légendes avec de vraies stats, et voyez si votre cinq peut terminer une saison simulée 82-0." }
+      ]
+    },
     "teamBuilder": {
       "title": "Créateur d'équipe 82-0",
       "description": "Bâtissez votre cinq de basket de tous les temps avec le créateur d'équipe 82-0. Tirages à la machine à sous, vraies légendes de sept décennies, bilan de saison simulé. Saurez-vous rester invaincu ?",
@@ -234,6 +270,7 @@
 
   "footer": {
     "pages": "Pages",
+    "twentyZero": "Défi 20-0 (NFL)",
     "more": "Plus",
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",

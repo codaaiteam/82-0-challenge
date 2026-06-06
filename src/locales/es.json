@@ -203,6 +203,42 @@
         }
       ]
     },
+    "twentyZero": {
+      "title": "Desafío 20-0: ¿qué es el viral juego de la temporada perfecta de la NFL?",
+      "description": "¿Qué es el desafío 20-0? Descubre cómo funciona el viral constructor de plantillas de la NFL: plantillas de 12 leyendas, una simulación de temporada de 20 partidos y la búsqueda de una temporada perfecta camino del Super Bowl.",
+      "h1": "¿Qué es el desafío 20-0?",
+      "intro": "El 20-0 es el primo en la NFL del viral desafío 82-0 de baloncesto: recluta una plantilla de leyendas del fútbol americano y descubre si podrían ganar todos los partidos camino de una temporada perfecta con el Super Bowl.",
+      "playCta": "Juega al desafío 82-0 de baloncesto",
+      "sections": [
+        {
+          "h2": "¿Qué significa 20-0 en el fútbol americano?",
+          "paragraphs": [
+            "Un campeón moderno de la NFL disputa una temporada regular de 17 partidos más tres partidos de playoffs camino del Super Bowl (con un descanso en la primera ronda). Gánalos todos y terminarás 20-0: una temporada perfecta. Prácticamente nunca se ha logrado en el formato moderno: los Miami Dolphins de 1972 terminaron célebremente 17-0 bajo el antiguo calendario, y los New England Patriots de 2007 se quedaron a una victoria del Super Bowl de la perfección, con un 18-1. Esa distancia entre 'uno de los mejores de la historia' y 'literalmente perfecto' es lo que representa el número 20-0.",
+            "Igual que el 82-0 en el baloncesto, el 20-0 se convirtió en sinónimo de un estándar imposible: una plantilla tan cargada de talento que no perdería ni un solo partido en todo el año."
+          ]
+        },
+        {
+          "h2": "¿Qué es el juego del desafío 20-0?",
+          "paragraphs": [
+            "El desafío 20-0 es un viral constructor de plantillas de la NFL de la misma familia que el desafío 82-0 de baloncesto. El juego genera franquicias históricas de la NFL al azar y tú reclutas una plantilla de 12 leyendas, posición a posición: quarterback, posiciones de ataque, línea y defensa. Los conjuntos de jugadores se basan en la historia estadística moderna, así que cada elección lleva cifras de producción reales en lugar de impresiones.",
+            "Una vez cubiertos los doce puestos de la plantilla, el motor de simulación juega una temporada completa de 20 partidos: diecisiete de temporada regular más tres rondas de playoffs. Una temporada perfecta de 20-0 gana el Super Bowl, y puedes compartir tu récord final y retar a tus amigos a superarlo. También existe un formato de desafío diario en el que todo el mundo recibe las mismas tiradas y un único intento."
+          ]
+        },
+        {
+          "h2": "20-0 frente a 82-0: el mismo juego, distinto deporte",
+          "paragraphs": [
+            "Ambos desafíos se basan en la misma idea central: tiradas de equipos al azar, un draft construido sobre estadísticas históricas reales y una simulación que decide si tu plantilla sobrevive invicta a toda una temporada. Las diferencias vienen de los propios deportes. El 82-0 del baloncesto pide cinco jugadores y premia el equilibrio entre categorías estadísticas a lo largo de una temporada larga; el 20-0 del fútbol americano pide doce puestos de plantilla y se juega la vida en menos partidos pero de mayor riesgo: un mal domingo simulado acaba con una temporada perfecta.",
+            "Si has llegado aquí siguiendo la tendencia del 20-0, estás en la familia de juegos correcta. Nuestra web alberga la versión de baloncesto: gira la máquina tragaperras, recluta cinco leyendas de siete décadas de historia y comprueba si tu quinteto puede hacer lo que ningún equipo real ha logrado jamás."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "¿Qué es el desafío 20-0?", "a": "El desafío 20-0 es un viral juego de construcción de plantillas de la NFL en el que reclutas una plantilla de 12 leyendas del fútbol americano de equipos sacados al azar, y luego una simulación juega una temporada de 20 partidos: 17 de temporada regular más 3 rondas de playoffs. Terminar 20-0 significa una temporada perfecta ganando el Super Bowl." },
+        { "q": "¿Algún equipo de la NFL ha terminado alguna vez 20-0?", "a": "No. Los Miami Dolphins de 1972 terminaron 17-0 bajo el calendario más corto de su época, y los New England Patriots de 2007 terminaron 18-1, perdiendo solo el Super Bowl. Una temporada perfecta de 20-0 en el formato moderno nunca ha sucedido." },
+        { "q": "¿El 20-0 está relacionado con el desafío 82-0?", "a": "Sí: el 20-0 es la versión de la NFL del viral desafío 82-0 de baloncesto. Ambos usan tiradas de equipos al azar, drafts construidos sobre estadísticas históricas reales y una simulación de temporada que decide si tu plantilla queda invicta." },
+        { "q": "¿Puedo jugar a un juego estilo 20-0 aquí?", "a": "Esta web alberga la versión de baloncesto del formato: el desafío 82-0. Gira equipos y épocas al azar, recluta cinco leyendas con estadísticas reales y comprueba si tu quinteto puede terminar una temporada simulada 82-0." }
+      ]
+    },
     "teamBuilder": {
       "title": "Constructor de equipos 82-0",
       "description": "Forma tu quinteto histórico de baloncesto con el constructor de equipos 82-0. Tiradas de máquina tragaperras, leyendas reales de siete décadas y récord de temporada simulado. ¿Puedes quedar invicto?",
@@ -234,6 +270,7 @@
 
   "footer": {
     "pages": "Páginas",
+    "twentyZero": "Desafío 20-0 (NFL)",
     "more": "Más",
     "legal": "Legal",
     "privacy": "Política de privacidad",

@@ -203,6 +203,42 @@
         }
       ]
     },
+    "twentyZero": {
+      "title": "20-0 Challenge: Was ist das virale NFL-Perfect-Season-Game?",
+      "description": "Was ist die 20-0 Challenge? Erfahre, wie der virale NFL-Roster-Builder funktioniert — 12-Mann-Roster aus Legenden, eine Simulation über eine 20-Spiele-Saison und die Jagd nach einer perfekten Super-Bowl-Saison.",
+      "h1": "Was ist die 20-0 Challenge?",
+      "intro": "20-0 ist der NFL-Verwandte der viralen 82-0 Basketball-Challenge: Drafte einen Roster aus Football-Legenden und finde heraus, ob sie jedes Spiel auf dem Weg zu einer perfekten Super-Bowl-Saison gewinnen könnten.",
+      "playCta": "Spiel die 82-0 Basketball-Challenge",
+      "sections": [
+        {
+          "h2": "Was bedeutet 20-0 im Football?",
+          "paragraphs": [
+            "Ein moderner NFL-Champion bestreitet eine Regular Season über 17 Spiele plus drei Playoff-Spiele auf dem Weg zum Super Bowl (mit einem Freilos in der ersten Runde). Gewinnst du sie alle, schließt du mit 20-0 ab — eine perfekte Saison. Im modernen Format ist das im Grunde noch nie gelungen: Die Miami Dolphins von 1972 schafften unter dem damaligen Spielplan die berühmten 17-0, und die New England Patriots von 2007 verpassten die Perfektion mit 18-1 um einen einzigen Super-Bowl-Sieg. Diese Lücke zwischen 'einer der Besten aller Zeiten' und 'wirklich perfekt' ist genau das, wofür die Zahl 20-0 steht.",
+            "Genau wie 82-0 im Basketball wurde 20-0 zum Kürzel für einen unmöglichen Maßstab — ein Roster, der so stark besetzt ist, dass er das ganze Jahr über kein einziges Spiel verlieren würde."
+          ]
+        },
+        {
+          "h2": "Was ist das 20-0 Challenge Game?",
+          "paragraphs": [
+            "Die 20-0 Challenge ist ein viraler NFL-Roster-Builder aus derselben Familie wie die 82-0 Basketball-Challenge. Das Spiel zieht zufällige NFL-Franchises aller Zeiten aus, und du draftest Position für Position einen 12-Mann-Roster aus Legenden — Quarterback, Skill-Positionen, Line und Defense. Die Spielerpools basieren auf der modernen statistischen Geschichte, sodass jeder Pick echte Produktionszahlen mitbringt statt bloßer Bauchgefühle.",
+            "Sobald alle zwölf Roster-Plätze besetzt sind, spielt die Simulations-Engine eine komplette 20-Spiele-Saison durch: siebzehn Regular-Season-Spiele plus drei Playoff-Runden. Ein perfekter 20-0-Durchlauf gewinnt den Super Bowl, und du kannst deine Endbilanz teilen und Freunde herausfordern, sie zu schlagen. Es gibt außerdem ein Daily-Challenge-Format, bei dem alle weltweit dieselben Spins und einen Versuch bekommen."
+          ]
+        },
+        {
+          "h2": "20-0 vs 82-0: Gleiches Spiel, anderer Sport",
+          "paragraphs": [
+            "Beide Challenges laufen auf derselben Grundidee: zufällige Team-Ziehungen, ein auf echten historischen Stats aufgebauter Draft und eine Simulation, die entscheidet, ob dein Lineup eine ganze Saison ungeschlagen übersteht. Die Unterschiede ergeben sich aus den Sportarten selbst. Das 82-0 im Basketball verlangt fünf Spieler und belohnt ausgewogene statistische Kategorien über eine lange Saison; das 20-0 im Football verlangt zwölf Roster-Plätze und lebt oder stirbt mit weniger, dafür höher dotierten Spielen — ein schlechter simulierter Sonntag beendet eine perfekte Saison.",
+            "Wenn du dem 20-0 Trend hierher gefolgt bist, bist du in der richtigen Familie von Spielen. Unsere Seite hostet die Basketball-Version: Dreh den Slot Machine, drafte fünf Legenden aus sieben Jahrzehnten Geschichte und finde heraus, ob dein Lineup schafft, was kein echtes Team je geschafft hat."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "Was ist die 20-0 Challenge?", "a": "Die 20-0 Challenge ist ein virales NFL-Roster-Builder-Game, bei dem du einen 12-Mann-Roster aus Football-Legenden aus zufällig gezogenen Teams draftest, woraufhin eine Simulation eine 20-Spiele-Saison durchspielt — 17 Regular-Season-Spiele plus 3 Playoff-Runden. 20-0 zu gehen bedeutet eine perfekte, Super-Bowl-gewinnende Saison." },
+        { "q": "Ist je ein NFL-Team 20-0 geworden?", "a": "Nein. Die Miami Dolphins von 1972 schlossen unter dem kürzeren Spielplan ihrer Zeit mit 17-0 ab, und die New England Patriots von 2007 gingen 18-1 und verloren nur den Super Bowl. Eine moderne 20-0 Perfect Season hat es nie gegeben." },
+        { "q": "Hat 20-0 mit der 82-0 Challenge zu tun?", "a": "Ja — 20-0 ist die NFL-Version der viralen 82-0 Basketball-Challenge. Beide nutzen zufällige Team-Ziehungen, auf echten historischen Stats aufgebaute Drafts und eine Saison-Simulation, die entscheidet, ob dein Roster ungeschlagen bleibt." },
+        { "q": "Kann ich hier ein Spiel im 20-0 Stil spielen?", "a": "Diese Seite hostet die Basketball-Version des Formats: die 82-0 Challenge. Zieh zufällige Teams und Epochen, drafte fünf Legenden mit echten Stats und finde heraus, ob dein Lineup eine simulierte Saison mit 82-0 abschließen kann." }
+      ]
+    },
     "teamBuilder": {
       "title": "82-0 Team Builder",
       "description": "Bau dein All-Time-Basketball-Lineup mit dem 82-0 Team Builder. Slot-Machine-Ziehungen, echte Legenden aus sieben Jahrzehnten, simulierte Saisonbilanz. Schaffst du es, ungeschlagen zu bleiben?",
@@ -234,6 +270,7 @@
 
   "footer": {
     "pages": "Seiten",
+    "twentyZero": "20-0 Challenge (NFL)",
     "more": "Mehr",
     "legal": "Rechtliches",
     "privacy": "Datenschutzerklärung",

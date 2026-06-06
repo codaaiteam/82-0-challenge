@@ -11,6 +11,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <Link href={`/${lang}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
           <Link href={`/${lang}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
           <Link href={`/${lang}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
+          <Link href={`/${lang}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
         </div>
 
         <div className={styles.footerSection}>
