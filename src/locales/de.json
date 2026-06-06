@@ -68,6 +68,16 @@
       "weakBlocks": "Kein Schutz am Korb",
       "none": "Keine — kompletter Kader"
     },
+    "poster": "Poster herunterladen",
+    "daily": {
+      "mode": "Daily Challenge",
+      "modeDesc": "Alle auf der Welt bekommen dieselben Spins. Ein Versuch pro Tag — mach ihn zählend.",
+      "play": "Daily spielen",
+      "badge": "Daily Challenge",
+      "noSkips": "Keine Skips — dieselben Spins für alle",
+      "comeback": "Du hast deinen heutigen Versuch verbraucht. Neue Challenge in etwa {hours}h (Mitternacht UTC).",
+      "shareText": "Daily 82-0 Challenge {date}: Ich habe {record} geschafft. Dieselben Spins, ein Versuch — schlägst du das?"
+    },
     "nfl": {
       "shareText": "Ich habe in der 20-0 Challenge eine {record} Bilanz geschafft. Schlägst du meinen Roster?",
       "weaknesses": {
@@ -213,6 +223,12 @@
         }
       ]
     },
+    "daily": {
+      "title": "82-0 Daily Challenge — Dieselben Spins, ein Versuch",
+      "description": "Spiele die heutige 82-0 Daily Challenge. Alle auf der Welt bekommen dieselben Team- und Epochen-Spins, mit einem Versuch pro Tag. Bau dein bestes Lineup und teile deine Bilanz.",
+      "h1": "82-0 Daily Challenge",
+      "intro": "Dieselben Spins für alle auf dem Planeten. Ein Versuch pro Tag. Bau dein bestes Lineup, hol dir deine Bilanz und fordere deine Freunde heraus, die heutige Ziehung zu schlagen."
+    },
     "twentyZero": {
       "title": "20-0 Challenge: Spiele das NFL-Perfect-Season-Game",
       "description": "Spiele die virale 20-0 Challenge. Dreh zufällige NFL-Teams und Epochen, drafte einen 9-Mann-Roster aus Football-Legenden und finde heraus, ob dein Team alle 20 Spiele bis zu einer perfekten Super-Bowl-Saison gewinnen kann.",
@@ -280,6 +296,7 @@
 
   "footer": {
     "pages": "Seiten",
+    "daily": "Daily Challenge",
     "twentyZero": "20-0 Challenge (NFL)",
     "more": "Mehr",
     "legal": "Rechtliches",

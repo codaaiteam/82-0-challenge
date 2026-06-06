@@ -5,7 +5,10 @@ import styles from './Game.module.css';
 import {
   POSITIONS, DECADES, ALL_TEAMS,
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
+  dailyCombos, comboIsDraftable,
 } from '@/lib/engine';
+import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
+import { downloadPoster } from '@/lib/poster';
 
 const TOTAL_ROUNDS = 5;
 const SITE_URL = 'https://www.82-0-challenge.com';
@@ -28,11 +31,11 @@ function initials(name) {
   return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 }
 
-export default function GameMain({ t }) {
+export default function GameMain({ t, initialMode = null }) {
   const g = t?.game || {};
 
-  // mode: null (select screen) | 'classic' | 'hoopiq'
-  const [mode, setMode] = useState(null);
+  // mode: null (select screen) | 'classic' | 'hoopiq' | 'daily'
+  const [mode, setMode] = useState(initialMode);
   // phase: 'spin' | 'spinning' | 'pick' | 'result'
   const [phase, setPhase] = useState('spin');
   const [round, setRound] = useState(1);
@@ -45,13 +48,34 @@ export default function GameMain({ t }) {
   const [eraSkips, setEraSkips] = useState(1);
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(false);
+  const [dailyDone, setDailyDone] = useState(false);
   const spinTimer = useRef(null);
+  const dailySeq = useRef(null);
 
   const lineup = Object.values(slots).filter(Boolean);
   const pickedIds = lineup.map(p => p.id);
   const openSlots = POSITIONS.filter(pos => !slots[pos]);
+  const isDaily = mode === 'daily';
+  const dailyStorageKey = `daily820:${dateKey()}`;
 
   useEffect(() => () => clearInterval(spinTimer.current), []);
+
+  // Daily mode: same seeded spins for everyone; one attempt per day.
+  useEffect(() => {
+    if (!isDaily) return;
+    dailySeq.current = dailyCombos(mulberry32(hashStr('82-0:' + dateKey())));
+    try {
+      const saved = localStorage.getItem(dailyStorageKey);
+      if (saved) {
+        const { slots: savedSlots, result: savedResult } = JSON.parse(saved);
+        setSlots(savedSlots);
+        setResult(savedResult);
+        setDailyDone(true);
+        setPhase('result');
+      }
+    } catch { /* corrupt storage — let them play */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isDaily]);
 
   // ---- slot machine ----
   const animateTo = useCallback((target) => {
@@ -76,6 +100,13 @@ export default function GameMain({ t }) {
   }, []);
 
   const handleSpin = () => {
+    if (isDaily && dailySeq.current) {
+      const next = dailySeq.current[lineup.length];
+      if (next && comboIsDraftable(next, pickedIds, openSlots)) {
+        animateTo(next);
+        return;
+      }
+    }
     animateTo(spinCombo(pickedIds, openSlots));
   };
 
@@ -111,8 +142,15 @@ export default function GameMain({ t }) {
     setSlots(newSlots);
     const newLineup = Object.values(newSlots).filter(Boolean);
     if (newLineup.length >= TOTAL_ROUNDS) {
-      setResult(simulateSeason(newLineup));
+      const res = simulateSeason(newLineup);
+      setResult(res);
       setPhase('result');
+      if (isDaily) {
+        setDailyDone(true);
+        try {
+          localStorage.setItem(dailyStorageKey, JSON.stringify({ slots: newSlots, result: res }));
+        } catch { /* storage full/blocked */ }
+      }
     } else {
       setRound(round + 1);
       setCombo(null);
@@ -140,8 +178,31 @@ export default function GameMain({ t }) {
 
   // ---- share ----
   const shareText = result
-    ? fmt(g.shareText, { record: `${result.wins}-${result.losses}` })
+    ? fmt(isDaily ? (g.daily?.shareText || g.shareText) : g.shareText, {
+        record: `${result.wins}-${result.losses}`,
+        date: dateKey(),
+      })
     : '';
+
+  const handlePoster = () => {
+    if (!result) return;
+    downloadPoster({
+      brand: '82-0 CHALLENGE',
+      record: `${result.wins}-${result.losses}`,
+      grade: result.grade,
+      title: g.titles?.[result.title] || '',
+      points: result.points,
+      lineup: POSITIONS.filter(p => slots[p]).map(p => ({
+        pos: p,
+        name: slots[p].name,
+        sub: `${slots[p].team} · ${slots[p].decade}`,
+      })),
+      url: 'www.82-0-challenge.com',
+      daily: isDaily ? `${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}` : null,
+    });
+  };
+
+  const hoursToNext = Math.ceil(msToNextUtcMidnight() / 3600000);
 
   const handleCopy = async () => {
     try {
@@ -175,6 +236,13 @@ export default function GameMain({ t }) {
                 {g.playHoopiq}
               </button>
             </div>
+            <div className={styles.modeCard}>
+              <div className={styles.modeName}>🗓️ {g.daily?.mode || 'Daily Challenge'}</div>
+              <p className={styles.modeDesc}>{g.daily?.modeDesc}</p>
+              <button className={styles.primaryBtn} onClick={() => setMode('daily')}>
+                {g.daily?.play || 'Play Daily'}
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -187,7 +255,7 @@ export default function GameMain({ t }) {
       <div className={styles.game}>
         <div className={styles.resultCard}>
           <div className={styles.modeBadge}>
-            {mode === 'classic' ? g.modeClassic : g.modeHoopiq}
+            {isDaily ? `🗓️ ${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}` : mode === 'classic' ? g.modeClassic : g.modeHoopiq}
           </div>
           <div className={styles.resultLabel}>{g.projectedRecord}</div>
           <div className={styles.resultRecord}>{result.wins}–{result.losses}</div>
@@ -230,8 +298,19 @@ export default function GameMain({ t }) {
             ))}
           </div>
 
+          {isDaily && dailyDone && (
+            <p className={styles.dailyComeback}>
+              {fmt(g.daily?.comeback, { hours: hoursToNext })}
+            </p>
+          )}
+
           <div className={styles.resultActions}>
-            <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
+            {!isDaily && (
+              <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
+            )}
+            <button className={isDaily ? styles.primaryBtn : styles.secondaryBtn} onClick={handlePoster}>
+              {g.poster || 'Download Poster'}
+            </button>
             <button className={styles.secondaryBtn} onClick={handleCopy}>
               {copied ? g.copied : g.copyResult}
             </button>
@@ -250,7 +329,7 @@ export default function GameMain({ t }) {
     <div className={styles.game}>
       <div className={styles.draftHeader}>
         <span className={styles.roundBadge}>{fmt(g.roundOf, { round, total: TOTAL_ROUNDS })}</span>
-        {phase === 'pick' && (
+        {phase === 'pick' && !isDaily && (
           <div className={styles.skips}>
             <button className={styles.skipBtn} onClick={handleTeamSkip} disabled={teamSkips <= 0}>
               🔁 {g.rerollTeam} ({teamSkips})
@@ -259,6 +338,9 @@ export default function GameMain({ t }) {
               🔁 {g.rerollEra} ({eraSkips})
             </button>
           </div>
+        )}
+        {phase !== 'result' && isDaily && (
+          <span className={styles.dailyTag}>🗓️ {g.daily?.badge || 'Daily Challenge'} · {g.daily?.noSkips}</span>
         )}
       </div>
 

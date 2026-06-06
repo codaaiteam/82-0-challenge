@@ -68,6 +68,16 @@
       "weakBlocks": "Sin protección del aro",
       "none": "Ninguna: plantilla completa"
     },
+    "poster": "Descargar póster",
+    "daily": {
+      "mode": "Desafío diario",
+      "modeDesc": "Todo el mundo recibe las mismas tiradas. Un intento por día: aprovéchalo.",
+      "play": "Jugar al diario",
+      "badge": "Desafío diario",
+      "noSkips": "Sin saltos: las mismas tiradas para todos",
+      "comeback": "Ya has usado el intento de hoy. Nuevo desafío en unas {hours}h (medianoche UTC).",
+      "shareText": "Desafío 82-0 diario {date}: terminé {record}. Las mismas tiradas, un intento, ¿puedes superarlo?"
+    },
     "nfl": {
       "shareText": "Terminé {record} en el desafío 20-0. ¿Puedes superar a mi plantilla?",
       "weaknesses": {
@@ -213,6 +223,12 @@
         }
       ]
     },
+    "daily": {
+      "title": "Desafío 82-0 diario: las mismas tiradas, un intento",
+      "description": "Juega al desafío 82-0 diario de hoy. Todo el mundo recibe las mismas tiradas de equipo y época, con un intento por día. Forma tu mejor quinteto y comparte tu récord.",
+      "h1": "Desafío 82-0 diario",
+      "intro": "Las mismas tiradas para todo el planeta. Un intento por día. Forma tu mejor quinteto, consigue tu récord y reta a tus amigos a superar la tirada de hoy."
+    },
     "twentyZero": {
       "title": "Desafío 20-0: juega al juego de la temporada perfecta de la NFL",
       "description": "Juega al viral desafío 20-0. Gira equipos y épocas de la NFL al azar, recluta una plantilla de 9 leyendas del fútbol americano y comprueba si tu equipo puede ganar los 20 partidos hasta una temporada perfecta con el Super Bowl.",
@@ -280,6 +296,7 @@
 
   "footer": {
     "pages": "Páginas",
+    "daily": "Desafío diario",
     "twentyZero": "Desafío 20-0 (NFL)",
     "more": "Más",
     "legal": "Legal",

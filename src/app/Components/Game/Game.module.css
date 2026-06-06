@@ -503,6 +503,19 @@
   border-radius: 10px;
 }
 
+/* ---- daily ---- */
+.dailyTag {
+  color: #9fb0d0;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.dailyComeback {
+  color: #9fb0d0;
+  font-size: 0.88rem;
+  margin: 0 0 1rem;
+}
+
 /* ---- result ---- */
 .resultCard {
   text-align: center;

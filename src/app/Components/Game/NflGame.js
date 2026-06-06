@@ -6,6 +6,7 @@ import {
   NFL_SLOTS, NFL_ERAS, NFL_TEAMS, slotAccepts,
   nflPlayersFor, nflSpinCombo, nflRerollTeam, nflRerollEra, nflSimulateSeason, nflRandomPick,
 } from '@/lib/nflEngine';
+import { downloadPoster } from '@/lib/poster';
 
 const SITE_URL = 'https://www.82-0-challenge.com';
 const SPIN_MS = 1400;
@@ -140,6 +141,24 @@ export default function NflGame({ t }) {
 
   const xShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL + '/en/20-0')}`;
 
+  const handlePoster = () => {
+    if (!result) return;
+    downloadPoster({
+      brand: '20-0 CHALLENGE',
+      record: `${result.wins}-${result.losses}`,
+      grade: result.grade,
+      title: n.titles?.[result.title] || g.titles?.[result.title] || '',
+      points: result.points,
+      lineup: NFL_SLOTS.map(s => ({
+        pos: s,
+        name: slots[s].name,
+        sub: `${slots[s].team} · ${slots[s].era}`,
+      })),
+      url: 'www.82-0-challenge.com/20-0',
+      daily: null,
+    });
+  };
+
   // ===== MODE SELECT =====
   if (!mode) {
     return (
@@ -215,6 +234,9 @@ export default function NflGame({ t }) {
 
           <div className={styles.resultActions}>
             <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
+            <button className={styles.secondaryBtn} onClick={handlePoster}>
+              {g.poster || 'Download Poster'}
+            </button>
             <button className={styles.secondaryBtn} onClick={handleCopy}>
               {copied ? g.copied : g.copyResult}
             </button>

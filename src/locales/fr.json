@@ -68,6 +68,16 @@
       "weakBlocks": "Aucune protection du cercle",
       "none": "Aucun — effectif complet"
     },
+    "poster": "Télécharger l'affiche",
+    "daily": {
+      "mode": "Défi quotidien",
+      "modeDesc": "Tout le monde dans le monde obtient les mêmes tirages. Une seule tentative par jour — faites-la compter.",
+      "play": "Jouer au défi quotidien",
+      "badge": "Défi quotidien",
+      "noSkips": "Aucun saut — les mêmes tirages pour tout le monde",
+      "comeback": "Vous avez utilisé votre tentative du jour. Nouveau défi dans environ {hours}h (minuit UTC).",
+      "shareText": "Défi quotidien 82-0 du {date} : j'ai fini {record}. Mêmes tirages, une seule tentative — saurez-vous faire mieux ?"
+    },
     "nfl": {
       "shareText": "J'ai fini {record} au défi 20-0. Saurez-vous battre mon effectif ?",
       "weaknesses": {
@@ -213,6 +223,12 @@
         }
       ]
     },
+    "daily": {
+      "title": "Défi quotidien 82-0 — mêmes tirages, une seule tentative",
+      "description": "Jouez au défi quotidien 82-0 du jour. Tout le monde dans le monde obtient les mêmes tirages d'équipe et d'époque, avec une seule tentative par jour. Bâtissez votre meilleur cinq et partagez votre bilan.",
+      "h1": "Défi quotidien 82-0",
+      "intro": "Les mêmes tirages pour tout le monde sur la planète. Une seule tentative par jour. Bâtissez votre meilleur cinq, obtenez votre bilan, et défiez vos amis de battre le tirage du jour."
+    },
     "twentyZero": {
       "title": "Défi 20-0 : jouez au jeu de la saison NFL parfaite",
       "description": "Jouez au défi 20-0 viral. Lancez des équipes et des époques NFL aléatoires, draftez un effectif de 9 légendes du football américain, et voyez si votre équipe peut gagner les 20 matchs jusqu'à une saison parfaite couronnée par le Super Bowl.",
@@ -280,6 +296,7 @@
 
   "footer": {
     "pages": "Pages",
+    "daily": "Défi quotidien",
     "twentyZero": "Défi 20-0 (NFL)",
     "more": "Plus",
     "legal": "Mentions légales",

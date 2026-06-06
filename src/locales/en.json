@@ -68,6 +68,16 @@
       "weakBlocks": "No rim protection",
       "none": "None — complete roster"
     },
+    "poster": "Download Poster",
+    "daily": {
+      "mode": "Daily Challenge",
+      "modeDesc": "Everyone in the world gets the same spins. One attempt per day — make it count.",
+      "play": "Play Daily",
+      "badge": "Daily Challenge",
+      "noSkips": "No skips — same spins for everyone",
+      "comeback": "You've used today's attempt. New challenge in about {hours}h (midnight UTC).",
+      "shareText": "Daily 82-0 Challenge {date}: I went {record}. Same spins, one attempt — can you beat it?"
+    },
     "nfl": {
       "shareText": "I went {record} in the 20-0 Challenge. Can you beat my roster?",
       "weaknesses": {
@@ -213,6 +223,12 @@
         }
       ]
     },
+    "daily": {
+      "title": "82-0 Daily Challenge — Same Spins, One Attempt",
+      "description": "Play today's 82-0 daily challenge. Everyone in the world gets the same team and era spins, with one attempt per day. Build your best lineup and share your record.",
+      "h1": "82-0 Daily Challenge",
+      "intro": "Same spins for everyone on the planet. One attempt per day. Build your best lineup, get your record, and challenge your friends to beat today's draw."
+    },
     "twentyZero": {
       "title": "20-0 Challenge: Play the NFL Perfect Season Game",
       "description": "Play the viral 20-0 challenge. Spin random NFL teams and eras, draft a 9-man roster of football legends, and see if your team can win all 20 games to a perfect Super Bowl season.",
@@ -280,6 +296,7 @@
 
   "footer": {
     "pages": "Pages",
+    "daily": "Daily Challenge",
     "twentyZero": "20-0 Challenge (NFL)",
     "more": "More",
     "legal": "Legal",

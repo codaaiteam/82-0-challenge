@@ -89,6 +89,22 @@ export function spinCombo(pickedIds, openSlots, exclude) {
   return randomPick(pool.length ? pool : COMBOS);
 }
 
+// Deterministic daily sequence: pre-draw N distinct combos from the full
+// list using a seeded RNG, so every player gets the same spins.
+export function dailyCombos(rng, count = 5) {
+  const seq = [];
+  const used = new Set();
+  let guard = 0;
+  while (seq.length < count && guard++ < 500) {
+    const c = COMBOS[Math.floor(rng() * COMBOS.length)];
+    const key = `${c.team}|${c.decade}`;
+    if (used.has(key)) continue;
+    used.add(key);
+    seq.push(c);
+  }
+  return seq;
+}
+
 // Team skip: new random team, same decade if possible.
 export function rerollTeam(current, pickedIds, openSlots) {
   const sameDecade = draftableCombos(pickedIds, openSlots, current).filter(
