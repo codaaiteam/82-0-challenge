@@ -67,6 +67,16 @@
       "weakSteals": "Perimeter-Defense leckt",
       "weakBlocks": "Kein Schutz am Korb",
       "none": "Keine — kompletter Kader"
+    },
+    "nfl": {
+      "shareText": "Ich habe in der 20-0 Challenge eine {record} Bilanz geschafft. Schlägst du meinen Roster?",
+      "weaknesses": {
+        "weakQB": "Wackeliges Quarterback-Spiel",
+        "weakTrenches": "Schwach in den Trenches",
+        "weakSecondary": "Löchrige Secondary",
+        "weakSkill": "Nicht genug Playmaker",
+        "none": "Keine — kompletter Roster"
+      }
     }
   },
 
@@ -204,10 +214,10 @@
       ]
     },
     "twentyZero": {
-      "title": "20-0 Challenge: Was ist das virale NFL-Perfect-Season-Game?",
-      "description": "Was ist die 20-0 Challenge? Erfahre, wie der virale NFL-Roster-Builder funktioniert — 12-Mann-Roster aus Legenden, eine Simulation über eine 20-Spiele-Saison und die Jagd nach einer perfekten Super-Bowl-Saison.",
-      "h1": "Was ist die 20-0 Challenge?",
-      "intro": "20-0 ist der NFL-Verwandte der viralen 82-0 Basketball-Challenge: Drafte einen Roster aus Football-Legenden und finde heraus, ob sie jedes Spiel auf dem Weg zu einer perfekten Super-Bowl-Saison gewinnen könnten.",
+      "title": "20-0 Challenge: Spiele das NFL-Perfect-Season-Game",
+      "description": "Spiele die virale 20-0 Challenge. Dreh zufällige NFL-Teams und Epochen, drafte einen 9-Mann-Roster aus Football-Legenden und finde heraus, ob dein Team alle 20 Spiele bis zu einer perfekten Super-Bowl-Saison gewinnen kann.",
+      "h1": "20-0 Challenge",
+      "intro": "Der NFL-Verwandte der viralen 82-0 Basketball-Challenge: Dreh den Slot Machine, drafte einen Roster aus Football-Legenden und finde heraus, ob sie auf dem Weg zu einer perfekten Super-Bowl-Saison jedes Spiel gewinnen könnten. Spiel sie gleich hier.",
       "playCta": "Spiel die 82-0 Basketball-Challenge",
       "sections": [
         {

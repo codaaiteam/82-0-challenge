@@ -67,6 +67,16 @@
       "weakSteals": "Perimeter defense leaks",
       "weakBlocks": "No rim protection",
       "none": "None — complete roster"
+    },
+    "nfl": {
+      "shareText": "I went {record} in the 20-0 Challenge. Can you beat my roster?",
+      "weaknesses": {
+        "weakQB": "Shaky quarterback play",
+        "weakTrenches": "Soft in the trenches",
+        "weakSecondary": "Leaky back seven",
+        "weakSkill": "Not enough playmakers",
+        "none": "None — complete roster"
+      }
     }
   },
 
@@ -204,10 +214,10 @@
       ]
     },
     "twentyZero": {
-      "title": "20-0 Challenge: What Is the Viral NFL Perfect Season Game?",
-      "description": "What is the 20-0 challenge? Learn how the viral NFL roster builder works — 12-man legend rosters, a 20-game season simulation, and the chase for a perfect Super Bowl run.",
-      "h1": "What Is the 20-0 Challenge?",
-      "intro": "20-0 is the NFL cousin of the viral 82-0 basketball challenge: draft a roster of football legends and find out if they could win every game on the road to a perfect Super Bowl season.",
+      "title": "20-0 Challenge: Play the NFL Perfect Season Game",
+      "description": "Play the viral 20-0 challenge. Spin random NFL teams and eras, draft a 9-man roster of football legends, and see if your team can win all 20 games to a perfect Super Bowl season.",
+      "h1": "20-0 Challenge",
+      "intro": "The NFL cousin of the viral 82-0 basketball challenge: spin the slot machine, draft a roster of football legends, and find out if they could win every game on the road to a perfect Super Bowl season. Play it right here.",
       "playCta": "Play the 82-0 Basketball Challenge",
       "sections": [
         {

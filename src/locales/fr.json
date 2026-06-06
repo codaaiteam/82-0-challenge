@@ -67,6 +67,16 @@
       "weakSteals": "La défense périmétrique fuit",
       "weakBlocks": "Aucune protection du cercle",
       "none": "Aucun — effectif complet"
+    },
+    "nfl": {
+      "shareText": "J'ai fini {record} au défi 20-0. Saurez-vous battre mon effectif ?",
+      "weaknesses": {
+        "weakQB": "Un jeu de quarterback fragile",
+        "weakTrenches": "Trop tendre dans les tranchées",
+        "weakSecondary": "Une arrière-garde qui prend l'eau",
+        "weakSkill": "Pas assez de créateurs",
+        "none": "Aucun — effectif complet"
+      }
     }
   },
 
@@ -204,10 +214,10 @@
       ]
     },
     "twentyZero": {
-      "title": "Défi 20-0 : c'est quoi le jeu viral de la saison NFL parfaite ?",
-      "description": "C'est quoi le défi 20-0 ? Découvrez comment fonctionne le créateur d'effectif NFL viral — des effectifs de 12 légendes, la simulation d'une saison de 20 matchs, et la quête d'un parcours parfait jusqu'au Super Bowl.",
-      "h1": "C'est quoi le défi 20-0 ?",
-      "intro": "Le 20-0 est le cousin NFL du défi de basket viral 82-0 : draftez un effectif de légendes du football américain et découvrez si elles pourraient gagner chaque match sur la route d'une saison parfaite jusqu'au Super Bowl.",
+      "title": "Défi 20-0 : jouez au jeu de la saison NFL parfaite",
+      "description": "Jouez au défi 20-0 viral. Lancez des équipes et des époques NFL aléatoires, draftez un effectif de 9 légendes du football américain, et voyez si votre équipe peut gagner les 20 matchs jusqu'à une saison parfaite couronnée par le Super Bowl.",
+      "h1": "Défi 20-0",
+      "intro": "Le cousin NFL du défi de basket viral 82-0 : lancez la machine à sous, draftez un effectif de légendes du football américain, et découvrez si elles pourraient gagner chaque match sur la route d'une saison parfaite jusqu'au Super Bowl. Jouez-y ici même.",
       "playCta": "Jouer au défi de basket 82-0",
       "sections": [
         {

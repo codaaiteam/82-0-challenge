@@ -3,6 +3,8 @@ import styles from '../page.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import QuestionFAQ from '../Components/QuestionFAQ';
+import NflGame from '../Components/Game/NflGame';
+import GameWithSidebarAds from '../Components/GameWithSidebarAds';
 import SeoSections from '../Components/SeoSections';
 import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
@@ -32,6 +34,13 @@ export default async function TwentyZero({ params }) {
             <h1 className={styles.pageTitle}>{page.h1}</h1>
             <p className={styles.pageIntro}>{page.intro}</p>
           </div>
+        </section>
+
+        {/* Playable NFL game */}
+        <section id="game" className={styles.gameSection}>
+          <GameWithSidebarAds>
+            <NflGame t={t} />
+          </GameWithSidebarAds>
         </section>
 
         <SeoSections sections={page.sections} />
