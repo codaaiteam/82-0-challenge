@@ -1,0 +1,233 @@
+/* 82-0 Challenge — dark sporty layout */
+
+.mainContent {
+  padding-top: 56px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+/* ---- hero ---- */
+.hero {
+  padding: 3.5rem 1.25rem 2.5rem;
+  text-align: center;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(255, 138, 41, 0.12), transparent),
+    var(--bg-primary);
+}
+
+.heroInner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(135deg, #ffd089, #ff8a29 60%, #ff5e3a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.heroCta {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  color: #fff;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 20px rgba(255, 138, 41, 0.35);
+}
+
+.heroCta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(255, 138, 41, 0.45);
+  color: #fff;
+}
+
+/* ---- game ---- */
+.gameSection {
+  padding: 1.5rem 1.25rem 2.5rem;
+}
+
+/* ---- page hero (sub-pages) ---- */
+.pageHero {
+  padding: 3rem 0 1rem;
+  text-align: center;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.pageIntro {
+  max-width: 640px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+}
+
+/* ---- SEO content ---- */
+.seoSection {
+  padding: 2rem 0;
+}
+
+.seoBlock {
+  margin-bottom: 2.25rem;
+}
+
+.seoParagraph {
+  color: var(--text-secondary);
+  font-size: 0.97rem;
+  line-height: 1.8;
+}
+
+/* ---- how to play steps ---- */
+.howtoSection {
+  padding: 1.5rem 0 2.5rem;
+}
+
+.stepsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.stepCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.2rem;
+  transition: border-color 0.2s;
+}
+
+.stepCard:hover {
+  border-color: var(--accent);
+}
+
+.stepCard h3 {
+  font-size: 1.05rem;
+  margin: 0.6rem 0 0.4rem;
+}
+
+.stepCard p {
+  font-size: 0.88rem;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.stepNumber {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  color: #fff;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.centerCta {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* ---- FAQ ---- */
+.faqSection {
+  padding: 2rem 0 2.5rem;
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ---- C2Story cross-promo ---- */
+.squadCta {
+  padding: 2.5rem 1.25rem 3.5rem;
+}
+
+.squadCtaInner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(160deg, #1a2236, #131a2b);
+  border: 1px solid var(--border-color);
+  border-radius: 18px;
+  padding: 2.5rem 1.5rem;
+}
+
+.squadCtaTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.squadCtaDesc {
+  color: var(--text-secondary);
+  max-width: 520px;
+  margin: 0 auto 1.5rem;
+}
+
+.squadCtaButton {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.squadCtaButton:hover {
+  background: var(--accent);
+  color: #10141f;
+}
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem 1.75rem;
+  }
+
+  .gameSection {
+    padding: 1rem 0.75rem 2rem;
+  }
+
+  .pageTitle {
+    font-size: 1.7rem;
+  }
+}

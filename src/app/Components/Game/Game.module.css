@@ -1,0 +1,390 @@
+/* 82-0 Challenge game — dark, sporty, card-based */
+
+.game {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  background: linear-gradient(160deg, #131a2b 0%, #0d1220 100%);
+  border: 1px solid rgba(255, 138, 41, 0.25);
+  border-radius: 16px;
+  padding: 1.5rem;
+  color: #eef1f8;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.45);
+}
+
+.loading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 4rem 0;
+  color: #ff8a29;
+  letter-spacing: 0.1em;
+}
+
+/* ---- header ---- */
+.gameHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.roundBadge {
+  background: rgba(255, 138, 41, 0.15);
+  color: #ff8a29;
+  border: 1px solid rgba(255, 138, 41, 0.4);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.comboBox {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+  min-width: 180px;
+}
+
+.comboTeam {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.comboEra {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff8a29;
+}
+
+.rerollBtn {
+  background: transparent;
+  color: #9fb0d0;
+  border: 1px solid #36415c;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.rerollBtn:hover:not(:disabled) {
+  border-color: #ff8a29;
+  color: #ff8a29;
+}
+
+.rerollBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pickPrompt {
+  text-align: center;
+  color: #9fb0d0;
+  font-size: 0.95rem;
+  margin: 0 0 1.25rem;
+}
+
+/* ---- candidate cards ---- */
+.candidates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.playerCard {
+  background: #1a2236;
+  border: 1px solid #2b3550;
+  border-radius: 12px;
+  padding: 0.9rem 0.8rem;
+  text-align: left;
+  cursor: pointer;
+  color: #eef1f8;
+  font-family: inherit;
+  transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.playerCard:hover {
+  transform: translateY(-3px);
+  border-color: #ff8a29;
+  box-shadow: 0 6px 24px rgba(255, 138, 41, 0.18);
+}
+
+.playerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pos {
+  background: #2b3550;
+  color: #9fb0d0;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 0.15rem 0.45rem;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+}
+
+.ovrBadge {
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  color: #fff;
+  font-weight: 900;
+  font-size: 0.9rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+.playerName {
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1.3;
+  min-height: 2.5em;
+}
+
+.playerStats {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  color: #9fb0d0;
+  flex-wrap: wrap;
+}
+
+.selectHint {
+  margin-top: auto;
+  text-align: center;
+  background: rgba(255, 138, 41, 0.12);
+  color: #ff8a29;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 0.4rem;
+  border-radius: 8px;
+}
+
+.playerCard:hover .selectHint {
+  background: #ff8a29;
+  color: #10141f;
+}
+
+/* ---- lineup bar ---- */
+.lineupBar {
+  border-top: 1px solid #2b3550;
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.lineupLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #9fb0d0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.lineupSlots {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.slot {
+  width: 52px;
+  height: 52px;
+  border-radius: 10px;
+  border: 1px dashed #36415c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+}
+
+.slotFilled {
+  border: 1px solid #ff8a29;
+  background: rgba(255, 138, 41, 0.1);
+}
+
+.slotPos {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: #9fb0d0;
+}
+
+.slotOvr {
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #ff8a29;
+}
+
+.slotEmpty {
+  color: #36415c;
+  font-weight: 700;
+}
+
+/* ---- result ---- */
+.resultCard {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.resultTitle {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  color: #fff;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.resultRecord {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(135deg, #ffd089, #ff8a29);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.resultLabel {
+  color: #9fb0d0;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.resultStats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.resultStat {
+  background: #1a2236;
+  border: 1px solid #2b3550;
+  border-radius: 12px;
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.resultStatLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #9fb0d0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.resultStatValue {
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.lineupRecap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  max-width: 420px;
+  margin: 0 auto 1.5rem;
+}
+
+.lineupRecapItem {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #1a2236;
+  border-radius: 8px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.lineupRecapItem > span:nth-child(2) {
+  flex: 1;
+}
+
+.resultActions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.primaryBtn {
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  color: #fff;
+  border: none;
+  font-weight: 800;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.15s ease;
+}
+
+.primaryBtn:hover {
+  transform: translateY(-2px);
+}
+
+.secondaryBtn {
+  background: transparent;
+  color: #eef1f8;
+  border: 1px solid #36415c;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: border-color 0.15s ease;
+}
+
+.secondaryBtn:hover {
+  border-color: #ff8a29;
+}
+
+@media (max-width: 600px) {
+  .game {
+    padding: 1rem;
+  }
+
+  .candidates {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  }
+
+  .comboTeam {
+    font-size: 1.15rem;
+  }
+
+  .resultRecord {
+    font-size: 3.2rem;
+  }
+}

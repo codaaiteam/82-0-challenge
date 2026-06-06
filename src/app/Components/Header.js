@@ -1,0 +1,91 @@
+'use client'
+
+import Link from 'next/link';
+import { useState } from 'react';
+import { useParams, usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import styles from './Header.module.css';
+import { useTranslations } from '@/hooks/useTranslations';
+
+export default function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const router = useRouter();
+  const params = useParams();
+  const pathname = usePathname();
+  const currentLang = params?.lang || 'en';
+  const { t } = useTranslations();
+
+  const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de'];
+
+  const changeLanguage = (newLocale) => {
+    const segments = pathname.split('/');
+    // If current path starts with a locale, replace it
+    if (LOCALES.includes(segments[1])) {
+      segments[1] = newLocale;
+    } else {
+      // No locale prefix — insert one after the leading empty string
+      segments.splice(1, 0, newLocale);
+    }
+    router.push(segments.join('/'));
+  };
+
+  return (
+    <header className={styles.header}>
+      <div className={styles.headerContent}>
+        <Link href={`/${currentLang}`} className={styles.logoLink}>
+          <span className={styles.logoBall}>🏀</span>
+          <span className={styles.logoText}>{t?.header?.siteName || '82-0 Challenge'}</span>
+        </Link>
+
+        <button
+          className={styles.mobileMenuToggle}
+          onClick={() => setIsNavOpen(!isNavOpen)}
+          aria-label="Toggle menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            {isNavOpen ? (
+              <path d="M18 6L6 18M6 6l12 12" />
+            ) : (
+              <>
+                <path d="M3 12h18" />
+                <path d="M3 6h18" />
+                <path d="M3 18h18" />
+              </>
+            )}
+          </svg>
+        </button>
+
+        <nav className={`${styles.mainNav} ${isNavOpen ? styles.open : ''}`}>
+          <Link href={`/${currentLang}`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            {t?.header?.home || 'Home'}
+          </Link>
+          <Link href={`/${currentLang}/82-0`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            {t?.header?.whatIs || 'What Is 82-0?'}
+          </Link>
+          <Link href={`/${currentLang}/how-to-play`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            {t?.header?.howToPlay || 'How to Play'}
+          </Link>
+          <Link href={`/${currentLang}/team-builder`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            {t?.header?.teamBuilder || 'Team Builder'}
+          </Link>
+        </nav>
+
+        <div className={styles.langSwitcher}>
+          <select
+            onChange={(e) => changeLanguage(e.target.value)}
+            defaultValue={currentLang}
+            className={styles.langSelect}
+          >
+            <option value="en">EN</option>
+            <option value="zh">中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="es">ES</option>
+            <option value="fr">FR</option>
+            <option value="de">DE</option>
+          </select>
+        </div>
+      </div>
+    </header>
+  );
+}

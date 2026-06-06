@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.82-0-challenge.com
+
+# Sitemaps
+Sitemap: https://www.82-0-challenge.com/sitemap.xml

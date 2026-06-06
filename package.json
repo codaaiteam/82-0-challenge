@@ -1,0 +1,25 @@
+{
+  "name": "82-0-challenge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "next": "13.5.4",
+    "next-sitemap": "^4.2.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "@types/react": "18.3.12",
+    "eslint": "8.51.0",
+    "eslint-config-next": "13.5.4",
+    "typescript": "^5.7.2"
+  }
+}
