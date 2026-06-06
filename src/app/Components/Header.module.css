@@ -77,6 +77,13 @@
   background: rgba(255, 138, 41, 0.08);
 }
 
+.navLinkNfl {
+  color: var(--accent);
+  border: 1px solid rgba(255, 138, 41, 0.35);
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+}
+
 .langSwitcher {
   display: flex;
   align-items: center;
