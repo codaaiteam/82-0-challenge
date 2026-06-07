@@ -15,6 +15,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
           <Link href={`${prefix}/daily`}>{t?.footer?.daily || 'Daily Challenge'}</Link>
           <Link href={`${prefix}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
+          <Link href={`${prefix}/38-0`}>{t?.footer?.thirtyEight || '38-0 Challenge (Premier League)'}</Link>
         </div>
 
         <div className={styles.footerSection}>

@@ -7,6 +7,7 @@ const contentPages = [
   '/how-to-play',
   '/team-builder',
   '/20-0',
+  '/38-0',
   '/daily',
 ];
 

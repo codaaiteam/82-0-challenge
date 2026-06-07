@@ -87,6 +87,23 @@
         "weakSkill": "Faltan jugadores de ataque",
         "none": "Ninguna: plantilla completa"
       }
+    },
+    "epl": {
+      "shareText": "Terminé {record} en el desafío 38-0. ¿Puede tu once inicial superar al mío?",
+      "titles": {
+        "perfect": "Los Invencibles",
+        "almost": "Campeones de liga",
+        "favorite": "Aspirantes al título",
+        "contender": "Top cuatro",
+        "playoff": "Mitad de tabla"
+      },
+      "weaknesses": {
+        "weakGK": "Manos inseguras en la portería",
+        "weakDefense": "Defensa permeable",
+        "weakMidfield": "El mediocampo se ve desbordado",
+        "weakAttack": "Cuesta marcar goles",
+        "none": "Ninguna: once inicial completo"
+      }
     }
   },
 
@@ -229,6 +246,41 @@
       "h1": "Desafío 82-0 diario",
       "intro": "Las mismas tiradas para todo el planeta. Un intento por día. Forma tu mejor quinteto, consigue tu récord y reta a tus amigos a superar la tirada de hoy."
     },
+    "thirtyEight": {
+      "title": "Desafío 38-0: juega al juego de la temporada perfecta de la Premier League",
+      "description": "Juega al viral desafío 38-0. Gira clubes y épocas de la Premier League al azar, recluta un once inicial de leyendas y comprueba si tu equipo puede ganar los 38 partidos, más allá de los Invencibles.",
+      "h1": "Desafío 38-0",
+      "intro": "La edición de la Premier League del viral desafío 82-0: gira la máquina tragaperras, recluta un once inicial de leyendas reales de cuatro décadas y persigue una temporada perfecta de 38 victorias, algo que ni siquiera los Invencibles del Arsenal lograron jamás. Juégalo aquí mismo.",
+      "playCta": "Juega al desafío 82-0 de baloncesto",
+      "sections": [
+        {
+          "h2": "¿Qué significa 38-0 en el fútbol?",
+          "paragraphs": [
+            "Una temporada de la Premier League son 38 partidos. Terminar 38-0 significa ganar todos y cada uno de ellos: una temporada perfecta. Nunca ha sucedido: los legendarios Invencibles del Arsenal de 2003-04 pasaron toda la temporada invictos, pero con 12 empates su récord fue de 26-12-0. Los centuriones del Manchester City ganaron 32. La distancia entre 'invicto' y 'perfecto' es lo que representa el 38-0, y por eso esta expresión tiene peso en cualquier discusión futbolística.",
+            "Igual que el 82-0 en el baloncesto y el 20-0 en el fútbol americano, el 38-0 se convirtió en sinónimo de un estándar imposible: un once inicial tan bueno que no dejaría escapar ni un solo punto en toda la temporada."
+          ]
+        },
+        {
+          "h2": "¿Qué es el juego del desafío 38-0?",
+          "paragraphs": [
+            "El desafío 38-0 es el miembro de la Premier League de la viral familia de la temporada perfecta. Una máquina tragaperras te asigna un club y una década al azar —el Manchester United de los 90, el Arsenal de la era de los Invencibles de los 2000, el Manchester City de los 2010— y eliges a un jugador real por ronda, colocándolo en un once inicial 4-4-2 en una posición que realmente ocupó: portero, defensa, mediocampo o delantera. Once rondas, un salto de equipo, un salto de época.",
+            "Cuando el once está completo, el motor de simulación suma las valoraciones de tu plantilla —portero, línea defensiva, control del mediocampo y poder ofensivo, todo ponderado— y las pasa por una curva de victorias no lineal de 38 partidos. Un solo eslabón débil limita tu techo, exactamente como en una lucha real por el título."
+          ]
+        },
+        {
+          "h2": "38-0 frente a 82-0 frente a 20-0: un formato, tres deportes",
+          "paragraphs": [
+            "Los tres desafíos se basan en la misma idea central: tiradas de equipos al azar, drafts construidos sobre jugadores reales y una simulación de temporada que decide si tu equipo sobrevive invicto. La versión del fútbol es la más cruel: once puestos en la plantilla significan once oportunidades de reclutar a un pasajero, y los umbrales castigan con más dureza a un portero inseguro. Si has llegado siguiendo la tendencia del 38-0, el original de baloncesto y la edición de la NFL están a un clic en esta web."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "¿Qué es el desafío 38-0?", "a": "El desafío 38-0 es un viral juego de construcción de equipos de la Premier League: una máquina tragaperras asigna clubes y décadas al azar, reclutas un once inicial de leyendas reales y una simulación proyecta si tu equipo podría ganar los 38 partidos de una temporada." },
+        { "q": "¿Algún equipo ha terminado alguna vez 38-0?", "a": "No. Los Invencibles del Arsenal de 2003-04 quedaron invictos con un 26-12-0, y los centuriones del Manchester City de 2017-18 ganaron 32 partidos. Una temporada perfecta de 38 victorias nunca ha sucedido en la historia de la Premier League." },
+        { "q": "¿El 38-0 está relacionado con el desafío 82-0?", "a": "Sí: el 38-0 es la edición de la Premier League del viral desafío 82-0 de baloncesto (y de su primo de la NFL, el 20-0). Las mismas tiradas de máquina tragaperras, jugadores reales y una simulación de temporada." },
+        { "q": "¿Puedo jugar gratis al desafío 38-0?", "a": "Sí: se puede jugar aquí mismo en esta página, gratis, sin descarga ni cuenta, en 7 idiomas. Gira clubes y épocas, forma tu once y comparte tu récord proyectado." }
+      ]
+    },
     "twentyZero": {
       "title": "Desafío 20-0: juega al juego de la temporada perfecta de la NFL",
       "description": "Juega al viral desafío 20-0. Gira equipos y épocas de la NFL al azar, recluta una plantilla de 9 leyendas del fútbol americano y comprueba si tu equipo puede ganar los 20 partidos hasta una temporada perfecta con el Super Bowl.",
@@ -298,6 +350,7 @@
     "pages": "Páginas",
     "daily": "Desafío diario",
     "twentyZero": "Desafío 20-0 (NFL)",
+    "thirtyEight": "Desafío 38-0 (Premier League)",
     "more": "Más",
     "legal": "Legal",
     "privacy": "Política de privacidad",

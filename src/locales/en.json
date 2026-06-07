@@ -87,6 +87,23 @@
         "weakSkill": "Not enough playmakers",
         "none": "None — complete roster"
       }
+    },
+    "epl": {
+      "shareText": "I went {record} in the 38-0 Challenge. Can your starting XI beat mine?",
+      "titles": {
+        "perfect": "The Invincibles",
+        "almost": "Title Winners",
+        "favorite": "Title Contenders",
+        "contender": "Top Four",
+        "playoff": "Mid-Table"
+      },
+      "weaknesses": {
+        "weakGK": "Shaky hands in goal",
+        "weakDefense": "Leaky back line",
+        "weakMidfield": "Midfield gets overrun",
+        "weakAttack": "Goals are hard to come by",
+        "none": "None — complete XI"
+      }
     }
   },
 
@@ -229,6 +246,41 @@
       "h1": "82-0 Daily Challenge",
       "intro": "Same spins for everyone on the planet. One attempt per day. Build your best lineup, get your record, and challenge your friends to beat today's draw."
     },
+    "thirtyEight": {
+      "title": "38-0 Challenge: Play the Premier League Perfect Season Game",
+      "description": "Play the viral 38-0 challenge. Spin random Premier League clubs and eras, draft a starting XI of legends, and see if your team can win all 38 games — beyond the Invincibles.",
+      "h1": "38-0 Challenge",
+      "intro": "The Premier League edition of the viral 82-0 challenge: spin the slot machine, draft a starting XI of real legends from four decades, and chase a perfect 38-win season — something even Arsenal's Invincibles never did. Play it right here.",
+      "playCta": "Play the 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "What Does 38-0 Mean in Football?",
+          "paragraphs": [
+            "A Premier League season is 38 matches. Going 38-0 means winning every single one — a perfect season. It has never happened: Arsenal's legendary 2003-04 Invincibles went the whole season unbeaten, but with 12 draws their record was 26-12-0. Manchester City's centurions won 32. The gap between 'unbeaten' and 'perfect' is what 38-0 stands for, and why the phrase carries weight in every football argument.",
+            "Just like 82-0 in basketball and 20-0 in American football, 38-0 became shorthand for an impossible standard — a starting XI so good it would not drop a single point all season."
+          ]
+        },
+        {
+          "h2": "What Is the 38-0 Challenge Game?",
+          "paragraphs": [
+            "The 38-0 challenge is the Premier League member of the viral perfect-season family. A slot machine assigns you a random club and decade — 90s Manchester United, the 2000s Invincibles-era Arsenal, 2010s Manchester City — and you pick one real player per round, placing him in a 4-4-2 starting XI at a position he actually played: goalkeeper, defence, midfield, or attack. Eleven rounds, one team skip, one era skip.",
+            "When the XI is complete, the simulation engine aggregates your squad's ratings — keeper, back line, midfield control, and firepower all weighted — and runs them through a non-linear 38-game win curve. One weak link caps your ceiling, exactly like a real title run."
+          ]
+        },
+        {
+          "h2": "38-0 vs 82-0 vs 20-0: One Format, Three Sports",
+          "paragraphs": [
+            "All three challenges run on the same core idea: random team draws, drafts built on real players, and a season simulation that decides whether your team survives undefeated. Football's version is the cruellest — eleven roster spots mean eleven chances to draft a passenger, and the gates punish a shaky keeper hardest. If you came chasing the 38-0 trend, the basketball original and the NFL edition are one click away on this site."
+          ]
+        }
+      ],
+      "faqs": [
+        { "q": "What is the 38-0 challenge?", "a": "The 38-0 challenge is a viral Premier League team builder game: a slot machine assigns random clubs and decades, you draft a starting XI of real legends, and a simulation projects whether your team could win all 38 games of a season." },
+        { "q": "Has any team ever gone 38-0?", "a": "No. Arsenal's 2003-04 Invincibles went unbeaten at 26-12-0, and Manchester City's 2017-18 centurions won 32 games. A perfect 38-win season has never happened in Premier League history." },
+        { "q": "Is 38-0 related to the 82-0 challenge?", "a": "Yes — 38-0 is the Premier League edition of the viral 82-0 basketball challenge (and its NFL cousin 20-0). Same slot-machine draws, real players, and a season simulation." },
+        { "q": "Can I play the 38-0 challenge for free?", "a": "Yes — it's playable right on this page, free, no download or account, in 7 languages. Spin clubs and eras, build your XI, and share your projected record." }
+      ]
+    },
     "twentyZero": {
       "title": "20-0 Challenge: Play the NFL Perfect Season Game",
       "description": "Play the viral 20-0 challenge. Spin random NFL teams and eras, draft a 9-man roster of football legends, and see if your team can win all 20 games to a perfect Super Bowl season.",
@@ -298,6 +350,7 @@
     "pages": "Pages",
     "daily": "Daily Challenge",
     "twentyZero": "20-0 Challenge (NFL)",
+    "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "More",
     "legal": "Legal",
     "privacy": "Privacy Policy",
