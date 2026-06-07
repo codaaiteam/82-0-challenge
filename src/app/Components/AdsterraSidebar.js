@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react';
 
-const AD_KEY = '021efbaf73e34cc02d08f88b0f002f5d';
+const AD_KEY = '981333c41e4196364e4f599f02a6988d';
 
 export default function AdsterraSidebar() {
   const iframeRef = useRef(null);

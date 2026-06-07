@@ -15,7 +15,7 @@ export default function AdsterraBanner300x250() {
     configScript.type = 'text/javascript';
     configScript.text = `
       atOptions = {
-        'key' : 'dd7047d0467ed51f9e99e52601e554d9',
+        'key' : '4b43dca67f13ee7b09ef4e5c9de8c381',
         'format' : 'iframe',
         'height' : 250,
         'width' : 300,
@@ -26,7 +26,7 @@ export default function AdsterraBanner300x250() {
 
     const invokeScript = document.createElement('script');
     invokeScript.type = 'text/javascript';
-    invokeScript.src = 'https://www.highperformanceformat.com/dd7047d0467ed51f9e99e52601e554d9/invoke.js';
+    invokeScript.src = 'https://www.highperformanceformat.com/4b43dca67f13ee7b09ef4e5c9de8c381/invoke.js';
     containerRef.current.appendChild(invokeScript);
   }, []);
 
