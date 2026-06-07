@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import AdSense from './Components/AdSense'
 import AdsterraSocialBar from './Components/AdsterraSocialBar'
 import AdsterraMobileSticky from './Components/AdsterraMobileSticky'
 
@@ -27,6 +28,7 @@ export default function RootLayout({ children, params }) {
         <script defer data-domain="82-0-challenge.com" src="https://app.pageview.app/js/script.js"></script>
       </head>
       <body className={inter.className}>
+        <AdSense />
         {children}
         <AdsterraSocialBar />
         <AdsterraMobileSticky />

@@ -3,7 +3,6 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import QuestionFAQ from './Components/QuestionFAQ';
 import GameMain from './Components/Game/GameMain';
-import AdSense from './Components/AdSense';
 import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
 import SeoSections from './Components/SeoSections';
@@ -32,7 +31,6 @@ export default async function Home({ params }) {
 
   return (
     <>
-      <AdSense />
       <Header />
       <main className={styles.mainContent}>
         {/* Hero */}
