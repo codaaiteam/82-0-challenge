@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import CookieNotice from './Components/CookieNotice'
 // Social Bar / Mobile Sticky / Popunder 未在 Adsterra 为本域名建位，勿挂载
 
 import en from '../locales/en.json'
@@ -32,6 +33,7 @@ export default function RootLayout({ children, params }) {
       </head>
       <body className={inter.className}>
         {children}
+        <CookieNotice />
         <noscript>
           <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
             <h1>82-0 Challenge — Play the Viral Team Builder Game</h1>

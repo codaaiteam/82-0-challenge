@@ -27,6 +27,7 @@ const Footer = ({ t, lang = 'en' }) => {
 
         <div className={styles.footerSection}>
           <h3>{t?.footer?.legal || 'Legal'}</h3>
+          <Link href={`${prefix}/about`}>{t?.footer?.about || 'About'}</Link>
           <Link href={`${prefix}/privacy`}>{t?.footer?.privacy || 'Privacy Policy'}</Link>
           <Link href={`${prefix}/terms`}>{t?.footer?.terms || 'Terms of Use'}</Link>
         </div>

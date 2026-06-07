@@ -14,6 +14,7 @@ const contentPages = [
 const staticPages = [
   '/privacy',
   '/terms',
+  '/about',
 ];
 
 module.exports = {
