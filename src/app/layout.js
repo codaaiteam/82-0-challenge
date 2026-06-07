@@ -1,6 +1,5 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import AdSense from './Components/AdSense'
 import AdsterraSocialBar from './Components/AdsterraSocialBar'
 import AdsterraMobileSticky from './Components/AdsterraMobileSticky'
 
@@ -26,9 +25,13 @@ export default function RootLayout({ children, params }) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <script defer data-domain="82-0-challenge.com" src="https://app.pageview.app/js/script.js"></script>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5451478429268021"
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body className={inter.className}>
-        <AdSense />
         {children}
         <AdsterraSocialBar />
         <AdsterraMobileSticky />
