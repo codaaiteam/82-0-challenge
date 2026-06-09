@@ -21,6 +21,7 @@ const Footer = ({ t, lang = 'en' }) => {
         <div className={styles.footerSection}>
           <h3>{t?.footer?.more || 'More'}</h3>
           <a href="https://38-0-game.com" target="_blank" rel="noopener">38-0 Game — Premier League XI</a>
+          <a href="https://7-0-game.com" target="_blank" rel="noopener">7-0 Game — World Cup Dream Team</a>
           <a href="https://c2story.com" target="_blank" rel="noopener noreferrer">
             {t?.cta?.button || 'AI Character Squad Builder'}
           </a>
