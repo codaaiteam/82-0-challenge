@@ -298,6 +298,133 @@
         }
       ]
     },
+    "howItsCalculated": {
+      "title": "Wie wird 82-0 berechnet? Die Wertungs-Engine erklärt",
+      "description": "Wie berechnet die 82-0-Challenge deine Bilanz? Eine verständliche Aufschlüsselung der fünf Statistik-Kategorien, der nichtlinearen Siegeskurve, der Ära-Anpassung und warum eine einzige Schwäche die perfekte Saison ruiniert.",
+      "h1": "Wie 82-0 berechnet wird",
+      "intro": "Du fragst dich, wie die 82-0-Challenge fünf Spieler in eine Sieg-Niederlage-Bilanz verwandelt? Hier ist genau das, was die Simulations-Engine tut, in einfachen Worten.",
+      "sections": [
+        {
+          "h2": "Die kurze Antwort",
+          "paragraphs": [
+            "Nachdem du fünf Spieler gedraftet hast, addiert die Engine ihre Statistiken pro Spiel über fünf Kategorien — Punkte, Rebounds, Assists, Steals und Blocks —, passt jede Zeile an die jeweilige Ära an und führt die Summe durch eine nichtlineare Siegeskurve, um eine Bilanz zwischen 0-82 und 82-0 zu projizieren. Eine einzige schwache Kategorie deckelt deine Obergrenze, egal wie stark der Rest des Kaders ist."
+          ]
+        },
+        {
+          "h2": "Die fünf Statistik-Kategorien",
+          "paragraphs": [
+            "Jeder Spieler trägt eine echte historische Statistikzeile: Punkte (PPG), Rebounds (RPG), Assists (APG), Steals (SPG) und Blocks (BPG) pro Spiel. Die Engine summiert jede Kategorie über deine Starting Five, sodass die Scoring-Summe einer Aufstellung die Summe von fünf Scorern ist, ihre Rebound-Summe die Summe von fünf Reboundern, und so weiter. Die Balance über alle fünf zählt mehr als eine riesige Zahl in einer einzigen.",
+            "Deshalb leistet eine Aufstellung aus fünf Scorern unterdurchschnittlich: Sie häuft Punkte an, liefert aber nahezu null Blocks und Spielmacherei, und die Engine bestraft dieses Ungleichgewicht."
+          ]
+        },
+        {
+          "h2": "Die nichtlineare Siegeskurve",
+          "paragraphs": [
+            "Der statistische Gesamtwert übersetzt sich nicht geradlinig in Siege. Die Engine führt dein Aggregat durch eine Kurve, bei der jeder zusätzliche Sieg fortschreitend mehr Kaderstärke kostet. Von 55 auf 60 projizierte Siege ist günstig; von 75 auf 80 ist brutal teuer. Diese Kurve ist der Grund, warum 82-0 selbst mit einer Elite-Aufstellung so selten ist — die letzten paar Siege verlangen einen nahezu perfekten Kader."
+          ]
+        },
+        {
+          "h2": "Kategorie-Schwellen: warum ein Loch dich versenkt",
+          "paragraphs": [
+            "Zusätzlich zur Kurve hat jede Kategorie eine Mindestschwelle. Wenn deine Aufstellung praktisch keinen Korbschutz oder keine Spielmacherei hat, deckelt die Engine deine projizierte Bilanz, egal wie hoch deine Scoring-Summe klettert. Ein ausgewogener 78-4-Kader schlägt jedes Mal einen einseitigen 90-Punkte-aber-null-Blocks-Kader. Das modelliert echten Basketball: Ein Team, das den Korb nicht verteidigen oder keinen Angriff aufziehen kann, verliert Spiele, egal wie viel es punktet."
+          ]
+        },
+        {
+          "h2": "Ära-Anpassung",
+          "paragraphs": [
+            "30 Punkte pro Spiel in den schnellen, punktreichen 1960ern sind nicht dasselbe wie 30 Punkte in den 2020ern. Die Engine reduziert die durch das Tempo aufgeblähten Zahlen älterer Jahrzehnte und normalisiert jede Statistikzeile vor dem Summieren auf eine gemeinsame Basis, sodass ein Spieler nicht allein dafür belohnt wird, in einer Hochtempo-Ära gespielt zu haben. Das hält jahrzehnteübergreifende Aufstellungen fair."
+          ]
+        },
+        {
+          "h2": "Willst du es testen?",
+          "paragraphs": [
+            "Der schnellste Weg, die Wertung zu verstehen, ist zu spielen. Dreh eine Aufstellung, lies die projizierte Bilanz und den Hinweis zur 'größten Schwäche' und passe deinen nächsten Durchgang an, um dieses Loch zu stopfen."
+          ]
+        }
+      ]
+    },
+    "canYouGo": {
+      "title": "Schaffst du wirklich 82-0? Tipps für ein ungeschlagenes Team",
+      "description": "Kannst du in der 82-0-Challenge wirklich 82-0 schaffen? Ja, aber es ist bewusst selten. Fünf konkrete Tipps, um deine projizierte Bilanz zu maximieren und die perfekte ungeschlagene Saison zu jagen.",
+      "h1": "Schaffst du wirklich 82-0?",
+      "intro": "Kurze Antwort: ja, aber es ist bewusst selten. Die perfekte Saison ist mit der richtigen Aufstellung und etwas Glück erreichbar. So gibst du dir die besten Chancen.",
+      "sections": [
+        {
+          "h2": "Ist 82-0 überhaupt möglich?",
+          "paragraphs": [
+            "Ja. Eine Aufstellung, die alle fünf Kategorien gleichzeitig maximiert, ohne offensichtliche Schwäche, hat eine echte Chance auf die perfekte 82-0-Saison. Aber die nichtlineare Kurve der Engine macht die letzten paar Siege extrem teuer, sodass selbst ein vollgepackter Kader meist bei 78-4 oder 80-2 landet. Ein echtes 82-0 zu schaffen sollte sich anfühlen, als würde man Geschichte schreiben — das ist der ganze Sinn."
+          ]
+        },
+        {
+          "h2": "Tipp 1: Maximiere alle fünf Kategorien",
+          "paragraphs": [
+            "Jage nicht nur Punkten nach. Die Engine summiert Punkte, Rebounds, Assists, Steals und Blocks und belohnt ausgewogene Rohproduktion. Eine Aufstellung, die im Scoring elite, aber bei Blocks oder Spielmacherei leer ist, wird gedeckelt. Ziele in jeder Kategorie auf die besten ära-angepassten Produzenten, nicht auf fünf desselben Archetyps."
+          ]
+        },
+        {
+          "h2": "Tipp 2: Respektiere die Schwellen",
+          "paragraphs": [
+            "Jede Kategorie hat einen Boden. Eine Starting Five mit null Korbschutz oder null Spielmacherei begrenzt deine Obergrenze, egal wie viel sie punktet. Bevor du einen Pick festlegst, frage dich, in welcher Kategorie dein Kader am dünnsten ist und ob dieser Spieler ihr hilft."
+          ]
+        },
+        {
+          "h2": "Tipp 3: Kenne deine Ären",
+          "paragraphs": [
+            "Ein 25-Punkte-Scorer aus den 2000ern schlägt nach der Ära-Anpassung oft einen 30-Punkte-Scorer aus den 60ern, weil die Engine die durch das Tempo aufgeblähten alten Zahlen reduziert. Wenn zwei Picks nah beieinander wirken, gewinnt meist die jüngere, effizientere Ära."
+          ]
+        },
+        {
+          "h2": "Tipp 4: Nutze deine Skips früh",
+          "paragraphs": [
+            "Du hast pro Spiel einen Team-Skip und einen Ära-Skip. Ein schwacher Wurf in der ersten Runde ist ein Loch, aus dem du später nicht herauskommst, also skippe früh aggressiv. Beide Skips für Runde fünf zu horten bedeutet meist, sie zu verschwenden."
+          ]
+        },
+        {
+          "h2": "Tipp 5: Verwalte die Positionen (und probier HoopIQ)",
+          "paragraphs": [
+            "Jeder Pick muss eine offene Position füllen, die der Spieler tatsächlich gespielt hat. Ein Superstar, den du nicht platzieren kannst, ist ein Superstar, den du nicht draften kannst, also achte darauf, welche Slots noch offen sind. Wenn du die Grundlagen beherrschst, wechsle in den HoopIQ-Modus — Statistiken verborgen, Drafting aus dem Gedächtnis — für die echte Prüfung."
+          ]
+        }
+      ]
+    },
+    "gamesLike": {
+      "title": "Spiele wie 82-0: Perfekte-Saison-Teambuilder zum Weiterspielen",
+      "description": "Liebst du die 82-0-Challenge? Hier sind ähnliche Spiele: dasselbe Dreh-und-Draft-Perfekte-Saison-Format für Fußball (38-0), die NFL (20-0) und die Weltmeisterschaft (7-0), plus Tages- und Gedächtnismodus.",
+      "h1": "Spiele wie 82-0",
+      "intro": "Wenn dir die 82-0-Challenge gefällt, sind das die nächstgelegenen Spiele zum Weiterspielen — dieselbe Dreh-und-Draft-Schleife, andere Sportarten und Twists, alle kostenlos im Browser.",
+      "sections": [
+        {
+          "h2": "Was 82-0 besonders macht",
+          "paragraphs": [
+            "Die meisten 'Wer ist der GOAT'-Debatten enden mit einem Schulterzucken. Das 82-0-Format gibt ihnen eine Anzeigetafel: zufällige Team-Würfe, ein Draft auf Basis echter Spieler und eine Saison-Simulation, die entscheidet, ob deine Aufstellung ungeschlagen überlebt. Die Spiele unten teilen diese DNA — konkrete, simulierte Antworten statt endlosem Streit."
+          ]
+        },
+        {
+          "h2": "38-0 — Premier-League-Fußball",
+          "paragraphs": [
+            "Die Fußball-Edition. Dreh Premier-League-Klubs und Ären, drafte eine Elf echter Legenden über vier Jahrzehnte und jage eine perfekte 38-Siege-Saison — etwas, das nicht einmal Arsenals Invincibles schafften. Elf Kaderplätze machen es zum grausamsten der Familie."
+          ]
+        },
+        {
+          "h2": "20-0 — NFL-Football",
+          "paragraphs": [
+            "Der Gridiron-Cousin. Drafte einen 12-Spieler-NFL-Kader aus zufälligen Franchises und spiele dann eine 20-Spiele-Saison aus — 17 reguläre plus drei Playoff-Runden. Ein perfektes 20-0 gewinnt den Super Bowl."
+          ]
+        },
+        {
+          "h2": "7-0 — Weltmeisterschafts-Dreamteam",
+          "paragraphs": [
+            "Baue die beste WM-Elf aller Zeiten. Mische Legenden von 1970 bis 2026, verbinde Landsleute für Chemie und jage einen makellosen 7-0-Lauf oder überstehe ein vierrundiges K.-o.-Gauntlet, um die Trophäe zu heben."
+          ]
+        },
+        {
+          "h2": "Gleiches Spiel, neue Twists: Daily und HoopIQ",
+          "paragraphs": [
+            "Liebst du 82-0 selbst schon? Zwei eingebaute Varianten halten es frisch. Die Daily Challenge gibt allen dieselben Würfe und einen Versuch — purer Bestenlisten-Köder. Der HoopIQ-Modus verbirgt alle Statistiken, sodass du allein aus dem Gedächtnis draftest — der schnellste Weg herauszufinden, wer die Basketballgeschichte wirklich kennt."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Spiele das Premier-League-Perfect-Season-Game",
       "description": "Spiele die virale 38-0 Challenge. Dreh zufällige Premier-League-Klubs und Epochen, drafte eine Startelf aus Legenden und finde heraus, ob dein Team alle 38 Spiele gewinnen kann — über die Invincibles hinaus.",
@@ -480,6 +607,9 @@
     "pages": "Seiten",
     "daily": "Daily Challenge",
     "unblocked": "Entsperrt spielen",
+    "howItsCalculated": "Wie es berechnet wird",
+    "canYouGo": "Schaffst du 82-0?",
+    "gamesLike": "Spiele wie 82-0",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "Mehr",
@@ -489,7 +619,8 @@
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
     "disclaimer": "82-0 Challenge ist ein unabhängiges, von Fans gemachtes Projekt. Es ist nicht mit der NBA oder einer professionellen Basketball-Liga oder einem Team verbunden, wird nicht von ihr unterstützt oder gesponsert. Spielernamen und historische Statistiken sind öffentlich verfügbare Fakten, die ausschließlich zu Informations- und Unterhaltungszwecken verwendet werden. Es werden keine offiziellen Logos, Marken oder Fotos genutzt.",
-    "copyright": "© 2026 82-0 Challenge"
+    "copyright": "© 2026 82-0 Challenge",
+    "related": "Verwandte Guides"
   },
   "wcGame": {
     "squad": "KADER",

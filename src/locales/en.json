@@ -298,6 +298,133 @@
         }
       ]
     },
+    "howItsCalculated": {
+      "title": "How Is 82-0 Calculated? The Scoring Engine Explained",
+      "description": "How does the 82-0 challenge calculate your record? A plain-English breakdown of the five stat categories, the non-linear win curve, era adjustment, and why one weakness tanks a perfect season.",
+      "h1": "How 82-0 Is Calculated",
+      "intro": "Wondering how the 82-0 challenge turns five players into a win-loss record? Here is exactly what the simulation engine does, in plain English.",
+      "sections": [
+        {
+          "h2": "The short answer",
+          "paragraphs": [
+            "After you draft five players, the engine adds up their per-game stats across five categories — points, rebounds, assists, steals and blocks — adjusts every line for the era it came from, then runs the total through a non-linear win curve to project a record between 0-82 and 82-0. A single weak category caps your ceiling no matter how strong the rest of the roster is."
+          ]
+        },
+        {
+          "h2": "The five stat categories",
+          "paragraphs": [
+            "Every player carries a real historical stat line: points (PPG), rebounds (RPG), assists (APG), steals (SPG) and blocks (BPG) per game. The engine sums each category across your starting five, so a lineup's scoring total is the sum of five scorers, its rebounding total the sum of five rebounders, and so on. Balance across all five matters more than a huge number in any one.",
+            "This is why a five-scorer lineup underperforms: it piles up points but posts near-zero blocks and playmaking, and the engine punishes that imbalance."
+          ]
+        },
+        {
+          "h2": "The non-linear win curve",
+          "paragraphs": [
+            "Total stat output does not translate to wins in a straight line. The engine runs your aggregate through a curve where each additional win costs progressively more roster strength. Going from 55 to 60 projected wins is cheap; going from 75 to 80 is brutally expensive. That curve is why 82-0 is so rare even with an elite lineup — the last few wins demand a near-perfect roster."
+          ]
+        },
+        {
+          "h2": "Category thresholds: why one hole sinks you",
+          "paragraphs": [
+            "On top of the curve, every category has a minimum threshold. If your lineup has essentially no rim protection or no playmaking, the engine caps your projected record regardless of how high your scoring total climbs. A balanced 78-4 roster beats a lopsided 90-points-but-zero-blocks roster every time. This models real basketball: a team that cannot defend the rim or run an offense loses games no matter how much it scores."
+          ]
+        },
+        {
+          "h2": "Era adjustment",
+          "paragraphs": [
+            "30 points per game in the fast-paced, high-scoring 1960s is not the same as 30 points in the 2020s. The engine deflates pace-inflated numbers from older decades and normalizes every stat line to a common baseline before summing, so a player is not rewarded just for playing in a high-tempo era. This keeps cross-decade lineups fair."
+          ]
+        },
+        {
+          "h2": "Want to test it?",
+          "paragraphs": [
+            "The fastest way to understand the scoring is to play. Spin a lineup, read the projected record and the 'biggest weakness' callout, then tweak your next run to plug that hole."
+          ]
+        }
+      ]
+    },
+    "canYouGo": {
+      "title": "Can You Actually Go 82-0? Tips for an Undefeated Team",
+      "description": "Can you really go 82-0 in the 82-0 challenge? Yes — but it's rare by design. Five concrete tips to maximize your projected record and chase the perfect undefeated season.",
+      "h1": "Can You Actually Go 82-0?",
+      "intro": "Short answer: yes, but it is rare by design. The perfect season is reachable with the right lineup and a little luck. Here is how to give yourself the best shot.",
+      "sections": [
+        {
+          "h2": "Is 82-0 even possible?",
+          "paragraphs": [
+            "Yes. A lineup that maximizes all five stat categories at once, with no glaring weakness, has a real shot at the perfect 82-0 season. But the engine's non-linear win curve makes the last few wins extremely costly, so even a stacked roster usually lands at 78-4 or 80-2. Hitting a true 82-0 should feel like making history — that is the whole point."
+          ]
+        },
+        {
+          "h2": "Tip 1: Maximize all five categories",
+          "paragraphs": [
+            "Do not chase points alone. The engine sums points, rebounds, assists, steals and blocks, and rewards balanced raw production. A lineup that is elite in scoring but empty in blocks or playmaking gets capped. Aim for the highest era-adjusted producers in every category, not five of the same archetype."
+          ]
+        },
+        {
+          "h2": "Tip 2: Respect the thresholds",
+          "paragraphs": [
+            "Every category has a floor. A starting five with zero rim protection or zero playmaking limits your ceiling no matter how much it scores. Before you lock a pick, ask which category your roster is thinnest in and whether this player helps it."
+          ]
+        },
+        {
+          "h2": "Tip 3: Know your eras",
+          "paragraphs": [
+            "A 25-point scorer from the 2000s often beats a 30-point scorer from the 1960s after era adjustment, because the engine deflates pace-inflated older numbers. When two picks look close, the more recent, more efficient era usually wins."
+          ]
+        },
+        {
+          "h2": "Tip 4: Spend your skips early",
+          "paragraphs": [
+            "You get one team skip and one era skip per game. A weak first-round roll is a hole you cannot climb out of later, so skip aggressively early. Hoarding both skips for round five usually means wasting them."
+          ]
+        },
+        {
+          "h2": "Tip 5: Manage positions (and try HoopIQ)",
+          "paragraphs": [
+            "Each pick must fill an open court position the player actually played. A superstar you cannot place is a superstar you cannot draft, so watch which slots are still open. Once you have the basics down, switch to HoopIQ mode — stats hidden, drafting from memory — for the real test."
+          ]
+        }
+      ]
+    },
+    "gamesLike": {
+      "title": "Games Like 82-0: Perfect-Season Team Builders to Play Next",
+      "description": "Love the 82-0 challenge? Here are games like it — the same spin-and-draft, perfect-season format for soccer (38-0), the NFL (20-0) and the World Cup (7-0), plus daily and memory modes.",
+      "h1": "Games Like 82-0",
+      "intro": "If you enjoy the 82-0 challenge, here are the closest games to play next — same spin-and-draft loop, different sports and twists, all free in your browser.",
+      "sections": [
+        {
+          "h2": "What makes 82-0 special",
+          "paragraphs": [
+            "Most 'who's the GOAT' debates end in a shrug. The 82-0 format gives them a scoreboard: random team rolls, a draft built on real players, and a season simulation that decides whether your lineup survives undefeated. The games below share that DNA — concrete, simulated answers instead of endless argument."
+          ]
+        },
+        {
+          "h2": "38-0 — Premier League soccer",
+          "paragraphs": [
+            "The soccer edition. Spin Premier League clubs and eras, draft an XI of real legends across four decades, and chase a perfect 38-win season — something not even Arsenal's Invincibles managed. Eleven roster slots make it the cruelest of the family."
+          ]
+        },
+        {
+          "h2": "20-0 — NFL football",
+          "paragraphs": [
+            "The gridiron cousin. Draft a 12-player NFL roster from random franchises, then play out a 20-game season — 17 regular plus three playoff rounds. A perfect 20-0 wins the Super Bowl."
+          ]
+        },
+        {
+          "h2": "7-0 — World Cup dream team",
+          "paragraphs": [
+            "Build the greatest World Cup XI ever. Mix legends from 1970 to 2026, link countrymen for chemistry, and chase a flawless 7-0 run or survive a four-round knockout gauntlet to lift the trophy."
+          ]
+        },
+        {
+          "h2": "Same game, new twists: Daily and HoopIQ",
+          "paragraphs": [
+            "Already love 82-0 itself? Two built-in variations keep it fresh. The Daily Challenge gives everyone the same rolls and one attempt — pure leaderboard bait. HoopIQ mode hides all stats so you draft from memory alone, the fastest way to find out who really knows their basketball history."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Play the Premier League Perfect Season Game",
       "description": "Play the viral 38-0 challenge. Spin random Premier League clubs and eras, draft a starting XI of legends, and see if your team can win all 38 games — beyond the Invincibles.",
@@ -480,6 +607,9 @@
     "pages": "Pages",
     "daily": "Daily Challenge",
     "unblocked": "Play Unblocked",
+    "howItsCalculated": "How It's Calculated",
+    "canYouGo": "Can You Go 82-0?",
+    "gamesLike": "Games Like 82-0",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "More",
@@ -489,7 +619,8 @@
     "terms": "Terms of Use",
     "contact": "Contact",
     "disclaimer": "82-0 Challenge is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league or team. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only. No official logos, trademarks, or photographs are used.",
-    "copyright": "© 2026 82-0 Challenge"
+    "copyright": "© 2026 82-0 Challenge",
+    "related": "Related guides"
   },
   "wcGame": {
     "squad": "SQUAD",

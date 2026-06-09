@@ -6,6 +6,7 @@ import GameMain from './Components/Game/GameMain';
 import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
 import SeoSections from './Components/SeoSections';
+import RelatedLinks from './Components/RelatedLinks';
 import SquadCta from './Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
@@ -18,6 +19,7 @@ export async function generateMetadata() {
 export default async function Home({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
+  const prefix = locale === 'en' ? '' : `/${locale}`;
 
   const faqJsonLd = {
     '@context': 'https://schema.org',
@@ -54,6 +56,16 @@ export default async function Home({ params }) {
 
         {/* SEO content */}
         <SeoSections sections={t.homeSeo.sections} />
+
+        {/* Contextual internal links */}
+        <RelatedLinks
+          title={t.footer?.related || 'Related guides'}
+          links={[
+            { href: `${prefix}/how-its-calculated`, label: (t.pages.howItsCalculated || en.pages.howItsCalculated).h1 },
+            { href: `${prefix}/can-you-go-82-0`, label: (t.pages.canYouGo || en.pages.canYouGo).h1 },
+            { href: `${prefix}/games-like-82-0`, label: (t.pages.gamesLike || en.pages.gamesLike).h1 },
+          ]}
+        />
 
         {/* FAQ */}
         <section id="faq" className={styles.faqSection}>

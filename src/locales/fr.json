@@ -298,6 +298,133 @@
         }
       ]
     },
+    "howItsCalculated": {
+      "title": "Comment le 82-0 est-il calculé ? Le moteur de score expliqué",
+      "description": "Comment le défi 82-0 calcule-t-il votre bilan ? Une explication claire des cinq catégories de stats, de la courbe de victoires non linéaire, de l'ajustement d'époque et de pourquoi une seule faiblesse ruine la saison parfaite.",
+      "h1": "Comment le 82-0 est calculé",
+      "intro": "Vous vous demandez comment le défi 82-0 transforme cinq joueurs en un bilan victoires-défaites ? Voici exactement ce que fait le moteur de simulation, en clair.",
+      "sections": [
+        {
+          "h2": "La réponse courte",
+          "paragraphs": [
+            "Après avoir recruté cinq joueurs, le moteur additionne leurs stats par match dans cinq catégories — points, rebonds, passes, interceptions et contres —, ajuste chaque ligne selon l'époque d'origine, puis passe le total dans une courbe de victoires non linéaire pour projeter un bilan entre 0-82 et 82-0. Une seule catégorie faible plafonne votre potentiel, peu importe la force du reste de l'effectif."
+          ]
+        },
+        {
+          "h2": "Les cinq catégories de stats",
+          "paragraphs": [
+            "Chaque joueur porte une vraie ligne de stats historique : points (PPG), rebonds (RPG), passes (APG), interceptions (SPG) et contres (BPG) par match. Le moteur additionne chaque catégorie sur votre cinq de départ, donc le total de points d'un cinq est la somme de cinq marqueurs, son total de rebonds la somme de cinq rebondeurs, et ainsi de suite. L'équilibre entre les cinq compte plus qu'un chiffre énorme dans une seule.",
+            "C'est pourquoi un cinq de cinq marqueurs sous-performe : il empile les points mais affiche un contre et une création de jeu quasi nuls, et le moteur punit ce déséquilibre."
+          ]
+        },
+        {
+          "h2": "La courbe de victoires non linéaire",
+          "paragraphs": [
+            "Le total statistique ne se traduit pas en victoires en ligne droite. Le moteur passe votre agrégat dans une courbe où chaque victoire supplémentaire coûte progressivement plus de force d'effectif. Passer de 55 à 60 victoires projetées est bon marché ; passer de 75 à 80 est brutalement cher. Cette courbe explique pourquoi le 82-0 est si rare même avec un cinq d'élite : les dernières victoires exigent un effectif quasi parfait."
+          ]
+        },
+        {
+          "h2": "Seuils de catégorie : pourquoi un trou vous coule",
+          "paragraphs": [
+            "En plus de la courbe, chaque catégorie a un seuil minimal. Si votre cinq n'a quasiment aucune protection du cercle ni création de jeu, le moteur plafonne votre bilan projeté quelle que soit la hauteur de votre total de points. Un effectif équilibré à 78-4 bat à chaque fois un effectif déséquilibré à 90 points mais zéro contre. Cela modélise le vrai basket : une équipe incapable de défendre le cercle ou de mener une attaque perd des matchs peu importe ce qu'elle marque."
+          ]
+        },
+        {
+          "h2": "Ajustement d'époque",
+          "paragraphs": [
+            "30 points par match dans les années 60 rapides et prolifiques, ce n'est pas la même chose que 30 points dans les années 2020. Le moteur dégonfle les chiffres gonflés par le rythme des décennies anciennes et normalise chaque ligne de stats sur une base commune avant d'additionner, pour qu'un joueur ne soit pas récompensé juste pour avoir joué à une époque au tempo élevé. Cela garde les cinq inter-décennies équitables."
+          ]
+        },
+        {
+          "h2": "Envie de tester ?",
+          "paragraphs": [
+            "Le moyen le plus rapide de comprendre le score, c'est de jouer. Faites tourner un cinq, lisez le bilan projeté et l'encadré 'plus grande faiblesse', puis ajustez votre partie suivante pour combler ce trou."
+          ]
+        }
+      ]
+    },
+    "canYouGo": {
+      "title": "Peut-on vraiment faire 82-0 ? Conseils pour une équipe invaincue",
+      "description": "Peut-on vraiment faire 82-0 dans le défi 82-0 ? Oui, mais c'est rare par conception. Cinq conseils concrets pour maximiser votre bilan projeté et viser la saison parfaite invaincue.",
+      "h1": "Peut-on vraiment faire 82-0 ?",
+      "intro": "Réponse courte : oui, mais c'est rare par conception. La saison parfaite est atteignable avec le bon cinq et un peu de chance. Voici comment mettre toutes les chances de votre côté.",
+      "sections": [
+        {
+          "h2": "Le 82-0 est-il seulement possible ?",
+          "paragraphs": [
+            "Oui. Un cinq qui maximise les cinq catégories à la fois, sans faiblesse flagrante, a une vraie chance de saison parfaite 82-0. Mais la courbe non linéaire du moteur rend les dernières victoires extrêmement coûteuses, donc même un effectif chargé finit souvent à 78-4 ou 80-2. Réussir un vrai 82-0 doit donner l'impression d'écrire l'histoire : c'est tout l'intérêt."
+          ]
+        },
+        {
+          "h2": "Conseil 1 : Maximisez les cinq catégories",
+          "paragraphs": [
+            "Ne courez pas après les seuls points. Le moteur additionne points, rebonds, passes, interceptions et contres, et récompense la production brute équilibrée. Un cinq élite au scoring mais vide au contre ou à la création est plafonné. Visez les meilleurs producteurs ajustés par époque dans chaque catégorie, pas cinq du même archétype."
+          ]
+        },
+        {
+          "h2": "Conseil 2 : Respectez les seuils",
+          "paragraphs": [
+            "Chaque catégorie a un plancher. Un cinq de départ avec zéro protection du cercle ou zéro création de jeu plafonne votre potentiel peu importe ce qu'il marque. Avant de valider un choix, demandez-vous dans quelle catégorie votre effectif est le plus mince et si ce joueur l'aide."
+          ]
+        },
+        {
+          "h2": "Conseil 3 : Connaissez les époques",
+          "paragraphs": [
+            "Un marqueur de 25 points des années 2000 bat souvent un marqueur de 30 des années 60 après ajustement d'époque, car le moteur dégonfle les vieux chiffres gonflés par le rythme. Quand deux choix semblent proches, l'époque plus récente et plus efficace l'emporte généralement."
+          ]
+        },
+        {
+          "h2": "Conseil 4 : Dépensez vos sauts tôt",
+          "paragraphs": [
+            "Vous avez un saut d'équipe et un saut d'époque par partie. Un mauvais tirage au premier tour est un trou dont vous ne sortirez pas plus tard, alors sautez de façon agressive tôt. Garder les deux sauts pour le cinquième tour revient généralement à les gaspiller."
+          ]
+        },
+        {
+          "h2": "Conseil 5 : Gérez les postes (et essayez HoopIQ)",
+          "paragraphs": [
+            "Chaque choix doit combler un poste libre que le joueur a réellement occupé. Une superstar que vous ne pouvez pas placer est une superstar que vous ne pouvez pas recruter, alors surveillez les postes encore libres. Une fois les bases maîtrisées, passez au mode HoopIQ — stats cachées, recrutement de mémoire — pour le vrai test."
+          ]
+        }
+      ]
+    },
+    "gamesLike": {
+      "title": "Jeux comme 82-0 : des constructeurs de saison parfaite à essayer",
+      "description": "Vous adorez le défi 82-0 ? Voici des jeux similaires : le même format tourner-et-recruter pour le football (38-0), la NFL (20-0) et la Coupe du monde (7-0), plus des modes quotidien et mémoire.",
+      "h1": "Jeux comme 82-0",
+      "intro": "Si vous aimez le défi 82-0, voici les jeux les plus proches à essayer ensuite : la même boucle tourner-et-recruter, d'autres sports et variantes, tous gratuits dans votre navigateur.",
+      "sections": [
+        {
+          "h2": "Ce qui rend le 82-0 spécial",
+          "paragraphs": [
+            "La plupart des débats sur 'qui est le GOAT' finissent par un haussement d'épaules. Le format 82-0 leur donne un tableau de score : tirages d'équipes au hasard, un draft bâti sur de vrais joueurs et une simulation de saison qui décide si votre cinq survit invaincu. Les jeux ci-dessous partagent cet ADN : des réponses concrètes et simulées au lieu d'une dispute sans fin."
+          ]
+        },
+        {
+          "h2": "38-0 — football de Premier League",
+          "paragraphs": [
+            "L'édition football. Faites tourner clubs et époques de Premier League, recrutez un onze de légendes réelles sur quatre décennies et visez une saison parfaite de 38 victoires, ce que même les Invincibles d'Arsenal n'ont pas réussi. Onze postes d'effectif en font le plus cruel de la famille."
+          ]
+        },
+        {
+          "h2": "20-0 — football américain de la NFL",
+          "paragraphs": [
+            "Le cousin du gridiron. Recrutez un effectif NFL de 12 joueurs depuis des franchises au hasard, puis disputez une saison de 20 matchs : 17 en saison régulière plus trois tours de playoffs. Un 20-0 parfait remporte le Super Bowl."
+          ]
+        },
+        {
+          "h2": "7-0 — équipe de rêve de la Coupe du monde",
+          "paragraphs": [
+            "Composez le plus grand onze de Coupe du monde de l'histoire. Mêlez des légendes de 1970 à 2026, liez les compatriotes pour la cohésion et visez un 7-0 impeccable ou survivez à une phase à élimination de quatre tours pour soulever le trophée."
+          ]
+        },
+        {
+          "h2": "Le même jeu, de nouvelles variantes : quotidien et HoopIQ",
+          "paragraphs": [
+            "Vous adorez déjà le 82-0 lui-même ? Deux variantes intégrées le gardent frais. Le défi quotidien donne à tous les mêmes tirages et un seul essai : pur appât à classement. Le mode HoopIQ cache toutes les stats pour que vous recrutiez de mémoire seule, le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Défi 38-0 : jouez au jeu de la saison parfaite en Premier League",
       "description": "Jouez au défi 38-0 viral. Lancez des clubs et des époques de Premier League aléatoires, draftez un onze de départ de légendes, et voyez si votre équipe peut gagner les 38 matchs — au-delà des Invincibles.",
@@ -480,6 +607,9 @@
     "pages": "Pages",
     "daily": "Défi quotidien",
     "unblocked": "Jouer débloqué",
+    "howItsCalculated": "Comment c'est calculé",
+    "canYouGo": "Peut-on faire 82-0 ?",
+    "gamesLike": "Jeux comme 82-0",
     "twentyZero": "Défi 20-0 (NFL)",
     "thirtyEight": "Défi 38-0 (Premier League)",
     "more": "Plus",
@@ -489,7 +619,8 @@
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
     "disclaimer": "Le Défi 82-0 est un projet indépendant créé par des fans. Il n'est ni affilié à la NBA ou à une quelconque ligue ou équipe de basket professionnel, ni approuvé ou sponsorisé par celles-ci. Les noms des joueurs et les statistiques historiques sont des faits accessibles au public, utilisés à des fins d'information et de divertissement uniquement. Aucun logo, marque ou photographie officiels ne sont utilisés.",
-    "copyright": "© 2026 Défi 82-0"
+    "copyright": "© 2026 Défi 82-0",
+    "related": "Guides connexes"
   },
   "wcGame": {
     "squad": "EFFECTIF",

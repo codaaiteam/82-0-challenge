@@ -298,6 +298,133 @@
         }
       ]
     },
+    "howItsCalculated": {
+      "title": "¿Cómo se calcula el 82-0? El motor de puntuación explicado",
+      "description": "¿Cómo calcula tu récord el desafío 82-0? Un desglose claro de las cinco categorías estadísticas, la curva de victorias no lineal, el ajuste por época y por qué una sola debilidad arruina la temporada perfecta.",
+      "h1": "Cómo se calcula el 82-0",
+      "intro": "¿Te preguntas cómo convierte el desafío 82-0 a cinco jugadores en un récord de victorias y derrotas? Esto es exactamente lo que hace el motor de simulación, explicado de forma sencilla.",
+      "sections": [
+        {
+          "h2": "La respuesta corta",
+          "paragraphs": [
+            "Tras reclutar a cinco jugadores, el motor suma sus estadísticas por partido en cinco categorías —puntos, rebotes, asistencias, robos y tapones—, ajusta cada línea según la época de la que procede y pasa el total por una curva de victorias no lineal para proyectar un récord entre 0-82 y 82-0. Una sola categoría débil limita tu techo por muy fuerte que sea el resto de la plantilla."
+          ]
+        },
+        {
+          "h2": "Las cinco categorías estadísticas",
+          "paragraphs": [
+            "Cada jugador lleva una línea estadística histórica real: puntos (PPG), rebotes (RPG), asistencias (APG), robos (SPG) y tapones (BPG) por partido. El motor suma cada categoría a lo largo de tu quinteto inicial, así que el total anotador de una alineación es la suma de cinco anotadores, su total reboteador la suma de cinco reboteadores, y así. El equilibrio entre las cinco importa más que un número enorme en una sola.",
+            "Por eso un quinteto de cinco anotadores rinde por debajo: acumula puntos pero registra casi cero tapones y dirección de juego, y el motor castiga ese desequilibrio."
+          ]
+        },
+        {
+          "h2": "La curva de victorias no lineal",
+          "paragraphs": [
+            "El total estadístico no se traduce en victorias en línea recta. El motor pasa tu agregado por una curva en la que cada victoria adicional cuesta progresivamente más fuerza de plantilla. Pasar de 55 a 60 victorias proyectadas es barato; pasar de 75 a 80 es brutalmente caro. Esa curva es la razón de que el 82-0 sea tan raro incluso con una alineación de élite: las últimas victorias exigen una plantilla casi perfecta."
+          ]
+        },
+        {
+          "h2": "Umbrales de categoría: por qué un agujero te hunde",
+          "paragraphs": [
+            "Además de la curva, cada categoría tiene un umbral mínimo. Si tu alineación no tiene prácticamente protección del aro ni dirección de juego, el motor limita tu récord proyectado por muy alto que suba tu total anotador. Una plantilla equilibrada de 78-4 gana siempre a una desequilibrada de 90 puntos pero cero tapones. Esto modela el baloncesto real: un equipo que no puede defender el aro ni dirigir el ataque pierde partidos por mucho que anote."
+          ]
+        },
+        {
+          "h2": "Ajuste por época",
+          "paragraphs": [
+            "30 puntos por partido en los trepidantes y anotadores años 60 no es lo mismo que 30 puntos en los 2020. El motor desinfla las cifras hinchadas por el ritmo de las décadas más antiguas y normaliza cada línea estadística a una base común antes de sumar, así que un jugador no es premiado solo por jugar en una época de alto tempo. Esto mantiene justas las alineaciones entre décadas."
+          ]
+        },
+        {
+          "h2": "¿Quieres probarlo?",
+          "paragraphs": [
+            "La forma más rápida de entender la puntuación es jugar. Gira una alineación, lee el récord proyectado y el aviso de 'mayor debilidad', y ajusta tu siguiente partida para tapar ese agujero."
+          ]
+        }
+      ]
+    },
+    "canYouGo": {
+      "title": "¿Puedes hacer 82-0 de verdad? Consejos para un equipo invicto",
+      "description": "¿Puedes realmente hacer 82-0 en el desafío 82-0? Sí, pero es raro por diseño. Cinco consejos concretos para maximizar tu récord proyectado y perseguir la temporada perfecta invicta.",
+      "h1": "¿Puedes hacer 82-0 de verdad?",
+      "intro": "Respuesta corta: sí, pero es raro por diseño. La temporada perfecta es alcanzable con la alineación adecuada y algo de suerte. Aquí tienes cómo darte la mejor oportunidad.",
+      "sections": [
+        {
+          "h2": "¿Es siquiera posible el 82-0?",
+          "paragraphs": [
+            "Sí. Una alineación que maximiza las cinco categorías a la vez, sin debilidad evidente, tiene opciones reales de la temporada perfecta 82-0. Pero la curva no lineal del motor hace que las últimas victorias sean carísimas, así que incluso una plantilla cargada suele quedar en 78-4 u 80-2. Lograr un 82-0 de verdad debería sentirse como hacer historia: ese es el objetivo."
+          ]
+        },
+        {
+          "h2": "Consejo 1: Maximiza las cinco categorías",
+          "paragraphs": [
+            "No persigas solo los puntos. El motor suma puntos, rebotes, asistencias, robos y tapones, y premia la producción bruta equilibrada. Una alineación de élite anotando pero vacía en tapones o dirección de juego queda limitada. Apunta a los mayores productores ajustados por época en cada categoría, no a cinco del mismo arquetipo."
+          ]
+        },
+        {
+          "h2": "Consejo 2: Respeta los umbrales",
+          "paragraphs": [
+            "Cada categoría tiene un suelo. Un quinteto con cero protección del aro o cero dirección de juego limita tu techo por mucho que anote. Antes de fijar una elección, pregúntate en qué categoría es más flojo tu equipo y si este jugador la ayuda."
+          ]
+        },
+        {
+          "h2": "Consejo 3: Conoce las épocas",
+          "paragraphs": [
+            "Un anotador de 25 puntos de los 2000 a menudo supera a uno de 30 de los 60 tras el ajuste por época, porque el motor desinfla las viejas cifras hinchadas por el ritmo. Cuando dos elecciones parecen parejas, suele ganar la época más reciente y eficiente."
+          ]
+        },
+        {
+          "h2": "Consejo 4: Gasta los saltos pronto",
+          "paragraphs": [
+            "Tienes un salto de equipo y un salto de época por partida. Una mala tirada en la primera ronda es un agujero del que no podrás salir después, así que salta de forma agresiva al principio. Guardar ambos saltos para la quinta ronda suele significar desperdiciarlos."
+          ]
+        },
+        {
+          "h2": "Consejo 5: Gestiona las posiciones (y prueba HoopIQ)",
+          "paragraphs": [
+            "Cada elección debe cubrir una posición libre que el jugador realmente ocupó. Una superestrella que no puedes colocar es una superestrella que no puedes reclutar, así que vigila qué huecos siguen libres. Cuando domines lo básico, cambia al modo HoopIQ —estadísticas ocultas, reclutando de memoria— para la prueba de verdad."
+          ]
+        }
+      ]
+    },
+    "gamesLike": {
+      "title": "Juegos como 82-0: constructores de temporada perfecta para seguir",
+      "description": "¿Te encanta el desafío 82-0? Aquí tienes juegos parecidos: el mismo formato de girar y reclutar para fútbol (38-0), la NFL (20-0) y el Mundial (7-0), además de modos diario y de memoria.",
+      "h1": "Juegos como 82-0",
+      "intro": "Si disfrutas del desafío 82-0, estos son los juegos más cercanos para seguir jugando: el mismo bucle de girar y reclutar, distintos deportes y giros, todos gratis en tu navegador.",
+      "sections": [
+        {
+          "h2": "Qué hace especial al 82-0",
+          "paragraphs": [
+            "La mayoría de los debates sobre 'quién es el GOAT' terminan en un encogimiento de hombros. El formato 82-0 les da un marcador: tiradas de equipos al azar, un draft construido sobre jugadores reales y una simulación de temporada que decide si tu alineación sobrevive invicta. Los juegos de abajo comparten ese ADN: respuestas concretas y simuladas en lugar de discusión interminable."
+          ]
+        },
+        {
+          "h2": "38-0 — fútbol de la Premier League",
+          "paragraphs": [
+            "La edición de fútbol. Gira clubes y épocas de la Premier League, recluta un once de leyendas reales de cuatro décadas y persigue una temporada perfecta de 38 victorias, algo que ni los Invencibles del Arsenal lograron. Once puestos de plantilla lo hacen el más cruel de la familia."
+          ]
+        },
+        {
+          "h2": "20-0 — fútbol americano de la NFL",
+          "paragraphs": [
+            "El primo del césped. Recluta una plantilla de 12 jugadores de la NFL de franquicias al azar y juega una temporada de 20 partidos: 17 de temporada regular más tres rondas de playoffs. Un 20-0 perfecto gana la Super Bowl."
+          ]
+        },
+        {
+          "h2": "7-0 — equipo de ensueño del Mundial",
+          "paragraphs": [
+            "Forma el mejor once mundialista de la historia. Mezcla leyendas de 1970 a 2026, enlaza compatriotas para ganar química y persigue un 7-0 impecable o sobrevive a una eliminatoria de cuatro rondas para levantar el trofeo."
+          ]
+        },
+        {
+          "h2": "El mismo juego, nuevos giros: diario y HoopIQ",
+          "paragraphs": [
+            "¿Ya te encanta el propio 82-0? Dos variaciones integradas lo mantienen fresco. El desafío diario da a todos las mismas tiradas y un intento: puro cebo de clasificación. El modo HoopIQ oculta todas las estadísticas para que reclutes solo de memoria, la forma más rápida de descubrir quién conoce de verdad la historia del baloncesto."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Desafío 38-0: juega al juego de la temporada perfecta de la Premier League",
       "description": "Juega al viral desafío 38-0. Gira clubes y épocas de la Premier League al azar, recluta un once inicial de leyendas y comprueba si tu equipo puede ganar los 38 partidos, más allá de los Invencibles.",
@@ -480,6 +607,9 @@
     "pages": "Páginas",
     "daily": "Desafío diario",
     "unblocked": "Jugar sin bloqueos",
+    "howItsCalculated": "Cómo se calcula",
+    "canYouGo": "¿Puedes hacer 82-0?",
+    "gamesLike": "Juegos como 82-0",
     "twentyZero": "Desafío 20-0 (NFL)",
     "thirtyEight": "Desafío 38-0 (Premier League)",
     "more": "Más",
@@ -489,7 +619,8 @@
     "terms": "Condiciones de uso",
     "contact": "Contacto",
     "disclaimer": "Desafío 82-0 es un proyecto independiente hecho por aficionados. No está afiliado, respaldado ni patrocinado por la NBA ni por ninguna liga o equipo de baloncesto profesional. Los nombres de los jugadores y las estadísticas históricas son datos de dominio público utilizados únicamente con fines informativos y de entretenimiento. No se utilizan logotipos, marcas registradas ni fotografías oficiales.",
-    "copyright": "© 2026 Desafío 82-0"
+    "copyright": "© 2026 Desafío 82-0",
+    "related": "Guías relacionadas"
   },
   "wcGame": {
     "squad": "PLANTILLA",
