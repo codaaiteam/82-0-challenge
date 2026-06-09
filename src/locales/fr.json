@@ -23,7 +23,7 @@
     "modeClassic": "Classique",
     "modeClassicDesc": "Toutes les statistiques des joueurs sont visibles — faites des choix éclairés à partir des chiffres.",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "Les stats sont masquées — draftez de mémoire et testez vos connaissances du basket.",
+    "modeHoopiqDesc": "Stats cachées : recrutez de mémoire et montrez à quel point vous connaissez le jeu.",
     "playClassic": "Jouer en Classique",
     "playHoopiq": "Jouer en HoopIQ",
     "roundOf": "Tour {round} sur {total}",

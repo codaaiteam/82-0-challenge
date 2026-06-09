@@ -23,7 +23,7 @@
     "modeClassic": "Clásico",
     "modeClassicDesc": "Las estadísticas completas de cada jugador están visibles: elige con información basándote en los números.",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "Las estadísticas están ocultas: recluta de memoria y pon a prueba tu conocimiento del baloncesto.",
+    "modeHoopiqDesc": "Estadísticas ocultas: recluta de memoria y demuestra cuánto sabes del juego.",
     "playClassic": "Jugar al Clásico",
     "playHoopiq": "Jugar a HoopIQ",
     "roundOf": "Ronda {round} de {total}",

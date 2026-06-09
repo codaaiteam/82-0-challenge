@@ -202,7 +202,7 @@
 /* ---- draft body: list + court ---- */
 .draftBody {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   gap: 1.25rem;
   align-items: start;
 }
@@ -358,35 +358,34 @@
   overflow: hidden;
 }
 
-/* three-point arc */
-.courtArc {
+/* full half-court, drawn as crisp SVG line art */
+.courtLines {
   position: absolute;
-  top: -42%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 88%;
-  aspect-ratio: 1;
-  border: 2px solid #243c55;
-  border-radius: 50%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-/* the paint */
-.courtPaint {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 34%;
-  height: 38%;
-  border: 2px solid #243c55;
-  border-top: none;
-  border-radius: 0 0 10px 10px;
+.courtLines line,
+.courtLines circle,
+.courtLines rect,
+.courtLines path {
+  stroke: #31486d;
+  stroke-width: 0.35;
+  fill: none;
+  stroke-linejoin: round;
+}
+
+.courtLines .rim {
+  stroke: #ff8a29;
+  stroke-width: 0.9;
 }
 
 .courtSlot {
   position: absolute;
-  width: 58px;
-  height: 58px;
+  width: clamp(54px, 14%, 92px);
+  aspect-ratio: 1;
   transform: translate(-50%, -50%);
   border-radius: 12px;
   border: 2px dashed #36415c;
@@ -484,25 +483,59 @@
 
 /* ---- EPL 4-4-2 pitch ---- */
 .pitch {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.55rem;
-  background: linear-gradient(180deg, #0d2818, #081c10);
+  aspect-ratio: 5 / 6;
+  background: linear-gradient(180deg, #11331d, #0a2212);
   border: 1px solid #1e4a2e;
   border-radius: 12px;
-  padding: 0.9rem 0.6rem;
+  padding: 1.1rem 0.7rem;
+  overflow: hidden;
+}
+
+/* full pitch, drawn as SVG line art */
+.pitchLines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pitchLines line,
+.pitchLines rect,
+.pitchLines path {
+  stroke: rgba(190, 225, 200, 0.26);
+  stroke-width: 0.4;
+  fill: none;
+}
+
+.pitchLines .pitchSpot {
+  fill: rgba(190, 225, 200, 0.5);
+  stroke: none;
+}
+
+.pitchLines .goal {
+  stroke: rgba(225, 245, 230, 0.7);
+  stroke-width: 1;
 }
 
 .pitchRow {
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
   gap: 0.55rem;
 }
 
 .pitchSlot {
-  width: 56px;
-  height: 50px;
-  aspect-ratio: auto;
+  width: clamp(50px, 13%, 80px);
+  height: auto;
+  aspect-ratio: 1.15;
   flex-shrink: 0;
 }
 
@@ -764,12 +797,11 @@
   }
 
   .court {
-    aspect-ratio: 16 / 10;
+    aspect-ratio: 10 / 9;
   }
 
   .courtSlot {
-    width: 50px;
-    height: 50px;
+    width: clamp(48px, 15%, 84px);
   }
 
   .playerList {

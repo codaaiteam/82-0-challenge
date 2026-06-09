@@ -418,8 +418,20 @@ export default function GameMain({ t, initialMode = null }) {
         {/* Court */}
         <div className={styles.courtPanel}>
           <div className={styles.court}>
-            <div className={styles.courtArc} />
-            <div className={styles.courtPaint} />
+            <svg className={styles.courtLines} viewBox="0 0 100 90" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+              {/* half-court line + center circle (bottom) */}
+              <line x1="1" y1="89" x2="99" y2="89" />
+              <path d="M40 89 A10 10 0 0 1 60 89" />
+              {/* three-point line: corners + top arc */}
+              <path d="M9 1 L9 15 A41 41 0 0 0 91 15 L91 1" />
+              {/* paint / key */}
+              <rect x="38" y="1" width="24" height="34" />
+              {/* free-throw circle */}
+              <circle cx="50" cy="35" r="8" />
+              {/* backboard + rim */}
+              <line className={styles.rim} x1="43" y1="6" x2="57" y2="6" />
+              <circle className={styles.rim} cx="50" cy="9" r="2" />
+            </svg>
             {POSITIONS.map(pos => {
               const p = slots[pos];
               const eligible = selected && !p && selected.positions.includes(pos);

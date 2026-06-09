@@ -23,7 +23,7 @@
     "modeClassic": "클래식",
     "modeClassicDesc": "선수의 모든 스탯이 공개됩니다 — 숫자를 보고 현명하게 선택하세요.",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "스탯이 숨겨집니다 — 기억에 의존해 드래프트하며 당신의 농구 지식을 시험하세요.",
+    "modeHoopiqDesc": "스탯 숨김——기억만으로 드래프트하고 종목에 대한 이해를 시험하세요.",
     "playClassic": "클래식 플레이",
     "playHoopiq": "HoopIQ 플레이",
     "roundOf": "라운드 {round} / {total}",

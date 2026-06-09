@@ -23,7 +23,7 @@
     "modeClassic": "经典模式",
     "modeClassicDesc": "球员数据全部可见——根据数据做出明智的选择。",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "数据全部隐藏——凭记忆选人，考验你的篮球功底。",
+    "modeHoopiqDesc": "数据隐藏——凭记忆选秀，考验你对这项运动的了解。",
     "playClassic": "玩经典模式",
     "playHoopiq": "玩 HoopIQ",
     "roundOf": "第 {round} 轮 / 共 {total} 轮",

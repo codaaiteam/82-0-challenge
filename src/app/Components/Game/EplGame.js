@@ -334,6 +334,22 @@ export default function EplGame({ t }) {
         {/* 4-4-2 pitch */}
         <div className={styles.courtPanel}>
           <div className={styles.pitch}>
+            <svg className={styles.pitchLines} viewBox="0 0 100 120" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+              {/* sidelines */}
+              <rect x="2" y="2" width="96" height="116" rx="2" />
+              {/* halfway line + center circle (top = attacking end) */}
+              <line x1="2" y1="2" x2="98" y2="2" />
+              <path d="M35 2 A15 15 0 0 0 65 2" />
+              {/* penalty box + six-yard box (bottom = own goal) */}
+              <rect x="22" y="82" width="56" height="36" />
+              <rect x="37" y="104" width="26" height="14" />
+              {/* penalty arc */}
+              <path d="M40 82 A12 12 0 0 1 60 82" />
+              {/* spots + goal */}
+              <circle className={styles.pitchSpot} cx="50" cy="100" r="0.9" />
+              <circle className={styles.pitchSpot} cx="50" cy="2" r="0.9" />
+              <line className={styles.goal} x1="43" y1="118" x2="57" y2="118" />
+            </svg>
             {ROWS.map((row, i) => (
               <div key={i} className={styles.pitchRow}>
                 {row.map(slot => {

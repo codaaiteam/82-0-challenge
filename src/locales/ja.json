@@ -23,7 +23,7 @@
     "modeClassic": "クラシック",
     "modeClassicDesc": "選手のスタッツがすべて見える ― 数字をもとに賢くピックしよう。",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "スタッツは非表示 ― 記憶を頼りにドラフトして、バスケIQを試そう。",
+    "modeHoopiqDesc": "スタッツは非表示——記憶だけでドラフトし、競技への理解を試そう。",
     "playClassic": "クラシックをプレイ",
     "playHoopiq": "HoopIQ をプレイ",
     "roundOf": "ラウンド {round} / {total}",

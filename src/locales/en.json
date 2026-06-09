@@ -23,7 +23,7 @@
     "modeClassic": "Classic",
     "modeClassicDesc": "Full player stats are visible — make informed picks based on the numbers.",
     "modeHoopiq": "HoopIQ",
-    "modeHoopiqDesc": "Stats are hidden — draft from memory and test your basketball knowledge.",
+    "modeHoopiqDesc": "Stats are hidden — draft from memory and test how well you know the game.",
     "playClassic": "Play Classic",
     "playHoopiq": "Play HoopIQ",
     "roundOf": "Round {round} of {total}",

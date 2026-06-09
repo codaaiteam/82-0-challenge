@@ -27,7 +27,7 @@ export default function GameWithSidebarAds({ children }) {
         alignItems: 'flex-start',
         gap: '1rem',
         width: '100%',
-        maxWidth: screen === 'desktop' ? '1020px' : '650px',
+        maxWidth: screen === 'desktop' ? '1180px' : '650px',
         margin: '0 auto',
         padding: '0 1rem',
       }}>
@@ -36,7 +36,7 @@ export default function GameWithSidebarAds({ children }) {
             <AdsterraSidebar />
           </div>
         )}
-        <div style={{ flex: '1 1 auto', maxWidth: '650px', width: '100%' }}>
+        <div style={{ flex: '1 1 auto', maxWidth: '760px', width: '100%' }}>
           {children}
         </div>
         {screen === 'desktop' && (
