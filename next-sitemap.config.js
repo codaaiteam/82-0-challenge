@@ -5,6 +5,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.82-0-challenge.
 const contentPages = [
   '/82-0',
   '/how-to-play',
+  '/unblocked',
   '/team-builder',
   '/20-0',
   '/38-0',

@@ -12,6 +12,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <Link href={prefix || '/'}>{t?.header?.home || 'Home'}</Link>
           <Link href={`${prefix}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
           <Link href={`${prefix}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
+          <Link href={`${prefix}/unblocked`}>{t?.footer?.unblocked || 'Play Unblocked'}</Link>
           <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
           <Link href={`${prefix}/daily`}>{t?.footer?.daily || 'Daily Challenge'}</Link>
           <Link href={`${prefix}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>

@@ -257,6 +257,47 @@
       "h1": "Défi quotidien 82-0",
       "intro": "Les mêmes tirages pour tout le monde sur la planète. Une seule tentative par jour. Bâtissez votre meilleur cinq, obtenez votre bilan, et défiez vos amis de battre le tirage du jour."
     },
+    "unblocked": {
+      "title": "Jouer à 82-0 débloqué — gratuit, sans téléchargement",
+      "description": "Jouez au défi 82-0 débloqué et gratuit dans votre navigateur. Sans téléchargement, sans installation, sans inscription : fonctionne à l'école ou au travail. Tournez, recrutez des légendes, visez le 82-0.",
+      "h1": "82-0 débloqué — jouez gratuitement dans votre navigateur",
+      "intro": "Le défi 82-0 fonctionne entièrement dans votre navigateur, il n'y a donc rien à bloquer. Sans téléchargement, sans installation, sans compte : il suffit de tourner la machine à sous, de recruter vos cinq légendes et de viser la saison parfaite 82-0. Commencez à jouer ci-dessous.",
+      "sections": [
+        {
+          "h2": "Que signifie ‘82-0 débloqué’ ?",
+          "paragraphs": [
+            "Quand les gens cherchent le jeu 82-0 débloqué, ils veulent une version qu'ils peuvent ouvrir et jouer partout — à l'école, au travail ou sur un réseau restreint — sans qu'elle soit bloquée ni nécessiter de téléchargement. Cette page est exactement cela : le défi 82-0 complet se charge instantanément comme une page web normale. Pas de Flash, pas de plugin, pas d'app store, et pas d'installateur qu'un pare-feu pourrait signaler.",
+            "Comme tout le jeu n'est qu'une page web, il se comporte comme n'importe quel autre site. Si vous pouvez ouvrir cette page, vous pouvez jouer. Actualisez quand vous voulez une nouvelle partie : chaque tirage est différent."
+          ]
+        },
+        {
+          "h2": "Gratuit, sans téléchargement, sans inscription",
+          "paragraphs": [
+            "82-0 est entièrement gratuit et le restera toujours. Vous ne créez aucun compte, vous ne saisissez aucun e-mail et vous ne téléchargez jamais rien. Entrez dans le jeu ci-dessus, tournez pour obtenir une équipe et une époque au hasard, recrutez une légende, et la simulation projette votre saison en moins de deux minutes.",
+            "Rien n'est stocké sur votre appareil au-delà du cache normal du navigateur, donc cela ne consomme pas d'espace et ne ralentit pas un ordinateur portable scolaire."
+          ]
+        },
+        {
+          "h2": "Est-ce que ça marche à l'école ou au travail ?",
+          "paragraphs": [
+            "Oui : le défi 82-0 est un jeu de navigateur léger, sans vidéo, sans téléchargements lourds et sans chat, exactement le genre de site qui reste jouable sur la plupart des réseaux scolaires et de bureau. Il fonctionne aussi bien sur téléphones, tablettes, Chromebooks et ordinateurs de bureau, donc un Chromebook scolaire restreint le gère sans problème.",
+            "Il n'y a rien à installer ni à mettre à jour, donc il se charge de la même façon à chaque ouverture."
+          ]
+        },
+        {
+          "h2": "Comment jouer au défi 82-0 débloqué",
+          "paragraphs": [
+            "Cinq tours, un choix à chaque fois. À chaque tour, la machine à sous tire une franchise NBA et une décennie au hasard — Chicago dans les années 90, Boston dans les années 60 — et vous recrutez un joueur réel à un poste qu'il a réellement occupé sur le terrain. Vous avez un saut d'équipe et un saut d'époque par partie. Après cinq choix, le moteur simule votre cinq sur une saison complète de 82 matchs et projette un bilan final. Partagez-le et défiez un ami de faire mieux."
+          ]
+        },
+        {
+          "h2": "Plus de jeux gratuits de saison parfaite",
+          "paragraphs": [
+            "Si vous aimez le 82-0, le même format tourner-et-recruter existe pour d'autres sports — tous gratuits, tous dans le navigateur, tous débloqués : 38-0 pour le football de Premier League, 20-0 pour la NFL et 7-0 pour la Coupe du monde. La même boucle, sans téléchargement."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Défi 38-0 : jouez au jeu de la saison parfaite en Premier League",
       "description": "Jouez au défi 38-0 viral. Lancez des clubs et des époques de Premier League aléatoires, draftez un onze de départ de légendes, et voyez si votre équipe peut gagner les 38 matchs — au-delà des Invincibles.",
@@ -438,6 +479,7 @@
   "footer": {
     "pages": "Pages",
     "daily": "Défi quotidien",
+    "unblocked": "Jouer débloqué",
     "twentyZero": "Défi 20-0 (NFL)",
     "thirtyEight": "Défi 38-0 (Premier League)",
     "more": "Plus",

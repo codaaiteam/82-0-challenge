@@ -257,6 +257,47 @@
       "h1": "Desafío 82-0 diario",
       "intro": "Las mismas tiradas para todo el planeta. Un intento por día. Forma tu mejor quinteto, consigue tu récord y reta a tus amigos a superar la tirada de hoy."
     },
+    "unblocked": {
+      "title": "Juega 82-0 sin bloqueos — gratis, sin descargas",
+      "description": "Juega al desafío 82-0 sin bloqueos y gratis en tu navegador. Sin descargas, sin instalación, sin registro: funciona en el colegio o el trabajo. Gira, recluta leyendas y busca el 82-0.",
+      "h1": "82-0 sin bloqueos — juega gratis en tu navegador",
+      "intro": "El desafío 82-0 funciona enteramente en tu navegador, así que no hay nada que bloquear. Sin descargas, sin instalación, sin cuenta: solo gira la máquina tragaperras, recluta a tus cinco leyendas y busca la temporada perfecta 82-0. Empieza a jugar más abajo.",
+      "sections": [
+        {
+          "h2": "¿Qué significa ‘82-0 sin bloqueos’?",
+          "paragraphs": [
+            "Cuando la gente busca el juego 82-0 sin bloqueos, quiere una versión que pueda abrir y jugar en cualquier sitio — en el colegio, en el trabajo o en una red restringida — sin que la bloqueen ni tener que descargar nada. Esta página es exactamente eso: el desafío 82-0 completo se carga al instante como una página web normal. No hay Flash, ni plugin, ni tienda de apps, ni un instalador que un cortafuegos pueda marcar.",
+            "Como todo el juego es solo una página web, se comporta como cualquier otro sitio. Si puedes abrir esta página, puedes jugar. Actualiza cuando quieras una nueva partida: cada tirada es distinta."
+          ]
+        },
+        {
+          "h2": "Gratis, sin descargas, sin registro",
+          "paragraphs": [
+            "82-0 es totalmente gratis y siempre lo será. No creas ninguna cuenta, no introduces ningún correo y nunca descargas nada. Entra en el juego de arriba, gira para sacar un equipo y una época al azar, recluta a una leyenda y la simulación proyecta tu temporada en menos de dos minutos.",
+            "No se guarda nada en tu dispositivo más allá de la caché normal del navegador, así que no ocupa espacio ni ralentiza el portátil del colegio."
+          ]
+        },
+        {
+          "h2": "¿Funciona en el colegio o el trabajo?",
+          "paragraphs": [
+            "Sí: el desafío 82-0 es un juego de navegador ligero, sin vídeo, sin descargas pesadas y sin chat, justo el tipo de web que sigue siendo jugable en la mayoría de las redes de colegios y oficinas. Funciona igual en móviles, tablets, Chromebooks y ordenadores, así que un Chromebook escolar restringido lo maneja sin problema.",
+            "No hay nada que instalar ni nada que actualizar, así que se carga igual cada vez que lo abres."
+          ]
+        },
+        {
+          "h2": "Cómo jugar al desafío 82-0 sin bloqueos",
+          "paragraphs": [
+            "Cinco rondas, una elección cada una. En cada ronda la máquina tragaperras saca una franquicia de la NBA y una década al azar — Chicago en los 90, Boston en los 60 — y reclutas a un jugador real en una posición de la cancha que realmente ocupó. Tienes un salto de equipo y un salto de época por partida. Tras cinco elecciones, el motor simula tu quinteto a lo largo de una temporada completa de 82 partidos y proyecta un récord final. Compártelo y reta a un amigo a superarte."
+          ]
+        },
+        {
+          "h2": "Más juegos gratis de temporada perfecta",
+          "paragraphs": [
+            "Si te gusta el 82-0, el mismo formato de girar y reclutar existe para otros deportes — todos gratis, todos en el navegador, todos sin bloqueos: 38-0 para el fútbol de la Premier League, 20-0 para la NFL y 7-0 para el Mundial. El mismo bucle, sin descargas."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Desafío 38-0: juega al juego de la temporada perfecta de la Premier League",
       "description": "Juega al viral desafío 38-0. Gira clubes y épocas de la Premier League al azar, recluta un once inicial de leyendas y comprueba si tu equipo puede ganar los 38 partidos, más allá de los Invencibles.",
@@ -438,6 +479,7 @@
   "footer": {
     "pages": "Páginas",
     "daily": "Desafío diario",
+    "unblocked": "Jugar sin bloqueos",
     "twentyZero": "Desafío 20-0 (NFL)",
     "thirtyEight": "Desafío 38-0 (Premier League)",
     "more": "Más",

@@ -257,6 +257,47 @@
       "h1": "82-0 Daily Challenge",
       "intro": "Same spins for everyone on the planet. One attempt per day. Build your best lineup, get your record, and challenge your friends to beat today's draw."
     },
+    "unblocked": {
+      "title": "Play 82-0 Unblocked — Free Online, No Download",
+      "description": "Play the 82-0 Challenge unblocked and free in your browser. No download, no install, no sign-up — works at school or work. Spin, draft legends, chase 82-0.",
+      "h1": "82-0 Unblocked — Play Free in Your Browser",
+      "intro": "The 82-0 Challenge runs entirely in your browser, so there is nothing to block. No download, no install, no account — just spin the slot machine, draft your five legends, and chase the perfect 82-0 season. Start playing below.",
+      "sections": [
+        {
+          "h2": "What does ‘82-0 unblocked’ mean?",
+          "paragraphs": [
+            "When people search for the 82-0 game unblocked, they want a version they can open and play anywhere — at school, at work, or on a locked-down network — without it being blocked or needing a download. This page is exactly that: the full 82-0 Challenge loads instantly as a normal web page. There is no Flash, no plugin, no app store, and no installer for a firewall to flag.",
+            "Because the whole game is just a web page, it behaves like any other site. If you can open this page, you can play. Refresh whenever you want a new run — every spin is different."
+          ]
+        },
+        {
+          "h2": "Free, no download, no sign-up",
+          "paragraphs": [
+            "82-0 is completely free to play and always will be. You do not create an account, you do not enter an email, and you never download anything. Click into the game above, spin for a random team and era, draft a legend, and the simulation projects your season in under two minutes.",
+            "Nothing is stored on your device beyond your browser's normal cache, so it will not eat storage or slow down a school laptop."
+          ]
+        },
+        {
+          "h2": "Does it work at school or work?",
+          "paragraphs": [
+            "Yes — the 82-0 Challenge is a lightweight browser game with no video, no heavy downloads, and no chat, which is exactly the kind of site that stays playable on most school and office networks. It runs on phones, tablets, Chromebooks and desktops alike, so a locked-down school Chromebook handles it fine.",
+            "There is nothing to install and nothing to update, so it loads the same way every time you open it."
+          ]
+        },
+        {
+          "h2": "How to play the unblocked 82-0 challenge",
+          "paragraphs": [
+            "Five rounds, one pick each. Each round a slot machine rolls a random NBA franchise and decade — Chicago in the 90s, Boston in the 60s — and you draft one real player into a court position they actually played. You get one team skip and one era skip per game. After five picks, the engine simulates your lineup across a full 82-game season and projects a final record. Share it and challenge a friend to beat your run."
+          ]
+        },
+        {
+          "h2": "More free perfect-season games",
+          "paragraphs": [
+            "If you like 82-0, the same spin-and-draft format runs for other sports — all free and browser-based, all unblocked: 38-0 for Premier League soccer, 20-0 for the NFL, and 7-0 for the World Cup. Same loop, no download required."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Play the Premier League Perfect Season Game",
       "description": "Play the viral 38-0 challenge. Spin random Premier League clubs and eras, draft a starting XI of legends, and see if your team can win all 38 games — beyond the Invincibles.",
@@ -438,6 +479,7 @@
   "footer": {
     "pages": "Pages",
     "daily": "Daily Challenge",
+    "unblocked": "Play Unblocked",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "More",

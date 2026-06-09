@@ -257,6 +257,47 @@
       "h1": "82-0 Daily Challenge",
       "intro": "Dieselben Spins für alle auf dem Planeten. Ein Versuch pro Tag. Bau dein bestes Lineup, hol dir deine Bilanz und fordere deine Freunde heraus, die heutige Ziehung zu schlagen."
     },
+    "unblocked": {
+      "title": "82-0 entsperrt spielen — kostenlos, ohne Download",
+      "description": "Spiele die 82-0-Challenge entsperrt und kostenlos im Browser. Kein Download, keine Installation, keine Anmeldung — funktioniert in Schule oder Büro. Drehen, Legenden draften, 82-0 anstreben.",
+      "h1": "82-0 entsperrt — kostenlos im Browser spielen",
+      "intro": "Die 82-0-Challenge läuft vollständig in deinem Browser, es gibt also nichts zu blockieren. Kein Download, keine Installation, kein Konto — dreh einfach den Spielautomaten, drafte deine fünf Legenden und jage die perfekte 82-0-Saison. Starte unten.",
+      "sections": [
+        {
+          "h2": "Was bedeutet ‘82-0 entsperrt’?",
+          "paragraphs": [
+            "Wenn Leute nach dem 82-0-Spiel entsperrt suchen, wollen sie eine Version, die sie überall öffnen und spielen können — in der Schule, am Arbeitsplatz oder in einem eingeschränkten Netzwerk — ohne dass sie blockiert wird oder ein Download nötig ist. Genau das ist diese Seite: Die komplette 82-0-Challenge lädt sofort als ganz normale Webseite. Kein Flash, kein Plugin, kein App-Store und kein Installer, den eine Firewall melden könnte.",
+            "Da das ganze Spiel nur eine Webseite ist, verhält es sich wie jede andere Website. Wenn du diese Seite öffnen kannst, kannst du spielen. Aktualisiere einfach, wenn du eine neue Runde willst — jeder Dreh ist anders."
+          ]
+        },
+        {
+          "h2": "Kostenlos, kein Download, keine Anmeldung",
+          "paragraphs": [
+            "82-0 ist völlig kostenlos und bleibt es auch. Du legst kein Konto an, gibst keine E-Mail ein und lädst nie etwas herunter. Klick oben ins Spiel, dreh für ein zufälliges Team und eine Ära, drafte eine Legende, und die Simulation projiziert deine Saison in unter zwei Minuten.",
+            "Außer dem normalen Browser-Cache wird nichts auf deinem Gerät gespeichert, es belegt also keinen Speicher und bremst kein Schul-Laptop aus."
+          ]
+        },
+        {
+          "h2": "Funktioniert es in Schule oder Büro?",
+          "paragraphs": [
+            "Ja — die 82-0-Challenge ist ein leichtgewichtiges Browserspiel ohne Video, ohne große Downloads und ohne Chat, also genau die Art Website, die in den meisten Schul- und Büronetzwerken spielbar bleibt. Es läuft gleichermaßen auf Handys, Tablets, Chromebooks und Desktops, sodass auch ein eingeschränktes Schul-Chromebook es problemlos packt.",
+            "Es gibt nichts zu installieren und nichts zu aktualisieren, also lädt es jedes Mal gleich, wenn du es öffnest."
+          ]
+        },
+        {
+          "h2": "So spielst du die entsperrte 82-0-Challenge",
+          "paragraphs": [
+            "Fünf Runden, je eine Wahl. In jeder Runde dreht der Spielautomat ein zufälliges NBA-Franchise und ein Jahrzehnt — Chicago in den 90ern, Boston in den 60ern — und du draftest einen echten Spieler auf eine Position, die er wirklich gespielt hat. Du hast pro Spiel einen Team-Skip und einen Ära-Skip. Nach fünf Picks simuliert die Engine deine Aufstellung über eine volle 82-Spiele-Saison und projiziert eine Endbilanz. Teile sie und fordere einen Freund heraus, dich zu schlagen."
+          ]
+        },
+        {
+          "h2": "Mehr kostenlose Perfekte-Saison-Spiele",
+          "paragraphs": [
+            "Wenn dir 82-0 gefällt, gibt es dasselbe Dreh-und-Draft-Format für andere Sportarten — alle kostenlos, alle im Browser, alle entsperrt: 38-0 für den Premier-League-Fußball, 20-0 für die NFL und 7-0 für die Weltmeisterschaft. Dieselbe Schleife, kein Download nötig."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Spiele das Premier-League-Perfect-Season-Game",
       "description": "Spiele die virale 38-0 Challenge. Dreh zufällige Premier-League-Klubs und Epochen, drafte eine Startelf aus Legenden und finde heraus, ob dein Team alle 38 Spiele gewinnen kann — über die Invincibles hinaus.",
@@ -438,6 +479,7 @@
   "footer": {
     "pages": "Seiten",
     "daily": "Daily Challenge",
+    "unblocked": "Entsperrt spielen",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "Mehr",
