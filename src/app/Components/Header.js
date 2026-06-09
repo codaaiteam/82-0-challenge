@@ -77,6 +77,9 @@ export default function Header() {
           <Link href={`${prefix}/38-0`} className={`${styles.navLink} ${styles.navLinkNfl}`} onClick={() => setIsNavOpen(false)}>
             ⚽ 38-0
           </Link>
+          <Link href={`${prefix}/7-0`} className={`${styles.navLink} ${styles.navLinkNfl}`} onClick={() => setIsNavOpen(false)}>
+            🏆 7-0
+          </Link>
         </nav>
 
         <div className={styles.langSwitcher}>

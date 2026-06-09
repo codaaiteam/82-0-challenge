@@ -1,9 +1,10 @@
 {
-  "layout": { "language": "es" },
+  "layout": {
+    "language": "es"
+  },
   "seoTitle": "Desafío 82-0: juega al viral constructor de equipos",
   "seoDescription": "Juega al viral desafío 82-0. Gira la máquina tragaperras, recluta leyendas del baloncesto de equipos y épocas al azar y comprueba si tu quinteto puede quedar invicto.",
   "keywords": "82-0, desafío 82-0, juego del desafío 82-0, juego 82-0, constructor de equipos 82-0, cómo jugar al 82-0, reglas del desafío 82-0, constructor viral de equipos de baloncesto",
-
   "header": {
     "siteName": "Desafío 82-0",
     "home": "Inicio",
@@ -11,13 +12,11 @@
     "howToPlay": "Cómo jugar",
     "teamBuilder": "Constructor de equipos"
   },
-
   "hero": {
     "title": "Desafío 82-0",
     "subtitle": "¿Puedes formar un equipo que termine 82-0? Gira la máquina tragaperras, recluta una leyenda por ronda de un equipo y una época al azar y observa cómo la simulación proyecta tu temporada.",
     "cta": "Empezar el desafío"
   },
-
   "game": {
     "chooseMode": "Elige tu modo",
     "chooseModeSub": "¿Cómo quieres formar tu equipo histórico?",
@@ -106,7 +105,6 @@
       }
     }
   },
-
   "homeSeo": {
     "sections": [
       {
@@ -160,7 +158,6 @@
       }
     ]
   },
-
   "faq": {
     "sectionTitle": "Preguntas frecuentes",
     "q1": "¿Qué es el desafío 82-0?",
@@ -176,7 +173,6 @@
     "q6": "¿Cómo se calcula el récord final?",
     "a6": "El motor suma los puntos, rebotes, asistencias, robos y tapones de tu quinteto ajustados por época y luego pasa el total por una curva de proyección de victorias no lineal. Cada categoría tiene un umbral: una sola debilidad evidente limita tu récord por muy fuerte que sea el resto de la plantilla."
   },
-
   "pages": {
     "whatIs": {
       "title": "82-0: ¿qué es el viral juego del desafío 82-0?",
@@ -218,11 +214,26 @@
       "h1": "Cómo jugar al desafío 82-0",
       "intro": "Cinco rondas. Cinco elecciones. Una pregunta: ¿puede tu equipo terminar 82-0? Aquí te explicamos exactamente cómo funciona el juego.",
       "steps": [
-        { "title": "Gira la máquina tragaperras", "desc": "Cada ronda saca una franquicia y una década al azar, como Chicago en los años 90 o Boston en los 60. ¿No te gusta? Tienes un salto de equipo y un salto de época por partida." },
-        { "title": "Elige a un jugador", "desc": "Explora la plantilla real de ese equipo y esa época, con PPG, RPG, APG, SPG y BPG históricos. En el modo HoopIQ las estadísticas están ocultas: recluta de memoria." },
-        { "title": "Colócalo en la cancha", "desc": "Cada elección debe cubrir una posición libre que el jugador realmente ocupó —PG, SG, SF, PF o C—. Cada hueco solo puede usarse una vez." },
-        { "title": "Consigue tu récord proyectado", "desc": "El motor suma tus estadísticas ajustadas por época y las pasa por una curva de victorias no lineal. Una sola categoría floja puede limitar tu techo: el equilibrio gana temporadas." },
-        { "title": "Comparte tu resultado", "desc": "Copia tu récord o compártelo en X y reta a tus amigos a superarlo. Después vuelve a intentarlo: cada giro es distinto." }
+        {
+          "title": "Gira la máquina tragaperras",
+          "desc": "Cada ronda saca una franquicia y una década al azar, como Chicago en los años 90 o Boston en los 60. ¿No te gusta? Tienes un salto de equipo y un salto de época por partida."
+        },
+        {
+          "title": "Elige a un jugador",
+          "desc": "Explora la plantilla real de ese equipo y esa época, con PPG, RPG, APG, SPG y BPG históricos. En el modo HoopIQ las estadísticas están ocultas: recluta de memoria."
+        },
+        {
+          "title": "Colócalo en la cancha",
+          "desc": "Cada elección debe cubrir una posición libre que el jugador realmente ocupó —PG, SG, SF, PF o C—. Cada hueco solo puede usarse una vez."
+        },
+        {
+          "title": "Consigue tu récord proyectado",
+          "desc": "El motor suma tus estadísticas ajustadas por época y las pasa por una curva de victorias no lineal. Una sola categoría floja puede limitar tu techo: el equilibrio gana temporadas."
+        },
+        {
+          "title": "Comparte tu resultado",
+          "desc": "Copia tu récord o compártelo en X y reta a tus amigos a superarlo. Después vuelve a intentarlo: cada giro es distinto."
+        }
       ],
       "sections": [
         {
@@ -275,10 +286,22 @@
         }
       ],
       "faqs": [
-        { "q": "¿Qué es el desafío 38-0?", "a": "El desafío 38-0 es un viral juego de construcción de equipos de la Premier League: una máquina tragaperras asigna clubes y décadas al azar, reclutas un once inicial de leyendas reales y una simulación proyecta si tu equipo podría ganar los 38 partidos de una temporada." },
-        { "q": "¿Algún equipo ha terminado alguna vez 38-0?", "a": "No. Los Invencibles del Arsenal de 2003-04 quedaron invictos con un 26-12-0, y los centuriones del Manchester City de 2017-18 ganaron 32 partidos. Una temporada perfecta de 38 victorias nunca ha sucedido en la historia de la Premier League." },
-        { "q": "¿El 38-0 está relacionado con el desafío 82-0?", "a": "Sí: el 38-0 es la edición de la Premier League del viral desafío 82-0 de baloncesto (y de su primo de la NFL, el 20-0). Las mismas tiradas de máquina tragaperras, jugadores reales y una simulación de temporada." },
-        { "q": "¿Puedo jugar gratis al desafío 38-0?", "a": "Sí: se puede jugar aquí mismo en esta página, gratis, sin descarga ni cuenta, en 7 idiomas. Gira clubes y épocas, forma tu once y comparte tu récord proyectado." }
+        {
+          "q": "¿Qué es el desafío 38-0?",
+          "a": "El desafío 38-0 es un viral juego de construcción de equipos de la Premier League: una máquina tragaperras asigna clubes y décadas al azar, reclutas un once inicial de leyendas reales y una simulación proyecta si tu equipo podría ganar los 38 partidos de una temporada."
+        },
+        {
+          "q": "¿Algún equipo ha terminado alguna vez 38-0?",
+          "a": "No. Los Invencibles del Arsenal de 2003-04 quedaron invictos con un 26-12-0, y los centuriones del Manchester City de 2017-18 ganaron 32 partidos. Una temporada perfecta de 38 victorias nunca ha sucedido en la historia de la Premier League."
+        },
+        {
+          "q": "¿El 38-0 está relacionado con el desafío 82-0?",
+          "a": "Sí: el 38-0 es la edición de la Premier League del viral desafío 82-0 de baloncesto (y de su primo de la NFL, el 20-0). Las mismas tiradas de máquina tragaperras, jugadores reales y una simulación de temporada."
+        },
+        {
+          "q": "¿Puedo jugar gratis al desafío 38-0?",
+          "a": "Sí: se puede jugar aquí mismo en esta página, gratis, sin descarga ni cuenta, en 7 idiomas. Gira clubes y épocas, forma tu once y comparte tu récord proyectado."
+        }
       ]
     },
     "twentyZero": {
@@ -311,10 +334,22 @@
         }
       ],
       "faqs": [
-        { "q": "¿Qué es el desafío 20-0?", "a": "El desafío 20-0 es un viral juego de construcción de plantillas de la NFL en el que reclutas una plantilla de 12 leyendas del fútbol americano de equipos sacados al azar, y luego una simulación juega una temporada de 20 partidos: 17 de temporada regular más 3 rondas de playoffs. Terminar 20-0 significa una temporada perfecta ganando el Super Bowl." },
-        { "q": "¿Algún equipo de la NFL ha terminado alguna vez 20-0?", "a": "No. Los Miami Dolphins de 1972 terminaron 17-0 bajo el calendario más corto de su época, y los New England Patriots de 2007 terminaron 18-1, perdiendo solo el Super Bowl. Una temporada perfecta de 20-0 en el formato moderno nunca ha sucedido." },
-        { "q": "¿El 20-0 está relacionado con el desafío 82-0?", "a": "Sí: el 20-0 es la versión de la NFL del viral desafío 82-0 de baloncesto. Ambos usan tiradas de equipos al azar, drafts construidos sobre estadísticas históricas reales y una simulación de temporada que decide si tu plantilla queda invicta." },
-        { "q": "¿Puedo jugar a un juego estilo 20-0 aquí?", "a": "Esta web alberga la versión de baloncesto del formato: el desafío 82-0. Gira equipos y épocas al azar, recluta cinco leyendas con estadísticas reales y comprueba si tu quinteto puede terminar una temporada simulada 82-0." }
+        {
+          "q": "¿Qué es el desafío 20-0?",
+          "a": "El desafío 20-0 es un viral juego de construcción de plantillas de la NFL en el que reclutas una plantilla de 12 leyendas del fútbol americano de equipos sacados al azar, y luego una simulación juega una temporada de 20 partidos: 17 de temporada regular más 3 rondas de playoffs. Terminar 20-0 significa una temporada perfecta ganando el Super Bowl."
+        },
+        {
+          "q": "¿Algún equipo de la NFL ha terminado alguna vez 20-0?",
+          "a": "No. Los Miami Dolphins de 1972 terminaron 17-0 bajo el calendario más corto de su época, y los New England Patriots de 2007 terminaron 18-1, perdiendo solo el Super Bowl. Una temporada perfecta de 20-0 en el formato moderno nunca ha sucedido."
+        },
+        {
+          "q": "¿El 20-0 está relacionado con el desafío 82-0?",
+          "a": "Sí: el 20-0 es la versión de la NFL del viral desafío 82-0 de baloncesto. Ambos usan tiradas de equipos al azar, drafts construidos sobre estadísticas históricas reales y una simulación de temporada que decide si tu plantilla queda invicta."
+        },
+        {
+          "q": "¿Puedo jugar a un juego estilo 20-0 aquí?",
+          "a": "Esta web alberga la versión de baloncesto del formato: el desafío 82-0. Gira equipos y épocas al azar, recluta cinco leyendas con estadísticas reales y comprueba si tu quinteto puede terminar una temporada simulada 82-0."
+        }
       ]
     },
     "teamBuilder": {
@@ -337,15 +372,69 @@
           ]
         }
       ]
+    },
+    "sevenZero": {
+      "title": "Juego 7-0: Constructor del mejor once histórico del Mundial",
+      "description": "Crea el mejor XI mundialista de la historia. Mezcla leyendas de 1970 a 2026, suma química juntando compatriotas, supera la eliminatoria y busca el 7–0 perfecto. Gratis, sin registro.",
+      "h1": "Juego 7-0 — El mejor once histórico del Mundial",
+      "intro": "Este es el constructor 7-0 más completo: saca una sola selección o un grupo abierto de Estrellas Mundiales, coloca jugadores reales de ocho décadas en tu formación, enlaza compatriotas para ganar química y luego persigue un 7–0 perfecto o sobrevive a una eliminatoria de cuatro rondas para levantar el trofeo.",
+      "playCta": "Juega al 7-0 original →",
+      "sections": [
+        {
+          "h2": "Estrellas Mundiales: el once de todas las naciones",
+          "paragraphs": [
+            "La mayoría de los juegos 7-0 te limitan a un país. Esta versión añade el modo Estrellas Mundiales: un solo grupo puede darte a Pelé, Maradona, Cruyff y Zidane en el mismo once.",
+            "Pero la valoración no basta. La química premia colocar compatriotas juntos, así que el once perfecto equilibra estrellas y conexiones nacionales."
+          ]
+        },
+        {
+          "h2": "La eliminatoria",
+          "paragraphs": [
+            "El partido único es la búsqueda clásica del 7–0 perfecto. La eliminatoria es el camino largo: tu equipo debe ganar cuatro rondas seguidas para ser campeón.",
+            "Como mantienes la misma plantilla, puedes ajustar la alineación entre rondas según el rival."
+          ]
+        },
+        {
+          "h2": "Leyendas de todas las épocas",
+          "paragraphs": [
+            "Junto a las plantillas modernas de 2018, 2022 y 2026, añadimos ediciones legendarias: Brasil 1970 y 2002, Argentina 1986 y más.",
+            "Un solo sorteo puede llevarte ocho décadas atrás o a un equipo proyectado de 2026."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿En qué se diferencia del 7-0 independiente?",
+          "a": "Añade cuatro cosas: el modo Estrellas Mundiales, una eliminatoria de cuatro rondas, un sistema de química y plantillas legendarias de 1950 a 2010."
+        },
+        {
+          "q": "¿Qué es un 7–0 perfecto?",
+          "a": "7–0 es el marcador perfecto. Necesitas un once de alta valoración, cada jugador en su posición, buena química y un estilo adecuado."
+        },
+        {
+          "q": "¿Cómo funciona la química?",
+          "a": "En Estrellas Mundiales cada jugador se enlaza con sus vecinos; los compatriotas suben la química y los aislados la bajan."
+        },
+        {
+          "q": "¿Qué es la eliminatoria?",
+          "a": "Cuatro rondas de dificultad creciente. El mismo equipo debe ganarlas todas para ser campeón."
+        },
+        {
+          "q": "¿Los jugadores y valoraciones son reales?",
+          "a": "Los nombres son futbolistas reales y las valoraciones son aproximaciones para entretenimiento. Proyecto de aficionados sin relación con la FIFA."
+        },
+        {
+          "q": "¿Es gratis y multilingüe?",
+          "a": "Sí. Totalmente gratis, sin cuenta, en siete idiomas."
+        }
+      ]
     }
   },
-
   "cta": {
     "title": "Forma algo más que un equipo de baloncesto.",
     "desc": "Crea un escuadrón de personajes con IA, genera una historia y conviértela en un cuento ilustrado con AI Character Squad Builder.",
     "button": "Prueba AI Character Squad Builder"
   },
-
   "footer": {
     "pages": "Páginas",
     "daily": "Desafío diario",
@@ -359,5 +448,76 @@
     "contact": "Contacto",
     "disclaimer": "Desafío 82-0 es un proyecto independiente hecho por aficionados. No está afiliado, respaldado ni patrocinado por la NBA ni por ninguna liga o equipo de baloncesto profesional. Los nombres de los jugadores y las estadísticas históricas son datos de dominio público utilizados únicamente con fines informativos y de entretenimiento. No se utilizan logotipos, marcas registradas ni fotografías oficiales.",
     "copyright": "© 2026 Desafío 82-0"
+  },
+  "wcGame": {
+    "squad": "PLANTILLA",
+    "format": "FORMATO",
+    "formation": "FORMACIÓN",
+    "style": "ESTILO",
+    "mode": "DIFICULTAD",
+    "sources": {
+      "National": "Selección nacional",
+      "All-Stars": "Estrellas mundiales"
+    },
+    "formats": {
+      "Single": "Partido único",
+      "Gauntlet": "Eliminatoria"
+    },
+    "styles": {
+      "Defensive": "Defensivo",
+      "Balanced": "Equilibrado",
+      "Attacking": "Ofensivo"
+    },
+    "modes": {
+      "Classic": "Clásico",
+      "From memory": "De memoria"
+    },
+    "rollHint": "Roll to draw a national team and a World Cup edition — modern squads and legendary winners.",
+    "rollHintAllStars": "Roll a world All-Stars pool, then build the greatest cross-nation XI ever — chemistry rewards stacking countrymen together.",
+    "gauntletHint": "Gauntlet: one dream team must win four knockout rounds to lift the trophy.",
+    "roll": "SORTEAR",
+    "drawn": "SORTEADO",
+    "allStarsDraw": "ESTRELLAS MUNDIALES",
+    "crossNation": "Leyendas de todas las naciones",
+    "cup": "Mundial",
+    "rerollLabel": "Volver a sortear",
+    "left": "rest.",
+    "anotherTeam": "Otro equipo",
+    "anotherCup": "Otro mundial",
+    "anotherPool": "Nuevo grupo",
+    "autoFill": "Autorrellenar",
+    "clear": "Limpiar",
+    "chemistry": "QUÍMICA",
+    "pickPlayer": "ELIGE UN JUGADOR",
+    "boxScore": "ALINEACIÓN",
+    "rules": "A perfect dream team wins 7–0. Out-of-position players (~) lose rating. Pick a tactical style and chase the flawless score.",
+    "rulesAllStars": "All-Stars: any nation, any era. Stack countrymen next to each other for chemistry — a flawless, well-linked dream team wins 7–0.",
+    "fillToSim": "Completa los 11",
+    "simulate": "Simular partido",
+    "playRound": "Jugar",
+    "advance": "Avanzar",
+    "playAgain": "Jugar otra vez",
+    "attack": "ATAQUE",
+    "defense": "DEFENSA",
+    "overall": "GLOBAL",
+    "perfects": "7-0",
+    "titles": "títulos",
+    "streak": "racha",
+    "champion": "¡CAMPEONES!",
+    "eliminated": "Eliminado",
+    "rounds": {
+      "group": "Grupos",
+      "round16": "Octavos",
+      "semi": "Semifinal",
+      "final": "Final"
+    },
+    "verdict": {
+      "perfect": "PERFECT 7–0! 🏆",
+      "demolition": "Demolition 💥",
+      "rout": "Statement win",
+      "win": "You win ✅",
+      "draw": "Honours even",
+      "loss": "Knocked out"
+    }
   }
 }

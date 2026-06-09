@@ -1,9 +1,10 @@
 {
-  "layout": { "language": "en" },
+  "layout": {
+    "language": "en"
+  },
   "seoTitle": "82-0 Challenge: Play the Viral Team Builder Game",
   "seoDescription": "Play the viral 82-0 challenge. Spin the slot machine, draft basketball legends from random teams and eras, and see if your lineup can go undefeated.",
   "keywords": "82-0, 82-0 challenge, 82-0 challenge game, 82-0 game, 82-0 team builder, how to play 82-0, 82-0 challenge rules, viral basketball team builder",
-
   "header": {
     "siteName": "82-0 Challenge",
     "home": "Home",
@@ -11,13 +12,11 @@
     "howToPlay": "How to Play",
     "teamBuilder": "Team Builder"
   },
-
   "hero": {
     "title": "82-0 Challenge",
     "subtitle": "Can you build a team that goes 82-0? Spin the slot machine, draft one legend per round from a random team and era, and watch the simulation project your season.",
     "cta": "Start Challenge"
   },
-
   "game": {
     "chooseMode": "Choose Your Mode",
     "chooseModeSub": "How do you want to build your all-time team?",
@@ -106,7 +105,6 @@
       }
     }
   },
-
   "homeSeo": {
     "sections": [
       {
@@ -160,7 +158,6 @@
       }
     ]
   },
-
   "faq": {
     "sectionTitle": "Frequently Asked Questions",
     "q1": "What is the 82-0 challenge?",
@@ -176,7 +173,6 @@
     "q6": "How is the final record calculated?",
     "a6": "The engine aggregates your lineup's era-adjusted points, rebounds, assists, steals, and blocks, then runs the total through a non-linear win-projection curve. Each category is gated — one glaring weakness caps your record no matter how strong the rest of the roster is."
   },
-
   "pages": {
     "whatIs": {
       "title": "82-0: What Is the Viral 82-0 Challenge Game?",
@@ -218,11 +214,26 @@
       "h1": "How to Play the 82-0 Challenge",
       "intro": "Five rounds. Five picks. One question: can your team go 82-0? Here's exactly how the game works.",
       "steps": [
-        { "title": "Spin the Slot Machine", "desc": "Each round draws a random franchise and decade — like Chicago 1990s or Boston 1960s. Don't like it? You have one team skip and one era skip per game." },
-        { "title": "Pick One Player", "desc": "Browse the real roster from that team and era, with historical PPG, RPG, APG, SPG and BPG. In HoopIQ mode the stats are hidden — draft from memory." },
-        { "title": "Place Him on the Court", "desc": "Every pick must fill an open position the player actually played — PG, SG, SF, PF, or C. Each spot can only be used once." },
-        { "title": "Get Your Projected Record", "desc": "The engine aggregates your era-adjusted stats and runs them through a non-linear win curve. One weak category can cap your ceiling — balance wins seasons." },
-        { "title": "Share Your Result", "desc": "Copy your record or share it on X and challenge your friends to beat it. Then run it back — every spin is different." }
+        {
+          "title": "Spin the Slot Machine",
+          "desc": "Each round draws a random franchise and decade — like Chicago 1990s or Boston 1960s. Don't like it? You have one team skip and one era skip per game."
+        },
+        {
+          "title": "Pick One Player",
+          "desc": "Browse the real roster from that team and era, with historical PPG, RPG, APG, SPG and BPG. In HoopIQ mode the stats are hidden — draft from memory."
+        },
+        {
+          "title": "Place Him on the Court",
+          "desc": "Every pick must fill an open position the player actually played — PG, SG, SF, PF, or C. Each spot can only be used once."
+        },
+        {
+          "title": "Get Your Projected Record",
+          "desc": "The engine aggregates your era-adjusted stats and runs them through a non-linear win curve. One weak category can cap your ceiling — balance wins seasons."
+        },
+        {
+          "title": "Share Your Result",
+          "desc": "Copy your record or share it on X and challenge your friends to beat it. Then run it back — every spin is different."
+        }
       ],
       "sections": [
         {
@@ -275,10 +286,22 @@
         }
       ],
       "faqs": [
-        { "q": "What is the 38-0 challenge?", "a": "The 38-0 challenge is a viral Premier League team builder game: a slot machine assigns random clubs and decades, you draft a starting XI of real legends, and a simulation projects whether your team could win all 38 games of a season." },
-        { "q": "Has any team ever gone 38-0?", "a": "No. Arsenal's 2003-04 Invincibles went unbeaten at 26-12-0, and Manchester City's 2017-18 centurions won 32 games. A perfect 38-win season has never happened in Premier League history." },
-        { "q": "Is 38-0 related to the 82-0 challenge?", "a": "Yes — 38-0 is the Premier League edition of the viral 82-0 basketball challenge (and its NFL cousin 20-0). Same slot-machine draws, real players, and a season simulation." },
-        { "q": "Can I play the 38-0 challenge for free?", "a": "Yes — it's playable right on this page, free, no download or account, in 7 languages. Spin clubs and eras, build your XI, and share your projected record." }
+        {
+          "q": "What is the 38-0 challenge?",
+          "a": "The 38-0 challenge is a viral Premier League team builder game: a slot machine assigns random clubs and decades, you draft a starting XI of real legends, and a simulation projects whether your team could win all 38 games of a season."
+        },
+        {
+          "q": "Has any team ever gone 38-0?",
+          "a": "No. Arsenal's 2003-04 Invincibles went unbeaten at 26-12-0, and Manchester City's 2017-18 centurions won 32 games. A perfect 38-win season has never happened in Premier League history."
+        },
+        {
+          "q": "Is 38-0 related to the 82-0 challenge?",
+          "a": "Yes — 38-0 is the Premier League edition of the viral 82-0 basketball challenge (and its NFL cousin 20-0). Same slot-machine draws, real players, and a season simulation."
+        },
+        {
+          "q": "Can I play the 38-0 challenge for free?",
+          "a": "Yes — it's playable right on this page, free, no download or account, in 7 languages. Spin clubs and eras, build your XI, and share your projected record."
+        }
       ]
     },
     "twentyZero": {
@@ -311,10 +334,22 @@
         }
       ],
       "faqs": [
-        { "q": "What is the 20-0 challenge?", "a": "The 20-0 challenge is a viral NFL roster builder game where you draft a 12-man roster of football legends from randomly drawn teams, then a simulation plays out a 20-game season — 17 regular-season games plus 3 playoff rounds. Going 20-0 means a perfect Super Bowl-winning season." },
-        { "q": "Has any NFL team ever gone 20-0?", "a": "No. The 1972 Miami Dolphins finished 17-0 under the shorter schedule of their era, and the 2007 New England Patriots went 18-1, losing only the Super Bowl. A modern 20-0 perfect season has never happened." },
-        { "q": "Is 20-0 related to the 82-0 challenge?", "a": "Yes — 20-0 is the NFL version of the viral 82-0 basketball challenge. Both use random team draws, drafts built on real historical stats, and a season simulation that decides if your roster goes undefeated." },
-        { "q": "Can I play a 20-0 style game here?", "a": "This site hosts the basketball version of the format: the 82-0 challenge. Spin random teams and eras, draft five legends with real stats, and see if your lineup can finish a simulated season 82-0." }
+        {
+          "q": "What is the 20-0 challenge?",
+          "a": "The 20-0 challenge is a viral NFL roster builder game where you draft a 12-man roster of football legends from randomly drawn teams, then a simulation plays out a 20-game season — 17 regular-season games plus 3 playoff rounds. Going 20-0 means a perfect Super Bowl-winning season."
+        },
+        {
+          "q": "Has any NFL team ever gone 20-0?",
+          "a": "No. The 1972 Miami Dolphins finished 17-0 under the shorter schedule of their era, and the 2007 New England Patriots went 18-1, losing only the Super Bowl. A modern 20-0 perfect season has never happened."
+        },
+        {
+          "q": "Is 20-0 related to the 82-0 challenge?",
+          "a": "Yes — 20-0 is the NFL version of the viral 82-0 basketball challenge. Both use random team draws, drafts built on real historical stats, and a season simulation that decides if your roster goes undefeated."
+        },
+        {
+          "q": "Can I play a 20-0 style game here?",
+          "a": "This site hosts the basketball version of the format: the 82-0 challenge. Spin random teams and eras, draft five legends with real stats, and see if your lineup can finish a simulated season 82-0."
+        }
       ]
     },
     "teamBuilder": {
@@ -337,15 +372,69 @@
           ]
         }
       ]
+    },
+    "sevenZero": {
+      "title": "7-0 Game: World Cup All-Time Dream Team Builder",
+      "description": "Build the greatest World Cup XI ever. Mix legends from 1970 to 2026, stack countrymen for chemistry, run the knockout gauntlet, and chase a perfect 7–0. Free, no sign-up.",
+      "h1": "7-0 Game — All-Time World Cup Dream Team",
+      "intro": "This is the deepest 7-0 builder we make: pull a single nation or an open World All-Stars pool, drop real players from eight decades into your formation, link countrymen for chemistry, then either chase a single flawless 7–0 or survive a four-round knockout gauntlet to lift the trophy.",
+      "playCta": "Play the original 7-0 Game →",
+      "sections": [
+        {
+          "h2": "World All-Stars: the cross-nation dream team",
+          "paragraphs": [
+            "Most 7-0 games lock you to one country. This one adds a World All-Stars mode that throws open the doors: a single pool can hand you Pelé, Maradona, Cruyff and Zidane to line up in the same eleven. You are no longer building Brazil's best or France's best — you are building football's best, full stop.",
+            "But raw ratings are not enough. Chemistry rewards placing countrymen next to each other on the pitch, so the perfect All-Stars side is a balancing act between star power and national links. A team of eleven loners from eleven nations will look terrifying on paper and misfire on grass."
+          ]
+        },
+        {
+          "h2": "The knockout gauntlet",
+          "paragraphs": [
+            "Single-match mode is the classic chase for one perfect 7–0. The gauntlet is the long road: your dream team must win four straight knockout rounds — group, round of 16, semi-final and final — against opponents that get stronger every step. Lose once and you are out; win all four and you are champions.",
+            "Because you keep the same squad through the bracket, the gauntlet rewards a deep, well-built eleven over a flat-track bully. You can tweak your line-up between rounds, so reading the next opponent and shifting your tactical style becomes part of the game."
+          ]
+        },
+        {
+          "h2": "Legends from every era",
+          "paragraphs": [
+            "Alongside the modern 2018, 2022 and 2026 squads, we added hand-picked legendary editions: Brazil 1970 and 2002, Argentina 1986, the Netherlands of 1974, West Germany 1990, France 1998, Italy 1982, England 1966, Spain 2010 and Uruguay 1950. Draw one of these and you are building with the players who actually defined the World Cup.",
+            "It means a single roll can send you eight decades back or drop you into a projected 2026 side — and in All-Stars mode, all of those eras share one player pool."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How is this different from the standalone 7-0 Game?",
+          "a": "This in-site edition adds four things the standalone does not have: a cross-nation World All-Stars mode, a four-round knockout gauntlet, a chemistry system that rewards linking countrymen, and hand-built legendary squads from 1950 to 2010."
+        },
+        {
+          "q": "What is a perfect 7–0?",
+          "a": "7–0 is the flawless scoreline. To earn it you need a high-rated eleven, every player in a position they truly fit, strong chemistry in All-Stars mode, and a tactical style that suits your squad."
+        },
+        {
+          "q": "How does chemistry work?",
+          "a": "In World All-Stars mode, each player links with their on-pitch neighbours. Neighbours from the same nation raise chemistry; isolated players lower it. Higher chemistry boosts your attack and defence, so clustering countrymen matters as much as raw ratings."
+        },
+        {
+          "q": "What is the gauntlet?",
+          "a": "A knockout run of four rounds with rising difficulty. The same dream team must win all four — group, round of 16, semi-final and final — to be crowned champions. You can adjust your line-up between rounds."
+        },
+        {
+          "q": "Are the players and ratings real?",
+          "a": "Player names are real, era-appropriate footballers and ratings are believable approximations for entertainment. This is an independent fan project, not affiliated with FIFA, any federation or club."
+        },
+        {
+          "q": "Is it free and multilingual?",
+          "a": "Yes. It is completely free, needs no account, runs in your browser, and is available in English, 中文, 日本語, 한국어, Español, Français and Deutsch. Your stats are saved locally on your device."
+        }
+      ]
     }
   },
-
   "cta": {
     "title": "Build more than a basketball team.",
     "desc": "Create an AI character squad, generate a story, and turn it into a picture book with AI Character Squad Builder.",
     "button": "Try AI Character Squad Builder"
   },
-
   "footer": {
     "pages": "Pages",
     "daily": "Daily Challenge",
@@ -359,5 +448,76 @@
     "contact": "Contact",
     "disclaimer": "82-0 Challenge is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league or team. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only. No official logos, trademarks, or photographs are used.",
     "copyright": "© 2026 82-0 Challenge"
+  },
+  "wcGame": {
+    "squad": "SQUAD",
+    "format": "FORMAT",
+    "formation": "FORMATION",
+    "style": "STYLE",
+    "mode": "DIFFICULTY",
+    "sources": {
+      "National": "National team",
+      "All-Stars": "World All-Stars"
+    },
+    "formats": {
+      "Single": "Single match",
+      "Gauntlet": "Gauntlet"
+    },
+    "styles": {
+      "Defensive": "Defensive",
+      "Balanced": "Balanced",
+      "Attacking": "Attacking"
+    },
+    "modes": {
+      "Classic": "Classic",
+      "From memory": "From memory"
+    },
+    "rollHint": "Roll to draw a national team and a World Cup edition — modern squads and legendary winners.",
+    "rollHintAllStars": "Roll a world All-Stars pool, then build the greatest cross-nation XI ever — chemistry rewards stacking countrymen together.",
+    "gauntletHint": "Gauntlet: one dream team must win four knockout rounds to lift the trophy.",
+    "roll": "ROLL",
+    "drawn": "DRAWN",
+    "allStarsDraw": "WORLD ALL-STARS",
+    "crossNation": "Cross-nation legends",
+    "cup": "World Cup",
+    "rerollLabel": "Re-roll",
+    "left": "left",
+    "anotherTeam": "Another team",
+    "anotherCup": "Another cup",
+    "anotherPool": "New pool",
+    "autoFill": "Auto-fill best",
+    "clear": "Clear",
+    "chemistry": "CHEMISTRY",
+    "pickPlayer": "PICK A PLAYER",
+    "boxScore": "LINE-UP",
+    "rules": "A perfect dream team wins 7–0. Out-of-position players (~) lose rating. Pick a tactical style and chase the flawless score.",
+    "rulesAllStars": "All-Stars: any nation, any era. Stack countrymen next to each other for chemistry — a flawless, well-linked dream team wins 7–0.",
+    "fillToSim": "Fill all 11 to play",
+    "simulate": "Simulate match",
+    "playRound": "Play",
+    "advance": "Advance",
+    "playAgain": "Play again",
+    "attack": "ATTACK",
+    "defense": "DEFENSE",
+    "overall": "OVERALL",
+    "perfects": "7-0s",
+    "titles": "titles",
+    "streak": "streak",
+    "champion": "CHAMPIONS!",
+    "eliminated": "Knocked out",
+    "rounds": {
+      "group": "Group",
+      "round16": "Round of 16",
+      "semi": "Semi-final",
+      "final": "Final"
+    },
+    "verdict": {
+      "perfect": "PERFECT 7–0! 🏆",
+      "demolition": "Demolition 💥",
+      "rout": "Statement win",
+      "win": "You win ✅",
+      "draw": "Honours even",
+      "loss": "Knocked out"
+    }
   }
 }

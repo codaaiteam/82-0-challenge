@@ -1,0 +1,251 @@
+[
+  {
+    "id": "brazil",
+    "editions": {
+      "1970": [
+        { "n": 1, "name": "Félix", "pos": ["GK"], "rating": 81 },
+        { "n": 12, "name": "Ado", "pos": ["GK"], "rating": 76 },
+        { "n": 4, "name": "Carlos Alberto", "pos": ["RB", "RWB"], "rating": 88 },
+        { "n": 2, "name": "Brito", "pos": ["CB"], "rating": 82 },
+        { "n": 3, "name": "Piazza", "pos": ["CB", "DM"], "rating": 83 },
+        { "n": 6, "name": "Everaldo", "pos": ["LB", "LWB"], "rating": 81 },
+        { "n": 16, "name": "Marco Antônio", "pos": ["LB"], "rating": 79 },
+        { "n": 5, "name": "Clodoaldo", "pos": ["DM", "CM"], "rating": 85 },
+        { "n": 8, "name": "Gérson", "pos": ["CM", "CAM"], "rating": 88 },
+        { "n": 11, "name": "Rivelino", "pos": ["LW", "CAM", "CM"], "rating": 90 },
+        { "n": 7, "name": "Jairzinho", "pos": ["RW", "ST"], "rating": 90 },
+        { "n": 9, "name": "Tostão", "pos": ["ST", "CAM"], "rating": 88 },
+        { "n": 10, "name": "Pelé", "pos": ["ST", "CAM"], "rating": 95 },
+        { "n": 17, "name": "Edu", "pos": ["LW", "ST"], "rating": 80 },
+        { "n": 19, "name": "Roberto Miranda", "pos": ["ST"], "rating": 78 },
+        { "n": 18, "name": "Paulo Cézar", "pos": ["LW", "RW", "CM"], "rating": 80 }
+      ],
+      "2002": [
+        { "n": 1, "name": "Marcos", "pos": ["GK"], "rating": 85 },
+        { "n": 12, "name": "Dida", "pos": ["GK"], "rating": 83 },
+        { "n": 2, "name": "Cafu", "pos": ["RB", "RWB"], "rating": 88 },
+        { "n": 3, "name": "Lúcio", "pos": ["CB"], "rating": 86 },
+        { "n": 4, "name": "Roque Júnior", "pos": ["CB"], "rating": 82 },
+        { "n": 14, "name": "Edmílson", "pos": ["CB", "DM"], "rating": 84 },
+        { "n": 6, "name": "Roberto Carlos", "pos": ["LB", "LWB"], "rating": 89 },
+        { "n": 13, "name": "Belletti", "pos": ["RB"], "rating": 80 },
+        { "n": 8, "name": "Gilberto Silva", "pos": ["DM", "CM"], "rating": 84 },
+        { "n": 15, "name": "Kléberson", "pos": ["CM"], "rating": 81 },
+        { "n": 5, "name": "Edu", "pos": ["DM", "CM"], "rating": 79 },
+        { "n": 11, "name": "Ronaldinho", "pos": ["CAM", "LW", "RW"], "rating": 91 },
+        { "n": 9, "name": "Ronaldo", "pos": ["ST"], "rating": 94 },
+        { "n": 10, "name": "Rivaldo", "pos": ["CAM", "ST", "LW"], "rating": 90 },
+        { "n": 7, "name": "Edílson", "pos": ["RW", "ST"], "rating": 80 },
+        { "n": 19, "name": "Juninho", "pos": ["CM", "CAM"], "rating": 80 },
+        { "n": 18, "name": "Denílson", "pos": ["LW", "RW"], "rating": 80 }
+      ]
+    }
+  },
+  {
+    "id": "argentina",
+    "editions": {
+      "1986": [
+        { "n": 18, "name": "Nery Pumpido", "pos": ["GK"], "rating": 81 },
+        { "n": 12, "name": "Luis Islas", "pos": ["GK"], "rating": 75 },
+        { "n": 13, "name": "José Luis Brown", "pos": ["CB"], "rating": 81 },
+        { "n": 19, "name": "Oscar Ruggeri", "pos": ["CB"], "rating": 84 },
+        { "n": 9, "name": "José Cuciuffo", "pos": ["RB", "CB"], "rating": 79 },
+        { "n": 3, "name": "Néstor Clausen", "pos": ["RB", "RWB"], "rating": 77 },
+        { "n": 4, "name": "Julio Olarticoechea", "pos": ["LB", "LWB"], "rating": 79 },
+        { "n": 2, "name": "Sergio Batista", "pos": ["DM", "CM"], "rating": 81 },
+        { "n": 14, "name": "Ricardo Giusti", "pos": ["CM", "RM"], "rating": 79 },
+        { "n": 12, "name": "Héctor Enrique", "pos": ["CM", "CAM"], "rating": 80 },
+        { "n": 7, "name": "Jorge Burruchaga", "pos": ["CAM", "RW", "ST"], "rating": 85 },
+        { "n": 10, "name": "Diego Maradona", "pos": ["CAM", "ST", "LW"], "rating": 96 },
+        { "n": 11, "name": "Jorge Valdano", "pos": ["ST", "LW"], "rating": 85 },
+        { "n": 15, "name": "Pedro Pasculli", "pos": ["ST"], "rating": 78 },
+        { "n": 6, "name": "Claudio Borghi", "pos": ["CAM", "LW"], "rating": 78 },
+        { "n": 16, "name": "Sergio Almirón", "pos": ["RW", "ST"], "rating": 76 }
+      ]
+    }
+  },
+  {
+    "id": "germany",
+    "editions": {
+      "1990": [
+        { "n": 1, "name": "Bodo Illgner", "pos": ["GK"], "rating": 83 },
+        { "n": 22, "name": "Raimond Aumann", "pos": ["GK"], "rating": 76 },
+        { "n": 3, "name": "Andreas Brehme", "pos": ["LB", "RB", "LWB"], "rating": 85 },
+        { "n": 4, "name": "Klaus Augenthaler", "pos": ["CB", "DM"], "rating": 83 },
+        { "n": 5, "name": "Jürgen Kohler", "pos": ["CB"], "rating": 85 },
+        { "n": 6, "name": "Guido Buchwald", "pos": ["CB", "DM"], "rating": 83 },
+        { "n": 2, "name": "Thomas Berthold", "pos": ["RB", "RWB", "CB"], "rating": 81 },
+        { "n": 10, "name": "Lothar Matthäus", "pos": ["CM", "CAM"], "rating": 91 },
+        { "n": 8, "name": "Thomas Häßler", "pos": ["CM", "CAM", "RM"], "rating": 82 },
+        { "n": 14, "name": "Olaf Thon", "pos": ["CM", "DM"], "rating": 80 },
+        { "n": 7, "name": "Pierre Littbarski", "pos": ["RM", "RW"], "rating": 83 },
+        { "n": 13, "name": "Andreas Möller", "pos": ["CAM", "CM"], "rating": 81 },
+        { "n": 18, "name": "Jürgen Klinsmann", "pos": ["ST"], "rating": 88 },
+        { "n": 9, "name": "Rudi Völler", "pos": ["ST"], "rating": 86 },
+        { "n": 17, "name": "Karl-Heinz Riedle", "pos": ["ST"], "rating": 81 },
+        { "n": 11, "name": "Uwe Bein", "pos": ["CAM", "LM", "LW"], "rating": 79 }
+      ]
+    }
+  },
+  {
+    "id": "netherlands",
+    "editions": {
+      "1974": [
+        { "n": 8, "name": "Jan Jongbloed", "pos": ["GK"], "rating": 79 },
+        { "n": 12, "name": "Piet Schrijvers", "pos": ["GK"], "rating": 75 },
+        { "n": 20, "name": "Wim Suurbier", "pos": ["RB", "RWB"], "rating": 81 },
+        { "n": 17, "name": "Wim Rijsbergen", "pos": ["CB"], "rating": 80 },
+        { "n": 13, "name": "Arie Haan", "pos": ["CB", "DM", "CM"], "rating": 84 },
+        { "n": 12, "name": "Ruud Krol", "pos": ["LB", "CB", "LWB"], "rating": 85 },
+        { "n": 6, "name": "Wim Jansen", "pos": ["DM", "CM"], "rating": 81 },
+        { "n": 2, "name": "Johan Neeskens", "pos": ["CM", "DM"], "rating": 88 },
+        { "n": 3, "name": "Wim van Hanegem", "pos": ["CM", "CAM"], "rating": 86 },
+        { "n": 16, "name": "Johnny Rep", "pos": ["RW", "ST"], "rating": 83 },
+        { "n": 14, "name": "Johan Cruyff", "pos": ["ST", "CAM", "LW"], "rating": 95 },
+        { "n": 15, "name": "Rob Rensenbrink", "pos": ["LW", "ST"], "rating": 85 },
+        { "n": 9, "name": "Piet Keizer", "pos": ["LW", "LM"], "rating": 81 },
+        { "n": 18, "name": "René van de Kerkhof", "pos": ["RW", "RM"], "rating": 80 },
+        { "n": 21, "name": "Willy van de Kerkhof", "pos": ["CM", "DM"], "rating": 79 },
+        { "n": 5, "name": "Theo de Jong", "pos": ["CM"], "rating": 78 }
+      ]
+    }
+  },
+  {
+    "id": "france",
+    "editions": {
+      "1998": [
+        { "n": 16, "name": "Fabien Barthez", "pos": ["GK"], "rating": 85 },
+        { "n": 22, "name": "Bernard Lama", "pos": ["GK"], "rating": 78 },
+        { "n": 15, "name": "Lilian Thuram", "pos": ["RB", "CB"], "rating": 87 },
+        { "n": 8, "name": "Marcel Desailly", "pos": ["CB", "DM"], "rating": 87 },
+        { "n": 5, "name": "Laurent Blanc", "pos": ["CB"], "rating": 85 },
+        { "n": 3, "name": "Bixente Lizarazu", "pos": ["LB", "LWB"], "rating": 84 },
+        { "n": 18, "name": "Frank Lebœuf", "pos": ["CB"], "rating": 80 },
+        { "n": 7, "name": "Didier Deschamps", "pos": ["DM", "CM"], "rating": 84 },
+        { "n": 17, "name": "Emmanuel Petit", "pos": ["CM", "DM"], "rating": 84 },
+        { "n": 14, "name": "Christian Karembeu", "pos": ["CM", "RM"], "rating": 80 },
+        { "n": 10, "name": "Zinedine Zidane", "pos": ["CAM", "CM"], "rating": 93 },
+        { "n": 6, "name": "Youri Djorkaeff", "pos": ["CAM", "ST"], "rating": 84 },
+        { "n": 12, "name": "Thierry Henry", "pos": ["ST", "LW", "RW"], "rating": 86 },
+        { "n": 20, "name": "David Trezeguet", "pos": ["ST"], "rating": 83 },
+        { "n": 9, "name": "Stéphane Guivarc'h", "pos": ["ST"], "rating": 76 },
+        { "n": 11, "name": "Robert Pirès", "pos": ["LW", "RW", "LM"], "rating": 82 }
+      ]
+    }
+  },
+  {
+    "id": "italy",
+    "editions": {
+      "1982": [
+        { "n": 1, "name": "Dino Zoff", "pos": ["GK"], "rating": 86 },
+        { "n": 12, "name": "Ivano Bordon", "pos": ["GK"], "rating": 75 },
+        { "n": 6, "name": "Claudio Gentile", "pos": ["RB", "CB"], "rating": 84 },
+        { "n": 5, "name": "Gaetano Scirea", "pos": ["CB"], "rating": 87 },
+        { "n": 8, "name": "Fulvio Collovati", "pos": ["CB"], "rating": 81 },
+        { "n": 3, "name": "Antonio Cabrini", "pos": ["LB", "LWB"], "rating": 84 },
+        { "n": 2, "name": "Giuseppe Bergomi", "pos": ["RB", "CB"], "rating": 81 },
+        { "n": 13, "name": "Gabriele Oriali", "pos": ["DM", "CM"], "rating": 80 },
+        { "n": 14, "name": "Marco Tardelli", "pos": ["CM", "CAM"], "rating": 85 },
+        { "n": 10, "name": "Giancarlo Antognoni", "pos": ["CAM", "CM"], "rating": 84 },
+        { "n": 16, "name": "Bruno Conti", "pos": ["RW", "RM", "LW"], "rating": 84 },
+        { "n": 9, "name": "Giuseppe Dossena", "pos": ["CM", "DM"], "rating": 78 },
+        { "n": 20, "name": "Paolo Rossi", "pos": ["ST"], "rating": 88 },
+        { "n": 19, "name": "Francesco Graziani", "pos": ["ST"], "rating": 80 },
+        { "n": 18, "name": "Alessandro Altobelli", "pos": ["ST"], "rating": 81 },
+        { "n": 15, "name": "Franco Causio", "pos": ["RW", "RM"], "rating": 79 }
+      ]
+    }
+  },
+  {
+    "id": "england",
+    "editions": {
+      "1966": [
+        { "n": 1, "name": "Gordon Banks", "pos": ["GK"], "rating": 87 },
+        { "n": 13, "name": "Ron Springett", "pos": ["GK"], "rating": 74 },
+        { "n": 2, "name": "George Cohen", "pos": ["RB", "RWB"], "rating": 80 },
+        { "n": 6, "name": "Bobby Moore", "pos": ["CB"], "rating": 88 },
+        { "n": 5, "name": "Jack Charlton", "pos": ["CB"], "rating": 82 },
+        { "n": 3, "name": "Ray Wilson", "pos": ["LB", "LWB"], "rating": 80 },
+        { "n": 4, "name": "Nobby Stiles", "pos": ["DM", "CM"], "rating": 80 },
+        { "n": 9, "name": "Bobby Charlton", "pos": ["CM", "CAM"], "rating": 90 },
+        { "n": 7, "name": "Alan Ball", "pos": ["RM", "CM"], "rating": 83 },
+        { "n": 16, "name": "Martin Peters", "pos": ["CM", "LM"], "rating": 82 },
+        { "n": 10, "name": "Geoff Hurst", "pos": ["ST"], "rating": 85 },
+        { "n": 21, "name": "Roger Hunt", "pos": ["ST"], "rating": 81 },
+        { "n": 8, "name": "Jimmy Greaves", "pos": ["ST"], "rating": 84 },
+        { "n": 12, "name": "Ian Callaghan", "pos": ["RM", "RW"], "rating": 78 },
+        { "n": 17, "name": "Terry Paine", "pos": ["RW", "RM"], "rating": 77 },
+        { "n": 11, "name": "John Connelly", "pos": ["LW", "LM"], "rating": 77 }
+      ]
+    }
+  },
+  {
+    "id": "spain",
+    "editions": {
+      "2010": [
+        { "n": 1, "name": "Iker Casillas", "pos": ["GK"], "rating": 89 },
+        { "n": 23, "name": "Pepe Reina", "pos": ["GK"], "rating": 80 },
+        { "n": 15, "name": "Sergio Ramos", "pos": ["RB", "CB"], "rating": 88 },
+        { "n": 3, "name": "Gerard Piqué", "pos": ["CB"], "rating": 87 },
+        { "n": 5, "name": "Carles Puyol", "pos": ["CB"], "rating": 86 },
+        { "n": 11, "name": "Joan Capdevila", "pos": ["LB", "LWB"], "rating": 80 },
+        { "n": 17, "name": "Álvaro Arbeloa", "pos": ["RB", "RWB"], "rating": 79 },
+        { "n": 16, "name": "Sergio Busquets", "pos": ["DM", "CM"], "rating": 85 },
+        { "n": 14, "name": "Xabi Alonso", "pos": ["CM", "DM"], "rating": 86 },
+        { "n": 8, "name": "Xavi", "pos": ["CM", "CAM"], "rating": 90 },
+        { "n": 6, "name": "Andrés Iniesta", "pos": ["CAM", "CM", "LW"], "rating": 90 },
+        { "n": 10, "name": "Cesc Fàbregas", "pos": ["CAM", "CM"], "rating": 84 },
+        { "n": 7, "name": "David Villa", "pos": ["ST", "LW"], "rating": 88 },
+        { "n": 9, "name": "Fernando Torres", "pos": ["ST"], "rating": 84 },
+        { "n": 18, "name": "Pedro", "pos": ["RW", "LW", "ST"], "rating": 82 },
+        { "n": 21, "name": "David Silva", "pos": ["CAM", "RW", "LW"], "rating": 86 }
+      ]
+    }
+  },
+  {
+    "id": "portugal",
+    "editions": {
+      "1966": [
+        { "n": 1, "name": "José Pereira", "pos": ["GK"], "rating": 78 },
+        { "n": 12, "name": "Joaquim Carvalho", "pos": ["GK"], "rating": 73 },
+        { "n": 2, "name": "João Morais", "pos": ["RB", "RWB"], "rating": 77 },
+        { "n": 4, "name": "Vicente", "pos": ["CB"], "rating": 77 },
+        { "n": 5, "name": "Germano", "pos": ["CB"], "rating": 78 },
+        { "n": 3, "name": "Alexandre Baptista", "pos": ["CB"], "rating": 76 },
+        { "n": 6, "name": "Hilário", "pos": ["LB", "LWB"], "rating": 77 },
+        { "n": 8, "name": "Mário Coluna", "pos": ["CM", "CAM"], "rating": 85 },
+        { "n": 7, "name": "Jaime Graça", "pos": ["CM", "LM"], "rating": 79 },
+        { "n": 16, "name": "Custódio Pinto", "pos": ["DM", "CM"], "rating": 76 },
+        { "n": 17, "name": "José Augusto", "pos": ["RM", "RW"], "rating": 80 },
+        { "n": 13, "name": "Eusébio", "pos": ["ST", "CAM", "RW"], "rating": 92 },
+        { "n": 9, "name": "José Torres", "pos": ["ST"], "rating": 82 },
+        { "n": 11, "name": "António Simões", "pos": ["LW", "LM"], "rating": 79 },
+        { "n": 20, "name": "Mário Esteves", "pos": ["RW", "ST"], "rating": 74 },
+        { "n": 14, "name": "Hernâni", "pos": ["RW", "ST"], "rating": 76 }
+      ]
+    }
+  },
+  {
+    "id": "uruguay",
+    "editions": {
+      "1950": [
+        { "n": 1, "name": "Roque Máspoli", "pos": ["GK"], "rating": 81 },
+        { "n": 12, "name": "Aníbal Paz", "pos": ["GK"], "rating": 74 },
+        { "n": 2, "name": "Matías González", "pos": ["RB", "RWB"], "rating": 79 },
+        { "n": 3, "name": "Eusebio Tejera", "pos": ["LB", "CB"], "rating": 79 },
+        { "n": 5, "name": "Schubert Gambetta", "pos": ["CB"], "rating": 78 },
+        { "n": 4, "name": "José Carlos González", "pos": ["CB", "DM"], "rating": 77 },
+        { "n": 6, "name": "Víctor Rodríguez Andrade", "pos": ["DM", "CM", "RM"], "rating": 83 },
+        { "n": 8, "name": "Obdulio Varela", "pos": ["CM", "DM"], "rating": 85 },
+        { "n": 7, "name": "Julio Pérez", "pos": ["CM", "CAM"], "rating": 80 },
+        { "n": 11, "name": "Alcides Ghiggia", "pos": ["RW", "RM"], "rating": 83 },
+        { "n": 10, "name": "Juan Alberto Schiaffino", "pos": ["CAM", "ST", "LW"], "rating": 88 },
+        { "n": 9, "name": "Óscar Míguez", "pos": ["ST"], "rating": 82 },
+        { "n": 15, "name": "Ernesto Vidal", "pos": ["LW", "LM"], "rating": 78 },
+        { "n": 17, "name": "Rubén Morán", "pos": ["LW", "ST"], "rating": 76 },
+        { "n": 16, "name": "Carlos Romero", "pos": ["RW", "RM"], "rating": 75 },
+        { "n": 14, "name": "Washington Ortuño", "pos": ["CM"], "rating": 76 }
+      ]
+    }
+  }
+]
