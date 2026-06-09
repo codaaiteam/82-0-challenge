@@ -9,6 +9,7 @@ const contentPages = [
   '/how-its-calculated',
   '/can-you-go-82-0',
   '/games-like-82-0',
+  '/82-0-for-other-sports',
   '/team-builder',
   '/20-0',
   '/38-0',

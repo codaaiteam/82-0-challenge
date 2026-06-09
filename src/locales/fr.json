@@ -425,6 +425,44 @@
         }
       ]
     },
+    "otherSports": {
+      "title": "82-0 pour d'autres sports : versions football, foot US et Coupe du monde",
+      "description": "Existe-t-il un 82-0 pour le football ? Le 82-0 est la saison parfaite à 82 victoires du basket : voici les jeux du même format pour le football de Premier League (38-0), la NFL (20-0) et la Coupe du monde (7-0).",
+      "h1": "Existe-t-il un 82-0 pour d'autres sports ?",
+      "intro": "Le 82-0 est la saison parfaite du basket : 82 victoires, zéro défaite. Les fans d'autres sports réclament leur propre version, alors voici ce que devient le « 82-0 » pour le football, le football américain et la Coupe du monde — chacun jouable ici même.",
+      "sections": [
+        {
+          "h2": "Le football peut-il vraiment finir 82-0 ?",
+          "paragraphs": [
+            "Pas en tant que score : les buts sont trop rares. Le résultat professionnel officiel le plus déséquilibré de l'histoire fut un délirant 149-0 (un match de protestation à Madagascar en 2002) ; une raclée normale atteint rarement les deux chiffres, et le plus gros écart en Premier League est de 9-0. Mais le 82-0 n'a jamais vraiment été un score. C'est une saison parfaite : 82 matchs, 82 victoires, zéro défaite — un chiffre de basket, car une saison régulière NBA compte 82 matchs. Les autres sports ont des saisons plus courtes, donc leur « saison parfaite » a un autre chiffre."
+          ]
+        },
+        {
+          "h2": "Le 82-0 du football = 38-0 (Premier League)",
+          "paragraphs": [
+            "Une saison de Premier League compte 38 matchs, donc la version football de la saison parfaite et invaincue est le 38-0. C'est sans doute plus dur que le 82-0, car le football se solde si facilement par un nul : les légendaires Invincibles d'Arsenal de 2003-04 ont passé toute la saison invaincus et n'ont pourtant fait que 26-12-0 — à douze nuls d'un 38-0 parfait. Le défi 38-0 est l'édition football de ce jeu : faites tourner clubs et époques de Premier League, recrutez un onze de légendes réelles et visez la saison parfaite."
+          ]
+        },
+        {
+          "h2": "Le 82-0 de la Coupe du monde = 7-0",
+          "paragraphs": [
+            "Vous voulez la version internationale ? Un parcours en Coupe du monde de la phase de groupes à la finale, c'est sept matchs, donc un tournoi impeccable est un 7-0. Le défi 7-0 vous laisse composer le meilleur onze de Coupe du monde de l'histoire : mêlez des légendes de 1970 à 2026, liez les compatriotes pour la cohésion et visez un 7-0 parfait ou survivez à une phase à élimination pour soulever le trophée."
+          ]
+        },
+        {
+          "h2": "Le 82-0 du football américain = 20-0 (NFL)",
+          "paragraphs": [
+            "Si vous avez cherché « football 82-0 » au sens de la NFL, la réponse est 20-0. Un parcours moderne vers le Super Bowl, c'est 17 matchs de saison régulière plus trois tours de playoffs : gagnez-les tous et vous finissez 20-0, ce qu'aucune équipe n'a fait dans le format moderne (les Dolphins de 1972 ont fait 17-0 avec l'ancien calendrier). Le défi 20-0 recrute un effectif NFL et simule tout le parcours."
+          ]
+        },
+        {
+          "h2": "Le même format, tous les sports",
+          "paragraphs": [
+            "Les quatre défis partagent une idée : des tirages d'équipes au hasard, un draft bâti sur de vrais joueurs et une simulation de saison qui décide si votre alignement survit invaincu. Choisissez votre sport et visez le chiffre : 82-0, 38-0, 20-0 ou 7-0."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Défi 38-0 : jouez au jeu de la saison parfaite en Premier League",
       "description": "Jouez au défi 38-0 viral. Lancez des clubs et des époques de Premier League aléatoires, draftez un onze de départ de légendes, et voyez si votre équipe peut gagner les 38 matchs — au-delà des Invincibles.",
@@ -610,6 +648,7 @@
     "howItsCalculated": "Comment c'est calculé",
     "canYouGo": "Peut-on faire 82-0 ?",
     "gamesLike": "Jeux comme 82-0",
+    "otherSports": "Autres sports",
     "twentyZero": "Défi 20-0 (NFL)",
     "thirtyEight": "Défi 38-0 (Premier League)",
     "more": "Plus",

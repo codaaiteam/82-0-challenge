@@ -425,6 +425,44 @@
         }
       ]
     },
+    "otherSports": {
+      "title": "82-0 para outros esportes: versões de futebol, futebol americano e Copa",
+      "description": "Existe um 82-0 para o futebol? 82-0 é a temporada perfeita de 82 vitórias do basquete — aqui estão os jogos do mesmo formato para o futebol da Premier League (38-0), a NFL (20-0) e a Copa do Mundo (7-0).",
+      "h1": "Existe um 82-0 para outros esportes?",
+      "intro": "82-0 é a temporada perfeita do basquete — 82 vitórias, zero derrotas. Os fãs de outros esportes vivem pedindo a sua própria versão, então aqui está no que o '82-0' se transforma para o futebol, o futebol americano e a Copa do Mundo — cada um jogável aqui mesmo.",
+      "sections": [
+        {
+          "h2": "O futebol pode mesmo terminar 82-0?",
+          "paragraphs": [
+            "Não como placar — os gols são difíceis demais. O resultado profissional oficial mais desigual da história foi um absurdo 149-0 (uma partida de protesto em Madagascar em 2002); uma goleada normal raramente chega aos dois dígitos, e a maior diferença na Premier League é de 9-0. Mas o 82-0 nunca foi realmente um placar. É uma temporada perfeita: 82 jogos, 82 vitórias, zero derrotas — um número do basquete, porque uma temporada regular da NBA tem 82 jogos. Outros esportes têm temporadas mais curtas, então a sua 'temporada perfeita' tem outro número."
+          ]
+        },
+        {
+          "h2": "O 82-0 do futebol = 38-0 (Premier League)",
+          "paragraphs": [
+            "Uma temporada da Premier League tem 38 jogos, então a versão do futebol da temporada perfeita e invicta é o 38-0. É possivelmente mais difícil que o 82-0, porque no futebol se empata com muita facilidade: os lendários Invencíveis do Arsenal de 2003-04 passaram a temporada inteira invictos e ainda assim fizeram apenas 26-12-0 — a doze empates de um 38-0 perfeito. O desafio 38-0 é a edição de futebol deste mesmo jogo: gire clubes e épocas da Premier League, recrute um XI de lendas reais e busque a temporada perfeita."
+          ]
+        },
+        {
+          "h2": "O 82-0 da Copa do Mundo = 7-0",
+          "paragraphs": [
+            "Quer a versão de seleções? Uma campanha na Copa do Mundo da fase de grupos à final são sete partidas, então um torneio impecável é um 7-0. O desafio 7-0 deixa você montar o melhor XI de Copa do Mundo da história — misture lendas de 1970 a 2026, conecte compatriotas para entrosamento e busque um 7-0 perfeito ou sobreviva a um mata-mata para erguer o troféu."
+          ]
+        },
+        {
+          "h2": "O 82-0 do futebol americano = 20-0 (NFL)",
+          "paragraphs": [
+            "Se você pesquisou 'football 82-0' no sentido da NFL, a resposta é 20-0. Uma campanha moderna rumo ao Super Bowl são 17 jogos da temporada regular mais três rodadas de playoffs — vença todos e você termina 20-0, algo que nenhum time fez no formato moderno (os Dolphins de 1972 fizeram 17-0 sob o calendário antigo). O desafio 20-0 recruta um elenco da NFL e simula toda a campanha."
+          ]
+        },
+        {
+          "h2": "O mesmo formato, todos os esportes",
+          "paragraphs": [
+            "Os quatro desafios compartilham uma ideia: sorteios de times aleatórios, um draft construído sobre jogadores reais e uma simulação de temporada que decide se a sua escalação sobrevive invicta. Escolha o seu esporte e busque o número — 82-0, 38-0, 20-0 ou 7-0."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Desafio 38-0: jogue o jogo da temporada perfeita da Premier League",
       "description": "Jogue o viral desafio 38-0. Sorteie clubes e épocas da Premier League, recrute um time titular de lendas e veja se o seu time vence os 38 jogos, indo além dos Invencíveis.",
@@ -610,6 +648,7 @@
     "howItsCalculated": "Como é calculado",
     "canYouGo": "Dá para fazer 82-0?",
     "gamesLike": "Jogos como 82-0",
+    "otherSports": "Outros esportes",
     "twentyZero": "Desafio 20-0 (NFL)",
     "thirtyEight": "Desafio 38-0 (Premier League)",
     "more": "Mais",

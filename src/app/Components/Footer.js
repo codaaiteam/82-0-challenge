@@ -18,6 +18,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
           <Link href={`${prefix}/daily`}>{t?.footer?.daily || 'Daily Challenge'}</Link>
           <Link href={`${prefix}/games-like-82-0`}>{t?.footer?.gamesLike || 'Games Like 82-0'}</Link>
+          <Link href={`${prefix}/82-0-for-other-sports`}>{t?.footer?.otherSports || 'Other Sports'}</Link>
           <Link href={`${prefix}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
           <Link href={`${prefix}/38-0`}>{t?.footer?.thirtyEight || '38-0 Challenge (Premier League)'}</Link>
           <Link href={`${prefix}/7-0`}>{t?.footer?.sevenZero || '7-0 Challenge (World Cup)'}</Link>

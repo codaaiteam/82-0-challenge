@@ -425,6 +425,44 @@
         }
       ]
     },
+    "otherSports": {
+      "title": "82-0 para otros deportes: versiones de fútbol, fútbol americano y Mundial",
+      "description": "¿Existe un 82-0 para el fútbol? El 82-0 es la temporada perfecta de 82 victorias del baloncesto: aquí están los juegos del mismo formato para el fútbol de la Premier (38-0), la NFL (20-0) y el Mundial (7-0).",
+      "h1": "¿Existe un 82-0 para otros deportes?",
+      "intro": "El 82-0 es la temporada perfecta del baloncesto: 82 victorias, cero derrotas. Los aficionados de otros deportes piden su propia versión, así que esto es en qué se convierte el '82-0' para el fútbol, el fútbol americano y el Mundial, y cada uno se puede jugar aquí mismo.",
+      "sections": [
+        {
+          "h2": "¿Puede el fútbol terminar realmente 82-0?",
+          "paragraphs": [
+            "No como marcador: los goles cuestan demasiado. El resultado profesional oficial más desigual de la historia fue un disparatado 149-0 (un partido de protesta en Madagascar en 2002); una goleada normal rara vez llega a los dos dígitos, y la mayor diferencia en la Premier League es de 9-0. Pero el 82-0 nunca fue realmente un marcador. Es una temporada perfecta: 82 partidos, 82 victorias, cero derrotas, un número de baloncesto, porque una temporada regular de la NBA dura 82 partidos. Otros deportes tienen temporadas más cortas, así que su 'temporada perfecta' tiene otro número."
+          ]
+        },
+        {
+          "h2": "El 82-0 del fútbol = 38-0 (Premier League)",
+          "paragraphs": [
+            "Una temporada de la Premier League son 38 partidos, así que la versión futbolística de la temporada perfecta e invicta es el 38-0. Podría decirse que es más difícil que el 82-0, porque en el fútbol se empata con facilidad: los legendarios Invencibles del Arsenal de 2003-04 pasaron toda la temporada invictos y aun así solo lograron un 26-12-0, a doce empates de un 38-0 perfecto. El desafío 38-0 es la edición de fútbol de este mismo juego: gira clubes y épocas de la Premier, recluta un once de leyendas reales y persigue la temporada perfecta."
+          ]
+        },
+        {
+          "h2": "El 82-0 del Mundial = 7-0",
+          "paragraphs": [
+            "¿Quieres la versión de selecciones? Un recorrido en el Mundial de la fase de grupos a la final son siete partidos, así que un torneo impecable es un 7-0. El desafío 7-0 te deja formar el mejor once mundialista de la historia: mezcla leyendas de 1970 a 2026, enlaza compatriotas para ganar química y persigue un 7-0 perfecto o sobrevive a una eliminatoria para levantar el trofeo."
+          ]
+        },
+        {
+          "h2": "El 82-0 del fútbol americano = 20-0 (NFL)",
+          "paragraphs": [
+            "Si buscaste 'football 82-0' refiriéndote a la NFL, la respuesta es 20-0. Un recorrido moderno hacia la Super Bowl son 17 partidos de temporada regular más tres rondas de playoffs: gánalos todos y terminas 20-0, algo que ningún equipo ha hecho en el formato moderno (los Dolphins de 1972 hicieron 17-0 con el antiguo calendario). El desafío 20-0 recluta una plantilla de la NFL y simula todo el recorrido."
+          ]
+        },
+        {
+          "h2": "El mismo formato, todos los deportes",
+          "paragraphs": [
+            "Los cuatro desafíos comparten una idea: tiradas de equipos al azar, un draft construido sobre jugadores reales y una simulación de temporada que decide si tu alineación sobrevive invicta. Elige tu deporte y persigue el número: 82-0, 38-0, 20-0 o 7-0."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "Desafío 38-0: juega al juego de la temporada perfecta de la Premier League",
       "description": "Juega al viral desafío 38-0. Gira clubes y épocas de la Premier League al azar, recluta un once inicial de leyendas y comprueba si tu equipo puede ganar los 38 partidos, más allá de los Invencibles.",
@@ -610,6 +648,7 @@
     "howItsCalculated": "Cómo se calcula",
     "canYouGo": "¿Puedes hacer 82-0?",
     "gamesLike": "Juegos como 82-0",
+    "otherSports": "Otros deportes",
     "twentyZero": "Desafío 20-0 (NFL)",
     "thirtyEight": "Desafío 38-0 (Premier League)",
     "more": "Más",

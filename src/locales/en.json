@@ -425,6 +425,44 @@
         }
       ]
     },
+    "otherSports": {
+      "title": "82-0 for Other Sports: Soccer, Football & World Cup Versions",
+      "description": "Is there an 82-0 for soccer or football? 82-0 is basketball's perfect 82-win season — here are the same-format games for Premier League soccer (38-0), the NFL (20-0) and the World Cup (7-0).",
+      "h1": "Is There an 82-0 for Other Sports?",
+      "intro": "82-0 is basketball's perfect season — 82 wins, zero losses. Fans of other sports keep asking for their own version, so here is what '82-0' becomes for soccer, American football and the World Cup — each one playable right here.",
+      "sections": [
+        {
+          "h2": "Can soccer or football actually go 82-0?",
+          "paragraphs": [
+            "Not as a scoreline — goals are too hard to come by. The most lopsided official pro result ever was a freak 149-0 (a 2002 Madagascar protest match); a normal blowout rarely reaches double digits, and the Premier League's biggest margin is 9-0. But 82-0 was never really a scoreline. It is a perfect season: 82 games, 82 wins, zero losses — a basketball number, because an NBA regular season is 82 games long. Other sports have shorter seasons, so their 'perfect season' has a different number."
+          ]
+        },
+        {
+          "h2": "82-0 for soccer = 38-0 (Premier League)",
+          "paragraphs": [
+            "A Premier League season is 38 games, so soccer's version of the perfect undefeated season is 38-0. It is arguably harder than 82-0, because soccer draws so easily: Arsenal's legendary 2003-04 Invincibles went the whole season unbeaten and still only managed 26-12-0 — twelve draws short of a perfect 38-0. The 38-0 Challenge is the soccer edition of this exact game: spin Premier League clubs and eras, draft an XI of real legends, and chase the perfect season."
+          ]
+        },
+        {
+          "h2": "82-0 for the World Cup = 7-0",
+          "paragraphs": [
+            "Want the international version? A World Cup run from the group stage to the final is seven matches, so a flawless tournament is 7-0. The 7-0 Challenge lets you build the greatest World Cup XI ever — mix legends from 1970 to 2026, link countrymen for chemistry, and chase a perfect 7-0 or survive a knockout gauntlet to lift the trophy."
+          ]
+        },
+        {
+          "h2": "82-0 for (American) football = 20-0 (NFL)",
+          "paragraphs": [
+            "If you searched 'football 82-0' meaning the NFL, the answer is 20-0. A modern Super Bowl run is 17 regular-season games plus three playoff rounds — win them all and you finish 20-0, something no team has done in the modern format (the 1972 Dolphins went 17-0 under the old schedule). The 20-0 Challenge drafts an NFL roster and simulates the whole run."
+          ]
+        },
+        {
+          "h2": "Same format, every sport",
+          "paragraphs": [
+            "All four challenges share one idea: random team rolls, a draft built on real players, and a season simulation that decides whether your lineup survives undefeated. Pick your sport and chase the number — 82-0, 38-0, 20-0 or 7-0."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Play the Premier League Perfect Season Game",
       "description": "Play the viral 38-0 challenge. Spin random Premier League clubs and eras, draft a starting XI of legends, and see if your team can win all 38 games — beyond the Invincibles.",
@@ -610,6 +648,7 @@
     "howItsCalculated": "How It's Calculated",
     "canYouGo": "Can You Go 82-0?",
     "gamesLike": "Games Like 82-0",
+    "otherSports": "Other Sports",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "More",

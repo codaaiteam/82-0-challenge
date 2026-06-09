@@ -425,6 +425,44 @@
         }
       ]
     },
+    "otherSports": {
+      "title": "82-0 für andere Sportarten: Fußball-, Football- und WM-Versionen",
+      "description": "Gibt es ein 82-0 für Fußball? 82-0 ist die perfekte 82-Siege-Saison des Basketballs — hier sind die Spiele desselben Formats für Premier-League-Fußball (38-0), die NFL (20-0) und die Weltmeisterschaft (7-0).",
+      "h1": "Gibt es ein 82-0 für andere Sportarten?",
+      "intro": "82-0 ist die perfekte Saison des Basketballs — 82 Siege, null Niederlagen. Fans anderer Sportarten wollen ihre eigene Version, also hier ist, was aus '82-0' für Fußball, American Football und die Weltmeisterschaft wird — jedes davon hier direkt spielbar.",
+      "sections": [
+        {
+          "h2": "Kann Fußball wirklich 82-0 schaffen?",
+          "paragraphs": [
+            "Nicht als Ergebnis — Tore sind zu schwer zu erzielen. Das einseitigste offizielle Profi-Resultat aller Zeiten war ein groteskes 149-0 (ein Protestspiel in Madagaskar 2002); ein normaler Kantersieg erreicht selten zweistellige Höhen, und der größte Abstand in der Premier League ist 9-0. Aber 82-0 war nie wirklich ein Ergebnis. Es ist eine perfekte Saison: 82 Spiele, 82 Siege, null Niederlagen — eine Basketball-Zahl, denn eine NBA-Regular-Season umfasst 82 Spiele. Andere Sportarten haben kürzere Saisons, also hat ihre 'perfekte Saison' eine andere Zahl."
+          ]
+        },
+        {
+          "h2": "Das 82-0 des Fußballs = 38-0 (Premier League)",
+          "paragraphs": [
+            "Eine Premier-League-Saison hat 38 Spiele, also ist die Fußballversion der perfekten ungeschlagenen Saison das 38-0. Es ist wohl schwerer als 82-0, weil im Fußball so leicht ein Unentschieden fällt: Arsenals legendäre Invincibles von 2003-04 blieben die ganze Saison ungeschlagen und schafften trotzdem nur 26-12-0 — zwölf Unentschieden von einem perfekten 38-0 entfernt. Die 38-0-Challenge ist die Fußball-Edition genau dieses Spiels: dreh Premier-League-Klubs und Ären, drafte eine Elf echter Legenden und jage die perfekte Saison."
+          ]
+        },
+        {
+          "h2": "Das 82-0 der Weltmeisterschaft = 7-0",
+          "paragraphs": [
+            "Du willst die internationale Version? Ein WM-Lauf von der Gruppenphase bis zum Finale sind sieben Spiele, also ist ein makelloses Turnier ein 7-0. Die 7-0-Challenge lässt dich die beste WM-Elf aller Zeiten bauen — mische Legenden von 1970 bis 2026, verbinde Landsleute für Chemie und jage ein perfektes 7-0 oder überstehe ein K.-o.-Gauntlet, um die Trophäe zu heben."
+          ]
+        },
+        {
+          "h2": "Das 82-0 des (American) Football = 20-0 (NFL)",
+          "paragraphs": [
+            "Wenn du 'football 82-0' im Sinne der NFL gesucht hast, lautet die Antwort 20-0. Ein moderner Super-Bowl-Lauf sind 17 Spiele der Regular Season plus drei Playoff-Runden — gewinn sie alle und du beendest 20-0, was im modernen Format noch keinem Team gelang (die Dolphins von 1972 schafften 17-0 unter dem alten Spielplan). Die 20-0-Challenge draftet einen NFL-Kader und simuliert den gesamten Lauf."
+          ]
+        },
+        {
+          "h2": "Gleiches Format, jede Sportart",
+          "paragraphs": [
+            "Alle vier Challenges teilen eine Idee: zufällige Team-Würfe, ein Draft auf Basis echter Spieler und eine Saison-Simulation, die entscheidet, ob deine Aufstellung ungeschlagen überlebt. Wähle deine Sportart und jage die Zahl — 82-0, 38-0, 20-0 oder 7-0."
+          ]
+        }
+      ]
+    },
     "thirtyEight": {
       "title": "38-0 Challenge: Spiele das Premier-League-Perfect-Season-Game",
       "description": "Spiele die virale 38-0 Challenge. Dreh zufällige Premier-League-Klubs und Epochen, drafte eine Startelf aus Legenden und finde heraus, ob dein Team alle 38 Spiele gewinnen kann — über die Invincibles hinaus.",
@@ -610,6 +648,7 @@
     "howItsCalculated": "Wie es berechnet wird",
     "canYouGo": "Schaffst du 82-0?",
     "gamesLike": "Spiele wie 82-0",
+    "otherSports": "Andere Sportarten",
     "twentyZero": "20-0 Challenge (NFL)",
     "thirtyEight": "38-0 Challenge (Premier League)",
     "more": "Mehr",
