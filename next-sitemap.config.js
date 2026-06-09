@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-const languages = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de'];
+const languages = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de', 'pt'];
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.82-0-challenge.com';
 
 const contentPages = [

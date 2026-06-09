@@ -1,0 +1,523 @@
+{
+  "layout": {
+    "language": "pt"
+  },
+  "seoTitle": "Desafio 82-0: jogue o viral montador de times",
+  "seoDescription": "Jogue o viral desafio 82-0. Gire o caça-níquel, recrute lendas do basquete de times e épocas aleatórios e veja se o seu quinteto consegue ficar invicto.",
+  "keywords": "82-0, desafio 82-0, jogo do desafio 82-0, jogo 82-0, montador de times 82-0, como jogar 82-0, regras do desafio 82-0, montador viral de times de basquete",
+  "header": {
+    "siteName": "Desafio 82-0",
+    "home": "Início",
+    "whatIs": "O que é 82-0?",
+    "howToPlay": "Como jogar",
+    "teamBuilder": "Montador de times"
+  },
+  "hero": {
+    "title": "Desafio 82-0",
+    "subtitle": "Você consegue montar um time que termine 82-0? Gire o caça-níquel, recrute uma lenda por rodada de um time e uma época aleatórios e veja a simulação projetar a sua temporada.",
+    "cta": "Começar o desafio"
+  },
+  "game": {
+    "chooseMode": "Escolha o seu modo",
+    "chooseModeSub": "Como você quer montar o seu time histórico?",
+    "modeClassic": "Clássico",
+    "modeClassicDesc": "As estatísticas completas de cada jogador ficam visíveis: escolha com base nos números.",
+    "modeHoopiq": "HoopIQ",
+    "modeHoopiqDesc": "As estatísticas ficam ocultas: recrute de memória e teste o seu conhecimento de basquete.",
+    "playClassic": "Jogar Clássico",
+    "playHoopiq": "Jogar HoopIQ",
+    "roundOf": "Rodada {round} de {total}",
+    "team": "Time",
+    "era": "Época",
+    "spin": "Girar",
+    "spinning": "Girando…",
+    "spinHint": "Aperte GIRAR para sortear um time e uma época, e depois escolha o seu jogador.",
+    "rerollTeam": "Trocar time",
+    "rerollEra": "Trocar época",
+    "filterAll": "Todos",
+    "playersAvailable": "{count} jogadores",
+    "placing": "Posicionando: {name} — toque em uma posição iluminada da quadra",
+    "ppg": "PPG",
+    "rpg": "RPG",
+    "apg": "APG",
+    "spg": "SPG",
+    "bpg": "BPG",
+    "projectedRecord": "Campanha projetada",
+    "pts": "pts",
+    "bestPick": "Melhor escolha",
+    "weakness": "Fraqueza",
+    "playAgain": "Jogar de novo",
+    "copyResult": "Copiar resultado",
+    "copied": "Copiado!",
+    "shareOnX": "Compartilhar no X",
+    "switchMode": "Trocar de modo",
+    "shareText": "Terminei {record} no desafio 82-0. Você supera o meu time?",
+    "titles": {
+      "perfect": "Temporada perfeita",
+      "almost": "Quase invicto",
+      "favorite": "Favorito ao título",
+      "contender": "Postulante",
+      "playoff": "Time de playoffs"
+    },
+    "weaknesses": {
+      "weakScoring": "Falta poder de pontuação",
+      "weakRebounding": "Fraco nos rebotes",
+      "weakPlaymaking": "Quem comanda o ataque?",
+      "weakSteals": "A defesa de perímetro vaza",
+      "weakBlocks": "Sem proteção do garrafão",
+      "none": "Nenhuma: elenco completo"
+    },
+    "poster": "Baixar pôster",
+    "daily": {
+      "mode": "Desafio diário",
+      "modeDesc": "Todo mundo recebe os mesmos giros. Uma tentativa por dia: aproveite.",
+      "play": "Jogar o diário",
+      "badge": "Desafio diário",
+      "noSkips": "Sem trocas: os mesmos giros para todos",
+      "comeback": "Você já usou a tentativa de hoje. Novo desafio em cerca de {hours}h (meia-noite UTC).",
+      "shareText": "Desafio 82-0 diário {date}: terminei {record}. Os mesmos giros, uma tentativa, você supera?"
+    },
+    "nfl": {
+      "shareText": "Terminei {record} no desafio 20-0. Você supera o meu elenco?",
+      "weaknesses": {
+        "weakQB": "Jogo fraco do quarterback",
+        "weakTrenches": "Fraco nas linhas",
+        "weakSecondary": "Secundária frágil",
+        "weakSkill": "Faltam jogadores de ataque",
+        "none": "Nenhuma: elenco completo"
+      }
+    },
+    "epl": {
+      "shareText": "Terminei {record} no desafio 38-0. O seu time titular supera o meu?",
+      "titles": {
+        "perfect": "Os Invencíveis",
+        "almost": "Campeões da liga",
+        "favorite": "Postulantes ao título",
+        "contender": "Top quatro",
+        "playoff": "Meio de tabela"
+      },
+      "weaknesses": {
+        "weakGK": "Mãos inseguras no gol",
+        "weakDefense": "Defesa vazada",
+        "weakMidfield": "O meio-campo é engolido",
+        "weakAttack": "Dificuldade para fazer gols",
+        "none": "Nenhuma: time titular completo"
+      }
+    }
+  },
+  "homeSeo": {
+    "sections": [
+      {
+        "h2": "O que é o desafio 82-0?",
+        "paragraphs": [
+          "O desafio 82-0 é um viral jogo de montagem de times de basquete que gira em torno de uma pergunta simples: você consegue reunir um quinteto inicial tão dominante que venceria absolutamente todos os jogos de uma temporada de 82 partidas? Uma campanha de 82-0 nunca aconteceu na história do basquete profissional — a melhor temporada regular registrada foi de 73 vitórias —, e é exatamente isso que torna o desafio 82-0 tão viciante. Você persegue algo que jamais foi alcançado.",
+          "O jogo do desafio 82-0 viralizou nas redes sociais quando os torcedores discutiam qual combinação de jogadores de diferentes times e épocas conseguiria ficar invicta de forma realista. Cinco lendas de cinco décadas diferentes venceriam tudo? Um time só de pontuadores desabaria na defesa? Este site transforma esse debate em um jogável jogo 82-0 que você termina em menos de dois minutos."
+        ]
+      },
+      {
+        "h2": "Como funciona o desafio 82-0",
+        "paragraphs": [
+          "Cada uma das cinco rodadas começa com um caça-níquel. Gire até sortear uma franquia aleatória e uma década aleatória — Chicago nos anos 90, Boston nos anos 60, Denver nos anos 2020 — e ele mostra os jogadores reais daquele time e daquela época com as estatísticas históricas: pontos, rebotes, assistências, roubos e tocos por jogo. Você escolhe um jogador e o posiciona em uma das cinco posições da quadra que ele realmente ocupou. Cada posição só pode ser preenchida uma vez, então um quinteto de cinco armadores é impossível por design.",
+          "Você tem uma troca de time e uma troca de época por partida. Use-as com cabeça: se gastar cedo num giro ruim, vai ficar com o que o caça-níquel oferecer nas rodadas finais. Após cinco escolhas, o motor de simulação projeta o seu quinteto ao longo de uma temporada completa de 82 jogos."
+        ]
+      },
+      {
+        "h2": "Por que 82-0 é tão difícil",
+        "paragraphs": [
+          "O motor de simulação soma as cinco categorias estatísticas do seu quinteto — pontuação, rebote, criação de jogo, roubos e tocos — e passa o total por uma curva de vitórias não linear. A relação entre estatísticas e vitórias não é linear: à medida que o seu time fica mais forte, cada vitória adicional custa muito mais para ser conquistada. Ir de 70 para 75 vitórias exige muito mais força de elenco do que ir de 55 para 60.",
+          "Além da curva, todas as categorias têm um limite mínimo. Uma carência em uma única área — sem proteção do garrafão, sem criação de jogo — limita o seu teto e arruína a temporada perfeita, por mais alto que seja o seu total de pontuação. E cada década tem um ambiente estatístico distinto: 30 pontos por jogo nos acelerados anos 60 não valem o mesmo que 30 nos anos 2020, e o motor ajusta cada linha estatística conforme a época."
+        ]
+      },
+      {
+        "h2": "Regras do desafio 82-0",
+        "paragraphs": [
+          "As regras do desafio 82-0 são simples. Um: em cada rodada, o caça-níquel sorteia um time e uma década. Dois: escolha exatamente um jogador daquele elenco. Três: posicione-o em uma posição livre da quadra que ele realmente ocupou — PG, SG, SF, PF ou C. Quatro: você tem uma troca de time e uma troca de época para a partida toda. Cinco: após cinco escolhas, o motor simula a sua temporada e projeta uma campanha final entre 0-82 e 82-0, com uma nota, a sua melhor escolha e a maior fraqueza do seu elenco. Compartilhe e desafie os seus amigos a superar."
+        ]
+      },
+      {
+        "h2": "Dicas para montar um time melhor",
+        "paragraphs": [
+          "Maximize os totais nas cinco categorias. O motor não penaliza a falta de entrosamento: ele premia a produção bruta ajustada por época. Mas lembre dos limites: um quinteto com zero tocos ou zero criação de jogo limita o seu teto por mais que pontue.",
+          "Cuide das posições. Cada escolha precisa caber em um espaço livre da quadra que o jogador realmente ocupou. Recrutar cedo um ala na posição de ala pode deixar você sem lugar para um ala melhor depois: tenha em mente os espaços que restam antes de se comprometer.",
+          "Conheça as épocas. Um pontuador de 25 pontos dos anos 2000 muitas vezes supera um de 30 pontos dos anos 60 após o ajuste por época. O motor desinfla discretamente os números inflados pelo ritmo das décadas mais antigas.",
+          "Gaste as trocas cedo, não tarde. Se a primeira rodada te der um elenco fraco, troque na hora. Guardar as duas trocas para a quinta rodada geralmente significa desperdiçá-las.",
+          "Quer um desafio de verdade? Jogue no modo HoopIQ: as estatísticas ficam ocultas e você recruta inteiramente de memória. É a forma mais rápida de descobrir quem realmente conhece a história do basquete."
+        ]
+      },
+      {
+        "h2": "Alternativas ao desafio 82-0",
+        "paragraphs": [
+          "Se você curte o desafio 82-0, provavelmente vai curtir outros jogos esportivos no estilo draft: montadores de quintetos, debates de épocas, chaves do GOAT e drafts de fantasy coçam a mesma vontade. Mas o formato 82-0 se destaca porque te dá uma resposta concreta e simulada em vez de uma discussão sem fim. O seu time fica invicto ou não consegue, e sempre há mais uma partida."
+        ]
+      },
+      {
+        "h2": "Monte o seu próprio esquadrão de personagens com IA",
+        "paragraphs": [
+          "Quer montar algo além de um time de basquete? Com o AI Character Squad Builder você pode recrutar um esquadrão de heróis de fantasia, personagens de anime ou criações totalmente originais, gerar uma história sobre eles e até transformá-la em um livro ilustrado. Se você adora montar times, é o próximo passo natural."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Perguntas frequentes",
+    "q1": "O que é o desafio 82-0?",
+    "a1": "O desafio 82-0 é um viral jogo de montagem de times de basquete em que você recruta um quinteto de cinco lendas reais de times e épocas aleatórios, e um motor de simulação projeta se o seu elenco conseguiria ficar invicto ao longo de uma temporada inteira de 82 jogos.",
+    "q2": "Como se joga o desafio 82-0?",
+    "a2": "Em cada rodada, um caça-níquel sorteia um time e uma década. Escolha um jogador daquele elenco e posicione-o em uma posição livre da quadra que ele realmente ocupou. Você tem uma troca de time e uma troca de época por partida. Após cinco escolhas, o motor simula a sua temporada e projeta a sua campanha final.",
+    "q3": "O que significa 82-0?",
+    "a3": "Uma temporada regular de basquete profissional tem 82 jogos. Uma campanha de 82-0 significa vencer todos eles: uma temporada perfeita e invicta que nunca aconteceu na história da liga.",
+    "q4": "Um time pode realmente terminar 82-0?",
+    "a4": "Nunca aconteceu na vida real. A melhor temporada regular foi de 73 vitórias. Neste jogo, um quinteto que maximiza ao mesmo tempo todas as categorias estatísticas tem chances reais de chegar ao 82-0, mas isso é raro por design.",
+    "q5": "Este é um jogo oficial da NBA?",
+    "a5": "Não. É um jogo de montagem de times independente e feito por fãs. Não é afiliado, endossado nem patrocinado pela NBA ou por qualquer liga de basquete profissional. Os nomes dos jogadores e as estatísticas históricas são usados apenas para fins informativos e de entretenimento.",
+    "q6": "Como a campanha final é calculada?",
+    "a6": "O motor soma os pontos, rebotes, assistências, roubos e tocos do seu quinteto ajustados por época e depois passa o total por uma curva de projeção de vitórias não linear. Cada categoria tem um limite: uma única fraqueza evidente limita a sua campanha por mais forte que seja o resto do elenco."
+  },
+  "pages": {
+    "whatIs": {
+      "title": "82-0: o que é o viral jogo do desafio 82-0?",
+      "description": "O que significa 82-0? Descubra de onde surgiu o viral desafio 82-0, como funciona o montador de times com caça-níquel e jogue aqui mesmo.",
+      "h1": "O que é 82-0?",
+      "intro": "82-0 é a temporada perfeita de basquete que nunca aconteceu: 82 vitórias, zero derrotas. Aqui contamos do que se trata o viral desafio 82-0, com um montador de times para você experimentar.",
+      "sections": [
+        {
+          "h2": "O que significa 82-0?",
+          "paragraphs": [
+            "Uma temporada regular de basquete profissional tem 82 jogos. Terminar 82-0 significa vencer todos eles: uma temporada perfeita. Nenhum time na história da liga jamais conseguiu. O mais perto que se chegou foram 73 vitórias, o que significa que até o melhor time de todos os tempos perdeu nove vezes. Essa distância entre 'o melhor da história' e 'o perfeito' é o que o número 82-0 representa, e é por isso que essa expressão tem tanto peso nos debates de basquete.",
+            "Como uma temporada perfeita nunca aconteceu, 82-0 virou sinônimo de um padrão impossível. Quando os torcedores dizem que um quinteto 'terminaria 82-0', querem dizer que ele é tão carregado de talento que transcende a competição normal."
+          ]
+        },
+        {
+          "h2": "O que é o desafio 82-0?",
+          "paragraphs": [
+            "O desafio 82-0 é um jogo de montagem de times nascido desse debate. A premissa: você recruta um quinteto de cinco lendas reais do basquete, mas não escolhe livremente; cada seleção vem de um time e uma década sorteados. Chicago nos anos 90. Boston nos anos 60. Denver nos anos 2020. De cada giro você escolhe um jogador, o posiciona em uma posição da quadra que ele realmente ocupou e, após cinco escolhas, o seu elenco encara a pergunta: este time terminaria 82-0?",
+            "O formato viralizou porque é metade estratégia, metade sorte. Às vezes o caça-níquel te entrega uma dinastia. Às vezes você está escolhendo entre jogadores de função na quinta rodada sem trocas disponíveis, e a sua temporada perfeita morre na hora. Cada partida é uma nova discussão."
+          ]
+        },
+        {
+          "h2": "Como o jogo 82-0 funciona aqui?",
+          "paragraphs": [
+            "A nossa versão do jogo do desafio 82-0 roda inteiramente no seu navegador. Cinco rodadas, uma escolha por rodada, uma troca de time e uma troca de época. Cada jogador carrega a sua linha estatística histórica real — pontos, rebotes, assistências, roubos e tocos por jogo — ajustada por época pelo motor de simulação, porque 30 pontos nos anos 60 não são 30 pontos nos anos 2020. Quando o seu quinteto está completo, o motor passa os seus totais agregados por uma curva de vitórias não linear e projeta uma campanha final entre 0-82 e 82-0. Sem downloads, sem cadastro; e se você quiser um desafio de verdade, o modo HoopIQ oculta as estatísticas e te obriga a recrutar de memória."
+          ]
+        },
+        {
+          "h2": "Por que 82-0 está viralizando?",
+          "paragraphs": [
+            "As discussões de basquete costumavam terminar em 'cada um com a sua'. O formato 82-0 dá um placar a elas. Os jogadores compartilham as suas campanhas projetadas — 78-4, 80-2, o raro e perfeito 82-0 — e os amigos logo tentam superar. É um jogo de dois minutos com rejogabilidade infinita, construído sobre um debate que os torcedores têm há décadas: quais cinco jogadores, de toda a história, formam o time imbatível?"
+          ]
+        }
+      ]
+    },
+    "howToPlay": {
+      "title": "Como jogar o desafio 82-0",
+      "description": "Aprenda a jogar o desafio 82-0 em cinco passos: gire o caça-níquel, recrute lendas reais de times e épocas aleatórios, preencha as cinco posições e veja a sua campanha de temporada projetada.",
+      "h1": "Como jogar o desafio 82-0",
+      "intro": "Cinco rodadas. Cinco escolhas. Uma pergunta: o seu time consegue terminar 82-0? Aqui explicamos exatamente como o jogo funciona.",
+      "steps": [
+        {
+          "title": "Gire o caça-níquel",
+          "desc": "Cada rodada sorteia uma franquia e uma década, como Chicago nos anos 90 ou Boston nos anos 60. Não curtiu? Você tem uma troca de time e uma troca de época por partida."
+        },
+        {
+          "title": "Escolha um jogador",
+          "desc": "Explore o elenco real daquele time e daquela época, com PPG, RPG, APG, SPG e BPG históricos. No modo HoopIQ as estatísticas ficam ocultas: recrute de memória."
+        },
+        {
+          "title": "Posicione-o na quadra",
+          "desc": "Cada escolha precisa preencher uma posição livre que o jogador realmente ocupou — PG, SG, SF, PF ou C. Cada espaço só pode ser usado uma vez."
+        },
+        {
+          "title": "Veja a sua campanha projetada",
+          "desc": "O motor soma as suas estatísticas ajustadas por época e as passa por uma curva de vitórias não linear. Uma única categoria fraca pode limitar o seu teto: o equilíbrio vence temporadas."
+        },
+        {
+          "title": "Compartilhe o seu resultado",
+          "desc": "Copie a sua campanha ou compartilhe no X e desafie os seus amigos a superar. Depois jogue de novo: cada giro é diferente."
+        }
+      ],
+      "sections": [
+        {
+          "h2": "Estratégia: como realmente terminar 82-0",
+          "paragraphs": [
+            "Ficar invicto exige maximizar as cinco categorias estatísticas ao mesmo tempo. Mire nos maiores produtores ajustados por época, mas nunca ignore os limites: um quinteto sem capacidade de tocos ou sem criação de jogo limita o seu teto por mais que pontue. As posições adicionam uma segunda camada: um astro que você não consegue posicionar é um astro que você não consegue recrutar, então observe quais espaços da quadra ainda estão livres antes de comprometer uma escolha.",
+            "Use as suas trocas de forma agressiva nas primeiras rodadas: um elenco fraco na primeira rodada é um buraco do qual você não consegue sair depois. E lembre que a curva é não linear: mesmo um quinteto de 95 pontos tem apenas uma chance de 82-0, nunca uma garantia. A temporada perfeita deve parecer fazer história."
+          ]
+        },
+        {
+          "h2": "Regras do desafio 82-0 num relance",
+          "paragraphs": [
+            "Cinco rodadas, uma escolha por rodada. O caça-níquel sorteia um time e uma década em cada rodada; as décadas podem se repetir. Uma troca de time e uma troca de época por partida. Cada escolha precisa preencher uma posição livre da quadra que o jogador realmente ocupou. A campanha projetada vem das estatísticas agregadas do seu quinteto ajustadas por época e passadas por uma curva de vitórias não linear, com limites de categoria que punem elencos unidimensionais. Dois modos: o Clássico mostra todas as estatísticas, o HoopIQ as oculta. Sem contas, sem downloads, sem custo: é só abrir a página e jogar."
+          ]
+        }
+      ]
+    },
+    "daily": {
+      "title": "Desafio 82-0 diário: os mesmos giros, uma tentativa",
+      "description": "Jogue o desafio 82-0 diário de hoje. Todo mundo recebe os mesmos giros de time e época, com uma tentativa por dia. Monte o seu melhor quinteto e compartilhe a sua campanha.",
+      "h1": "Desafio 82-0 diário",
+      "intro": "Os mesmos giros para o planeta inteiro. Uma tentativa por dia. Monte o seu melhor quinteto, conquiste a sua campanha e desafie os seus amigos a superar o giro de hoje."
+    },
+    "thirtyEight": {
+      "title": "Desafio 38-0: jogue o jogo da temporada perfeita da Premier League",
+      "description": "Jogue o viral desafio 38-0. Sorteie clubes e épocas da Premier League, recrute um time titular de lendas e veja se o seu time vence os 38 jogos, indo além dos Invencíveis.",
+      "h1": "Desafio 38-0",
+      "intro": "A edição da Premier League do viral desafio 82-0: gire o caça-níquel, recrute um time titular de lendas reais de quatro décadas e persiga uma temporada perfeita de 38 vitórias, algo que nem mesmo os Invencíveis do Arsenal jamais conseguiram. Jogue aqui mesmo.",
+      "playCta": "Jogue o desafio 82-0 de basquete",
+      "sections": [
+        {
+          "h2": "O que significa 38-0 no futebol?",
+          "paragraphs": [
+            "Uma temporada da Premier League tem 38 jogos. Terminar 38-0 significa vencer todos eles: uma temporada perfeita. Nunca aconteceu: os lendários Invencíveis do Arsenal de 2003-04 passaram a temporada inteira invictos, mas com 12 empates a campanha foi de 26-12-0. Os centuriões do Manchester City venceram 32. A distância entre 'invicto' e 'perfeito' é o que 38-0 representa, e é por isso que essa expressão tem peso em qualquer discussão futebolística.",
+            "Assim como 82-0 no basquete e 20-0 no futebol americano, 38-0 virou sinônimo de um padrão impossível: um time titular tão bom que não deixaria escapar um único ponto na temporada inteira."
+          ]
+        },
+        {
+          "h2": "O que é o jogo do desafio 38-0?",
+          "paragraphs": [
+            "O desafio 38-0 é o membro da Premier League da viral família da temporada perfeita. Um caça-níquel sorteia um clube e uma década — o Manchester United dos anos 90, o Arsenal da era dos Invencíveis dos anos 2000, o Manchester City dos anos 2010 — e você escolhe um jogador real por rodada, posicionando-o em um time titular 4-4-2 em uma posição que ele realmente ocupou: goleiro, defesa, meio-campo ou ataque. Onze rodadas, uma troca de time, uma troca de época.",
+            "Quando o time titular está completo, o motor de simulação soma as notas do seu elenco — goleiro, linha defensiva, controle de meio-campo e poder ofensivo, tudo ponderado — e as passa por uma curva de vitórias não linear de 38 jogos. Um único elo fraco limita o seu teto, exatamente como numa luta real pelo título."
+          ]
+        },
+        {
+          "h2": "38-0 vs 82-0 vs 20-0: um formato, três esportes",
+          "paragraphs": [
+            "Os três desafios se baseiam na mesma ideia central: giros de times aleatórios, drafts construídos sobre jogadores reais e uma simulação de temporada que decide se o seu time sobrevive invicto. A versão do futebol é a mais cruel: onze vagas no elenco significam onze chances de recrutar um peso morto, e os limites punem com mais força um goleiro inseguro. Se você chegou seguindo a tendência do 38-0, o original de basquete e a edição da NFL estão a um clique neste site."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "O que é o desafio 38-0?",
+          "a": "O desafio 38-0 é um viral jogo de montagem de times da Premier League: um caça-níquel sorteia clubes e décadas, você recruta um time titular de lendas reais e uma simulação projeta se o seu time conseguiria vencer os 38 jogos de uma temporada."
+        },
+        {
+          "q": "Algum time já terminou 38-0?",
+          "a": "Não. Os Invencíveis do Arsenal de 2003-04 ficaram invictos com 26-12-0, e os centuriões do Manchester City de 2017-18 venceram 32 jogos. Uma temporada perfeita de 38 vitórias nunca aconteceu na história da Premier League."
+        },
+        {
+          "q": "O 38-0 tem relação com o desafio 82-0?",
+          "a": "Sim: 38-0 é a edição da Premier League do viral desafio 82-0 de basquete (e do seu primo da NFL, o 20-0). Os mesmos giros de caça-níquel, jogadores reais e uma simulação de temporada."
+        },
+        {
+          "q": "Posso jogar o desafio 38-0 de graça?",
+          "a": "Sim: dá para jogar aqui mesmo nesta página, de graça, sem download nem conta, em 7 idiomas. Sorteie clubes e épocas, monte o seu time e compartilhe a sua campanha projetada."
+        }
+      ]
+    },
+    "twentyZero": {
+      "title": "Desafio 20-0: jogue o jogo da temporada perfeita da NFL",
+      "description": "Jogue o viral desafio 20-0. Sorteie times e épocas da NFL, recrute um elenco de 9 lendas do futebol americano e veja se o seu time vence os 20 jogos até a temporada perfeita com o Super Bowl.",
+      "h1": "Desafio 20-0",
+      "intro": "O primo na NFL do viral desafio 82-0 de basquete: gire o caça-níquel, recrute um elenco de lendas do futebol americano e descubra se elas poderiam vencer todos os jogos rumo a uma temporada perfeita com o Super Bowl. Jogue aqui mesmo.",
+      "playCta": "Jogue o desafio 82-0 de basquete",
+      "sections": [
+        {
+          "h2": "O que significa 20-0 no futebol americano?",
+          "paragraphs": [
+            "Um campeão moderno da NFL disputa uma temporada regular de 17 jogos mais três jogos de playoffs rumo ao Super Bowl (com um descanso na primeira rodada). Vença todos e você termina 20-0: uma temporada perfeita. Praticamente nunca foi alcançada no formato moderno: os Miami Dolphins de 1972 terminaram famosamente 17-0 sob o calendário antigo, e os New England Patriots de 2007 ficaram a uma vitória do Super Bowl da perfeição, com 18-1. Essa distância entre 'um dos melhores da história' e 'literalmente perfeito' é o que o número 20-0 representa.",
+            "Assim como 82-0 no basquete, 20-0 virou sinônimo de um padrão impossível: um elenco tão carregado de talento que não perderia um único jogo no ano inteiro."
+          ]
+        },
+        {
+          "h2": "O que é o jogo do desafio 20-0?",
+          "paragraphs": [
+            "O desafio 20-0 é um viral montador de elencos da NFL da mesma família que o desafio 82-0 de basquete. O jogo sorteia franquias históricas da NFL e você recruta um elenco de 12 lendas, posição a posição: quarterback, posições de ataque, linha e defesa. Os conjuntos de jogadores se baseiam na história estatística moderna, então cada escolha carrega números de produção reais em vez de impressões.",
+            "Uma vez preenchidas as doze vagas do elenco, o motor de simulação joga uma temporada completa de 20 jogos: dezessete da temporada regular mais três rodadas de playoffs. Uma temporada perfeita de 20-0 vence o Super Bowl, e você pode compartilhar a sua campanha final e desafiar os seus amigos a superar. Também existe um formato de desafio diário em que todo mundo recebe os mesmos giros e uma única tentativa."
+          ]
+        },
+        {
+          "h2": "20-0 vs 82-0: o mesmo jogo, esporte diferente",
+          "paragraphs": [
+            "Ambos os desafios se baseiam na mesma ideia central: giros de times aleatórios, um draft construído sobre estatísticas históricas reais e uma simulação que decide se o seu elenco sobrevive invicto a uma temporada inteira. As diferenças vêm dos próprios esportes. O 82-0 do basquete pede cinco jogadores e premia o equilíbrio entre categorias estatísticas ao longo de uma temporada longa; o 20-0 do futebol americano pede doze vagas de elenco e se decide em menos jogos, mas de maior risco: um domingo simulado ruim acaba com uma temporada perfeita.",
+            "Se você chegou aqui seguindo a tendência do 20-0, está na família de jogos certa. O nosso site abriga a versão de basquete: gire o caça-níquel, recrute cinco lendas de sete décadas de história e veja se o seu quinteto consegue fazer o que nenhum time real jamais conseguiu."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "O que é o desafio 20-0?",
+          "a": "O desafio 20-0 é um viral jogo de montagem de elencos da NFL em que você recruta um elenco de 12 lendas do futebol americano de times sorteados, e depois uma simulação joga uma temporada de 20 jogos: 17 da temporada regular mais 3 rodadas de playoffs. Terminar 20-0 significa uma temporada perfeita vencendo o Super Bowl."
+        },
+        {
+          "q": "Algum time da NFL já terminou 20-0?",
+          "a": "Não. Os Miami Dolphins de 1972 terminaram 17-0 sob o calendário mais curto da época, e os New England Patriots de 2007 terminaram 18-1, perdendo apenas o Super Bowl. Uma temporada perfeita de 20-0 no formato moderno nunca aconteceu."
+        },
+        {
+          "q": "O 20-0 tem relação com o desafio 82-0?",
+          "a": "Sim: 20-0 é a versão da NFL do viral desafio 82-0 de basquete. Ambos usam giros de times aleatórios, drafts construídos sobre estatísticas históricas reais e uma simulação de temporada que decide se o seu elenco fica invicto."
+        },
+        {
+          "q": "Posso jogar um jogo estilo 20-0 aqui?",
+          "a": "Este site abriga a versão de basquete do formato: o desafio 82-0. Sorteie times e épocas, recrute cinco lendas com estatísticas reais e veja se o seu quinteto consegue terminar uma temporada simulada 82-0."
+        }
+      ]
+    },
+    "teamBuilder": {
+      "title": "Montador de times 82-0",
+      "description": "Monte o seu quinteto histórico de basquete com o montador de times 82-0. Giros de caça-níquel, lendas reais de sete décadas e campanha de temporada simulada. Você consegue ficar invicto?",
+      "h1": "Montador de times 82-0",
+      "intro": "Recrute os seus cinco. Persiga a temporada perfeita. O montador de times está logo abaixo: boa sorte.",
+      "sections": [
+        {
+          "h2": "Sobre o montador de times 82-0",
+          "paragraphs": [
+            "Este montador de times é o coração do desafio 82-0. Cada partida gera cinco combinações aleatórias de franquia e década que abrangem sete décadas de história do basquete, da dinastia dos Celtics dos anos 60 aos campeões dos anos 2020. Cada giro te oferece os jogadores reais daquele time e daquela época, com as suas estatísticas históricas por jogo em cinco categorias, e o quinteto que você recruta é simulado ao longo de uma temporada completa de 82 jogos.",
+            "Como os giros são aleatórios, não há duas partidas iguais. Numa partida você escolhe entre lendas; na seguinte espreme vitórias de jogadores de função sem trocas disponíveis. O montador de times premia o draft inteligente: consciência das épocas, equilíbrio entre categorias, gestão de posições e saber exatamente quando gastar uma troca. Monte, simule, compartilhe, repita, e veja o quanto você chega perto do impossível 82-0."
+          ]
+        },
+        {
+          "h2": "O que faz um quinteto vencedor?",
+          "paragraphs": [
+            "O motor soma cinco categorias — pontos, rebotes, assistências, roubos e tocos — após ajustar cada linha estatística ao ritmo e ao ambiente de pontuação da sua época. A curva de vitórias é não linear, então cada vitória adicional custa mais força de elenco do que a anterior, e todas as categorias têm limite: um único buraco evidente limita a sua campanha projetada por mais forte que seja o resto do elenco. Recrute como um gerente geral, não como um torcedor."
+          ]
+        }
+      ]
+    },
+    "sevenZero": {
+      "title": "Jogo 7-0: Montador do melhor XI histórico da Copa do Mundo",
+      "description": "Crie o melhor XI de Copa do Mundo da história. Misture lendas de 1970 a 2026, ganhe entrosamento juntando compatriotas, supere o mata-mata e busque o 7–0 perfeito. Grátis, sem cadastro.",
+      "h1": "Jogo 7-0 — O melhor XI histórico da Copa do Mundo",
+      "intro": "Este é o montador 7-0 mais completo: sorteie uma única seleção ou um grupo aberto de Estrelas Mundiais, posicione jogadores reais de oito décadas na sua formação, conecte compatriotas para ganhar entrosamento e depois persiga um 7–0 perfeito ou sobreviva a um mata-mata de quatro rodadas para erguer o troféu.",
+      "playCta": "Jogue o 7-0 original →",
+      "sections": [
+        {
+          "h2": "Estrelas Mundiais: o XI de todas as nações",
+          "paragraphs": [
+            "A maioria dos jogos 7-0 te limita a um país. Esta versão adiciona o modo Estrelas Mundiais: um único grupo pode te dar Pelé, Maradona, Cruyff e Zidane no mesmo XI.",
+            "Mas a nota não basta. O entrosamento premia posicionar compatriotas juntos, então o XI perfeito equilibra estrelas e conexões nacionais."
+          ]
+        },
+        {
+          "h2": "O mata-mata",
+          "paragraphs": [
+            "A partida única é a busca clássica pelo 7–0 perfeito. O mata-mata é o caminho longo: o seu time precisa vencer quatro rodadas seguidas para ser campeão.",
+            "Como você mantém o mesmo elenco, pode ajustar a escalação entre as rodadas conforme o adversário."
+          ]
+        },
+        {
+          "h2": "Lendas de todas as épocas",
+          "paragraphs": [
+            "Junto às seleções modernas de 2018, 2022 e 2026, adicionamos edições lendárias: Brasil 1970 e 2002, Argentina 1986 e mais.",
+            "Um único sorteio pode te levar oito décadas atrás ou a uma seleção projetada de 2026."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Qual a diferença para o 7-0 independente?",
+          "a": "Adiciona quatro coisas: o modo Estrelas Mundiais, um mata-mata de quatro rodadas, um sistema de entrosamento e seleções lendárias de 1950 a 2010."
+        },
+        {
+          "q": "O que é um 7–0 perfeito?",
+          "a": "7–0 é o placar perfeito. Você precisa de um XI de nota alta, cada jogador na sua posição, bom entrosamento e um estilo adequado."
+        },
+        {
+          "q": "Como funciona o entrosamento?",
+          "a": "Em Estrelas Mundiais cada jogador se conecta com os seus vizinhos; compatriotas elevam o entrosamento e os isolados o reduzem."
+        },
+        {
+          "q": "O que é o mata-mata?",
+          "a": "Quatro rodadas de dificuldade crescente. O mesmo time precisa vencer todas para ser campeão."
+        },
+        {
+          "q": "Os jogadores e as notas são reais?",
+          "a": "Os nomes são jogadores reais e as notas são aproximações para entretenimento. Projeto de fãs sem relação com a FIFA."
+        },
+        {
+          "q": "É grátis e multilíngue?",
+          "a": "Sim. Totalmente grátis, sem conta, em sete idiomas."
+        }
+      ]
+    }
+  },
+  "cta": {
+    "title": "Monte algo além de um time de basquete.",
+    "desc": "Crie um esquadrão de personagens com IA, gere uma história e transforme-a em um livro ilustrado com o AI Character Squad Builder.",
+    "button": "Experimente o AI Character Squad Builder"
+  },
+  "footer": {
+    "pages": "Páginas",
+    "daily": "Desafio diário",
+    "twentyZero": "Desafio 20-0 (NFL)",
+    "thirtyEight": "Desafio 38-0 (Premier League)",
+    "more": "Mais",
+    "support": "Apoie o desenvolvedor",
+    "legal": "Legal",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "contact": "Contato",
+    "disclaimer": "Desafio 82-0 é um projeto independente feito por fãs. Não é afiliado, endossado nem patrocinado pela NBA ou por qualquer liga ou time de basquete profissional. Os nomes dos jogadores e as estatísticas históricas são dados de domínio público usados apenas para fins informativos e de entretenimento. Não são usados logotipos, marcas registradas nem fotografias oficiais.",
+    "copyright": "© 2026 Desafio 82-0"
+  },
+  "wcGame": {
+    "squad": "ELENCO",
+    "format": "FORMATO",
+    "formation": "FORMAÇÃO",
+    "style": "ESTILO",
+    "mode": "DIFICULDADE",
+    "sources": {
+      "National": "Seleção nacional",
+      "All-Stars": "Estrelas Mundiais"
+    },
+    "formats": {
+      "Single": "Partida única",
+      "Gauntlet": "Mata-mata"
+    },
+    "styles": {
+      "Defensive": "Defensivo",
+      "Balanced": "Equilibrado",
+      "Attacking": "Ofensivo"
+    },
+    "modes": {
+      "Classic": "Clássico",
+      "From memory": "De memória"
+    },
+    "rollHint": "Sorteie para tirar uma seleção e uma edição da Copa do Mundo — seleções modernas e campeãs lendárias.",
+    "rollHintAllStars": "Sorteie um grupo de Estrelas Mundiais e monte o melhor XI multinacional da história — o entrosamento premia juntar compatriotas.",
+    "gauntletHint": "Mata-mata: um único dream team precisa vencer quatro rodadas eliminatórias para erguer o troféu.",
+    "roll": "SORTEAR",
+    "drawn": "SORTEADO",
+    "allStarsDraw": "ESTRELAS MUNDIAIS",
+    "crossNation": "Lendas de todas as nações",
+    "cup": "Copa do Mundo",
+    "rerollLabel": "Sortear de novo",
+    "left": "rest.",
+    "anotherTeam": "Outro time",
+    "anotherCup": "Outra copa",
+    "anotherPool": "Novo grupo",
+    "autoFill": "Preencher automático",
+    "clear": "Limpar",
+    "chemistry": "ENTROSAMENTO",
+    "pickPlayer": "ESCOLHA UM JOGADOR",
+    "boxScore": "ESCALAÇÃO",
+    "rules": "Um dream team perfeito vence por 7–0. Jogadores fora de posição (~) perdem nota. Escolha um estilo tático e persiga o placar impecável.",
+    "rulesAllStars": "Estrelas Mundiais: qualquer nação, qualquer época. Coloque compatriotas lado a lado para entrosamento — um dream team impecável e bem conectado vence por 7–0.",
+    "fillToSim": "Complete os 11",
+    "simulate": "Simular partida",
+    "playRound": "Jogar",
+    "advance": "Avançar",
+    "playAgain": "Jogar de novo",
+    "attack": "ATAQUE",
+    "defense": "DEFESA",
+    "overall": "GERAL",
+    "perfects": "7-0",
+    "titles": "títulos",
+    "streak": "sequência",
+    "champion": "CAMPEÕES!",
+    "eliminated": "Eliminado",
+    "rounds": {
+      "group": "Fase de grupos",
+      "round16": "Oitavas",
+      "semi": "Semifinal",
+      "final": "Final"
+    },
+    "verdict": {
+      "perfect": "7–0 PERFEITO! 🏆",
+      "demolition": "Goleada 💥",
+      "rout": "Vitória convincente",
+      "win": "Você venceu ✅",
+      "draw": "Empate",
+      "loss": "Eliminado"
+    }
+  }
+}

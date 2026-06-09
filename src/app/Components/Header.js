@@ -18,7 +18,7 @@ export default function Header() {
   // English canonical URLs are locale-less — link to root paths.
   const prefix = currentLang === 'en' ? '' : `/${currentLang}`;
 
-  const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de'];
+  const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de', 'pt'];
 
   const changeLanguage = (newLocale) => {
     const segments = pathname.split('/');
@@ -95,6 +95,7 @@ export default function Header() {
             <option value="es">ES</option>
             <option value="fr">FR</option>
             <option value="de">DE</option>
+            <option value="pt">PT</option>
           </select>
         </div>
       </div>

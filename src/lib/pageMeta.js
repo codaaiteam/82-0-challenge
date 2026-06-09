@@ -1,7 +1,7 @@
 import { getTranslation } from './i18n';
 
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.82-0-challenge.com';
-export const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de'];
+export const LOCALES = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de', 'pt'];
 
 // English lives at the locale-less root URLs — they are the canonical pages.
 // /en/* mirrors them and canonicalizes back to the root version.
