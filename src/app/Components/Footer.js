@@ -24,6 +24,9 @@ const Footer = ({ t, lang = 'en' }) => {
           <a href="https://c2story.com" target="_blank" rel="noopener noreferrer">
             {t?.cta?.button || 'AI Character Squad Builder'}
           </a>
+          <a href="https://ko-fi.com/codagames" target="_blank" rel="noopener noreferrer">
+            ☕ {t?.footer?.support || 'Support the developer'}
+          </a>
         </div>
 
         <div className={styles.footerSection}>
