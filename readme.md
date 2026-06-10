@@ -587,3 +587,10 @@ https://c2story.com
 我建议你给 CC 的一句话总结：
 
 做一个 82-0-challenge.com 的轻量 SEO + 小游戏站。首页能玩 5 轮 team builder，随机 team+era，选 5 个泛化篮球球员，算出 82-0 风格战绩。重点是快速上线抢 82-0 / 82-0 challenge 搜索，不要用 NBA logo 和球员照片，底部导流到 C2Story 的 AI Character Squad Builder。
+
+## More Free Sports Challenge Games
+
+- [38-0 Game](https://38-0-game.com/) — Premier League XI builder challenge
+- [82-0 Challenge](https://www.82-0-challenge.com/) — NBA team builder challenge
+- [7-0 Game](https://7-0-game.com/) — World Cup XI builder challenge
+- [17-0 Challenge](https://17-0-game.com/) — NFL team builder challenge
