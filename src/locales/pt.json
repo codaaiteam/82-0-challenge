@@ -10,7 +10,8 @@
     "home": "Início",
     "whatIs": "O que é 82-0?",
     "howToPlay": "Como jogar",
-    "teamBuilder": "Montador de times"
+    "teamBuilder": "Montador de times",
+    "leaderboard": "Ranking"
   },
   "hero": {
     "title": "Desafio 82-0",
@@ -103,6 +104,16 @@
         "weakAttack": "Dificuldade para fazer gols",
         "none": "Nenhuma: time titular completo"
       }
+    },
+    "lb": {
+      "title": "Acha que esse quinteto merece entrar no ranking?",
+      "name": "Seu nome",
+      "submit": "Enviar ao ranking global",
+      "sending": "Enviando…",
+      "rank": "Mundial #{rank}",
+      "today": "Hoje #{rank}",
+      "view": "Ver ranking →",
+      "error": "Não foi possível enviar — tente novamente em alguns segundos."
     }
   },
   "homeSeo": {
@@ -634,6 +645,12 @@
           "a": "Sim. Totalmente grátis, sem conta, em sete idiomas."
         }
       ]
+    },
+    "leaderboard": {
+      "h1": "Ranking global 82-0",
+      "intro": "As melhores temporadas simuladas da NBA do mundo — de hoje e de todos os tempos. Monte seu quinteto inicial, projete uma temporada de 82 jogos e garanta seu lugar.",
+      "title": "Ranking global 82-0 — Os melhores quintetos da NBA de hoje",
+      "description": "O ranking global 82-0: as melhores temporadas simuladas da NBA de hoje e de todos os tempos. Monte seu quinteto, jogue 82 jogos e garanta seu lugar."
     }
   },
   "cta": {
@@ -657,9 +674,11 @@
     "privacy": "Política de privacidade",
     "terms": "Termos de uso",
     "contact": "Contato",
+    "community": "Entre na nossa comunidade do Telegram",
     "disclaimer": "Desafio 82-0 é um projeto independente feito por fãs. Não é afiliado, endossado nem patrocinado pela NBA ou por qualquer liga ou time de basquete profissional. Os nomes dos jogadores e as estatísticas históricas são dados de domínio público usados apenas para fins informativos e de entretenimento. Não são usados logotipos, marcas registradas nem fotografias oficiais.",
     "copyright": "© 2026 Desafio 82-0",
-    "related": "Guias relacionados"
+    "related": "Guias relacionados",
+    "leaderboard": "Ranking"
   },
   "wcGame": {
     "squad": "ELENCO",
@@ -730,6 +749,24 @@
       "win": "Você venceu ✅",
       "draw": "Empate",
       "loss": "Eliminado"
+    }
+  },
+  "lb": {
+    "today": "Hoje",
+    "allTime": "Geral",
+    "player": "GM",
+    "record": "V-D",
+    "grade": "Nota",
+    "squad": "Estrela · Modo",
+    "you": "Você",
+    "empty": "Ainda não há registros — seja o primeiro a enviar uma temporada.",
+    "loading": "Carregando…",
+    "offline": "O ranking está descansando — tente novamente em um minuto.",
+    "cta": "Monte seu quinteto inicial e garanta seu lugar →",
+    "modes": {
+      "classic": "Clássico",
+      "hoopiq": "HoopIQ",
+      "daily": "Diário"
     }
   }
 }

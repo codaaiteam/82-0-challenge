@@ -10,7 +10,8 @@
     "home": "Home",
     "whatIs": "What Is 82-0?",
     "howToPlay": "How to Play",
-    "teamBuilder": "Team Builder"
+    "teamBuilder": "Team Builder",
+    "leaderboard": "Leaderboard"
   },
   "hero": {
     "title": "82-0 Challenge",
@@ -103,6 +104,16 @@
         "weakAttack": "Goals are hard to come by",
         "none": "None — complete XI"
       }
+    },
+    "lb": {
+      "title": "Think this five is leaderboard-worthy?",
+      "name": "Your name",
+      "submit": "Submit to Global Leaderboard",
+      "sending": "Submitting…",
+      "rank": "World #{rank}",
+      "today": "Today #{rank}",
+      "view": "View leaderboard →",
+      "error": "Couldn’t submit — try again in a few seconds."
     }
   },
   "homeSeo": {
@@ -634,6 +645,12 @@
           "a": "Yes. It is completely free, needs no account, runs in your browser, and is available in English, 中文, 日本語, 한국어, Español, Français and Deutsch. Your stats are saved locally on your device."
         }
       ]
+    },
+    "leaderboard": {
+      "h1": "82-0 Global Leaderboard",
+      "intro": "The best simulated NBA seasons in the world — submitted today and all-time. Build your starting five, project an 82-game season, and claim your spot.",
+      "title": "82-0 Global Leaderboard — Today’s Best NBA Starting Fives",
+      "description": "The global 82-0 leaderboard: the best simulated NBA seasons submitted today and all-time. Build your five, run 82 games and claim a spot."
     }
   },
   "cta": {
@@ -657,9 +674,11 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "contact": "Contact",
+    "community": "Join our Telegram community",
     "disclaimer": "82-0 Challenge is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league or team. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only. No official logos, trademarks, or photographs are used.",
     "copyright": "© 2026 82-0 Challenge",
-    "related": "Related guides"
+    "related": "Related guides",
+    "leaderboard": "Leaderboard"
   },
   "wcGame": {
     "squad": "SQUAD",
@@ -730,6 +749,24 @@
       "win": "You win ✅",
       "draw": "Honours even",
       "loss": "Knocked out"
+    }
+  },
+  "lb": {
+    "today": "Today",
+    "allTime": "All-Time",
+    "player": "GM",
+    "record": "W-L",
+    "grade": "Grade",
+    "squad": "Star · Mode",
+    "you": "You",
+    "empty": "No entries yet — be the first to submit a season.",
+    "loading": "Loading…",
+    "offline": "Leaderboard is taking a breather — try again in a minute.",
+    "cta": "Build your starting five and claim a spot →",
+    "modes": {
+      "classic": "Classic",
+      "hoopiq": "HoopIQ",
+      "daily": "Daily"
     }
   }
 }

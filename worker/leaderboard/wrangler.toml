@@ -1,0 +1,17 @@
+name = "lb-82-0-challenge"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Custom domain keeps the API off *.workers.dev, which some aggressive
+# ad-blockers filter.
+routes = [
+  { pattern = "lb.82-0-challenge.com", custom_domain = true }
+]
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "lb-82-0-challenge"
+database_id = "ae08a4d3-36b0-4b75-b317-22c29ee35339"

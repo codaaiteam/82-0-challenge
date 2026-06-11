@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { useParams } from 'next/navigation';
 import styles from './Game.module.css';
 import {
   POSITIONS, DECADES, ALL_TEAMS,
@@ -9,6 +10,7 @@ import {
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
+import { submitScore, saveSubmission } from '@/lib/leaderboard';
 
 const TOTAL_ROUNDS = 5;
 const SITE_URL = 'https://www.82-0-challenge.com';
@@ -33,6 +35,9 @@ function initials(name) {
 
 export default function GameMain({ t, initialMode = null }) {
   const g = t?.game || {};
+  const lb = g.lb || {};
+  const routeParams = useParams();
+  const langPrefix = routeParams?.lang && routeParams.lang !== 'en' ? `/${routeParams.lang}` : '';
 
   // mode: null (select screen) | 'classic' | 'hoopiq' | 'daily'
   const [mode, setMode] = useState(initialMode);
@@ -49,6 +54,8 @@ export default function GameMain({ t, initialMode = null }) {
   const [result, setResult] = useState(null);
   const [copied, setCopied] = useState(false);
   const [dailyDone, setDailyDone] = useState(false);
+  const [lbName, setLbName] = useState('');
+  const [lbState, setLbState] = useState(null); // null | 'sending' | 'error' | { rank, ... }
   const spinTimer = useRef(null);
   const dailySeq = useRef(null);
 
@@ -168,6 +175,7 @@ export default function GameMain({ t, initialMode = null }) {
     setEraSkips(1);
     setResult(null);
     setCopied(false);
+    setLbState(null);
     setDisplay({ team: '???', decade: "??'s" });
   };
 
@@ -213,6 +221,37 @@ export default function GameMain({ t, initialMode = null }) {
   };
 
   const xShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL)}`;
+
+  // Prefill the leaderboard name from the last submission.
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('hoop820_name');
+      if (saved) setLbName(saved);
+    } catch { /* private mode */ }
+  }, []);
+
+  const handleLbSubmit = async () => {
+    if (!result || lbState === 'sending' || (lbState && lbState.rank)) return;
+    const name = lbName.trim();
+    if (name.length < 2) return;
+    try { localStorage.setItem('hoop820_name', name); } catch { /* ignore */ }
+    setLbState('sending');
+    try {
+      const data = await submitScore({
+        name,
+        wins: result.wins,
+        losses: result.losses,
+        points: result.points,
+        grade: result.grade,
+        mode,
+        star: result.best.name,
+      });
+      saveSubmission({ ...data, name });
+      setLbState(data);
+    } catch {
+      setLbState('error');
+    }
+  };
 
   // ================= MODE SELECT =================
   if (!mode) {
@@ -303,6 +342,44 @@ export default function GameMain({ t, initialMode = null }) {
               {fmt(g.daily?.comeback, { hours: hoursToNext })}
             </p>
           )}
+
+          {/* Global leaderboard submission */}
+          <div className={styles.lbBlock}>
+            {lbState && lbState.rank ? (
+              <div className={styles.lbDone}>
+                <span className={styles.lbRank}>
+                  {fmt(lb.rank || 'World #{rank}', { rank: lbState.rank })}
+                  <i>{fmt(lb.today || 'Today #{rank}', { rank: lbState.todayRank })}</i>
+                </span>
+                <a className={styles.lbView} href={`${langPrefix}/leaderboard`}>
+                  {lb.view || 'View leaderboard →'}
+                </a>
+              </div>
+            ) : (
+              <>
+                <div className={styles.lbTitle}>{lb.title || 'Think this five is leaderboard-worthy?'}</div>
+                <div className={styles.lbForm}>
+                  <input
+                    className={styles.lbInput}
+                    value={lbName}
+                    maxLength={14}
+                    placeholder={lb.name || 'Your name'}
+                    onChange={ev => setLbName(ev.target.value)}
+                  />
+                  <button
+                    className={styles.lbBtn}
+                    onClick={handleLbSubmit}
+                    disabled={lbState === 'sending' || lbName.trim().length < 2}
+                  >
+                    {lbState === 'sending' ? (lb.sending || 'Submitting…') : (lb.submit || 'Submit to Global Leaderboard')}
+                  </button>
+                </div>
+                {lbState === 'error' && (
+                  <p className={styles.lbError}>{lb.error || 'Couldn’t submit — try again in a few seconds.'}</p>
+                )}
+              </>
+            )}
+          </div>
 
           <div className={styles.resultActions}>
             {!isDaily && (

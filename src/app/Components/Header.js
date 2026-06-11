@@ -68,6 +68,9 @@ export default function Header() {
           <Link href={`${prefix}/team-builder`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             {t?.header?.teamBuilder || 'Team Builder'}
           </Link>
+          <Link href={`${prefix}/leaderboard`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            🏆 {t?.header?.leaderboard || 'Leaderboard'}
+          </Link>
           <Link href={`${prefix}/daily`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
             🗓️ {t?.footer?.daily || 'Daily'}
           </Link>

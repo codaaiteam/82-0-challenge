@@ -10,7 +10,8 @@
     "home": "Inicio",
     "whatIs": "¿Qué es el 82-0?",
     "howToPlay": "Cómo jugar",
-    "teamBuilder": "Constructor de equipos"
+    "teamBuilder": "Constructor de equipos",
+    "leaderboard": "Clasificación"
   },
   "hero": {
     "title": "Desafío 82-0",
@@ -103,6 +104,16 @@
         "weakAttack": "Cuesta marcar goles",
         "none": "Ninguna: once inicial completo"
       }
+    },
+    "lb": {
+      "title": "¿Crees que este quinteto merece estar en la clasificación?",
+      "name": "Tu nombre",
+      "submit": "Enviar a la clasificación global",
+      "sending": "Enviando…",
+      "rank": "Mundial #{rank}",
+      "today": "Hoy #{rank}",
+      "view": "Ver clasificación →",
+      "error": "No se pudo enviar: inténtalo en unos segundos."
     }
   },
   "homeSeo": {
@@ -634,6 +645,12 @@
           "a": "Sí. Totalmente gratis, sin cuenta, en siete idiomas."
         }
       ]
+    },
+    "leaderboard": {
+      "h1": "Clasificación global 82-0",
+      "intro": "Las mejores temporadas NBA simuladas del mundo, de hoy y de siempre. Arma tu quinteto inicial, proyecta una temporada de 82 partidos y reclama tu lugar.",
+      "title": "Clasificación global 82-0 — Los mejores quintetos NBA de hoy",
+      "description": "La clasificación global 82-0: las mejores temporadas NBA simuladas de hoy y de siempre. Arma tu quinteto, juega 82 partidos y reclama tu lugar."
     }
   },
   "cta": {
@@ -657,9 +674,11 @@
     "privacy": "Política de privacidad",
     "terms": "Condiciones de uso",
     "contact": "Contacto",
+    "community": "Únete a nuestra comunidad de Telegram",
     "disclaimer": "Desafío 82-0 es un proyecto independiente hecho por aficionados. No está afiliado, respaldado ni patrocinado por la NBA ni por ninguna liga o equipo de baloncesto profesional. Los nombres de los jugadores y las estadísticas históricas son datos de dominio público utilizados únicamente con fines informativos y de entretenimiento. No se utilizan logotipos, marcas registradas ni fotografías oficiales.",
     "copyright": "© 2026 Desafío 82-0",
-    "related": "Guías relacionadas"
+    "related": "Guías relacionadas",
+    "leaderboard": "Clasificación"
   },
   "wcGame": {
     "squad": "PLANTILLA",
@@ -730,6 +749,24 @@
       "win": "You win ✅",
       "draw": "Honours even",
       "loss": "Knocked out"
+    }
+  },
+  "lb": {
+    "today": "Hoy",
+    "allTime": "Histórico",
+    "player": "GM",
+    "record": "V-D",
+    "grade": "Nota",
+    "squad": "Estrella · Modo",
+    "you": "Tú",
+    "empty": "Aún no hay registros: sé el primero en enviar una temporada.",
+    "loading": "Cargando…",
+    "offline": "La clasificación está tomando un respiro: inténtalo en un minuto.",
+    "cta": "Arma tu quinteto y reclama tu lugar →",
+    "modes": {
+      "classic": "Clásico",
+      "hoopiq": "HoopIQ",
+      "daily": "Diario"
     }
   }
 }

@@ -10,7 +10,8 @@
     "home": "Start",
     "whatIs": "Was ist 82-0?",
     "howToPlay": "So wird gespielt",
-    "teamBuilder": "Team Builder"
+    "teamBuilder": "Team Builder",
+    "leaderboard": "Rangliste"
   },
   "hero": {
     "title": "82-0 Challenge",
@@ -103,6 +104,16 @@
         "weakAttack": "Tore sind Mangelware",
         "none": "Keine — komplette Startelf"
       }
+    },
+    "lb": {
+      "title": "Glaubst du, diese Five gehört in die Rangliste?",
+      "name": "Dein Name",
+      "submit": "An globale Rangliste senden",
+      "sending": "Senden…",
+      "rank": "Welt #{rank}",
+      "today": "Heute #{rank}",
+      "view": "Rangliste ansehen →",
+      "error": "Senden fehlgeschlagen — versuch es in ein paar Sekunden erneut."
     }
   },
   "homeSeo": {
@@ -634,6 +645,12 @@
           "a": "Ja. Völlig kostenlos, ohne Konto, in sieben Sprachen."
         }
       ]
+    },
+    "leaderboard": {
+      "h1": "82-0 Globale Rangliste",
+      "intro": "Die besten simulierten NBA-Saisons der Welt — von heute und aller Zeiten. Stell deine Starting Five auf, projiziere eine 82-Spiele-Saison und sichere dir deinen Platz.",
+      "title": "82-0 Globale Rangliste — Die besten NBA-Fives von heute",
+      "description": "Die globale 82-0-Rangliste: die besten simulierten NBA-Saisons von heute und aller Zeiten. Stell deine Five auf, spiele 82 Spiele und sichere dir einen Platz."
     }
   },
   "cta": {
@@ -657,9 +674,11 @@
     "privacy": "Datenschutzerklärung",
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
+    "community": "Tritt unserer Telegram-Community bei",
     "disclaimer": "82-0 Challenge ist ein unabhängiges, von Fans gemachtes Projekt. Es ist nicht mit der NBA oder einer professionellen Basketball-Liga oder einem Team verbunden, wird nicht von ihr unterstützt oder gesponsert. Spielernamen und historische Statistiken sind öffentlich verfügbare Fakten, die ausschließlich zu Informations- und Unterhaltungszwecken verwendet werden. Es werden keine offiziellen Logos, Marken oder Fotos genutzt.",
     "copyright": "© 2026 82-0 Challenge",
-    "related": "Verwandte Guides"
+    "related": "Verwandte Guides",
+    "leaderboard": "Rangliste"
   },
   "wcGame": {
     "squad": "KADER",
@@ -730,6 +749,24 @@
       "win": "You win ✅",
       "draw": "Honours even",
       "loss": "Knocked out"
+    }
+  },
+  "lb": {
+    "today": "Heute",
+    "allTime": "Allzeit",
+    "player": "GM",
+    "record": "S-N",
+    "grade": "Note",
+    "squad": "Star · Modus",
+    "you": "Du",
+    "empty": "Noch keine Einträge — sei der Erste mit einer Saison.",
+    "loading": "Lädt…",
+    "offline": "Die Rangliste macht eine Pause — versuch es in einer Minute erneut.",
+    "cta": "Stell deine Starting Five auf und sichere dir einen Platz →",
+    "modes": {
+      "classic": "Klassisch",
+      "hoopiq": "HoopIQ",
+      "daily": "Täglich"
     }
   }
 }

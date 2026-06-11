@@ -11,6 +11,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <h3>{t?.footer?.pages || 'Pages'}</h3>
           <Link href={prefix || '/'}>{t?.header?.home || 'Home'}</Link>
           <Link href={`${prefix}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
+          <Link href={`${prefix}/leaderboard`}>{t?.footer?.leaderboard || 'Leaderboard'}</Link>
           <Link href={`${prefix}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
           <Link href={`${prefix}/unblocked`}>{t?.footer?.unblocked || 'Play Unblocked'}</Link>
           <Link href={`${prefix}/how-its-calculated`}>{t?.footer?.howItsCalculated || "How It's Calculated"}</Link>
@@ -46,6 +47,9 @@ const Footer = ({ t, lang = 'en' }) => {
 
         <div className={styles.footerSection}>
           <h3>{t?.footer?.contact || 'Contact'}</h3>
+          <a href="https://t.me/+44Oq47usijFhM2I5" target="_blank" rel="noopener noreferrer">
+            💬 {t?.footer?.community || 'Join our Telegram community'}
+          </a>
           <a href="mailto:contact@82-0-challenge.com">
             contact@82-0-challenge.com
           </a>

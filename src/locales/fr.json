@@ -10,7 +10,8 @@
     "home": "Accueil",
     "whatIs": "C'est quoi le 82-0 ?",
     "howToPlay": "Comment jouer",
-    "teamBuilder": "Créateur d'équipe"
+    "teamBuilder": "Créateur d'équipe",
+    "leaderboard": "Classement"
   },
   "hero": {
     "title": "Défi 82-0",
@@ -103,6 +104,16 @@
         "weakAttack": "Les buts se font rares",
         "none": "Aucun — onze complet"
       }
+    },
+    "lb": {
+      "title": "Ce cinq mérite-t-il une place au classement ?",
+      "name": "Votre nom",
+      "submit": "Envoyer au classement mondial",
+      "sending": "Envoi…",
+      "rank": "Mondial #{rank}",
+      "today": "Aujourd’hui #{rank}",
+      "view": "Voir le classement →",
+      "error": "Échec de l’envoi — réessayez dans quelques secondes."
     }
   },
   "homeSeo": {
@@ -634,6 +645,12 @@
           "a": "Oui. Totalement gratuit, sans compte, en sept langues."
         }
       ]
+    },
+    "leaderboard": {
+      "h1": "Classement mondial 82-0",
+      "intro": "Les meilleures saisons NBA simulées au monde — du jour et de tous les temps. Composez votre cinq de départ, projetez une saison de 82 matchs et décrochez votre place.",
+      "title": "Classement mondial 82-0 — Les meilleurs cinq NBA du jour",
+      "description": "Le classement mondial 82-0 : les meilleures saisons NBA simulées du jour et de tous les temps. Composez votre cinq, jouez 82 matchs et décrochez une place."
     }
   },
   "cta": {
@@ -657,9 +674,11 @@
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
+    "community": "Rejoignez notre communauté Telegram",
     "disclaimer": "Le Défi 82-0 est un projet indépendant créé par des fans. Il n'est ni affilié à la NBA ou à une quelconque ligue ou équipe de basket professionnel, ni approuvé ou sponsorisé par celles-ci. Les noms des joueurs et les statistiques historiques sont des faits accessibles au public, utilisés à des fins d'information et de divertissement uniquement. Aucun logo, marque ou photographie officiels ne sont utilisés.",
     "copyright": "© 2026 Défi 82-0",
-    "related": "Guides connexes"
+    "related": "Guides connexes",
+    "leaderboard": "Classement"
   },
   "wcGame": {
     "squad": "EFFECTIF",
@@ -730,6 +749,24 @@
       "win": "You win ✅",
       "draw": "Honours even",
       "loss": "Knocked out"
+    }
+  },
+  "lb": {
+    "today": "Aujourd’hui",
+    "allTime": "Général",
+    "player": "GM",
+    "record": "V-D",
+    "grade": "Note",
+    "squad": "Star · Mode",
+    "you": "Vous",
+    "empty": "Aucune entrée pour l’instant — soyez le premier à soumettre une saison.",
+    "loading": "Chargement…",
+    "offline": "Le classement fait une pause — réessayez dans une minute.",
+    "cta": "Composez votre cinq de départ et décrochez une place →",
+    "modes": {
+      "classic": "Classique",
+      "hoopiq": "HoopIQ",
+      "daily": "Quotidien"
     }
   }
 }

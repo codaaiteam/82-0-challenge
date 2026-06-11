@@ -1,0 +1,125 @@
+.wrap {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.tab {
+  background: #1a2236;
+  border: 1px solid #2b3550;
+  color: #9fb0d0;
+  font-weight: 800;
+  font-size: 0.85rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.tabActive {
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  border-color: transparent;
+  color: #fff;
+}
+
+.note {
+  text-align: center;
+  color: #9fb0d0;
+  padding: 2rem 0;
+}
+
+.table {
+  background: #131a2b;
+  border: 1px solid #2b3550;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 44px 1.4fr 78px 56px 1.6fr;
+  gap: 0.6rem;
+  align-items: center;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.9rem;
+  border-bottom: 1px solid rgba(43, 53, 80, 0.5);
+}
+
+.row:last-child { border-bottom: none; }
+
+.head {
+  font-size: 0.64rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9fb0d0;
+  background: #1a2236;
+}
+
+.podium { background: rgba(255, 138, 41, 0.04); }
+
+.me {
+  background: rgba(52, 211, 153, 0.1);
+  border-left: 3px solid #34d399;
+}
+
+.rank { font-weight: 800; color: #9fb0d0; font-variant-numeric: tabular-nums; }
+
+.name {
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.youTag {
+  font-style: normal;
+  background: #34d399;
+  color: #04130c;
+  font-size: 0.58rem;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 0.1rem 0.35rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.recordCell { font-weight: 800; font-variant-numeric: tabular-nums; }
+
+.perfectTag { font-style: normal; color: #ffce6e; margin-left: 0.25rem; }
+
+.gradeCell { font-weight: 900; color: #6ee7b7; font-variant-numeric: tabular-nums; }
+
+.meta {
+  color: #5d6c8d;
+  font-size: 0.76rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.cta a {
+  color: #ff8a29;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.cta a:hover { text-decoration: underline; }
+
+@media (max-width: 640px) {
+  .row { grid-template-columns: 36px 1.3fr 72px 50px; }
+  .meta { display: none; }
+}

@@ -825,3 +825,98 @@
     display: none;
   }
 }
+
+/* ---- Global leaderboard submission (result card) ---- */
+.lbBlock {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #2b3550;
+}
+
+.lbTitle {
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #eef1f8;
+  margin-bottom: 0.7rem;
+}
+
+.lbForm {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.lbInput {
+  flex: 1 1 160px;
+  min-width: 0;
+  background: #1a2236;
+  border: 1px solid #2b3550;
+  border-radius: 10px;
+  color: #eef1f8;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.6rem 0.9rem;
+}
+
+.lbInput:focus {
+  outline: none;
+  border-color: #ff8a29;
+}
+
+.lbBtn {
+  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.lbBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.lbError {
+  color: #ff9a8a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.lbDone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.lbRank {
+  font-weight: 900;
+  font-size: 1.05rem;
+  color: #6ee7b7;
+}
+
+.lbRank i {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: #9fb0d0;
+  margin-left: 0.6rem;
+}
+
+.lbView {
+  color: #ff8a29;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.lbView:hover { text-decoration: underline; }
