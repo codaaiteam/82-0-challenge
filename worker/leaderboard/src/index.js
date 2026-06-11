@@ -119,15 +119,9 @@ async function handleTop(request, env, origin, url) {
   const period = url.searchParams.get('period') === 'today' ? 'today' : 'all';
   const limit = Math.min(100, Math.max(1, url.searchParams.get('limit') | 0 || 100));
 
-  // 60s edge cache keyed by period+limit+day.
-  const cacheKey = new Request(`https://lb.82-0-challenge.com/top?period=${period}&limit=${limit}&day=${utcDay()}`);
-  const cached = await caches.default.match(cacheKey);
-  if (cached) {
-    const res = new Response(cached.body, cached);
-    Object.entries(cors(origin)).forEach(([k, vv]) => res.headers.set(k, vv));
-    return res;
-  }
-
+  // No edge cache: a leaderboard must show a freshly-submitted score
+  // immediately. D1 reads here are cheap and low-QPS. `no-store` also keeps
+  // the browser/CDN from holding a stale (e.g. empty) board.
   const where = period === 'today' ? 'WHERE day = ?1' : '';
   const stmt = env.DB.prepare(
     `SELECT id, name, wins, losses, points, grade, mode, star, day, created_at
@@ -135,11 +129,9 @@ async function handleTop(request, env, origin, url) {
   );
   const { results } = await (period === 'today' ? stmt.bind(utcDay()) : stmt).all();
 
-  const res = json({ period, day: utcDay(), entries: results }, origin, 200, {
-    'Cache-Control': 'public, max-age=60',
+  return json({ period, day: utcDay(), entries: results }, origin, 200, {
+    'Cache-Control': 'no-store',
   });
-  await caches.default.put(cacheKey, res.clone());
-  return res;
 }
 
 export default {
