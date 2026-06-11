@@ -39,9 +39,9 @@ function utcDay(ts = Date.now()) {
   return new Date(ts).toISOString().slice(0, 10);
 }
 
-// Better-score ordering: more wins first, then team rating, then who submitted
-// earlier on a tie.
-const ORDER = 'wins DESC, points DESC, created_at ASC';
+// Better-score ordering: team rating leads (so 82-0 seasons aren't all tied),
+// then more wins, then who submitted earlier on a tie.
+const ORDER = 'points DESC, wins DESC, created_at ASC';
 
 function validate(b) {
   if (!b || typeof b !== 'object') return 'bad body';
@@ -98,9 +98,9 @@ async function handleSubmit(request, env, origin) {
 async function rankOf(env, id) {
   const row = await env.DB.prepare('SELECT * FROM scores WHERE id = ?1').bind(id).first();
   if (!row) return null;
-  const better = `(wins > ?1) OR (wins = ?1 AND points > ?2)
-    OR (wins = ?1 AND points = ?2 AND created_at < ?3)`;
-  const args = [row.wins, row.points, row.created_at];
+  const better = `(points > ?1) OR (points = ?1 AND wins > ?2)
+    OR (points = ?1 AND wins = ?2 AND created_at < ?3)`;
+  const args = [row.points, row.wins, row.created_at];
   const all = await env.DB.prepare(
     `SELECT COUNT(*) AS n FROM scores WHERE ${better}`
   ).bind(...args).first();

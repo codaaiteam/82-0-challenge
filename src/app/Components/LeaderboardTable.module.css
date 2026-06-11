@@ -44,10 +44,10 @@
 
 .row {
   display: grid;
-  grid-template-columns: 44px 1.4fr 78px 56px 1.6fr;
+  grid-template-columns: 44px 1fr auto;
   gap: 0.6rem;
   align-items: center;
-  padding: 0.55rem 0.9rem;
+  padding: 0.6rem 0.9rem;
   font-size: 0.9rem;
   border-bottom: 1px solid rgba(43, 53, 80, 0.5);
 }
@@ -72,6 +72,13 @@
 
 .rank { font-weight: 800; color: #9fb0d0; font-variant-numeric: tabular-nums; }
 
+.nameCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
 .name {
   font-weight: 800;
   overflow: hidden;
@@ -91,19 +98,46 @@
   vertical-align: middle;
 }
 
-.recordCell { font-weight: 800; font-variant-numeric: tabular-nums; }
-
-.perfectTag { font-style: normal; color: #ffce6e; margin-left: 0.25rem; }
-
-.gradeCell { font-weight: 900; color: #6ee7b7; font-variant-numeric: tabular-nums; }
-
-.meta {
-  color: #5d6c8d;
-  font-size: 0.76rem;
+/* Secondary metadata line under the player name. */
+.metaLine {
+  font-size: 0.73rem;
   font-weight: 600;
+  color: #5d6c8d;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.recordBit { font-weight: 800; color: #9fb0d0; font-variant-numeric: tabular-nums; }
+
+.perfectTag { font-style: normal; color: #ffce6e; margin-left: 0.15rem; }
+
+.gradeBit { color: #6ee7b7; font-weight: 800; margin-left: 0.35rem; }
+
+.metaRest { color: #5d6c8d; }
+
+/* Team rating — the primary ranking metric, shown prominently. */
+.ratingHead { text-align: right; }
+
+.ratingCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.15rem;
+  color: #6ee7b7;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.ratingCell i {
+  font-style: normal;
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #5d6c8d;
+  margin-top: 2px;
 }
 
 .cta {
@@ -120,6 +154,6 @@
 .cta a:hover { text-decoration: underline; }
 
 @media (max-width: 640px) {
-  .row { grid-template-columns: 36px 1.3fr 72px 50px; }
-  .meta { display: none; }
+  .row { grid-template-columns: 32px 1fr auto; padding: 0.6rem 0.7rem; }
+  .ratingCell { font-size: 1.05rem; }
 }

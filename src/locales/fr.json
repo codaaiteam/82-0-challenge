@@ -793,6 +793,8 @@
       "smallball": "Small Ball",
       "twintowers": "Tours",
       "rungun": "Run & Gun"
-    }
+    },
+    "rating": "Note d'équipe",
+    "ratingUnit": "RTG"
   }
 }

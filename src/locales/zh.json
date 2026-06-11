@@ -793,6 +793,8 @@
       "smallball": "小球",
       "twintowers": "双塔",
       "rungun": "跑轰"
-    }
+    },
+    "rating": "队伍评分",
+    "ratingUnit": "RTG"
   }
 }

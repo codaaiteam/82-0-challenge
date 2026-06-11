@@ -14,6 +14,6 @@ CREATE TABLE IF NOT EXISTS scores (
   created_at INTEGER NOT NULL
 );
 
-CREATE INDEX IF NOT EXISTS idx_scores_day ON scores (day, wins DESC, points DESC);
-CREATE INDEX IF NOT EXISTS idx_scores_all ON scores (wins DESC, points DESC);
+CREATE INDEX IF NOT EXISTS idx_scores_day ON scores (day, points DESC, wins DESC);
+CREATE INDEX IF NOT EXISTS idx_scores_all ON scores (points DESC, wins DESC);
 CREATE INDEX IF NOT EXISTS idx_scores_ip ON scores (ip_hash, created_at);

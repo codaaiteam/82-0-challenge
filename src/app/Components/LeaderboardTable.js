@@ -59,30 +59,38 @@ export default function LeaderboardTable() {
           <div className={`${styles.row} ${styles.head}`}>
             <span>#</span>
             <span className={styles.name}>{lb.player || 'GM'}</span>
-            <span>{lb.record || 'W-L'}</span>
-            <span>{lb.grade || 'Grade'}</span>
-            <span className={styles.meta}>{lb.squad || 'Star · Mode'}</span>
+            <span className={styles.ratingHead}>{lb.rating || 'Team Rating'}</span>
           </div>
-          {data.entries.map((e, i) => (
-            <div
-              key={e.id}
-              className={`${styles.row} ${mine?.id === e.id ? styles.me : ''} ${i < 3 ? styles.podium : ''}`}
-            >
-              <span className={styles.rank}>
-                {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : i + 1}
-              </span>
-              <span className={styles.name}>
-                {e.name}
-                {mine?.id === e.id && <i className={styles.youTag}>{lb.you || 'You'}</i>}
-              </span>
-              <span className={styles.recordCell}>
-                {e.wins === 82 ? '82-0' : `${e.wins}-${e.losses}`}
-                {e.wins === 82 && <i className={styles.perfectTag}>★</i>}
-              </span>
-              <span className={styles.gradeCell}>{e.grade}</span>
-              <span className={styles.meta}>{e.star} · {modeLabel(e.mode)}{e.style ? ` · ${styleLabel(e.style)}` : ''}</span>
-            </div>
-          ))}
+          {data.entries.map((e, i) => {
+            const record = e.wins === 82 ? '82-0' : `${e.wins}-${e.losses}`;
+            const metaBits = [e.star, modeLabel(e.mode), e.style ? styleLabel(e.style) : null].filter(Boolean);
+            return (
+              <div
+                key={e.id}
+                className={`${styles.row} ${mine?.id === e.id ? styles.me : ''} ${i < 3 ? styles.podium : ''}`}
+              >
+                <span className={styles.rank}>
+                  {i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : i + 1}
+                </span>
+                <span className={styles.nameCol}>
+                  <span className={styles.name}>
+                    {e.name}
+                    {mine?.id === e.id && <i className={styles.youTag}>{lb.you || 'You'}</i>}
+                  </span>
+                  <span className={styles.metaLine}>
+                    <b className={styles.recordBit}>
+                      {record}{e.wins === 82 && <i className={styles.perfectTag}>★</i>}
+                    </b>
+                    <span className={styles.gradeBit}>{e.grade}</span>
+                    {metaBits.length > 0 && <span className={styles.metaRest}> · {metaBits.join(' · ')}</span>}
+                  </span>
+                </span>
+                <span className={styles.ratingCell}>
+                  {e.points}<i>{lb.ratingUnit || 'RTG'}</i>
+                </span>
+              </div>
+            );
+          })}
         </div>
       )}
 

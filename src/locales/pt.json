@@ -793,6 +793,8 @@
       "smallball": "Small Ball",
       "twintowers": "Torres",
       "rungun": "Run & Gun"
-    }
+    },
+    "rating": "Avaliação",
+    "ratingUnit": "RTG"
   }
 }

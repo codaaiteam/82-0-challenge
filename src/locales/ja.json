@@ -793,6 +793,8 @@
       "smallball": "スモール",
       "twintowers": "ツインタワー",
       "rungun": "ラン&ガン"
-    }
+    },
+    "rating": "チーム評価",
+    "ratingUnit": "RTG"
   }
 }

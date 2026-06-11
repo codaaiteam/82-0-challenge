@@ -793,6 +793,8 @@
       "smallball": "스몰볼",
       "twintowers": "트윈타워",
       "rungun": "런앤건"
-    }
+    },
+    "rating": "팀 평점",
+    "ratingUnit": "RTG"
   }
 }
