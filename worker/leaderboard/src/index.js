@@ -9,6 +9,7 @@ const ALLOWED_ORIGINS = new Set([
 
 const MODES = new Set(['classic', 'hoopiq', 'daily']);
 const GRADES = new Set(['S+', 'S', 'A', 'B', 'C', 'D']);
+const STYLES = new Set(['balanced', 'smallball', 'twintowers', 'rungun']);
 
 const BANNED = /\b(fuck|shit|cunt|nigg|fag|rape|hitler)\w*/i;
 
@@ -55,8 +56,11 @@ function validate(b) {
   if (!GRADES.has(grade)) return 'bad grade';
   const mode = String(b.mode || '');
   if (!MODES.has(mode)) return 'bad mode';
+  // style is optional — unknown/missing values store as '' so a client that
+  // doesn't send it never gets rejected.
+  const style = STYLES.has(b.style) ? b.style : '';
   const star = String(b.star || '').trim().slice(0, 40);
-  return { name, wins, losses, points, grade, mode, star };
+  return { name, wins, losses, points, grade, mode, style, star };
 }
 
 async function handleSubmit(request, env, origin) {
@@ -83,9 +87,9 @@ async function handleSubmit(request, env, origin) {
 
   const id = crypto.randomUUID();
   await env.DB.prepare(
-    `INSERT INTO scores (id, name, wins, losses, points, grade, mode, star, day, ip_hash, created_at)
-     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11)`
-  ).bind(id, v.name, v.wins, v.losses, v.points, v.grade, v.mode, v.star, utcDay(now), ipHash, now).run();
+    `INSERT INTO scores (id, name, wins, losses, points, grade, mode, style, star, day, ip_hash, created_at)
+     VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12)`
+  ).bind(id, v.name, v.wins, v.losses, v.points, v.grade, v.mode, v.style, v.star, utcDay(now), ipHash, now).run();
 
   const ranks = await rankOf(env, id);
   return json({ id, ...ranks }, origin, 201);
@@ -124,7 +128,7 @@ async function handleTop(request, env, origin, url) {
   // the browser/CDN from holding a stale (e.g. empty) board.
   const where = period === 'today' ? 'WHERE day = ?1' : '';
   const stmt = env.DB.prepare(
-    `SELECT id, name, wins, losses, points, grade, mode, star, day, created_at
+    `SELECT id, name, wins, losses, points, grade, mode, style, star, day, created_at
      FROM scores ${where} ORDER BY ${ORDER} LIMIT ${limit}`
   );
   const { results } = await (period === 'today' ? stmt.bind(utcDay()) : stmt).all();

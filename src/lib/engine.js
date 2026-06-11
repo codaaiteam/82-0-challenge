@@ -13,6 +13,26 @@ export const PLAYERS = [...d60, ...d70, ...d80, ...d90, ...d00, ...d10, ...d20];
 
 export const POSITIONS = ['PG', 'SG', 'SF', 'PF', 'C'];
 
+// Playstyles are the basketball answer to football formations: each is a
+// 5-slot position template. The simulation itself is unchanged — the strategic
+// trade-off emerges from the roster a template forces you to build (e.g. small
+// ball has no center, so rim protection and rebounding suffer naturally).
+export const PLAYSTYLES = {
+  balanced: ['PG', 'SG', 'SF', 'PF', 'C'],
+  smallball: ['PG', 'SG', 'SF', 'SF', 'PF'],
+  twintowers: ['PG', 'SG', 'SF', 'C', 'C'],
+  rungun: ['PG', 'PG', 'SG', 'SF', 'PF'],
+};
+
+export const PLAYSTYLE_IDS = Object.keys(PLAYSTYLES);
+
+// Fresh slot list for a playstyle. Each slot gets a stable id so duplicate
+// positions (two C's, two PG's) stay distinct on the court.
+export function buildSlots(styleId) {
+  const tmpl = PLAYSTYLES[styleId] || PLAYSTYLES.balanced;
+  return tmpl.map((pos, i) => ({ id: i, pos, player: null }));
+}
+
 export const DECADES = ['1960s', '1970s', '1980s', '1990s', '2000s', '2010s', '2020s'];
 
 // All (team, decade) combos that exist in the player pool.

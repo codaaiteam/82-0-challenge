@@ -114,6 +114,26 @@
       "today": "Aujourd’hui #{rank}",
       "view": "Voir le classement →",
       "error": "Échec de l’envoi — réessayez dans quelques secondes."
+    },
+    "chooseStyle": "Choisis ton style de jeu",
+    "chooseStyleSub": "Chaque style définit les cinq postes à pourvoir.",
+    "styles": {
+      "balanced": {
+        "name": "Équilibré",
+        "desc": "Le cinq classique : un par poste. Aucun point faible."
+      },
+      "smallball": {
+        "name": "Small Ball",
+        "desc": "Deux ailiers, pas de vrai pivot. Rapide et polyvalent, mais léger au rebond."
+      },
+      "twintowers": {
+        "name": "Tours Jumelles",
+        "desc": "Deux pivots. Domine la raquette et le rebond, faible derrière."
+      },
+      "rungun": {
+        "name": "Run & Gun",
+        "desc": "Deux meneurs. Rythme et création — défense optionnelle."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "Classique",
       "hoopiq": "HoopIQ",
       "daily": "Quotidien"
+    },
+    "styles": {
+      "balanced": "Équilibré",
+      "smallball": "Small Ball",
+      "twintowers": "Tours",
+      "rungun": "Run & Gun"
     }
   }
 }

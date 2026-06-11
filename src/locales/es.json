@@ -114,6 +114,26 @@
       "today": "Hoy #{rank}",
       "view": "Ver clasificación →",
       "error": "No se pudo enviar: inténtalo en unos segundos."
+    },
+    "chooseStyle": "Elige tu estilo de juego",
+    "chooseStyleSub": "Cada estilo define las cinco posiciones que debes cubrir.",
+    "styles": {
+      "balanced": {
+        "name": "Equilibrado",
+        "desc": "El quinteto clásico: una por posición. Sin puntos débiles."
+      },
+      "smallball": {
+        "name": "Small Ball",
+        "desc": "Dos aleros, sin pívot puro. Rápido y versátil, pero flojo en el rebote."
+      },
+      "twintowers": {
+        "name": "Torres Gemelas",
+        "desc": "Dos pívots. Domina la pintura y el rebote, débil en el exterior."
+      },
+      "rungun": {
+        "name": "Run & Gun",
+        "desc": "Dos bases. Ritmo y juego — defensa opcional."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "Clásico",
       "hoopiq": "HoopIQ",
       "daily": "Diario"
+    },
+    "styles": {
+      "balanced": "Equilibrado",
+      "smallball": "Small Ball",
+      "twintowers": "Torres",
+      "rungun": "Run & Gun"
     }
   }
 }

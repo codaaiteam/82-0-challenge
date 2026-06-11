@@ -26,6 +26,7 @@ export default function LeaderboardTable() {
   }, [period]);
 
   const modeLabel = (m) => (lb.modes && lb.modes[m]) || m;
+  const styleLabel = (s) => (s && lb.styles && lb.styles[s]) || '';
 
   return (
     <div className={styles.wrap}>
@@ -79,7 +80,7 @@ export default function LeaderboardTable() {
                 {e.wins === 82 && <i className={styles.perfectTag}>★</i>}
               </span>
               <span className={styles.gradeCell}>{e.grade}</span>
-              <span className={styles.meta}>{e.star} · {modeLabel(e.mode)}</span>
+              <span className={styles.meta}>{e.star} · {modeLabel(e.mode)}{e.style ? ` · ${styleLabel(e.style)}` : ''}</span>
             </div>
           ))}
         </div>

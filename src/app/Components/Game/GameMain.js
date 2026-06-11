@@ -4,9 +4,9 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useParams } from 'next/navigation';
 import styles from './Game.module.css';
 import {
-  POSITIONS, DECADES, ALL_TEAMS,
+  DECADES, ALL_TEAMS, PLAYSTYLE_IDS, PLAYSTYLES,
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
-  dailyCombos, comboIsDraftable,
+  dailyCombos, comboIsDraftable, buildSlots,
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
@@ -41,10 +41,12 @@ export default function GameMain({ t, initialMode = null }) {
 
   // mode: null (select screen) | 'classic' | 'hoopiq' | 'daily'
   const [mode, setMode] = useState(initialMode);
-  // phase: 'spin' | 'spinning' | 'pick' | 'result'
+  // playstyle: 5-slot position template (basketball "formation")
+  const [playstyle, setPlaystyle] = useState('balanced');
+  // phase: 'style' | 'spin' | 'spinning' | 'pick' | 'result'
   const [phase, setPhase] = useState('spin');
   const [round, setRound] = useState(1);
-  const [slots, setSlots] = useState({ PG: null, SG: null, SF: null, PF: null, C: null });
+  const [slots, setSlots] = useState(() => buildSlots('balanced'));
   const [combo, setCombo] = useState(null);          // settled {team, decade}
   const [display, setDisplay] = useState({ team: '???', decade: "??'s" }); // slot windows
   const [selected, setSelected] = useState(null);     // player awaiting placement
@@ -59,9 +61,9 @@ export default function GameMain({ t, initialMode = null }) {
   const spinTimer = useRef(null);
   const dailySeq = useRef(null);
 
-  const lineup = Object.values(slots).filter(Boolean);
+  const lineup = slots.filter(s => s.player).map(s => s.player);
   const pickedIds = lineup.map(p => p.id);
-  const openSlots = POSITIONS.filter(pos => !slots[pos]);
+  const openSlots = slots.filter(s => !s.player).map(s => s.pos);
   const isDaily = mode === 'daily';
   const dailyStorageKey = `daily820:${dateKey()}`;
 
@@ -75,10 +77,14 @@ export default function GameMain({ t, initialMode = null }) {
       const saved = localStorage.getItem(dailyStorageKey);
       if (saved) {
         const { slots: savedSlots, result: savedResult } = JSON.parse(saved);
-        setSlots(savedSlots);
-        setResult(savedResult);
-        setDailyDone(true);
-        setPhase('result');
+        // Only restore the new array-shaped slots; stale object-shaped saves
+        // from an older build are ignored (they self-heal the next day).
+        if (Array.isArray(savedSlots)) {
+          setSlots(savedSlots);
+          setResult(savedResult);
+          setDailyDone(true);
+          setPhase('result');
+        }
       }
     } catch { /* corrupt storage — let them play */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -142,12 +148,13 @@ export default function GameMain({ t, initialMode = null }) {
 
   const canPlace = (p) => p.positions.some(pos => openSlots.includes(pos));
 
-  const handlePlace = (pos) => {
-    if (!selected || slots[pos] || !selected.positions.includes(pos)) return;
-    const newSlots = { ...slots, [pos]: selected };
+  const handlePlace = (slotId) => {
+    const slot = slots.find(s => s.id === slotId);
+    if (!selected || !slot || slot.player || !selected.positions.includes(slot.pos)) return;
+    const newSlots = slots.map(s => (s.id === slotId ? { ...s, player: selected } : s));
     setSelected(null);
     setSlots(newSlots);
-    const newLineup = Object.values(newSlots).filter(Boolean);
+    const newLineup = newSlots.filter(s => s.player).map(s => s.player);
     if (newLineup.length >= TOTAL_ROUNDS) {
       const res = simulateSeason(newLineup);
       setResult(res);
@@ -165,10 +172,10 @@ export default function GameMain({ t, initialMode = null }) {
     }
   };
 
-  const handleRestart = () => {
+  const handleRestart = (style = playstyle) => {
     setPhase('spin');
     setRound(1);
-    setSlots({ PG: null, SG: null, SF: null, PF: null, C: null });
+    setSlots(buildSlots(style));
     setCombo(null);
     setSelected(null);
     setTeamSkips(1);
@@ -179,8 +186,27 @@ export default function GameMain({ t, initialMode = null }) {
     setDisplay({ team: '???', decade: "??'s" });
   };
 
+  // Pick a mode from the select screen. Classic/HoopIQ go to the playstyle
+  // step; Daily locks to the balanced five so everyone plays the same board.
+  const chooseMode = (m) => {
+    setMode(m);
+    if (m === 'daily') {
+      setPlaystyle('balanced');
+      handleRestart('balanced');
+    } else {
+      setPhase('style');
+    }
+  };
+
+  // Confirm a playstyle and start drafting.
+  const chooseStyle = (style) => {
+    setPlaystyle(style);
+    handleRestart(style);
+  };
+
   const backToModes = () => {
-    handleRestart();
+    handleRestart('balanced');
+    setPlaystyle('balanced');
     setMode(null);
   };
 
@@ -200,10 +226,10 @@ export default function GameMain({ t, initialMode = null }) {
       grade: result.grade,
       title: g.titles?.[result.title] || '',
       points: result.points,
-      lineup: POSITIONS.filter(p => slots[p]).map(p => ({
-        pos: p,
-        name: slots[p].name,
-        sub: `${slots[p].team} · ${slots[p].decade}`,
+      lineup: slots.filter(s => s.player).map(s => ({
+        pos: s.pos,
+        name: s.player.name,
+        sub: `${s.player.team} · ${s.player.decade}`,
       })),
       url: 'www.82-0-challenge.com',
       daily: isDaily ? `${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}` : null,
@@ -244,6 +270,7 @@ export default function GameMain({ t, initialMode = null }) {
         points: result.points,
         grade: result.grade,
         mode,
+        style: playstyle,
         star: result.best.name,
       });
       saveSubmission({ ...data, name });
@@ -264,25 +291,50 @@ export default function GameMain({ t, initialMode = null }) {
             <div className={styles.modeCard}>
               <div className={styles.modeName}>💯 {g.modeClassic}</div>
               <p className={styles.modeDesc}>{g.modeClassicDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => setMode('classic')}>
+              <button className={styles.primaryBtn} onClick={() => chooseMode('classic')}>
                 {g.playClassic}
               </button>
             </div>
             <div className={styles.modeCard}>
               <div className={styles.modeName}>🧠 {g.modeHoopiq}</div>
               <p className={styles.modeDesc}>{g.modeHoopiqDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => setMode('hoopiq')}>
+              <button className={styles.primaryBtn} onClick={() => chooseMode('hoopiq')}>
                 {g.playHoopiq}
               </button>
             </div>
             <div className={styles.modeCard}>
               <div className={styles.modeName}>🗓️ {g.daily?.mode || 'Daily Challenge'}</div>
               <p className={styles.modeDesc}>{g.daily?.modeDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => setMode('daily')}>
+              <button className={styles.primaryBtn} onClick={() => chooseMode('daily')}>
                 {g.daily?.play || 'Play Daily'}
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    );
+  }
+
+  // ================= PLAYSTYLE SELECT =================
+  if (phase === 'style') {
+    const st = g.styles || {};
+    return (
+      <div className={styles.game}>
+        <div className={styles.modeSelect}>
+          <h2 className={styles.modeTitle}>{g.chooseStyle || 'Choose your playstyle'}</h2>
+          <p className={styles.modeSubtitle}>{g.chooseStyleSub || 'Each playstyle sets the five positions you must fill.'}</p>
+          <div className={styles.styleGrid}>
+            {PLAYSTYLE_IDS.map(id => (
+              <button key={id} className={styles.styleCard} onClick={() => chooseStyle(id)}>
+                <div className={styles.styleName}>{st[id]?.name || id}</div>
+                <div className={styles.styleSlots}>{PLAYSTYLES[id].join(' · ')}</div>
+                <p className={styles.styleDesc}>{st[id]?.desc || ''}</p>
+              </button>
+            ))}
+          </div>
+          <button className={styles.styleBack} onClick={() => setMode(null)}>
+            ← {g.switchMode || 'Switch mode'}
+          </button>
         </div>
       </div>
     );
@@ -294,7 +346,9 @@ export default function GameMain({ t, initialMode = null }) {
       <div className={styles.game}>
         <div className={styles.resultCard}>
           <div className={styles.modeBadge}>
-            {isDaily ? `🗓️ ${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}` : mode === 'classic' ? g.modeClassic : g.modeHoopiq}
+            {isDaily
+              ? `🗓️ ${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}`
+              : `${mode === 'classic' ? g.modeClassic : g.modeHoopiq} · ${g.styles?.[playstyle]?.name || playstyle}`}
           </div>
           <div className={styles.resultLabel}>{g.projectedRecord}</div>
           <div className={styles.resultRecord}>{result.wins}–{result.losses}</div>
@@ -316,22 +370,22 @@ export default function GameMain({ t, initialMode = null }) {
           </div>
 
           <div className={styles.lineupRecap}>
-            {POSITIONS.map(pos => slots[pos] && (
-              <div key={pos} className={styles.recapRow}>
+            {slots.filter(s => s.player).map(s => (
+              <div key={s.id} className={styles.recapRow}>
                 <span className={styles.recapChip}>
-                  <b>{initials(slots[pos].name)}</b>
-                  <i>{pos}</i>
+                  <b>{initials(s.player.name)}</b>
+                  <i>{s.pos}</i>
                 </span>
                 <span className={styles.recapName}>
-                  {slots[pos].name}
-                  <small>{slots[pos].team} · {slots[pos].decade}</small>
+                  {s.player.name}
+                  <small>{s.player.team} · {s.player.decade}</small>
                 </span>
                 <span className={styles.recapStats}>
-                  <span>{slots[pos].pts}<i>{g.ppg}</i></span>
-                  <span>{slots[pos].reb}<i>{g.rpg}</i></span>
-                  <span>{slots[pos].ast}<i>{g.apg}</i></span>
-                  <span>{slots[pos].stl}<i>{g.spg}</i></span>
-                  <span>{slots[pos].blk}<i>{g.bpg}</i></span>
+                  <span>{s.player.pts}<i>{g.ppg}</i></span>
+                  <span>{s.player.reb}<i>{g.rpg}</i></span>
+                  <span>{s.player.ast}<i>{g.apg}</i></span>
+                  <span>{s.player.stl}<i>{g.spg}</i></span>
+                  <span>{s.player.blk}<i>{g.bpg}</i></span>
                 </span>
               </div>
             ))}
@@ -509,22 +563,22 @@ export default function GameMain({ t, initialMode = null }) {
               <line className={styles.rim} x1="43" y1="6" x2="57" y2="6" />
               <circle className={styles.rim} cx="50" cy="9" r="2" />
             </svg>
-            {POSITIONS.map(pos => {
-              const p = slots[pos];
-              const eligible = selected && !p && selected.positions.includes(pos);
+            {slots.map((s, i) => {
+              const p = s.player;
+              const eligible = selected && !p && selected.positions.includes(s.pos);
               return (
                 <button
-                  key={pos}
-                  className={`${styles.courtSlot} ${styles['slot' + pos]} ${p ? styles.slotFilled : ''} ${eligible ? styles.slotEligible : ''}`}
-                  onClick={() => handlePlace(pos)}
+                  key={s.id}
+                  className={`${styles.courtSlot} ${styles['courtSpot' + i]} ${p ? styles.slotFilled : ''} ${eligible ? styles.slotEligible : ''}`}
+                  onClick={() => handlePlace(s.id)}
                 >
                   {p ? (
                     <>
                       <b>{initials(p.name)}</b>
-                      <i>{pos}</i>
+                      <i>{s.pos}</i>
                     </>
                   ) : (
-                    <span>{pos}</span>
+                    <span>{s.pos}</span>
                   )}
                 </button>
               );

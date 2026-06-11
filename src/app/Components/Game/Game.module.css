@@ -403,11 +403,13 @@
   transition: all 0.15s ease;
 }
 
-.slotPG { left: 50%; top: 78%; }
-.slotSG { left: 82%; top: 62%; }
-.slotSF { left: 18%; top: 62%; }
-.slotPF { left: 68%; top: 24%; }
-.slotC  { left: 36%; top: 24%; }
+/* Court spots are positioned by slot index, so any playstyle's 5-slot
+   template lays out in the same balanced spread. */
+.courtSpot0 { left: 50%; top: 78%; }
+.courtSpot1 { left: 82%; top: 62%; }
+.courtSpot2 { left: 18%; top: 62%; }
+.courtSpot3 { left: 68%; top: 24%; }
+.courtSpot4 { left: 36%; top: 24%; }
 
 .slotFilled {
   border: 2px solid #2e9e5b;
@@ -920,3 +922,67 @@
 }
 
 .lbView:hover { text-decoration: underline; }
+
+/* ---- playstyle select ---- */
+.styleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.styleCard {
+  background: #1a2236;
+  border: 1px solid #2b3550;
+  border-radius: 14px;
+  padding: 1.25rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.styleCard:hover {
+  border-color: #ff8a29;
+  transform: translateY(-2px);
+}
+
+.styleName {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.styleSlots {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #ff8a29;
+  font-variant-numeric: tabular-nums;
+}
+
+.styleDesc {
+  color: #9fb0d0;
+  font-size: 0.84rem;
+  margin: 0;
+  min-height: 3.4em;
+}
+
+.styleBack {
+  display: block;
+  margin: 1.4rem auto 0;
+  background: transparent;
+  border: none;
+  color: #9fb0d0;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.styleBack:hover { color: #ff8a29; }

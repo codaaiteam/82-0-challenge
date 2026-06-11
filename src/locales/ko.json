@@ -114,6 +114,26 @@
       "today": "오늘 #{rank}",
       "view": "리더보드 보기 →",
       "error": "제출하지 못했습니다 — 잠시 후 다시 시도하세요."
+    },
+    "chooseStyle": "플레이 스타일 선택",
+    "chooseStyleSub": "스타일마다 채워야 할 5개 포지션이 달라집니다.",
+    "styles": {
+      "balanced": {
+        "name": "밸런스",
+        "desc": "정통 5인. 포지션별 한 명씩, 약점이 없다."
+      },
+      "smallball": {
+        "name": "스몰볼",
+        "desc": "윙 2명, 정통 센터 없음. 빠르고 유연하지만 리바운드가 약하다."
+      },
+      "twintowers": {
+        "name": "트윈 타워",
+        "desc": "센터 2명. 페인트존과 리바운드 장악, 백코트는 얇다."
+      },
+      "rungun": {
+        "name": "런 앤 건",
+        "desc": "포인트가드 2명. 템포와 플레이메이킹 중심, 수비는 덤."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "클래식",
       "hoopiq": "훕 IQ",
       "daily": "데일리"
+    },
+    "styles": {
+      "balanced": "밸런스",
+      "smallball": "스몰볼",
+      "twintowers": "트윈타워",
+      "rungun": "런앤건"
     }
   }
 }

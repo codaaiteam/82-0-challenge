@@ -114,6 +114,26 @@
       "today": "Heute #{rank}",
       "view": "Rangliste ansehen →",
       "error": "Senden fehlgeschlagen — versuch es in ein paar Sekunden erneut."
+    },
+    "chooseStyle": "Wähle deinen Spielstil",
+    "chooseStyleSub": "Jeder Spielstil legt die fünf zu besetzenden Positionen fest.",
+    "styles": {
+      "balanced": {
+        "name": "Ausgewogen",
+        "desc": "Die klassische Five — eine pro Position. Keine Schwächen."
+      },
+      "smallball": {
+        "name": "Small Ball",
+        "desc": "Zwei Flügel, kein echtes Center. Schnell und flexibel, aber schwach am Brett."
+      },
+      "twintowers": {
+        "name": "Twin Towers",
+        "desc": "Zwei Center. Beherrscht Zone und Rebounds, dünn im Backcourt."
+      },
+      "rungun": {
+        "name": "Run & Gun",
+        "desc": "Zwei Point Guards. Tempo und Spielmacherei — Defense optional."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "Klassisch",
       "hoopiq": "HoopIQ",
       "daily": "Täglich"
+    },
+    "styles": {
+      "balanced": "Ausgewogen",
+      "smallball": "Small Ball",
+      "twintowers": "Twin Towers",
+      "rungun": "Run & Gun"
     }
   }
 }

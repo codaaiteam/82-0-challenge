@@ -114,6 +114,26 @@
       "today": "Hoje #{rank}",
       "view": "Ver ranking →",
       "error": "Não foi possível enviar — tente novamente em alguns segundos."
+    },
+    "chooseStyle": "Escolha seu estilo de jogo",
+    "chooseStyleSub": "Cada estilo define as cinco posições que você precisa preencher.",
+    "styles": {
+      "balanced": {
+        "name": "Equilibrado",
+        "desc": "O quinteto clássico — um por posição. Sem pontos fracos."
+      },
+      "smallball": {
+        "name": "Small Ball",
+        "desc": "Dois alas, sem pivô de verdade. Rápido e versátil, mas fraco nos rebotes."
+      },
+      "twintowers": {
+        "name": "Torres Gêmeas",
+        "desc": "Dois pivôs. Domina o garrafão e os rebotes, fraco no perímetro."
+      },
+      "rungun": {
+        "name": "Run & Gun",
+        "desc": "Dois armadores. Ritmo e criação — defesa opcional."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "Clássico",
       "hoopiq": "HoopIQ",
       "daily": "Diário"
+    },
+    "styles": {
+      "balanced": "Equilibrado",
+      "smallball": "Small Ball",
+      "twintowers": "Torres",
+      "rungun": "Run & Gun"
     }
   }
 }

@@ -114,6 +114,26 @@
       "today": "Today #{rank}",
       "view": "View leaderboard →",
       "error": "Couldn’t submit — try again in a few seconds."
+    },
+    "chooseStyle": "Choose your playstyle",
+    "chooseStyleSub": "Each playstyle sets the five positions you must fill.",
+    "styles": {
+      "balanced": {
+        "name": "Balanced",
+        "desc": "The classic five — one of each position. No weak spots."
+      },
+      "smallball": {
+        "name": "Small Ball",
+        "desc": "Two wings, no true center. Fast and switchy, but light on the glass."
+      },
+      "twintowers": {
+        "name": "Twin Towers",
+        "desc": "Two centers. Owns the paint and the boards, thin in the backcourt."
+      },
+      "rungun": {
+        "name": "Run & Gun",
+        "desc": "Two point guards. Pace and playmaking — defense optional."
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "Classic",
       "hoopiq": "HoopIQ",
       "daily": "Daily"
+    },
+    "styles": {
+      "balanced": "Balanced",
+      "smallball": "Small Ball",
+      "twintowers": "Twin Towers",
+      "rungun": "Run & Gun"
     }
   }
 }

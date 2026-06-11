@@ -114,6 +114,26 @@
       "today": "今日第 {rank} 名",
       "view": "查看排行榜 →",
       "error": "提交失败——几秒后再试。"
+    },
+    "chooseStyle": "选择你的打法",
+    "chooseStyleSub": "不同打法决定你要凑齐的五个位置。",
+    "styles": {
+      "balanced": {
+        "name": "均衡阵",
+        "desc": "经典五人,每个位置各一名,没有短板。"
+      },
+      "smallball": {
+        "name": "小球阵",
+        "desc": "两个锋线、无正牌中锋。快速灵活,但篮板偏弱。"
+      },
+      "twintowers": {
+        "name": "双塔阵",
+        "desc": "两个中锋。统治内线和篮板,后场偏薄。"
+      },
+      "rungun": {
+        "name": "跑轰阵",
+        "desc": "两个控卫。节奏与组织拉满,防守随缘。"
+      }
     }
   },
   "homeSeo": {
@@ -767,6 +787,12 @@
       "classic": "经典",
       "hoopiq": "球商",
       "daily": "每日"
+    },
+    "styles": {
+      "balanced": "均衡",
+      "smallball": "小球",
+      "twintowers": "双塔",
+      "rungun": "跑轰"
     }
   }
 }

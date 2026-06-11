@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS scores (
   points REAL NOT NULL,          -- team rating 0–100
   grade TEXT NOT NULL,           -- S+ | S | A | B | C | D
   mode TEXT NOT NULL,            -- classic | hoopiq | daily
+  style TEXT,                    -- balanced | smallball | twintowers | rungun
   star TEXT,                     -- best player name
   day TEXT NOT NULL,             -- YYYY-MM-DD (UTC) bucket for the daily board
   ip_hash TEXT NOT NULL,
