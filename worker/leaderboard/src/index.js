@@ -51,7 +51,9 @@ function validate(b) {
   const wins = b.wins | 0, losses = b.losses | 0;
   if (wins < 0 || losses < 0 || wins + losses !== 82) return 'bad record';
   const points = Number(b.points);
-  if (!(points >= 0 && points <= 100)) return 'bad points';
+  // Rating is uncapped (rewards production past the benchmark); 200 is a sane
+  // upper bound that no real five approaches.
+  if (!(points >= 0 && points <= 200)) return 'bad points';
   const grade = String(b.grade || '');
   if (!GRADES.has(grade)) return 'bad grade';
   const mode = String(b.mode || '');
@@ -120,18 +122,23 @@ async function rankOf(env, id) {
 }
 
 async function handleTop(request, env, origin, url) {
-  const period = url.searchParams.get('period') === 'today' ? 'today' : 'all';
+  const p = url.searchParams.get('period');
+  const period = p === 'today' ? 'today' : p === 'week' ? 'week' : 'all';
   const limit = Math.min(100, Math.max(1, url.searchParams.get('limit') | 0 || 100));
 
   // No edge cache: a leaderboard must show a freshly-submitted score
   // immediately. D1 reads here are cheap and low-QPS. `no-store` also keeps
   // the browser/CDN from holding a stale (e.g. empty) board.
-  const where = period === 'today' ? 'WHERE day = ?1' : '';
+  let where = '', bind = null;
+  if (period === 'today') { where = 'WHERE day = ?1'; bind = utcDay(); }
+  // week = rolling 7-day window (today + 6 prior days).
+  else if (period === 'week') { where = 'WHERE day >= ?1'; bind = utcDay(Date.now() - 6 * 86_400_000); }
+
   const stmt = env.DB.prepare(
     `SELECT id, name, wins, losses, points, grade, mode, style, star, day, created_at
      FROM scores ${where} ORDER BY ${ORDER} LIMIT ${limit}`
   );
-  const { results } = await (period === 'today' ? stmt.bind(utcDay()) : stmt).all();
+  const { results } = await (bind !== null ? stmt.bind(bind) : stmt).all();
 
   return json({ period, day: utcDay(), entries: results }, origin, 200, {
     'Cache-Control': 'no-store',

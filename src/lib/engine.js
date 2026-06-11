@@ -170,6 +170,17 @@ export function simulateSeason(lineup) {
 
   const minRatio = Math.min(...CATS.map(c => ratios[c]));
 
+  // Uncapped strength for the leaderboard rating. S (above) caps every
+  // category at 1.0 for the win curve, so elite rosters all hit 100 and tie.
+  // rawS keeps rewarding production past the benchmark, so the team rating
+  // separates the best-of-the-best (and can exceed 100, like the original).
+  const rawS =
+    (totals.pts / BENCH.pts) * 0.30 +
+    (totals.reb / BENCH.reb) * 0.20 +
+    (totals.ast / BENCH.ast) * 0.20 +
+    (totals.stl / BENCH.stl) * 0.15 +
+    (totals.blk / BENCH.blk) * 0.15;
+
   // Non-linear curve: each additional win gets harder to earn.
   let wins = Math.round(82 * Math.pow(S, 2.6)) + randomInt(-2, 2);
 
@@ -182,14 +193,16 @@ export function simulateSeason(lineup) {
   // The threshold: maximize every category at once for a shot at 82-0.
   if (S >= 0.96 && minRatio >= 0.85 && Math.random() > 0.35) wins = 82;
 
-  const points = Math.round(S * 1000) / 10; // 0–100.0 team rating
+  const points = Math.round(rawS * 1000) / 10; // uncapped team rating (can exceed 100)
 
+  // Grade stays on the capped 0–100 scale so the tiers keep their meaning.
+  const gradePts = S * 100;
   let grade;
-  if (points >= 97) grade = 'S+';
-  else if (points >= 94) grade = 'S';
-  else if (points >= 88) grade = 'A';
-  else if (points >= 78) grade = 'B';
-  else if (points >= 65) grade = 'C';
+  if (gradePts >= 97) grade = 'S+';
+  else if (gradePts >= 94) grade = 'S';
+  else if (gradePts >= 88) grade = 'A';
+  else if (gradePts >= 78) grade = 'B';
+  else if (gradePts >= 65) grade = 'C';
   else grade = 'D';
 
   // Weakness: the category furthest below benchmark.

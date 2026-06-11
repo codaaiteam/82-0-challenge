@@ -38,6 +38,12 @@ export default function LeaderboardTable() {
           {lb.today || 'Today'}
         </button>
         <button
+          className={`${styles.tab} ${period === 'week' ? styles.tabActive : ''}`}
+          onClick={() => setPeriod('week')}
+        >
+          {lb.weekly || 'This Week'}
+        </button>
+        <button
           className={`${styles.tab} ${period === 'all' ? styles.tabActive : ''}`}
           onClick={() => setPeriod('all')}
         >

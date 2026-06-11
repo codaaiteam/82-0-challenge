@@ -795,6 +795,7 @@
       "rungun": "Run & Gun"
     },
     "rating": "Team-Wertung",
-    "ratingUnit": "RTG"
+    "ratingUnit": "RTG",
+    "weekly": "Diese Woche"
   }
 }

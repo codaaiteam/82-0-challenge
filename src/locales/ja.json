@@ -795,6 +795,7 @@
       "rungun": "ラン&ガン"
     },
     "rating": "チーム評価",
-    "ratingUnit": "RTG"
+    "ratingUnit": "RTG",
+    "weekly": "今週"
   }
 }

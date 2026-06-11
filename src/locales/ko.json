@@ -795,6 +795,7 @@
       "rungun": "런앤건"
     },
     "rating": "팀 평점",
-    "ratingUnit": "RTG"
+    "ratingUnit": "RTG",
+    "weekly": "이번 주"
   }
 }
