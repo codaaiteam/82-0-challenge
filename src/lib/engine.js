@@ -236,6 +236,49 @@ export function simulateSeason(lineup) {
   };
 }
 
+// Game-by-game "story" of the simulated season, consistent with the final
+// record, for the result-reveal animation. moments maps a game index to a
+// caption key the ticker pauses on.
+export function buildSeasonStory(result) {
+  const lossIdx = new Set();
+  while (lossIdx.size < result.losses) lossIdx.add(randomInt(0, 81));
+
+  const games = [];
+  for (let i = 0; i < 82; i++) {
+    const win = !lossIdx.has(i);
+    const base = randomInt(96, 118);
+    const margin = win ? randomInt(2, 24) : randomInt(2, 14);
+    games.push({
+      opp: randomPick(ALL_TEAMS),
+      us: win ? base + margin : base,
+      them: win ? base : base + margin,
+      win,
+    });
+  }
+
+  const moments = { 0: 'opener', 29: 'christmas', 81: 'finale' };
+  let w = 0;
+  for (let i = 0; i < 82; i++) {
+    if (games[i].win && ++w === 50) { moments[i] = 'win50'; break; }
+  }
+
+  // Tighten the closest game to a 1–2 point thriller and pause on it.
+  let closest = -1, minMargin = Infinity;
+  games.forEach((gm, i) => {
+    const m = gm.us - gm.them;
+    if (Math.abs(m) < minMargin) { minMargin = Math.abs(m); closest = i; }
+  });
+  if (closest >= 0) {
+    const gm = games[closest];
+    const m = randomInt(1, 2);
+    if (gm.win) gm.us = gm.them + m;
+    else gm.them = gm.us + m;
+    moments[closest] = gm.win ? 'closestWin' : 'closestLoss';
+  }
+
+  return { games, moments };
+}
+
 export function titleKey(wins) {
   if (wins === 82) return 'perfect';
   if (wins >= 78) return 'almost';

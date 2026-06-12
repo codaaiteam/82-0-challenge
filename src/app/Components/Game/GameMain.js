@@ -6,7 +6,7 @@ import styles from './Game.module.css';
 import {
   DECADES, ALL_TEAMS, PLAYSTYLE_IDS, PLAYSTYLES,
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
-  dailyCombos, comboIsDraftable, buildSlots,
+  dailyCombos, comboIsDraftable, buildSlots, buildSeasonStory,
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
@@ -43,7 +43,7 @@ export default function GameMain({ t, initialMode = null }) {
   const [mode, setMode] = useState(initialMode);
   // playstyle: 5-slot position template (basketball "formation")
   const [playstyle, setPlaystyle] = useState('balanced');
-  // phase: 'style' | 'spin' | 'spinning' | 'pick' | 'result'
+  // phase: 'style' | 'spin' | 'spinning' | 'pick' | 'sim' | 'result'
   const [phase, setPhase] = useState('spin');
   const [round, setRound] = useState(1);
   const [slots, setSlots] = useState(() => buildSlots('balanced'));
@@ -54,6 +54,8 @@ export default function GameMain({ t, initialMode = null }) {
   const [teamSkips, setTeamSkips] = useState(1);
   const [eraSkips, setEraSkips] = useState(1);
   const [result, setResult] = useState(null);
+  const [story, setStory] = useState(null);   // game-by-game season reveal
+  const [simIdx, setSimIdx] = useState(0);    // games revealed so far
   const [copied, setCopied] = useState(false);
   const [dailyDone, setDailyDone] = useState(false);
   const [lbName, setLbName] = useState('');
@@ -89,6 +91,19 @@ export default function GameMain({ t, initialMode = null }) {
     } catch { /* corrupt storage — let them play */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDaily]);
+
+  // Season-sim ticker: rip through the 82 games, pausing on key moments.
+  useEffect(() => {
+    if (phase !== 'sim' || !story) return;
+    if (simIdx >= story.games.length) {
+      const tm = setTimeout(() => setPhase('result'), 1100);
+      return () => clearTimeout(tm);
+    }
+    // The pause belongs to the game currently on screen (simIdx - 1).
+    const delay = simIdx === 0 ? 500 : story.moments[simIdx - 1] ? 900 : 24;
+    const tm = setTimeout(() => setSimIdx(i => i + 1), delay);
+    return () => clearTimeout(tm);
+  }, [phase, simIdx, story]);
 
   // ---- slot machine ----
   const animateTo = useCallback((target) => {
@@ -158,7 +173,9 @@ export default function GameMain({ t, initialMode = null }) {
     if (newLineup.length >= TOTAL_ROUNDS) {
       const res = simulateSeason(newLineup);
       setResult(res);
-      setPhase('result');
+      setStory(buildSeasonStory(res));
+      setSimIdx(0);
+      setPhase('sim');
       if (isDaily) {
         setDailyDone(true);
         try {
@@ -181,6 +198,8 @@ export default function GameMain({ t, initialMode = null }) {
     setTeamSkips(1);
     setEraSkips(1);
     setResult(null);
+    setStory(null);
+    setSimIdx(0);
     setCopied(false);
     setLbState(null);
     setDisplay({ team: '???', decade: "??'s" });
@@ -340,6 +359,54 @@ export default function GameMain({ t, initialMode = null }) {
     );
   }
 
+  // ================= SEASON SIM =================
+  if (phase === 'sim' && result && story) {
+    const sim = g.sim || {};
+    const played = story.games.slice(0, simIdx);
+    const w = played.filter(x => x.win).length;
+    const l = played.length - w;
+    const cur = simIdx > 0 ? story.games[simIdx - 1] : null;
+    const momentKey = simIdx > 0 ? story.moments[simIdx - 1] : null;
+    const MOMENT_FALLBACK = {
+      opener: '🏀 Opening night!',
+      christmas: '🎄 Christmas Day game',
+      win50: '🔥 Win No. 50!',
+      closestWin: '😅 Nail-biter — survived!',
+      closestLoss: '💔 Heartbreaker at the buzzer',
+      finale: '🏁 Season finale',
+    };
+    return (
+      <div className={styles.game}>
+        <div className={styles.simCard}>
+          <div className={styles.resultLabel}>{sim.title || 'Simulating your season…'}</div>
+          <div className={styles.simRecord}>{w}–{l}</div>
+          <div className={styles.simGame}>
+            {cur ? (
+              <>
+                <span className={styles.simGameNo}>{fmt(sim.game || 'Game {n}', { n: simIdx })}</span>
+                <span className={cur.win ? styles.simWin : styles.simLoss}>
+                  {cur.win ? (sim.win || 'W') : (sim.loss || 'L')} {cur.us}–{cur.them}
+                </span>
+                <span className={styles.simOpp}>vs {cur.opp}</span>
+              </>
+            ) : (
+              <span className={styles.simGameNo}>{sim.tipoff || 'Tip-off…'}</span>
+            )}
+          </div>
+          <div className={styles.simMoment}>
+            {momentKey ? (sim[momentKey] || MOMENT_FALLBACK[momentKey]) : ' '}
+          </div>
+          <div className={styles.simBar}>
+            <i style={{ width: `${(simIdx / story.games.length) * 100}%` }} />
+          </div>
+          <button className={styles.simSkip} onClick={() => setPhase('result')}>
+            {sim.skip || 'Skip →'}
+          </button>
+        </div>
+      </div>
+    );
+  }
+
   // ================= RESULT =================
   if (phase === 'result' && result) {
     return (
@@ -370,9 +437,9 @@ export default function GameMain({ t, initialMode = null }) {
           </div>
 
           <div className={styles.lineupRecap}>
-            {slots.filter(s => s.player).map(s => (
+            {slots.filter(s => s.player).map((s, i) => (
               <div key={s.id} className={styles.recapRow}>
-                <span className={styles.recapChip}>
+                <span className={`${styles.recapChip} ${styles['chipC' + i]}`}>
                   <b>{initials(s.player.name)}</b>
                   <i>{s.pos}</i>
                 </span>
@@ -569,7 +636,7 @@ export default function GameMain({ t, initialMode = null }) {
               return (
                 <button
                   key={s.id}
-                  className={`${styles.courtSlot} ${styles['courtSpot' + i]} ${p ? styles.slotFilled : ''} ${eligible ? styles.slotEligible : ''}`}
+                  className={`${styles.courtSlot} ${styles['courtSpot' + i]} ${p ? `${styles.slotFilled} ${styles['slotC' + i]}` : ''} ${eligible ? styles.slotEligible : ''}`}
                   onClick={() => handlePlace(s.id)}
                 >
                   {p ? (

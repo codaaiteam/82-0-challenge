@@ -427,6 +427,18 @@
   color: #7fd4a3;
 }
 
+/* per-slot colors so each placed player reads as a distinct "ball" */
+.slotC0 { border-color: #ff8a29; background: rgba(255, 138, 41, 0.2); }
+.slotC0 i { color: #ffc499; }
+.slotC1 { border-color: #38bdf8; background: rgba(56, 189, 248, 0.18); }
+.slotC1 i { color: #9adcff; }
+.slotC2 { border-color: #34d399; background: rgba(52, 211, 153, 0.18); }
+.slotC2 i { color: #9bedcf; }
+.slotC3 { border-color: #a78bfa; background: rgba(167, 139, 250, 0.2); }
+.slotC3 i { color: #cfbdfd; }
+.slotC4 { border-color: #fb7185; background: rgba(251, 113, 133, 0.18); }
+.slotC4 i { color: #fdb2bd; }
+
 .slotEligible {
   border: 2px solid #ff8a29;
   background: rgba(255, 138, 41, 0.16);
@@ -718,6 +730,13 @@
   opacity: 0.85;
 }
 
+/* per-slot chip colors, matching the court slot palette */
+.chipC0 { background: linear-gradient(135deg, #ff8a29, #ff5e3a); }
+.chipC1 { background: linear-gradient(135deg, #38bdf8, #2563eb); }
+.chipC2 { background: linear-gradient(135deg, #34d399, #059669); }
+.chipC3 { background: linear-gradient(135deg, #a78bfa, #7c3aed); }
+.chipC4 { background: linear-gradient(135deg, #fb7185, #e11d48); }
+
 .recapName {
   display: flex;
   flex-direction: column;
@@ -740,9 +759,10 @@
 
 .resultActions {
   display: flex;
-  gap: 0.6rem;
+  gap: 0.75rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 1.5rem;
 }
 
 .primaryBtn {
@@ -828,23 +848,114 @@
   }
 }
 
+/* ---- season simulation (result reveal) ---- */
+.simCard {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+}
+
+.simRecord {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  background: linear-gradient(135deg, #ffd089, #ff8a29 60%, #ff5e3a);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-variant-numeric: tabular-nums;
+}
+
+.simGame {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.simGameNo {
+  color: #5d6c8d;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.simWin { color: #6ee7b7; }
+.simLoss { color: #ff9a8a; }
+
+.simOpp {
+  color: #9fb0d0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.simMoment {
+  min-height: 1.6em;
+  margin-top: 0.8rem;
+  color: #ffd089;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.simBar {
+  height: 6px;
+  max-width: 420px;
+  margin: 1.2rem auto 0;
+  background: #1a2236;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.simBar i {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #ff8a29, #ff5e3a);
+  border-radius: 999px;
+  transition: width 0.08s linear;
+}
+
+.simSkip {
+  margin-top: 1.5rem;
+  background: transparent;
+  color: #9fb0d0;
+  border: 1px solid #36415c;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.45rem 1.1rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.simSkip:hover {
+  border-color: #ff8a29;
+  color: #eef1f8;
+}
+
 /* ---- Global leaderboard submission (result card) ---- */
 .lbBlock {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
-  border-top: 1px solid #2b3550;
+  margin: 1.75rem 0;
+  padding: 1.25rem 1.5rem;
+  background: #161d30;
+  border: 1px solid #2b3550;
+  border-radius: 14px;
 }
 
 .lbTitle {
   font-weight: 800;
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #eef1f8;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
 }
 
 .lbForm {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
   flex-wrap: wrap;
   justify-content: center;
 }

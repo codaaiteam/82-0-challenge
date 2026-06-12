@@ -1,5 +1,6 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import CookieNotice from './Components/CookieNotice'
 // Social Bar / Mobile Sticky / Popunder 未在 Adsterra 为本域名建位，勿挂载
 
@@ -24,14 +25,18 @@ export default function RootLayout({ children, params }) {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <script defer data-domain="82-0-challenge.com" src="https://app.pageview.app/js/script.js"></script>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5451478429268021"
-          crossOrigin="anonymous"
-        ></script>
       </head>
       <body className={inter.className}>
+        <Script
+          strategy="afterInteractive"
+          data-domain="82-0-challenge.com"
+          src="https://app.pageview.app/js/script.js"
+        />
+        <Script
+          strategy="afterInteractive"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5451478429268021"
+          crossOrigin="anonymous"
+        />
         {children}
         <CookieNotice />
         <noscript>

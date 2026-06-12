@@ -134,6 +134,20 @@
         "name": "Run & Gun",
         "desc": "Two point guards. Pace and playmaking — defense optional."
       }
+    },
+    "sim": {
+      "title": "Simulating your season…",
+      "tipoff": "Tip-off…",
+      "game": "Game {n}",
+      "win": "W",
+      "loss": "L",
+      "skip": "Skip →",
+      "opener": "🏀 Opening night!",
+      "christmas": "🎄 Christmas Day game",
+      "win50": "🔥 Win No. 50!",
+      "closestWin": "😅 Nail-biter — survived!",
+      "closestLoss": "💔 Heartbreaker at the buzzer",
+      "finale": "🏁 Season finale"
     }
   },
   "homeSeo": {

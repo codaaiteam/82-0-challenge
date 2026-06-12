@@ -134,6 +134,20 @@
         "name": "Run & Gun",
         "desc": "Dos bases. Ritmo y juego — defensa opcional."
       }
+    },
+    "sim": {
+      "title": "Simulando tu temporada…",
+      "tipoff": "Salto inicial…",
+      "game": "Partido {n}",
+      "win": "V",
+      "loss": "D",
+      "skip": "Saltar →",
+      "opener": "🏀 ¡Noche inaugural!",
+      "christmas": "🎄 Partido de Navidad",
+      "win50": "🔥 ¡Victoria n.º 50!",
+      "closestWin": "😅 ¡Por los pelos — sobrevivieron!",
+      "closestLoss": "💔 Derrota sobre la bocina",
+      "finale": "🏁 Final de temporada"
     }
   },
   "homeSeo": {

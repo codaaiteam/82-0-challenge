@@ -134,6 +134,20 @@
         "name": "Run & Gun",
         "desc": "Deux meneurs. Rythme et création — défense optionnelle."
       }
+    },
+    "sim": {
+      "title": "Simulation de ta saison…",
+      "tipoff": "Entre-deux…",
+      "game": "Match {n}",
+      "win": "V",
+      "loss": "D",
+      "skip": "Passer →",
+      "opener": "🏀 Soirée d’ouverture !",
+      "christmas": "🎄 Match de Noël",
+      "win50": "🔥 50e victoire !",
+      "closestWin": "😅 Au bout du suspense — sauvés !",
+      "closestLoss": "💔 Défaite au buzzer",
+      "finale": "🏁 Finale de la saison"
     }
   },
   "homeSeo": {

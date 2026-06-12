@@ -134,6 +134,20 @@
         "name": "Run & Gun",
         "desc": "Dois armadores. Ritmo e criação — defesa opcional."
       }
+    },
+    "sim": {
+      "title": "Simulando sua temporada…",
+      "tipoff": "Bola ao ar…",
+      "game": "Jogo {n}",
+      "win": "V",
+      "loss": "D",
+      "skip": "Pular →",
+      "opener": "🏀 Noite de estreia!",
+      "christmas": "🎄 Jogo de Natal",
+      "win50": "🔥 Vitória nº 50!",
+      "closestWin": "😅 No sufoco — sobreviveram!",
+      "closestLoss": "💔 Derrota no estouro do cronômetro",
+      "finale": "🏁 Final da temporada"
     }
   },
   "homeSeo": {

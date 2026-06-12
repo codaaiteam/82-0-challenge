@@ -134,6 +134,20 @@
         "name": "Run & Gun",
         "desc": "Zwei Point Guards. Tempo und Spielmacherei — Defense optional."
       }
+    },
+    "sim": {
+      "title": "Deine Saison wird simuliert…",
+      "tipoff": "Sprungball…",
+      "game": "Spiel {n}",
+      "win": "S",
+      "loss": "N",
+      "skip": "Überspringen →",
+      "opener": "🏀 Saisonauftakt!",
+      "christmas": "🎄 Weihnachtsspiel",
+      "win50": "🔥 50. Sieg!",
+      "closestWin": "😅 Zitterpartie — überstanden!",
+      "closestLoss": "💔 Niederlage mit der Schlusssirene",
+      "finale": "🏁 Saisonfinale"
     }
   },
   "homeSeo": {

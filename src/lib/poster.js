@@ -60,14 +60,15 @@ export function downloadPoster({
   ctx.fillText(`${grade}  ·  ${title}  ·  ${points} pts`, W / 2, y + 330);
 
   // lineup
+  const slotColors = ['#ff8a29', '#38bdf8', '#34d399', '#a78bfa', '#fb7185'];
   let ly = y + 430;
   ctx.textAlign = 'left';
-  lineup.forEach(p => {
+  lineup.forEach((p, i) => {
     // chip
     ctx.fillStyle = '#1a2236';
     roundRect(ctx, 120, ly - 44, W - 240, 64, 14);
     ctx.fill();
-    ctx.fillStyle = '#ff8a29';
+    ctx.fillStyle = slotColors[i % slotColors.length];
     ctx.font = '900 30px Inter, -apple-system, sans-serif';
     ctx.fillText(p.pos, 150, ly);
     ctx.fillStyle = '#eef1f8';
