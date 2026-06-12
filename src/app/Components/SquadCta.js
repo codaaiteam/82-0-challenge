@@ -8,7 +8,7 @@ export default function SquadCta({ t }) {
         <h2 className={styles.squadCtaTitle}>{t.cta.title}</h2>
         <p className={styles.squadCtaDesc}>{t.cta.desc}</p>
         <a
-          href="https://c2story.com"
+          href="https://c2story.com/dream-team-storybook?game=82-0&utm_source=82-0-challenge&utm_medium=squad_cta"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.squadCtaButton}
