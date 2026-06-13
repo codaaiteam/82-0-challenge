@@ -758,6 +758,13 @@
           ]
         },
         {
+          "h2": "How to play 82-0 Cap Mode",
+          "paragraphs": [
+            "Each run is a gauntlet. You begin at Level 1 with a generous salary cap. Hit Spin to roll a random team and era — but only the players you can still afford show up in the list. Pick one, drop them onto a court position, and their price comes off your cap.",
+            "Keep rolling and drafting until all five spots are filled, then watch the 82-game season simulate. Finish 82-0 and you clear the level: the budget tightens for the next one and your streak continues. Fall short of a perfect record and the run ends — your score is how many levels you cleared. The game always reserves enough cap for your remaining slots, so you can never spend yourself into a corner."
+          ]
+        },
+        {
           "h2": "How the salary cap works",
           "paragraphs": [
             "Every player is priced from the same production score the engine uses to rate your team — points, rebounds, assists, steals and blocks, adjusted for era. Prices run from about 5 for role players up to the low-30s for the all-time greats. You roll for teams and eras like classic 82-0, but only players you can still afford appear — and the game always reserves enough for your remaining spots, so you can't spend yourself into a dead end.",
@@ -824,6 +831,13 @@
           ]
         },
         {
+          "h2": "How to play the 82-0 Challenge Filters",
+          "paragraphs": [
+            "Pick a filter to reshape the draft. For One Franchise or One Decade, choose your team or era first. Then play 82-0 the usual way — spin a team and era, pick a player for each of the five court positions, and simulate the season.",
+            "Each filter changes which players you can draft and how hard a perfect season is, and your result is tagged on the global leaderboard by filter, so a No MVPs 82-0 sits apart from an everyone-allowed one. Prefer a single mode on its own page? Each filter also has a dedicated challenge page."
+          ]
+        },
+        {
           "h2": "Every 82-0 filter explained",
           "paragraphs": [
             "Salary Cap: a gauntlet where you roll your five under a budget that tightens every time you go 82-0 — the most strategic mode. No MVPs: the priciest all-time greats are banned, so you win without the icons. One Franchise: draft only from a single team's all-time roster. One Decade: lock the whole draft to one era of NBA history. Random Era: the game picks your decade for you. Hard Mode: a steeper win curve where even stacked rosters drop a few more games."
@@ -852,9 +866,21 @@
           ]
         },
         {
+          "h2": "How to play 82-0 No MVPs",
+          "paragraphs": [
+            "Hit Spin to roll a team and era, then pick a player for each court position — exactly like the classic 82-0 game. The only difference is that the roughly 35 priciest all-time greats are removed from every list, so you are building from very good players instead of legends. Fill all five spots, simulate the 82-game season, and submit your record to the No MVPs leaderboard."
+          ]
+        },
+        {
           "h2": "How to go 82-0 without superstars",
           "paragraphs": [
             "Balance wins it. The engine punishes any single weak category, so spread your production across scoring, rebounding, assists, steals and blocks. Cheap rim protectors and high-assist guards carry more weight than another mid-volume scorer, and a versatile forward who covers two positions buys you flexibility. Hit every category and even a star-less five can chase a perfect season."
+          ]
+        },
+        {
+          "h2": "Is 82-0 possible without MVPs?",
+          "paragraphs": [
+            "Yes, but it is hard. Without elite scorers and rebounders to carry you, a perfect season demands a genuinely balanced five — solid in scoring, rebounding, assists, steals and blocks all at once. The win curve punishes any single weak category, so the trick is value: cheap defenders, efficient playmakers and versatile wings that cover a hole the stars would normally paper over. Pull it off and an 82-0 with no MVPs is one of the toughest brags on the leaderboard."
           ]
         }
       ]
@@ -872,9 +898,21 @@
           ]
         },
         {
+          "h2": "How to play 82-0 One Franchise",
+          "paragraphs": [
+            "Choose a franchise from the dropdown above the game. Every time you Spin, the team is locked to that franchise but the era changes, so you draft across its whole history. Pick a player for each of the five court positions, simulate the season, and see whether one club's all-time talent is enough to go undefeated. Switch the franchise any time to start a fresh run."
+          ]
+        },
+        {
           "h2": "Which franchise can go 82-0?",
           "paragraphs": [
             "The storied, deep franchises — the Lakers, Celtics, Bulls, Spurs and Warriors — field the most complete all-time fives and give you the best shot at a perfect season. Picking a younger or thinner franchise is the real challenge: you may be strong in one or two categories but exposed elsewhere, and the win curve will find the hole."
+          ]
+        },
+        {
+          "h2": "Best franchises to go 82-0 with",
+          "paragraphs": [
+            "The deepest all-time rosters give you the most room: the Lakers, Celtics, Bulls, Spurs and Warriors can each field a complete, balanced five from their history. Younger or thinner franchises are the real test — you might be loaded at one position and exposed at another, and the win curve will find the gap. Part of the fun is discovering which clubs can carry a perfect season on their own and which fall just short."
           ]
         }
       ]
@@ -892,9 +930,21 @@
           ]
         },
         {
+          "h2": "How to play 82-0 One Decade",
+          "paragraphs": [
+            "Choose a decade from the dropdown above the game. Every team you Spin comes from that era, so your whole five is frozen in one moment of NBA history. Pick a player for each court position, simulate the 82-game season, and find out which decade had the depth to go perfect. Change the decade any time to try another era."
+          ]
+        },
+        {
           "h2": "Which NBA decade was strongest?",
           "paragraphs": [
             "Every decade has a path to 82-0, but they win differently. The 90s and 2000s are stacked with two-way wings and dominant centers; the 80s bring elite playmaking and scoring; the 2010s and 2020s lean on shooting and switchable defense. Part of the fun is finding which era's strengths line up with the categories the win curve rewards."
+          ]
+        },
+        {
+          "h2": "Which NBA decade can go 82-0?",
+          "paragraphs": [
+            "Every era has a path, but they win differently. The 1990s and 2000s are stacked with two-way wings and dominant centers; the 1980s bring elite playmaking and scoring; the 2010s and 2020s lean on shooting and switchable defense. Because the engine adjusts each player's stats for their era, the decade you lock in shapes both who is available and how their numbers translate — so the strongest decade is often the one whose strengths line up with the categories the win curve rewards."
           ]
         }
       ]
@@ -912,9 +962,21 @@
           ]
         },
         {
+          "h2": "How to play 82-0 Hard Mode",
+          "paragraphs": [
+            "It plays exactly like the classic 82-0 game — spin a team and era, pick a player for each of the five court positions, and simulate the season — but the math is harsher. The win curve is steeper and the gate for a perfect record is tighter, so the same roster wins fewer games. Build a five with no weak categories and you might just survive 82-0."
+          ]
+        },
+        {
           "h2": "Tips for surviving Hard Mode",
           "paragraphs": [
             "There is no margin for a weak category. Maximize scoring, rebounding, assists, steals and blocks all at once — any single hole drags the curve down harder than in the standard game. Prioritize two-way players who pad the defensive stats, and use your team and era re-rolls to chase the exact pieces your five is missing."
+          ]
+        },
+        {
+          "h2": "Is 82-0 possible in Hard Mode?",
+          "paragraphs": [
+            "It is, but only for the very best rosters. A five that cruises to 80-2 in the standard game might land at 76-6 in Hard Mode, and the luck gate for a true 82-0 is tightened on top of that. There is no room for a weak category — you need elite, balanced production everywhere, plus a little luck. That is exactly why a Hard Mode 82-0 is the most impressive perfect season you can post."
           ]
         }
       ]

@@ -749,7 +749,42 @@
       "title": "82-0 Mode Plafond Salarial — Le jeu de draft NBA stratégique",
       "description": "Un 82-0 plus stratégique : composez un cinq majeur NBA sous un plafond salarial fixe et visez une saison invaincue de 82 matchs sans superteam illimitée.",
       "h1": "82-0 Mode Plafond Salarial",
-      "intro": "Un draft 82-0 plus stratégique transformé en gauntlet. Chaque joueur a un prix ; vous démarrez avec un budget large et composez votre cinq en tournant. Réussissez le 82-0 et le budget se resserre au niveau suivant — jusqu'où descendrez-vous avant qu'une saison parfaite devienne inabordable ?"
+      "intro": "Un draft 82-0 plus stratégique transformé en gauntlet. Chaque joueur a un prix ; vous démarrez avec un budget large et composez votre cinq en tournant. Réussissez le 82-0 et le budget se resserre au niveau suivant — jusqu'où descendrez-vous avant qu'une saison parfaite devienne inabordable ?",
+      "sections": [
+        {
+          "h2": "Qu'est-ce que le 82-0 Mode Plafond Salarial ?",
+          "paragraphs": [
+            "Le Mode Plafond est la version stratégique du 82-0. Au lieu d'une superteam illimitée, chaque joueur a un prix et vous composez votre cinq sous un plafond salarial fixe. Tout dépenser sur trois mégastars et il ne reste rien pour les deux autres postes ; étaler de trop et votre note baisse. Tout le plaisir est dans l'arbitrage."
+          ]
+        },
+        {
+          "h2": "Comment jouer au 82-0 Mode Plafond",
+          "paragraphs": [
+            "Chaque partie est un gauntlet. Vous démarrez au Niveau 1 avec un budget large. Appuyez sur Spin pour tirer une équipe et une ère au hasard, mais seuls les joueurs encore abordables apparaissent. Choisissez-en un, placez-le sur un poste du terrain et son prix est déduit du plafond.",
+            "Continuez à tourner et drafter jusqu'à remplir les cinq postes, puis regardez la simulation de la saison de 82 matchs. Réussissez le 82-0 et vous passez le niveau : le budget se resserre et la série continue. Sans saison parfaite, la partie se termine et votre score est le nombre de niveaux franchis. Le jeu réserve toujours de quoi payer les postes restants, vous ne pouvez donc jamais vous bloquer."
+          ]
+        },
+        {
+          "h2": "Comment fonctionne le plafond salarial",
+          "paragraphs": [
+            "Chaque prix vient du même score de production utilisé pour noter votre équipe (points, rebonds, passes, interceptions et contres, ajustés par ère). Ils vont d'environ 5 pour les role players à une trentaine pour les légendes. Vous tournez équipes et ères comme au 82-0 classique, mais seuls les joueurs abordables apparaissent, et de quoi payer les postes restants est toujours réservé.",
+            "C'est un gauntlet : vous commencez avec un budget large et, à chaque 82-0, il se resserre au niveau suivant. Une saison qui n'atteint pas le 82-0 met fin à la partie, et la profondeur atteinte est votre score. Le budget non dépensé devient un petit bonus d'efficacité à votre note."
+          ]
+        },
+        {
+          "h2": "Meilleures stratégies du Mode Plafond",
+          "paragraphs": [
+            "Une forme gagnante courante : deux ou trois stars chères plus des role players bon marché et efficaces qui comblent les trous. Comme le moteur punit toute catégorie faible, ne négligez pas la défense : interceptions et contres comptent dans le prix et la courbe de victoires, donc un protecteur de cercle bon marché peut valoir plus qu'un scoreur de plus.",
+            "Surveillez aussi les postes : un meneur ou ailier polyvalent qui couvre plusieurs places vous donne la liberté de dépenser là où ça compte."
+          ]
+        },
+        {
+          "h2": "Le Mode Plafond et le classement",
+          "paragraphs": [
+            "Les saisons sous plafond sont étiquetées dans le classement mondial pour distinguer les bâtisseurs sous plafond des parties classiques. Grimpez en maximisant votre note sous budget, et si vous faites 82-0, le plafond laissé inutilisé est votre avantage sur ceux qui ont fait pareil."
+          ]
+        }
+      ]
     },
     "filter": {
       "title": "82-0 Filtres de Défi — Plafond, sans MVP, une franchise et plus",
@@ -789,31 +824,162 @@
         }
       },
       "chooseTeam": "Franchise",
-      "chooseDecade": "Décennie"
+      "chooseDecade": "Décennie",
+      "sections": [
+        {
+          "h2": "Pourquoi jouer au 82-0 avec des filtres ?",
+          "paragraphs": [
+            "Le 82-0 classique vous donne des équipes et ères au hasard. Les Filtres de Défi vous donnent le contrôle : ils remodèlent le vivier de joueurs et la difficulté pour une tentative plus dure et réfléchie de saison parfaite. Chaque filtre étiquette aussi votre entrée au classement, donc un 82-0 Sans MVP se distingue d'un 82-0 tout permis."
+          ]
+        },
+        {
+          "h2": "Comment jouer aux Filtres de Défi 82-0",
+          "paragraphs": [
+            "Choisissez un filtre pour remodeler le draft. Pour Une Franchise ou Une Décennie, choisissez d'abord l'équipe ou l'ère. Puis jouez au 82-0 comme d'habitude : tournez équipe et ère, choisissez un joueur pour chacun des cinq postes et simulez la saison.",
+            "Chaque filtre change qui vous pouvez drafter et la difficulté d'une saison parfaite, et votre résultat est étiqueté par filtre au classement mondial. Vous préférez un mode sur sa propre page ? Chaque filtre a une page dédiée."
+          ]
+        },
+        {
+          "h2": "Chaque filtre 82-0 expliqué",
+          "paragraphs": [
+            "Plafond Salarial : composez votre cinq sous un budget fixe, le mode le plus stratégique. Sans MVP : les légendes les plus chères sont bannies, gagnez sans les icônes. Une Franchise : draftez uniquement dans l'effectif historique d'une équipe. Une Décennie : verrouillez tout le draft sur une ère. Ère Aléatoire : le jeu choisit la décennie. Mode Difficile : une courbe de victoires plus raide ; même les effectifs chargés perdent plus."
+          ]
+        },
+        {
+          "h2": "Quel filtre 82-0 est le plus dur ?",
+          "paragraphs": [
+            "Le Mode Difficile et le Plafond Salarial sont les épreuves les plus dures d'un vrai 82-0. Une Franchise et Une Décennie sont intermédiaires : votre plafond dépend de l'équipe ou de l'ère choisie. Débutant ? Jouez d'abord Classique, puis ajoutez les filtres un par un pour apprendre quels effectifs survivent à 82 matchs."
+          ]
+        }
+      ]
     },
     "noMvps": {
       "title": "82-0 Défi Sans MVP — Gagner sans les légendes",
       "description": "Relevez le défi 82-0 avec les plus chères légendes bannies. Composez un cinq invaincu avec des role players et des stars sous-cotées.",
       "h1": "82-0 Défi Sans MVP",
-      "intro": "La plus grande fierté du basket : faire 82-0 sans une seule superstar de niveau MVP. Les ~35 légendes les plus chères sont écartées — gagnez avec des role players, des soldats de l'ombre et des stars sous-cotées."
+      "intro": "La plus grande fierté du basket : faire 82-0 sans une seule superstar de niveau MVP. Les ~35 légendes les plus chères sont écartées — gagnez avec des role players, des soldats de l'ombre et des stars sous-cotées.",
+      "sections": [
+        {
+          "h2": "Qu'est-ce qui compte comme MVP ici ?",
+          "paragraphs": [
+            "Le mode Sans MVP bannit les ~35 joueurs les plus chers du vivier : les grands scoreurs et rebondeurs de tous les temps que le moteur valorise le plus. Le reste est disponible, donc vous bâtissez avec de très bons joueurs plutôt que des légendes. C'est le même draft par tirages du 82-0, sans les boutons faciles."
+          ]
+        },
+        {
+          "h2": "Comment jouer au 82-0 Sans MVP",
+          "paragraphs": [
+            "Appuyez sur Spin pour tirer équipe et ère, puis choisissez un joueur pour chaque poste, exactement comme au 82-0 classique. La seule différence : les ~35 légendes les plus chères sont retirées de toutes les listes. Remplissez les cinq postes, simulez la saison de 82 matchs et soumettez votre bilan au classement Sans MVP."
+          ]
+        },
+        {
+          "h2": "Comment faire 82-0 sans superstars",
+          "paragraphs": [
+            "L'équilibre l'emporte. Sans scoreurs et rebondeurs d'élite pour vous porter, une saison parfaite exige un cinq vraiment équilibré : solide aux points, rebonds, passes, interceptions et contres à la fois. La courbe punit toute catégorie faible, donc l'astuce est le rapport qualité-prix : défenseurs bon marché, meneurs efficaces et ailiers polyvalents qui bouchent un trou."
+          ]
+        },
+        {
+          "h2": "Le 82-0 sans MVP est-il possible ?",
+          "paragraphs": [
+            "Oui, mais c'est dur. Sans scoreurs et rebondeurs d'élite, la saison parfaite exige un cinq vraiment équilibré, solide partout. La courbe punit un seul point faible, donc la clé est la valeur : défenseurs bon marché, meneurs efficaces, ailiers qui bouchent les trous. Réussir un 82-0 sans MVP, c'est l'une des plus belles fiertés du classement."
+          ]
+        }
+      ]
     },
     "oneTeam": {
       "title": "82-0 Défi Une Franchise — Une équipe, toutes les ères",
       "description": "Composez un cinq invaincu de 82-0 en n'utilisant que l'effectif historique d'une franchise : Lakers, Celtics, Bulls, Spurs et plus.",
       "h1": "82-0 Défi Une Franchise",
-      "intro": "Mode loyauté. Draftez tout votre cinq de 82-0 dans l'effectif historique d'une seule franchise : chaque Laker, chaque Celtic, chaque Bull à travers les décennies. Votre équipe peut-elle rester invaincue seule ?"
+      "intro": "Mode loyauté. Draftez tout votre cinq de 82-0 dans l'effectif historique d'une seule franchise : chaque Laker, chaque Celtic, chaque Bull à travers les décennies. Votre équipe peut-elle rester invaincue seule ?",
+      "sections": [
+        {
+          "h2": "Comment fonctionne le mode Une Franchise",
+          "paragraphs": [
+            "Choisissez une franchise dans le menu et chaque tirage du draft est verrouillé sur cette équipe, mais à travers toutes les ères de son histoire : une légende des années 60 peut côtoyer une star moderne. Seules les franchises assez profondes pour remplir un cinq équilibré sont proposées, donc le draft ne se bloque jamais."
+          ]
+        },
+        {
+          "h2": "Comment jouer au 82-0 Une Franchise",
+          "paragraphs": [
+            "Choisissez une franchise dans le menu déroulant au-dessus du jeu. À chaque Spin, l'équipe est verrouillée sur cette franchise mais l'ère change, donc vous draftez dans toute son histoire. Choisissez un joueur pour chacun des cinq postes, simulez la saison et voyez si le talent historique d'un club suffit pour rester invaincu. Changez de franchise à tout moment pour une nouvelle partie."
+          ]
+        },
+        {
+          "h2": "Quelle franchise peut faire 82-0 ?",
+          "paragraphs": [
+            "Les effectifs les plus profonds offrent le plus de marge : Lakers, Celtics, Bulls, Spurs et Warriors peuvent aligner un cinq complet et équilibré de leur histoire. Les franchises jeunes ou minces sont le vrai test : fortes à un poste, exposées à un autre, et la courbe trouvera le trou."
+          ]
+        },
+        {
+          "h2": "Les meilleures franchises pour faire 82-0",
+          "paragraphs": [
+            "Les effectifs les plus profonds offrent le plus de marge : Lakers, Celtics, Bulls, Spurs et Warriors alignent un cinq complet et équilibré. Les franchises jeunes ou minces sont le vrai test : forte à un poste, exposée à un autre, la courbe trouve la faille. Le plaisir : découvrir quels clubs portent seuls une saison parfaite et lesquels échouent de peu."
+          ]
+        }
+      ]
     },
     "oneDecade": {
       "title": "82-0 Défi Une Décennie — Une ère, une saison parfaite",
       "description": "Verrouillez votre draft 82-0 sur une seule décennie de l'histoire du basket — les 60, 80, 90, 2000 et plus — et visez une saison invaincue.",
       "h1": "82-0 Défi Une Décennie",
-      "intro": "Choisissez une ère et vivez-y. Tout votre cinq de 82-0 doit venir d'une décennie de l'histoire NBA : les rudes années 90, le pace-and-space des années 2010, à vous de voir. Quelle décennie avait la puissance de feu pour rester invaincue ?"
+      "intro": "Choisissez une ère et vivez-y. Tout votre cinq de 82-0 doit venir d'une décennie de l'histoire NBA : les rudes années 90, le pace-and-space des années 2010, à vous de voir. Quelle décennie avait la puissance de feu pour rester invaincue ?",
+      "sections": [
+        {
+          "h2": "Comment fonctionne le mode Une Décennie",
+          "paragraphs": [
+            "Choisissez une décennie et chaque équipe tirée vient de cette ère, donc tout votre cinq est figé dans un moment de l'histoire NBA. Le moteur ajuste les stats brutes selon l'ère de chaque joueur, donc un titre de scoreur des années 60 ne vaut pas un des années 90 ; la décennie choisie façonne qui est disponible et comment leurs chiffres se traduisent."
+          ]
+        },
+        {
+          "h2": "Comment jouer au 82-0 Une Décennie",
+          "paragraphs": [
+            "Choisissez une décennie dans le menu déroulant au-dessus du jeu. Chaque équipe tirée vient de cette ère, donc tout votre cinq est figé dans un moment de la NBA. Choisissez un joueur pour chaque poste, simulez la saison de 82 matchs et découvrez quelle décennie avait la profondeur pour être parfaite. Changez de décennie à tout moment pour essayer une autre ère."
+          ]
+        },
+        {
+          "h2": "Quelle décennie NBA était la plus forte ?",
+          "paragraphs": [
+            "Chaque ère a une voie, mais elles gagnent différemment. Les années 90 et 2000 regorgent d'ailiers two-way et de pivots dominants ; les années 80 apportent création et scoring d'élite ; les années 2010 et 2020 misent sur le tir et la défense interchangeable. Comme le moteur ajuste par ère, la décennie verrouillée décide qui est là et comment les chiffres se traduisent."
+          ]
+        },
+        {
+          "h2": "Quelle décennie NBA peut faire 82-0 ?",
+          "paragraphs": [
+            "Chaque ère a une voie, mais elles gagnent différemment. Années 90 et 2000 : ailiers two-way et pivots dominants ; années 80 : création et scoring d'élite ; années 2010 et 2020 : tir et défense interchangeable. Le moteur ajustant par ère, la décennie verrouillée décide qui est là et la traduction. La plus forte est souvent celle dont les forces collent à ce que récompense la courbe."
+          ]
+        }
+      ]
     },
     "hardMode": {
       "title": "82-0 Mode Difficile — Le défi de saison parfaite le plus dur",
       "description": "82-0 avec une courbe de victoires plus raide. Même un cinq historique chargé perd quelques matchs de plus — seuls les meilleurs effectifs restent invaincus.",
       "h1": "82-0 Mode Difficile",
-      "intro": "Pour ceux qui trouvent la saison parfaite trop facile. Le Mode Difficile raidit la courbe de victoires et resserre le hasard du 82-0 : même un cinq historique chargé perd davantage. Seuls les meilleurs survivent."
+      "intro": "Pour ceux qui trouvent la saison parfaite trop facile. Le Mode Difficile raidit la courbe de victoires et resserre le hasard du 82-0 : même un cinq historique chargé perd davantage. Seuls les meilleurs survivent.",
+      "sections": [
+        {
+          "h2": "Ce qui change en Mode Difficile",
+          "paragraphs": [
+            "Le Mode Difficile garde le même vivier historique mais tord les maths contre vous : la courbe non linéaire reçoit un exposant plus raide, donc le même effectif gagne moins, et la porte d'un vrai 82-0 se resserre. Un cinq qui ferait 80-2 dans le jeu standard pourrait finir à 76-6."
+          ]
+        },
+        {
+          "h2": "Comment jouer au 82-0 Mode Difficile",
+          "paragraphs": [
+            "Cela se joue exactement comme le 82-0 classique — tournez équipe et ère, choisissez un joueur pour chacun des cinq postes et simulez la saison — mais les maths sont plus dures. La courbe est plus raide et la porte d'un bilan parfait plus étroite, donc le même effectif gagne moins. Composez un cinq sans catégorie faible et vous survivrez peut-être au 82-0."
+          ]
+        },
+        {
+          "h2": "Conseils pour survivre au Mode Difficile",
+          "paragraphs": [
+            "Aucune marge pour une catégorie faible. Maximisez points, rebonds, passes, interceptions et contres à la fois : tout trou fait plonger la courbe plus fort qu'en standard. Privilégiez les joueurs two-way qui remplissent les stats défensives et utilisez les re-tirages d'équipe et d'ère pour chasser les pièces manquantes."
+          ]
+        },
+        {
+          "h2": "Le 82-0 est-il possible en Mode Difficile ?",
+          "paragraphs": [
+            "Oui, mais seulement pour les meilleurs effectifs. Un cinq qui fait 80-2 en standard pourrait finir à 76-6 en Difficile, et la chance pour un vrai 82-0 se resserre en plus. Aucune place pour une catégorie faible : il faut une production d'élite et équilibrée partout, plus un peu de chance. C'est pourquoi un 82-0 en Difficile est la saison parfaite la plus impressionnante à publier."
+          ]
+        }
+      ]
     }
   },
   "cta": {

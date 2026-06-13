@@ -749,7 +749,42 @@
       "title": "82-0 Modo Teto Salarial — O jogo estratégico de draft da NBA",
       "description": "Um 82-0 mais estratégico: monte um quinteto inicial da NBA sob um teto salarial fixo e busque uma temporada invicta de 82 jogos sem um supertime ilimitado.",
       "h1": "82-0 Modo Teto Salarial",
-      "intro": "Um draft de 82-0 mais estratégico que virou gauntlet. Cada jogador tem um preço; você começa com um orçamento folgado e monta seu quinteto girando. Faça 82-0 e o orçamento aperta no próximo nível — até onde você desce antes de uma temporada perfeita ficar impagável?"
+      "intro": "Um draft de 82-0 mais estratégico que virou gauntlet. Cada jogador tem um preço; você começa com um orçamento folgado e monta seu quinteto girando. Faça 82-0 e o orçamento aperta no próximo nível — até onde você desce antes de uma temporada perfeita ficar impagável?",
+      "sections": [
+        {
+          "h2": "O que é o 82-0 Modo Teto Salarial?",
+          "paragraphs": [
+            "O Modo Teto é a versão estratégica do 82-0. Em vez de um supertime ilimitado, cada jogador tem um preço e você monta seu quinteto sob um teto salarial fixo. Gaste tudo em três megastars e não sobra nada para as outras duas vagas; espalhe demais e sua nota cai. A graça está no equilíbrio."
+          ]
+        },
+        {
+          "h2": "Como jogar o 82-0 Modo Teto",
+          "paragraphs": [
+            "Cada run é um gauntlet. Você começa no Nível 1 com um orçamento folgado. Toque em Spin para girar um time e uma era ao acaso, mas só aparecem os jogadores que você ainda pode pagar. Escolha um, coloque-o numa posição da quadra e o preço sai do teto.",
+            "Continue girando e draftando até preencher as cinco vagas e assista à simulação da temporada de 82 jogos. Faça 82-0 e passa de nível: o orçamento aperta e a sequência continua. Se não fechar perfeito, a run termina e sua pontuação é quantos níveis você passou. O jogo sempre reserva teto para as vagas restantes, então você nunca fica sem opções."
+          ]
+        },
+        {
+          "h2": "Como funciona o teto salarial",
+          "paragraphs": [
+            "Cada preço vem da mesma pontuação de produção que o motor usa para avaliar seu time (pontos, rebotes, assistências, roubos e tocos, ajustados por era). Vão de cerca de 5 para jogadores de função até os trinta e poucos das lendas. Você gira times e eras como no 82-0 clássico, mas só aparecem os que dá para pagar, e sempre se reserva para as vagas que faltam.",
+            "É um gauntlet: você começa com orçamento amplo e, a cada 82-0, ele aperta no próximo nível. Uma temporada que não chega ao 82-0 encerra a run, e o quão fundo você foi é sua pontuação. O orçamento não gasto vira um pequeno bônus de eficiência na sua nota."
+          ]
+        },
+        {
+          "h2": "Melhores estratégias do Modo Teto",
+          "paragraphs": [
+            "Uma forma comum de vencer são duas ou três estrelas caras mais jogadores de função baratos e eficientes que tapam os buracos. Como o motor pune qualquer categoria fraca, não ignore a defesa: roubos e tocos contam no preço e na curva de vitórias, então um protetor de aro barato pode valer mais que outro pontuador.",
+            "Cuide também das posições: um armador ou ala versátil que cobre várias vagas te dá liberdade para gastar onde importa."
+          ]
+        },
+        {
+          "h2": "O Modo Teto e a classificação",
+          "paragraphs": [
+            "As temporadas de teto são marcadas na classificação global para separar os construtores de teto das partidas clássicas. Suba maximizando sua nota dentro do orçamento, e se fizer 82-0, o teto que sobrou é sua vantagem sobre quem fez o mesmo."
+          ]
+        }
+      ]
     },
     "filter": {
       "title": "82-0 Filtros de Desafio — Teto, sem MVPs, uma franquia e mais",
@@ -789,31 +824,162 @@
         }
       },
       "chooseTeam": "Franquia",
-      "chooseDecade": "Década"
+      "chooseDecade": "Década",
+      "sections": [
+        {
+          "h2": "Por que jogar 82-0 com filtros?",
+          "paragraphs": [
+            "O 82-0 clássico te dá times e eras ao acaso para draftar. Os Filtros de Desafio te dão o controle: remodelam o elenco disponível e a dificuldade para uma tentativa mais dura e deliberada de temporada perfeita. Cada filtro também marca seu registro na classificação, então um 82-0 Sem MVPs se distingue de um com todos liberados."
+          ]
+        },
+        {
+          "h2": "Como jogar os Filtros de Desafio 82-0",
+          "paragraphs": [
+            "Escolha um filtro para remodelar o draft. Para Uma Franquia ou Uma Década, escolha primeiro o time ou a era. Depois jogue 82-0 como sempre: gire time e era, escolha um jogador para cada uma das cinco posições e simule a temporada.",
+            "Cada filtro muda quem você pode draftar e o quão difícil é uma temporada perfeita, e seu resultado é marcado por filtro na classificação global. Prefere um modo na própria página? Cada filtro tem uma página dedicada."
+          ]
+        },
+        {
+          "h2": "Cada filtro 82-0 explicado",
+          "paragraphs": [
+            "Teto Salarial: monte seu quinteto sob orçamento fixo, o modo mais estratégico. Sem MVPs: as lendas mais caras são vetadas, vença sem os ícones. Uma Franquia: drafte só do elenco histórico de um time. Uma Década: trave todo o draft em uma era. Era Aleatória: o jogo escolhe a década. Modo Difícil: uma curva de vitórias mais íngreme; até elencos recheados perdem mais."
+          ]
+        },
+        {
+          "h2": "Qual filtro 82-0 é o mais difícil?",
+          "paragraphs": [
+            "Modo Difícil e Teto Salarial são os testes mais duros de um verdadeiro 82-0. Uma Franquia e Uma Década são intermediários: seu teto depende do time ou da era escolhida. Iniciante? Jogue Clássico primeiro e adicione filtros um a um para aprender quais elencos sobrevivem a 82 jogos."
+          ]
+        }
+      ]
     },
     "noMvps": {
       "title": "82-0 Desafio Sem MVPs — Vença sem os maiores nomes",
       "description": "Encare o desafio 82-0 com os maiores nomes mais caros banidos. Monte um quinteto invicto com jogadores de função e estrelas subvalorizadas.",
       "h1": "82-0 Desafio Sem MVPs",
-      "intro": "O maior orgulho do basquete: fazer 82-0 sem uma única superestrela nível MVP. Os ~35 maiores nomes mais caros ficam de fora — vença com jogadores de função, operários e estrelas subvalorizadas."
+      "intro": "O maior orgulho do basquete: fazer 82-0 sem uma única superestrela nível MVP. Os ~35 maiores nomes mais caros ficam de fora — vença com jogadores de função, operários e estrelas subvalorizadas.",
+      "sections": [
+        {
+          "h2": "O que conta como MVP aqui?",
+          "paragraphs": [
+            "O modo Sem MVPs veta os ~35 jogadores mais caros do elenco: os grandes pontuadores e reboteiros de todos os tempos que o motor avalia mais alto. O resto está disponível, então você monta com jogadores muito bons em vez de lendas. É o mesmo draft por giros do 82-0, só que sem os botões fáceis."
+          ]
+        },
+        {
+          "h2": "Como jogar o 82-0 Sem MVPs",
+          "paragraphs": [
+            "Toque em Spin para girar time e era, e escolha um jogador para cada posição, igual ao 82-0 clássico. A única diferença é que os ~35 maiores nomes mais caros saem de todas as listas. Preencha as cinco vagas, simule a temporada de 82 jogos e envie seu retrospecto à classificação Sem MVPs."
+          ]
+        },
+        {
+          "h2": "Como fazer 82-0 sem superestrelas",
+          "paragraphs": [
+            "O equilíbrio vence. Sem pontuadores e reboteiros de elite te carregando, uma temporada perfeita exige um quinteto realmente equilibrado: sólido em pontos, rebotes, assistências, roubos e tocos ao mesmo tempo. A curva pune qualquer categoria fraca, então o truque é custo-benefício: defensores baratos, armadores eficientes e alas versáteis que tapam um buraco."
+          ]
+        },
+        {
+          "h2": "É possível 82-0 sem MVPs?",
+          "paragraphs": [
+            "Sim, mas é difícil. Sem pontuadores e reboteiros de elite, a temporada perfeita exige um quinteto realmente equilibrado, sólido em tudo. A curva pune um único ponto fraco, então a chave é o custo-benefício: defensores baratos, armadores eficientes, alas que tapam buracos. Conseguir um 82-0 sem MVPs é um dos maiores orgulhos da classificação."
+          ]
+        }
+      ]
     },
     "oneTeam": {
       "title": "82-0 Desafio Uma Franquia — Um time, todas as eras",
       "description": "Monte um quinteto invicto de 82-0 usando apenas o elenco histórico de uma franquia: Lakers, Celtics, Bulls, Spurs e mais.",
       "h1": "82-0 Desafio Uma Franquia",
-      "intro": "Modo lealdade. Faça o draft de todo o seu quinteto de 82-0 a partir do elenco histórico de uma única franquia — cada Laker, cada Celtic, cada Bull através das décadas. Seu time consegue ficar invicto sozinho?"
+      "intro": "Modo lealdade. Faça o draft de todo o seu quinteto de 82-0 a partir do elenco histórico de uma única franquia — cada Laker, cada Celtic, cada Bull através das décadas. Seu time consegue ficar invicto sozinho?",
+      "sections": [
+        {
+          "h2": "Como funciona o modo Uma Franquia",
+          "paragraphs": [
+            "Escolha uma franquia no menu e cada giro do draft fica travado nesse time, mas através de todas as eras de sua história: uma lenda dos anos 60 pode jogar ao lado de uma estrela moderna. Só franquias com profundidade histórica para preencher um quinteto equilibrado são oferecidas, então o draft nunca trava."
+          ]
+        },
+        {
+          "h2": "Como jogar o 82-0 Uma Franquia",
+          "paragraphs": [
+            "Escolha uma franquia no menu acima do jogo. A cada Spin, o time fica travado nessa franquia mas a era muda, então você drafta por toda a sua história. Escolha um jogador para cada uma das cinco posições, simule a temporada e veja se o talento histórico de um clube basta para ficar invicto. Troque de franquia quando quiser para uma nova run."
+          ]
+        },
+        {
+          "h2": "Qual franquia pode fazer 82-0?",
+          "paragraphs": [
+            "Os elencos mais profundos dão mais margem: Lakers, Celtics, Bulls, Spurs e Warriors conseguem montar um quinteto completo e equilibrado de sua história. Franquias jovens ou rasas são o verdadeiro teste: carregada numa posição, exposta em outra, e a curva acha o buraco."
+          ]
+        },
+        {
+          "h2": "As melhores franquias para fazer 82-0",
+          "paragraphs": [
+            "Os elencos mais profundos dão mais margem: Lakers, Celtics, Bulls, Spurs e Warriors montam um quinteto completo e equilibrado. Franquias jovens ou rasas são o teste real: carregada numa posição, exposta em outra, e a curva acha a brecha. Parte da graça é descobrir quais clubes carregam uma temporada perfeita sozinhos e quais ficam perto."
+          ]
+        }
+      ]
     },
     "oneDecade": {
       "title": "82-0 Desafio Uma Década — Uma era, uma temporada perfeita",
       "description": "Trave seu draft de 82-0 em uma única década da história do basquete — os anos 60, 80, 90, 2000 e além — e busque uma temporada invicta.",
       "h1": "82-0 Desafio Uma Década",
-      "intro": "Escolha uma era e viva nela. Todo o seu quinteto de 82-0 deve vir de uma década da história da NBA — os duros anos 90, o pace-and-space dos anos 2010, você decide. Qual década teve a artilharia para ficar invicta?"
+      "intro": "Escolha uma era e viva nela. Todo o seu quinteto de 82-0 deve vir de uma década da história da NBA — os duros anos 90, o pace-and-space dos anos 2010, você decide. Qual década teve a artilharia para ficar invicta?",
+      "sections": [
+        {
+          "h2": "Como funciona o modo Uma Década",
+          "paragraphs": [
+            "Escolha uma década e cada time que você girar virá dessa era, então todo o seu quinteto fica congelado num momento da história da NBA. O motor ajusta as estatísticas brutas pela era de cada jogador, então um título de cestinha dos anos 60 não vale o mesmo que um dos anos 90; a década que você fixar molda quem está disponível e como os números se traduzem."
+          ]
+        },
+        {
+          "h2": "Como jogar o 82-0 Uma Década",
+          "paragraphs": [
+            "Escolha uma década no menu acima do jogo. Cada time que você girar vem dessa era, então todo o seu quinteto fica congelado num momento da NBA. Escolha um jogador para cada posição, simule a temporada de 82 jogos e descubra qual década teve profundidade para ser perfeita. Troque a década quando quiser para tentar outra era."
+          ]
+        },
+        {
+          "h2": "Qual década da NBA foi a mais forte?",
+          "paragraphs": [
+            "Toda era tem um caminho, mas vencem de formas diferentes. Os anos 90 e 2000 transbordam alas de dois lados e pivôs dominantes; os anos 80 trazem criação e pontuação de elite; os anos 2010 e 2020 apostam no arremesso e na defesa intercambiável. Como o motor ajusta por era, a década fixada decide quem há e como os números se traduzem."
+          ]
+        },
+        {
+          "h2": "Qual década da NBA pode fazer 82-0?",
+          "paragraphs": [
+            "Toda era tem caminho, mas vencem diferente. Anos 90 e 2000: alas de dois lados e pivôs dominantes; anos 80: criação e pontuação de elite; anos 2010 e 2020: arremesso e defesa intercambiável. Como o motor ajusta por era, a década fixada decide quem há e a tradução. A mais forte costuma ser aquela cujas virtudes batem com o que a curva premia."
+          ]
+        }
+      ]
     },
     "hardMode": {
       "title": "82-0 Modo Difícil — O desafio de temporada perfeita mais duro",
       "description": "82-0 com uma curva de vitórias mais íngreme. Até um quinteto histórico recheado perde mais jogos — só os melhores elencos sobrevivem invictos.",
       "h1": "82-0 Modo Difícil",
-      "intro": "Para quem acha a temporada perfeita fácil demais. O Modo Difícil deixa a curva de vitórias mais íngreme e aperta a sorte do 82-0, então até um quinteto histórico recheado perde mais. Só os melhores sobrevivem."
+      "intro": "Para quem acha a temporada perfeita fácil demais. O Modo Difícil deixa a curva de vitórias mais íngreme e aperta a sorte do 82-0, então até um quinteto histórico recheado perde mais. Só os melhores sobrevivem.",
+      "sections": [
+        {
+          "h2": "O que muda no Modo Difícil",
+          "paragraphs": [
+            "O Modo Difícil mantém o mesmo elenco histórico mas torce a matemática contra você: a curva não linear ganha um expoente mais íngreme, então o mesmo elenco vence menos, e a porta para um verdadeiro 82-0 aperta. Um quinteto que faria 80-2 no jogo padrão pode parar em 76-6."
+          ]
+        },
+        {
+          "h2": "Como jogar o 82-0 Modo Difícil",
+          "paragraphs": [
+            "Joga-se exatamente como o 82-0 clássico — gire time e era, escolha um jogador para cada uma das cinco posições e simule a temporada — mas a matemática é mais dura. A curva é mais íngreme e a porta para um retrospecto perfeito mais estreita, então o mesmo elenco vence menos. Monte um quinteto sem categorias fracas e talvez sobreviva ao 82-0."
+          ]
+        },
+        {
+          "h2": "Dicas para sobreviver ao Modo Difícil",
+          "paragraphs": [
+            "Sem margem para uma categoria fraca. Maximize pontos, rebotes, assistências, roubos e tocos ao mesmo tempo: qualquer buraco afunda a curva mais que no padrão. Priorize jogadores de dois lados que somam na defesa e use os re-giros de time e era para caçar as peças que faltam ao seu quinteto."
+          ]
+        },
+        {
+          "h2": "É possível 82-0 no Modo Difícil?",
+          "paragraphs": [
+            "É, mas só para os melhores elencos. Um quinteto que faz 80-2 no padrão pode parar em 76-6 no Difícil, e a sorte para um 82-0 real ainda aperta. Não há espaço para uma categoria fraca: você precisa de produção de elite e equilibrada em tudo, mais um pouco de sorte. É por isso que um 82-0 no Modo Difícil é a temporada perfeita mais impressionante que dá para publicar."
+          ]
+        }
+      ]
     }
   },
   "cta": {
