@@ -16,10 +16,24 @@ export async function submitScore(payload) {
   return data; // { id, rank, total, todayRank, todayTotal, day }
 }
 
-export async function fetchTop(period = 'today') {
-  const res = await fetch(`${LB_API}/top?period=${period}`);
+export async function fetchTop(period = 'today', mode = 'all') {
+  const m = mode && mode !== 'all' ? `&mode=${encodeURIComponent(mode)}` : '';
+  const res = await fetch(`${LB_API}/top?period=${period}${m}`);
   if (!res.ok) throw new Error('fetch failed');
   return res.json(); // { period, day, entries }
+}
+
+// ---- result shares (the /share/<id> viral page) ----
+
+export async function createShare(payload) {
+  const res = await fetch(`${LB_API}/share`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || 'share failed');
+  return data; // { id }
 }
 
 // ---- localStorage: last submission (for highlighting yourself) ----

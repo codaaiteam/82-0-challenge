@@ -3,7 +3,6 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import QuestionFAQ from './Components/QuestionFAQ';
 import GameMain from './Components/Game/GameMain';
-import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
 import SeoSections from './Components/SeoSections';
 import RelatedLinks from './Components/RelatedLinks';
@@ -38,6 +37,7 @@ export default async function Home({ params }) {
         {/* Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
+            <span className={styles.heroKicker}>{t.header?.siteName || '82-0 Basketball Builder'}</span>
             <h1 className={styles.heroTitle}>{t.hero.title}</h1>
             <p className={styles.heroSubtitle}>{t.hero.subtitle}</p>
             <a href="#game" className={styles.heroCta}>{t.hero.cta}</a>
@@ -51,8 +51,9 @@ export default async function Home({ params }) {
           </GameWithSidebarAds>
         </section>
 
-        {/* Adsterra Native Banner */}
-        <AdsterraNativeBanner />
+        {/* Adsterra Native Banner — paused: its creatives triggered deceptive
+            "security alert" prompts. Re-enable only with a vetted ad source. */}
+        {/* <AdsterraNativeBanner /> */}
 
         {/* SEO content */}
         <SeoSections sections={t.homeSeo.sections} />

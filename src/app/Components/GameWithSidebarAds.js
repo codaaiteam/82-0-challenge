@@ -45,7 +45,10 @@ export default function GameWithSidebarAds({ children }) {
           </div>
         )}
       </div>
-      {screen === 'tablet' && (
+      {/* Non-desktop (tablet + mobile) gets a single clean 300×250 display banner
+          below the game — replaces the removed native banner that triggered the
+          deceptive "security alert" prompts. */}
+      {screen !== 'desktop' && (
         <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem 0' }}>
           <AdsterraBanner300x250 />
         </div>

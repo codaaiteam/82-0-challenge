@@ -18,29 +18,29 @@ export function downloadPoster({
 
   // background
   const bg = ctx.createLinearGradient(0, 0, 0, H);
-  bg.addColorStop(0, '#131a2b');
-  bg.addColorStop(1, '#0a0e1a');
+  bg.addColorStop(0, '#181b22');
+  bg.addColorStop(1, '#0c0d11');
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, W, H);
 
   // subtle top glow
   const glow = ctx.createRadialGradient(W / 2, 0, 0, W / 2, 0, 700);
-  glow.addColorStop(0, 'rgba(255,138,41,0.18)');
-  glow.addColorStop(1, 'rgba(255,138,41,0)');
+  glow.addColorStop(0, 'rgba(242, 100, 30,0.18)');
+  glow.addColorStop(1, 'rgba(242, 100, 30,0)');
   ctx.fillStyle = glow;
   ctx.fillRect(0, 0, W, 700);
 
   ctx.textAlign = 'center';
 
   // brand
-  ctx.fillStyle = '#ff8a29';
+  ctx.fillStyle = '#f2641e';
   ctx.font = '900 64px Inter, -apple-system, sans-serif';
   ctx.fillText(brand, W / 2, 130);
 
   // daily badge
   let y = 200;
   if (daily) {
-    ctx.fillStyle = '#9fb0d0';
+    ctx.fillStyle = '#a6adba';
     ctx.font = '700 34px Inter, -apple-system, sans-serif';
     ctx.fillText(daily.toUpperCase(), W / 2, y);
     y += 40;
@@ -48,8 +48,8 @@ export function downloadPoster({
 
   // record
   const recGrad = ctx.createLinearGradient(0, y + 40, 0, y + 260);
-  recGrad.addColorStop(0, '#ffd089');
-  recGrad.addColorStop(1, '#ff5e3a');
+  recGrad.addColorStop(0, '#ffd9b8');
+  recGrad.addColorStop(1, '#c24e12');
   ctx.fillStyle = recGrad;
   ctx.font = '900 230px Inter, -apple-system, sans-serif';
   ctx.fillText(record, W / 2, y + 240);
@@ -60,12 +60,12 @@ export function downloadPoster({
   ctx.fillText(`${grade}  ·  ${title}  ·  ${points} pts`, W / 2, y + 330);
 
   // lineup
-  const slotColors = ['#ff8a29', '#38bdf8', '#34d399', '#a78bfa', '#fb7185'];
+  const slotColors = ['#f2641e', '#f2641e', '#f2641e', '#f2641e', '#f2641e'];
   let ly = y + 430;
   ctx.textAlign = 'left';
   lineup.forEach((p, i) => {
     // chip
-    ctx.fillStyle = '#1a2236';
+    ctx.fillStyle = '#1b1e27';
     roundRect(ctx, 120, ly - 44, W - 240, 64, 14);
     ctx.fill();
     ctx.fillStyle = slotColors[i % slotColors.length];
@@ -74,7 +74,7 @@ export function downloadPoster({
     ctx.fillStyle = '#eef1f8';
     ctx.font = '700 32px Inter, -apple-system, sans-serif';
     ctx.fillText(p.name, 260, ly);
-    ctx.fillStyle = '#5d6c8d';
+    ctx.fillStyle = '#5f6675';
     ctx.font = '600 26px Inter, -apple-system, sans-serif';
     ctx.textAlign = 'right';
     ctx.fillText(p.sub, W - 150, ly);
@@ -84,7 +84,7 @@ export function downloadPoster({
 
   // footer url
   ctx.textAlign = 'center';
-  ctx.fillStyle = '#9fb0d0';
+  ctx.fillStyle = '#a6adba';
   ctx.font = '700 36px Inter, -apple-system, sans-serif';
   ctx.fillText(url, W / 2, H - 70);
 

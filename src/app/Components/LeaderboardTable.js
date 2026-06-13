@@ -11,6 +11,7 @@ export default function LeaderboardTable() {
   const lb = t?.lb || {};
   const prefix = currentLocale === 'en' ? '' : `/${currentLocale}`;
   const [period, setPeriod] = useState('today');
+  const [modeFilter, setModeFilter] = useState('all');
   const [data, setData] = useState(null);
   const [error, setError] = useState(false);
   const mine = typeof window !== 'undefined' ? loadSubmission() : null;
@@ -19,14 +20,36 @@ export default function LeaderboardTable() {
     let alive = true;
     setData(null);
     setError(false);
-    fetchTop(period)
+    fetchTop(period, modeFilter)
       .then(d => { if (alive) setData(d); })
       .catch(() => { if (alive) setError(true); });
     return () => { alive = false; };
-  }, [period]);
+  }, [period, modeFilter]);
 
   const modeLabel = (m) => (lb.modes && lb.modes[m]) || m;
   const styleLabel = (s) => (s && lb.styles && lb.styles[s]) || '';
+
+  // Per-variant filter tabs. "Classic" folds in the legacy main-game modes so
+  // historical rows aren't orphaned. Filtering is client-side over the fetched
+  // entries, then re-ranked within the variant.
+  const MODE_TABS = [
+    ['all', lb.filterAll || 'All'],
+    ['standard', modeLabel('standard')],
+    ['cap', modeLabel('cap')],
+    ['nomvps', modeLabel('nomvps')],
+    ['franchise', modeLabel('franchise')],
+    ['decade', modeLabel('decade')],
+    ['hard', modeLabel('hard')],
+  ];
+  const GROUP = {
+    standard: ['standard', 'classic', 'hoopiq'],
+    cap: ['cap'], nomvps: ['nomvps'], franchise: ['franchise'], decade: ['decade'], hard: ['hard'],
+  };
+  const entries = !data
+    ? []
+    : modeFilter === 'all'
+    ? data.entries
+    : data.entries.filter(e => (GROUP[modeFilter] || [modeFilter]).includes(e.mode));
 
   return (
     <div className={styles.wrap}>
@@ -51,23 +74,40 @@ export default function LeaderboardTable() {
         </button>
       </div>
 
+      {/* Per-variant filter */}
+      <div className={styles.modeFilter}>
+        {MODE_TABS.map(([key, label]) => (
+          <button
+            key={key}
+            className={`${styles.modeChip} ${modeFilter === key ? styles.modeChipActive : ''}`}
+            onClick={() => setModeFilter(key)}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
       {error && (
         <p className={styles.note}>{lb.offline || 'Leaderboard is taking a breather — try again in a minute.'}</p>
       )}
       {!data && !error && <p className={styles.note}>{lb.loading || 'Loading…'}</p>}
 
-      {data && data.entries.length === 0 && (
-        <p className={styles.note}>{lb.empty || 'No entries yet — be the first to submit a season.'}</p>
+      {data && entries.length === 0 && (
+        <p className={styles.note}>
+          {modeFilter === 'all'
+            ? (lb.empty || 'No entries yet — be the first to submit a season.')
+            : (lb.emptyMode || 'No entries in this mode yet — be the first.')}
+        </p>
       )}
 
-      {data && data.entries.length > 0 && (
+      {data && entries.length > 0 && (
         <div className={styles.table}>
           <div className={`${styles.row} ${styles.head}`}>
             <span>#</span>
             <span className={styles.name}>{lb.player || 'GM'}</span>
             <span className={styles.ratingHead}>{lb.rating || 'Team Rating'}</span>
           </div>
-          {data.entries.map((e, i) => {
+          {entries.map((e, i) => {
             const record = e.wins === 82 ? '82-0' : `${e.wins}-${e.losses}`;
             const metaBits = [e.star, modeLabel(e.mode), e.style ? styleLabel(e.style) : null].filter(Boolean);
             return (

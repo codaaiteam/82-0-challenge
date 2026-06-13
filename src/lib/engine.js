@@ -81,31 +81,85 @@ export function adjustedStats(player) {
   };
 }
 
-// ---- Draft helpers ----
+// ---- Salary Cap pricing ----
+// Cap Mode gives every player a price so a five must be built under a fixed
+// budget. Price derives from the same production score the engine uses to crown
+// the "best pick", normalized across the whole pool onto a 5–32 scale (a slight
+// <1 exponent keeps mid-tier players off the floor). CAP_BUDGET is generous
+// enough for 2–3 stars plus role players, never a five-superstar lineup — that
+// trade-off is the whole game.
+export const CAP_BUDGET = 100;
 
-export function playersFor(team, decade, pickedIds) {
+// Cap Mode gauntlet: the budget starts loose and tightens every time you clear
+// an 82-0. Each cleared level drops it by CAP_STEP down to CAP_FLOOR (below
+// which a five can't be afforded). A non-82-0 ends the run.
+export const CAP_GAUNTLET_START = 120;
+export const CAP_STEP = 10;
+export const CAP_FLOOR = 30;
+
+export function gauntletBudget(level) {
+  return Math.max(CAP_FLOOR, CAP_GAUNTLET_START - (level - 1) * CAP_STEP);
+}
+
+function productionScore(p) {
+  const a = adjustedStats(p);
+  return a.pts + a.reb * 1.1 + a.ast * 1.4 + a.stl * 4 + a.blk * 4;
+}
+
+const _scores = PLAYERS.map(productionScore);
+const _scoreMin = Math.min(..._scores);
+const _scoreMax = Math.max(..._scores);
+
+export const PRICE_BY_ID = Object.fromEntries(
+  PLAYERS.map(p => {
+    const norm = (productionScore(p) - _scoreMin) / (_scoreMax - _scoreMin);
+    return [p.id, Math.round(5 + 27 * Math.pow(norm, 0.85))];
+  })
+);
+
+export function priceOf(player) {
+  return PRICE_BY_ID[player.id] || 5;
+}
+
+// Cheapest / priciest price in the pool — bounds the Cap Mode price slider.
+export const MIN_PRICE = Math.min(...Object.values(PRICE_BY_ID));
+export const MAX_PRICE = Math.max(...Object.values(PRICE_BY_ID));
+
+// "MVP" tier — the priciest stars, excluded by the No MVPs filter. Top players
+// by production score; the price ≥ 24 cutoff lands ~30 all-time greats.
+export const MVP_IDS = new Set(
+  PLAYERS.filter(p => priceOf(p) >= 24).map(p => p.id)
+);
+
+// ---- Draft helpers ----
+// `filter` is an optional player predicate the Challenge Filters use to shrink
+// the draftable pool (one franchise, one decade, no MVPs …). It defaults to
+// "everyone", so the classic spin flow is unchanged.
+const ALL_PLAYERS = () => true;
+
+export function playersFor(team, decade, pickedIds, filter = ALL_PLAYERS) {
   return PLAYERS.filter(
-    p => p.team === team && p.decade === decade && !pickedIds.includes(p.id)
+    p => p.team === team && p.decade === decade && !pickedIds.includes(p.id) && filter(p)
   );
 }
 
 // A combo is draftable if at least one un-picked player fits an open slot.
-export function comboIsDraftable(combo, pickedIds, openSlots) {
-  return playersFor(combo.team, combo.decade, pickedIds).some(p =>
+export function comboIsDraftable(combo, pickedIds, openSlots, filter = ALL_PLAYERS) {
+  return playersFor(combo.team, combo.decade, pickedIds, filter).some(p =>
     p.positions.some(pos => openSlots.includes(pos))
   );
 }
 
-export function draftableCombos(pickedIds, openSlots, exclude) {
+export function draftableCombos(pickedIds, openSlots, exclude, filter = ALL_PLAYERS) {
   return COMBOS.filter(c => {
     if (exclude && c.team === exclude.team && c.decade === exclude.decade) return false;
-    return comboIsDraftable(c, pickedIds, openSlots);
+    return comboIsDraftable(c, pickedIds, openSlots, filter);
   });
 }
 
 // Random combo for a new round (or a full reroll).
-export function spinCombo(pickedIds, openSlots, exclude) {
-  const pool = draftableCombos(pickedIds, openSlots, exclude);
+export function spinCombo(pickedIds, openSlots, exclude, filter = ALL_PLAYERS) {
+  const pool = draftableCombos(pickedIds, openSlots, exclude, filter);
   return randomPick(pool.length ? pool : COMBOS);
 }
 
@@ -126,31 +180,37 @@ export function dailyCombos(rng, count = 5) {
 }
 
 // Team skip: new random team, same decade if possible.
-export function rerollTeam(current, pickedIds, openSlots) {
-  const sameDecade = draftableCombos(pickedIds, openSlots, current).filter(
+export function rerollTeam(current, pickedIds, openSlots, filter = ALL_PLAYERS) {
+  const sameDecade = draftableCombos(pickedIds, openSlots, current, filter).filter(
     c => c.decade === current.decade && c.team !== current.team
   );
   if (sameDecade.length) return randomPick(sameDecade);
-  return spinCombo(pickedIds, openSlots, current);
+  return spinCombo(pickedIds, openSlots, current, filter);
 }
 
 // Era skip: new random decade, same team if possible.
-export function rerollEra(current, pickedIds, openSlots) {
-  const sameTeam = draftableCombos(pickedIds, openSlots, current).filter(
+export function rerollEra(current, pickedIds, openSlots, filter = ALL_PLAYERS) {
+  const sameTeam = draftableCombos(pickedIds, openSlots, current, filter).filter(
     c => c.team === current.team && c.decade !== current.decade
   );
   if (sameTeam.length) return randomPick(sameTeam);
-  const otherDecade = draftableCombos(pickedIds, openSlots, current).filter(
+  const otherDecade = draftableCombos(pickedIds, openSlots, current, filter).filter(
     c => c.decade !== current.decade
   );
   if (otherDecade.length) return randomPick(otherDecade);
-  return spinCombo(pickedIds, openSlots, current);
+  return spinCombo(pickedIds, openSlots, current, filter);
 }
 
 // ---- Season simulation ----
 
-export function simulateSeason(lineup) {
-  // lineup: array of 5 players
+export function simulateSeason(lineup, opts = {}) {
+  // lineup: array of 5 players. opts:
+  //   difficulty — win-curve exponent multiplier (>1 = Hard Mode, fewer wins
+  //                for the same roster + a stingier 82-0 luck gate).
+  //   budgetLeft — unspent Cap Mode budget; rewards efficient builds with a
+  //                small team-rating bonus so two perfect seasons break the
+  //                tie in favor of the leaner cap sheet.
+  const difficulty = opts.difficulty || 1;
   const totals = { pts: 0, reb: 0, ast: 0, stl: 0, blk: 0 };
   lineup.forEach(p => {
     const a = adjustedStats(p);
@@ -181,8 +241,9 @@ export function simulateSeason(lineup) {
     (totals.stl / BENCH.stl) * 0.15 +
     (totals.blk / BENCH.blk) * 0.15;
 
-  // Non-linear curve: each additional win gets harder to earn.
-  let wins = Math.round(82 * Math.pow(S, 2.6)) + randomInt(-2, 2);
+  // Non-linear curve: each additional win gets harder to earn. Hard Mode
+  // steepens the exponent so even strong rosters drop a few more.
+  let wins = Math.round(82 * Math.pow(S, 2.6 * difficulty)) + randomInt(-2, 2);
 
   // Category gates — one glaring hole kills a perfect season.
   if (minRatio < 0.6) wins = Math.min(wins, 68);
@@ -191,9 +252,14 @@ export function simulateSeason(lineup) {
   wins = Math.max(8, Math.min(81, wins));
 
   // The threshold: maximize every category at once for a shot at 82-0.
-  if (S >= 0.96 && minRatio >= 0.85 && Math.random() > 0.35) wins = 82;
+  // Hard Mode tightens the luck gate (45% vs 65%).
+  const luckGate = difficulty > 1 ? 0.55 : 0.35;
+  if (S >= 0.96 && minRatio >= 0.85 && Math.random() > luckGate) wins = 82;
 
-  const points = Math.round(rawS * 1000) / 10; // uncapped team rating (can exceed 100)
+  // Uncapped team rating (can exceed 100). Cap Mode adds an efficiency bonus
+  // for budget left on the table.
+  let points = Math.round(rawS * 1000) / 10;
+  if (opts.budgetLeft > 0) points = Math.round((points + opts.budgetLeft * 0.3) * 10) / 10;
 
   // Grade stays on the capped 0–100 scale so the tiers keep their meaning.
   const gradePts = S * 100;
@@ -286,3 +352,32 @@ export function titleKey(wins) {
   if (wins >= 60) return 'contender';
   return 'playoff';
 }
+
+// ---- Challenge Filters (spin-flow variants) ----
+// Each filter reshapes the classic spin draft: it shrinks the draftable pool
+// and/or bends difficulty, then tags the leaderboard row. `pool(param)` returns
+// the player predicate threaded into the draft helpers above; `param` is the
+// chosen team (oneFranchise) or decade (oneDecade / randomEra), ignored
+// otherwise. `cap` flags the free-draft Salary Cap variant, which is driven by
+// the dedicated cap UI rather than the spin pool predicate.
+export const FILTERS = {
+  classic:      { lbTag: 'standard',  difficulty: 1,    param: null,     pool: () => ALL_PLAYERS },
+  cap:          { lbTag: 'cap',       difficulty: 1,    param: null,     cap: true, pool: () => ALL_PLAYERS },
+  noMvps:       { lbTag: 'nomvps',    difficulty: 1,    param: null,     pool: () => (p => !MVP_IDS.has(p.id)) },
+  oneFranchise: { lbTag: 'franchise', difficulty: 1,    param: 'team',   pool: (team) => (p => p.team === team) },
+  oneDecade:    { lbTag: 'decade',    difficulty: 1,    param: 'decade', pool: (d) => (p => p.decade === d) },
+  randomEra:    { lbTag: 'decade',    difficulty: 1,    param: 'decade', random: true, pool: (d) => (p => p.decade === d) },
+  hard:         { lbTag: 'hard',      difficulty: 1.15, param: null,     pool: () => ALL_PLAYERS },
+};
+
+export const FILTER_IDS = Object.keys(FILTERS);
+
+// Franchises whose all-time pool covers every position — One Franchise offers
+// only these so a single-team draft can always fill a balanced five.
+export const FRANCHISE_TEAMS = [...ALL_TEAMS]
+  .filter(team => {
+    const cover = new Set();
+    PLAYERS.filter(p => p.team === team).forEach(p => p.positions.forEach(pos => cover.add(pos)));
+    return POSITIONS.every(pos => cover.has(pos));
+  })
+  .sort();

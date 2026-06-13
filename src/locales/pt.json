@@ -6,12 +6,21 @@
   "seoDescription": "Jogue o viral desafio 82-0. Gire o caça-níquel, recrute lendas do basquete de times e épocas aleatórios e veja se o seu quinteto consegue ficar invicto.",
   "keywords": "82-0, desafio 82-0, jogo do desafio 82-0, jogo 82-0, montador de times 82-0, como jogar 82-0, regras do desafio 82-0, montador viral de times de basquete",
   "header": {
-    "siteName": "Desafio 82-0",
+    "siteName": "82-0 Basketball Builder",
     "home": "Início",
     "whatIs": "O que é 82-0?",
     "howToPlay": "Como jogar",
     "teamBuilder": "Montador de times",
-    "leaderboard": "Ranking"
+    "leaderboard": "Ranking",
+    "parentBrand": "X-0 Games",
+    "play": "Jogar 82-0",
+    "moreGames": "Mais jogos X-0",
+    "capMode": "82-0 Teto Salarial",
+    "challenges": "82-0 Desafio",
+    "navNoMvps": "Sem MVPs",
+    "navOneTeam": "Uma Franquia",
+    "navOneDecade": "Uma Década",
+    "navHardMode": "Modo Difícil"
   },
   "hero": {
     "title": "Desafio 82-0",
@@ -23,10 +32,10 @@
     "chooseModeSub": "Como você quer montar o seu time histórico?",
     "modeClassic": "Clássico",
     "modeClassicDesc": "As estatísticas completas de cada jogador ficam visíveis: escolha com base nos números.",
-    "modeHoopiq": "HoopIQ",
+    "modeHoopiq": "Draft às Cegas",
     "modeHoopiqDesc": "Estatísticas ocultas — recrute de memória e mostre o quanto você conhece o jogo.",
     "playClassic": "Jogar Clássico",
-    "playHoopiq": "Jogar HoopIQ",
+    "playHoopiq": "Jogar Draft às Cegas",
     "roundOf": "Rodada {round} de {total}",
     "team": "Time",
     "era": "Época",
@@ -148,6 +157,56 @@
       "closestWin": "😅 No sufoco — sobreviveram!",
       "closestLoss": "💔 Derrota no estouro do cronômetro",
       "finale": "🏁 Final da temporada"
+    },
+    "shareModal": {
+      "open": "Compartilhar",
+      "title": "Compartilhe seu quinteto",
+      "creating": "Criando link…",
+      "copyLink": "Copiar link",
+      "copied": "Copiado!"
+    },
+    "setup": {
+      "title": "Monte seu Quinteto",
+      "sub": "Defina seu estilo e faça o draft do seu time histórico.",
+      "playstyle": "Estilo",
+      "showStats": "Ver Estatísticas",
+      "statsOn": "Sim",
+      "statsOnDesc": "Estatísticas completas visíveis no draft",
+      "statsOff": "Não",
+      "statsOffDesc": "Draft às cegas — só no instinto",
+      "reveal": "Revelação da Temporada",
+      "revealWatch": "Assistir",
+      "revealWatchDesc": "Viva a temporada jogo a jogo",
+      "revealInstant": "Instantâneo",
+      "revealInstantDesc": "Direto ao recorde final",
+      "start": "Iniciar Draft →",
+      "blindTag": "Às cegas"
+    },
+    "cap": {
+      "budget": "Teto Salarial",
+      "left": "rest.",
+      "simulate": "Simular temporada →",
+      "fillFive": "Complete os cinco (faltam {n})",
+      "search": "Buscar jogadores…",
+      "drop": "Remover",
+      "noMatch": "Nenhum jogador corresponde — limpe a busca ou o filtro.",
+      "variants": {
+        "classic": "Clássico",
+        "cap": "Teto Salarial",
+        "noMvps": "Sem MVPs",
+        "oneFranchise": "Uma Franquia",
+        "oneDecade": "Uma Década",
+        "randomEra": "Era Aleatória",
+        "hard": "Modo Difícil"
+      },
+      "level": "Nível {n}",
+      "cleared": "Nível {n} concluído!",
+      "nextBudget": "Próximo: Nível {n}, só ${b} para gastar",
+      "maxedOut": "Você conquistou o orçamento mais apertado — lendário.",
+      "runOver": "Run encerrada",
+      "reached": "Você passou {n} nível(is) antes de o orçamento te quebrar.",
+      "nextLevel": "Próximo nível →",
+      "newRun": "Nova run"
     }
   },
   "homeSeo": {
@@ -186,7 +245,7 @@
           "Cuide das posições. Cada escolha precisa caber em um espaço livre da quadra que o jogador realmente ocupou. Recrutar cedo um ala na posição de ala pode deixar você sem lugar para um ala melhor depois: tenha em mente os espaços que restam antes de se comprometer.",
           "Conheça as épocas. Um pontuador de 25 pontos dos anos 2000 muitas vezes supera um de 30 pontos dos anos 60 após o ajuste por época. O motor desinfla discretamente os números inflados pelo ritmo das décadas mais antigas.",
           "Gaste as trocas cedo, não tarde. Se a primeira rodada te der um elenco fraco, troque na hora. Guardar as duas trocas para a quinta rodada geralmente significa desperdiçá-las.",
-          "Quer um desafio de verdade? Jogue no modo HoopIQ: as estatísticas ficam ocultas e você recruta inteiramente de memória. É a forma mais rápida de descobrir quem realmente conhece a história do basquete."
+          "Quer um desafio de verdade? Jogue no modo Draft às Cegas: as estatísticas ficam ocultas e você recruta inteiramente de memória. É a forma mais rápida de descobrir quem realmente conhece a história do basquete."
         ]
       },
       {
@@ -242,7 +301,7 @@
         {
           "h2": "Como o jogo 82-0 funciona aqui?",
           "paragraphs": [
-            "A nossa versão do jogo do desafio 82-0 roda inteiramente no seu navegador. Cinco rodadas, uma escolha por rodada, uma troca de time e uma troca de época. Cada jogador carrega a sua linha estatística histórica real — pontos, rebotes, assistências, roubos e tocos por jogo — ajustada por época pelo motor de simulação, porque 30 pontos nos anos 60 não são 30 pontos nos anos 2020. Quando o seu quinteto está completo, o motor passa os seus totais agregados por uma curva de vitórias não linear e projeta uma campanha final entre 0-82 e 82-0. Sem downloads, sem cadastro; e se você quiser um desafio de verdade, o modo HoopIQ oculta as estatísticas e te obriga a recrutar de memória."
+            "A nossa versão do jogo do desafio 82-0 roda inteiramente no seu navegador. Cinco rodadas, uma escolha por rodada, uma troca de time e uma troca de época. Cada jogador carrega a sua linha estatística histórica real — pontos, rebotes, assistências, roubos e tocos por jogo — ajustada por época pelo motor de simulação, porque 30 pontos nos anos 60 não são 30 pontos nos anos 2020. Quando o seu quinteto está completo, o motor passa os seus totais agregados por uma curva de vitórias não linear e projeta uma campanha final entre 0-82 e 82-0. Sem downloads, sem cadastro; e se você quiser um desafio de verdade, o modo Draft às Cegas oculta as estatísticas e te obriga a recrutar de memória."
           ]
         },
         {
@@ -265,7 +324,7 @@
         },
         {
           "title": "Escolha um jogador",
-          "desc": "Explore o elenco real daquele time e daquela época, com PPG, RPG, APG, SPG e BPG históricos. No modo HoopIQ as estatísticas ficam ocultas: recrute de memória."
+          "desc": "Explore o elenco real daquele time e daquela época, com PPG, RPG, APG, SPG e BPG históricos. No modo Draft às Cegas as estatísticas ficam ocultas: recrute de memória."
         },
         {
           "title": "Posicione-o na quadra",
@@ -291,7 +350,7 @@
         {
           "h2": "Regras do desafio 82-0 num relance",
           "paragraphs": [
-            "Cinco rodadas, uma escolha por rodada. O caça-níquel sorteia um time e uma década em cada rodada; as décadas podem se repetir. Uma troca de time e uma troca de época por partida. Cada escolha precisa preencher uma posição livre da quadra que o jogador realmente ocupou. A campanha projetada vem das estatísticas agregadas do seu quinteto ajustadas por época e passadas por uma curva de vitórias não linear, com limites de categoria que punem elencos unidimensionais. Dois modos: o Clássico mostra todas as estatísticas, o HoopIQ as oculta. Sem contas, sem downloads, sem custo: é só abrir a página e jogar."
+            "Cinco rodadas, uma escolha por rodada. O caça-níquel sorteia um time e uma década em cada rodada; as décadas podem se repetir. Uma troca de time e uma troca de época por partida. Cada escolha precisa preencher uma posição livre da quadra que o jogador realmente ocupou. A campanha projetada vem das estatísticas agregadas do seu quinteto ajustadas por época e passadas por uma curva de vitórias não linear, com limites de categoria que punem elencos unidimensionais. Dois modos: o Clássico mostra todas as estatísticas, o Draft às Cegas as oculta. Sem contas, sem downloads, sem custo: é só abrir a página e jogar."
           ]
         }
       ]
@@ -425,9 +484,9 @@
           ]
         },
         {
-          "h2": "Dica 5: Gerencie as posições (e teste o HoopIQ)",
+          "h2": "Dica 5: Gerencie as posições (e teste o Draft às Cegas)",
           "paragraphs": [
-            "Cada escolha precisa preencher uma posição livre que o jogador realmente ocupou. Um astro que você não consegue posicionar é um astro que você não consegue recrutar, então observe quais vagas ainda estão livres. Quando dominar o básico, mude para o modo HoopIQ — estatísticas ocultas, recrutando de memória — para o teste de verdade."
+            "Cada escolha precisa preencher uma posição livre que o jogador realmente ocupou. Um astro que você não consegue posicionar é um astro que você não consegue recrutar, então observe quais vagas ainda estão livres. Quando dominar o básico, mude para o modo Draft às Cegas — estatísticas ocultas, recrutando de memória — para o teste de verdade."
           ]
         }
       ]
@@ -463,9 +522,9 @@
           ]
         },
         {
-          "h2": "O mesmo jogo, novas variações: diário e HoopIQ",
+          "h2": "O mesmo jogo, novas variações: diário e Draft às Cegas",
           "paragraphs": [
-            "Já adora o próprio 82-0? Duas variações integradas o mantêm fresco. O desafio diário dá a todos os mesmos giros e uma tentativa — isca pura de ranking. O modo HoopIQ esconde todas as estatísticas para você recrutar só de memória, o jeito mais rápido de descobrir quem realmente conhece a história do basquete."
+            "Já adora o próprio 82-0? Duas variações integradas o mantêm fresco. O desafio diário dá a todos os mesmos giros e uma tentativa — isca pura de ranking. O modo Draft às Cegas esconde todas as estatísticas para você recrutar só de memória, o jeito mais rápido de descobrir quem realmente conhece a história do basquete."
           ]
         }
       ]
@@ -685,6 +744,76 @@
       "intro": "As melhores temporadas simuladas da NBA do mundo — de hoje e de todos os tempos. Monte seu quinteto inicial, projete uma temporada de 82 jogos e garanta seu lugar.",
       "title": "Ranking global 82-0 — Os melhores quintetos da NBA de hoje",
       "description": "O ranking global 82-0: as melhores temporadas simuladas da NBA de hoje e de todos os tempos. Monte seu quinteto, jogue 82 jogos e garanta seu lugar."
+    },
+    "capMode": {
+      "title": "82-0 Modo Teto Salarial — O jogo estratégico de draft da NBA",
+      "description": "Um 82-0 mais estratégico: monte um quinteto inicial da NBA sob um teto salarial fixo e busque uma temporada invicta de 82 jogos sem um supertime ilimitado.",
+      "h1": "82-0 Modo Teto Salarial",
+      "intro": "Um draft de 82-0 mais estratégico que virou gauntlet. Cada jogador tem um preço; você começa com um orçamento folgado e monta seu quinteto girando. Faça 82-0 e o orçamento aperta no próximo nível — até onde você desce antes de uma temporada perfeita ficar impagável?"
+    },
+    "filter": {
+      "title": "82-0 Filtros de Desafio — Teto, sem MVPs, uma franquia e mais",
+      "description": "Personalize seu desafio 82-0 com filtros de draft: teto salarial, sem MVPs, uma franquia, uma década, era aleatória e modo difícil.",
+      "h1": "82-0 Filtros de Desafio",
+      "intro": "Cansado do mesmo draft aleatório? Reformule seu desafio 82-0 com filtros de elenco — limite o orçamento, vete os MVPs, trave em uma franquia ou década, ou ligue o modo difícil.",
+      "play": "Jogar",
+      "changeFilter": "Trocar filtro",
+      "filters": {
+        "classic": {
+          "desc": "O draft original do 82-0 — todos os times e eras em jogo.",
+          "diff": "Fácil"
+        },
+        "cap": {
+          "desc": "Um gauntlet de orçamento: monte seu quinteto sob um teto que aperta a cada 82-0.",
+          "diff": "Difícil"
+        },
+        "noMvps": {
+          "desc": "Os maiores nomes mais caros ficam de fora. Vença sem os ícones.",
+          "diff": "Média"
+        },
+        "oneFranchise": {
+          "desc": "Draft apenas do elenco histórico de uma franquia.",
+          "diff": "Média"
+        },
+        "oneDecade": {
+          "desc": "Trave todo o draft em uma década da história da NBA.",
+          "diff": "Média"
+        },
+        "randomEra": {
+          "desc": "O jogo escolhe sua década ao acaso — adapte-se à era sorteada.",
+          "diff": "Média"
+        },
+        "hard": {
+          "desc": "Uma curva de vitórias mais íngreme. Até elencos recheados perdem mais.",
+          "diff": "Difícil"
+        }
+      },
+      "chooseTeam": "Franquia",
+      "chooseDecade": "Década"
+    },
+    "noMvps": {
+      "title": "82-0 Desafio Sem MVPs — Vença sem os maiores nomes",
+      "description": "Encare o desafio 82-0 com os maiores nomes mais caros banidos. Monte um quinteto invicto com jogadores de função e estrelas subvalorizadas.",
+      "h1": "82-0 Desafio Sem MVPs",
+      "intro": "O maior orgulho do basquete: fazer 82-0 sem uma única superestrela nível MVP. Os ~35 maiores nomes mais caros ficam de fora — vença com jogadores de função, operários e estrelas subvalorizadas."
+    },
+    "oneTeam": {
+      "title": "82-0 Desafio Uma Franquia — Um time, todas as eras",
+      "description": "Monte um quinteto invicto de 82-0 usando apenas o elenco histórico de uma franquia: Lakers, Celtics, Bulls, Spurs e mais.",
+      "h1": "82-0 Desafio Uma Franquia",
+      "intro": "Modo lealdade. Faça o draft de todo o seu quinteto de 82-0 a partir do elenco histórico de uma única franquia — cada Laker, cada Celtic, cada Bull através das décadas. Seu time consegue ficar invicto sozinho?"
+    },
+    "oneDecade": {
+      "title": "82-0 Desafio Uma Década — Uma era, uma temporada perfeita",
+      "description": "Trave seu draft de 82-0 em uma única década da história do basquete — os anos 60, 80, 90, 2000 e além — e busque uma temporada invicta.",
+      "h1": "82-0 Desafio Uma Década",
+      "intro": "Escolha uma era e viva nela. Todo o seu quinteto de 82-0 deve vir de uma década da história da NBA — os duros anos 90, o pace-and-space dos anos 2010, você decide. Qual década teve a artilharia para ficar invicta?"
+    },
+    "hardMode": {
+      "title": "82-0 Modo Difícil — O desafio de temporada perfeita mais duro",
+      "description": "82-0 com uma curva de vitórias mais íngreme. Até um quinteto histórico recheado perde mais jogos — só os melhores elencos sobrevivem invictos.",
+      "h1": "82-0 Modo Difícil",
+      "intro": "Para quem acha a temporada perfeita fácil demais. O Modo Difícil deixa a curva de vitórias mais íngreme e aperta a sorte do 82-0, então até um quinteto histórico recheado perde mais. Só os melhores sobrevivem."
     }
   },
   "cta": {
@@ -709,8 +838,8 @@
     "terms": "Termos de uso",
     "contact": "Contato",
     "community": "Entre na nossa comunidade do Telegram",
-    "disclaimer": "Desafio 82-0 é um projeto independente feito por fãs. Não é afiliado, endossado nem patrocinado pela NBA ou por qualquer liga ou time de basquete profissional. Os nomes dos jogadores e as estatísticas históricas são dados de domínio público usados apenas para fins informativos e de entretenimento. Não são usados logotipos, marcas registradas nem fotografias oficiais.",
-    "copyright": "© 2026 Desafio 82-0",
+    "disclaimer": "X-0 Games e o seu 82-0 Basketball Builder são projetos independentes feitos por fãs. Não são afiliados, endossados ou patrocinados por 82-0.com, PlayVault, a NBA ou qualquer liga ou equipe de basquete profissional.",
+    "copyright": "© 2026 X-0 Games",
     "related": "Guias relacionados",
     "leaderboard": "Ranking"
   },
@@ -799,8 +928,14 @@
     "cta": "Monte seu quinteto inicial e garanta seu lugar →",
     "modes": {
       "classic": "Clássico",
-      "hoopiq": "HoopIQ",
-      "daily": "Diário"
+      "hoopiq": "Draft às Cegas",
+      "daily": "Diário",
+      "standard": "Padrão",
+      "cap": "Teto",
+      "nomvps": "Sem MVPs",
+      "franchise": "Franquia",
+      "decade": "Década",
+      "hard": "Difícil"
     },
     "styles": {
       "balanced": "Equilibrado",
@@ -810,6 +945,13 @@
     },
     "rating": "Avaliação",
     "ratingUnit": "RTG",
-    "weekly": "Esta semana"
+    "weekly": "Esta semana",
+    "filterAll": "Todos",
+    "emptyMode": "Ainda não há registros neste modo — seja o primeiro."
+  },
+  "sharePage": {
+    "kicker": "Resultado compartilhado",
+    "challenge": "Acha que consegue montar um quinteto melhor?",
+    "play": "Jogue o 82-0 Challenge →"
   }
 }

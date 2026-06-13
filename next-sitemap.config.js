@@ -4,6 +4,12 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.82-0-challenge.
 
 const contentPages = [
   '/82-0',
+  '/82-0-cap-mode',
+  '/82-0-filter',
+  '/82-0-no-mvps',
+  '/82-0-one-team',
+  '/82-0-one-decade',
+  '/82-0-hard-mode',
   '/how-to-play',
   '/unblocked',
   '/how-its-calculated',

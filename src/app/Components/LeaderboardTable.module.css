@@ -11,9 +11,9 @@
 }
 
 .tab {
-  background: #1a2236;
-  border: 1px solid #2b3550;
-  color: #9fb0d0;
+  background: #1b1e27;
+  border: 1px solid #2c313d;
+  color: #a6adba;
   font-weight: 800;
   font-size: 0.85rem;
   padding: 0.5rem 1.4rem;
@@ -24,20 +24,20 @@
 }
 
 .tabActive {
-  background: linear-gradient(135deg, #ff8a29, #ff5e3a);
+  background: linear-gradient(135deg, #f2641e, #c24e12);
   border-color: transparent;
   color: #fff;
 }
 
 .note {
   text-align: center;
-  color: #9fb0d0;
+  color: #a6adba;
   padding: 2rem 0;
 }
 
 .table {
-  background: #131a2b;
-  border: 1px solid #2b3550;
+  background: #181b22;
+  border: 1px solid #2c313d;
   border-radius: 14px;
   overflow: hidden;
 }
@@ -59,18 +59,18 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #9fb0d0;
-  background: #1a2236;
+  color: #a6adba;
+  background: #1b1e27;
 }
 
-.podium { background: rgba(255, 138, 41, 0.04); }
+.podium { background: rgba(242, 100, 30, 0.04); }
 
 .me {
   background: rgba(52, 211, 153, 0.1);
   border-left: 3px solid #34d399;
 }
 
-.rank { font-weight: 800; color: #9fb0d0; font-variant-numeric: tabular-nums; }
+.rank { font-weight: 800; color: #a6adba; font-variant-numeric: tabular-nums; }
 
 .nameCol {
   display: flex;
@@ -102,19 +102,19 @@
 .metaLine {
   font-size: 0.73rem;
   font-weight: 600;
-  color: #5d6c8d;
+  color: #5f6675;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.recordBit { font-weight: 800; color: #9fb0d0; font-variant-numeric: tabular-nums; }
+.recordBit { font-weight: 800; color: #a6adba; font-variant-numeric: tabular-nums; }
 
 .perfectTag { font-style: normal; color: #ffce6e; margin-left: 0.15rem; }
 
 .gradeBit { color: #6ee7b7; font-weight: 800; margin-left: 0.35rem; }
 
-.metaRest { color: #5d6c8d; }
+.metaRest { color: #5f6675; }
 
 /* Team rating — the primary ranking metric, shown prominently. */
 .ratingHead { text-align: right; }
@@ -136,7 +136,7 @@
   font-size: 0.52rem;
   font-weight: 800;
   letter-spacing: 0.08em;
-  color: #5d6c8d;
+  color: #5f6675;
   margin-top: 2px;
 }
 
@@ -146,7 +146,7 @@
 }
 
 .cta a {
-  color: #ff8a29;
+  color: #f2641e;
   font-weight: 800;
   text-decoration: none;
 }
@@ -156,4 +156,34 @@
 @media (max-width: 640px) {
   .row { grid-template-columns: 32px 1fr auto; padding: 0.6rem 0.7rem; }
   .ratingCell { font-size: 1.05rem; }
+}
+
+/* Per-variant filter chips (second row under the period tabs) */
+.modeFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.modeChip {
+  background: #1b1e27;
+  border: 1px solid #2c313d;
+  color: #a6adba;
+  font-weight: 700;
+  font-size: 0.74rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.modeChip:hover { border-color: #f2641e; color: #f2641e; }
+
+.modeChipActive {
+  background: rgba(242, 100, 30, 0.14);
+  border-color: #f2641e;
+  color: #f2641e;
 }

@@ -6,12 +6,21 @@
   "seoDescription": "Jouez au défi 82-0 viral. Lancez la machine à sous, draftez des légendes du basket issues d'équipes et d'époques aléatoires, et voyez si votre cinq peut rester invaincu.",
   "keywords": "82-0, défi 82-0, jeu défi 82-0, jeu 82-0, créateur d'équipe 82-0, comment jouer au 82-0, règles du défi 82-0, créateur d'équipe de basket viral",
   "header": {
-    "siteName": "Défi 82-0",
+    "siteName": "82-0 Basketball Builder",
     "home": "Accueil",
     "whatIs": "C'est quoi le 82-0 ?",
     "howToPlay": "Comment jouer",
     "teamBuilder": "Créateur d'équipe",
-    "leaderboard": "Classement"
+    "leaderboard": "Classement",
+    "parentBrand": "X-0 Games",
+    "play": "Jouer au 82-0",
+    "moreGames": "Plus de jeux X-0",
+    "capMode": "82-0 Plafond Salarial",
+    "challenges": "82-0 Défi",
+    "navNoMvps": "Sans MVP",
+    "navOneTeam": "Une Franchise",
+    "navOneDecade": "Une Décennie",
+    "navHardMode": "Mode Difficile"
   },
   "hero": {
     "title": "Défi 82-0",
@@ -23,10 +32,10 @@
     "chooseModeSub": "Comment voulez-vous bâtir votre équipe de tous les temps ?",
     "modeClassic": "Classique",
     "modeClassicDesc": "Toutes les statistiques des joueurs sont visibles — faites des choix éclairés à partir des chiffres.",
-    "modeHoopiq": "HoopIQ",
+    "modeHoopiq": "Draft à l'Aveugle",
     "modeHoopiqDesc": "Stats cachées : recrutez de mémoire et montrez à quel point vous connaissez le jeu.",
     "playClassic": "Jouer en Classique",
-    "playHoopiq": "Jouer en HoopIQ",
+    "playHoopiq": "Jouer en Draft à l'Aveugle",
     "roundOf": "Tour {round} sur {total}",
     "team": "Équipe",
     "era": "Époque",
@@ -148,6 +157,56 @@
       "closestWin": "😅 Au bout du suspense — sauvés !",
       "closestLoss": "💔 Défaite au buzzer",
       "finale": "🏁 Finale de la saison"
+    },
+    "shareModal": {
+      "open": "Partager",
+      "title": "Partage ton cinq",
+      "creating": "Création du lien…",
+      "copyLink": "Copier le lien",
+      "copied": "Copié !"
+    },
+    "setup": {
+      "title": "Compose ton Cinq",
+      "sub": "Choisis ton style, puis drafte ton équipe de légende.",
+      "playstyle": "Style",
+      "showStats": "Voir les Stats",
+      "statsOn": "Oui",
+      "statsOnDesc": "Toutes les stats visibles pendant le draft",
+      "statsOff": "Non",
+      "statsOffDesc": "Draft à l'aveugle — à l'instinct",
+      "reveal": "Révélation de Saison",
+      "revealWatch": "Regarder",
+      "revealWatchDesc": "Vis la saison match par match",
+      "revealInstant": "Instantané",
+      "revealInstantDesc": "Direct au bilan final",
+      "start": "Lancer le Draft →",
+      "blindTag": "Aveugle"
+    },
+    "cap": {
+      "budget": "Plafond Salarial",
+      "left": "rest.",
+      "simulate": "Simuler la saison →",
+      "fillFive": "Complétez les cinq ({n} restant)",
+      "search": "Rechercher des joueurs…",
+      "drop": "Retirer",
+      "noMatch": "Aucun joueur ne correspond : effacez la recherche ou le filtre.",
+      "variants": {
+        "classic": "Classique",
+        "cap": "Plafond Salarial",
+        "noMvps": "Sans MVP",
+        "oneFranchise": "Une Franchise",
+        "oneDecade": "Une Décennie",
+        "randomEra": "Ère Aléatoire",
+        "hard": "Mode Difficile"
+      },
+      "level": "Niveau {n}",
+      "cleared": "Niveau {n} réussi !",
+      "nextBudget": "Suivant : Niveau {n}, seulement ${b} à dépenser",
+      "maxedOut": "Vous avez conquis le budget le plus serré — légendaire.",
+      "runOver": "Partie terminée",
+      "reached": "Vous avez passé {n} niveau(x) avant que le budget ne vous brise.",
+      "nextLevel": "Niveau suivant →",
+      "newRun": "Nouvelle partie"
     }
   },
   "homeSeo": {
@@ -186,7 +245,7 @@
           "Pensez à vos positions. Chaque choix doit correspondre à une place libre du terrain que le joueur occupait réellement. Drafter un ailier tôt en ailier petit format peut vous priver d'un meilleur ailier plus tard — gardez vos places restantes en tête avant de vous engager.",
           "Connaissez vos époques. Un scoreur à 25 points des années 2000 bat souvent un scoreur à 30 points des années 1960 après ajustement à l'époque. Les chiffres gonflés par le rythme des décennies anciennes sont discrètement dégonflés par le moteur.",
           "Dépensez vos sauts tôt, pas tard. Si le premier tour vous donne un effectif maigre, sautez immédiatement. Garder les deux sauts pour le cinquième tour revient généralement à les gaspiller.",
-          "Vous voulez un vrai test ? Jouez en mode HoopIQ — les stats sont masquées et vous draftez entièrement de mémoire. C'est le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
+          "Vous voulez un vrai test ? Jouez en mode Draft à l'Aveugle — les stats sont masquées et vous draftez entièrement de mémoire. C'est le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
         ]
       },
       {
@@ -242,7 +301,7 @@
         {
           "h2": "Comment fonctionne le jeu 82-0 ici ?",
           "paragraphs": [
-            "Notre version du jeu du défi 82-0 tourne entièrement dans votre navigateur. Cinq tours, un choix par tour, un saut d'équipe et un saut d'époque. Chaque joueur porte sa vraie ligne de stats historique — points, rebonds, passes décisives, interceptions et contres par match — ajustée à l'époque par le moteur de simulation, car 30 points dans les années 1960, ce n'est pas 30 points dans les années 2020. Une fois votre cinq complet, le moteur fait passer vos totaux cumulés dans une courbe de victoires non linéaire et projette un bilan final compris entre 0-82 et 82-0. Aucun téléchargement, aucune inscription — et si vous voulez un vrai test, le mode HoopIQ masque les stats et vous oblige à drafter de mémoire."
+            "Notre version du jeu du défi 82-0 tourne entièrement dans votre navigateur. Cinq tours, un choix par tour, un saut d'équipe et un saut d'époque. Chaque joueur porte sa vraie ligne de stats historique — points, rebonds, passes décisives, interceptions et contres par match — ajustée à l'époque par le moteur de simulation, car 30 points dans les années 1960, ce n'est pas 30 points dans les années 2020. Une fois votre cinq complet, le moteur fait passer vos totaux cumulés dans une courbe de victoires non linéaire et projette un bilan final compris entre 0-82 et 82-0. Aucun téléchargement, aucune inscription — et si vous voulez un vrai test, le mode Draft à l'Aveugle masque les stats et vous oblige à drafter de mémoire."
           ]
         },
         {
@@ -265,7 +324,7 @@
         },
         {
           "title": "Choisissez un joueur",
-          "desc": "Parcourez le vrai effectif de cette équipe et de cette époque, avec les PPG, RPG, APG, SPG et BPG historiques. En mode HoopIQ, les stats sont masquées — draftez de mémoire."
+          "desc": "Parcourez le vrai effectif de cette équipe et de cette époque, avec les PPG, RPG, APG, SPG et BPG historiques. En mode Draft à l'Aveugle, les stats sont masquées — draftez de mémoire."
         },
         {
           "title": "Placez-le sur le terrain",
@@ -291,7 +350,7 @@
         {
           "h2": "Les règles du défi 82-0 en un coup d'œil",
           "paragraphs": [
-            "Cinq tours, un choix par tour. La machine à sous attribue une équipe et une décennie aléatoires à chaque tour ; les décennies peuvent se répéter. Un saut d'équipe et un saut d'époque par partie. Chaque choix doit occuper une position libre du terrain que le joueur occupait réellement. Le bilan projeté découle des stats cumulées de votre cinq, ajustées à l'époque et passées dans une courbe de victoires non linéaire, avec des verrous de catégorie qui punissent les effectifs unidimensionnels. Deux modes : Classique montre toutes les stats, HoopIQ les masque. Aucun compte, aucun téléchargement, aucun coût — il suffit d'ouvrir la page et de jouer."
+            "Cinq tours, un choix par tour. La machine à sous attribue une équipe et une décennie aléatoires à chaque tour ; les décennies peuvent se répéter. Un saut d'équipe et un saut d'époque par partie. Chaque choix doit occuper une position libre du terrain que le joueur occupait réellement. Le bilan projeté découle des stats cumulées de votre cinq, ajustées à l'époque et passées dans une courbe de victoires non linéaire, avec des verrous de catégorie qui punissent les effectifs unidimensionnels. Deux modes : Classique montre toutes les stats, Draft à l'Aveugle les masque. Aucun compte, aucun téléchargement, aucun coût — il suffit d'ouvrir la page et de jouer."
           ]
         }
       ]
@@ -425,9 +484,9 @@
           ]
         },
         {
-          "h2": "Conseil 5 : Gérez les postes (et essayez HoopIQ)",
+          "h2": "Conseil 5 : Gérez les postes (et essayez Draft à l'Aveugle)",
           "paragraphs": [
-            "Chaque choix doit combler un poste libre que le joueur a réellement occupé. Une superstar que vous ne pouvez pas placer est une superstar que vous ne pouvez pas recruter, alors surveillez les postes encore libres. Une fois les bases maîtrisées, passez au mode HoopIQ — stats cachées, recrutement de mémoire — pour le vrai test."
+            "Chaque choix doit combler un poste libre que le joueur a réellement occupé. Une superstar que vous ne pouvez pas placer est une superstar que vous ne pouvez pas recruter, alors surveillez les postes encore libres. Une fois les bases maîtrisées, passez au mode Draft à l'Aveugle — stats cachées, recrutement de mémoire — pour le vrai test."
           ]
         }
       ]
@@ -463,9 +522,9 @@
           ]
         },
         {
-          "h2": "Le même jeu, de nouvelles variantes : quotidien et HoopIQ",
+          "h2": "Le même jeu, de nouvelles variantes : quotidien et Draft à l'Aveugle",
           "paragraphs": [
-            "Vous adorez déjà le 82-0 lui-même ? Deux variantes intégrées le gardent frais. Le défi quotidien donne à tous les mêmes tirages et un seul essai : pur appât à classement. Le mode HoopIQ cache toutes les stats pour que vous recrutiez de mémoire seule, le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
+            "Vous adorez déjà le 82-0 lui-même ? Deux variantes intégrées le gardent frais. Le défi quotidien donne à tous les mêmes tirages et un seul essai : pur appât à classement. Le mode Draft à l'Aveugle cache toutes les stats pour que vous recrutiez de mémoire seule, le moyen le plus rapide de découvrir qui connaît vraiment l'histoire du basket."
           ]
         }
       ]
@@ -685,6 +744,76 @@
       "intro": "Les meilleures saisons NBA simulées au monde — du jour et de tous les temps. Composez votre cinq de départ, projetez une saison de 82 matchs et décrochez votre place.",
       "title": "Classement mondial 82-0 — Les meilleurs cinq NBA du jour",
       "description": "Le classement mondial 82-0 : les meilleures saisons NBA simulées du jour et de tous les temps. Composez votre cinq, jouez 82 matchs et décrochez une place."
+    },
+    "capMode": {
+      "title": "82-0 Mode Plafond Salarial — Le jeu de draft NBA stratégique",
+      "description": "Un 82-0 plus stratégique : composez un cinq majeur NBA sous un plafond salarial fixe et visez une saison invaincue de 82 matchs sans superteam illimitée.",
+      "h1": "82-0 Mode Plafond Salarial",
+      "intro": "Un draft 82-0 plus stratégique transformé en gauntlet. Chaque joueur a un prix ; vous démarrez avec un budget large et composez votre cinq en tournant. Réussissez le 82-0 et le budget se resserre au niveau suivant — jusqu'où descendrez-vous avant qu'une saison parfaite devienne inabordable ?"
+    },
+    "filter": {
+      "title": "82-0 Filtres de Défi — Plafond, sans MVP, une franchise et plus",
+      "description": "Personnalisez votre défi 82-0 avec des filtres de draft : plafond salarial, sans MVP, une franchise, une décennie, ère aléatoire et mode difficile.",
+      "h1": "82-0 Filtres de Défi",
+      "intro": "Lassé du même draft aléatoire ? Remaniez votre défi 82-0 avec des filtres d'effectif — plafonnez le budget, bannissez les MVP, verrouillez une franchise ou une décennie, ou passez en mode difficile.",
+      "play": "Jouer",
+      "changeFilter": "Changer de filtre",
+      "filters": {
+        "classic": {
+          "desc": "Le draft original 82-0 : toutes les équipes et ères en jeu.",
+          "diff": "Facile"
+        },
+        "cap": {
+          "desc": "Un gauntlet de budget : composez votre cinq sous un plafond qui se resserre à chaque 82-0.",
+          "diff": "Difficile"
+        },
+        "noMvps": {
+          "desc": "Les plus chers des légendes sont écartés. Gagnez sans les icônes.",
+          "diff": "Moyen"
+        },
+        "oneFranchise": {
+          "desc": "Draftez uniquement dans l'effectif historique d'une franchise.",
+          "diff": "Moyen"
+        },
+        "oneDecade": {
+          "desc": "Verrouillez tout le draft sur une décennie de l'histoire NBA.",
+          "diff": "Moyen"
+        },
+        "randomEra": {
+          "desc": "Le jeu choisit votre décennie au hasard : adaptez-vous à l'ère tirée.",
+          "diff": "Moyen"
+        },
+        "hard": {
+          "desc": "Une courbe de victoires plus raide. Même les effectifs chargés perdent plus.",
+          "diff": "Difficile"
+        }
+      },
+      "chooseTeam": "Franchise",
+      "chooseDecade": "Décennie"
+    },
+    "noMvps": {
+      "title": "82-0 Défi Sans MVP — Gagner sans les légendes",
+      "description": "Relevez le défi 82-0 avec les plus chères légendes bannies. Composez un cinq invaincu avec des role players et des stars sous-cotées.",
+      "h1": "82-0 Défi Sans MVP",
+      "intro": "La plus grande fierté du basket : faire 82-0 sans une seule superstar de niveau MVP. Les ~35 légendes les plus chères sont écartées — gagnez avec des role players, des soldats de l'ombre et des stars sous-cotées."
+    },
+    "oneTeam": {
+      "title": "82-0 Défi Une Franchise — Une équipe, toutes les ères",
+      "description": "Composez un cinq invaincu de 82-0 en n'utilisant que l'effectif historique d'une franchise : Lakers, Celtics, Bulls, Spurs et plus.",
+      "h1": "82-0 Défi Une Franchise",
+      "intro": "Mode loyauté. Draftez tout votre cinq de 82-0 dans l'effectif historique d'une seule franchise : chaque Laker, chaque Celtic, chaque Bull à travers les décennies. Votre équipe peut-elle rester invaincue seule ?"
+    },
+    "oneDecade": {
+      "title": "82-0 Défi Une Décennie — Une ère, une saison parfaite",
+      "description": "Verrouillez votre draft 82-0 sur une seule décennie de l'histoire du basket — les 60, 80, 90, 2000 et plus — et visez une saison invaincue.",
+      "h1": "82-0 Défi Une Décennie",
+      "intro": "Choisissez une ère et vivez-y. Tout votre cinq de 82-0 doit venir d'une décennie de l'histoire NBA : les rudes années 90, le pace-and-space des années 2010, à vous de voir. Quelle décennie avait la puissance de feu pour rester invaincue ?"
+    },
+    "hardMode": {
+      "title": "82-0 Mode Difficile — Le défi de saison parfaite le plus dur",
+      "description": "82-0 avec une courbe de victoires plus raide. Même un cinq historique chargé perd quelques matchs de plus — seuls les meilleurs effectifs restent invaincus.",
+      "h1": "82-0 Mode Difficile",
+      "intro": "Pour ceux qui trouvent la saison parfaite trop facile. Le Mode Difficile raidit la courbe de victoires et resserre le hasard du 82-0 : même un cinq historique chargé perd davantage. Seuls les meilleurs survivent."
     }
   },
   "cta": {
@@ -709,8 +838,8 @@
     "terms": "Conditions d'utilisation",
     "contact": "Contact",
     "community": "Rejoignez notre communauté Telegram",
-    "disclaimer": "Le Défi 82-0 est un projet indépendant créé par des fans. Il n'est ni affilié à la NBA ou à une quelconque ligue ou équipe de basket professionnel, ni approuvé ou sponsorisé par celles-ci. Les noms des joueurs et les statistiques historiques sont des faits accessibles au public, utilisés à des fins d'information et de divertissement uniquement. Aucun logo, marque ou photographie officiels ne sont utilisés.",
-    "copyright": "© 2026 Défi 82-0",
+    "disclaimer": "X-0 Games et son 82-0 Basketball Builder sont des projets indépendants réalisés par des fans. Ils ne sont ni affiliés, ni approuvés, ni sponsorisés par 82-0.com, PlayVault, la NBA ou toute autre ligue ou équipe de basketball professionnelle.",
+    "copyright": "© 2026 X-0 Games",
     "related": "Guides connexes",
     "leaderboard": "Classement"
   },
@@ -799,8 +928,14 @@
     "cta": "Composez votre cinq de départ et décrochez une place →",
     "modes": {
       "classic": "Classique",
-      "hoopiq": "HoopIQ",
-      "daily": "Quotidien"
+      "hoopiq": "Draft à l'Aveugle",
+      "daily": "Quotidien",
+      "standard": "Standard",
+      "cap": "Plafond",
+      "nomvps": "Sans MVP",
+      "franchise": "Franchise",
+      "decade": "Décennie",
+      "hard": "Difficile"
     },
     "styles": {
       "balanced": "Équilibré",
@@ -810,6 +945,13 @@
     },
     "rating": "Note d'équipe",
     "ratingUnit": "RTG",
-    "weekly": "Cette semaine"
+    "weekly": "Cette semaine",
+    "filterAll": "Tous",
+    "emptyMode": "Aucune entrée dans ce mode pour l'instant — soyez le premier."
+  },
+  "sharePage": {
+    "kicker": "Résultat partagé",
+    "challenge": "Tu penses pouvoir faire un meilleur cinq ?",
+    "play": "Joue au 82-0 Challenge →"
   }
 }

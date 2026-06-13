@@ -6,12 +6,21 @@
   "seoDescription": "Spiele die virale 82-0 Challenge. Dreh den Slot Machine, drafte Basketball-Legenden aus zufälligen Teams und Epochen und finde heraus, ob dein Lineup ungeschlagen bleibt.",
   "keywords": "82-0, 82-0 Challenge, 82-0 Challenge Game, 82-0 Game, 82-0 Team Builder, wie spielt man 82-0, 82-0 Challenge Regeln, virales Basketball Team Builder",
   "header": {
-    "siteName": "82-0 Challenge",
+    "siteName": "82-0 Basketball Builder",
     "home": "Start",
     "whatIs": "Was ist 82-0?",
     "howToPlay": "So wird gespielt",
     "teamBuilder": "Team Builder",
-    "leaderboard": "Rangliste"
+    "leaderboard": "Rangliste",
+    "parentBrand": "X-0 Games",
+    "play": "82-0 spielen",
+    "moreGames": "Mehr X-0-Spiele",
+    "capMode": "82-0 Salary Cap",
+    "challenges": "82-0 Challenge",
+    "navNoMvps": "Ohne MVPs",
+    "navOneTeam": "Ein Franchise",
+    "navOneDecade": "Ein Jahrzehnt",
+    "navHardMode": "Hard Mode"
   },
   "hero": {
     "title": "82-0 Challenge",
@@ -23,10 +32,10 @@
     "chooseModeSub": "Wie willst du dein All-Time-Team bauen?",
     "modeClassic": "Classic",
     "modeClassicDesc": "Alle Spielerstats sind sichtbar — triff fundierte Entscheidungen anhand der Zahlen.",
-    "modeHoopiq": "HoopIQ",
+    "modeHoopiq": "Blind-Draft",
     "modeHoopiqDesc": "Statistiken verborgen — drafte aus dem Gedächtnis und zeig, wie gut du das Spiel kennst.",
     "playClassic": "Classic spielen",
-    "playHoopiq": "HoopIQ spielen",
+    "playHoopiq": "Blind-Draft spielen",
     "roundOf": "Runde {round} von {total}",
     "team": "Team",
     "era": "Epoche",
@@ -148,6 +157,56 @@
       "closestWin": "😅 Zitterpartie — überstanden!",
       "closestLoss": "💔 Niederlage mit der Schlusssirene",
       "finale": "🏁 Saisonfinale"
+    },
+    "shareModal": {
+      "open": "Teilen",
+      "title": "Teile deine Fünf",
+      "creating": "Link wird erstellt…",
+      "copyLink": "Link kopieren",
+      "copied": "Kopiert!"
+    },
+    "setup": {
+      "title": "Stell deine Fünf auf",
+      "sub": "Wähle deinen Stil, dann drafte dein Allzeit-Team.",
+      "playstyle": "Spielstil",
+      "showStats": "Werte zeigen",
+      "statsOn": "An",
+      "statsOnDesc": "Alle Statistiken beim Draften sichtbar",
+      "statsOff": "Aus",
+      "statsOffDesc": "Blind draften — nur dein Instinkt",
+      "reveal": "Saison-Anzeige",
+      "revealWatch": "Ansehen",
+      "revealWatchDesc": "Erlebe die Saison Spiel für Spiel",
+      "revealInstant": "Sofort",
+      "revealInstantDesc": "Direkt zur Endbilanz",
+      "start": "Draft starten →",
+      "blindTag": "Blind"
+    },
+    "cap": {
+      "budget": "Salary Cap",
+      "left": "übrig",
+      "simulate": "Saison simulieren →",
+      "fillFive": "Alle fünf besetzen (noch {n})",
+      "search": "Spieler suchen…",
+      "drop": "Entfernen",
+      "noMatch": "Kein Spieler passt — Suche oder Filter zurücksetzen.",
+      "variants": {
+        "classic": "Klassisch",
+        "cap": "Salary Cap",
+        "noMvps": "Ohne MVPs",
+        "oneFranchise": "Ein Franchise",
+        "oneDecade": "Ein Jahrzehnt",
+        "randomEra": "Zufällige Ära",
+        "hard": "Hard Mode"
+      },
+      "level": "Level {n}",
+      "cleared": "Level {n} geschafft!",
+      "nextBudget": "Weiter: Level {n}, nur ${b} Budget",
+      "maxedOut": "Du hast das knappste Budget bezwungen — legendär.",
+      "runOver": "Lauf vorbei",
+      "reached": "Du hast {n} Level geschafft, bevor das Budget dich brach.",
+      "nextLevel": "Nächstes Level →",
+      "newRun": "Neuer Lauf"
     }
   },
   "homeSeo": {
@@ -186,7 +245,7 @@
           "Achte auf deine Positionen. Jeder Pick muss in einen offenen Court-Slot passen, den der Spieler tatsächlich gespielt hat. Draftest du früh einen Flügelspieler auf Small Forward, kann dir das später einen besseren Flügel verbauen — behalte deine verbleibenden Slots im Kopf, bevor du dich festlegst.",
           "Kenne deine Epochen. Ein 25-Punkte-Scorer aus den 2000ern schlägt nach der Epochenanpassung oft einen 30-Punkte-Scorer aus den 1960ern. Vom Tempo aufgeblähte Zahlen älterer Jahrzehnte werden von der Engine still und leise nach unten korrigiert.",
           "Verbrauche Skips früh, nicht spät. Wirft dir die erste Runde einen dünnen Kader hin, skippe sofort. Beide Skips für Runde fünf aufzusparen, heißt meist, sie zu verschwenden.",
-          "Willst du eine echte Prüfung? Spiel den HoopIQ-Modus — die Stats sind verborgen und du draftest komplett aus dem Gedächtnis. Das ist der schnellste Weg herauszufinden, wer Basketball-Geschichte wirklich kennt."
+          "Willst du eine echte Prüfung? Spiel den Blind-Draft-Modus — die Stats sind verborgen und du draftest komplett aus dem Gedächtnis. Das ist der schnellste Weg herauszufinden, wer Basketball-Geschichte wirklich kennt."
         ]
       },
       {
@@ -242,7 +301,7 @@
         {
           "h2": "Wie funktioniert das 82-0 Game hier?",
           "paragraphs": [
-            "Unsere Version des 82-0 Challenge Game läuft komplett in deinem Browser. Fünf Runden, ein Pick pro Runde, ein Team-Skip und ein Era-Skip. Jeder Spieler trägt seine echte historische Statline — Punkte, Rebounds, Assists, Steals und Blocks pro Spiel — epochenangepasst durch die Simulations-Engine, denn 30 Punkte in den 1960ern sind nicht 30 Punkte in den 2020ern. Wenn dein Lineup komplett ist, schickt die Engine deine Gesamtsummen durch eine nichtlineare Siegkurve und prognostiziert eine Endbilanz zwischen 0-82 und 82-0. Kein Download, keine Anmeldung — und wenn du eine echte Prüfung willst, verbirgt der HoopIQ-Modus die Stats und zwingt dich, aus dem Gedächtnis zu draften."
+            "Unsere Version des 82-0 Challenge Game läuft komplett in deinem Browser. Fünf Runden, ein Pick pro Runde, ein Team-Skip und ein Era-Skip. Jeder Spieler trägt seine echte historische Statline — Punkte, Rebounds, Assists, Steals und Blocks pro Spiel — epochenangepasst durch die Simulations-Engine, denn 30 Punkte in den 1960ern sind nicht 30 Punkte in den 2020ern. Wenn dein Lineup komplett ist, schickt die Engine deine Gesamtsummen durch eine nichtlineare Siegkurve und prognostiziert eine Endbilanz zwischen 0-82 und 82-0. Kein Download, keine Anmeldung — und wenn du eine echte Prüfung willst, verbirgt der Blind-Draft-Modus die Stats und zwingt dich, aus dem Gedächtnis zu draften."
           ]
         },
         {
@@ -265,7 +324,7 @@
         },
         {
           "title": "Wähle einen Spieler",
-          "desc": "Durchstöbere den echten Kader aus diesem Team und dieser Epoche, mit historischen PPG, RPG, APG, SPG und BPG. Im HoopIQ-Modus sind die Stats verborgen — drafte aus dem Gedächtnis."
+          "desc": "Durchstöbere den echten Kader aus diesem Team und dieser Epoche, mit historischen PPG, RPG, APG, SPG und BPG. Im Blind-Draft-Modus sind die Stats verborgen — drafte aus dem Gedächtnis."
         },
         {
           "title": "Platziere ihn auf dem Court",
@@ -291,7 +350,7 @@
         {
           "h2": "82-0 Challenge Regeln auf einen Blick",
           "paragraphs": [
-            "Fünf Runden, ein Pick pro Runde. Der Slot Machine weist in jeder Runde ein zufälliges Team und Jahrzehnt zu; Jahrzehnte können sich wiederholen. Ein Team-Skip und ein Era-Skip pro Spiel. Jeder Pick muss eine offene Court-Position besetzen, die der Spieler tatsächlich gespielt hat. Die prognostizierte Bilanz ergibt sich aus den summierten, epochenangepassten Stats deines Lineups, die durch eine nichtlineare Siegkurve laufen, mit Kategorie-Limits, die eindimensionale Kader bestrafen. Zwei Modi: Classic zeigt alle Stats, HoopIQ verbirgt sie. Keine Konten, keine Downloads, keine Kosten — einfach die Seite öffnen und spielen."
+            "Fünf Runden, ein Pick pro Runde. Der Slot Machine weist in jeder Runde ein zufälliges Team und Jahrzehnt zu; Jahrzehnte können sich wiederholen. Ein Team-Skip und ein Era-Skip pro Spiel. Jeder Pick muss eine offene Court-Position besetzen, die der Spieler tatsächlich gespielt hat. Die prognostizierte Bilanz ergibt sich aus den summierten, epochenangepassten Stats deines Lineups, die durch eine nichtlineare Siegkurve laufen, mit Kategorie-Limits, die eindimensionale Kader bestrafen. Zwei Modi: Classic zeigt alle Stats, Blind-Draft verbirgt sie. Keine Konten, keine Downloads, keine Kosten — einfach die Seite öffnen und spielen."
           ]
         }
       ]
@@ -425,9 +484,9 @@
           ]
         },
         {
-          "h2": "Tipp 5: Verwalte die Positionen (und probier HoopIQ)",
+          "h2": "Tipp 5: Verwalte die Positionen (und probier Blind-Draft)",
           "paragraphs": [
-            "Jeder Pick muss eine offene Position füllen, die der Spieler tatsächlich gespielt hat. Ein Superstar, den du nicht platzieren kannst, ist ein Superstar, den du nicht draften kannst, also achte darauf, welche Slots noch offen sind. Wenn du die Grundlagen beherrschst, wechsle in den HoopIQ-Modus — Statistiken verborgen, Drafting aus dem Gedächtnis — für die echte Prüfung."
+            "Jeder Pick muss eine offene Position füllen, die der Spieler tatsächlich gespielt hat. Ein Superstar, den du nicht platzieren kannst, ist ein Superstar, den du nicht draften kannst, also achte darauf, welche Slots noch offen sind. Wenn du die Grundlagen beherrschst, wechsle in den Blind-Draft-Modus — Statistiken verborgen, Drafting aus dem Gedächtnis — für die echte Prüfung."
           ]
         }
       ]
@@ -463,9 +522,9 @@
           ]
         },
         {
-          "h2": "Gleiches Spiel, neue Twists: Daily und HoopIQ",
+          "h2": "Gleiches Spiel, neue Twists: Daily und Blind-Draft",
           "paragraphs": [
-            "Liebst du 82-0 selbst schon? Zwei eingebaute Varianten halten es frisch. Die Daily Challenge gibt allen dieselben Würfe und einen Versuch — purer Bestenlisten-Köder. Der HoopIQ-Modus verbirgt alle Statistiken, sodass du allein aus dem Gedächtnis draftest — der schnellste Weg herauszufinden, wer die Basketballgeschichte wirklich kennt."
+            "Liebst du 82-0 selbst schon? Zwei eingebaute Varianten halten es frisch. Die Daily Challenge gibt allen dieselben Würfe und einen Versuch — purer Bestenlisten-Köder. Der Blind-Draft-Modus verbirgt alle Statistiken, sodass du allein aus dem Gedächtnis draftest — der schnellste Weg herauszufinden, wer die Basketballgeschichte wirklich kennt."
           ]
         }
       ]
@@ -685,6 +744,76 @@
       "intro": "Die besten simulierten NBA-Saisons der Welt — von heute und aller Zeiten. Stell deine Starting Five auf, projiziere eine 82-Spiele-Saison und sichere dir deinen Platz.",
       "title": "82-0 Globale Rangliste — Die besten NBA-Fives von heute",
       "description": "Die globale 82-0-Rangliste: die besten simulierten NBA-Saisons von heute und aller Zeiten. Stell deine Five auf, spiele 82 Spiele und sichere dir einen Platz."
+    },
+    "capMode": {
+      "title": "82-0 Salary-Cap-Modus — Das strategische NBA-Draft-Spiel",
+      "description": "Ein strategischeres 82-0: Stelle ein NBA-Starting-Five unter einem festen Salary Cap zusammen und jage eine ungeschlagene 82-Spiele-Saison ohne unbegrenztes Superteam.",
+      "h1": "82-0 Salary-Cap-Modus",
+      "intro": "Ein strategischeres 82-0-Draft als Gauntlet. Jeder Spieler hat einen Preis; du startest mit lockerem Budget und wählst dein Fünf per Spin. Schaffst du 82-0, wird das Budget im nächsten Level enger — wie tief kommst du, bevor eine perfekte Saison unbezahlbar wird?"
+    },
+    "filter": {
+      "title": "82-0 Challenge-Filter — Cap, ohne MVPs, ein Franchise & mehr",
+      "description": "Passe deine 82-0-Challenge mit Draft-Filtern an: Salary Cap, ohne MVPs, ein Franchise, ein Jahrzehnt, zufällige Ära und Hard Mode.",
+      "h1": "82-0 Challenge-Filter",
+      "intro": "Genug vom immer gleichen Zufalls-Draft? Forme deine 82-0-Challenge mit Kader-Filtern um — deckle das Budget, sperre die MVPs, fixiere ein Franchise oder Jahrzehnt oder dreh den Hard Mode auf.",
+      "play": "Spielen",
+      "changeFilter": "Filter ändern",
+      "filters": {
+        "classic": {
+          "desc": "Das originale 82-0-Spin-Draft — alle Teams und Ären im Spiel.",
+          "diff": "Leicht"
+        },
+        "cap": {
+          "desc": "Ein Budget-Gauntlet: stelle dein Fünf unter einem Cap zusammen, der mit jedem 82-0 enger wird.",
+          "diff": "Schwer"
+        },
+        "noMvps": {
+          "desc": "Die teuersten Legenden sind tabu. Gewinne ohne die Ikonen.",
+          "diff": "Mittel"
+        },
+        "oneFranchise": {
+          "desc": "Drafte nur aus dem Allzeit-Kader eines Franchise.",
+          "diff": "Mittel"
+        },
+        "oneDecade": {
+          "desc": "Fixiere den ganzen Draft auf ein Jahrzehnt der NBA-Geschichte.",
+          "diff": "Mittel"
+        },
+        "randomEra": {
+          "desc": "Das Spiel wählt dein Jahrzehnt zufällig — stell dich auf die gezogene Ära ein.",
+          "diff": "Mittel"
+        },
+        "hard": {
+          "desc": "Eine steilere Siegkurve. Selbst geladene Kader verlieren ein paar mehr.",
+          "diff": "Schwer"
+        }
+      },
+      "chooseTeam": "Franchise",
+      "chooseDecade": "Jahrzehnt"
+    },
+    "noMvps": {
+      "title": "82-0 Ohne-MVPs-Challenge — Gewinnen ohne die Legenden",
+      "description": "Stell dich der 82-0-Challenge mit gesperrten teuersten Legenden. Baue ein ungeschlagenes Fünf aus Rollenspielern und unterschätzten Stars.",
+      "h1": "82-0 Ohne-MVPs-Challenge",
+      "intro": "Das härteste Prahlen im Basketball: 82-0 ohne einen einzigen Superstar auf MVP-Niveau. Die ~35 teuersten Legenden sind tabu — gewinne mit Rollenspielern, Arbeitern und unterschätzten Stars."
+    },
+    "oneTeam": {
+      "title": "82-0 Ein-Franchise-Challenge — Ein Team, jede Ära",
+      "description": "Baue ein ungeschlagenes 82-0-Fünf nur aus dem Allzeit-Kader eines Franchise: Lakers, Celtics, Bulls, Spurs und mehr.",
+      "h1": "82-0 Ein-Franchise-Challenge",
+      "intro": "Loyalitätsmodus. Drafte dein ganzes 82-0-Fünf aus dem Allzeit-Kader eines einzigen Franchise — jeder Laker, jeder Celtic, jeder Bull über die Jahrzehnte. Kann dein Team allein ungeschlagen bleiben?"
+    },
+    "oneDecade": {
+      "title": "82-0 Ein-Jahrzehnt-Challenge — Eine Ära, eine perfekte Saison",
+      "description": "Sperre dein 82-0-Draft auf ein Jahrzehnt der Basketball-Geschichte — die 60er, 80er, 90er, 2000er und mehr — und jage eine ungeschlagene Saison.",
+      "h1": "82-0 Ein-Jahrzehnt-Challenge",
+      "intro": "Wähle eine Ära und lebe in ihr. Dein ganzes 82-0-Fünf muss aus einem Jahrzehnt der NBA-Geschichte stammen — die harten 90er, das Pace-and-Space der 2010er, deine Wahl. Welches Jahrzehnt hatte die Feuerkraft für eine ungeschlagene Saison?"
+    },
+    "hardMode": {
+      "title": "82-0 Hard Mode — Die härteste Perfekte-Saison-Challenge",
+      "description": "82-0 mit steilerer Siegkurve. Selbst ein geladenes Allzeit-Fünf verliert ein paar Spiele mehr — nur die besten Kader bleiben ungeschlagen.",
+      "h1": "82-0 Hard Mode",
+      "intro": "Für Spieler, denen die perfekte Saison zu leicht ist. Der Hard Mode macht die Siegkurve steiler und das 82-0-Glückstor enger, sodass selbst ein geladenes Allzeit-Fünf mehr verliert. Nur die besten Kader überleben."
     }
   },
   "cta": {
@@ -709,8 +838,8 @@
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
     "community": "Tritt unserer Telegram-Community bei",
-    "disclaimer": "82-0 Challenge ist ein unabhängiges, von Fans gemachtes Projekt. Es ist nicht mit der NBA oder einer professionellen Basketball-Liga oder einem Team verbunden, wird nicht von ihr unterstützt oder gesponsert. Spielernamen und historische Statistiken sind öffentlich verfügbare Fakten, die ausschließlich zu Informations- und Unterhaltungszwecken verwendet werden. Es werden keine offiziellen Logos, Marken oder Fotos genutzt.",
-    "copyright": "© 2026 82-0 Challenge",
+    "disclaimer": "X-0 Games und sein 82-0 Basketball Builder sind unabhängige, von Fans erstellte Projekte. Sie stehen in keiner Verbindung zu 82-0.com, PlayVault, der NBA oder einer professionellen Basketballliga oder einem Team und werden von diesen weder unterstützt noch gesponsert.",
+    "copyright": "© 2026 X-0 Games",
     "related": "Verwandte Guides",
     "leaderboard": "Rangliste"
   },
@@ -799,8 +928,14 @@
     "cta": "Stell deine Starting Five auf und sichere dir einen Platz →",
     "modes": {
       "classic": "Klassisch",
-      "hoopiq": "HoopIQ",
-      "daily": "Täglich"
+      "hoopiq": "Blind-Draft",
+      "daily": "Täglich",
+      "standard": "Standard",
+      "cap": "Cap",
+      "nomvps": "Ohne MVPs",
+      "franchise": "Franchise",
+      "decade": "Jahrzehnt",
+      "hard": "Hard"
     },
     "styles": {
       "balanced": "Ausgewogen",
@@ -810,6 +945,13 @@
     },
     "rating": "Team-Wertung",
     "ratingUnit": "RTG",
-    "weekly": "Diese Woche"
+    "weekly": "Diese Woche",
+    "filterAll": "Alle",
+    "emptyMode": "Noch keine Einträge in diesem Modus — sei der Erste."
+  },
+  "sharePage": {
+    "kicker": "Geteiltes Ergebnis",
+    "challenge": "Glaubst du, du kannst eine bessere Fünf bauen?",
+    "play": "Spiel die 82-0 Challenge →"
   }
 }

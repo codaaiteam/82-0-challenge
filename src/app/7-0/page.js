@@ -3,7 +3,6 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import QuestionFAQ from '../Components/QuestionFAQ';
 import WorldCupGame from '../Components/Game/WorldCupGame';
-import AdsterraNativeBanner from '../Components/AdsterraNativeBanner';
 import SeoSections from '../Components/SeoSections';
 import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
@@ -44,7 +43,8 @@ export default async function SevenZero({ params }) {
         <section id="game" className={styles.gameSection}>
           <WorldCupGame t={t} />
         </section>
-        <AdsterraNativeBanner />
+        {/* Adsterra Native Banner paused — deceptive "security alert" creatives */}
+        {/* <AdsterraNativeBanner /> */}
 
         <SeoSections sections={page.sections} />
 

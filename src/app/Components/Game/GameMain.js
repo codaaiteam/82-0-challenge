@@ -7,10 +7,13 @@ import {
   DECADES, ALL_TEAMS, PLAYSTYLE_IDS, PLAYSTYLES,
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
   dailyCombos, comboIsDraftable, buildSlots, buildSeasonStory,
+  FILTERS, priceOf, CAP_BUDGET, MIN_PRICE, gauntletBudget, CAP_STEP, CAP_FLOOR,
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
 import { submitScore, saveSubmission } from '@/lib/leaderboard';
+import ShareModal from './ShareModal';
+import MiniCourt from './MiniCourt';
 
 const TOTAL_ROUNDS = 5;
 const SITE_URL = 'https://www.82-0-challenge.com';
@@ -33,17 +36,33 @@ function initials(name) {
   return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 }
 
-export default function GameMain({ t, initialMode = null }) {
+export default function GameMain({ t, initialMode = null, variant = null }) {
   const g = t?.game || {};
   const lb = g.lb || {};
+  const cap = g.cap || {};
   const routeParams = useParams();
   const langPrefix = routeParams?.lang && routeParams.lang !== 'en' ? `/${routeParams.lang}` : '';
 
-  // mode: null (select screen) | 'classic' | 'hoopiq' | 'daily'
-  const [mode, setMode] = useState(initialMode);
-  // playstyle: 5-slot position template (basketball "formation")
+  // A Challenge Filter / Cap variant short-circuits the setup screen and plays
+  // straight away. filterCfg drives the draftable pool, difficulty and the
+  // leaderboard tag; isCap swaps the spin draft for the free-draft cap UI.
+  const filterCfg = variant ? FILTERS[variant.id] : null;
+  const isCap = !!filterCfg?.cap;
+  // activeParam = the chosen team (oneFranchise) or decade (oneDecade/randomEra);
+  // randomEra re-rolls it on every replay for a fresh surprise.
+  const [activeParam, setActiveParam] = useState(variant?.param ?? null);
+  const difficulty = filterCfg?.difficulty || 1;
+  // Cap Mode gauntlet level (1-based); budget tightens each cleared level.
+  const [capLevel, setCapLevel] = useState(1);
+
+  // mode: null (setup screen) | 'standard' | 'daily' | 'cap'
+  const [mode, setMode] = useState(variant ? (isCap ? 'cap' : 'standard') : initialMode);
+  // playstyle: 5-slot position template (lineup shape)
   const [playstyle, setPlaystyle] = useState('balanced');
-  // phase: 'style' | 'spin' | 'spinning' | 'pick' | 'sim' | 'result'
+  // setup options
+  const [showStats, setShowStats] = useState(true);       // stat lines visible while drafting
+  const [revealMode, setRevealMode] = useState('watch');  // 'watch' = season sim · 'instant' = straight to result
+  // phase: 'spin' | 'spinning' | 'pick' | 'sim' | 'result'
   const [phase, setPhase] = useState('spin');
   const [round, setRound] = useState(1);
   const [slots, setSlots] = useState(() => buildSlots('balanced'));
@@ -57,6 +76,7 @@ export default function GameMain({ t, initialMode = null }) {
   const [story, setStory] = useState(null);   // game-by-game season reveal
   const [simIdx, setSimIdx] = useState(0);    // games revealed so far
   const [copied, setCopied] = useState(false);
+  const [shareOpen, setShareOpen] = useState(false);
   const [dailyDone, setDailyDone] = useState(false);
   const [lbName, setLbName] = useState('');
   const [lbState, setLbState] = useState(null); // null | 'sending' | 'error' | { rank, ... }
@@ -68,6 +88,22 @@ export default function GameMain({ t, initialMode = null }) {
   const openSlots = slots.filter(s => !s.player).map(s => s.pos);
   const isDaily = mode === 'daily';
   const dailyStorageKey = `daily820:${dateKey()}`;
+
+  // Cap Mode budget tracking + the leaderboard mode tag for this variant.
+  const capBudget = isCap ? gauntletBudget(capLevel) : CAP_BUDGET;
+  const capSpent = lineup.reduce((sum, p) => sum + priceOf(p), 0);
+  const capLeft = capBudget - capSpent;
+  const atFloor = capBudget <= CAP_FLOOR;
+  const lbTag = filterCfg ? filterCfg.lbTag : (isDaily ? 'daily' : 'standard');
+
+  // The draftable-pool predicate threaded into the spin/pick helpers. Cap Mode
+  // keeps the classic roll, but only surfaces players you can afford *and* still
+  // leave at least MIN_PRICE for every remaining slot — so you can never spend
+  // yourself into a dead end. Other filters use their static pool predicate.
+  const capMaxSpend = capLeft - Math.max(0, openSlots.length - 1) * MIN_PRICE;
+  const poolFilter = isCap
+    ? (p => priceOf(p) <= capMaxSpend)
+    : (filterCfg ? filterCfg.pool(activeParam) : undefined);
 
   useEffect(() => () => clearInterval(spinTimer.current), []);
 
@@ -135,23 +171,23 @@ export default function GameMain({ t, initialMode = null }) {
         return;
       }
     }
-    animateTo(spinCombo(pickedIds, openSlots));
+    animateTo(spinCombo(pickedIds, openSlots, undefined, poolFilter));
   };
 
   const handleTeamSkip = () => {
     if (teamSkips <= 0 || phase !== 'pick') return;
     setTeamSkips(teamSkips - 1);
-    animateTo(rerollTeam(combo, pickedIds, openSlots));
+    animateTo(rerollTeam(combo, pickedIds, openSlots, poolFilter));
   };
 
   const handleEraSkip = () => {
     if (eraSkips <= 0 || phase !== 'pick') return;
     setEraSkips(eraSkips - 1);
-    animateTo(rerollEra(combo, pickedIds, openSlots));
+    animateTo(rerollEra(combo, pickedIds, openSlots, poolFilter));
   };
 
   // ---- picking & placing ----
-  const candidates = combo ? playersFor(combo.team, combo.decade, pickedIds) : [];
+  const candidates = combo ? playersFor(combo.team, combo.decade, pickedIds, poolFilter) : [];
   const shown = candidates
     .filter(p => {
       if (posFilter === 'All') return true;
@@ -171,11 +207,10 @@ export default function GameMain({ t, initialMode = null }) {
     setSlots(newSlots);
     const newLineup = newSlots.filter(s => s.player).map(s => s.player);
     if (newLineup.length >= TOTAL_ROUNDS) {
-      const res = simulateSeason(newLineup);
-      setResult(res);
-      setStory(buildSeasonStory(res));
-      setSimIdx(0);
-      setPhase('sim');
+      const simOpts = isCap
+        ? { budgetLeft: capBudget - newLineup.reduce((sum, pl) => sum + priceOf(pl), 0) }
+        : { difficulty };
+      const res = startSim(newLineup, simOpts);
       if (isDaily) {
         setDailyDone(true);
         try {
@@ -189,7 +224,19 @@ export default function GameMain({ t, initialMode = null }) {
     }
   };
 
+  // Run the season sim for a finished five and move into the reveal/result.
+  const startSim = (lineupArr, opts = {}) => {
+    const res = simulateSeason(lineupArr, opts);
+    setResult(res);
+    setStory(buildSeasonStory(res));
+    setSimIdx(0);
+    setPhase(revealMode === 'instant' ? 'result' : 'sim');
+    return res;
+  };
+
   const handleRestart = (style = playstyle) => {
+    // Random Era hands out a fresh decade each replay.
+    if (filterCfg?.random) setActiveParam(randomPick(DECADES));
     setPhase('spin');
     setRound(1);
     setSlots(buildSlots(style));
@@ -201,26 +248,27 @@ export default function GameMain({ t, initialMode = null }) {
     setStory(null);
     setSimIdx(0);
     setCopied(false);
+    setShareOpen(false);
     setLbState(null);
     setDisplay({ team: '???', decade: "??'s" });
   };
 
-  // Pick a mode from the select screen. Classic/HoopIQ go to the playstyle
-  // step; Daily locks to the balanced five so everyone plays the same board.
-  const chooseMode = (m) => {
-    setMode(m);
-    if (m === 'daily') {
-      setPlaystyle('balanced');
-      handleRestart('balanced');
-    } else {
-      setPhase('style');
-    }
+  // Cap gauntlet: advance to the next (tighter) level, keeping the streak.
+  const capNextLevel = () => {
+    setCapLevel(l => l + 1);
+    handleRestart('balanced');
   };
 
-  // Confirm a playstyle and start drafting.
-  const chooseStyle = (style) => {
-    setPlaystyle(style);
-    handleRestart(style);
+  // Cap gauntlet: a non-82-0 ends the run — restart from level 1.
+  const capRestartGauntlet = () => {
+    setCapLevel(1);
+    handleRestart('balanced');
+  };
+
+  // Leave the setup screen and start drafting with the chosen options.
+  const startDraft = () => {
+    setMode('standard');
+    handleRestart(playstyle);
   };
 
   const backToModes = () => {
@@ -265,8 +313,6 @@ export default function GameMain({ t, initialMode = null }) {
     } catch { /* clipboard unavailable */ }
   };
 
-  const xShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL)}`;
-
   // Prefill the leaderboard name from the last submission.
   useEffect(() => {
     try {
@@ -288,7 +334,7 @@ export default function GameMain({ t, initialMode = null }) {
         losses: result.losses,
         points: result.points,
         grade: result.grade,
-        mode,
+        mode: lbTag,
         style: playstyle,
         star: result.best.name,
       });
@@ -299,60 +345,82 @@ export default function GameMain({ t, initialMode = null }) {
     }
   };
 
-  // ================= MODE SELECT =================
+  // ================= SETUP =================
   if (!mode) {
-    return (
-      <div className={styles.game}>
-        <div className={styles.modeSelect}>
-          <h2 className={styles.modeTitle}>{g.chooseMode}</h2>
-          <p className={styles.modeSubtitle}>{g.chooseModeSub}</p>
-          <div className={styles.modeGrid}>
-            <div className={styles.modeCard}>
-              <div className={styles.modeName}>💯 {g.modeClassic}</div>
-              <p className={styles.modeDesc}>{g.modeClassicDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => chooseMode('classic')}>
-                {g.playClassic}
-              </button>
-            </div>
-            <div className={styles.modeCard}>
-              <div className={styles.modeName}>🧠 {g.modeHoopiq}</div>
-              <p className={styles.modeDesc}>{g.modeHoopiqDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => chooseMode('hoopiq')}>
-                {g.playHoopiq}
-              </button>
-            </div>
-            <div className={styles.modeCard}>
-              <div className={styles.modeName}>🗓️ {g.daily?.mode || 'Daily Challenge'}</div>
-              <p className={styles.modeDesc}>{g.daily?.modeDesc}</p>
-              <button className={styles.primaryBtn} onClick={() => chooseMode('daily')}>
-                {g.daily?.play || 'Play Daily'}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // ================= PLAYSTYLE SELECT =================
-  if (phase === 'style') {
     const st = g.styles || {};
+    const su = g.setup || {};
     return (
       <div className={styles.game}>
-        <div className={styles.modeSelect}>
-          <h2 className={styles.modeTitle}>{g.chooseStyle || 'Choose your playstyle'}</h2>
-          <p className={styles.modeSubtitle}>{g.chooseStyleSub || 'Each playstyle sets the five positions you must fill.'}</p>
-          <div className={styles.styleGrid}>
-            {PLAYSTYLE_IDS.map(id => (
-              <button key={id} className={styles.styleCard} onClick={() => chooseStyle(id)}>
-                <div className={styles.styleName}>{st[id]?.name || id}</div>
-                <div className={styles.styleSlots}>{PLAYSTYLES[id].join(' · ')}</div>
-                <p className={styles.styleDesc}>{st[id]?.desc || ''}</p>
-              </button>
-            ))}
+        <div className={styles.setup}>
+          <div className={styles.setupHead}>
+            <h2 className={styles.setupTitle}>{su.title || 'Build Your Five'}</h2>
+            <p className={styles.setupSub}>{su.sub || 'Set your lineup, then draft your all-time team.'}</p>
           </div>
-          <button className={styles.styleBack} onClick={() => setMode(null)}>
-            ← {g.switchMode || 'Switch mode'}
+
+          {/* Playstyle — tabs pick the formation shown on the court below */}
+          <div className={styles.cfgGroup}>
+            <span className={styles.cfgLabel}>{su.playstyle || 'Playstyle'}</span>
+            <div className={styles.styleTabs}>
+              {PLAYSTYLE_IDS.map(id => (
+                <button
+                  key={id}
+                  className={`${styles.styleTab} ${playstyle === id ? styles.styleTabActive : ''}`}
+                  onClick={() => setPlaystyle(id)}
+                >
+                  {st[id]?.name || id}
+                </button>
+              ))}
+            </div>
+            <div className={styles.stylePreview}>
+              <MiniCourt positions={PLAYSTYLES[playstyle]} />
+              <p className={styles.styleDesc}>{st[playstyle]?.desc || ''}</p>
+            </div>
+          </div>
+
+          {/* Show stats */}
+          <div className={styles.cfgGroup}>
+            <span className={styles.cfgLabel}>{su.showStats || 'Show Stats'}</span>
+            <div className={styles.optRow}>
+              <button
+                className={`${styles.optCard} ${showStats ? styles.optActive : ''}`}
+                onClick={() => setShowStats(true)}
+              >
+                <b>{su.statsOn || 'On'}</b>
+                <small>{su.statsOnDesc || 'Full stat lines visible while you draft'}</small>
+              </button>
+              <button
+                className={`${styles.optCard} ${!showStats ? styles.optActive : ''}`}
+                onClick={() => setShowStats(false)}
+              >
+                <b>{su.statsOff || 'Off'}</b>
+                <small>{su.statsOffDesc || 'Draft blind — go on instinct alone'}</small>
+              </button>
+            </div>
+          </div>
+
+          {/* Season reveal */}
+          <div className={styles.cfgGroup}>
+            <span className={styles.cfgLabel}>{su.reveal || 'Season Reveal'}</span>
+            <div className={styles.optRow}>
+              <button
+                className={`${styles.optCard} ${revealMode === 'watch' ? styles.optActive : ''}`}
+                onClick={() => setRevealMode('watch')}
+              >
+                <b>{su.revealWatch || 'Watch'}</b>
+                <small>{su.revealWatchDesc || 'Live the season game by game'}</small>
+              </button>
+              <button
+                className={`${styles.optCard} ${revealMode === 'instant' ? styles.optActive : ''}`}
+                onClick={() => setRevealMode('instant')}
+              >
+                <b>{su.revealInstant || 'Instant'}</b>
+                <small>{su.revealInstantDesc || 'Skip straight to the final record'}</small>
+              </button>
+            </div>
+          </div>
+
+          <button className={styles.startBtn} onClick={startDraft}>
+            {su.start || 'Start Draft →'}
           </button>
         </div>
       </div>
@@ -413,10 +481,34 @@ export default function GameMain({ t, initialMode = null }) {
       <div className={styles.game}>
         <div className={styles.resultCard}>
           <div className={styles.modeBadge}>
-            {isDaily
+            {isCap
+              ? `${cap.variants?.cap || 'Salary Cap'} · ${fmt(cap.level || 'Level {n}', { n: capLevel })} · $${capBudget}`
+              : filterCfg
+              ? `${cap.variants?.[variant.id] || variant.id}${activeParam ? ` · ${activeParam}` : ''}`
+              : isDaily
               ? `🗓️ ${g.daily?.badge || 'Daily Challenge'} · ${dateKey()}`
-              : `${mode === 'classic' ? g.modeClassic : g.modeHoopiq} · ${g.styles?.[playstyle]?.name || playstyle}`}
+              : `${g.styles?.[playstyle]?.name || playstyle}${showStats ? '' : ` · ${g.setup?.blindTag || 'Blind'}`}`}
           </div>
+
+          {/* Cap gauntlet outcome */}
+          {isCap && (
+            result.wins === 82 ? (
+              <div className={styles.capLevelUp}>
+                <b>🏆 {fmt(cap.cleared || 'Level {n} cleared!', { n: capLevel })}</b>
+                <span>
+                  {atFloor
+                    ? (cap.maxedOut || 'You conquered the tightest budget — legendary.')
+                    : fmt(cap.nextBudget || 'Next: Level {n}, only ${b} to spend', { n: capLevel + 1, b: gauntletBudget(capLevel + 1) })}
+                </span>
+              </div>
+            ) : (
+              <div className={styles.capRunOver}>
+                <b>💀 {cap.runOver || 'Run over'}</b>
+                <span>{fmt(cap.reached || 'You cleared {n} level(s) before the budget broke you.', { n: capLevel - 1 })}</span>
+              </div>
+            )
+          )}
+
           <div className={styles.resultLabel}>{g.projectedRecord}</div>
           <div className={styles.resultRecord}>{result.wins}–{result.losses}</div>
           <div className={styles.gradeRow}>
@@ -455,6 +547,16 @@ export default function GameMain({ t, initialMode = null }) {
                   <span>{s.player.blk}<i>{g.bpg}</i></span>
                 </span>
               </div>
+            ))}
+          </div>
+
+          {/* Combined team production — makes the record explainable at a glance */}
+          <div className={styles.teamTotals}>
+            {[['pts', g.ppg], ['reb', g.rpg], ['ast', g.apg], ['stl', g.spg], ['blk', g.bpg]].map(([k, label]) => (
+              <span key={k} className={styles.teamTotal}>
+                <b>{Math.round(result.totals[k] * 10) / 10}</b>
+                <i>{label}</i>
+              </span>
             ))}
           </div>
 
@@ -503,20 +605,52 @@ export default function GameMain({ t, initialMode = null }) {
           </div>
 
           <div className={styles.resultActions}>
-            {!isDaily && (
+            {isCap ? (
+              result.wins === 82 && !atFloor ? (
+                <button className={styles.primaryBtn} onClick={capNextLevel}>{cap.nextLevel || 'Next Level →'}</button>
+              ) : (
+                <button className={styles.primaryBtn} onClick={capRestartGauntlet}>{cap.newRun || 'New Run'}</button>
+              )
+            ) : !isDaily ? (
               <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
-            )}
-            <button className={isDaily ? styles.primaryBtn : styles.secondaryBtn} onClick={handlePoster}>
+            ) : null}
+            <button
+              className={isDaily ? styles.primaryBtn : styles.secondaryBtn}
+              onClick={() => setShareOpen(true)}
+            >
+              {g.shareModal?.open || 'Share'}
+            </button>
+            <button className={styles.secondaryBtn} onClick={handlePoster}>
               {g.poster || 'Download Poster'}
             </button>
             <button className={styles.secondaryBtn} onClick={handleCopy}>
               {copied ? g.copied : g.copyResult}
             </button>
-            <a className={styles.secondaryBtn} href={xShareUrl} target="_blank" rel="noopener noreferrer">
-              {g.shareOnX}
-            </a>
-            <button className={styles.secondaryBtn} onClick={backToModes}>{g.switchMode}</button>
+            {!filterCfg && (
+              <button className={styles.secondaryBtn} onClick={backToModes}>{g.switchMode}</button>
+            )}
           </div>
+
+          <ShareModal
+            open={shareOpen}
+            onClose={() => setShareOpen(false)}
+            sh={g.shareModal || {}}
+            shareText={shareText}
+            payload={{
+              wins: result.wins,
+              losses: result.losses,
+              points: result.points,
+              grade: result.grade,
+              mode: lbTag,
+              style: playstyle,
+              lineup: slots.filter(s => s.player).map(s => ({
+                pos: s.pos,
+                name: s.player.name,
+                team: s.player.team,
+                decade: s.player.decade,
+              })),
+            }}
+          />
         </div>
       </div>
     );
@@ -540,7 +674,29 @@ export default function GameMain({ t, initialMode = null }) {
         {phase !== 'result' && isDaily && (
           <span className={styles.dailyTag}>🗓️ {g.daily?.badge || 'Daily Challenge'} · {g.daily?.noSkips}</span>
         )}
+        {filterCfg && !isDaily && (
+          <span className={styles.variantTag}>
+            🎯 {cap.variants?.[variant.id] || variant.id}{activeParam ? ` · ${activeParam}` : ''}
+          </span>
+        )}
       </div>
+
+      {/* Cap Mode budget meter — drops as you roll-and-pick your five */}
+      {isCap && (
+        <div className={styles.capBar}>
+          <div className={styles.capBudget}>
+            <span className={styles.capBudgetLabel}>
+              {cap.budget || 'Salary Cap'} · {fmt(cap.level || 'Level {n}', { n: capLevel })}
+            </span>
+            <span className={styles.capBudgetVal}>
+              <b>{capLeft}</b> / {capBudget} {cap.left || 'left'}
+            </span>
+          </div>
+          <div className={styles.capMeter}>
+            <i style={{ width: `${Math.min(100, (capSpent / capBudget) * 100)}%` }} />
+          </div>
+        </div>
+      )}
 
       {/* Slot machine */}
       <div className={styles.slotMachine}>
@@ -584,16 +740,17 @@ export default function GameMain({ t, initialMode = null }) {
                   return (
                     <button
                       key={p.id}
-                      className={`${styles.playerRow} ${selected?.id === p.id ? styles.playerSelected : ''} ${!placeable ? styles.playerBlocked : ''}`}
+                      className={`${styles.playerRow} ${isCap ? styles.capRow : ''} ${selected?.id === p.id ? styles.playerSelected : ''} ${!placeable ? styles.playerBlocked : ''}`}
                       onClick={() => placeable && setSelected(p)}
                       disabled={!placeable}
                     >
+                      {isCap && <span className={styles.capPrice}>${priceOf(p)}</span>}
                       <span className={styles.playerInfo}>
                         <b>{p.name}</b>
                         <span className={styles.playerPos}>{p.positions.join(' · ')}</span>
                         <small>{p.team} · {p.decade}</small>
                       </span>
-                      {mode === 'classic' && (
+                      {showStats && (
                         <span className={styles.statLine}>
                           <span>{p.pts}<i>{g.ppg}</i></span>
                           <span>{p.reb}<i>{g.rpg}</i></span>

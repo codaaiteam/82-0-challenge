@@ -25,20 +25,20 @@ export default function CookieNotice() {
   return (
     <div style={{
       position: 'fixed', bottom: 0, left: 0, right: 0, zIndex: 1000,
-      background: 'rgba(10, 14, 26, 0.97)', borderTop: '1px solid #2b3550',
+      background: 'rgba(10, 14, 26, 0.97)', borderTop: '1px solid #2c313d',
       padding: '0.8rem 1rem', display: 'flex', alignItems: 'center',
       justifyContent: 'center', gap: '0.75rem', flexWrap: 'wrap',
       fontSize: '0.82rem', color: '#b6c2da',
     }}>
       <span>
         We use cookies from advertising partners to support this free site.{' '}
-        <Link href="/privacy" style={{ color: '#ff8a29' }}>Learn more</Link>
+        <Link href="/privacy" style={{ color: '#f2641e' }}>Learn more</Link>
       </span>
       <span style={{ display: 'flex', gap: '0.5rem' }}>
         <button
           onClick={() => choose('accepted')}
           style={{
-            background: 'linear-gradient(135deg, #ff8a29, #ff5e3a)', color: '#fff',
+            background: 'linear-gradient(135deg, #f2641e, #c24e12)', color: '#fff',
             border: 'none', borderRadius: 8, padding: '0.45rem 1rem',
             fontWeight: 700, cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.82rem',
           }}
@@ -49,7 +49,7 @@ export default function CookieNotice() {
           onClick={() => choose('declined')}
           style={{
             background: 'transparent', color: '#b6c2da',
-            border: '1px solid #36415c', borderRadius: 8, padding: '0.45rem 1rem',
+            border: '1px solid #3b414e', borderRadius: 8, padding: '0.45rem 1rem',
             fontWeight: 600, cursor: 'pointer', fontFamily: 'inherit', fontSize: '0.82rem',
           }}
         >
