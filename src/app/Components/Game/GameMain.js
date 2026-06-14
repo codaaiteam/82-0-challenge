@@ -36,6 +36,67 @@ function initials(name) {
   return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 }
 
+// ── C2Story "turn my team into a storybook" deep link ───────────────────────
+// Normalises this exact playthrough — record, MVP, weakness, playstyle, squad
+// and the season's standout games — into a compact payload so c2story writes a
+// DIFFERENT illustrated book for every run, not a generic perfect-season tale.
+const STORY_BASE = 'https://c2story.com/dream-team-storybook';
+const STORY_WEAKNESS = {
+  weakScoring: 'found buckets hard to come by',
+  weakRebounding: 'kept getting out-rebounded',
+  weakPlaymaking: 'struggled to move the ball as a unit',
+  weakSteals: 'let too many balls slip through their hands',
+  weakBlocks: 'could not protect the rim',
+};
+const STORY_STYLE = {
+  balanced: 'a balanced starting five',
+  smallball: 'a quick, switch-everything small-ball five',
+  twintowers: 'a towering twin-big lineup',
+  rungun: 'a run-and-gun, fast-break five',
+};
+
+function buildStoryUrl(result, slots, story, playstyle, lang) {
+  const players = slots
+    .filter(s => s.player)
+    .map(s => ({ n: s.player.name, pos: s.pos, r: s.player.rating }));
+
+  // Pick the most vivid season beats; c2story illustrates the first two.
+  const moments = [];
+  if (story && story.games && story.moments) {
+    const byKey = {};
+    Object.entries(story.moments).forEach(([idx, k]) => { byKey[k] = +idx; });
+    let bigIdx = -1, bigMargin = -1;
+    story.games.forEach((gm, i) => {
+      if (gm.win && gm.us - gm.them > bigMargin) { bigMargin = gm.us - gm.them; bigIdx = i; }
+    });
+    const add = (k, i) => {
+      if (i == null || i < 0) return;
+      const gm = story.games[i];
+      if (gm) moments.push({ k, opp: gm.opp, score: `${gm.us}-${gm.them}` });
+    };
+    add(byKey.closestWin != null ? 'closestWin' : 'closestLoss', byKey.closestWin ?? byKey.closestLoss);
+    add('biggestWin', bigIdx);
+    add('win50', byKey.win50);
+    add('finale', byKey.finale);
+  }
+
+  const payload = {
+    rec: `${result.wins}-${result.losses}`,
+    title: result.title,
+    mvp: result.best?.name,
+    flaw: STORY_WEAKNESS[result.weakness],
+    style: STORY_STYLE[playstyle],
+    players,
+    moments,
+  };
+
+  // base64url so it survives the querystring untouched.
+  const data = btoa(unescape(encodeURIComponent(JSON.stringify(payload))))
+    .replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+  const langQ = lang && lang !== 'en' ? `&lang=${encodeURIComponent(lang)}` : '';
+  return `${STORY_BASE}?game=82-0&data=${data}${langQ}&utm_source=82-0-challenge&utm_medium=result_story`;
+}
+
 export default function GameMain({ t, initialMode = null, variant = null }) {
   const g = t?.game || {};
   const lb = g.lb || {};
@@ -603,6 +664,15 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               </>
             )}
           </div>
+
+          <a
+            className={styles.storyCta}
+            href={buildStoryUrl(result, slots, story, playstyle, routeParams?.lang)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {g.storyCta || '📖 Turn this team into a storybook →'}
+          </a>
 
           <div className={styles.resultActions}>
             {isCap ? (
