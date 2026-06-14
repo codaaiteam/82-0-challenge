@@ -7,6 +7,7 @@ import GameWithSidebarAds from './Components/GameWithSidebarAds';
 import SeoSections from './Components/SeoSections';
 import RelatedLinks from './Components/RelatedLinks';
 import SquadCta from './Components/SquadCta';
+import MoreModes from './Components/MoreModes';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -50,6 +51,9 @@ export default async function Home({ params }) {
             <GameMain t={t} />
           </GameWithSidebarAds>
         </section>
+
+        {/* Entry point to the newer 82-0 modes */}
+        <MoreModes t={t} prefix={prefix} />
 
         {/* Adsterra Native Banner — paused: its creatives triggered deceptive
             "security alert" prompts. Re-enable only with a vetted ad source. */}

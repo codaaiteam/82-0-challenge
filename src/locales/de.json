@@ -1119,5 +1119,11 @@
     "kicker": "Geteiltes Ergebnis",
     "challenge": "Glaubst du, du kannst eine bessere Fünf bauen?",
     "play": "Spiel die 82-0 Challenge →"
+  },
+  "homeModes": {
+    "title": "Mehr Wege, 82-0 zu spielen",
+    "subtitle": "Jenseits des klassischen Drafts — stell dich dem Salary-Cap-Gauntlet und den Challenge-Filtern.",
+    "all": "Alle Challenges",
+    "allDesc": "Cap, ohne MVPs, ein Franchise und mehr — wähle einen Filter."
   }
 }

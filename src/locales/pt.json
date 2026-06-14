@@ -1119,5 +1119,11 @@
     "kicker": "Resultado compartilhado",
     "challenge": "Acha que consegue montar um quinteto melhor?",
     "play": "Jogue o 82-0 Challenge →"
+  },
+  "homeModes": {
+    "title": "Mais formas de jogar 82-0",
+    "subtitle": "Além do draft clássico — encare o gauntlet do teto salarial e os filtros de desafio.",
+    "all": "Todos os desafios",
+    "allDesc": "Teto, Sem MVPs, Uma Franquia e mais — escolha um filtro."
   }
 }

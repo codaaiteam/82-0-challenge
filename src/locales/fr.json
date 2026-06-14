@@ -1119,5 +1119,11 @@
     "kicker": "Résultat partagé",
     "challenge": "Tu penses pouvoir faire un meilleur cinq ?",
     "play": "Joue au 82-0 Challenge →"
+  },
+  "homeModes": {
+    "title": "Plus de façons de jouer au 82-0",
+    "subtitle": "Au-delà du draft classique : relevez le gauntlet du plafond salarial et les filtres de défi.",
+    "all": "Tous les défis",
+    "allDesc": "Plafond, Sans MVP, Une Franchise et plus : choisissez un filtre."
   }
 }

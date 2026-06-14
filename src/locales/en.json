@@ -1119,5 +1119,11 @@
     "kicker": "Shared result",
     "challenge": "Think you can build a better five?",
     "play": "Play the 82-0 Challenge →"
+  },
+  "homeModes": {
+    "title": "More ways to play 82-0",
+    "subtitle": "Beyond the classic draft — take on the salary-cap gauntlet and the challenge filters.",
+    "all": "All Challenges",
+    "allDesc": "Cap, No MVPs, One Franchise and more — pick a filter."
   }
 }
