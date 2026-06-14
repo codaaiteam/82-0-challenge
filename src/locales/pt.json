@@ -1121,9 +1121,13 @@
     "play": "Jogue o 82-0 Challenge →"
   },
   "homeModes": {
-    "title": "Mais formas de jogar 82-0",
-    "subtitle": "Além do draft clássico — encare o gauntlet do teto salarial e os filtros de desafio.",
-    "all": "Todos os desafios",
-    "allDesc": "Teto, Sem MVPs, Uma Franquia e mais — escolha um filtro."
+    "title": "Modos de jogo 82-0",
+    "subtitle": "A mesma temporada perfeita, cinco formas de jogar.",
+    "all": "Ver todos os filtros de desafio",
+    "capDesc": "O gauntlet — o orçamento aperta a cada 82-0. Até onde você vai?",
+    "noMvpsDesc": "Sem superestrelas. Vença tudo com jogadores de função.",
+    "oneTeamDesc": "Um clube, todas as eras. Invicto sozinho.",
+    "oneDecadeDesc": "Trave numa era e busque a perfeição.",
+    "hardDesc": "Curva mais íngreme. Só a elite sobrevive ao 82-0."
   }
 }

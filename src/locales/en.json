@@ -1121,9 +1121,13 @@
     "play": "Play the 82-0 Challenge →"
   },
   "homeModes": {
-    "title": "More ways to play 82-0",
-    "subtitle": "Beyond the classic draft — take on the salary-cap gauntlet and the challenge filters.",
-    "all": "All Challenges",
-    "allDesc": "Cap, No MVPs, One Franchise and more — pick a filter."
+    "title": "82-0 Game Modes",
+    "subtitle": "Same perfect-season chase — five ways to play.",
+    "all": "Browse all challenge filters",
+    "capDesc": "The gauntlet — build under a budget that tightens with every 82-0. How deep can you go?",
+    "noMvpsDesc": "No superstars. Win it all with role players.",
+    "oneTeamDesc": "One club, every era. Go undefeated alone.",
+    "oneDecadeDesc": "Lock to one era and chase perfection.",
+    "hardDesc": "Steeper curve. Only the elite survive 82-0."
   }
 }

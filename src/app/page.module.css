@@ -255,10 +255,64 @@
   font-size: 0.95rem;
 }
 
+/* Featured Salary Cap card — the one with the strongest orange CTA */
+.modeFeature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: linear-gradient(135deg, rgba(242, 100, 30, 0.16), rgba(242, 100, 30, 0.05));
+  border: 1px solid rgba(242, 100, 30, 0.5);
+  border-radius: var(--radius-lg);
+  padding: 1.3rem 1.4rem;
+  margin-bottom: 0.9rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+}
+
+.modeFeature:hover,
+.modeFeature:focus-visible {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 34px rgba(242, 100, 30, 0.28);
+  outline: none;
+}
+
+.featureIcon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+
+.featureBody { display: flex; flex-direction: column; gap: 0.25rem; flex: 1; min-width: 0; }
+
+.featureName { font-size: 1.3rem; font-weight: 900; letter-spacing: -0.01em; }
+
+.featureDesc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4; }
+
+.featureCta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  background: var(--accent);
+  color: #10141f;
+  font-size: 0.9rem;
+  font-weight: 800;
+  padding: 0.7rem 1.3rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: transform 0.15s, box-shadow 0.2s, filter 0.15s;
+}
+
+.modeFeature:hover .featureCta {
+  transform: translateX(2px);
+  box-shadow: 0 6px 18px rgba(242, 100, 30, 0.45);
+  filter: brightness(1.06);
+}
+
+/* The other four modes — equal-weight grid, neutral until hover/focus */
 .modesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.9rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
 }
 
 .modeCard {
@@ -268,37 +322,71 @@
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 1.1rem 1.1rem 1rem;
+  padding: 1.1rem 1.1rem 1.05rem;
   text-decoration: none;
   color: var(--text-primary);
-  transition: border-color 0.2s, transform 0.15s;
+  position: relative;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s, background 0.2s;
 }
 
-.modeCard:hover {
+.modeCard:hover,
+.modeCard:focus-visible {
   border-color: var(--accent);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(242, 100, 30, 0.16);
+  background: linear-gradient(180deg, rgba(242, 100, 30, 0.06), var(--bg-card) 60%);
+  outline: none;
 }
 
-.modeIcon {
-  font-size: 1.5rem;
-  line-height: 1;
-}
+.modeIcon { font-size: 1.5rem; line-height: 1; }
 
-.modeName {
-  font-size: 1.05rem;
-  font-weight: 800;
-}
+.modeName { font-size: 1.05rem; font-weight: 800; }
 
 .modeDesc {
-  font-size: 0.85rem;
+  font-size: 0.83rem;
   color: var(--text-muted);
   line-height: 1.4;
   flex: 1;
 }
 
-.modePlay {
-  margin-top: 0.3rem;
-  font-size: 0.82rem;
+/* Subtle arrow — only Salary Cap gets the bold filled CTA */
+.modeArrow {
+  margin-top: 0.4rem;
+  font-size: 1rem;
   font-weight: 800;
+  color: var(--text-muted);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.modeCard:hover .modeArrow {
   color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* Challenge-filter hub — lightest weight */
+.modesAllLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.modesAllLink:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+@media (max-width: 860px) {
+  .modesGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 520px) {
+  .modesGrid { grid-template-columns: 1fr; }
+  .modeFeature { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
+  .featureCta { align-self: stretch; justify-content: center; }
 }
