@@ -47,6 +47,8 @@ const STORY_WEAKNESS = {
   weakPlaymaking: 'struggled to move the ball as a unit',
   weakSteals: 'let too many balls slip through their hands',
   weakBlocks: 'could not protect the rim',
+  overall: 'fought hard but lacked a true superstar edge',
+  consistency: 'had the talent but ran hot and cold',
 };
 const STORY_STYLE = {
   balanced: 'a balanced starting five',
@@ -131,8 +133,13 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const [display, setDisplay] = useState({ team: '???', decade: "??'s" }); // slot windows
   const [selected, setSelected] = useState(null);     // player awaiting placement
   const [posFilter, setPosFilter] = useState('All');
-  const [teamSkips, setTeamSkips] = useState(1);
-  const [eraSkips, setEraSkips] = useState(1);
+  // Cap Mode draft is spin-gated within a budget, so a stingy 1+1 leaves runs
+  // dead on arrival when the spins are unkind. Give it room to find a build.
+  const [teamSkips, setTeamSkips] = useState(isCap ? 3 : 1);
+  const [eraSkips, setEraSkips] = useState(isCap ? 3 : 1);
+  // Cap Mode: a few do-overs so a finished five can be fine-tuned (tap a
+  // placed player to swap him out) instead of living with one unlucky spin.
+  const [capSwaps, setCapSwaps] = useState(isCap ? 2 : 0);
   const [result, setResult] = useState(null);
   const [story, setStory] = useState(null);   // game-by-game season reveal
   const [simIdx, setSimIdx] = useState(0);    // games revealed so far
@@ -268,10 +275,13 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     setSlots(newSlots);
     const newLineup = newSlots.filter(s => s.player).map(s => s.player);
     if (newLineup.length >= TOTAL_ROUNDS) {
-      const simOpts = isCap
-        ? { budgetLeft: capBudget - newLineup.reduce((sum, pl) => sum + priceOf(pl), 0) }
-        : { difficulty };
-      const res = startSim(newLineup, simOpts);
+      if (isCap) {
+        // Don't lock the run in yet — let the player review the five and swap
+        // a pick before simulating. runCapSim() runs the actual season.
+        setPhase('ready');
+        return;
+      }
+      const res = startSim(newLineup, { difficulty });
       if (isDaily) {
         setDailyDone(true);
         try {
@@ -295,6 +305,31 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     return res;
   };
 
+  // Cap Mode: lock in the finished five and run the season.
+  const runCapSim = () => {
+    const lineupArr = slots.filter(s => s.player).map(s => s.player);
+    const budgetLeft = capBudget - lineupArr.reduce((sum, pl) => sum + priceOf(pl), 0);
+    startSim(lineupArr, { budgetLeft });
+  };
+
+  // Cap Mode: vacate a placed player (his salary is refunded automatically,
+  // since spend is derived from the lineup) and drop back into the draft to
+  // refill that slot. Bounded by capSwaps so it stays a decision, not an
+  // infinite re-roll of the affordable pool.
+  const handleSwap = (slotId) => {
+    if (!isCap || capSwaps <= 0) return;
+    const slot = slots.find(s => s.id === slotId);
+    if (!slot || !slot.player) return;
+    const newSlots = slots.map(s => (s.id === slotId ? { ...s, player: null } : s));
+    setCapSwaps(n => n - 1);
+    setSlots(newSlots);
+    setRound(newSlots.filter(s => s.player).length + 1);
+    setSelected(null);
+    setCombo(null);
+    setDisplay({ team: '???', decade: "??'s" });
+    setPhase('spin');
+  };
+
   const handleRestart = (style = playstyle) => {
     // Random Era hands out a fresh decade each replay.
     if (filterCfg?.random) setActiveParam(randomPick(DECADES));
@@ -303,8 +338,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     setSlots(buildSlots(style));
     setCombo(null);
     setSelected(null);
-    setTeamSkips(1);
-    setEraSkips(1);
+    setTeamSkips(isCap ? 3 : 1);
+    setEraSkips(isCap ? 3 : 1);
+    setCapSwaps(isCap ? 2 : 0);
     setResult(null);
     setStory(null);
     setSimIdx(0);
@@ -741,6 +777,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
             </button>
           </div>
         )}
+        {isCap && phase !== 'sim' && phase !== 'result' && (
+          <span className={styles.variantTag}>🔄 {fmt(cap.swaps || 'Swaps ({n})', { n: capSwaps })}</span>
+        )}
         {phase !== 'result' && isDaily && (
           <span className={styles.dailyTag}>🗓️ {g.daily?.badge || 'Daily Challenge'} · {g.daily?.noSkips}</span>
         )}
@@ -836,7 +875,11 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
             </>
           )}
           {phase !== 'pick' && (
-            <div className={styles.spinHint}>{g.spinHint}</div>
+            <div className={styles.spinHint}>
+              {isCap && phase === 'ready'
+                ? (cap.reviewHint || 'Your five is set. Simulate the season, or tap a player to swap him out.')
+                : g.spinHint}
+            </div>
           )}
         </div>
 
@@ -860,11 +903,15 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
             {slots.map((s, i) => {
               const p = s.player;
               const eligible = selected && !p && selected.positions.includes(s.pos);
+              // A placed player can be swapped out in Cap Mode (when no pick is
+              // mid-placement and swaps remain) — tapping his slot vacates it.
+              const swappable = !selected && p && isCap && capSwaps > 0 && phase !== 'sim' && phase !== 'result';
               return (
                 <button
                   key={s.id}
-                  className={`${styles.courtSlot} ${styles['courtSpot' + i]} ${p ? `${styles.slotFilled} ${styles['slotC' + i]}` : ''} ${eligible ? styles.slotEligible : ''}`}
-                  onClick={() => handlePlace(s.id)}
+                  className={`${styles.courtSlot} ${styles['courtSpot' + i]} ${p ? `${styles.slotFilled} ${styles['slotC' + i]}` : ''} ${eligible ? styles.slotEligible : ''} ${swappable ? styles.slotSwappable : ''}`}
+                  onClick={() => (swappable ? handleSwap(s.id) : handlePlace(s.id))}
+                  title={swappable ? (cap.swapHint || 'Tap to swap this player out') : undefined}
                 >
                   {p ? (
                     <>
@@ -881,6 +928,16 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
           {selected && (
             <div className={styles.placingBar}>
               {fmt(g.placing, { name: selected.name })}
+            </div>
+          )}
+          {isCap && phase === 'ready' && !selected && (
+            <div className={styles.readyBar}>
+              <button className={styles.primaryBtn} onClick={runCapSim}>
+                {cap.simulate || 'Simulate Season →'}
+              </button>
+              {capSwaps > 0 && (
+                <small>{fmt(cap.swapReady || 'Or tap a player to swap him out — {n} swap(s) left', { n: capSwaps })}</small>
+              )}
             </div>
           )}
         </div>

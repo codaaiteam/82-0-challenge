@@ -229,6 +229,7 @@ export function simulateSeason(lineup, opts = {}) {
     ratios.blk * 0.15;
 
   const minRatio = Math.min(...CATS.map(c => ratios[c]));
+  const worstCat = CATS.reduce((w, c) => (ratios[c] < ratios[w] ? c : w), CATS[0]);
 
   // Uncapped strength for the leaderboard rating. S (above) caps every
   // category at 1.0 for the win curve, so elite rosters all hit 100 and tie.
@@ -251,10 +252,24 @@ export function simulateSeason(lineup, opts = {}) {
 
   wins = Math.max(8, Math.min(81, wins));
 
-  // The threshold: maximize every category at once for a shot at 82-0.
+  // The threshold for a shot at 82-0. The classic rule is "max every category"
+  // (every ratio >= 0.85), but a genuinely dominant roster should be able to
+  // buy down a near-miss in one category with surplus elsewhere — scoring 129
+  // when the benchmark is 122 ought to count for something. S caps each
+  // category at 1.0 and throws that overflow away; rawS keeps it, so the gap
+  // (rawS - S) is a "compensation pool". The weakest category may dip as low
+  // as COMP_FLOOR if the pool covers its weighted shortfall below 0.85 with
+  // room to spare (×2). Below COMP_FLOOR a hole is always fatal, so lopsided
+  // rosters still can't sneak a perfect season.
+  const COMP_FLOOR = 0.80;
+  const WEIGHTS = { pts: 0.30, reb: 0.20, ast: 0.20, stl: 0.15, blk: 0.15 };
+  const surplus = rawS - S;
+  const shortfall = Math.max(0, 0.85 - minRatio) * WEIGHTS[worstCat];
+  const maxedOut = minRatio >= 0.85 || (minRatio >= COMP_FLOOR && surplus >= shortfall * 2);
+
   // Hard Mode tightens the luck gate (45% vs 65%).
   const luckGate = difficulty > 1 ? 0.55 : 0.35;
-  if (S >= 0.96 && minRatio >= 0.85 && Math.random() > luckGate) wins = 82;
+  if (S >= 0.96 && maxedOut && Math.random() > luckGate) wins = 82;
 
   // Uncapped team rating (can exceed 100). Cap Mode adds an efficiency bonus
   // for budget left on the table.
@@ -271,17 +286,25 @@ export function simulateSeason(lineup, opts = {}) {
   else if (gradePts >= 65) grade = 'C';
   else grade = 'D';
 
-  // Weakness: the category furthest below benchmark.
-  let weakness = 'none';
-  if (minRatio < 0.85) {
-    const worst = CATS.reduce((w, c) => (ratios[c] < ratios[w] ? c : w), CATS[0]);
+  // Weakness label. "None — complete roster" is only honest for an actual
+  // 82-0: a balanced roster that still falls short isn't flawless, it just
+  // lacks the strength or consistency to win out. Naming the real reason keeps
+  // the result from reading as the sim mis-judging a perfect team.
+  let weakness;
+  if (wins === 82) {
+    weakness = 'none';            // earned the perfect season — truly complete
+  } else if (S >= 0.96 && minRatio >= 0.85) {
+    weakness = 'consistency';     // elite and balanced, just couldn't string 82 wins together
+  } else if (minRatio >= 0.85) {
+    weakness = 'overall';         // no glaring hole, but not strong enough to dominate
+  } else {
     weakness = {
       pts: 'weakScoring',
       reb: 'weakRebounding',
       ast: 'weakPlaymaking',
       stl: 'weakSteals',
       blk: 'weakBlocks',
-    }[worst];
+    }[worstCat];
   }
 
   const best = lineup.reduce((b, p) => {

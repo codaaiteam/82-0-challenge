@@ -571,6 +571,30 @@
   border-radius: 10px;
 }
 
+/* Cap Mode: a placed player you can still swap out */
+.slotSwappable {
+  cursor: pointer;
+  border-style: dashed;
+}
+.slotSwappable:hover {
+  border-color: #f2641e;
+  color: #f2641e;
+}
+
+/* Cap Mode: review-and-simulate bar once all five are placed */
+.readyBar {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+.readyBar small {
+  color: #5f6675;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
 /* ---- daily ---- */
 .dailyTag {
   color: #a6adba;
