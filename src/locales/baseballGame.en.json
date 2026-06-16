@@ -1,0 +1,245 @@
+{
+  "layout": {
+    "language": "en"
+  },
+  "seoTitle": "23-0 Game — Build the Perfect AFL Season",
+  "seoDescription": "Draft an all-time AFL 18 and find out if it could win all 23 — the perfect season no footy club has ever produced. Spin clubs and eras, build your team, chase 23-0. Free, no sign-up.",
+  "keywords": "23-0, afl 23-0, 23-0 afl game, 23-0 game, afl team builder, greatest afl team, perfect afl season, afl game online, best afl team of all time",
+  "header": {
+    "siteName": "23-0 Game",
+    "home": "Home",
+    "whatIs": "The Record",
+    "howToPlay": "How to Play",
+    "teamBuilder": "Build Your 18",
+    "tips": "Tips",
+    "leaderboard": "Leaderboard"
+  },
+  "hero": {
+    "title": "23-0 Game",
+    "subtitle": "23 games. Zero losses. Draft an all-time AFL 18 — two legends per spin — and run the season no club in over a century of footy has ever finished. Spin, build, and chase perfection.",
+    "cta": "Build Your 18"
+  },
+  "game": {
+    "roundOf": "Pick {round} of {total}",
+    "team": "Club",
+    "era": "Era",
+    "spin": "Spin",
+    "spinning": "Spinning…",
+    "spinHint": "Hit SPIN to draw a random club and era, then take two players.",
+    "rerollTeam": "Swap Club",
+    "rerollEra": "Swap Era",
+    "filterAll": "All",
+    "playersAvailable": "{count} players",
+    "placing": "Placing: {name} — tap a glowing position",
+    "pickTwo": "Take {n} from this club",
+    "pickNextSlot": "Tap another open position for this pick.",
+    "projectedRecord": "Projected Record",
+    "pts": "rating",
+    "bestPick": "Star Player",
+    "weakness": "Weak Link",
+    "playAgain": "New Team",
+    "copyResult": "Copy Result",
+    "copied": "Copied!",
+    "shareOnX": "Share on X",
+    "afl": {
+      "shareText": "I went {record} in the 162-0 Baseball Game. Can your all-time roster beat mine?",
+      "titles": {
+        "perfect": "The Perfect Season",
+        "almost": "Pennant Contenders",
+        "favorite": "World Series Bound",
+        "contender": "Wild Card Team",
+        "playoff": "Middle of the Pack",
+        "invincible": "The Unbeaten",
+        "champions": "Best Record in Baseball",
+        "european": "September Baseball"
+      },
+      "weaknesses": {
+        "weakDefense": "Leaky defense",
+        "weakMidfield": "Soft up the middle",
+        "weakAttack": "No pop in the lineup",
+        "none": "None — a complete 9"
+      },
+      "squadComplete": "Team Complete",
+      "squadCompleteSub": "Here is what the bookies make of your 9. Simulate the season and chase the impossible.",
+      "preSeasonOdds": "Pre-Season Odds",
+      "projectedFinish": "Projected Finish",
+      "expectedPoints": "Expected Season Points",
+      "oddWin": "Best record",
+      "oddTop4": "Make the playoffs",
+      "oddTop8": "Win the division",
+      "oddSpoon": "Worst record",
+      "oddPerfect": "Perfect 162-0",
+      "oddsHint": "What your 9 should produce. Simulate to see if you beat it.",
+      "simulate": "Simulate Season →",
+      "matchweek": "Game {n} / 162",
+      "skipAll": "Skip to result →",
+      "finished": "Finished",
+      "projected": "Projected",
+      "over": "Overperformed",
+      "under": "Underperformed",
+      "onTarget": "On Script",
+      "winsL": "Wins",
+      "drawsL": "Draws",
+      "lossesL": "Losses",
+      "ptsL": "Season Points",
+      "gfL": "Runs For",
+      "gaL": "Runs Against",
+      "seasonAwards": "Season Awards",
+      "goldenBoot": "Most Runs Scored",
+      "playmakerAward": "Most RBIs",
+      "potsAward": "Player of the Season",
+      "goalsN": "{n} runs",
+      "assistsN": "{n} RBIs",
+      "csN": "{n} lockdowns",
+      "playerCol": "Player",
+      "gShort": "G",
+      "aShort": "A",
+      "csShort": "LD",
+      "cleanSheetsL": "Lockdowns (under 60 conceded)",
+      "winStreak": "Longest Win Streak",
+      "biggestWinL": "Biggest Win (margin)",
+      "highScoringL": "Highest Score",
+      "finalTable": "Final Standings",
+      "seasonResults": "Season Results",
+      "clubCol": "Club",
+      "ptsShort": "PTS",
+      "gdShort": "%",
+      "yourXI": "Your 9",
+      "narrPerfect": "162 wins. Zero losses. The perfect MLB season is real — the thing no team in baseball history has ever come close to. Frame it.",
+      "narrInvincible": "Unbeaten through 162. {wins} wins, {draws} ties — perfection slipped away on {draws} days, but nobody swept you.",
+      "narrChampions": "Best record in baseball at {points} season points. The bookies said {projected}; your 9 took the top spot. {star} led the charge.",
+      "narrOver": "Projected {projected}, finished {position}. Nobody saw that coming — {points} season points and {star} carried it.",
+      "narrUnder": "Projected {projected}, finished {position}. On paper a better side than this — the 18 never clicked.",
+      "narrOn": "Finished {position}, exactly where the bookies had you. {points} season points, led by {star}.",
+      "yourBest": "Your best",
+      "runN": "Run #{n}",
+      "newBest": "New personal best!",
+      "nearMiss": "Only {n} games away from a perfect 162-0 — run it back.",
+      "lbTitle": "Think this season is leaderboard-worthy?",
+      "lbName": "Your name",
+      "lbSubmit": "Submit to Global Leaderboard",
+      "lbSending": "Submitting…",
+      "lbRank": "World #{rank}",
+      "lbToday": "Today #{rank}",
+      "lbView": "View leaderboard →",
+      "lbError": "Couldn't submit — try again in a few seconds.",
+      "tipsCta": "Want a better record? Read the official tips →"
+    },
+    "setupTitle": "Build Your 9",
+    "setupSub": "The classic nine: a pitcher, four infielders, three outfielders and a catcher. Set your rules, then spin.",
+    "difficulty": "Difficulty",
+    "diffEasy": "Easy",
+    "diffEasyDesc": "3 rerolls available",
+    "diffNormal": "Normal",
+    "diffNormalDesc": "1 reroll available",
+    "diffHard": "Hard",
+    "diffHardDesc": "No rerolls · ratings hidden",
+    "showRatings": "Show Ratings",
+    "ratingsOn": "On",
+    "ratingsOnDesc": "Player overalls visible",
+    "ratingsOff": "Off",
+    "ratingsOffDesc": "Blind mode — trust your gut",
+    "draftMode": "Draft Mode",
+    "squadFirst": "Squad First",
+    "squadFirstDesc": "Spin a club, take two players, choose their spots",
+    "positionFirst": "Position First",
+    "positionFirstDesc": "Pick a spot on the diamond, then spin a club to fill it",
+    "eraAll": "All-time",
+    "startDraft": "Start Draft →",
+    "reroll": "Reroll",
+    "pickSlotHint": "Tap an open position on the diamond to spin for it.",
+    "fillingSlot": "Filling: {slot}",
+    "newSetup": "New Setup",
+    "poster": "Download Poster"
+  },
+  "poster": "Download Poster",
+  "homeSeo": {
+    "sections": [
+      {
+        "h2": "The Perfect Season Footy Has Never Seen",
+        "paragraphs": [
+          "Twenty-three games, twenty-three wins, not a single loss — a flawless 23-0. In well over a century of VFL/AFL football, it has never happened. The closest any club ever came was Essendon in 2000, a wrecking ball of a team that finished the home-and-away season 21-1, dropping just one game before September. The great dynasties — Hawthorn's three-peat of 2013-15, Brisbane's of 2001-03 — never even threatened it. Footy is played on a ground so big and a season so long that every side, eventually, has one Saturday where the bounce goes wrong.",
+          "That gap — between the best season ever played and a truly perfect one — is the whole point of this game. You are not trying to match the 2000 Bombers. You are trying to do the thing they couldn't."
+        ]
+      },
+      {
+        "h2": "How the 23-0 Game Works",
+        "paragraphs": [
+          "There is no free draft here. A slot machine spins up a random club and a random decade — Geelong in the 90s, the Brisbane three-peat era, Richmond's 2017-20 dynasty — and you take two real players from that side before the wheel spins again. Place them on a proper oval in the classic structure: six in the back line, six through the midfield (rucks and rovers included), six up forward. Nine spins fill all eighteen positions, so every draw forces a decision: take the superstar mid now, or grab the key forward your front six is screaming for?",
+          "When the 18 is locked in, the engine weighs every line and simulates a full 23-game season against the other seventeen clubs — real AFL scorelines, goal by goal, with a live ladder at the end. One passenger anywhere on the ground and the perfect record is gone."
+        ]
+      },
+      {
+        "h2": "Why the Midfield Wins You September — and 23-0",
+        "paragraphs": [
+          "Ask anyone who has watched a Brownlow count: footy is ruled by midfielders. The engine knows it too. Your centre-square six carry the heaviest weighting in the simulation, because clearances decide where the ball lives, and where the ball lives decides the scoreboard. The forward six come next — a great key forward turns inside-50s into goals instead of behinds — while the back six are your floor, the thing that keeps a bad day from becoming a loss.",
+          "Balance still beats brilliance. A complete 18 with no weak link will out-run a glamorous side carrying one passenger in the back pocket almost every time. Draft like a list manager building for September, not a fan collecting posters."
+        ]
+      },
+      {
+        "h2": "Four Decades of AFL Royalty",
+        "paragraphs": [
+          "The player pool spans the modern game. The 1990s give you Ablett senior at his terrifying peak, Carey's North Melbourne, Lockett kicking bags that will never be matched. The 2000s bring the Brisbane three-peat machine, Hird's Essendon, Judd and Cousins running riot in the west. The 2010s are Hawthorn's golden era, Richmond's yellow-and-black wave, Ablett junior winning a Brownlow on the Gold Coast and Buddy Franklin doing Buddy Franklin things in Sydney. The 2020s deliver the modern monsters — Bontempelli, Cripps, Neale, and the Daicos show at Collingwood.",
+          "Because each spin can land in any decade, your 18 is almost always a cross-era fantasy: a 90s full back behind a 2020s midfield feeding a 2000s full forward. Half the fun is seeing which legends history throws together — and arguing about who misses out."
+        ]
+      },
+      {
+        "h2": "Tips for Chasing a Perfect Season",
+        "paragraphs": [
+          "Stack the midfield first — it is the heaviest-weighted line, and a soft centre square caps your ceiling no matter how many goals your forwards kick. Treat your two picks per spin as a pair: if the club offers one elite player, take them, then use the second pick to quietly fill a back pocket or a wing you would never spend a good spin on. Save your reroll for a genuinely thin draw at the positions you have left, not for a club that merely lacks your favourite. And remember the engine is deliberately cruel: even a near-flawless 18 only has a chance at 23-0, never a guarantee — the perfect season is meant to feel mythical.",
+          "Play it twice and you'll never get the same run. Every spin rewrites which era of greatness you're working with."
+        ]
+      },
+      {
+        "h2": "Beyond the AFL",
+        "paragraphs": [
+          "The perfect-season idea has jumped from sport to sport. It started in basketball as the viral 82-0 challenge — win all 82 NBA games — then spread to the Premier League as 38-0, the NFL as 17-0, and the World Cup as 7-0. The 23-0 game brings the format to Australian rules football, where eighteen positions, an oval the size of a paddock and the brutal maths of a 23-game season make it arguably the hardest perfect season of them all. If you can build a flawless 18 here, you can build anything."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "q1": "What is the 23-0 game?",
+    "a1": "The 23-0 game is a free AFL team builder. A slot machine assigns random clubs and decades, you draft a real-player 18 in the classic structure — six backs, six midfielders, six forwards — and a simulation projects whether your side could win all 23 home-and-away games without a single loss.",
+    "q2": "Has any AFL team ever gone 23-0?",
+    "a2": "No. The best home-and-away season in AFL history is Essendon's 21-1 in 2000 — they lost just once before September. No club in VFL/AFL history has finished a season undefeated, which is exactly why the 23-0 chase is the hook.",
+    "q3": "How do I build a side that goes 23-0?",
+    "a3": "Prioritise the midfield — the engine weights your centre-square six most heavily, then the forwards, then defence. A complete 18 with no weak link beats a star-heavy side carrying passengers. Use your reroll on the thinnest draws and treat each spin's two picks as a pair: one star, one role player.",
+    "q4": "Is the 23-0 game free?",
+    "a4": "Yes — it plays right in your browser, free, with no download or account, in seven languages. Spin clubs and eras, build your 18, simulate the season and share your record.",
+    "q5": "Which clubs and players are included?",
+    "a5": "All 18 AFL clubs across four decades (1990s to 2020s) — over 500 real players, from Ablett and Carey to Bontempelli and Cripps, each placed in the position they actually played. Expansion clubs appear from the decade they entered the competition.",
+    "q6": "Is this an official AFL game?",
+    "a6": "No. It is an independent fan-made project, not affiliated with, endorsed by, or sponsored by the AFL or any club. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only."
+  },
+  "cta": {
+    "title": "Built the perfect 18? Now build a story.",
+    "desc": "Create an AI character squad, generate a story, and turn it into an illustrated picture book with AI Character Squad Builder.",
+    "button": "Try AI Character Squad Builder"
+  },
+  "footer": {
+    "pages": "Pages",
+    "legal": "Legal",
+    "about": "About",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "contact": "Contact",
+    "telegram": "Join the 23-0 community — share your 18",
+    "disclaimer": "23-0 Game is an independent fan-made project. It is not affiliated with, endorsed by, or sponsored by the Australian Football League (AFL) or any club. Player names and historical statistics are publicly available facts used for informational and entertainment purposes only. No official logos, trademarks, or photographs are used.",
+    "copyright": "© 2026 23-0 Game"
+  },
+  "lb": {
+    "today": "Today",
+    "allTime": "All-Time",
+    "player": "Coach",
+    "record": "W-D-L",
+    "pts": "PTS",
+    "squad": "Team",
+    "you": "You",
+    "empty": "No entries yet — be the first to submit a season.",
+    "loading": "Loading…",
+    "offline": "Leaderboard is taking a breather — try again in a minute.",
+    "cta": "Build your 18 and claim a spot →"
+  }
+}

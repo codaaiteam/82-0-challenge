@@ -1,0 +1,43 @@
+[
+  { "id": "david-ortiz-bos-2000s", "name": "David Ortiz", "club": "BOS", "era": "2000s", "pos": "IF", "rating": 94, "stat1": "541 HR", "stat2": "10X ALL-STAR" },
+  { "id": "manny-ramirez-bos-2000s", "name": "Manny Ramirez", "club": "BOS", "era": "2000s", "pos": "IF", "rating": 92, "stat1": ".312 AVG", "stat2": "555 HR" },
+  { "id": "kevin-youkilis-bos-2000s", "name": "Kevin Youkilis", "club": "BOS", "era": "2000s", "pos": "IF", "rating": 82, "stat1": "3X ALL-STAR", "stat2": "GOLD GLOVE" },
+  { "id": "johnny-damon-bos-2000s", "name": "Johnny Damon", "club": "BOS", "era": "2000s", "pos": "OF", "rating": 84, "stat1": "2769 HITS", "stat2": "408 SB" },
+  { "id": "jd-drew-bos-2000s", "name": "J.D. Drew", "club": "BOS", "era": "2000s", "pos": "OF", "rating": 81, "stat1": "242 HR", "stat2": ".873 OPS" },
+  { "id": "pedro-martinez-bos-2000s", "name": "Pedro Martinez", "club": "BOS", "era": "2000s", "pos": "P", "rating": 97, "stat1": "3X CY YOUNG", "stat2": "3154 K" },
+
+  { "id": "derek-jeter-nyy-2000s", "name": "Derek Jeter", "club": "NYY", "era": "2000s", "pos": "IF", "rating": 95, "stat1": "3465 HITS", "stat2": "14X ALL-STAR" },
+  { "id": "alex-rodriguez-nyy-2000s", "name": "Alex Rodriguez", "club": "NYY", "era": "2000s", "pos": "IF", "rating": 96, "stat1": "696 HR", "stat2": "3X MVP" },
+  { "id": "jorge-posada-nyy-2000s", "name": "Jorge Posada", "club": "NYY", "era": "2000s", "pos": "IF", "rating": 84, "stat1": "275 HR", "stat2": "5X ALL-STAR" },
+  { "id": "hideki-matsui-nyy-2000s", "name": "Hideki Matsui", "club": "NYY", "era": "2000s", "pos": "OF", "rating": 83, "stat1": "175 HR", "stat2": "09 WS MVP" },
+  { "id": "bobby-abreu-nyy-2000s", "name": "Bobby Abreu", "club": "NYY", "era": "2000s", "pos": "OF", "rating": 82, "stat1": "2470 HITS", "stat2": "400 SB" },
+  { "id": "mariano-rivera-nyy-2000s", "name": "Mariano Rivera", "club": "NYY", "era": "2000s", "pos": "P", "rating": 98, "stat1": "652 SAVES", "stat2": "2.21 ERA" },
+
+  { "id": "albert-pujols-stl-2000s", "name": "Albert Pujols", "club": "STL", "era": "2000s", "pos": "IF", "rating": 98, "stat1": "703 HR", "stat2": "3X MVP" },
+  { "id": "scott-rolen-stl-2000s", "name": "Scott Rolen", "club": "STL", "era": "2000s", "pos": "IF", "rating": 85, "stat1": "8X GOLD GLOVE", "stat2": "316 HR" },
+  { "id": "yadier-molina-stl-2000s", "name": "Yadier Molina", "club": "STL", "era": "2000s", "pos": "IF", "rating": 86, "stat1": "9X GOLD GLOVE", "stat2": "2X WS CHAMP" },
+  { "id": "jim-edmonds-stl-2000s", "name": "Jim Edmonds", "club": "STL", "era": "2000s", "pos": "OF", "rating": 85, "stat1": "393 HR", "stat2": "8X GOLD GLOVE" },
+  { "id": "matt-holliday-stl-2000s", "name": "Matt Holliday", "club": "STL", "era": "2000s", "pos": "OF", "rating": 83, "stat1": "316 HR", "stat2": "7X ALL-STAR" },
+  { "id": "chris-carpenter-stl-2000s", "name": "Chris Carpenter", "club": "STL", "era": "2000s", "pos": "P", "rating": 85, "stat1": "05 CY YOUNG", "stat2": "144 WINS" },
+
+  { "id": "vladimir-guerrero-laa-2000s", "name": "Vladimir Guerrero", "club": "LAA", "era": "2000s", "pos": "OF", "rating": 92, "stat1": "449 HR", "stat2": "04 MVP" },
+  { "id": "garret-anderson-laa-2000s", "name": "Garret Anderson", "club": "LAA", "era": "2000s", "pos": "OF", "rating": 81, "stat1": "2529 HITS", "stat2": "287 HR" },
+  { "id": "troy-glaus-laa-2000s", "name": "Troy Glaus", "club": "LAA", "era": "2000s", "pos": "IF", "rating": 82, "stat1": "320 HR", "stat2": "02 WS MVP" },
+  { "id": "chone-figgins-laa-2000s", "name": "Chone Figgins", "club": "LAA", "era": "2000s", "pos": "IF", "rating": 79, "stat1": "341 SB", "stat2": ".363 OBP" },
+  { "id": "orlando-cabrera-laa-2000s", "name": "Orlando Cabrera", "club": "LAA", "era": "2000s", "pos": "IF", "rating": 80, "stat1": "2X GOLD GLOVE", "stat2": "216 SB" },
+  { "id": "francisco-rodriguez-laa-2000s", "name": "Francisco Rodriguez", "club": "LAA", "era": "2000s", "pos": "P", "rating": 87, "stat1": "62 SAVES 2008", "stat2": "437 SAVES" },
+
+  { "id": "ryan-howard-phi-2000s", "name": "Ryan Howard", "club": "PHI", "era": "2000s", "pos": "IF", "rating": 87, "stat1": "382 HR", "stat2": "06 MVP" },
+  { "id": "chase-utley-phi-2000s", "name": "Chase Utley", "club": "PHI", "era": "2000s", "pos": "IF", "rating": 88, "stat1": "6X ALL-STAR", "stat2": "259 HR" },
+  { "id": "jimmy-rollins-phi-2000s", "name": "Jimmy Rollins", "club": "PHI", "era": "2000s", "pos": "IF", "rating": 86, "stat1": "07 MVP", "stat2": "470 SB" },
+  { "id": "bobby-abreu-phi-2000s", "name": "Bobby Abreu", "club": "PHI", "era": "2000s", "pos": "OF", "rating": 84, "stat1": ".416 OBP PHI", "stat2": "195 SB" },
+  { "id": "pat-burrell-phi-2000s", "name": "Pat Burrell", "club": "PHI", "era": "2000s", "pos": "OF", "rating": 80, "stat1": "292 HR", "stat2": "976 RBI" },
+  { "id": "cole-hamels-phi-2000s", "name": "Cole Hamels", "club": "PHI", "era": "2000s", "pos": "P", "rating": 84, "stat1": "08 WS MVP", "stat2": "2560 K" },
+
+  { "id": "barry-bonds-sf-2000s", "name": "Barry Bonds", "club": "SF", "era": "2000s", "pos": "OF", "rating": 99, "stat1": "762 HR", "stat2": "7X MVP" },
+  { "id": "jeff-kent-sf-2000s", "name": "Jeff Kent", "club": "SF", "era": "2000s", "pos": "IF", "rating": 85, "stat1": "377 HR", "stat2": "00 MVP" },
+  { "id": "rich-aurilia-sf-2000s", "name": "Rich Aurilia", "club": "SF", "era": "2000s", "pos": "IF", "rating": 78, "stat1": "186 HR", "stat2": "01 ALL-STAR" },
+  { "id": "pablo-sandoval-sf-2000s", "name": "Pablo Sandoval", "club": "SF", "era": "2000s", "pos": "IF", "rating": 80, "stat1": ".330 AVG 2009", "stat2": "WS CHAMP" },
+  { "id": "randy-winn-sf-2000s", "name": "Randy Winn", "club": "SF", "era": "2000s", "pos": "OF", "rating": 78, "stat1": "1737 HITS", "stat2": "215 SB" },
+  { "id": "tim-lincecum-sf-2000s", "name": "Tim Lincecum", "club": "SF", "era": "2000s", "pos": "P", "rating": 88, "stat1": "2X CY YOUNG", "stat2": "1736 K" }
+]

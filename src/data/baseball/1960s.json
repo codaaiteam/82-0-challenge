@@ -1,0 +1,43 @@
+[
+  {"id": "babe-ruth-nyy-1960s", "name": "Babe Ruth", "club": "NYY", "era": "1960s", "pos": "OF", "rating": 99, "stat1": "714 HR", "stat2": ".342 AVG"},
+  {"id": "lou-gehrig-nyy-1960s", "name": "Lou Gehrig", "club": "NYY", "era": "1960s", "pos": "IF", "rating": 98, "stat1": "2130 GAMES", "stat2": ".340 AVG"},
+  {"id": "mickey-mantle-nyy-1960s", "name": "Mickey Mantle", "club": "NYY", "era": "1960s", "pos": "OF", "rating": 97, "stat1": "536 HR", "stat2": "3x MVP"},
+  {"id": "yogi-berra-nyy-1960s", "name": "Yogi Berra", "club": "NYY", "era": "1960s", "pos": "IF", "rating": 94, "stat1": "3x MVP", "stat2": "10x WS CHAMP"},
+  {"id": "joe-dimaggio-nyy-1960s", "name": "Joe DiMaggio", "club": "NYY", "era": "1960s", "pos": "IF", "rating": 95, "stat1": "56-GAME HIT", "stat2": "3x MVP"},
+  {"id": "whitey-ford-nyy-1960s", "name": "Whitey Ford", "club": "NYY", "era": "1960s", "pos": "P", "rating": 91, "stat1": "236 WINS", "stat2": "ERA 2.75"},
+
+  {"id": "ted-williams-bos-1960s", "name": "Ted Williams", "club": "BOS", "era": "1960s", "pos": "OF", "rating": 98, "stat1": ".344 AVG", "stat2": "521 HR"},
+  {"id": "carl-yastrzemski-bos-1960s", "name": "Carl Yastrzemski", "club": "BOS", "era": "1960s", "pos": "OF", "rating": 92, "stat1": "TRIPLE CROWN", "stat2": "3419 HITS"},
+  {"id": "bobby-doerr-bos-1960s", "name": "Bobby Doerr", "club": "BOS", "era": "1960s", "pos": "IF", "rating": 85, "stat1": "9x ALL-STAR", "stat2": "223 HR"},
+  {"id": "jimmie-foxx-bos-1960s", "name": "Jimmie Foxx", "club": "BOS", "era": "1960s", "pos": "IF", "rating": 93, "stat1": "534 HR", "stat2": "3x MVP"},
+  {"id": "johnny-pesky-bos-1960s", "name": "Johnny Pesky", "club": "BOS", "era": "1960s", "pos": "IF", "rating": 80, "stat1": ".307 AVG", "stat2": "200+ HITS 3x"},
+  {"id": "cy-young-bos-1960s", "name": "Cy Young", "club": "BOS", "era": "1960s", "pos": "P", "rating": 96, "stat1": "511 WINS", "stat2": "ERA 2.63"},
+
+  {"id": "jackie-robinson-lad-1960s", "name": "Jackie Robinson", "club": "LAD", "era": "1960s", "pos": "IF", "rating": 95, "stat1": "ROY + MVP", "stat2": ".311 AVG"},
+  {"id": "duke-snider-lad-1960s", "name": "Duke Snider", "club": "LAD", "era": "1960s", "pos": "OF", "rating": 90, "stat1": "407 HR", "stat2": "8x ALL-STAR"},
+  {"id": "pee-wee-reese-lad-1960s", "name": "Pee Wee Reese", "club": "LAD", "era": "1960s", "pos": "IF", "rating": 86, "stat1": "10x ALL-STAR", "stat2": "232 SB"},
+  {"id": "gil-hodges-lad-1960s", "name": "Gil Hodges", "club": "LAD", "era": "1960s", "pos": "IF", "rating": 84, "stat1": "370 HR", "stat2": "8x ALL-STAR"},
+  {"id": "roy-campanella-lad-1960s", "name": "Roy Campanella", "club": "LAD", "era": "1960s", "pos": "OF", "rating": 89, "stat1": "3x MVP", "stat2": "242 HR"},
+  {"id": "sandy-koufax-lad-1960s", "name": "Sandy Koufax", "club": "LAD", "era": "1960s", "pos": "P", "rating": 97, "stat1": "ERA 2.76", "stat2": "4 NO-HITTERS"},
+
+  {"id": "willie-mays-sf-1960s", "name": "Willie Mays", "club": "SF", "era": "1960s", "pos": "OF", "rating": 99, "stat1": "660 HR", "stat2": "24x ALL-STAR"},
+  {"id": "willie-mccovey-sf-1960s", "name": "Willie McCovey", "club": "SF", "era": "1960s", "pos": "IF", "rating": 91, "stat1": "521 HR", "stat2": "MVP 1969"},
+  {"id": "mel-ott-sf-1960s", "name": "Mel Ott", "club": "SF", "era": "1960s", "pos": "OF", "rating": 92, "stat1": "511 HR", "stat2": "12x ALL-STAR"},
+  {"id": "orlando-cepeda-sf-1960s", "name": "Orlando Cepeda", "club": "SF", "era": "1960s", "pos": "IF", "rating": 87, "stat1": "379 HR", "stat2": "ROY 1958"},
+  {"id": "bill-terry-sf-1960s", "name": "Bill Terry", "club": "SF", "era": "1960s", "pos": "IF", "rating": 85, "stat1": ".341 AVG", "stat2": ".401 IN 1930"},
+  {"id": "juan-marichal-sf-1960s", "name": "Juan Marichal", "club": "SF", "era": "1960s", "pos": "P", "rating": 91, "stat1": "243 WINS", "stat2": "ERA 2.89"},
+
+  {"id": "stan-musial-stl-1960s", "name": "Stan Musial", "club": "STL", "era": "1960s", "pos": "OF", "rating": 97, "stat1": "3630 HITS", "stat2": "3x MVP"},
+  {"id": "rogers-hornsby-stl-1960s", "name": "Rogers Hornsby", "club": "STL", "era": "1960s", "pos": "IF", "rating": 95, "stat1": ".358 AVG", "stat2": "2x TRIPLE CROWN"},
+  {"id": "lou-brock-stl-1960s", "name": "Lou Brock", "club": "STL", "era": "1960s", "pos": "OF", "rating": 89, "stat1": "938 SB", "stat2": "3023 HITS"},
+  {"id": "ken-boyer-stl-1960s", "name": "Ken Boyer", "club": "STL", "era": "1960s", "pos": "IF", "rating": 84, "stat1": "MVP 1964", "stat2": "5 GOLD GLOVES"},
+  {"id": "frankie-frisch-stl-1960s", "name": "Frankie Frisch", "club": "STL", "era": "1960s", "pos": "IF", "rating": 85, "stat1": ".316 AVG", "stat2": "MVP 1931"},
+  {"id": "bob-gibson-stl-1960s", "name": "Bob Gibson", "club": "STL", "era": "1960s", "pos": "P", "rating": 96, "stat1": "ERA 1.12 1968", "stat2": "251 WINS"},
+
+  {"id": "ty-cobb-det-1960s", "name": "Ty Cobb", "club": "DET", "era": "1960s", "pos": "OF", "rating": 98, "stat1": ".366 AVG", "stat2": "4189 HITS"},
+  {"id": "al-kaline-det-1960s", "name": "Al Kaline", "club": "DET", "era": "1960s", "pos": "OF", "rating": 91, "stat1": "3007 HITS", "stat2": "18x ALL-STAR"},
+  {"id": "hank-greenberg-det-1960s", "name": "Hank Greenberg", "club": "DET", "era": "1960s", "pos": "IF", "rating": 90, "stat1": "331 HR", "stat2": "2x MVP"},
+  {"id": "charlie-gehringer-det-1960s", "name": "Charlie Gehringer", "club": "DET", "era": "1960s", "pos": "IF", "rating": 88, "stat1": ".320 AVG", "stat2": "MVP 1937"},
+  {"id": "norm-cash-det-1960s", "name": "Norm Cash", "club": "DET", "era": "1960s", "pos": "IF", "rating": 83, "stat1": "377 HR", "stat2": ".361 IN 1961"},
+  {"id": "hal-newhouser-det-1960s", "name": "Hal Newhouser", "club": "DET", "era": "1960s", "pos": "P", "rating": 87, "stat1": "2x MVP", "stat2": "207 WINS"}
+]

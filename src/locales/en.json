@@ -668,6 +668,54 @@
         }
       ]
     },
+    "baseball162": {
+      "title": "162-0 Challenge: Play the Baseball Perfect Season Game",
+      "description": "Play the 162-0 challenge. Draft an all-time MLB lineup of baseball legends across seven decades, then simulate a full 162-game season and see if your roster can do the impossible — go undefeated.",
+      "h1": "162-0 Challenge",
+      "intro": "The baseball cousin of the viral 82-0 basketball challenge: spin all-time teams and eras, draft a nine-man diamond of legends, and find out if they could win all 162 games — the perfect season no MLB team has ever produced. Play it right here.",
+      "playCta": "Play the 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "What Does 162-0 Mean in Baseball?",
+          "paragraphs": [
+            "A modern MLB team plays 162 regular-season games. Win every single one and you finish 162-0 — a flawless season that has never come remotely close to happening. The best records in history still piled up dozens of losses: the 1906 Cubs went 116-36, the 2001 Mariners matched 116 wins at 116-46, and even those all-time juggernauts lost roughly one game in four. Across a 162-game grind, no roster has ever gone undefeated, and none ever will.",
+            "Just like 82-0 in basketball, 162-0 is shorthand for an impossible standard — a lineup so stacked it would not drop a single game across the longest season in major American sports."
+          ]
+        },
+        {
+          "h2": "What Is the 162-0 Baseball Game?",
+          "paragraphs": [
+            "The 162-0 challenge is a viral baseball roster builder in the same family as the 82-0 basketball challenge. The game spins up random all-time franchises and eras, and you draft a nine-player diamond — catcher, infield, outfield, and an ace on the mound — from legends spanning the 1960s to the 2020s. Every pick carries a real all-time reputation, so you are weighing dynasties and decades, not vibes.",
+            "Once your nine are set, the simulation engine plays out a full 162-game season against a league of all-time opponents. A perfect 162-0 run is the holy grail; fall short and you will still chase the pennant, a division title, or the best record in baseball. Share your final record and challenge friends to beat it."
+          ]
+        },
+        {
+          "h2": "162-0 vs 82-0: Same Game, Different Sport",
+          "paragraphs": [
+            "Both challenges run on the same core idea: random team draws, a draft built on all-time greats, and a simulation that decides whether your lineup survives an entire season undefeated. The differences come from the sports themselves. Basketball's 82-0 asks for five players over 82 games; baseball's 162-0 asks for a full nine-man diamond and the longest season in sports — twice the games, twice the variance, and a far steeper climb to perfection.",
+            "If you came here chasing the 162-0 trend, you are in the right family of games. Spin the diamond, draft your legends, and see if your lineup can do what no real team ever has — then try the original 82-0 basketball version too."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the 162-0 challenge?",
+          "a": "The 162-0 challenge is a viral baseball roster builder where you draft a nine-player all-time lineup from randomly drawn teams and eras, then a simulation plays out a full 162-game MLB season. Going 162-0 means a flawless, undefeated regular season."
+        },
+        {
+          "q": "Has any MLB team ever gone 162-0?",
+          "a": "No — not even close. The best records ever are the 1906 Cubs (116-36) and 2001 Mariners (116-46), and both still lost dozens of games. A 162-0 perfect season has never happened and is considered impossible over so long a schedule."
+        },
+        {
+          "q": "Is 162-0 related to the 82-0 challenge?",
+          "a": "Yes — 162-0 is the baseball version of the viral 82-0 basketball challenge. Both use random team draws, drafts built on all-time greats, and a season simulation that decides if your roster goes undefeated."
+        },
+        {
+          "q": "How do I play the 162-0 baseball game?",
+          "a": "Spin random teams and eras, draft your nine-man diamond of baseball legends, then simulate the 162-game season. Try to balance hitting, defense, and pitching to chase the impossible perfect record — and share your result to challenge friends."
+        }
+      ]
+    },
     "teamBuilder": {
       "title": "82-0 Team Builder",
       "description": "Build your all-time basketball lineup with the 82-0 team builder. Slot machine draws, real legends from seven decades, simulated season record. Can you go undefeated?",

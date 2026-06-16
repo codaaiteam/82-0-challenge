@@ -1,0 +1,43 @@
+[
+  {"id": "johnny-bench-cin-1970s", "name": "Johnny Bench", "club": "CIN", "era": "1970s", "pos": "IF", "rating": 96, "stat1": "2x NL MVP", "stat2": "10x GOLD GLOVE"},
+  {"id": "pete-rose-cin-1970s", "name": "Pete Rose", "club": "CIN", "era": "1970s", "pos": "IF", "rating": 95, "stat1": "HIT KING", "stat2": "MVP 1973"},
+  {"id": "joe-morgan-cin-1970s", "name": "Joe Morgan", "club": "CIN", "era": "1970s", "pos": "IF", "rating": 96, "stat1": "2x NL MVP", "stat2": "5x GOLD GLOVE"},
+  {"id": "george-foster-cin-1970s", "name": "George Foster", "club": "CIN", "era": "1970s", "pos": "OF", "rating": 88, "stat1": "MVP 1977", "stat2": "52 HR 1977"},
+  {"id": "ken-griffey-cin-1970s", "name": "Ken Griffey Sr.", "club": "CIN", "era": "1970s", "pos": "OF", "rating": 84, "stat1": ".307 AVG 1976", "stat2": "2x WS CHAMP"},
+  {"id": "don-gullett-cin-1970s", "name": "Don Gullett", "club": "CIN", "era": "1970s", "pos": "P", "rating": 82, "stat1": "ERA 2.42 1975", "stat2": "WS CHAMP"},
+
+  {"id": "reggie-jackson-oak-1970s", "name": "Reggie Jackson", "club": "OAK", "era": "1970s", "pos": "OF", "rating": 93, "stat1": "MR OCTOBER", "stat2": "MVP 1973"},
+  {"id": "joe-rudi-oak-1970s", "name": "Joe Rudi", "club": "OAK", "era": "1970s", "pos": "OF", "rating": 83, "stat1": "3x GOLD GLOVE", "stat2": "3x WS CHAMP"},
+  {"id": "sal-bando-oak-1970s", "name": "Sal Bando", "club": "OAK", "era": "1970s", "pos": "IF", "rating": 85, "stat1": "3x WS CHAMP", "stat2": "4x ALL-STAR"},
+  {"id": "bert-campaneris-oak-1970s", "name": "Bert Campaneris", "club": "OAK", "era": "1970s", "pos": "IF", "rating": 83, "stat1": "AL SB LEADER", "stat2": "3x WS CHAMP"},
+  {"id": "gene-tenace-oak-1970s", "name": "Gene Tenace", "club": "OAK", "era": "1970s", "pos": "IF", "rating": 82, "stat1": "WS MVP 1972", "stat2": "4 HR 1972 WS"},
+  {"id": "catfish-hunter-oak-1970s", "name": "Catfish Hunter", "club": "OAK", "era": "1970s", "pos": "P", "rating": 90, "stat1": "CY YOUNG 1974", "stat2": "PERFECT GAME"},
+
+  {"id": "thurman-munson-nyy-1970s", "name": "Thurman Munson", "club": "NYY", "era": "1970s", "pos": "IF", "rating": 88, "stat1": "MVP 1976", "stat2": "3x GOLD GLOVE"},
+  {"id": "graig-nettles-nyy-1970s", "name": "Graig Nettles", "club": "NYY", "era": "1970s", "pos": "IF", "rating": 84, "stat1": "2x GOLD GLOVE", "stat2": "AL HR LEADER"},
+  {"id": "willie-randolph-nyy-1970s", "name": "Willie Randolph", "club": "NYY", "era": "1970s", "pos": "IF", "rating": 82, "stat1": "ALL-STAR 1977", "stat2": "2x WS CHAMP"},
+  {"id": "lou-piniella-nyy-1970s", "name": "Lou Piniella", "club": "NYY", "era": "1970s", "pos": "OF", "rating": 80, "stat1": ".330 AVG 1977", "stat2": "2x WS CHAMP"},
+  {"id": "roy-white-nyy-1970s", "name": "Roy White", "club": "NYY", "era": "1970s", "pos": "OF", "rating": 79, "stat1": "2x ALL-STAR", "stat2": "2x WS CHAMP"},
+  {"id": "ron-guidry-nyy-1970s", "name": "Ron Guidry", "club": "NYY", "era": "1970s", "pos": "P", "rating": 91, "stat1": "CY YOUNG 1978", "stat2": "25-3 1978"},
+
+  {"id": "carl-yastrzemski-bos-1970s", "name": "Carl Yastrzemski", "club": "BOS", "era": "1970s", "pos": "IF", "rating": 90, "stat1": "TRIPLE CROWN", "stat2": "7x GOLD GLOVE"},
+  {"id": "carlton-fisk-bos-1970s", "name": "Carlton Fisk", "club": "BOS", "era": "1970s", "pos": "IF", "rating": 87, "stat1": "ROY 1972", "stat2": "1975 WS HR"},
+  {"id": "rico-petrocelli-bos-1970s", "name": "Rico Petrocelli", "club": "BOS", "era": "1970s", "pos": "IF", "rating": 80, "stat1": "2x ALL-STAR", "stat2": "40 HR 1969"},
+  {"id": "fred-lynn-bos-1970s", "name": "Fred Lynn", "club": "BOS", "era": "1970s", "pos": "OF", "rating": 87, "stat1": "MVP & ROY 1975", "stat2": "4x GOLD GLOVE"},
+  {"id": "jim-rice-bos-1970s", "name": "Jim Rice", "club": "BOS", "era": "1970s", "pos": "OF", "rating": 89, "stat1": "MVP 1978", "stat2": "46 HR 1978"},
+  {"id": "luis-tiant-bos-1970s", "name": "Luis Tiant", "club": "BOS", "era": "1970s", "pos": "P", "rating": 85, "stat1": "3x ALL-STAR", "stat2": "ERA 1.91 1972"},
+
+  {"id": "willie-stargell-pit-1970s", "name": "Willie Stargell", "club": "PIT", "era": "1970s", "pos": "IF", "rating": 91, "stat1": "MVP 1979", "stat2": "POPS"},
+  {"id": "roberto-clemente-pit-1970s", "name": "Roberto Clemente", "club": "PIT", "era": "1970s", "pos": "OF", "rating": 94, "stat1": "3000 HITS", "stat2": "12x GOLD GLOVE"},
+  {"id": "dave-parker-pit-1970s", "name": "Dave Parker", "club": "PIT", "era": "1970s", "pos": "OF", "rating": 89, "stat1": "MVP 1978", "stat2": "THE COBRA"},
+  {"id": "al-oliver-pit-1970s", "name": "Al Oliver", "club": "PIT", "era": "1970s", "pos": "IF", "rating": 83, "stat1": ".300+ HITTER", "stat2": "WS CHAMP 1971"},
+  {"id": "rennie-stennett-pit-1970s", "name": "Rennie Stennett", "club": "PIT", "era": "1970s", "pos": "IF", "rating": 79, "stat1": "7-FOR-7 GAME", "stat2": "WS CHAMP 1971"},
+  {"id": "bruce-kison-pit-1970s", "name": "Bruce Kison", "club": "PIT", "era": "1970s", "pos": "P", "rating": 78, "stat1": "2x WS CHAMP", "stat2": "1971 WS HERO"},
+
+  {"id": "brooks-robinson-bal-1970s", "name": "Brooks Robinson", "club": "BAL", "era": "1970s", "pos": "IF", "rating": 90, "stat1": "16x GOLD GLOVE", "stat2": "1970 WS MVP"},
+  {"id": "jim-palmer-bal-1970s", "name": "Jim Palmer", "club": "BAL", "era": "1970s", "pos": "P", "rating": 92, "stat1": "3x CY YOUNG", "stat2": "4x GOLD GLOVE"},
+  {"id": "bobby-grich-bal-1970s", "name": "Bobby Grich", "club": "BAL", "era": "1970s", "pos": "IF", "rating": 83, "stat1": "4x GOLD GLOVE", "stat2": "4x ALL-STAR"},
+  {"id": "mark-belanger-bal-1970s", "name": "Mark Belanger", "club": "BAL", "era": "1970s", "pos": "IF", "rating": 81, "stat1": "8x GOLD GLOVE", "stat2": "ELITE SS DEF"},
+  {"id": "don-baylor-bal-1970s", "name": "Don Baylor", "club": "BAL", "era": "1970s", "pos": "OF", "rating": 82, "stat1": "POWER & SPEED", "stat2": "FUTURE AL MVP"},
+  {"id": "ken-singleton-bal-1970s", "name": "Ken Singleton", "club": "BAL", "era": "1970s", "pos": "OF", "rating": 84, "stat1": "2x ALL-STAR", "stat2": ".328 AVG 1977"}
+]

@@ -44,6 +44,7 @@ export default function Header() {
     { href: `${prefix}/20-0`, label: '🏈 20-0' },
     { href: `${prefix}/38-0`, label: '⚽ 38-0' },
     { href: `${prefix}/7-0`, label: '🌎 7-0' },
+    { href: `${prefix}/162-0`, label: '⚾ 162-0' },
   ];
 
   const changeLanguage = (newLocale) => {

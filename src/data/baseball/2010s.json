@@ -1,0 +1,43 @@
+[
+  { "id": "mike-trout-laa-2010s", "name": "Mike Trout", "club": "LAD", "era": "2010s", "pos": "OF", "rating": 99, "stat1": "3x MVP", "stat2": ".305 AVG" },
+  { "id": "clayton-kershaw-lad-2010s", "name": "Clayton Kershaw", "club": "LAD", "era": "2010s", "pos": "P", "rating": 98, "stat1": "3x CY YOUNG", "stat2": "2.31 ERA" },
+  { "id": "justin-turner-lad-2010s", "name": "Justin Turner", "club": "LAD", "era": "2010s", "pos": "IF", "rating": 86, "stat1": "2x ALL-STAR", "stat2": ".302 OBP" },
+  { "id": "corey-seager-lad-2010s", "name": "Corey Seager", "club": "LAD", "era": "2010s", "pos": "IF", "rating": 88, "stat1": "ROY 2016", "stat2": "2x ALL-STAR" },
+  { "id": "adrian-gonzalez-lad-2010s", "name": "Adrian Gonzalez", "club": "LAD", "era": "2010s", "pos": "IF", "rating": 85, "stat1": "4x GOLD GLOVE", "stat2": "317 HR" },
+  { "id": "yasiel-puig-lad-2010s", "name": "Yasiel Puig", "club": "LAD", "era": "2010s", "pos": "OF", "rating": 83, "stat1": "WILD HORSE", "stat2": "108 HR" },
+
+  { "id": "jose-altuve-hou-2010s", "name": "Jose Altuve", "club": "HOU", "era": "2010s", "pos": "IF", "rating": 94, "stat1": "MVP 2017", "stat2": "6x ALL-STAR" },
+  { "id": "justin-verlander-hou-2010s", "name": "Justin Verlander", "club": "HOU", "era": "2010s", "pos": "P", "rating": 95, "stat1": "2x CY YOUNG", "stat2": "300+ K SEASON" },
+  { "id": "carlos-correa-hou-2010s", "name": "Carlos Correa", "club": "HOU", "era": "2010s", "pos": "IF", "rating": 88, "stat1": "ROY 2015", "stat2": "WS CHAMP" },
+  { "id": "alex-bregman-hou-2010s", "name": "Alex Bregman", "club": "HOU", "era": "2010s", "pos": "IF", "rating": 89, "stat1": "41 HR 2019", "stat2": "MVP RUNNER-UP" },
+  { "id": "george-springer-hou-2010s", "name": "George Springer", "club": "HOU", "era": "2010s", "pos": "OF", "rating": 87, "stat1": "WS MVP 2017", "stat2": "174 HR" },
+  { "id": "michael-brantley-hou-2010s", "name": "Michael Brantley", "club": "HOU", "era": "2010s", "pos": "OF", "rating": 84, "stat1": ".311 AVG 2019", "stat2": "4x ALL-STAR" },
+
+  { "id": "david-ortiz-bos-2010s", "name": "David Ortiz", "club": "BOS", "era": "2010s", "pos": "IF", "rating": 93, "stat1": "WS MVP 2013", "stat2": "541 HR" },
+  { "id": "dustin-pedroia-bos-2010s", "name": "Dustin Pedroia", "club": "BOS", "era": "2010s", "pos": "IF", "rating": 87, "stat1": "4x GOLD GLOVE", "stat2": "WS CHAMP" },
+  { "id": "xander-bogaerts-bos-2010s", "name": "Xander Bogaerts", "club": "BOS", "era": "2010s", "pos": "IF", "rating": 86, "stat1": "2x SILVER SLUG", "stat2": ".288 AVG" },
+  { "id": "mookie-betts-bos-2010s", "name": "Mookie Betts", "club": "BOS", "era": "2010s", "pos": "OF", "rating": 96, "stat1": "MVP 2018", "stat2": "4x GOLD GLOVE" },
+  { "id": "jackie-bradley-jr-bos-2010s", "name": "Jackie Bradley Jr.", "club": "BOS", "era": "2010s", "pos": "OF", "rating": 82, "stat1": "ALCS MVP 2018", "stat2": "GOLD GLOVE" },
+  { "id": "chris-sale-bos-2010s", "name": "Chris Sale", "club": "BOS", "era": "2010s", "pos": "P", "rating": 91, "stat1": "7x ALL-STAR", "stat2": "2000+ K" },
+
+  { "id": "anthony-rizzo-chc-2010s", "name": "Anthony Rizzo", "club": "CHC", "era": "2010s", "pos": "IF", "rating": 89, "stat1": "3x ALL-STAR", "stat2": "4x GOLD GLOVE" },
+  { "id": "kris-bryant-chc-2010s", "name": "Kris Bryant", "club": "CHC", "era": "2010s", "pos": "IF", "rating": 88, "stat1": "MVP 2016", "stat2": "ROY 2015" },
+  { "id": "javier-baez-chc-2010s", "name": "Javier Baez", "club": "CHC", "era": "2010s", "pos": "IF", "rating": 87, "stat1": "EL MAGO", "stat2": "GOLD GLOVE" },
+  { "id": "kyle-schwarber-chc-2010s", "name": "Kyle Schwarber", "club": "CHC", "era": "2010s", "pos": "OF", "rating": 83, "stat1": "WS HERO 2016", "stat2": "121 HR" },
+  { "id": "jason-heyward-chc-2010s", "name": "Jason Heyward", "club": "CHC", "era": "2010s", "pos": "OF", "rating": 82, "stat1": "5x GOLD GLOVE", "stat2": "WS RALLY 2016" },
+  { "id": "jon-lester-chc-2010s", "name": "Jon Lester", "club": "CHC", "era": "2010s", "pos": "P", "rating": 86, "stat1": "WS CHAMP 2016", "stat2": "3x ALL-STAR" },
+
+  { "id": "aaron-judge-nyy-2010s", "name": "Aaron Judge", "club": "NYY", "era": "2010s", "pos": "OF", "rating": 92, "stat1": "ROY 2017", "stat2": "52 HR ROOKIE" },
+  { "id": "robinson-cano-nyy-2010s", "name": "Robinson Cano", "club": "NYY", "era": "2010s", "pos": "IF", "rating": 88, "stat1": "5x SILVER SLUG", "stat2": "2x GOLD GLOVE" },
+  { "id": "didi-gregorius-nyy-2010s", "name": "Didi Gregorius", "club": "NYY", "era": "2010s", "pos": "IF", "rating": 83, "stat1": "97 RBI 2018", "stat2": "SIR DIDI" },
+  { "id": "gleyber-torres-nyy-2010s", "name": "Gleyber Torres", "club": "NYY", "era": "2010s", "pos": "IF", "rating": 84, "stat1": "38 HR 2019", "stat2": "2x ALL-STAR" },
+  { "id": "brett-gardner-nyy-2010s", "name": "Brett Gardner", "club": "NYY", "era": "2010s", "pos": "OF", "rating": 81, "stat1": "GOLD GLOVE", "stat2": "STOLEN BASES" },
+  { "id": "luis-severino-nyy-2010s", "name": "Luis Severino", "club": "NYY", "era": "2010s", "pos": "P", "rating": 85, "stat1": "2x ALL-STAR", "stat2": "19 WINS 2018" },
+
+  { "id": "max-scherzer-wsh-2010s", "name": "Max Scherzer", "club": "WSH", "era": "2010s", "pos": "P", "rating": 96, "stat1": "3x CY YOUNG", "stat2": "MAX EFFORT" },
+  { "id": "anthony-rendon-wsh-2010s", "name": "Anthony Rendon", "club": "WSH", "era": "2010s", "pos": "IF", "rating": 90, "stat1": "WS CHAMP 2019", "stat2": "126 RBI 2019" },
+  { "id": "ryan-zimmerman-wsh-2010s", "name": "Ryan Zimmerman", "club": "WSH", "era": "2010s", "pos": "IF", "rating": 84, "stat1": "MR NATIONAL", "stat2": "WS CHAMP" },
+  { "id": "trea-turner-wsh-2010s", "name": "Trea Turner", "club": "WSH", "era": "2010s", "pos": "IF", "rating": 87, "stat1": "SPEED DEMON", "stat2": "43 SB 2018" },
+  { "id": "bryce-harper-wsh-2010s", "name": "Bryce Harper", "club": "WSH", "era": "2010s", "pos": "OF", "rating": 91, "stat1": "MVP 2015", "stat2": "6x ALL-STAR" },
+  { "id": "juan-soto-wsh-2010s", "name": "Juan Soto", "club": "WSH", "era": "2010s", "pos": "OF", "rating": 89, "stat1": "WS CHAMP 2019", "stat2": "THE SHUFFLE" }
+]

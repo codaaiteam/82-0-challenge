@@ -1,0 +1,43 @@
+[
+  {"id": "derek-jeter-nyy-1990s", "name": "Derek Jeter", "club": "NYY", "era": "1990s", "pos": "IF", "rating": 94, "stat1": ".300 AVG", "stat2": "1996 ROY"},
+  {"id": "don-mattingly-nyy-1990s", "name": "Don Mattingly", "club": "NYY", "era": "1990s", "pos": "IF", "rating": 87, "stat1": "9 GOLD GLOVES", "stat2": "MR. YANKEE"},
+  {"id": "tino-martinez-nyy-1990s", "name": "Tino Martinez", "club": "NYY", "era": "1990s", "pos": "IF", "rating": 84, "stat1": "44 HR 1997", "stat2": "123 RBI"},
+  {"id": "bernie-williams-nyy-1990s", "name": "Bernie Williams", "club": "NYY", "era": "1990s", "pos": "OF", "rating": 89, "stat1": "4 GOLD GLOVES", "stat2": "1998 BAT TITLE"},
+  {"id": "paul-oneill-nyy-1990s", "name": "Paul O'Neill", "club": "NYY", "era": "1990s", "pos": "OF", "rating": 86, "stat1": ".359 1994", "stat2": "THE WARRIOR"},
+  {"id": "mariano-rivera-nyy-1990s", "name": "Mariano Rivera", "club": "NYY", "era": "1990s", "pos": "P", "rating": 96, "stat1": "CUTTER KING", "stat2": "0.99 POSTSEASON"},
+
+  {"id": "chipper-jones-atl-1990s", "name": "Chipper Jones", "club": "ATL", "era": "1990s", "pos": "IF", "rating": 92, "stat1": "1999 MVP", "stat2": "SWITCH POWER"},
+  {"id": "fred-mcgriff-atl-1990s", "name": "Fred McGriff", "club": "ATL", "era": "1990s", "pos": "IF", "rating": 87, "stat1": "CRIME DOG", "stat2": "493 HR"},
+  {"id": "javy-lopez-atl-1990s", "name": "Javy Lopez", "club": "ATL", "era": "1990s", "pos": "IF", "rating": 82, "stat1": "POWER BAT", "stat2": "ALL-STAR"},
+  {"id": "david-justice-atl-1990s", "name": "David Justice", "club": "ATL", "era": "1990s", "pos": "OF", "rating": 84, "stat1": "1990 ROY", "stat2": "WS HERO"},
+  {"id": "andruw-jones-atl-1990s", "name": "Andruw Jones", "club": "ATL", "era": "1990s", "pos": "OF", "rating": 88, "stat1": "GOLD GLOVE CF", "stat2": "1996 WS HR"},
+  {"id": "greg-maddux-atl-1990s", "name": "Greg Maddux", "club": "ATL", "era": "1990s", "pos": "P", "rating": 98, "stat1": "4 CY YOUNGS", "stat2": "THE PROFESSOR"},
+
+  {"id": "ken-griffey-jr-sea-1990s", "name": "Ken Griffey Jr.", "club": "SEA", "era": "1990s", "pos": "OF", "rating": 99, "stat1": "1997 MVP", "stat2": "56 HR x2"},
+  {"id": "jay-buhner-sea-1990s", "name": "Jay Buhner", "club": "SEA", "era": "1990s", "pos": "OF", "rating": 81, "stat1": "40 HR x3", "stat2": "BONE"},
+  {"id": "alex-rodriguez-sea-1990s", "name": "Alex Rodriguez", "club": "SEA", "era": "1990s", "pos": "IF", "rating": 93, "stat1": "42 HR 1998", "stat2": "PHENOM SS"},
+  {"id": "edgar-martinez-sea-1990s", "name": "Edgar Martinez", "club": "SEA", "era": "1990s", "pos": "IF", "rating": 90, "stat1": "2 BAT TITLES", "stat2": "THE DOUBLE"},
+  {"id": "tino-rbi-sea-1990s", "name": "Bret Boone", "club": "SEA", "era": "1990s", "pos": "IF", "rating": 79, "stat1": "SLICK 2B", "stat2": "GOLD GLOVE"},
+  {"id": "randy-johnson-sea-1990s", "name": "Randy Johnson", "club": "SEA", "era": "1990s", "pos": "P", "rating": 97, "stat1": "THE BIG UNIT", "stat2": "1995 CY YOUNG"},
+
+  {"id": "jim-thome-cle-1990s", "name": "Jim Thome", "club": "CLE", "era": "1990s", "pos": "IF", "rating": 89, "stat1": "612 HR CAREER", "stat2": "POWER LEFTY"},
+  {"id": "roberto-alomar-cle-1990s", "name": "Roberto Alomar", "club": "CLE", "era": "1990s", "pos": "IF", "rating": 90, "stat1": "10 GOLD GLOVES", "stat2": "ELITE 2B"},
+  {"id": "carlos-baerga-cle-1990s", "name": "Carlos Baerga", "club": "CLE", "era": "1990s", "pos": "IF", "rating": 80, "stat1": "200 HITS", "stat2": "SWITCH 2B"},
+  {"id": "albert-belle-cle-1990s", "name": "Albert Belle", "club": "CLE", "era": "1990s", "pos": "OF", "rating": 88, "stat1": "50 HR 50 2B", "stat2": "1995 SLUGGER"},
+  {"id": "kenny-lofton-cle-1990s", "name": "Kenny Lofton", "club": "CLE", "era": "1990s", "pos": "OF", "rating": 86, "stat1": "5x STOLEN BASE", "stat2": "LEADOFF ACE"},
+  {"id": "charles-nagy-cle-1990s", "name": "Charles Nagy", "club": "CLE", "era": "1990s", "pos": "P", "rating": 80, "stat1": "3x ALL-STAR", "stat2": "STAFF ACE"},
+
+  {"id": "barry-bonds-sf-1990s", "name": "Barry Bonds", "club": "SF", "era": "1990s", "pos": "OF", "rating": 99, "stat1": "3 MVPs 90s", "stat2": "40-40 CLUB"},
+  {"id": "jeff-kent-sf-1990s", "name": "Jeff Kent", "club": "SF", "era": "1990s", "pos": "IF", "rating": 86, "stat1": "POWER 2B", "stat2": "2000 MVP"},
+  {"id": "matt-williams-sf-1990s", "name": "Matt Williams", "club": "SF", "era": "1990s", "pos": "IF", "rating": 85, "stat1": "43 HR 1994", "stat2": "GOLD GLOVE 3B"},
+  {"id": "j-t-snow-sf-1990s", "name": "J.T. Snow", "club": "SF", "era": "1990s", "pos": "IF", "rating": 80, "stat1": "6 GOLD GLOVES", "stat2": "SLICK 1B"},
+  {"id": "marvin-benard-sf-1990s", "name": "Marvin Benard", "club": "SF", "era": "1990s", "pos": "OF", "rating": 76, "stat1": "SPEED OF", "stat2": "LEADOFF"},
+  {"id": "robb-nen-sf-1990s", "name": "Robb Nen", "club": "SF", "era": "1990s", "pos": "P", "rating": 84, "stat1": "100 MPH HEAT", "stat2": "ELITE CLOSER"},
+
+  {"id": "sammy-sosa-chc-1990s", "name": "Sammy Sosa", "club": "CHC", "era": "1990s", "pos": "OF", "rating": 91, "stat1": "66 HR 1998", "stat2": "1998 MVP"},
+  {"id": "mark-grace-chc-1990s", "name": "Mark Grace", "club": "CHC", "era": "1990s", "pos": "IF", "rating": 84, "stat1": "MOST HITS 90s", "stat2": "4 GOLD GLOVES"},
+  {"id": "ryne-sandberg-chc-1990s", "name": "Ryne Sandberg", "club": "CHC", "era": "1990s", "pos": "IF", "rating": 88, "stat1": "9 GOLD GLOVES", "stat2": "POWER 2B"},
+  {"id": "shawon-dunston-chc-1990s", "name": "Shawon Dunston", "club": "CHC", "era": "1990s", "pos": "IF", "rating": 78, "stat1": "ROCKET ARM SS", "stat2": "2x ALL-STAR"},
+  {"id": "brian-mcrae-chc-1990s", "name": "Brian McRae", "club": "CHC", "era": "1990s", "pos": "OF", "rating": 77, "stat1": "SPEED CF", "stat2": "SWITCH BAT"},
+  {"id": "kerry-wood-chc-1990s", "name": "Kerry Wood", "club": "CHC", "era": "1990s", "pos": "P", "rating": 86, "stat1": "20 K GAME", "stat2": "1998 ROY"}
+]

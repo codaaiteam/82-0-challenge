@@ -1,0 +1,43 @@
+[
+  {"id": "don-mattingly-nyy-1980s", "name": "Don Mattingly", "club": "NYY", "era": "1980s", "pos": "IF", "rating": 92, "stat1": "1985 AL MVP", "stat2": ".307 AVG"},
+  {"id": "willie-randolph-nyy-1980s", "name": "Willie Randolph", "club": "NYY", "era": "1980s", "pos": "IF", "rating": 84, "stat1": "6X ALL-STAR", "stat2": "271 SB"},
+  {"id": "graig-nettles-nyy-1980s", "name": "Graig Nettles", "club": "NYY", "era": "1980s", "pos": "IF", "rating": 83, "stat1": "390 HR", "stat2": "2X GOLD GLOVE"},
+  {"id": "rickey-henderson-nyy-1980s", "name": "Rickey Henderson", "club": "NYY", "era": "1980s", "pos": "OF", "rating": 96, "stat1": "1406 SB", "stat2": "STOLEN BASE KING"},
+  {"id": "dave-winfield-nyy-1980s", "name": "Dave Winfield", "club": "NYY", "era": "1980s", "pos": "OF", "rating": 90, "stat1": "3110 HITS", "stat2": "465 HR"},
+  {"id": "ron-guidry-nyy-1980s", "name": "Ron Guidry", "club": "NYY", "era": "1980s", "pos": "P", "rating": 88, "stat1": "170 WINS", "stat2": "4X GOLD GLOVE"},
+
+  {"id": "steve-garvey-lad-1980s", "name": "Steve Garvey", "club": "LAD", "era": "1980s", "pos": "IF", "rating": 87, "stat1": "1974 NL MVP", "stat2": "2599 HITS"},
+  {"id": "ron-cey-lad-1980s", "name": "Ron Cey", "club": "LAD", "era": "1980s", "pos": "IF", "rating": 83, "stat1": "316 HR", "stat2": "6X ALL-STAR"},
+  {"id": "bill-russell-lad-1980s", "name": "Bill Russell", "club": "LAD", "era": "1980s", "pos": "IF", "rating": 80, "stat1": "3X ALL-STAR", "stat2": "1926 HITS"},
+  {"id": "pedro-guerrero-lad-1980s", "name": "Pedro Guerrero", "club": "LAD", "era": "1980s", "pos": "OF", "rating": 86, "stat1": "215 HR", "stat2": ".300 AVG"},
+  {"id": "dusty-baker-lad-1980s", "name": "Dusty Baker", "club": "LAD", "era": "1980s", "pos": "OF", "rating": 82, "stat1": "242 HR", "stat2": "2X ALL-STAR"},
+  {"id": "fernando-valenzuela-lad-1980s", "name": "Fernando Valenzuela", "club": "LAD", "era": "1980s", "pos": "P", "rating": 89, "stat1": "1981 CY YOUNG", "stat2": "FERNANDOMANIA"},
+
+  {"id": "ozzie-smith-stl-1980s", "name": "Ozzie Smith", "club": "STL", "era": "1980s", "pos": "IF", "rating": 91, "stat1": "13X GOLD GLOVE", "stat2": "THE WIZARD"},
+  {"id": "tom-herr-stl-1980s", "name": "Tom Herr", "club": "STL", "era": "1980s", "pos": "IF", "rating": 80, "stat1": "1985 ALL-STAR", "stat2": "110 RBI 1985"},
+  {"id": "keith-hernandez-stl-1980s", "name": "Keith Hernandez", "club": "STL", "era": "1980s", "pos": "IF", "rating": 88, "stat1": "11X GOLD GLOVE", "stat2": "1979 NL MVP"},
+  {"id": "willie-mcgee-stl-1980s", "name": "Willie McGee", "club": "STL", "era": "1980s", "pos": "OF", "rating": 85, "stat1": "1985 NL MVP", "stat2": "2X BAT TITLE"},
+  {"id": "vince-coleman-stl-1980s", "name": "Vince Coleman", "club": "STL", "era": "1980s", "pos": "OF", "rating": 82, "stat1": "752 SB", "stat2": "ROY 1985"},
+  {"id": "john-tudor-stl-1980s", "name": "John Tudor", "club": "STL", "era": "1980s", "pos": "P", "rating": 83, "stat1": "1.93 ERA 1985", "stat2": "10 SHUTOUTS"},
+
+  {"id": "alan-trammell-det-1980s", "name": "Alan Trammell", "club": "DET", "era": "1980s", "pos": "IF", "rating": 88, "stat1": "84 WS MVP", "stat2": "6X ALL-STAR"},
+  {"id": "lou-whitaker-det-1980s", "name": "Lou Whitaker", "club": "DET", "era": "1980s", "pos": "IF", "rating": 86, "stat1": "5X ALL-STAR", "stat2": "244 HR"},
+  {"id": "darrell-evans-det-1980s", "name": "Darrell Evans", "club": "DET", "era": "1980s", "pos": "IF", "rating": 81, "stat1": "414 HR", "stat2": "40 HR AGE 38"},
+  {"id": "kirk-gibson-det-1980s", "name": "Kirk Gibson", "club": "DET", "era": "1980s", "pos": "OF", "rating": 85, "stat1": "1988 NL MVP", "stat2": "WS WALK-OFF"},
+  {"id": "chet-lemon-det-1980s", "name": "Chet Lemon", "club": "DET", "era": "1980s", "pos": "OF", "rating": 80, "stat1": "3X ALL-STAR", "stat2": "215 HR"},
+  {"id": "jack-morris-det-1980s", "name": "Jack Morris", "club": "DET", "era": "1980s", "pos": "P", "rating": 89, "stat1": "254 WINS", "stat2": "5X ALL-STAR"},
+
+  {"id": "george-brett-kc-1980s", "name": "George Brett", "club": "KC", "era": "1980s", "pos": "IF", "rating": 94, "stat1": "1980 AL MVP", "stat2": ".390 IN 1980"},
+  {"id": "frank-white-kc-1980s", "name": "Frank White", "club": "KC", "era": "1980s", "pos": "IF", "rating": 82, "stat1": "8X GOLD GLOVE", "stat2": "5X ALL-STAR"},
+  {"id": "kevin-seitzer-kc-1980s", "name": "Kevin Seitzer", "club": "KC", "era": "1980s", "pos": "IF", "rating": 79, "stat1": "207 HITS 1987", "stat2": "2X ALL-STAR"},
+  {"id": "willie-wilson-kc-1980s", "name": "Willie Wilson", "club": "KC", "era": "1980s", "pos": "OF", "rating": 83, "stat1": "668 SB", "stat2": "1982 BAT TITLE"},
+  {"id": "bo-jackson-kc-1980s", "name": "Bo Jackson", "club": "KC", "era": "1980s", "pos": "OF", "rating": 86, "stat1": "BO KNOWS", "stat2": "TWO-SPORT STAR"},
+  {"id": "bret-saberhagen-kc-1980s", "name": "Bret Saberhagen", "club": "KC", "era": "1980s", "pos": "P", "rating": 88, "stat1": "2X CY YOUNG", "stat2": "85 WS MVP"},
+
+  {"id": "wade-boggs-bos-1980s", "name": "Wade Boggs", "club": "BOS", "era": "1980s", "pos": "IF", "rating": 92, "stat1": "5X BAT TITLE", "stat2": ".328 CAREER"},
+  {"id": "marty-barrett-bos-1980s", "name": "Marty Barrett", "club": "BOS", "era": "1980s", "pos": "IF", "rating": 78, "stat1": "24 HITS 86 PS", "stat2": ".278 AVG"},
+  {"id": "rich-gedman-bos-1980s", "name": "Rich Gedman", "club": "BOS", "era": "1980s", "pos": "IF", "rating": 78, "stat1": "2X ALL-STAR", "stat2": "88 HR"},
+  {"id": "jim-rice-bos-1980s", "name": "Jim Rice", "club": "BOS", "era": "1980s", "pos": "OF", "rating": 89, "stat1": "1978 AL MVP", "stat2": "382 HR"},
+  {"id": "dwight-evans-bos-1980s", "name": "Dwight Evans", "club": "BOS", "era": "1980s", "pos": "OF", "rating": 86, "stat1": "8X GOLD GLOVE", "stat2": "385 HR"},
+  {"id": "roger-clemens-bos-1980s", "name": "Roger Clemens", "club": "BOS", "era": "1980s", "pos": "P", "rating": 95, "stat1": "86 MVP+CY", "stat2": "20 K GAME"}
+]

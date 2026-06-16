@@ -47,3 +47,30 @@ export function saveSubmission(data) {
 export function loadSubmission() {
   try { return JSON.parse(localStorage.getItem(SUB_KEY)) || null; } catch { return null; }
 }
+
+// ---- personal best tracking (local-only; used by the 162-0 baseball game) ----
+const BEST_KEY = 'x0_best';
+
+function betterThan(a, b) {
+  if (!b) return true;
+  if (a.wins !== b.wins) return a.wins > b.wins;
+  if (a.losses !== b.losses) return a.losses < b.losses;
+  return (a.rating || 0) > (b.rating || 0);
+}
+
+export function recordRun(result) {
+  let state = null;
+  try { state = JSON.parse(localStorage.getItem(BEST_KEY)); } catch { /* ignore */ }
+  const runs = (state?.runs || 0) + 1;
+  const candidate = {
+    wins: result.wins,
+    draws: result.draws,
+    losses: result.losses,
+    pts: result.leaguePts,
+    rating: result.points,
+  };
+  const isNewBest = betterThan(candidate, state?.best);
+  const best = isNewBest ? candidate : state.best;
+  try { localStorage.setItem(BEST_KEY, JSON.stringify({ best, runs })); } catch { /* ignore */ }
+  return { best, runs, isNewBest };
+}
