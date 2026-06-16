@@ -267,9 +267,18 @@ export function simulateSeason(lineup, opts = {}) {
   const shortfall = Math.max(0, 0.85 - minRatio) * WEIGHTS[worstCat];
   const maxedOut = minRatio >= 0.85 || (minRatio >= COMP_FLOOR && surplus >= shortfall * 2);
 
+  // Wasted overflow also lifts the overall bar a little. S caps every category
+  // at 1.0, so a roster that's elite-but-not-maxed on offense yet dominant on
+  // defense (huge steal/block surplus) can stall at S≈0.94 with all that extra
+  // production thrown away. A fraction of the surplus (scaled, hard-capped at
+  // +0.025) counts toward the 0.96 perfect-season threshold — enough to reward
+  // genuine across-the-board dominance, too small to hand 82-0 to a roster
+  // that simply fell a hair short without surplus to spare.
+  const effectiveS = S + Math.min(surplus * 0.25, 0.025);
+
   // Hard Mode tightens the luck gate (45% vs 65%).
   const luckGate = difficulty > 1 ? 0.55 : 0.35;
-  if (S >= 0.96 && maxedOut && Math.random() > luckGate) wins = 82;
+  if (effectiveS >= 0.96 && maxedOut && Math.random() > luckGate) wins = 82;
 
   // Uncapped team rating (can exceed 100). Cap Mode adds an efficiency bonus
   // for budget left on the table.
@@ -293,7 +302,7 @@ export function simulateSeason(lineup, opts = {}) {
   let weakness;
   if (wins === 82) {
     weakness = 'none';            // earned the perfect season — truly complete
-  } else if (S >= 0.96 && minRatio >= 0.85) {
+  } else if (effectiveS >= 0.96 && maxedOut) {
     weakness = 'consistency';     // elite and balanced, just couldn't string 82 wins together
   } else if (minRatio >= 0.85) {
     weakness = 'overall';         // no glaring hole, but not strong enough to dominate
