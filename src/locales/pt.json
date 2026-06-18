@@ -212,8 +212,16 @@
       "runOver": "Run encerrada",
       "reached": "Você passou {n} nível(is) antes de o orçamento te quebrar.",
       "nextLevel": "Próximo nível →",
-      "newRun": "Nova run"
-    }
+      "newRun": "Nova run",
+      "used": "usado"
+    },
+    "adjShort": "aj.",
+    "eraNote": "Número de cima = médias brutas de carreira. “aj.” = valor ajustado pela era com que a temporada é simulada (eras antigas são escaladas para uma base moderna).",
+    "runningTotal": "Seu quinteto até agora",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "Os resultados da temporada usam os totais SIM."
   },
   "homeSeo": {
     "sections": [

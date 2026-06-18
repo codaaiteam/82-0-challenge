@@ -8,6 +8,7 @@ import {
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
   dailyCombos, comboIsDraftable, buildSlots, buildSeasonStory,
   FILTERS, priceOf, CAP_BUDGET, MIN_PRICE, gauntletBudget, CAP_STEP, CAP_FLOOR,
+  adjustedStats, BENCH, CATS,
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
@@ -154,6 +155,17 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const lineup = slots.filter(s => s.player).map(s => s.player);
   const pickedIds = lineup.map(p => p.id);
   const openSlots = slots.filter(s => !s.player).map(s => s.pos);
+
+  // Live scoreboard: running team totals as you draft, so the five doesn't have
+  // to be tracked in your head. raw[] mirrors the per-player stat lines; adj[]
+  // is the era-adjusted figure measured against BENCH (the "max every category"
+  // bar an 82-0 demands), surfaced as a fill so the lagging category is obvious.
+  const runRaw = { pts: 0, reb: 0, ast: 0, stl: 0, blk: 0 };
+  const runAdj = { pts: 0, reb: 0, ast: 0, stl: 0, blk: 0 };
+  lineup.forEach(p => {
+    const a = adjustedStats(p);
+    CATS.forEach(c => { runRaw[c] += p[c]; runAdj[c] += a[c]; });
+  });
   const isDaily = mode === 'daily';
   const dailyStorageKey = `daily820:${dateKey()}`;
 
@@ -647,15 +659,21 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
             ))}
           </div>
 
-          {/* Combined team production — makes the record explainable at a glance */}
+          {/* Combined team production — makes the record explainable at a glance.
+              Headline = raw career averages (sum of the five stat lines above);
+              the small value below is the era-adjusted figure the sim runs on. */}
           <div className={styles.teamTotals}>
             {[['pts', g.ppg], ['reb', g.rpg], ['ast', g.apg], ['stl', g.spg], ['blk', g.bpg]].map(([k, label]) => (
               <span key={k} className={styles.teamTotal}>
-                <b>{Math.round(result.totals[k] * 10) / 10}</b>
+                <b>{Math.round((result.rawTotals?.[k] ?? result.totals[k]) * 10) / 10}</b>
                 <i>{label}</i>
+                <em className={styles.teamTotalAdj}>{Math.round(result.totals[k] * 10) / 10} {g.adjShort || 'adj'}</em>
               </span>
             ))}
           </div>
+          <p className={styles.eraNote}>
+            {g.eraNote || 'Top number = raw career averages. “adj” = era-adjusted value the season is simulated on (older eras are scaled toward a modern baseline).'}
+          </p>
 
           {isDaily && dailyDone && (
             <p className={styles.dailyComeback}>
@@ -798,7 +816,7 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               {cap.budget || 'Salary Cap'} · {fmt(cap.level || 'Level {n}', { n: capLevel })}
             </span>
             <span className={styles.capBudgetVal}>
-              <b>{capLeft}</b> / {capBudget} {cap.left || 'left'}
+              ${capSpent} {cap.used || 'used'} · <b>${capLeft}</b> {cap.left || 'left'}
             </span>
           </div>
           <div className={styles.capMeter}>
@@ -925,23 +943,60 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               );
             })}
           </div>
+
+          {/* Live scoreboard — running team totals so you can see the five add
+              up as you draft instead of tracking it in your head. The fill bar
+              is era-adjusted progress toward the "max every category" 82-0 bar. */}
+          {lineup.length > 0 && (
+            <div className={styles.scoreboard}>
+              <div className={styles.scoreboardHead}>
+                <span>{g.runningTotal || 'Your five so far'}</span>
+                <i>{lineup.length}/5</i>
+              </div>
+              <div className={styles.sbColHead}>
+                <span className={styles.sbLabel} />
+                <span>{g.sbRaw || 'raw'} / {g.sbAdj || 'adj'}</span>
+                <span className={styles.sbTargetHead}>{g.sbTarget || 'target'}</span>
+              </div>
+              {[['pts', g.ppg], ['reb', g.rpg], ['ast', g.apg], ['stl', g.spg], ['blk', g.bpg]].map(([k, label]) => (
+                <div key={k} className={styles.sbRow}>
+                  <span className={styles.sbLabel}>{label}</span>
+                  <span className={styles.sbVal}>
+                    <b>{Math.round(runRaw[k] * 10) / 10}</b>
+                    <em> / {Math.round(runAdj[k] * 10) / 10}</em>
+                  </span>
+                  <span className={styles.sbBarWrap}>
+                    <span className={styles.sbBar}>
+                      <i style={{ width: `${Math.min(100, (runAdj[k] / BENCH[k]) * 100)}%` }} />
+                    </span>
+                    <span className={styles.sbTarget}>{BENCH[k]}</span>
+                  </span>
+                </div>
+              ))}
+              <p className={styles.sbNote}>{g.sbNote || 'Season results use adjusted totals.'}</p>
+            </div>
+          )}
+
           {selected && (
             <div className={styles.placingBar}>
               {fmt(g.placing, { name: selected.name })}
             </div>
           )}
-          {isCap && phase === 'ready' && !selected && (
-            <div className={styles.readyBar}>
-              <button className={styles.primaryBtn} onClick={runCapSim}>
-                {cap.simulate || 'Simulate Season →'}
-              </button>
-              {capSwaps > 0 && (
-                <small>{fmt(cap.swapReady || 'Or tap a player to swap him out — {n} swap(s) left', { n: capSwaps })}</small>
-              )}
-            </div>
-          )}
         </div>
       </div>
+
+      {/* Primary CTA lives below the two-column draft area so it centers across
+          the full game width, not tucked under the court in the right column. */}
+      {isCap && phase === 'ready' && !selected && (
+        <div className={styles.readyBar}>
+          <button className={styles.primaryBtn} onClick={runCapSim}>
+            {cap.simulate || 'Simulate Season →'}
+          </button>
+          {capSwaps > 0 && (
+            <small>{fmt(cap.swapReady || 'Or tap a player to swap him out — {n} swap(s) left', { n: capSwaps })}</small>
+          )}
+        </div>
+      )}
     </div>
   );
 }

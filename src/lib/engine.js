@@ -58,9 +58,9 @@ const ERA_ADJ = {
 
 // Adjusted team totals that mark a "perfect" category. Hitting every one of
 // these simultaneously is what 82-0 demands.
-const BENCH = { pts: 122, reb: 44, ast: 27, stl: 7.2, blk: 4.6 };
+export const BENCH = { pts: 122, reb: 44, ast: 27, stl: 7.2, blk: 4.6 };
 
-const CATS = ['pts', 'reb', 'ast', 'stl', 'blk'];
+export const CATS = ['pts', 'reb', 'ast', 'stl', 'blk'];
 
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -211,10 +211,15 @@ export function simulateSeason(lineup, opts = {}) {
   //                small team-rating bonus so two perfect seasons break the
   //                tie in favor of the leaner cap sheet.
   const difficulty = opts.difficulty || 1;
+  // totals = era-adjusted (drives the win curve); rawTotals = raw career
+  // averages (what the per-player stat lines show). The result screen displays
+  // raw as the headline number and the adjusted value as a labelled footnote,
+  // so the team total always reconciles with the five players' printed stats.
   const totals = { pts: 0, reb: 0, ast: 0, stl: 0, blk: 0 };
+  const rawTotals = { pts: 0, reb: 0, ast: 0, stl: 0, blk: 0 };
   lineup.forEach(p => {
     const a = adjustedStats(p);
-    CATS.forEach(c => { totals[c] += a[c]; });
+    CATS.forEach(c => { totals[c] += a[c]; rawTotals[c] += p[c]; });
   });
 
   const ratios = {};
@@ -321,6 +326,7 @@ export function simulateSeason(lineup, opts = {}) {
     weakness,
     best,
     totals,
+    rawTotals,
     ratios,
   };
 }

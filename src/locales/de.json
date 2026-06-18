@@ -212,8 +212,16 @@
       "runOver": "Lauf vorbei",
       "reached": "Du hast {n} Level geschafft, bevor das Budget dich brach.",
       "nextLevel": "Nächstes Level →",
-      "newRun": "Neuer Lauf"
-    }
+      "newRun": "Neuer Lauf",
+      "used": "genutzt"
+    },
+    "adjShort": "ang.",
+    "eraNote": "Obere Zahl = reine Karrieredurchschnitte. „ang.“ = der ära-angepasste Wert, mit dem die Saison simuliert wird (ältere Ären werden an einen modernen Maßstab angeglichen).",
+    "runningTotal": "Deine Fünf bisher",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "Saisonergebnisse nutzen die SIM-Summen."
   },
   "homeSeo": {
     "sections": [

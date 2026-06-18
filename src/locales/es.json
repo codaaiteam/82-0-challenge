@@ -212,8 +212,16 @@
       "runOver": "Partida terminada",
       "reached": "Superaste {n} nivel(es) antes de que el presupuesto te venciera.",
       "nextLevel": "Siguiente nivel →",
-      "newRun": "Nueva partida"
-    }
+      "newRun": "Nueva partida",
+      "used": "usado"
+    },
+    "adjShort": "aj.",
+    "eraNote": "Número superior = promedios brutos de carrera. “aj.” = valor ajustado por época con el que se simula la temporada (las épocas antiguas se escalan hacia una base moderna).",
+    "runningTotal": "Tu quinteto hasta ahora",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "Los resultados de temporada usan los totales SIM."
   },
   "homeSeo": {
     "sections": [

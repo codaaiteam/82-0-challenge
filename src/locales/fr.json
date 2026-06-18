@@ -212,8 +212,16 @@
       "runOver": "Partie terminée",
       "reached": "Vous avez passé {n} niveau(x) avant que le budget ne vous brise.",
       "nextLevel": "Niveau suivant →",
-      "newRun": "Nouvelle partie"
-    }
+      "newRun": "Nouvelle partie",
+      "used": "utilisé"
+    },
+    "adjShort": "ajus.",
+    "eraNote": "Chiffre du haut = moyennes brutes en carrière. « ajus. » = valeur ajustée à l’époque utilisée pour simuler la saison (les époques anciennes sont ramenées vers une base moderne).",
+    "runningTotal": "Votre cinq jusqu’ici",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "Les résultats de la saison utilisent les totaux SIM."
   },
   "homeSeo": {
     "sections": [

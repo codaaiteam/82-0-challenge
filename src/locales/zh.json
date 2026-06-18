@@ -212,8 +212,16 @@
       "runOver": "本轮结束",
       "reached": "预算压垮你之前，你闯过了 {n} 关。",
       "nextLevel": "下一关 →",
-      "newRun": "重新开始"
-    }
+      "newRun": "重新开始",
+      "used": "已用"
+    },
+    "adjShort": "修正",
+    "eraNote": "上方数字＝原始生涯场均；“修正”＝模拟赛季实际采用的年代修正值（老年代会向现代基准缩放）。",
+    "runningTotal": "当前阵容",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "赛季结果按 SIM(模拟)合计计算。"
   },
   "homeSeo": {
     "sections": [

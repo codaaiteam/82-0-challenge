@@ -212,8 +212,16 @@
       "runOver": "ラン終了",
       "reached": "予算に屈する前に{n}レベルをクリアした。",
       "nextLevel": "次のレベル →",
-      "newRun": "新しいラン"
-    }
+      "newRun": "新しいラン",
+      "used": "使用"
+    },
+    "adjShort": "補正",
+    "eraNote": "上の数字＝通算の生スタッツ平均。「補正」＝シーズンをシミュレートする際に使う年代補正値（古い年代は現代基準に合わせて調整）。",
+    "runningTotal": "現在の5人",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "シーズン結果は SIM(補正)合計を使用します。"
   },
   "homeSeo": {
     "sections": [

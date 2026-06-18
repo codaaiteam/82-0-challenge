@@ -212,8 +212,16 @@
       "runOver": "런 종료",
       "reached": "예산이 당신을 무너뜨리기 전 {n}개 레벨을 클리어했어요.",
       "nextLevel": "다음 레벨 →",
-      "newRun": "새 런"
-    }
+      "newRun": "새 런",
+      "used": "사용"
+    },
+    "adjShort": "보정",
+    "eraNote": "위 숫자 = 통산 원본 평균. “보정” = 시즌 시뮬레이션에 쓰이는 시대 보정값(과거 시대는 현대 기준으로 보정).",
+    "runningTotal": "현재 라인업",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "시즌 결과는 SIM(보정) 합계를 사용합니다."
   },
   "homeSeo": {
     "sections": [

@@ -212,8 +212,16 @@
         "oneDecade": "One Decade",
         "randomEra": "Random Era",
         "hard": "Hard Mode"
-      }
-    }
+      },
+      "used": "used"
+    },
+    "adjShort": "adj",
+    "eraNote": "Top number = raw career averages. “adj” = the era-adjusted value the season is simulated on (older eras are scaled toward a modern baseline).",
+    "runningTotal": "Your five so far",
+    "sbRaw": "RAW",
+    "sbAdj": "SIM",
+    "sbTarget": "TARGET",
+    "sbNote": "Season results use SIM totals."
   },
   "homeSeo": {
     "sections": [
