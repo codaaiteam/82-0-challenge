@@ -101,6 +101,36 @@ export function gauntletBudget(level) {
   return Math.max(CAP_FLOOR, CAP_GAUNTLET_START - (level - 1) * CAP_STEP);
 }
 
+// Cap gauntlet difficulty curve. The old design gated every level on the same
+// fixed line (S >= 0.96 + maxed categories), but each cleared level shrinks the
+// budget, and the strongest five you can actually AFFORD ("the ceiling") falls
+// fast: $120 -> ~1.00, $110 -> ~0.95, $100 -> ~0.90, ... $30 -> ~0.36. So a
+// fixed 0.96 line made Level 1 require a near-perfect roster and Levels 2+
+// mathematically impossible. Instead, pin each level's 82-0 line BELOW its own
+// budget ceiling, and tighten the gap (and the luck roll) as you climb — so
+// Level 1 is a gimme and the ramp gets progressively, but always beatably,
+// harder. Ceilings were measured against the real player pool per budget; see
+// scripts/cap-ceiling.mjs. sThreshold = capped-S you must reach, minFloor =
+// the weakest category may not drop below this, luckPass = chance the 82-0 roll
+// lands once you're eligible.
+const GAUNTLET_GATE = [
+  { sThreshold: 0.80, minFloor: 0.55, luckPass: 0.95 }, // L1  $120  ceil ~.999
+  { sThreshold: 0.82, minFloor: 0.58, luckPass: 0.90 }, // L2  $110  ceil ~.949
+  { sThreshold: 0.82, minFloor: 0.60, luckPass: 0.85 }, // L3  $100  ceil ~.901
+  { sThreshold: 0.78, minFloor: 0.58, luckPass: 0.80 }, // L4  $90   ceil ~.843
+  { sThreshold: 0.72, minFloor: 0.55, luckPass: 0.75 }, // L5  $80   ceil ~.775
+  { sThreshold: 0.66, minFloor: 0.50, luckPass: 0.70 }, // L6  $70   ceil ~.710
+  { sThreshold: 0.59, minFloor: 0.45, luckPass: 0.65 }, // L7  $60   ceil ~.639
+  { sThreshold: 0.51, minFloor: 0.40, luckPass: 0.60 }, // L8  $50   ceil ~.555
+  { sThreshold: 0.43, minFloor: 0.33, luckPass: 0.55 }, // L9  $40   ceil ~.468
+  { sThreshold: 0.33, minFloor: 0.26, luckPass: 0.50 }, // L10 $30   ceil ~.359
+];
+
+// Gate for a given gauntlet level (clamped to the last defined level).
+export function gauntletGate(level) {
+  return GAUNTLET_GATE[Math.min(Math.max(level, 1), GAUNTLET_GATE.length) - 1];
+}
+
 function productionScore(p) {
   const a = adjustedStats(p);
   return a.pts + a.reb * 1.1 + a.ast * 1.4 + a.stl * 4 + a.blk * 4;
@@ -151,8 +181,11 @@ export function comboIsDraftable(combo, pickedIds, openSlots, filter = ALL_PLAYE
 }
 
 export function draftableCombos(pickedIds, openSlots, exclude, filter = ALL_PLAYERS) {
+  // exclude may be a single combo or a list (the combos shown earlier this
+  // round), so a skip won't bounce straight back to one just swapped off.
+  const ex = exclude ? (Array.isArray(exclude) ? exclude : [exclude]) : [];
   return COMBOS.filter(c => {
-    if (exclude && c.team === exclude.team && c.decade === exclude.decade) return false;
+    if (ex.some(e => e && c.team === e.team && c.decade === e.decade)) return false;
     return comboIsDraftable(c, pickedIds, openSlots, filter);
   });
 }
@@ -179,25 +212,37 @@ export function dailyCombos(rng, count = 5) {
   return seq;
 }
 
-// Team skip: new random team, same decade if possible.
-export function rerollTeam(current, pickedIds, openSlots, filter = ALL_PLAYERS) {
-  const sameDecade = draftableCombos(pickedIds, openSlots, current, filter).filter(
-    c => c.decade === current.decade && c.team !== current.team
-  );
-  if (sameDecade.length) return randomPick(sameDecade);
+// Team skip: new random team, same decade if possible. `recent` lists combos
+// already shown this round so two skips in a row don't loop back to one just
+// passed on; the guard is relaxed only when avoiding them would leave no pick.
+export function rerollTeam(current, pickedIds, openSlots, filter = ALL_PLAYERS, recent = []) {
+  const sameDecade = excl =>
+    draftableCombos(pickedIds, openSlots, excl, filter).filter(
+      c => c.decade === current.decade && c.team !== current.team
+    );
+  const fresh = sameDecade([current, ...recent]);
+  if (fresh.length) return randomPick(fresh);
+  const any = sameDecade(current); // recent pool exhausted — allow a repeat
+  if (any.length) return randomPick(any);
   return spinCombo(pickedIds, openSlots, current, filter);
 }
 
-// Era skip: new random decade, same team if possible.
-export function rerollEra(current, pickedIds, openSlots, filter = ALL_PLAYERS) {
-  const sameTeam = draftableCombos(pickedIds, openSlots, current, filter).filter(
-    c => c.team === current.team && c.decade !== current.decade
-  );
-  if (sameTeam.length) return randomPick(sameTeam);
-  const otherDecade = draftableCombos(pickedIds, openSlots, current, filter).filter(
-    c => c.decade !== current.decade
-  );
-  if (otherDecade.length) return randomPick(otherDecade);
+// Era skip: new random decade, same team if possible. `recent` works as above.
+export function rerollEra(current, pickedIds, openSlots, filter = ALL_PLAYERS, recent = []) {
+  const sameTeam = excl =>
+    draftableCombos(pickedIds, openSlots, excl, filter).filter(
+      c => c.team === current.team && c.decade !== current.decade
+    );
+  const freshTeam = sameTeam([current, ...recent]);
+  if (freshTeam.length) return randomPick(freshTeam);
+  const anyTeam = sameTeam(current);
+  if (anyTeam.length) return randomPick(anyTeam);
+  const otherDecade = excl =>
+    draftableCombos(pickedIds, openSlots, excl, filter).filter(c => c.decade !== current.decade);
+  const freshDecade = otherDecade([current, ...recent]);
+  if (freshDecade.length) return randomPick(freshDecade);
+  const anyDecade = otherDecade(current);
+  if (anyDecade.length) return randomPick(anyDecade);
   return spinCombo(pickedIds, openSlots, current, filter);
 }
 
@@ -257,24 +302,34 @@ export function simulateSeason(lineup, opts = {}) {
 
   wins = Math.max(8, Math.min(81, wins));
 
-  // The threshold for a shot at 82-0. The classic rule is "max every category"
-  // (every ratio >= 0.85), but a genuinely dominant roster should be able to
-  // buy down a near-miss in one category with surplus elsewhere — scoring 129
-  // when the benchmark is 122 ought to count for something. S caps each
-  // category at 1.0 and throws that overflow away; rawS keeps it, so the gap
-  // (rawS - S) is a "compensation pool". The weakest category may dip as low
-  // as COMP_FLOOR if the pool covers its weighted shortfall below 0.85 with
-  // room to spare (×2). Below COMP_FLOOR a hole is always fatal, so lopsided
-  // rosters still can't sneak a perfect season.
-  const COMP_FLOOR = 0.80;
-  const WEIGHTS = { pts: 0.30, reb: 0.20, ast: 0.20, stl: 0.15, blk: 0.15 };
-  const surplus = rawS - S;
-  const shortfall = Math.max(0, 0.85 - minRatio) * WEIGHTS[worstCat];
-  const maxedOut = minRatio >= 0.85 || (minRatio >= COMP_FLOOR && surplus >= shortfall * 2);
-
-  // Hard Mode tightens the luck gate (45% vs 65%).
-  const luckGate = difficulty > 1 ? 0.55 : 0.35;
-  if (S >= 0.96 && maxedOut && Math.random() > luckGate) wins = 82;
+  // Eligibility for the 82-0 roll. The Cap gauntlet uses a per-level line; every
+  // other mode uses the classic "max every category (with a compensation pool)".
+  let eligible, luckGate;
+  if (opts.capLevel) {
+    // Cap gauntlet: each level has its own 82-0 line, pinned below that
+    // budget's affordable ceiling so every level is winnable and the ramp is
+    // smooth (see GAUNTLET_GATE). The luck roll also eases/tightens per level.
+    const g = gauntletGate(opts.capLevel);
+    eligible = S >= g.sThreshold && minRatio >= g.minFloor;
+    luckGate = 1 - g.luckPass;
+  } else {
+    // Classic / single Cap: "max every category" (every ratio >= 0.85), but a
+    // genuinely dominant roster can buy down a near-miss in one category with
+    // surplus elsewhere — scoring 129 when the benchmark is 122 ought to count.
+    // S caps each category at 1.0 and throws that overflow away; rawS keeps it,
+    // so the gap (rawS - S) is a "compensation pool". The weakest category may
+    // dip to COMP_FLOOR if the pool covers its weighted shortfall below 0.85
+    // with room to spare (x2). Below COMP_FLOOR a hole is always fatal.
+    const COMP_FLOOR = 0.80;
+    const WEIGHTS = { pts: 0.30, reb: 0.20, ast: 0.20, stl: 0.15, blk: 0.15 };
+    const surplus = rawS - S;
+    const shortfall = Math.max(0, 0.85 - minRatio) * WEIGHTS[worstCat];
+    const maxedOut = minRatio >= 0.85 || (minRatio >= COMP_FLOOR && surplus >= shortfall * 2);
+    eligible = S >= 0.96 && maxedOut;
+    // Hard Mode tightens the luck gate (45% vs 65%).
+    luckGate = difficulty > 1 ? 0.55 : 0.35;
+  }
+  if (eligible && Math.random() > luckGate) wins = 82;
 
   // Uncapped team rating (can exceed 100). Cap Mode adds an efficiency bonus
   // for budget left on the table.

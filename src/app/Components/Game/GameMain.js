@@ -131,6 +131,7 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const [round, setRound] = useState(1);
   const [slots, setSlots] = useState(() => buildSlots('balanced'));
   const [combo, setCombo] = useState(null);          // settled {team, decade}
+  const [recentCombos, setRecentCombos] = useState([]); // shown this round, so skips don't loop back
   const [display, setDisplay] = useState({ team: '???', decade: "??'s" }); // slot windows
   const [selected, setSelected] = useState(null);     // player awaiting placement
   const [posFilter, setPosFilter] = useState('All');
@@ -186,6 +187,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     : (filterCfg ? filterCfg.pool(activeParam) : undefined);
 
   useEffect(() => () => clearInterval(spinTimer.current), []);
+
+  // Each new draft slot starts with a clean "recently shown" list.
+  useEffect(() => { setRecentCombos([]); }, [round]);
 
   // Daily mode: same seeded spins for everyone; one attempt per day.
   useEffect(() => {
@@ -257,13 +261,15 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const handleTeamSkip = () => {
     if (teamSkips <= 0 || phase !== 'pick') return;
     setTeamSkips(teamSkips - 1);
-    animateTo(rerollTeam(combo, pickedIds, openSlots, poolFilter));
+    if (combo) setRecentCombos(r => [...r, combo]);
+    animateTo(rerollTeam(combo, pickedIds, openSlots, poolFilter, recentCombos));
   };
 
   const handleEraSkip = () => {
     if (eraSkips <= 0 || phase !== 'pick') return;
     setEraSkips(eraSkips - 1);
-    animateTo(rerollEra(combo, pickedIds, openSlots, poolFilter));
+    if (combo) setRecentCombos(r => [...r, combo]);
+    animateTo(rerollEra(combo, pickedIds, openSlots, poolFilter, recentCombos));
   };
 
   // ---- picking & placing ----
@@ -321,7 +327,7 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const runCapSim = () => {
     const lineupArr = slots.filter(s => s.player).map(s => s.player);
     const budgetLeft = capBudget - lineupArr.reduce((sum, pl) => sum + priceOf(pl), 0);
-    startSim(lineupArr, { budgetLeft });
+    startSim(lineupArr, { budgetLeft, capLevel });
   };
 
   // Cap Mode: vacate a placed player (his salary is refunded automatically,
