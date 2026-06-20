@@ -32,6 +32,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <a href="https://www.17-0-game.com" target="_blank" rel="noopener">17-0 Game — NFL Perfect Season</a>
           <a href="https://23-0-game.com" target="_blank" rel="noopener">23-0 Game — Perfect AFL Season</a>
           <a href="https://27-0-game.com" target="_blank" rel="noopener">27-0 Game — Perfect NRL Season</a>
+          <a href="https://mecchachameleonpc.com" target="_blank" rel="noopener">Meccha Chameleon PC Guide</a>
           <a href="https://c2story.com" target="_blank" rel="noopener noreferrer">
             {t?.cta?.button || 'AI Character Squad Builder'}
           </a>
