@@ -725,6 +725,7 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
             )}
           </div>
 
+          {false && (
           <a
             className={styles.storyCta}
             href={buildStoryUrl(result, slots, story, playstyle, routeParams?.lang)}
@@ -733,6 +734,7 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
           >
             {g.storyCta || '📖 Turn this team into a storybook →'}
           </a>
+          )}
 
           <div className={styles.resultActions}>
             {isCap ? (
