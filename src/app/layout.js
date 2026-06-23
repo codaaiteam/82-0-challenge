@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import CookieNotice from './Components/CookieNotice'
+import AnnouncementBar from './Components/AnnouncementBar'
 // Social Bar / Mobile Sticky / Popunder 未在 Adsterra 为本域名建位，勿挂载
 
 import en from '../locales/en.json'
@@ -27,6 +28,7 @@ export default function RootLayout({ children, params }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body className={inter.className}>
+        <AnnouncementBar />
         <Script
           strategy="afterInteractive"
           data-domain="82-0-challenge.com"
