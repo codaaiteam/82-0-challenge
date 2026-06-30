@@ -452,6 +452,12 @@ export const FILTERS = {
   oneDecade:    { lbTag: 'decade',    difficulty: 1,    param: 'decade', pool: (d) => (p => p.decade === d) },
   randomEra:    { lbTag: 'decade',    difficulty: 1,    param: 'decade', random: true, pool: (d) => (p => p.decade === d) },
   hard:         { lbTag: 'hard',      difficulty: 1.15, param: null,     pool: () => ALL_PLAYERS },
+  // Era Mode ("cross-era draft"): the spin still locks a team+decade and the
+  // difficulty curve is untouched, but every pick must come from a NEW decade,
+  // so the finished five spans the eras (one legend per decade). `openEra` tells
+  // GameMain to swap the static pool for a dynamic predicate that excludes the
+  // decades already on the floor — see the poolFilter branch there.
+  eraMode:      { lbTag: 'eramode',   difficulty: 1,    param: null,     openEra: true, pool: () => ALL_PLAYERS },
 };
 
 export const FILTER_IDS = Object.keys(FILTERS);

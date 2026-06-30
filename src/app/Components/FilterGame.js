@@ -7,12 +7,12 @@ import { FRANCHISE_TEAMS, DECADES, randomPick } from '@/lib/engine';
 
 // Order the filter cards are shown in. 'classic' anchors the list as the
 // baseline; the rest are the differentiated "better 82-0" modes.
-const FILTER_ORDER = ['cap', 'noMvps', 'oneFranchise', 'oneDecade', 'randomEra', 'hard', 'classic'];
+const FILTER_ORDER = ['cap', 'noMvps', 'oneFranchise', 'oneDecade', 'randomEra', 'eraMode', 'hard', 'classic'];
 
 // Difficulty colour per filter (label text comes from the locale).
 const DIFF_CLASS = {
   classic: 'diffEasy', cap: 'diffHard', noMvps: 'diffMed',
-  oneFranchise: 'diffMed', oneDecade: 'diffMed', randomEra: 'diffMed', hard: 'diffHard',
+  oneFranchise: 'diffMed', oneDecade: 'diffMed', randomEra: 'diffMed', eraMode: 'diffMed', hard: 'diffHard',
 };
 
 export default function FilterGame({ t }) {

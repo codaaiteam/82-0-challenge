@@ -12,7 +12,7 @@ const ALLOWED_ORIGINS = new Set([
 // Cap Mode and the Challenge Filters pages.
 const MODES = new Set([
   'standard', 'daily', 'classic', 'hoopiq',
-  'cap', 'nomvps', 'franchise', 'decade', 'hard',
+  'cap', 'nomvps', 'franchise', 'decade', 'hard', 'eramode',
 ]);
 const GRADES = new Set(['S+', 'S', 'A', 'B', 'C', 'D']);
 const STYLES = new Set(['balanced', 'smallball', 'twintowers', 'rungun']);

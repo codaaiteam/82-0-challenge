@@ -211,7 +211,8 @@
         "oneFranchise": "One Franchise",
         "oneDecade": "One Decade",
         "randomEra": "Random Era",
-        "hard": "Hard Mode"
+        "hard": "Hard Mode",
+        "eraMode": "Era Mode"
       },
       "used": "used"
     },
@@ -883,6 +884,10 @@
         "hard": {
           "desc": "A steeper win curve. Even stacked rosters drop a few more games.",
           "diff": "Hard"
+        },
+        "eraMode": {
+          "desc": "One legend per decade — build an all-time five that spans every era, then chase 82-0.",
+          "diff": "Medium"
         }
       },
       "sections": [
@@ -1042,6 +1047,38 @@
           ]
         }
       ]
+    },
+    "eraMode": {
+      "title": "82-0 Era Mode — Build an All-Time Team Across Every Era",
+      "description": "The cross-era 82-0 challenge, like EraBall: draft one legend from each decade — 1960s to today — and see if your all-time starting five can go a perfect 82-0.",
+      "h1": "82-0 Era Mode",
+      "intro": "Looking for EraBall or the era ball 82-0 game? Era Mode is the cross-era draft: every pick must come from a different decade, so your starting five spans the whole history of basketball — a legend from the 1960s, 70s, 80s, 90s, 2000s, 2010s and 2020s. Build the ultimate all-time team and chase a perfect, undefeated season.",
+      "sections": [
+        {
+          "h2": "What is 82-0 Era Mode?",
+          "paragraphs": [
+            "Era Mode is a cross-era twist on the 82-0 challenge. In the classic game the spin can hand you the same decade twice; in Era Mode, once you draft a player from a decade that era is locked out, so your finished five always spans the eras — one legend per decade. It is the all-time, every-era team-building fantasy that fans of EraBall and the era ball 82-0 game come looking for, with the same undefeated-season payoff."
+          ]
+        },
+        {
+          "h2": "How to play Era Mode",
+          "paragraphs": [
+            "It plays like the classic 82-0 game — spin a team and era, then pick a player for one of the five court positions — with a single extra rule: every pick must come from a decade you have not used yet. The slot machine automatically skips eras already on your roster, so by the time your five is set it spans the decades. Then simulate the season and see how close your cross-era all-time team comes to a perfect 82-0."
+          ]
+        },
+        {
+          "h2": "Era Mode vs EraBall",
+          "paragraphs": [
+            "Both are about drafting an all-time NBA roster across every era. EraBall leans on picking a coach and simulating the playoffs; Era Mode keeps the pure 82-0 question — can your five go undefeated across a full 82-game regular season — and adds the one-legend-per-decade rule so the team genuinely spans history. If you love building cross-era dream teams, Era Mode is the fastest way to chase a perfect record."
+          ]
+        },
+        {
+          "h2": "Tips for a cross-era 82-0",
+          "paragraphs": [
+            "Spread your strengths across the decades. Because you cannot stack two players from the same era, plan which decade you want each position to come from — grab a dominant 1960s or 70s big for rebounding and blocks, a 1990s or 2000s wing for scoring, and a modern playmaker for assists and steals. Use your team and era re-rolls to find the exact piece a decade is missing, and keep every category balanced — one weak stat still drags an all-time five short of 82-0."
+          ]
+        }
+      ]
     }
   },
   "cta": {
@@ -1165,7 +1202,8 @@
       "nomvps": "No MVPs",
       "franchise": "One Franchise",
       "decade": "One Decade",
-      "hard": "Hard Mode"
+      "hard": "Hard Mode",
+      "eramode": "Era Mode"
     },
     "styles": {
       "balanced": "Balanced",
@@ -1184,12 +1222,13 @@
   },
   "homeModes": {
     "title": "82-0 Game Modes",
-    "subtitle": "Same perfect-season chase — five ways to play.",
+    "subtitle": "Same perfect-season chase — six ways to play.",
     "all": "Browse all challenge filters",
     "capDesc": "The gauntlet — build under a budget that tightens with every 82-0. How deep can you go?",
     "noMvpsDesc": "No superstars. Win it all with role players.",
     "oneTeamDesc": "One club, every era. Go undefeated alone.",
     "oneDecadeDesc": "Lock to one era and chase perfection.",
-    "hardDesc": "Steeper curve. Only the elite survive 82-0."
+    "hardDesc": "Steeper curve. Only the elite survive 82-0.",
+    "eraModeDesc": "One legend per decade. Build an all-time team across every era."
   }
 }

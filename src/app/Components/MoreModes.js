@@ -14,6 +14,7 @@ export default function MoreModes({ t, prefix = '' }) {
     { href: `${prefix}/82-0-no-mvps`, icon: '🚫', name: v.noMvps || 'No MVPs', desc: hm.noMvpsDesc || 'No superstars. Win it all with role players.' },
     { href: `${prefix}/82-0-one-team`, icon: '🏟️', name: v.oneFranchise || 'One Franchise', desc: hm.oneTeamDesc || 'One club, every era. Go undefeated alone.' },
     { href: `${prefix}/82-0-one-decade`, icon: '📅', name: v.oneDecade || 'One Decade', desc: hm.oneDecadeDesc || 'Lock to one era and chase perfection.' },
+    { href: `${prefix}/82-0-era-mode`, icon: '🕰️', name: v.eraMode || 'Era Mode', desc: hm.eraModeDesc || 'One legend per decade. Build an all-time team across every era.' },
     { href: `${prefix}/82-0-hard-mode`, icon: '🔥', name: v.hard || 'Hard Mode', desc: hm.hardDesc || 'Steeper curve. Only the elite survive 82-0.' },
   ];
 

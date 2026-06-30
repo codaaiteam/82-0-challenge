@@ -10,6 +10,7 @@ const contentPages = [
   '/82-0-one-team',
   '/82-0-one-decade',
   '/82-0-hard-mode',
+  '/82-0-era-mode',
   '/how-to-play',
   '/unblocked',
   '/how-its-calculated',

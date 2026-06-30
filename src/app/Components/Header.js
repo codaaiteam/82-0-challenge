@@ -34,6 +34,7 @@ export default function Header() {
     { href: `${prefix}/82-0-no-mvps`, label: h.navNoMvps || 'No MVPs', sub: true },
     { href: `${prefix}/82-0-one-team`, label: h.navOneTeam || 'One Franchise', sub: true },
     { href: `${prefix}/82-0-one-decade`, label: h.navOneDecade || 'One Decade', sub: true },
+    { href: `${prefix}/82-0-era-mode`, label: h.navEraMode || 'Era Mode', sub: true },
     { href: `${prefix}/82-0-hard-mode`, label: h.navHardMode || 'Hard Mode', sub: true },
     { href: `${prefix}/daily`, label: `🗓️ ${h.daily || 'Daily Run'}` },
     { href: `${prefix}/team-builder`, label: h.teamBuilder || 'Team Builder' },

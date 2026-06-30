@@ -112,6 +112,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   // leaderboard tag; isCap swaps the spin draft for the free-draft cap UI.
   const filterCfg = variant ? FILTERS[variant.id] : null;
   const isCap = !!filterCfg?.cap;
+  // Era Mode: each pick must come from a fresh decade, so the spin/pick pool is
+  // a dynamic predicate (computed below from the decades already drafted).
+  const isEra = !!filterCfg?.openEra;
   // activeParam = the chosen team (oneFranchise) or decade (oneDecade/randomEra);
   // randomEra re-rolls it on every replay for a fresh surprise.
   const [activeParam, setActiveParam] = useState(variant?.param ?? null);
@@ -182,8 +185,14 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   // leave at least MIN_PRICE for every remaining slot — so you can never spend
   // yourself into a dead end. Other filters use their static pool predicate.
   const capMaxSpend = capLeft - Math.max(0, openSlots.length - 1) * MIN_PRICE;
+  // Era Mode: exclude every decade already on the floor. Combos of a used
+  // decade then have no draftable player, so the slot machine never lands on a
+  // repeat era and each candidate list is fresh — one legend per decade.
+  const usedDecades = new Set(lineup.map(p => p.decade));
   const poolFilter = isCap
     ? (p => priceOf(p) <= capMaxSpend)
+    : isEra
+    ? (p => !usedDecades.has(p.decade))
     : (filterCfg ? filterCfg.pool(activeParam) : undefined);
 
   useEffect(() => () => clearInterval(spinTimer.current), []);
