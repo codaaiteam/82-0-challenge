@@ -37,7 +37,6 @@ export default function Header() {
     { href: `${prefix}/82-0-era-mode`, label: h.navEraMode || 'Era Mode', sub: true },
     { href: `${prefix}/82-0-lebron`, label: h.navLebron || 'LeBron Mode', sub: true },
     { href: `${prefix}/82-0-hard-mode`, label: h.navHardMode || 'Hard Mode', sub: true },
-    { href: `${prefix}/daily`, label: `🗓️ ${h.daily || 'Daily Run'}` },
     { href: `${prefix}/team-builder`, label: h.teamBuilder || 'Team Builder' },
     { href: `${prefix}/82-0`, label: h.whatIs || 'What Is 82-0?' },
     { href: `${prefix}/how-to-play`, label: h.howToPlay || 'How to Play' },
@@ -124,6 +123,10 @@ export default function Header() {
 
         <nav ref={navRef} className={`${styles.mainNav} ${isNavOpen ? styles.open : ''}`}>
           {renderGroup('820', `82-0 ${h.family || 'NBA'}`, family)}
+          {/* Daily gets its own top-level slot — it's the retention hook. */}
+          <Link href={`${prefix}/daily`} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
+            🗓️ {h.daily || 'Daily Run'}
+          </Link>
           {otherGames.map(it => (
             <Link key={it.href} href={it.href} className={styles.navLink} onClick={() => setIsNavOpen(false)}>
               {it.label}
