@@ -84,9 +84,9 @@ export function nflRerollEra(current, pickedIds, openSlots) {
   return nflSpinCombo(pickedIds, openSlots, current);
 }
 
-// ---- 20-game season simulation ----
+// ---- Season simulation (20-game 20-0 by default, 17-game 17-0 variant) ----
 
-export function nflSimulateSeason(slots) {
+export function nflSimulateSeason(slots, games = 20) {
   // slots: { QB: player, ..., WR1: player, WR2: player }
   let S = 0;
   let minNorm = 1;
@@ -101,16 +101,16 @@ export function nflSimulateSeason(slots) {
   const qbNorm = slots.QB.rating / 99;
 
   // Fewer games, higher stakes — the curve is steeper than basketball's.
-  let wins = Math.round(20 * Math.pow(S, 3)) + randomInt(-1, 1);
+  let wins = Math.round(games * Math.pow(S, 3)) + randomInt(-1, 1);
 
   // Gates: you cannot hide a weakness across a playoff run.
-  if (qbNorm < 0.76) wins = Math.min(wins, 14);
-  if (minNorm < 0.65) wins = Math.min(wins, 16);
+  if (qbNorm < 0.76) wins = Math.min(wins, games - 6);
+  if (minNorm < 0.65) wins = Math.min(wins, games - 4);
 
-  wins = Math.max(2, Math.min(19, wins));
+  wins = Math.max(2, Math.min(games - 1, wins));
 
   // Perfection: elite QB plus no soft spots anywhere.
-  if (S >= 0.94 && qbNorm >= 0.93 && minNorm >= 0.8 && Math.random() > 0.35) wins = 20;
+  if (S >= 0.94 && qbNorm >= 0.93 && minNorm >= 0.8 && Math.random() > 0.35) wins = games;
 
   const points = Math.round(S * 1000) / 10;
 
@@ -134,11 +134,11 @@ export function nflSimulateSeason(slots) {
   const best = NFL_SLOTS.map(s => slots[s]).reduce((b, p) => (p.rating > b.rating ? p : b));
 
   let title;
-  if (wins === 20) title = 'perfect';
-  else if (wins >= 18) title = 'almost';
-  else if (wins >= 15) title = 'favorite';
-  else if (wins >= 12) title = 'contender';
+  if (wins === games) title = 'perfect';
+  else if (wins >= games - 2) title = 'almost';
+  else if (wins >= Math.round(games * 0.75)) title = 'favorite';
+  else if (wins >= Math.round(games * 0.6)) title = 'contender';
   else title = 'playoff';
 
-  return { wins, losses: 20 - wins, points, grade, title, weakness, best };
+  return { wins, losses: games - wins, points, grade, title, weakness, best };
 }

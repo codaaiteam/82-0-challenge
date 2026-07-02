@@ -35,6 +35,7 @@ export default function Header() {
     { href: `${prefix}/82-0-one-team`, label: h.navOneTeam || 'One Franchise', sub: true },
     { href: `${prefix}/82-0-one-decade`, label: h.navOneDecade || 'One Decade', sub: true },
     { href: `${prefix}/82-0-era-mode`, label: h.navEraMode || 'Era Mode', sub: true },
+    { href: `${prefix}/82-0-lebron`, label: h.navLebron || 'LeBron Mode', sub: true },
     { href: `${prefix}/82-0-hard-mode`, label: h.navHardMode || 'Hard Mode', sub: true },
     { href: `${prefix}/daily`, label: `🗓️ ${h.daily || 'Daily Run'}` },
     { href: `${prefix}/team-builder`, label: h.teamBuilder || 'Team Builder' },
@@ -42,6 +43,8 @@ export default function Header() {
     { href: `${prefix}/how-to-play`, label: h.howToPlay || 'How to Play' },
   ];
   const otherGames = [
+    { href: `${prefix}/82-0-nhl`, label: '🏒 82-0 NHL' },
+    { href: `${prefix}/17-0`, label: '🏈 17-0' },
     { href: `${prefix}/20-0`, label: '🏈 20-0' },
     { href: `${prefix}/38-0`, label: '⚽ 38-0' },
     { href: `${prefix}/7-0`, label: '🌎 7-0' },
@@ -94,9 +97,9 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.headerContent}>
         <Link href={prefix || '/'} className={styles.logoLink}>
-          <Image src="/logo-site.png" alt="X-0 Games logo" width={28} height={28} className={styles.logoImg} />
+          <Image src="/logo-site.png" alt="82-0 Challenge logo" width={28} height={28} className={styles.logoImg} />
           <span className={styles.logoLockup}>
-            <span className={styles.logoText}>{h.parentBrand || 'X-0 Games'}</span>
+            <span className={styles.logoText}>{h.parentBrand || '82-0 Challenge'}</span>
             <span className={styles.logoTagline}>{h.tagline || 'Perfect record games'}</span>
           </span>
         </Link>

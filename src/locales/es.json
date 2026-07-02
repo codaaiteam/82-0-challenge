@@ -12,7 +12,7 @@
     "howToPlay": "Cómo jugar",
     "teamBuilder": "Constructor de equipos",
     "leaderboard": "Clasificación",
-    "parentBrand": "X-0 Games",
+    "parentBrand": "82-0 Challenge",
     "play": "Jugar 82-0",
     "moreGames": "Más juegos X-0",
     "capMode": "82-0 Tope Salarial",
@@ -20,7 +20,8 @@
     "navNoMvps": "Sin MVPs",
     "navOneTeam": "Una Franquicia",
     "navOneDecade": "Una Década",
-    "navHardMode": "Modo Difícil"
+    "navHardMode": "Modo Difícil",
+    "navLebron": "Modo LeBron"
   },
   "hero": {
     "title": "Desafío 82-0",
@@ -203,7 +204,8 @@
         "oneFranchise": "Una Franquicia",
         "oneDecade": "Una Década",
         "randomEra": "Era Aleatoria",
-        "hard": "Modo Difícil"
+        "hard": "Modo Difícil",
+        "lebron": "Modo LeBron"
       },
       "level": "Nivel {n}",
       "cleared": "¡Nivel {n} superado!",
@@ -221,7 +223,19 @@
     "sbRaw": "RAW",
     "sbAdj": "SIM",
     "sbTarget": "TARGET",
-    "sbNote": "Los resultados de temporada usan los totales SIM."
+    "sbNote": "Los resultados de temporada usan los totales SIM.",
+    "nfl17": {
+      "shareText": "Terminé {record} en el desafío 17-0. ¿Puedes ganarlo todo?"
+    },
+    "nhl": {
+      "shareText": "Terminé {record} en el desafío 82-0 NHL. ¿Puede tu alineación hacerlo mejor?",
+      "weaknesses": {
+        "weakGoalie": "La portería no roba partidos",
+        "weakBlueline": "Flojo en la línea azul",
+        "weakScoring": "Falta pegada anotadora",
+        "none": "Ninguna: alineación completa"
+      }
+    }
   },
   "homeSeo": {
     "sections": [
@@ -676,6 +690,102 @@
         }
       ]
     },
+    "seventeenZero": {
+      "title": "Desafío 17-0: juega al juego de la temporada regular perfecta de la NFL",
+      "description": "Juega gratis al desafío 17-0. Gira franquicias y épocas de la NFL al azar, recluta una plantilla de 9 leyendas del fútbol americano y comprueba si pueden ganar los 17 partidos de una temporada regular perfecta.",
+      "h1": "Desafío 17-0",
+      "intro": "Desde que la NFL amplió el calendario a 17 partidos, 17-0 es el nuevo nombre de la temporada regular perfecta, y ningún equipo lo ha conseguido jamás. Gira la máquina tragaperras, recluta una plantilla de leyendas de tres épocas y descubre si tu equipo puede ganarlo todo. Juega gratis aquí abajo.",
+      "playCta": "Juega al desafío 20-0 de temporada completa",
+      "sections": [
+        {
+          "h2": "¿Qué significa 17-0 en la NFL?",
+          "paragraphs": [
+            "La NFL disputa una temporada regular de 17 partidos desde 2021, y ningún equipo la ha terminado sin derrotas. Los roces más cercanos con la perfección llegaron con formatos antiguos: los Miami Dolphins de 1972 ganaron todos los partidos que jugaron —14-0 en temporada regular y 17-0 en total una vez acabados los playoffs— y los New England Patriots de 2007 firmaron un 16-0 antes de perder el Super Bowl. En el formato actual, 17-0 es la perfección de temporada regular que nadie ha alcanzado.",
+            "Eso es lo que hace magnético el número. Igual que el 82-0 en el baloncesto, el 17-0 representa una plantilla sin semanas malas: diecisiete domingos seguidos sin un solo tropiezo."
+          ]
+        },
+        {
+          "h2": "¿Qué es el juego del desafío 17-0?",
+          "paragraphs": [
+            "El desafío 17-0 es un constructor de plantillas de fútbol americano de la misma familia que el viral desafío 82-0 de baloncesto. La máquina tragaperras te reparte una franquicia histórica y una época al azar, reclutas una leyenda cada vez para nueve puestos —quarterback, posiciones de ataque, las trincheras y la defensa— y cada jugador lleva cifras de producción reales de su época.",
+            "Cuando se cubre el noveno puesto, el motor de simulación proyecta una temporada regular completa de 17 partidos. El juego de élite del quarterback es lo que más pesa, pero el motor castiga cualquier punto débil de la plantilla: un grupo de posiciones flojo suele ser la diferencia entre el 17-0 y el 15-2. Termina perfecto y podrás descargar un póster de tu plantilla o compartir el récord para que tus amigos lo persigan."
+          ]
+        },
+        {
+          "h2": "17-0 frente a 20-0: dos tipos de perfección",
+          "paragraphs": [
+            "Este sitio alberga ambos desafíos de fútbol americano. La versión 17-0 solo pide una temporada regular perfecta; la versión 20-0 añade una carrera de playoffs —tres victorias más, terminando con el Super Bowl—. El calendario más corto hace del 17-0 el objetivo más amable, pero la misma regla vale para los dos: una gran plantilla te lleva a 14 o 15 victorias, y solo una impecable lo cierra.",
+            "Y si quieres el original que inició la familia, el desafío 82-0 de baloncesto también está aquí mismo: cinco leyendas, siete décadas de historia, ochenta y dos partidos sin perder."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Algún equipo de la NFL ha terminado alguna vez 17-0?",
+          "a": "No. El calendario de 17 partidos comenzó en 2021 y ningún equipo lo ha terminado invicto. Los Dolphins de 1972 fueron perfectos con el formato de 14 partidos (17-0 contando los playoffs), y los Patriots de 2007 firmaron un 16-0 antes de perder el Super Bowl."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre los desafíos 17-0 y 20-0?",
+          "a": "La construcción de la plantilla es la misma: nueve posiciones reclutadas a partir de tiradas aleatorias de franquicia y época. El desafío 17-0 simula solo la temporada regular de 17 partidos, mientras que el 20-0 añade encima tres victorias de playoffs y un Super Bowl, lo que lo convierte en el récord perfecto más difícil."
+        },
+        {
+          "q": "¿Cómo decide el simulador mi récord?",
+          "a": "Cada jugador lleva una valoración global de su época. El motor pondera cada puesto de la plantilla —el quarterback es el que más pesa, luego las trincheras y la secundaria— y proyecta las victorias con una curva empinada, así que un grupo de posiciones flojo limita tu techo por fuerte que sea el resto de la plantilla."
+        },
+        {
+          "q": "¿El desafío 17-0 es gratis?",
+          "a": "Sí. Funciona en el navegador, en escritorio y móvil, sin descargas ni registro, y puedes rejugarlo tantas veces como quieras."
+        }
+      ]
+    },
+    "nhl": {
+      "title": "Desafío 82-0 NHL: juega al juego de la temporada perfecta de hockey",
+      "description": "Juega al desafío 82-0 en su edición de hockey. Gira franquicias y épocas de la NHL al azar, recluta una alineación de seis leyendas —delanteros, defensas, portero— y comprueba si pueden ganar los 82 partidos.",
+      "h1": "Desafío 82-0 NHL",
+      "intro": "La NHL juega exactamente el mismo calendario de 82 partidos que la NBA, así que el desafío 82-0 se traduce al hockey a la perfección. Gira la máquina tragaperras, recluta una alineación de seis leyendas de cinco décadas —centro, extremos, una pareja de defensas y un portero— y descubre si podrían ganar todas las noches. Juega gratis aquí abajo.",
+      "playCta": "Juega al desafío 82-0 original de baloncesto",
+      "sections": [
+        {
+          "h2": "¿Qué significaría un 82-0 en la NHL?",
+          "paragraphs": [
+            "Una temporada regular de la NHL son 82 partidos, el mismo número que en la NBA, y por eso los aficionados al hockey no dejan de escribir '82-0 NHL' en los buscadores. Ningún equipo de hockey se ha acercado ni de lejos: la mejor temporada regular de la historia, la de los Boston Bruins de 2022-23, terminó 65-12-5, y los legendarios Montreal Canadiens de 1976-77 solo perdieron ocho veces en un calendario de 80 partidos. Ganar los 82 significaría sobrevivir a partidos en noches consecutivas, giras fuera de casa, porteros en racha y seis meses de rebotes sin una sola mala noche.",
+            "Esa es exactamente la fantasía que simula este juego: no si un gran equipo puede dominar, sino si una alineación perfecta podría literalmente no perder nunca."
+          ]
+        },
+        {
+          "h2": "Cómo funciona el desafío 82-0 NHL",
+          "paragraphs": [
+            "La máquina tragaperras te reparte una combinación aleatoria de franquicia y época —los Oilers de los 80, los Red Wings de los 90, los Avalanche de los 2020— y reclutas un jugador de ese equipo para tu alineación de seis: un centro, los dos extremos, una pareja de defensas y un portero. En el fondo hay cinco décadas de leyendas, de Gretzky y Bourque a Crosby, McDavid y Makar, cada uno con una línea estadística real de su época.",
+            "Cubre los seis puestos y el motor proyecta tu temporada de 82 partidos. La portería y el juego del centro son lo que más pesa, y la simulación castiga a cualquier pasajero en la alineación: un puesto flojo suele ser la diferencia entre una carrera al Presidents' Trophy y el 82-0. Tienes una repetición de equipo y una repetición de época por draft, así que gástalas con cabeza."
+          ]
+        },
+        {
+          "h2": "La matemática de la temporada perfecta es más cruel en el hockey",
+          "paragraphs": [
+            "El 82-0 del baloncesto ya es absurdo, pero el hockey añade dos capas extra de caos: un portero puede robar cualquier partido para cualquiera de los dos lados, y los márgenes de un gol deciden casi la mitad de las noches de la liga. Hasta la alineación más profunda de este juego necesita un portero de élite y cero puntos débiles antes de que el motor se plantee siquiera conceder una temporada perfecta: exactamente el perfil que necesitaría un 82-0 real.",
+            "Si terminas perfecto, descarga el póster y comparte tu alineación. Y si quieres comparar deportes, el desafío 82-0 original de baloncesto, la versión 17-0 de la NFL y el resto de la familia también se juegan en este sitio."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "¿Algún equipo de la NHL ha terminado alguna vez 82-0?",
+          "a": "No, ni de lejos. La mejor temporada regular de la NHL por porcentaje de puntos fue la de los Montreal Canadiens de 1976-77 (60-8-12), y los Boston Bruins de 2022-23 fijaron el récord de victorias en 65. Una temporada 82-0 no ha ocurrido nunca en ninguna gran liga profesional."
+        },
+        {
+          "q": "¿En qué se diferencia la versión NHL del desafío 82-0 de baloncesto?",
+          "a": "El mismo bucle central —tiradas aleatorias de equipo y época, un draft de leyendas, una simulación de 82 partidos—, pero la alineación son seis puestos de hockey (C, LW, RW, dos D, G) en lugar de cinco posiciones de baloncesto, y la portería es el puesto individual que más pesa."
+        },
+        {
+          "q": "¿Qué épocas y jugadores están incluidos?",
+          "a": "Cinco décadas de historia de la NHL, de los años 80 a los 2020, cubriendo franquicias que definieron épocas como la dinastía de los Oilers, los Red Wings y los Avalanche de los 90, los Blackhawks y los Penguins de los 2010, y estrellas actuales como McDavid, MacKinnon y Makar."
+        },
+        {
+          "q": "¿El desafío 82-0 NHL es gratis?",
+          "a": "Sí. Funciona en el navegador, en escritorio y móvil, sin descargas ni registro, y puedes rejugarlo tantas veces como quieras."
+        }
+      ]
+    },
     "teamBuilder": {
       "title": "Constructor de equipos 82-0",
       "description": "Forma tu quinteto histórico de baloncesto con el constructor de equipos 82-0. Tiradas de máquina tragaperras, leyendas reales de siete décadas y récord de temporada simulado. ¿Puedes quedar invicto?",
@@ -835,6 +945,10 @@
         "hard": {
           "desc": "Una curva de victorias más exigente. Hasta los planteles cargados pierden más.",
           "diff": "Difícil"
+        },
+        "lebron": {
+          "desc": "LeBron está fijado en el quinteto —una época aleatoria de su carrera— y tú reclutas a las cuatro leyendas que terminan 82-0 a su alrededor.",
+          "diff": "Fácil"
         }
       },
       "chooseTeam": "Franquicia",
@@ -994,6 +1108,28 @@
           ]
         }
       ]
+    },
+    "lebronMode": {
+      "title": "Modo LeBron: construye un equipo 82-0 alrededor de LeBron James",
+      "description": "LeBron James está fijado en tu quinteto: el LeBron de los Cavs, el de los Heat o el de los Lakers. Recluta a las otras cuatro leyendas a su alrededor y persigue la temporada perfecta 82-0.",
+      "h1": "Modo LeBron",
+      "intro": "El Rey ya está en tu plantilla. Cada partida fija en el quinteto una época aleatoria de LeBron James —el joven LeBron de Cleveland, el LeBron del Big Three de Miami o el LeBron de los Lakers— y tu trabajo es reclutar a las cuatro leyendas a su alrededor que terminen 82-0. Sus cartas de otras épocas salen del fondo, así que hay exactamente un LeBron en la pista.",
+      "sections": [
+        {
+          "h2": "Cómo funciona el Modo LeBron",
+          "paragraphs": [
+            "El Modo LeBron es el desafío 82-0 con la primera elección ya hecha por ti. Al empezar una partida, el juego reparte una de las cuatro cartas de época de LeBron —Cavaliers de los 2000, Heat del Big Three, regreso a Cleveland o Lakers de los 2020— directamente a un puesto de alero. A partir de ahí toma el mando el draft clásico: gira combinaciones aleatorias de franquicia y época y cubre las cuatro posiciones restantes, con una repetición de equipo y una repetición de época para gastar.",
+            "Como cada versión de LeBron lleva números distintos —la carta de Miami es el anotador más eficiente, la del final de Cleveland el mejor creador de juego—, el reparto ideal a su alrededor cambia de partida en partida. Vuelve a jugar y el juego te dará un LeBron diferente sobre el que construir."
+          ]
+        },
+        {
+          "h2": "¿Puede LeBron cargar con una temporada perfecta?",
+          "paragraphs": [
+            "Los equipos reales de LeBron ganaron cuatro campeonatos pero nunca se acercaron a una temporada regular perfecta: los Warriors de 73 victorias de 2015-16 les arrebataron el récord a sus Cavaliers, y Cleveland respondió en las Finales. La simulación cuenta la misma historia: una superestrella cubre muchas noches, pero el 82-0 exige que las cinco categorías se mantengan en la élite, así que tus cuatro elecciones tienen que tapar el rebote, la protección del aro y la anotación secundaria a su alrededor.",
+            "Ahí está la gracia del modo: todo el mundo parte con la misma ventaja, y la tabla de clasificación decide quién construyó el mejor reparto. Si prefieres empezar de cero, el desafío 82-0 clásico y los demás modos están a un clic."
+          ]
+        }
+      ]
     }
   },
   "cta": {
@@ -1021,7 +1157,9 @@
     "disclaimer": "X-0 Games y su 82-0 Basketball Builder son proyectos independientes hechos por aficionados. No están afiliados ni cuentan con el respaldo o patrocinio de 82-0.com, PlayVault, la NBA ni ninguna liga o equipo de baloncesto profesional.",
     "copyright": "© 2026 X-0 Games",
     "related": "Guías relacionadas",
-    "leaderboard": "Clasificación"
+    "leaderboard": "Clasificación",
+    "nhl": "Desafío 82-0 NHL (Hockey)",
+    "seventeenZero": "Desafío 17-0 (NFL)"
   },
   "wcGame": {
     "squad": "PLANTILLA",
@@ -1142,6 +1280,7 @@
     "noMvpsDesc": "Sin superestrellas. Gánalo todo con jugadores de rol.",
     "oneTeamDesc": "Un club, todas las eras. Invicto en solitario.",
     "oneDecadeDesc": "Fíjate a una era y busca la perfección.",
-    "hardDesc": "Curva más dura. Solo la élite sobrevive al 82-0."
+    "hardDesc": "Curva más dura. Solo la élite sobrevive al 82-0.",
+    "lebronDesc": "LeBron ya está fijado. Recluta a los cuatro que rematen la faena."
   }
 }

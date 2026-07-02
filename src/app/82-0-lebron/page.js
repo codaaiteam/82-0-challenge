@@ -1,6 +1,8 @@
 import styles from '../page.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
+import VariantGame from '../Components/VariantGame';
+import GameWithSidebarAds from '../Components/GameWithSidebarAds';
 import SeoSections from '../Components/SeoSections';
 import RelatedLinks from '../Components/RelatedLinks';
 import SquadCta from '../Components/SquadCta';
@@ -9,22 +11,14 @@ import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
 
 export async function generateMetadata() {
-  return rootMetadata('otherSports', '/82-0-for-other-sports');
+  return rootMetadata('lebronMode', '/82-0-lebron');
 }
 
-export default async function OtherSports({ params }) {
+export default async function LebronMode({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
-  const page = t.pages.otherSports || en.pages.otherSports;
+  const page = { ...en.pages.lebronMode, ...(t.pages.lebronMode || {}) };
   const prefix = locale === 'en' ? '' : `/${locale}`;
-  const related = [
-    { href: `${prefix}/82-0-nhl`, label: (t.pages.nhl || en.pages.nhl).h1 },
-    { href: `${prefix}/17-0`, label: (t.pages.seventeenZero || en.pages.seventeenZero).h1 },
-    { href: `${prefix}/38-0`, label: (t.pages.thirtyEight || en.pages.thirtyEight).h1 },
-    { href: `${prefix}/20-0`, label: (t.pages.twentyZero || en.pages.twentyZero).h1 },
-    { href: `${prefix}/7-0`, label: (t.pages.sevenZero || en.pages.sevenZero).h1 },
-    { href: `${prefix}/games-like-82-0`, label: (t.pages.gamesLike || en.pages.gamesLike).h1 },
-  ];
 
   return (
     <>
@@ -37,8 +31,23 @@ export default async function OtherSports({ params }) {
           </div>
         </section>
 
+        <section id="game" className={styles.gameSection}>
+          <GameWithSidebarAds>
+            <VariantGame t={t} id="lebron" />
+          </GameWithSidebarAds>
+        </section>
+
         <SeoSections sections={page.sections} />
-        <RelatedLinks title={t.footer?.related || 'Related guides'} links={related} />
+
+        <RelatedLinks
+          title={t.footer?.related || 'Related guides'}
+          links={[
+            { href: `${prefix}/82-0-era-mode`, label: (t.pages.eraMode || en.pages.eraMode).h1 },
+            { href: `${prefix}/82-0-no-mvps`, label: (t.pages.noMvps || en.pages.noMvps).h1 },
+            { href: `${prefix}/82-0-hard-mode`, label: (t.pages.hardMode || en.pages.hardMode).h1 },
+          ]}
+        />
+
         <SquadCta t={t} />
       </main>
       <Footer t={t} lang={locale} />

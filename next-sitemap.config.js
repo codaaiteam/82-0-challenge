@@ -11,6 +11,8 @@ const contentPages = [
   '/82-0-one-decade',
   '/82-0-hard-mode',
   '/82-0-era-mode',
+  '/82-0-lebron',
+  '/82-0-nhl',
   '/how-to-play',
   '/unblocked',
   '/how-its-calculated',
@@ -18,8 +20,11 @@ const contentPages = [
   '/games-like-82-0',
   '/82-0-for-other-sports',
   '/team-builder',
+  '/17-0',
   '/20-0',
   '/38-0',
+  '/7-0',
+  '/162-0',
   '/daily',
 ];
 

@@ -17,9 +17,10 @@
     "challenges": "82-0 Challenge",
     "teamBuilder": "Team Builder",
     "leaderboard": "Leaderboard",
-    "parentBrand": "X-0 Games",
+    "parentBrand": "82-0 Challenge",
     "daily": "Daily Run",
-    "tagline": "Perfect record games"
+    "tagline": "Perfect record games",
+    "navLebron": "LeBron Mode"
   },
   "hero": {
     "title": "Can Your Roster Go 82-0?",
@@ -212,7 +213,8 @@
         "oneDecade": "One Decade",
         "randomEra": "Random Era",
         "hard": "Hard Mode",
-        "eraMode": "Era Mode"
+        "eraMode": "Era Mode",
+        "lebron": "LeBron Mode"
       },
       "used": "used"
     },
@@ -222,7 +224,19 @@
     "sbRaw": "RAW",
     "sbAdj": "SIM",
     "sbTarget": "TARGET",
-    "sbNote": "Season results use SIM totals."
+    "sbNote": "Season results use SIM totals.",
+    "nfl17": {
+      "shareText": "I went {record} in the 17-0 Challenge. Can you run the table?"
+    },
+    "nhl": {
+      "shareText": "I went {record} in the 82-0 NHL Challenge. Can your lineup do better?",
+      "weaknesses": {
+        "weakGoalie": "Goaltending can't steal games",
+        "weakBlueline": "Soft on the blue line",
+        "weakScoring": "Not enough scoring punch",
+        "none": "None — a complete lineup"
+      }
+    }
   },
   "homeSeo": {
     "sections": [
@@ -677,6 +691,102 @@
         }
       ]
     },
+    "seventeenZero": {
+      "title": "17-0 Challenge: Play the Perfect NFL Regular Season Game",
+      "description": "Play the 17-0 challenge free. Spin random NFL franchises and eras, draft a 9-man roster of football legends, and see if they can win all 17 games of a perfect regular season.",
+      "h1": "17-0 Challenge",
+      "intro": "Since the NFL expanded to a 17-game schedule, 17-0 is the new name for a perfect regular season — and no team has ever pulled it off. Spin the slot machine, draft a roster of legends across three eras, and find out if your lineup can run the table. Play free below.",
+      "playCta": "Play the 20-0 Full Season Challenge",
+      "sections": [
+        {
+          "h2": "What Does 17-0 Mean in the NFL?",
+          "paragraphs": [
+            "The NFL has played a 17-game regular season since 2021, and no team has finished it without a loss. The closest brushes with perfection came under older formats: the 1972 Miami Dolphins won every game they played — 14-0 in the regular season and 17-0 overall once the playoffs were done — and the 2007 New England Patriots went 16-0 before losing the Super Bowl. In today's format, 17-0 is the regular-season perfection nobody has reached.",
+            "That is what makes the number magnetic. Like 82-0 in basketball, 17-0 stands for a roster with no bad weeks — seventeen straight Sundays without a single slip."
+          ]
+        },
+        {
+          "h2": "What Is the 17-0 Challenge Game?",
+          "paragraphs": [
+            "The 17-0 challenge is a football roster builder in the same family as the viral 82-0 basketball challenge. The slot machine deals you a random all-time franchise and era, you draft one legend at a time into nine roster spots — quarterback, skill positions, the trenches, and the defense — and every player carries real production numbers from his era.",
+            "When the ninth spot is filled, the simulation engine projects a full 17-game regular season. Elite quarterback play matters most, but the engine punishes any soft spot on the roster: one weak position group is usually the difference between 17-0 and 15-2. Finish perfect and you can download a poster of your roster or share the record for friends to chase."
+          ]
+        },
+        {
+          "h2": "17-0 vs 20-0: Two Kinds of Perfect",
+          "paragraphs": [
+            "This site hosts both football challenges. The 17-0 version asks only for a perfect regular season; the 20-0 version adds a playoff run — three more wins on top, ending with the Super Bowl. The shorter slate makes 17-0 the friendlier target, but the same rule applies to both: a great roster gets you to 14 or 15 wins, and only a flawless one closes it out.",
+            "And if you want the original that started the family, the 82-0 basketball challenge is right here too — five legends, seven decades of history, eighty-two games without a loss."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Has any NFL team ever gone 17-0?",
+          "a": "No. The 17-game schedule only began in 2021, and no team has finished it unbeaten. The 1972 Dolphins were perfect under a 14-game format (17-0 counting playoffs), and the 2007 Patriots went 16-0 before losing the Super Bowl."
+        },
+        {
+          "q": "What is the difference between the 17-0 and 20-0 challenges?",
+          "a": "The roster building is the same — nine positions drafted from random franchise-and-era spins. The 17-0 challenge simulates only the 17-game regular season, while the 20-0 challenge adds three playoff wins and a Super Bowl on top, making it the harder perfect record."
+        },
+        {
+          "q": "How does the simulator decide my record?",
+          "a": "Every player carries an overall rating from his era. The engine weighs each roster slot — quarterback heaviest, then the trenches and secondary — and projects wins on a steep curve, so one weak position group caps your ceiling no matter how strong the rest of the roster is."
+        },
+        {
+          "q": "Is the 17-0 challenge free to play?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up, and you can replay it as many times as you want."
+        }
+      ]
+    },
+    "nhl": {
+      "title": "82-0 NHL Challenge: Play the Perfect Hockey Season Game",
+      "description": "Play the 82-0 challenge, hockey edition. Spin random NHL franchises and eras, draft a six-man lineup of legends — forwards, defense, goalie — and see if they can win all 82 games.",
+      "h1": "82-0 NHL Challenge",
+      "intro": "The NHL plays the exact same 82-game schedule as the NBA, so the 82-0 challenge translates to hockey perfectly. Spin the slot machine, draft a six-man lineup of legends from five decades — center, wingers, a defense pair, and a goalie — and find out if they could win every single night. Play free below.",
+      "playCta": "Play the Original 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "What Would 82-0 Mean in the NHL?",
+          "paragraphs": [
+            "An NHL regular season is 82 games — the same number as the NBA, which is why hockey fans keep typing '82-0 NHL' into search bars. No hockey team has come anywhere close: the best regular season ever, the 2022-23 Boston Bruins, finished 65-12-5, and the legendary 1976-77 Montreal Canadiens lost only eight times in a 80-game slate. Winning all 82 would mean surviving back-to-backs, road trips, hot goalies, and six months of bounces without one bad night.",
+            "That is exactly the fantasy this game simulates: not whether a great team can dominate, but whether a perfect lineup could literally never lose."
+          ]
+        },
+        {
+          "h2": "How the 82-0 NHL Challenge Works",
+          "paragraphs": [
+            "The slot machine deals you a random franchise-and-era combo — the 1980s Oilers, the 1990s Red Wings, the 2020s Avalanche — and you draft one player from that team into your six-man lineup: a center, both wingers, a defense pair, and a goalie. Five decades of legends are in the pool, from Gretzky and Bourque to Crosby, McDavid and Makar, each carrying a real statistical line from his era.",
+            "Fill all six slots and the engine projects your 82-game season. Goaltending and center play carry the heaviest weight, and the simulation punishes any passenger in the lineup — one weak slot is usually the difference between a Presidents' Trophy run and 82-0. You get one team re-roll and one era re-roll per draft, so spend them wisely."
+          ]
+        },
+        {
+          "h2": "Hockey's Perfect-Season Math Is Crueler",
+          "paragraphs": [
+            "Basketball's 82-0 is already absurd, but hockey adds two extra layers of chaos: a goalie can steal any game from either side, and one-goal margins decide almost half the league's nights. Even the deepest lineup in this game needs an elite goalie and zero soft spots before the engine will even consider handing out a perfect season — exactly the profile a real 82-0 team would need.",
+            "If you finish perfect, download the poster and share your lineup. And if you want to compare sports, the original basketball 82-0 challenge, the 17-0 NFL version and the rest of the family are all playable on this site."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Has any NHL team ever gone 82-0?",
+          "a": "No — nothing close. The best NHL regular season by points percentage was the 1976-77 Montreal Canadiens (60-8-12), and the 2022-23 Boston Bruins set the wins record at 65. An 82-0 season has never happened in any major pro league."
+        },
+        {
+          "q": "How is the NHL version different from the basketball 82-0 challenge?",
+          "a": "Same core loop — random team-and-era spins, a draft of legends, an 82-game simulation — but the lineup is six hockey slots (C, LW, RW, two D, G) instead of five basketball positions, and goaltending carries the most weight of any single slot."
+        },
+        {
+          "q": "Which eras and players are included?",
+          "a": "Five decades of NHL history, from the 1980s to the 2020s, covering era-defining franchises like the Oilers dynasty, the 1990s Red Wings and Avalanche, the 2010s Blackhawks and Penguins, and today's stars like McDavid, MacKinnon and Makar."
+        },
+        {
+          "q": "Is the 82-0 NHL challenge free?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up, and you can replay as often as you like."
+        }
+      ]
+    },
     "baseball162": {
       "title": "162-0 Challenge: Play the Baseball Perfect Season Game",
       "description": "Play the 162-0 challenge. Draft an all-time MLB lineup of baseball legends across seven decades, then simulate a full 162-game season and see if your roster can do the impossible — go undefeated.",
@@ -888,6 +998,10 @@
         "eraMode": {
           "desc": "One legend per decade — build an all-time five that spans every era, then chase 82-0.",
           "diff": "Medium"
+        },
+        "lebron": {
+          "desc": "LeBron is locked into the five — a random era of his career — and you draft the four legends who finish 82-0 around him.",
+          "diff": "Easy"
         }
       },
       "sections": [
@@ -1079,6 +1193,28 @@
           ]
         }
       ]
+    },
+    "lebronMode": {
+      "title": "LeBron Mode: Build an 82-0 Team Around LeBron James",
+      "description": "LeBron James is locked into your lineup — Cavs LeBron, Heat LeBron or Lakers LeBron. Draft the other four legends around him and chase the perfect 82-0 season.",
+      "h1": "LeBron Mode",
+      "intro": "The King is already on your roster. Every run locks a random era of LeBron James into the five — young Cleveland LeBron, Miami Big-Three LeBron or Lakers LeBron — and your job is to draft the four legends around him that finish 82-0. His other era cards leave the pool, so there is exactly one LeBron on the floor.",
+      "sections": [
+        {
+          "h2": "How LeBron Mode Works",
+          "paragraphs": [
+            "LeBron Mode is the 82-0 challenge with the first pick made for you. When a run starts, the game deals one of LeBron's four era cards — 2000s Cavaliers, Big-Three Heat, return-to-Cleveland or 2020s Lakers — straight into a forward slot. From there the classic draft takes over: spin random franchise-and-era combos and fill the remaining four positions, with one team re-roll and one era re-roll to spend.",
+            "Because each version of LeBron carries different numbers — the Miami card is the most efficient scorer, the late Cleveland card the best playmaker — the right supporting cast changes from run to run. Replay and the game hands you a different LeBron to build around."
+          ]
+        },
+        {
+          "h2": "Can LeBron Carry a Perfect Season?",
+          "paragraphs": [
+            "LeBron's real teams won four championships but never came close to a perfect regular season — the 73-win 2015-16 Warriors beat his Cavaliers to the record, and Cleveland answered in the Finals instead. The simulation tells the same story: one superstar covers a lot of nights, but 82-0 demands that all five categories stay elite, so your four picks have to plug rebounding, rim protection and secondary scoring around him.",
+            "That is the fun of the mode: everyone gets the same head start, and the leaderboard settles who built the best supporting cast. If you'd rather start from scratch, the classic 82-0 challenge and the other modes are one click away."
+          ]
+        }
+      ]
     }
   },
   "cta": {
@@ -1106,7 +1242,9 @@
     "disclaimer": "X-0 Games and its 82-0 Basketball Builder are independent, fan-made projects. They are not affiliated with, endorsed by, or sponsored by 82-0.com, PlayVault, the NBA, or any professional basketball league or team.",
     "copyright": "© 2026 X-0 Games",
     "related": "Related guides",
-    "leaderboard": "Leaderboard"
+    "leaderboard": "Leaderboard",
+    "nhl": "82-0 NHL Challenge (Hockey)",
+    "seventeenZero": "17-0 Challenge (NFL)"
   },
   "wcGame": {
     "squad": "SQUAD",
@@ -1229,6 +1367,7 @@
     "oneTeamDesc": "One club, every era. Go undefeated alone.",
     "oneDecadeDesc": "Lock to one era and chase perfection.",
     "hardDesc": "Steeper curve. Only the elite survive 82-0.",
-    "eraModeDesc": "One legend per decade. Build an all-time team across every era."
+    "eraModeDesc": "One legend per decade. Build an all-time team across every era.",
+    "lebronDesc": "LeBron is locked in. Draft the four who finish the job."
   }
 }

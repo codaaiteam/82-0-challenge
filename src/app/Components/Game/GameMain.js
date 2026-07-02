@@ -8,7 +8,7 @@ import {
   playersFor, spinCombo, rerollTeam, rerollEra, simulateSeason, randomPick,
   dailyCombos, comboIsDraftable, buildSlots, buildSeasonStory,
   FILTERS, priceOf, CAP_BUDGET, MIN_PRICE, gauntletBudget, CAP_STEP, CAP_FLOOR,
-  adjustedStats, BENCH, CATS,
+  adjustedStats, BENCH, CATS, lockedEntries,
 } from '@/lib/engine';
 import { dateKey, hashStr, mulberry32, msToNextUtcMidnight } from '@/lib/seeded';
 import { downloadPoster } from '@/lib/poster';
@@ -122,6 +122,18 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   // Cap Mode gauntlet level (1-based); budget tightens each cleared level.
   const [capLevel, setCapLevel] = useState(1);
 
+  // Locked-player variant (LeBron Mode): pre-place a random era card of the
+  // locked legend into the first slot his positions fit, before any spin.
+  const applyLock = (slotsArr) => {
+    if (!filterCfg?.locked) return slotsArr;
+    const entries = lockedEntries(filterCfg.locked);
+    if (!entries.length) return slotsArr;
+    const card = entries[Math.floor(Math.random() * entries.length)];
+    const idx = slotsArr.findIndex(s => !s.player && card.positions.includes(s.pos));
+    if (idx === -1) return slotsArr;
+    return slotsArr.map((s, i) => (i === idx ? { ...s, player: card } : s));
+  };
+
   // mode: null (setup screen) | 'standard' | 'daily' | 'cap'
   const [mode, setMode] = useState(variant ? (isCap ? 'cap' : 'standard') : initialMode);
   // playstyle: 5-slot position template (lineup shape)
@@ -131,8 +143,8 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const [revealMode, setRevealMode] = useState('watch');  // 'watch' = season sim · 'instant' = straight to result
   // phase: 'spin' | 'spinning' | 'pick' | 'sim' | 'result'
   const [phase, setPhase] = useState('spin');
-  const [round, setRound] = useState(1);
-  const [slots, setSlots] = useState(() => buildSlots('balanced'));
+  const [round, setRound] = useState(filterCfg?.locked ? 2 : 1);
+  const [slots, setSlots] = useState(() => applyLock(buildSlots('balanced')));
   const [combo, setCombo] = useState(null);          // settled {team, decade}
   const [recentCombos, setRecentCombos] = useState([]); // shown this round, so skips don't loop back
   const [display, setDisplay] = useState({ team: '???', decade: "??'s" }); // slot windows
@@ -361,8 +373,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     // Random Era hands out a fresh decade each replay.
     if (filterCfg?.random) setActiveParam(randomPick(DECADES));
     setPhase('spin');
-    setRound(1);
-    setSlots(buildSlots(style));
+    setRound(filterCfg?.locked ? 2 : 1);
+    // A locked legend (LeBron Mode) re-rolls his era card on every replay.
+    setSlots(applyLock(buildSlots(style)));
     setCombo(null);
     setSelected(null);
     setTeamSkips(isCap ? 3 : 1);

@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import styles from './Game.module.css';
 import {
-  NFL_SLOTS, NFL_ERAS, NFL_TEAMS, slotAccepts,
-  nflPlayersFor, nflSpinCombo, nflRerollTeam, nflRerollEra, nflSimulateSeason, nflRandomPick,
-} from '@/lib/nflEngine';
+  NHL_SLOTS, NHL_ERAS, NHL_TEAMS, nhlSlotAccepts,
+  nhlPlayersFor, nhlSpinCombo, nhlRerollTeam, nhlRerollEra, nhlSimulateSeason, nhlRandomPick,
+} from '@/lib/nhlEngine';
 import { downloadPoster } from '@/lib/poster';
 
 const SITE_URL = 'https://www.82-0-challenge.com';
@@ -19,20 +19,19 @@ function fmt(template, vars) {
   );
 }
 
-const ERA_SHORT = { '2000s': "00's", '2010s': "10's", '2020s': "20's" };
+const ERA_SHORT = {
+  '1980s': "80's", '1990s': "90's", '2000s': "00's", '2010s': "10's", '2020s': "20's",
+};
 
 function initials(name) {
   return name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
 }
 
-const emptySlots = () => Object.fromEntries(NFL_SLOTS.map(s => [s, null]));
+const emptySlots = () => Object.fromEntries(NHL_SLOTS.map(s => [s, null]));
 
-// The same drafting UI powers /20-0 (regular season + playoffs) and /17-0
-// (regular season only) — the season length, share path, poster brand and
-// string bundle come in as props.
-export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 CHALLENGE', nflKey = 'nfl' }) {
+export default function HockeyGame({ t }) {
   const g = t?.game || {};
-  const n = { ...(g.nfl || {}), ...(nflKey !== 'nfl' ? g[nflKey] || {} : {}) };
+  const n = g.nhl || {};
 
   const [mode, setMode] = useState(null);
   const [phase, setPhase] = useState('spin'); // spin | spinning | pick | result
@@ -49,9 +48,9 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
 
   const lineup = Object.values(slots).filter(Boolean);
   const pickedIds = lineup.map(p => p.id);
-  const openSlots = NFL_SLOTS.filter(s => !slots[s]);
+  const openSlots = NHL_SLOTS.filter(s => !slots[s]);
   const round = lineup.length + 1;
-  const totalRounds = NFL_SLOTS.length;
+  const totalRounds = NHL_SLOTS.length;
 
   useEffect(() => () => clearInterval(spinTimer.current), []);
 
@@ -69,46 +68,46 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
         setPhase('pick');
       } else {
         setDisplay({
-          team: nflRandomPick(NFL_TEAMS),
-          era: ERA_SHORT[nflRandomPick(NFL_ERAS)],
+          team: nhlRandomPick(NHL_TEAMS),
+          era: ERA_SHORT[nhlRandomPick(NHL_ERAS)],
         });
       }
     }, SPIN_TICK);
   }, []);
 
-  const handleSpin = () => animateTo(nflSpinCombo(pickedIds, openSlots));
+  const handleSpin = () => animateTo(nhlSpinCombo(pickedIds, openSlots));
 
   const handleTeamSkip = () => {
     if (teamSkips <= 0 || phase !== 'pick') return;
     setTeamSkips(teamSkips - 1);
-    animateTo(nflRerollTeam(combo, pickedIds, openSlots));
+    animateTo(nhlRerollTeam(combo, pickedIds, openSlots));
   };
 
   const handleEraSkip = () => {
     if (eraSkips <= 0 || phase !== 'pick') return;
     setEraSkips(eraSkips - 1);
-    animateTo(nflRerollEra(combo, pickedIds, openSlots));
+    animateTo(nhlRerollEra(combo, pickedIds, openSlots));
   };
 
-  const candidates = combo ? nflPlayersFor(combo.team, combo.era, pickedIds) : [];
-  const OFF = ['QB', 'RB', 'WR', 'TE', 'OL'];
+  const candidates = combo ? nhlPlayersFor(combo.team, combo.era, pickedIds) : [];
+  const FWD = ['C', 'LW', 'RW'];
   const shown = candidates
     .filter(p => {
       if (sideFilter === 'All') return true;
-      if (sideFilter === 'OFF') return OFF.includes(p.pos);
-      return !OFF.includes(p.pos);
+      if (sideFilter === 'FWD') return FWD.includes(p.pos);
+      return !FWD.includes(p.pos); // D + G
     })
     .sort((a, b) => b.rating - a.rating);
 
-  const canPlace = (p) => openSlots.some(s => slotAccepts(s, p.pos));
+  const canPlace = (p) => openSlots.some(s => nhlSlotAccepts(s, p.pos));
 
   const handlePlace = (slot) => {
-    if (!selected || slots[slot] || !slotAccepts(slot, selected.pos)) return;
+    if (!selected || slots[slot] || !nhlSlotAccepts(slot, selected.pos)) return;
     const newSlots = { ...slots, [slot]: selected };
     setSelected(null);
     setSlots(newSlots);
     if (Object.values(newSlots).every(Boolean)) {
-      setResult(nflSimulateSeason(newSlots, games));
+      setResult(nhlSimulateSeason(newSlots));
       setPhase('result');
     } else {
       setCombo(null);
@@ -136,28 +135,28 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(`${shareText} ${SITE_URL}${path}`);
+      await navigator.clipboard.writeText(`${shareText} ${SITE_URL}/82-0-nhl`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch { /* clipboard unavailable */ }
   };
 
-  const xShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL + path)}`;
+  const xShareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}&url=${encodeURIComponent(SITE_URL + '/82-0-nhl')}`;
 
   const handlePoster = () => {
     if (!result) return;
     downloadPoster({
-      brand,
+      brand: '82-0 NHL CHALLENGE',
       record: `${result.wins}-${result.losses}`,
       grade: result.grade,
       title: n.titles?.[result.title] || g.titles?.[result.title] || '',
       points: result.points,
-      lineup: NFL_SLOTS.map(s => ({
+      lineup: NHL_SLOTS.map(s => ({
         pos: s,
         name: slots[s].name,
         sub: `${slots[s].team} · ${slots[s].era}`,
       })),
-      url: `www.82-0-challenge.com${path}`,
+      url: 'www.82-0-challenge.com/82-0-nhl',
       daily: null,
     });
   };
@@ -218,7 +217,7 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
           </div>
 
           <div className={styles.lineupRecap}>
-            {NFL_SLOTS.map(slot => (
+            {NHL_SLOTS.map(slot => (
               <div key={slot} className={styles.recapRow}>
                 <span className={styles.recapChip}>
                   <b>{initials(slots[slot].name)}</b>
@@ -291,7 +290,7 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
           {phase === 'pick' ? (
             <>
               <div className={styles.listToolbar}>
-                {['All', 'OFF', 'DEF'].map(f => (
+                {['All', 'FWD', 'DEF'].map(f => (
                   <button
                     key={f}
                     className={`${styles.filterChip} ${sideFilter === f ? styles.filterActive : ''}`}
@@ -336,12 +335,12 @@ export default function NflGame({ t, games = 20, path = '/20-0', brand = '20-0 C
           )}
         </div>
 
-        {/* Formation grid */}
+        {/* Lineup grid */}
         <div className={styles.courtPanel}>
           <div className={styles.formation}>
-            {NFL_SLOTS.map(slot => {
+            {NHL_SLOTS.map(slot => {
               const p = slots[slot];
-              const eligible = selected && !p && slotAccepts(slot, selected.pos);
+              const eligible = selected && !p && nhlSlotAccepts(slot, selected.pos);
               return (
                 <button
                   key={slot}

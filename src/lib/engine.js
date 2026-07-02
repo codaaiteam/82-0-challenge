@@ -458,9 +458,19 @@ export const FILTERS = {
   // GameMain to swap the static pool for a dynamic predicate that excludes the
   // decades already on the floor — see the poolFilter branch there.
   eraMode:      { lbTag: 'eramode',   difficulty: 1,    param: null,     openEra: true, pool: () => ALL_PLAYERS },
+  // LeBron Mode: LeBron is pre-drafted at a random stop of his career and the
+  // other four are drafted around him; his remaining era cards leave the pool
+  // so the five can't stack two LeBrons. `locked` tells GameMain to pre-place
+  // him before the first spin.
+  lebron:       { lbTag: 'lebron',    difficulty: 1,    param: null,     locked: 'LeBron James', pool: () => (p => p.name !== 'LeBron James') },
 };
 
 export const FILTER_IDS = Object.keys(FILTERS);
+
+// Every era card of a locked player — LeBron Mode picks one at random per run.
+export function lockedEntries(name) {
+  return PLAYERS.filter(p => p.name === name);
+}
 
 // Franchises whose all-time pool covers every position — One Franchise offers
 // only these so a single-team draft can always fill a balanced five.
