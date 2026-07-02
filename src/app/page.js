@@ -8,6 +8,7 @@ import SeoSections from './Components/SeoSections';
 import RelatedLinks from './Components/RelatedLinks';
 import SquadCta from './Components/SquadCta';
 import MoreModes from './Components/MoreModes';
+import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -55,9 +56,10 @@ export default async function Home({ params }) {
         {/* Entry point to the newer 82-0 modes */}
         <MoreModes t={t} prefix={prefix} />
 
-        {/* Adsterra Native Banner — paused: its creatives triggered deceptive
-            "security alert" prompts. Re-enable only with a vetted ad source. */}
-        {/* <AdsterraNativeBanner /> */}
+        {/* Adsterra Native Banner — was paused 2026-06 over deceptive
+            "security alert" creatives; re-enabled at owner request 2026-07.
+            Pull it again if those creatives resurface (AdSense runs site-wide). */}
+        <AdsterraNativeBanner />
 
         {/* SEO content */}
         <SeoSections sections={t.homeSeo.sections} />
