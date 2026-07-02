@@ -2090,3 +2090,53 @@
 }
 
 .variantPickerBar .filterSelect { max-width: 220px; }
+
+/* ---- result-screen Daily CTA (retention hook) ---- */
+.dailyCtaBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.4rem;
+  background: #161d30;
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  border-radius: 14px;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.dailyCtaBlock:hover {
+  border-color: #2dd4bf;
+  transform: translateY(-1px);
+}
+
+.dailyCtaText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 0;
+}
+
+.dailyCtaTitle {
+  font-weight: 700;
+  color: #e7ecf3;
+}
+
+.dailyCtaSub {
+  color: #a6adba;
+  font-size: 0.85rem;
+}
+
+.dailyCtaBtn {
+  flex-shrink: 0;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, #2dd4bf, #0ea5a4);
+  color: #06221f;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  white-space: nowrap;
+}

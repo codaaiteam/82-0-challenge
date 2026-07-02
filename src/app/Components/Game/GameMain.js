@@ -163,6 +163,9 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
   const [copied, setCopied] = useState(false);
   const [shareOpen, setShareOpen] = useState(false);
   const [dailyDone, setDailyDone] = useState(false);
+  // Whether today's Daily has been played — drives the result-screen Daily CTA
+  // (the retention hook shown after any non-daily run).
+  const [dailyPlayedToday, setDailyPlayedToday] = useState(false);
   const [lbName, setLbName] = useState('');
   const [lbState, setLbState] = useState(null); // null | 'sending' | 'error' | { rank, ... }
   const spinTimer = useRef(null);
@@ -232,6 +235,12 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
     } catch { /* corrupt storage — let them play */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isDaily]);
+
+  // Result-screen Daily CTA: check if today's Daily was already used.
+  useEffect(() => {
+    if (phase !== 'result' || isDaily) return;
+    try { setDailyPlayedToday(!!localStorage.getItem(dailyStorageKey)); } catch { /* private mode */ }
+  }, [phase, isDaily, dailyStorageKey]);
 
   // Season-sim ticker: rip through the 82 games, pausing on key moments.
   useEffect(() => {
@@ -746,6 +755,24 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               </>
             )}
           </div>
+
+          {/* Daily retention hook — after any non-daily run, point at today's
+              (or tomorrow's) shared-spins challenge. Strings reuse g.daily. */}
+          {!isDaily && (
+            <a href={`${langPrefix}/daily`} className={styles.dailyCtaBlock}>
+              <span className={styles.dailyCtaText}>
+                <span className={styles.dailyCtaTitle}>🗓️ {g.daily?.mode || 'Daily Challenge'}</span>
+                <span className={styles.dailyCtaSub}>
+                  {dailyPlayedToday
+                    ? fmt(g.daily?.comeback || 'New challenge in about {hours}h (midnight UTC).', { hours: hoursToNext })
+                    : (g.daily?.modeDesc || 'Everyone in the world gets the same spins. One attempt per day — make it count.')}
+                </span>
+              </span>
+              {!dailyPlayedToday && (
+                <span className={styles.dailyCtaBtn}>{g.daily?.play || 'Play Daily'} →</span>
+              )}
+            </a>
+          )}
 
           {false && (
           <a
