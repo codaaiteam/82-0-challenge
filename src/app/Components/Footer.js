@@ -28,23 +28,6 @@ const Footer = ({ t, lang = 'en' }) => {
         </div>
 
         <div className={styles.footerSection}>
-          <h3>{t?.footer?.more || 'More'}</h3>
-          <a href="https://38-0-game.com" target="_blank" rel="noopener">38-0 Game — Premier League XI</a>
-          <a href="https://7-0-game.com" target="_blank" rel="noopener">7-0 Game — World Cup Dream Team</a>
-          <a href="https://www.17-0-game.com" target="_blank" rel="noopener">17-0 Game — NFL Perfect Season</a>
-          <a href="https://23-0-game.com" target="_blank" rel="noopener">23-0 Game — Perfect AFL Season</a>
-          <a href="https://27-0-game.com" target="_blank" rel="noopener">27-0 Game — Perfect NRL Season</a>
-          <a href="https://mecchachameleonpc.com" target="_blank" rel="noopener">Meccha Chameleon PC Guide</a>
-          <a href="https://www.gakuran-codes.com" target="_blank" rel="noopener">Gakuran Codes Wiki — Roblox Gakuran Guide</a>
-          <a href="https://c2story.com" target="_blank" rel="noopener noreferrer">
-            {t?.cta?.button || 'AI Character Squad Builder'}
-          </a>
-          <a href="https://ko-fi.com/codagames" target="_blank" rel="noopener noreferrer">
-            ☕ {t?.footer?.support || 'Support the developer'}
-          </a>
-        </div>
-
-        <div className={styles.footerSection}>
           <h3>{t?.footer?.legal || 'Legal'}</h3>
           <Link href={`${prefix}/about`}>{t?.footer?.about || 'About'}</Link>
           <Link href={`${prefix}/privacy`}>{t?.footer?.privacy || 'Privacy Policy'}</Link>
@@ -59,11 +42,14 @@ const Footer = ({ t, lang = 'en' }) => {
           <a href="mailto:contact@82-0-challenge.com">
             contact@82-0-challenge.com
           </a>
+          <a href="https://ko-fi.com/codagames" target="_blank" rel="noopener noreferrer">
+            ☕ {t?.footer?.support || 'Support the developer'}
+          </a>
         </div>
       </div>
 
       <div className={styles.footerDesc}>
-        <p>{t?.footer?.disclaimer || 'This is an independent fan-made style team builder game. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league. All player archetypes are fictional.'}</p>
+        <p>{t?.footer?.disclaimer || 'Player names and historical statistics are presented for informational and game-simulation purposes only. This is an independent fan-made project, not affiliated with, endorsed by, or sponsored by the NBA, any professional basketball league, team, or player.'}</p>
       </div>
 
       <div className={styles.copyright}>

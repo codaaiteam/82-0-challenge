@@ -3,7 +3,6 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import SeoSections from '../Components/SeoSections';
 import RelatedLinks from '../Components/RelatedLinks';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -36,7 +35,6 @@ export default async function HowItsCalculated({ params }) {
 
         <SeoSections sections={page.sections} />
         <RelatedLinks title={t.footer?.related || 'Related guides'} links={related} />
-        <SquadCta t={t} />
       </main>
       <Footer t={t} lang={locale} />
     </>

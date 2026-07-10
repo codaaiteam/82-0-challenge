@@ -4,7 +4,6 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import SeoSections from '../Components/SeoSections';
 import RelatedLinks from '../Components/RelatedLinks';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -57,7 +56,6 @@ export default async function HowToPlay({ params }) {
             { href: `${prefix}/can-you-go-82-0`, label: (t.pages.canYouGo || en.pages.canYouGo).h1 },
           ]}
         />
-        <SquadCta t={t} />
       </main>
       <Footer t={t} lang={locale} />
     </>

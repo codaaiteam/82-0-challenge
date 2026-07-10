@@ -5,7 +5,6 @@ import VariantGame from '../Components/VariantGame';
 import GameWithSidebarAds from '../Components/GameWithSidebarAds';
 import SeoSections from '../Components/SeoSections';
 import RelatedLinks from '../Components/RelatedLinks';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -48,7 +47,6 @@ export default async function OneDecade({ params }) {
           ]}
         />
 
-        <SquadCta t={t} />
       </main>
       <Footer t={t} lang={locale} />
     </>

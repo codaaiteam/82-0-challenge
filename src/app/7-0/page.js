@@ -4,8 +4,6 @@ import Footer from '../Components/Footer';
 import QuestionFAQ from '../Components/QuestionFAQ';
 import WorldCupGame from '../Components/Game/WorldCupGame';
 import SeoSections from '../Components/SeoSections';
-import SquadCta from '../Components/SquadCta';
-import AdsterraNativeBanner from '../Components/AdsterraNativeBanner';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -44,10 +42,6 @@ export default async function SevenZero({ params }) {
         <section id="game" className={styles.gameSection}>
           <WorldCupGame t={t} />
         </section>
-        {/* Adsterra Native Banner — re-enabled at owner request 2026-07;
-            pull it again if deceptive "security alert" creatives resurface. */}
-        <AdsterraNativeBanner />
-
         <SeoSections sections={page.sections} />
 
         {/* Cross-link to the standalone 7-0 site (dofollow) */}
@@ -72,7 +66,6 @@ export default async function SevenZero({ params }) {
           </div>
         </section>
 
-        <SquadCta t={t} />
 
         <script
           type="application/ld+json"

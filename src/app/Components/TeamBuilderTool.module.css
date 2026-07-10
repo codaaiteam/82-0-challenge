@@ -1,0 +1,317 @@
+.tool {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+.styleRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.rowLabel {
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.styleBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.styleBtn {
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.45rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.styleBtn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+  font-weight: 700;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.panelTitle {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  margin: 0 0 0.75rem;
+}
+
+/* ---- Your five ---- */
+.fivePanel {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  position: sticky;
+  top: 70px;
+}
+
+.slotList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.slot {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.slotActive {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.slotPos {
+  flex-shrink: 0;
+  width: 2.2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.slotEmpty {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.slotPlayer {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.slotName {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slotMeta {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.slotX {
+  margin-left: auto;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.simBtn {
+  width: 100%;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.simBtn:disabled {
+  background: var(--bg-card);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.clearBtn {
+  width: 100%;
+  margin-top: 0.5rem;
+  background: none;
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.sandboxNote {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin: 0.75rem 0 0;
+  line-height: 1.4;
+}
+
+/* ---- Result ---- */
+.result {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1rem;
+}
+
+.record {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--accent);
+}
+
+.titleLine {
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin: 0.25rem 0 0.75rem;
+}
+
+.totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.totalsLabel {
+  width: 100%;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.totalStat {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.totalStat b {
+  color: var(--text-primary);
+}
+
+.resultRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+/* ---- Pool ---- */
+.poolPanel {
+  min-width: 0;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.search {
+  flex: 1 1 200px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 0.55rem 0.75rem;
+  font-size: 0.9rem;
+}
+
+.select {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 0.55rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.poolList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.5rem;
+}
+
+.playerCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 0.6rem 0.75rem;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.playerCard:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.playerCard:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.playerTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.playerName {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.playerMeta {
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.playerStats {
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+}
+
+.noMatch {
+  color: var(--text-muted);
+  grid-column: 1 / -1;
+  padding: 1rem 0;
+}
+
+.moreNote {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-top: 0.75rem;
+}
+
+@media (max-width: 860px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .fivePanel {
+    position: static;
+  }
+}

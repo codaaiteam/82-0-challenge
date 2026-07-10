@@ -42,14 +42,9 @@ export default function RootLayout({ children, params }) {
         {children}
         <CookieNotice />
         <noscript>
-          <div style={{ padding: '2rem', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
-            <h1>82-0 Challenge — Play the Viral Team Builder Game</h1>
-            <p>The 82-0 Challenge is a free browser game where you try to build a basketball lineup good enough to go undefeated for an entire 82-game season. Each round you get a random team and era, pick one player, and after five rounds the game simulates your final record. No downloads, no sign-ups — just open and play.</p>
-            <h2>How to Play</h2>
-            <p>Step 1: Get a random team and era. Step 2: Pick one player from the candidates. Step 3: Repeat until you have a 5-player lineup. Step 4: Get your simulated season record. Step 5: Share your result and challenge your friends to beat it.</p>
-            <h2>Disclaimer</h2>
-            <p>This is an independent fan-made style team builder game. It is not affiliated with, endorsed by, or sponsored by the NBA or any professional basketball league. All player archetypes are fictional.</p>
-          </div>
+          <p style={{ padding: '1rem', textAlign: 'center', fontFamily: 'sans-serif' }}>
+            This game requires JavaScript. Please enable JavaScript to play.
+          </p>
         </noscript>
       </body>
     </html>

@@ -1,10 +1,9 @@
+import Link from 'next/link';
 import styles from '../page.module.css';
 import Header from '../Components/Header';
 import Footer from '../Components/Footer';
-import GameMain from '../Components/Game/GameMain';
-import GameWithSidebarAds from '../Components/GameWithSidebarAds';
+import TeamBuilderTool from '../Components/TeamBuilderTool';
 import SeoSections from '../Components/SeoSections';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -13,10 +12,14 @@ export async function generateMetadata() {
   return rootMetadata('teamBuilder', '/team-builder');
 }
 
+// Unlike the home-page challenge (random spins), this is the free-pick
+// sandbox: browse the whole player pool, build any five, simulate. No
+// leaderboard submission — competitive modes keep their balance.
 export default async function TeamBuilder({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
-  const page = t.pages.teamBuilder;
+  const page = t.pages.teamBuilder || en.pages.teamBuilder;
+  const prefix = locale === 'en' ? '' : `/${locale}`;
 
   return (
     <>
@@ -29,14 +32,21 @@ export default async function TeamBuilder({ params }) {
           </div>
         </section>
 
-        <section id="game" className={styles.gameSection}>
-          <GameWithSidebarAds>
-            <GameMain t={t} />
-          </GameWithSidebarAds>
+        <section id="builder" className={styles.gameSection}>
+          <TeamBuilderTool t={t} />
         </section>
 
         <SeoSections sections={page.sections} />
-        <SquadCta t={t} />
+
+        <section className={styles.howtoSection}>
+          <div className={styles.container}>
+            <div className={styles.centerCta}>
+              <Link href={`${prefix}/#game`} className={styles.heroCta}>
+                {t.tb?.playReal || en.tb.playReal}
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer t={t} lang={locale} />
     </>

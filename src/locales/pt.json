@@ -282,12 +282,6 @@
         "paragraphs": [
           "Se você curte o desafio 82-0, provavelmente vai curtir outros jogos esportivos no estilo draft: montadores de quintetos, debates de épocas, chaves do GOAT e drafts de fantasy coçam a mesma vontade. Mas o formato 82-0 se destaca porque te dá uma resposta concreta e simulada em vez de uma discussão sem fim. O seu time fica invicto ou não consegue, e sempre há mais uma partida."
         ]
-      },
-      {
-        "h2": "Monte o seu próprio esquadrão de personagens com IA",
-        "paragraphs": [
-          "Quer montar algo além de um time de basquete? Com o AI Character Squad Builder você pode recrutar um esquadrão de heróis de fantasia, personagens de anime ou criações totalmente originais, gerar uma história sobre eles e até transformá-la em um livro ilustrado. Se você adora montar times, é o próximo passo natural."
-        ]
       }
     ]
   },
@@ -308,35 +302,38 @@
   },
   "pages": {
     "whatIs": {
-      "title": "82-0: o que é o viral jogo do desafio 82-0?",
-      "description": "O que significa 82-0? Descubra de onde surgiu o viral desafio 82-0, como funciona o montador de times com caça-níquel e jogue aqui mesmo.",
-      "h1": "O que é 82-0?",
-      "intro": "82-0 é a temporada perfeita de basquete que nunca aconteceu: 82 vitórias, zero derrotas. Aqui contamos do que se trata o viral desafio 82-0, com um montador de times para você experimentar.",
+      "title": "O que é 82-0? A temporada perfeita da NBA, explicada",
+      "description": "82-0 significa vencer todos os 82 jogos da temporada regular — algo que nenhum time da NBA jamais fez. As campanhas mais próximas, a matemática que torna isso quase impossível e o jogo que inspirou.",
+      "h1": "O que é 82-0? A temporada perfeita, explicada",
+      "intro": "82-0 é a temporada regular perfeita da NBA: 82 jogos, 82 vitórias, zero derrotas. Nenhum time na história da liga conseguiu — e os números explicam por que talvez nunca aconteça. Esta página cobre o conceito, as tentativas reais mais próximas e o jogo de simulação criado em torno da pergunta.",
+      "playCta": "Jogar o desafio 82-0",
       "sections": [
         {
           "h2": "O que significa 82-0?",
           "paragraphs": [
-            "Uma temporada regular de basquete profissional tem 82 jogos. Terminar 82-0 significa vencer todos eles: uma temporada perfeita. Nenhum time na história da liga jamais conseguiu. O mais perto que se chegou foram 73 vitórias, o que significa que até o melhor time de todos os tempos perdeu nove vezes. Essa distância entre 'o melhor da história' e 'o perfeito' é o que o número 82-0 representa, e é por isso que essa expressão tem tanto peso nos debates de basquete.",
-            "Como uma temporada perfeita nunca aconteceu, 82-0 virou sinônimo de um padrão impossível. Quando os torcedores dizem que um quinteto 'terminaria 82-0', querem dizer que ele é tão carregado de talento que transcende a competição normal."
+            "Desde a temporada 1967-68, a temporada regular da NBA tem 82 jogos, disputados aproximadamente do fim de outubro a meados de abril. Um time 82-0 teria vencido todos eles — cada back-to-back fora de casa, cada noite com a estrela poupada, cada jogo de janeiro contra um adversário sem nada a perder. O recorde virou sinônimo de uma perfeição inalcançável, e é exatamente isso que o torna divertido de debater.",
+            "A expressão aparece o tempo todo nos debates de basquete: “Esse quinteto iria 82-0”. Quase nunca é literal. É um jeito de dizer que um elenco não tem fraqueza digna de nota — e todo o propósito deste site é colocar essa afirmação à prova."
           ]
         },
         {
-          "h2": "O que é o desafio 82-0?",
+          "h2": "O quanto um time real chegou perto?",
           "paragraphs": [
-            "O desafio 82-0 é um jogo de montagem de times nascido desse debate. A premissa: você recruta um quinteto de cinco lendas reais do basquete, mas não escolhe livremente; cada seleção vem de um time e uma década sorteados. Chicago nos anos 90. Boston nos anos 60. Denver nos anos 2020. De cada giro você escolhe um jogador, o posiciona em uma posição da quadra que ele realmente ocupou e, após cinco escolhas, o seu elenco encara a pergunta: este time terminaria 82-0?",
-            "O formato viralizou porque é metade estratégia, metade sorte. Às vezes o caça-níquel te entrega uma dinastia. Às vezes você está escolhendo entre jogadores de função na quinta rodada sem trocas disponíveis, e a sua temporada perfeita morre na hora. Cada partida é uma nova discussão."
+            "A melhor temporada regular da história da NBA pertence ao Golden State Warriors de 2015-16, que fez 73-9 — e mesmo eles abriram com um recorde de 24 vitórias seguidas antes de perder. O Chicago Bulls de 1995-96 fez 72-10 e foi campeão. O Los Angeles Lakers de 1971-72 venceu 33 jogos consecutivos, ainda a maior sequência do esporte profissional norte-americano, e terminou 69-13. O Miami Heat de 2012-13 emendou 27 seguidas.",
+            "Repare no padrão: os maiores times já montados, no auge absoluto, ainda perderam nove ou mais jogos. O Warriors do 73-9 caiu para times de loteria na segunda noite de back-to-backs. Uma temporada 82-0 exigiria tudo o que esses times tinham, mais seis meses de saúde ininterrupta e mais sorte do que qualquer equipe já recebeu."
           ]
         },
         {
-          "h2": "Como o jogo 82-0 funciona aqui?",
+          "h2": "A matemática da temporada perfeita",
           "paragraphs": [
-            "A nossa versão do jogo do desafio 82-0 roda inteiramente no seu navegador. Cinco rodadas, uma escolha por rodada, uma troca de time e uma troca de época. Cada jogador carrega a sua linha estatística histórica real — pontos, rebotes, assistências, roubos e tocos por jogo — ajustada por época pelo motor de simulação, porque 30 pontos nos anos 60 não são 30 pontos nos anos 2020. Quando o seu quinteto está completo, o motor passa os seus totais agregados por uma curva de vitórias não linear e projeta uma campanha final entre 0-82 e 82-0. Sem downloads, sem cadastro; e se você quiser um desafio de verdade, o modo Draft às Cegas oculta as estatísticas e te obriga a recrutar de memória."
+            "A aritmética é o que mata. Suponha um time tão dominante que vence qualquer jogo 95% das vezes — um nível que nenhum time real sustentou. A chance de fazer isso 82 vezes seguidas é 0,95 elevado a 82: cerca de 1,5%. Até um time de fantasia que vença cada jogo 99% das vezes completa a temporada perfeita menos da metade das vezes. Oitenta e dois é, simplesmente, um número brutal de cara-ou-coroa para acertar em sequência.",
+            "Por isso a simulação deste site trata o 82-0 como a realidade trataria: um quinteto precisa maximizar todas as categorias estatísticas só para se qualificar, e ainda assim precisa sobreviver a um lance final de sorte. Elencos perfeitos também perdem às vezes. É esse o jogo."
           ]
         },
         {
-          "h2": "Por que 82-0 está viralizando?",
+          "h2": "Do experimento mental ao jogo",
           "paragraphs": [
-            "As discussões de basquete costumavam terminar em 'cada um com a sua'. O formato 82-0 dá um placar a elas. Os jogadores compartilham as suas campanhas projetadas — 78-4, 80-2, o raro e perfeito 82-0 — e os amigos logo tentam superar. É um jogo de dois minutos com rejogabilidade infinita, construído sobre um debate que os torcedores têm há décadas: quais cinco jogadores, de toda a história, formam o time imbatível?"
+            "O desafio 82-0 transforma o debate em algo jogável. Cinco rodadas de sorteios aleatórios de time e década, uma escolha por rodada, e no fim uma simulação de temporada que avalia seu quinteto em pontos, rebotes, assistências, roubos e tocos — com cada estatística ajustada à época, para que um pivô dos anos 60 e um armador dos anos 2020 sejam julgados na mesma escala. A maioria das campanhas termina entre 60 e 79 vitórias. Um 82-0 de verdade é raro o bastante para render prints compartilhados.",
+            "Para entender exatamente como o motor projeta as vitórias, leia Como é calculado. Para discutir se algum quinteto conseguiria, a página Dá para ir 82-0? destrincha a estratégia. E se preferir pular o acaso e escolher a dedo um dream team, o montador de quinteto livre simula qualquer cinco que você quiser."
           ]
         }
       ]
@@ -388,19 +385,59 @@
       "title": "Desafio 82-0 diário: os mesmos giros, uma tentativa",
       "description": "Jogue o desafio 82-0 diário de hoje. Todo mundo recebe os mesmos giros de time e época, com uma tentativa por dia. Monte o seu melhor quinteto e compartilhe a sua campanha.",
       "h1": "Desafio 82-0 diário",
-      "intro": "Os mesmos giros para o planeta inteiro. Uma tentativa por dia. Monte o seu melhor quinteto, conquiste a sua campanha e desafie os seus amigos a superar o giro de hoje."
+      "intro": "Os mesmos giros para o planeta inteiro. Uma tentativa por dia. Monte o seu melhor quinteto, conquiste a sua campanha e desafie os seus amigos a superar o giro de hoje.",
+      "challengeNo": "Desafio diário nº {n}",
+      "sameDraw": "O mesmo sorteio para o mundo todo",
+      "nextIn": "Novo desafio em {time}",
+      "sections": [
+        {
+          "h2": "Como funciona o desafio diário",
+          "paragraphs": [
+            "Todo dia à meia-noite UTC, um novo desafio é gerado a partir da própria data: os cinco sorteios de time e década derivam de uma semente determinística, então um jogador em Tóquio, outro em Paris e outro em Chicago enfrentam exatamente os mesmos sorteios na mesma ordem. No modo diário não há pulos — o sorteio que você vê é o que todos recebem — e sua campanha final pode ser enviada ao ranking do dia com o apelido que quiser, sem conta.",
+            "Você tem uma tentativa por dia, registrada no seu dispositivo. Ao terminar, o jogo mostra sua campanha e um texto de compartilhamento com a data de hoje, para um amigo abrir o mesmo desafio e tentar te superar em condições idênticas. À meia-noite UTC a semente vira, e número, sorteios e ranking recomeçam."
+          ]
+        },
+        {
+          "h2": "Por que só uma tentativa?",
+          "paragraphs": [
+            "No modo clássico você pode rejogar sem limite, e essa é a graça — pescar um sorteio dos sonhos é metade da diversão. O diário inverte isso: como todos recebem os mesmos sorteios, uma campanha só é comparável se todos tiverem o mesmo número de tentativas. Uma chance única faz o seu 61-21 valer algo diante do 58-24 do seu amigo. Não poder repetir também muda a sensação de jogo: cada escolha é definitiva, e as cinco decisões pesam de verdade.",
+            "A regra da tentativa única mora no seu navegador, não atrás de um login — este site não tem contas. Apagar os dados do site tecnicamente a reinicia, mas não há prêmio em jogo; a única aposta é a honestidade da sua gabolice."
+          ]
+        },
+        {
+          "h2": "Diário vs. clássico: outra habilidade",
+          "paragraphs": [
+            "O clássico premia a paciência ao longo de muitas partidas — conhecimento de épocas, equilíbrio de categorias e saber a hora de gastar um pulo. O diário testa adaptação: não dá para sortear de novo uma franquia ruim nem desviar de uma década rasa, então a habilidade está em extrair o melhor quinteto possível do que a data entregar. Um dia de sorteio fraco é o grande nivelador — todos constroem com as mesmas sobras, e o ranking mostra quem se adaptou melhor.",
+            "Jogadores experientes tratam os dois modos de forma diferente: no clássico perseguem o 82-0 perfeito; no diário, a melhor campanha possível para aquele sorteio específico — que em certos dias simplesmente não dá 82-0. Reconhecer o teto de um sorteio — e montar o time para alcançá-lo — é um jogo à parte."
+          ]
+        },
+        {
+          "h2": "Dicas para o sorteio de hoje",
+          "paragraphs": [
+            "Sem pulos, pense uma jogada à frente: antes de travar a primeira escolha, veja quais posições o grupo de candidatos cobre e deixe uma saída para as mais difíceis de preencher — proteção de aro e rebote costumam ser o que mais falta no fim do draft. A simulação trava cada categoria: um quinteto com quatro pontuadores e nenhum rebote empaca nos sessenta, por mais bonita que seja a coluna de pontos.",
+            "Lembre que cada estatística é ajustada à época: um monstro do rebote dos anos 60 não está sendo inflado pelo ritmo — o número é escalonado antes de entrar no motor. Quintetos de várias épocas são comparados com justiça, então drafte o jogador, não a década."
+          ]
+        }
+      ]
     },
     "unblocked": {
       "title": "Jogue 82-0 desbloqueado — grátis, sem download",
       "description": "Jogue o desafio 82-0 desbloqueado e grátis no seu navegador. Sem download, sem instalação, sem cadastro — funciona na escola ou no trabalho. Gire, recrute lendas e busque o 82-0.",
       "h1": "82-0 desbloqueado — jogue grátis no seu navegador",
-      "intro": "O desafio 82-0 roda inteiramente no seu navegador, então não há nada para bloquear. Sem download, sem instalação, sem conta — é só girar o caça-níquel, recrutar as suas cinco lendas e buscar a temporada perfeita 82-0. Comece a jogar abaixo.",
+      "intro": "O desafio 82-0 roda inteiramente no seu navegador, então não há nada para bloquear. Sem download, sem instalação, sem conta — é só girar o caça-níquel, recrutar as suas cinco lendas e buscar a temporada perfeita 82-0. Comece a jogar abaixo. Nenhuma barreira de login interrompe a partida e não há limite de times que você pode montar.",
       "sections": [
         {
           "h2": "O que significa ‘82-0 desbloqueado’?",
           "paragraphs": [
             "Quando as pessoas procuram o jogo 82-0 desbloqueado, elas querem uma versão que dá para abrir e jogar em qualquer lugar — na escola, no trabalho ou numa rede restrita — sem ser bloqueada e sem precisar baixar nada. Esta página é exatamente isso: o desafio 82-0 completo carrega na hora como uma página web normal. Não tem Flash, nem plugin, nem loja de apps, nem um instalador que um firewall possa sinalizar.",
             "Como o jogo inteiro é só uma página web, ele se comporta como qualquer outro site. Se você consegue abrir esta página, você consegue jogar. Atualize quando quiser uma nova partida — cada giro é diferente."
+          ]
+        },
+        {
+          "h2": "Sem barreiras de login, sem limite de tentativas",
+          "paragraphs": [
+            "Muitos jogos de montar times no navegador deixam você começar uma partida e depois a interrompem com uma barreira de cadastro: depois de algumas escolhas surge uma tela de login e o seu quinteto fica refém de uma conta. Este site nunca faz isso. Não existe sistema de contas: você nunca precisará se cadastrar, verificar e-mail ou fazer login para ver o resultado, e não há teto diário de partidas nos modos clássicos.",
+            "Todos os modos ficam abertos desde a primeira visita — Clássico, Draft às cegas, Modo difícil, Teto salarial, Modo de épocas e os demais. Até o ranking funciona sem conta: escolha qualquer apelido ao enviar uma boa partida. A única exceção proposital é o Desafio diário, com uma tentativa por dia — o mundo inteiro recebe o mesmo sorteio, e uma chance única mantém a disputa justa."
           ]
         },
         {
@@ -788,22 +825,29 @@
       ]
     },
     "teamBuilder": {
-      "title": "Montador de times 82-0",
-      "description": "Monte o seu quinteto histórico de basquete com o montador de times 82-0. Giros de caça-níquel, lendas reais de sete décadas e campanha de temporada simulada. Você consegue ficar invicto?",
-      "h1": "Montador de times 82-0",
-      "intro": "Recrute os seus cinco. Persiga a temporada perfeita. O montador de times está logo abaixo: boa sorte.",
+      "title": "Montador de quinteto livre — escolha qualquer cinco entre 420 lendas",
+      "description": "Monte qualquer quinteto histórico com 420 lendas de sete décadas — sem sorteios, sem sorte. Escolha um estilo de jogo, simule uma temporada completa de 82 jogos e encerre os debates com números.",
+      "h1": "Montador de quinteto livre",
+      "intro": "Sem sorteios, sem azar: navegue pelas 420 lendas, escolha a dedo qualquer quinteto e simule a temporada. A ferramenta para encerrar os debates sobre o melhor time de todos os tempos.",
       "sections": [
         {
-          "h2": "Sobre o montador de times 82-0",
+          "h2": "Qual a diferença para o desafio 82-0",
           "paragraphs": [
-            "Este montador de times é o coração do desafio 82-0. Cada partida gera cinco combinações aleatórias de franquia e década que abrangem sete décadas de história do basquete, da dinastia dos Celtics dos anos 60 aos campeões dos anos 2020. Cada giro te oferece os jogadores reais daquele time e daquela época, com as suas estatísticas históricas por jogo em cinco categorias, e o quinteto que você recruta é simulado ao longo de uma temporada completa de 82 jogos.",
-            "Como os giros são aleatórios, não há duas partidas iguais. Numa partida você escolhe entre lendas; na seguinte espreme vitórias de jogadores de função sem trocas disponíveis. O montador de times premia o draft inteligente: consciência das épocas, equilíbrio entre categorias, gestão de posições e saber exatamente quando gastar uma troca. Monte, simule, compartilhe, repita, e veja o quanto você chega perto do impossível 82-0."
+            "O desafio 82-0 principal distribui combinações aleatórias de time e década, e a habilidade está em draftar bem sob restrições que você não escolheu. Esta página elimina o acaso por completo: os 420 jogadores do banco de dados ficam disponíveis desde o primeiro clique. Busque por nome, filtre por década ou franquia e coloque qualquer um numa posição em que ele realmente jogou.",
+            "Como não há restrição, os quintetos montados aqui não vão para o ranking — um dream team escolhido a dedo engoliria qualquer partida ranqueada em segundos. Pense nesta página como a sala de vídeo e na página inicial como o jogo: teste uma teoria aqui e depois veja até onde os mesmos instintos levam quando os sorteios decidem o que você recebe."
           ]
         },
         {
-          "h2": "O que faz um quinteto vencedor?",
+          "h2": "Encerre os debates clássicos",
           "paragraphs": [
-            "O motor soma cinco categorias — pontos, rebotes, assistências, roubos e tocos — após ajustar cada linha estatística ao ritmo e ao ambiente de pontuação da sua época. A curva de vitórias é não linear, então cada vitória adicional custa mais força de elenco do que a anterior, e todas as categorias têm limite: um único buraco evidente limita a sua campanha projetada por mais forte que seja o resto do elenco. Recrute como um gerente geral, não como um torcedor."
+            "Um quinteto titular com Jordan, Magic, Bird, Duncan e Shaq no auge conseguiria mesmo um 82-0? Um time só dos anos 90 vence um só dos anos 2020 depois de ajustada a diferença de ritmo? Alguma equipe sem pivô de ofício sobrevive a uma temporada inteira? Foi para esses debates que a ferramenta foi criada — monte os dois lados e deixe a simulação responder.",
+            "Cada linha estatística é ajustada à sua época antes de entrar no motor, então um número de rebotes dos anos 60 não infla diante de um moderno. Times de épocas diferentes são comparados em pé de igualdade — o debate continua sendo sobre os jogadores, não sobre o ritmo da década deles."
+          ]
+        },
+        {
+          "h2": "Como funciona a simulação",
+          "paragraphs": [
+            "O motor de temporada é idêntico ao do desafio principal: os totais ajustados por época dos seus cinco jogadores em pontos, rebotes, assistências, roubos e tocos são medidos contra um patamar em cada categoria, combinados numa pontuação ponderada de força e passados por uma curva de vitórias não linear, em que cada vitória extra custa mais que a anterior. Um buraco evidente limita o recorde projetado por mais forte que seja o resto do elenco, e mesmo um quinteto de elite equilibrado ainda precisa passar no lance de sorte final para cravar o 82-0 perfeito. Veja a página Como é calculado para o detalhamento completo."
           ]
         }
       ]
@@ -1155,7 +1199,7 @@
     "terms": "Termos de uso",
     "contact": "Contato",
     "community": "Entre na nossa comunidade do Telegram",
-    "disclaimer": "X-0 Games e o seu 82-0 Basketball Builder são projetos independentes feitos por fãs. Não são afiliados, endossados ou patrocinados por 82-0.com, PlayVault, a NBA ou qualquer liga ou equipe de basquete profissional.",
+    "disclaimer": "X-0 Games e o seu 82-0 Basketball Builder são projetos independentes feitos por fãs. Não são afiliados, endossados ou patrocinados por 82-0.com, PlayVault, a NBA ou qualquer liga ou equipe de basquete profissional. Os nomes dos jogadores e as estatísticas históricas são apresentados apenas para fins informativos e de simulação de jogo.",
     "copyright": "© 2026 X-0 Games",
     "related": "Guias relacionados",
     "leaderboard": "Ranking",
@@ -1283,5 +1327,35 @@
     "oneDecadeDesc": "Trave numa era e busque a perfeição.",
     "hardDesc": "Curva mais íngreme. Só a elite sobrevive ao 82-0.",
     "lebronDesc": "LeBron está travado. Recrute os quatro que terminam o serviço."
+  },
+  "tb": {
+    "yourFive": "Seu quinteto",
+    "pickFor": "Escolha um {pos}",
+    "teamComplete": "Time completo — rode a temporada!",
+    "searchPlaceholder": "Busque entre {total} lendas pelo nome…",
+    "allDecades": "Todas as décadas",
+    "allTeams": "Todos os times",
+    "noMatches": "Nenhum jogador corresponde — afrouxe os filtros.",
+    "showingOf": "Mostrando os {shown} melhores de {total}; refine a busca para ver mais.",
+    "remove": "Clique para remover",
+    "simulate": "Simular a temporada de 82 jogos",
+    "resim": "Rodar a temporada de novo",
+    "clear": "Limpar time",
+    "sandboxNote": "Modo livre: estes resultados não vão para o ranking. Jogue o desafio de sorteios na página inicial para competir.",
+    "playReal": "Jogar o verdadeiro desafio 82-0",
+    "teamTotals": "Totais do time (por jogo)",
+    "emptySlot": "Vazio — escolha um jogador"
+  },
+  "homeFigures": {
+    "draftAlt": "Tela de draft do desafio 82-0: o caça-níquel caiu em Dallas anos 2000, mostrando seis cartas de jogadores reais com estatísticas ao lado da meia-quadra",
+    "draftCaption": "A cada rodada o caça-níquel sorteia uma franquia e uma década — aqui Dallas nos anos 2000 — e você escolhe um jogador daquele elenco real.",
+    "resultAlt": "Tela de resultado do desafio 82-0 com campanha projetada de 52-30, nota B, melhor escolha, fraqueza, os cinco jogadores e os totais do time",
+    "resultCaption": "A simulação de temporada avalia seu quinteto: campanha projetada, melhor escolha, a fraqueza que custou jogos e os totais ajustados à época.",
+    "setupAlt": "Tela de configuração do desafio 82-0 com quatro estilos de jogo e um diagrama de meia-quadra com as cinco posições a preencher",
+    "setupCaption": "Seu estilo de jogo define as cinco posições a preencher — Equilibrado, Small Ball, Torres Gêmeas ou Run & Gun.",
+    "curveAlt": "Gráfico de linha: a probabilidade de vencer os 82 jogos só dispara perto de 100% de vitória por jogo — 95% dá 1,5%, 99% dá 44%",
+    "curveCaption": "Por que o 82-0 é quase impossível: mesmo um time que vence 99% dos jogos completa os 82 menos da metade das vezes.",
+    "curveX": "Probabilidade de vitória por jogo",
+    "curveY": "Chance de 82-0"
   }
 }

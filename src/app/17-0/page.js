@@ -6,7 +6,6 @@ import QuestionFAQ from '../Components/QuestionFAQ';
 import NflGame from '../Components/Game/NflGame';
 import GameWithSidebarAds from '../Components/GameWithSidebarAds';
 import SeoSections from '../Components/SeoSections';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -72,7 +71,6 @@ export default async function SeventeenZero({ params }) {
           </div>
         </section>
 
-        <SquadCta t={t} />
 
         <script
           type="application/ld+json"

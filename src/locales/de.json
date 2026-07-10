@@ -282,12 +282,6 @@
         "paragraphs": [
           "Wenn dir die 82-0 Challenge gefällt, wirst du wahrscheinlich auch andere Draft-Sportspiele mögen: Lineup-Builder, Epochen-Debatten, GOAT-Brackets und Fantasy-Drafts kratzen alle dasselbe Jucken. Aber das 82-0 Format sticht heraus, weil es dir eine konkrete, simulierte Antwort statt einer endlosen Diskussion gibt. Dein Team bleibt entweder ungeschlagen oder eben nicht — und es gibt immer einen weiteren Durchlauf."
         ]
-      },
-      {
-        "h2": "Bau dein eigenes AI Character Squad",
-        "paragraphs": [
-          "Willst du mehr als ein Basketball-Team bauen? Mit dem AI Character Squad Builder draftest du ein Squad aus Fantasy-Helden, Anime-Charakteren oder völlig eigenen Kreationen, generierst eine Geschichte über sie und verwandelst sie sogar in ein illustriertes Bilderbuch. Wenn du Team-Building liebst, ist das der natürliche nächste Schritt."
-        ]
       }
     ]
   },
@@ -308,35 +302,38 @@
   },
   "pages": {
     "whatIs": {
-      "title": "82-0: Was ist das virale 82-0 Challenge Game?",
-      "description": "Was bedeutet 82-0? Erfahre, woher die virale 82-0 Challenge kommt, wie der Slot-Machine-Team-Builder funktioniert, und spiel sie gleich hier.",
-      "h1": "Was ist 82-0?",
-      "intro": "82-0 ist die perfekte Basketball-Saison, die es nie gegeben hat — 82 Siege, null Niederlagen. Hier erfährst du, worum es bei der viralen 82-0 Challenge geht, plus ein Team Builder, mit dem du es selbst versuchen kannst.",
+      "title": "Was ist 82-0? Die perfekte NBA-Saison, erklärt",
+      "description": "82-0 heißt: alle 82 Spiele der Regular Season gewinnen — das hat noch kein NBA-Team geschafft. Die knappsten Anläufe, die Mathematik dahinter und das Spiel, das daraus entstand.",
+      "h1": "Was ist 82-0? Die perfekte Saison, erklärt",
+      "intro": "82-0 ist die perfekte NBA-Regular-Season: 82 Spiele, 82 Siege, null Niederlagen. Kein Team der Ligageschichte hat das je geschafft — und die Zahlen erklären, warum es vielleicht nie passieren wird. Diese Seite behandelt das Konzept, die knappsten realen Anläufe und das Simulationsspiel rund um die Frage.",
+      "playCta": "Die 82-0 Challenge spielen",
       "sections": [
         {
           "h2": "Was bedeutet 82-0?",
           "paragraphs": [
-            "Eine Regular Season im Profibasketball umfasst 82 Spiele. 82-0 zu schaffen bedeutet, jedes einzelne davon zu gewinnen — eine perfekte Saison. Kein Team in der Liga-Geschichte hat das je geschafft. Am nächsten kam jemand mit 73 Siegen, was heißt, dass selbst das beste Team aller Zeiten neunmal verloren hat. Diese Lücke zwischen 'das Beste aller Zeiten' und 'perfekt' ist genau das, wofür die Zahl 82-0 steht, und deshalb hat der Ausdruck in Basketball-Debatten so viel Gewicht.",
-            "Weil eine perfekte Saison nie passiert ist, wurde 82-0 zum Kürzel für einen unmöglichen Maßstab. Wenn Fans sagen, ein Lineup würde '82-0 gehen', meinen sie, dass es so stark besetzt ist, dass es den normalen Wettbewerb übersteigt."
+            "Seit der Saison 1967-68 umfasst eine NBA-Regular-Season 82 Spiele, ausgetragen von Ende Oktober bis Mitte April. Ein Team mit 82-0 hätte jedes einzelne gewonnen — jeden Auswärts-Back-to-back, jeden Abend ohne den Star, jedes Januar-Spiel gegen ein Team, das nichts zu verlieren hat. Die Bilanz ist zum Inbegriff unerreichbarer Perfektion geworden — und genau das macht sie so streitbar.",
+            "Die Formel taucht in Basketball-Debatten ständig auf: „Dieses Lineup würde 82-0 gehen.“ Wörtlich gemeint ist das fast nie. Es bedeutet, dass ein Kader keine nennenswerte Schwäche hat — und der ganze Zweck dieser Seite ist, diese Behauptung auf die Probe zu stellen."
           ]
         },
         {
-          "h2": "Was ist die 82-0 Challenge?",
+          "h2": "Wie nah ist ein echtes Team gekommen?",
           "paragraphs": [
-            "Die 82-0 Challenge ist ein Team-Building-Spiel, das aus genau dieser Debatte geboren wurde. Die Prämisse: Du draftest ein Lineup aus fünf echten Basketball-Legenden, aber du hast keine freie Wahl — jeder Pick kommt aus einem zufällig gezogenen Team und Jahrzehnt. Chicago in den 1990ern. Boston in den 1960ern. Denver in den 2020ern. Aus jeder Ziehung wählst du einen Spieler, platzierst ihn auf einer Court-Position, die er tatsächlich gespielt hat, und nach fünf Picks stellt sich deinem Kader die Frage: Würde dieses Team 82-0 gehen?",
-            "Das Format ging viral, weil es zu gleichen Teilen aus Strategie und Glück besteht. Manchmal reicht dir der Slot Machine eine Dynastie. Manchmal wählst du in Runde fünf ohne verbleibende Skips zwischen Rollenspielern, und deine perfekte Saison stirbt auf der Stelle. Jeder Durchlauf ist eine neue Diskussion."
+            "Die beste Regular Season der NBA-Geschichte gehört den Golden State Warriors 2015-16 mit 73-9 — und selbst sie starteten mit einem Rekord von 24 Siegen in Folge, bevor sie verloren. Die Chicago Bulls 1995-96 gingen 72-10 und holten den Titel. Die Lakers 1971-72 gewannen 33 Spiele am Stück — bis heute die längste Serie im US-Profisport — und beendeten die Saison mit 69-13. Die Miami Heat 2012-13 schafften 27 in Folge.",
+            "Das Muster ist deutlich: Die größten Teams aller Zeiten verloren auf ihrem absoluten Höhepunkt trotzdem neun oder mehr Spiele. Die 73-9-Warriors verloren am zweiten Abend von Back-to-backs gegen Lottery-Teams. Eine 82-0-Saison bräuchte alles, was diese Teams hatten, plus sechs Monate ununterbrochene Gesundheit und mehr Glück, als je ein Team hatte."
           ]
         },
         {
-          "h2": "Wie funktioniert das 82-0 Game hier?",
+          "h2": "Die Mathematik der perfekten Saison",
           "paragraphs": [
-            "Unsere Version des 82-0 Challenge Game läuft komplett in deinem Browser. Fünf Runden, ein Pick pro Runde, ein Team-Skip und ein Era-Skip. Jeder Spieler trägt seine echte historische Statline — Punkte, Rebounds, Assists, Steals und Blocks pro Spiel — epochenangepasst durch die Simulations-Engine, denn 30 Punkte in den 1960ern sind nicht 30 Punkte in den 2020ern. Wenn dein Lineup komplett ist, schickt die Engine deine Gesamtsummen durch eine nichtlineare Siegkurve und prognostiziert eine Endbilanz zwischen 0-82 und 82-0. Kein Download, keine Anmeldung — und wenn du eine echte Prüfung willst, verbirgt der Blind-Draft-Modus die Stats und zwingt dich, aus dem Gedächtnis zu draften."
+            "Die Arithmetik ist der Killer. Angenommen, ein Team ist so dominant, dass es jedes Spiel mit 95 % Wahrscheinlichkeit gewinnt — ein Niveau, das kein echtes Team je gehalten hat. Die Chance, das 82-mal hintereinander zu tun, ist 0,95 hoch 82: etwa 1,5 %. Selbst ein Fantasieteam mit 99 % pro Spiel schafft die perfekte Saison in weniger als der Hälfte der Fälle. 82 ist schlicht eine brutale Zahl an Münzwürfen, die alle sitzen müssen.",
+            "Deshalb behandelt die Simulation auf dieser Seite 82-0 so, wie es die Realität täte: Ein Lineup muss jede statistische Kategorie ausreizen, um überhaupt infrage zu kommen, und muss dann noch einen letzten Glückswurf überstehen. Auch perfekte Kader verlieren manchmal. Genau das ist das Spiel."
           ]
         },
         {
-          "h2": "Warum geht 82-0 viral?",
+          "h2": "Vom Gedankenexperiment zum Spiel",
           "paragraphs": [
-            "Basketball-Diskussionen endeten früher mit 'einigen wir uns darauf, uneinig zu sein'. Das 82-0 Format gibt ihnen eine Anzeigetafel. Spieler teilen ihre prognostizierten Bilanzen — 78-4, 80-2, das seltene perfekte 82-0 — und Freunde versuchen sofort, sie zu schlagen. Es ist ein Zwei-Minuten-Spiel mit unendlichem Wiederspielwert, aufgebaut auf einer Debatte, die Fans seit Jahrzehnten führen: Welche fünf Spieler aus der gesamten Geschichte bilden das unschlagbare Team?"
+            "Die 82-0 Challenge macht aus der Debatte etwas Spielbares. Fünf Runden zufälliger Team-und-Jahrzehnt-Ziehungen, ein Pick pro Runde, und am Ende eine Saisonsimulation, die deine Fünf in Punkten, Rebounds, Assists, Steals und Blocks bewertet — jede Statistik ära-bereinigt, damit ein Big Man der 60er und ein Guard der 2020er an derselben Skala gemessen werden. Die meisten Runs enden bei 60 bis 79 Siegen. Ein echtes 82-0 ist so selten, dass Leute Screenshots teilen.",
+            "Wer genau verstehen will, wie der Motor Siege berechnet, liest die Berechnungsseite. Wer darüber streiten will, ob irgendein Fünfer es schaffen könnte, findet auf der Strategie-Seite die Analyse. Und wer den Zufall überspringen und ein Dream Team von Hand wählen möchte, simuliert im freien Lineup-Builder jede beliebige Fünf."
           ]
         }
       ]
@@ -388,19 +385,59 @@
       "title": "82-0 Daily Challenge — Dieselben Spins, ein Versuch",
       "description": "Spiele die heutige 82-0 Daily Challenge. Alle auf der Welt bekommen dieselben Team- und Epochen-Spins, mit einem Versuch pro Tag. Bau dein bestes Lineup und teile deine Bilanz.",
       "h1": "82-0 Daily Challenge",
-      "intro": "Dieselben Spins für alle auf dem Planeten. Ein Versuch pro Tag. Bau dein bestes Lineup, hol dir deine Bilanz und fordere deine Freunde heraus, die heutige Ziehung zu schlagen."
+      "intro": "Dieselben Spins für alle auf dem Planeten. Ein Versuch pro Tag. Bau dein bestes Lineup, hol dir deine Bilanz und fordere deine Freunde heraus, die heutige Ziehung zu schlagen.",
+      "challengeNo": "Daily Challenge Nr. {n}",
+      "sameDraw": "Dieselbe Ziehung für alle weltweit",
+      "nextIn": "Neue Challenge in {time}",
+      "sections": [
+        {
+          "h2": "So funktioniert die Daily Challenge",
+          "paragraphs": [
+            "Jeden Tag um Mitternacht UTC entsteht eine neue Challenge aus dem Datum selbst: Die fünf Team-und-Jahrzehnt-Ziehungen leiten sich aus einem deterministischen Seed ab, sodass Spieler in Tokio, Paris und Chicago exakt dieselben Ziehungen in derselben Reihenfolge bekommen. Skips gibt es im Daily-Modus nicht — die Ziehung, die du siehst, bekommt jeder — und dein Endergebnis kannst du unter beliebigem Namen in die Tagesrangliste eintragen, ganz ohne Konto.",
+            "Du hast einen Versuch pro Tag, gespeichert auf deinem Gerät. Am Ende zeigt das Spiel deine Bilanz und einen Share-Text mit dem heutigen Datum, damit ein Freund dieselbe Challenge öffnen und dich unter identischen Bedingungen schlagen kann. Um Mitternacht UTC wechselt der Seed, und Nummer, Ziehungen und Rangliste beginnen von vorn."
+          ]
+        },
+        {
+          "h2": "Warum nur ein Versuch?",
+          "paragraphs": [
+            "Im klassischen Modus kannst du endlos neu starten — genau das ist sein Reiz: das Angeln nach der Traumziehung gehört dazu. Die Daily dreht das um: Wenn alle dieselben Ziehungen bekommen, sind Bilanzen nur vergleichbar, wenn alle gleich viele Versuche haben. Ein einziger Versuch verleiht deinem 61-21 gegen das 58-24 deines Freundes echte Bedeutung. Ohne Wiederholung spielt es sich auch anders: Jeder Pick ist endgültig, alle fünf Entscheidungen haben Gewicht.",
+            "Die Ein-Versuch-Regel liegt in deinem Browser, nicht hinter einem Login — diese Seite hat keine Konten. Wer die Website-Daten löscht, setzt sie technisch zurück, aber hier gibt es keinen Preistopf; auf dem Spiel steht nur die Ehrlichkeit deiner Angeberei."
+          ]
+        },
+        {
+          "h2": "Daily vs. Classic: eine andere Fähigkeit",
+          "paragraphs": [
+            "Classic belohnt Geduld über viele Runs — Ärawissen, Kategorienbalance, das richtige Timing für einen Skip. Die Daily prüft Anpassungsfähigkeit: Du kannst keine schwache Franchise neu würfeln und keinem dünnen Jahrzehnt ausweichen. Die Kunst besteht darin, aus dem, was das Datum austeilt, die stärkste Fünf herauszupressen. Ein Tag mit magerer Ziehung ist der große Gleichmacher — alle bauen aus denselben Resten, und die Rangliste zeigt, wer sich am besten angepasst hat.",
+            "Erfahrene Spieler behandeln die Modi unterschiedlich: Im Classic jagen sie das perfekte 82-0, in der Daily die bestmögliche Bilanz für genau diese Ziehung — die an manchen Tagen schlicht kein 82-0 hergibt. Das Limit einer Ziehung zu erkennen und gezielt darauf hinzubauen ist ein eigenes Spiel."
+          ]
+        },
+        {
+          "h2": "Tipps für die heutige Ziehung",
+          "paragraphs": [
+            "Ohne Skips heißt es vorausdenken: Bevor du den ersten Pick festmachst, prüfe, welche Positionen der Kandidatenpool abdeckt, und halte dir für die am schwersten zu besetzenden einen Ausweg offen — Ringschutz und Rebounding sind spät im Draft meist am knappsten. Die Simulation verriegelt jede Kategorie: Vier Scorer ohne Bretter enden in den Sechzigern, egal wie schön die Punktespalte aussieht.",
+            "Denk daran, dass jede Statistik ära-bereinigt ist: Ein Rebound-Monster der 1960er profitiert nicht vom Tempo seiner Zeit — die Zahl wird skaliert, bevor sie in den Motor geht. Jahrzehntübergreifende Fünfer werden fair verglichen — drafte den Spieler, nicht das Jahrzehnt."
+          ]
+        }
+      ]
     },
     "unblocked": {
       "title": "82-0 entsperrt spielen — kostenlos, ohne Download",
       "description": "Spiele die 82-0-Challenge entsperrt und kostenlos im Browser. Kein Download, keine Installation, keine Anmeldung — funktioniert in Schule oder Büro. Drehen, Legenden draften, 82-0 anstreben.",
       "h1": "82-0 entsperrt — kostenlos im Browser spielen",
-      "intro": "Die 82-0-Challenge läuft vollständig in deinem Browser, es gibt also nichts zu blockieren. Kein Download, keine Installation, kein Konto — dreh einfach den Spielautomaten, drafte deine fünf Legenden und jage die perfekte 82-0-Saison. Starte unten.",
+      "intro": "Die 82-0-Challenge läuft vollständig in deinem Browser, es gibt also nichts zu blockieren. Kein Download, keine Installation, kein Konto — dreh einfach den Spielautomaten, drafte deine fünf Legenden und jage die perfekte 82-0-Saison. Starte unten. Keine Login-Schranke unterbricht je eine Runde, und du kannst so viele Teams bauen, wie du willst.",
       "sections": [
         {
           "h2": "Was bedeutet ‘82-0 entsperrt’?",
           "paragraphs": [
             "Wenn Leute nach dem 82-0-Spiel entsperrt suchen, wollen sie eine Version, die sie überall öffnen und spielen können — in der Schule, am Arbeitsplatz oder in einem eingeschränkten Netzwerk — ohne dass sie blockiert wird oder ein Download nötig ist. Genau das ist diese Seite: Die komplette 82-0-Challenge lädt sofort als ganz normale Webseite. Kein Flash, kein Plugin, kein App-Store und kein Installer, den eine Firewall melden könnte.",
             "Da das ganze Spiel nur eine Webseite ist, verhält es sich wie jede andere Website. Wenn du diese Seite öffnen kannst, kannst du spielen. Aktualisiere einfach, wenn du eine neue Runde willst — jeder Dreh ist anders."
+          ]
+        },
+        {
+          "h2": "Keine Login-Schranken, keine Versuchslimits",
+          "paragraphs": [
+            "Viele Browser-Teambuilder lassen dich eine Runde beginnen und unterbrechen sie dann mit einer Registrierungsschranke — ein paar Picks später erscheint ein Login-Fenster, und dein Lineup sitzt hinter einem Konto fest. Diese Seite macht das nie. Es gibt überhaupt kein Kontosystem: Du wirst nie aufgefordert, dich zu registrieren, eine E-Mail zu bestätigen oder dich einzuloggen, um dein Ergebnis zu sehen — und in den klassischen Modi gibt es kein Tageslimit.",
+            "Alle Modi stehen ab dem ersten Besuch offen — Classic, Blind Draft, Hard Mode, Salary Cap, Era Mode und die übrigen. Sogar die Rangliste funktioniert ohne Konto: Wähle beim Einreichen einfach einen Anzeigenamen. Die einzige bewusste Ausnahme ist die Daily Challenge mit einem Versuch pro Tag — alle Welt bekommt dieselbe Ziehung, und ein einziger Versuch hält das fair."
           ]
         },
         {
@@ -788,22 +825,29 @@
       ]
     },
     "teamBuilder": {
-      "title": "82-0 Team Builder",
-      "description": "Bau dein All-Time-Basketball-Lineup mit dem 82-0 Team Builder. Slot-Machine-Ziehungen, echte Legenden aus sieben Jahrzehnten, simulierte Saisonbilanz. Schaffst du es, ungeschlagen zu bleiben?",
-      "h1": "82-0 Team Builder",
-      "intro": "Drafte deine Fünf. Jage die perfekte Saison. Der Team Builder ist direkt unten — viel Glück.",
+      "title": "Freier Lineup-Builder — wähle beliebige fünf aus 420 Legenden",
+      "description": "Stelle ein beliebiges All-Time-Five aus 420 Legenden aus sieben Jahrzehnten zusammen — ohne Spins, ohne Glück. Wähle einen Spielstil, simuliere eine volle 82-Spiele-Saison und entscheide Lineup-Debatten mit Zahlen.",
+      "h1": "Freier Lineup-Builder",
+      "intro": "Keine Spins, kein Losglück — durchsuche alle 420 Legenden, stelle per Hand ein beliebiges Fünfer-Lineup zusammen und simuliere die Saison. Das Werkzeug, um All-Time-Debatten zu entscheiden.",
       "sections": [
         {
-          "h2": "Über den 82-0 Team Builder",
+          "h2": "Was diese Seite von der 82-0 Challenge unterscheidet",
           "paragraphs": [
-            "Dieser Team Builder ist das Herz der 82-0 Challenge. Jeder Durchlauf dreht fünf zufällige Franchise-und-Jahrzehnt-Kombinationen aus, die sieben Jahrzehnte Basketball-Geschichte umspannen — von der Celtics-Dynastie der 1960er bis zu den Champions der 2020er. Jede Ziehung bietet die echten Spieler aus diesem Team und dieser Epoche mit ihren historischen Pro-Spiel-Stats über fünf Kategorien, und das Lineup, das du draftest, wird über eine komplette Saison von 82 Spielen simuliert.",
-            "Weil die Ziehungen zufällig sind, gleicht kein Durchlauf dem anderen. In einem Spiel wählst du zwischen Legenden; im nächsten quetschst du Siege aus Rollenspielern ohne verbleibende Skips. Der Team Builder belohnt kluges Draften: Epochenbewusstsein, Kategorie-Balance, Positions-Management und das genaue Gespür dafür, wann man einen Skip verbrennt. Bauen, simulieren, teilen, wiederholen — und sieh, wie nah du dem unmöglichen 82-0 kommst."
+            "Die Haupt-Challenge teilt dir zufällige Team-und-Jahrzehnt-Kombinationen zu — die Kunst liegt darin, unter fremden Zwängen gut zu draften. Diese Seite entfernt den Zufall komplett: Alle 420 Spieler der Datenbank sind ab dem ersten Klick verfügbar. Suche nach Namen, filtere nach Jahrzehnt oder Franchise und setze jeden auf eine Position, die er wirklich gespielt hat.",
+            "Weil es keine Beschränkung gibt, landen hier gebaute Lineups nicht in der Rangliste — ein handverlesenes Dream Team würde jede gewertete Runde sofort verdrängen. Betrachte diese Seite als Videoraum und die Startseite als das Spiel: Teste hier eine Theorie und schau dann, wie weit dich dieselben Instinkte tragen, wenn die Spins entscheiden, was du bekommst."
           ]
         },
         {
-          "h2": "Was macht ein siegreiches Lineup aus?",
+          "h2": "Entscheide die klassischen Debatten",
           "paragraphs": [
-            "Die Engine summiert fünf Kategorien — Punkte, Rebounds, Assists, Steals und Blocks — nachdem sie jede Statline an das Tempo und das Scoring-Umfeld ihrer Epoche angepasst hat. Die Siegkurve ist nichtlinear, jeder zusätzliche Sieg kostet also mehr Kaderstärke als der vorige, und jede Kategorie ist limitiert: Ein einziges eklatantes Loch deckelt deine prognostizierte Bilanz, egal wie stark der Rest des Kaders ist. Drafte wie ein General Manager, nicht wie ein Fan."
+            "Könnte eine Starting Five aus Jordan, Magic, Bird, Duncan und Shaq in Bestform wirklich 82-0 gehen? Schlägt ein reines 90er-Lineup ein reines 2020er-Lineup, sobald der Tempounterschied herausgerechnet ist? Übersteht ein Team ohne echten Center eine ganze Saison? Für genau diese Streitfragen wurde das Tool gebaut — stelle beide Seiten auf und lass die Simulation antworten.",
+            "Jede Statistikzeile wird vor dem Motor an ihre Ära angepasst, damit ein Rebound-Wert aus den 1960ern gegenüber einem modernen nicht aufgebläht wirkt. Teams über Jahrzehnte hinweg werden auf gleicher Basis verglichen — die Debatte dreht sich um die Spieler, nicht um das Tempo ihrer Zeit."
+          ]
+        },
+        {
+          "h2": "So funktioniert die Simulation",
+          "paragraphs": [
+            "Der Saison-Motor ist identisch mit der Haupt-Challenge: Die ära-bereinigten Summen deiner fünf Spieler in Punkten, Rebounds, Assists, Steals und Blocks werden in jeder Kategorie an einem Richtwert gemessen, zu einem gewichteten Stärkewert kombiniert und durch eine nichtlineare Siegkurve geschickt, in der jeder zusätzliche Sieg mehr kostet als der vorherige. Eine klaffende Schwäche deckelt die prognostizierte Bilanz, egal wie stark der Rest ist — und selbst ein ausgewogenes Elite-Lineup braucht am Ende noch den Glückswurf für die perfekte 82-0. Die vollständige Aufschlüsselung findest du auf der Seite zur Berechnung."
           ]
         }
       ]
@@ -1155,7 +1199,7 @@
     "terms": "Nutzungsbedingungen",
     "contact": "Kontakt",
     "community": "Tritt unserer Telegram-Community bei",
-    "disclaimer": "X-0 Games und sein 82-0 Basketball Builder sind unabhängige, von Fans erstellte Projekte. Sie stehen in keiner Verbindung zu 82-0.com, PlayVault, der NBA oder einer professionellen Basketballliga oder einem Team und werden von diesen weder unterstützt noch gesponsert.",
+    "disclaimer": "X-0 Games und sein 82-0 Basketball Builder sind unabhängige, von Fans erstellte Projekte. Sie stehen in keiner Verbindung zu 82-0.com, PlayVault, der NBA oder einer professionellen Basketballliga oder einem Team und werden von diesen weder unterstützt noch gesponsert. Spielernamen und historische Statistiken dienen ausschließlich Informations- und Simulationszwecken.",
     "copyright": "© 2026 X-0 Games",
     "related": "Verwandte Guides",
     "leaderboard": "Rangliste",
@@ -1283,5 +1327,35 @@
     "oneDecadeDesc": "Auf eine Ära festlegen und Perfektion jagen.",
     "hardDesc": "Steilere Kurve. Nur die Elite übersteht 82-0.",
     "lebronDesc": "LeBron ist gesetzt. Drafte die vier, die den Job zu Ende bringen."
+  },
+  "tb": {
+    "yourFive": "Deine Fünf",
+    "pickFor": "Wähle einen {pos}",
+    "teamComplete": "Team komplett — starte die Saison!",
+    "searchPlaceholder": "Durchsuche {total} Legenden nach Namen…",
+    "allDecades": "Alle Jahrzehnte",
+    "allTeams": "Alle Teams",
+    "noMatches": "Keine Spieler gefunden — lockere die Filter.",
+    "showingOf": "Top {shown} von {total} angezeigt — verfeinere die Suche für mehr.",
+    "remove": "Zum Entfernen klicken",
+    "simulate": "Die 82-Spiele-Saison simulieren",
+    "resim": "Saison erneut simulieren",
+    "clear": "Team leeren",
+    "sandboxNote": "Freie Auswahl im Sandbox-Modus: Ergebnisse landen nicht in der Rangliste. Für gewertete Runs spiele die Spin-Challenge auf der Startseite.",
+    "playReal": "Die echte 82-0 Challenge spielen",
+    "teamTotals": "Team-Gesamtwerte (pro Spiel)",
+    "emptySlot": "Leer — wähle einen Spieler"
+  },
+  "homeFigures": {
+    "draftAlt": "Draft-Bildschirm der 82-0 Challenge: Der Automat zeigt Dallas 2000er, sechs echte Spielerkarten mit Karrierestatistiken neben einem Halbfeld",
+    "draftCaption": "Jede Runde zieht der Automat ein Team und ein Jahrzehnt — hier Dallas in den 2000ern — und du wählst einen Spieler aus diesem echten Kader.",
+    "resultAlt": "Ergebnisbildschirm der 82-0 Challenge mit prognostizierten 52-30, Note B, bestem Pick, Schwäche, den fünf Spielern und den Teamsummen",
+    "resultCaption": "Die Saisonsimulation bewertet deine Fünf: prognostizierte Bilanz, bester Pick, die Schwäche, die Spiele gekostet hat, und ära-bereinigte Teamsummen.",
+    "setupAlt": "Setup-Bildschirm der 82-0 Challenge mit vier Spielstilen und einem Halbfeld-Diagramm der fünf zu besetzenden Positionen",
+    "setupCaption": "Dein Spielstil bestimmt die fünf Positionen — Balanced, Small Ball, Twin Towers oder Run & Gun.",
+    "curveAlt": "Liniendiagramm: Die Chance auf 82 Siege steigt erst nahe 100 % Siegquote pro Spiel steil an — 95 % ergibt 1,5 %, 99 % ergibt 44 %",
+    "curveCaption": "Warum 82-0 fast unmöglich ist: Selbst ein Team mit 99 % Siegquote pro Spiel gewinnt alle 82 in weniger als der Hälfte der Fälle.",
+    "curveX": "Siegwahrscheinlichkeit pro Spiel",
+    "curveY": "Chance auf 82-0"
   }
 }

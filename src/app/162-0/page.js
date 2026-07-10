@@ -6,7 +6,6 @@ import QuestionFAQ from '../Components/QuestionFAQ';
 import BaseballGame from '../Components/Game/BaseballGame';
 import GameWithSidebarAds from '../Components/GameWithSidebarAds';
 import SeoSections from '../Components/SeoSections';
-import SquadCta from '../Components/SquadCta';
 import en from '@/locales/en.json';
 import baseballGame from '@/locales/baseballGame.en.json';
 import { getTranslation } from '@/lib/i18n';
@@ -75,7 +74,6 @@ export default async function Baseball162({ params }) {
           </div>
         </section>
 
-        <SquadCta t={t} />
 
         <script
           type="application/ld+json"

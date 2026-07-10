@@ -282,12 +282,6 @@
         "paragraphs": [
           "If you enjoy this game, you'll probably like other draft-style sports games — lineup builders, era debates, GOAT brackets, and fantasy drafts all scratch the same itch. The format runs for other sports too: 20-0 for the NFL, 38-0 for Premier League soccer, and 7-0 for the World Cup. What sets this one apart is that it gives every roster a clear, simulated result instead of an endless argument — your team either goes undefeated or it doesn't, and there's always another run."
         ]
-      },
-      {
-        "h2": "Build Your Own AI Character Squad",
-        "paragraphs": [
-          "Want to build more than a basketball team? With AI Character Squad Builder you can draft a squad of fantasy heroes, anime characters, or completely original creations, generate a story about them, and even turn it into an illustrated picture book. If you love team building, it is the natural next step."
-        ]
       }
     ]
   },
@@ -308,35 +302,38 @@
   },
   "pages": {
     "whatIs": {
-      "title": "What Is 82-0? — Meaning & Basketball Roster Builder",
-      "description": "What does 82-0 mean in basketball? It is a perfect 82-game season — 82 wins, zero losses. Learn the idea, then build a roster and simulate your own season.",
-      "h1": "What Is 82-0?",
-      "intro": "82-0 means a perfect 82-game basketball season: 82 wins, zero losses. Learn the idea, then build a roster and see how close your team gets.",
+      "title": "What Is 82-0? The Perfect NBA Season, Explained",
+      "description": "82-0 means winning all 82 regular-season games — something no NBA team has ever done. The closest runs, the math that makes it nearly impossible, and the game it inspired.",
+      "h1": "What Is 82-0? The Perfect Season, Explained",
+      "intro": "82-0 is the perfect NBA regular season: 82 games, 82 wins, zero losses. No team in league history has ever done it — and the numbers explain why it may never happen. This page covers the concept, the closest real-world attempts, and the simulation game built around the question.",
+      "playCta": "Play the 82-0 Challenge",
       "sections": [
         {
           "h2": "What Does 82-0 Mean?",
           "paragraphs": [
-            "A professional basketball regular season is 82 games long. Going 82-0 means winning every single one of them — a perfect season. No team in league history has ever done it. The closest anyone has come is 73 wins, which means even the greatest team ever still lost nine times. That gap between 'greatest ever' and 'perfect' is what the number 82-0 represents, and it is why the phrase carries so much weight in basketball debates.",
-            "Because a perfect season has never happened, 82-0 became shorthand for an impossible standard. When fans say a lineup would 'go 82-0', they mean it is so stacked that it transcends normal competition."
+            "Since the 1967-68 season, an NBA regular season has been 82 games long, played from roughly late October to mid-April. A team that went 82-0 would have won every single one of them — every road back-to-back, every night the star sat out, every January game against a team with nothing to lose. The record has become shorthand for an unreachable standard of perfection, which is exactly what makes it fun to argue about.",
+            "The phrase shows up constantly in basketball debates: “That lineup would go 82-0.” It is almost never meant literally. It is a way of saying a roster has no weakness worth naming — and the whole point of this site is to put that claim to the test."
           ]
         },
         {
-          "h2": "What Is 82-0?",
+          "h2": "How Close Has a Real Team Come?",
           "paragraphs": [
-            "The 82-0 challenge is a team building game born from that debate. The premise: you draft a five-player lineup of real basketball legends, but you don't get free choice — every pick comes from a randomly drawn team and decade. Chicago in the 1990s. Boston in the 1960s. Denver in the 2020s. From each draw you pick one player, place him at a court position he actually played, and after five picks your roster faces the question: would this team go 82-0?",
-            "The format rewards equal parts strategy and luck. Sometimes the slot machine hands you a dynasty; sometimes you are choosing between role players in round five with no skips left, and your perfect season dies on the spot. Every run is a new argument."
+            "The best regular season in NBA history belongs to the 2015-16 Golden State Warriors, who went 73-9 — and even they opened with a record 24 straight wins before losing. The 1995-96 Chicago Bulls went 72-10 and won the title. The 1971-72 Los Angeles Lakers won 33 games in a row, still the longest winning streak in major American pro sports, and finished 69-13. The 2012-13 Miami Heat ran off 27 straight.",
+            "Notice the pattern: the greatest teams ever assembled, at their absolute peak, still lost nine or more games. The 73-9 Warriors dropped games to lottery teams on the second night of back-to-backs. An 82-0 season would need everything those teams had, plus six months of uninterrupted health and better luck than any team has ever received."
           ]
         },
         {
-          "h2": "How Does the 82-0 Game Work Here?",
+          "h2": "The Math of a Perfect Season",
           "paragraphs": [
-            "Our version of the 82-0 challenge game runs entirely in your browser. Five rounds, one pick per round, one team skip and one era skip. Every player carries his real historical stat line — points, rebounds, assists, steals, and blocks per game — era-adjusted by the simulation engine, because 30 points in the 1960s is not 30 points in the 2020s. When your lineup is complete, the engine runs your aggregate totals through a non-linear win curve and projects a final record between 0-82 and 82-0. No download, no sign-up — and if you want a real test, Blind Draft mode hides the stats and makes you draft from memory."
+            "The arithmetic is what kills it. Suppose a team is so dominant it wins any given game 95% of the time — a level no real team has sustained. The chance of doing that 82 times in a row is 0.95 to the 82nd power: about 1.5%. Even a fantasy team that wins each game 99% of the time completes the perfect season less than half the time. Eighty-two is simply a brutal number of coin flips to sweep.",
+            "That is why the simulation on this site treats 82-0 the way reality would: a lineup must max out every statistical category to even become eligible, and then still has to survive a final luck roll. Perfect rosters lose sometimes. That is the game."
           ]
         },
         {
-          "h2": "Why 82-0 Is So Hard",
+          "h2": "From Thought Experiment to Game",
           "paragraphs": [
-            "Basketball arguments used to end in 'agree to disagree'. The 82-0 format gives them a scoreboard. Players share their projected records — 78-4, 80-2, the rare perfect 82-0 — and friends immediately try to beat them. It is a two-minute game with infinite replayability, built on top of a debate fans have been having for decades: which five players, across all of history, make the unbeatable team?"
+            "The 82-0 Challenge turns the debate into something playable. Five rounds of random team-and-era draws, one pick per round, and a season simulation at the end that grades your five across points, rebounds, assists, steals, and blocks — with every stat era-adjusted so a 1960s big man and a 2020s guard are judged on the same scale. Most runs end somewhere in the 60s or 70s. A genuine 82-0 is rare enough that people share screenshots.",
+            "If you want to understand exactly how the engine projects wins, read How It's Calculated. If you want to argue about whether any five could do it, the Can You Go 82-0 page walks through the strategy. And if you would rather skip the randomness and hand-pick a dream team, the free-pick Lineup Builder simulates any five you like."
           ]
         }
       ]
@@ -388,19 +385,59 @@
       "title": "82-0 Daily Challenge — Same Spins, One Attempt",
       "description": "Play today's 82-0 daily challenge. Everyone in the world gets the same team and era spins, with one attempt per day. Build your best lineup and share your record.",
       "h1": "82-0 Daily Challenge",
-      "intro": "Same spins for everyone on the planet. One attempt per day. Build your best lineup, get your record, and challenge your friends to beat today's draw."
+      "intro": "Same spins for everyone on the planet. One attempt per day. Build your best lineup, get your record, and challenge your friends to beat today's draw.",
+      "challengeNo": "Daily Challenge #{n}",
+      "sameDraw": "Same draw for every player worldwide",
+      "nextIn": "New challenge in {time}",
+      "sections": [
+        {
+          "h2": "How the Daily Challenge Works",
+          "paragraphs": [
+            "Every day at midnight UTC, a new challenge is generated from the date itself: the five team-and-era draws are derived from a deterministic seed, so a player in Tokyo, a player in Paris, and a player in Chicago all face exactly the same spins in the same order. There are no skips in daily mode — the draw you see is the draw everyone gets — and your finished record can be submitted to the daily leaderboard under any name you choose, no account needed.",
+            "You get one attempt per day, tracked on your device. When you finish, the game shows your record and a share text stamped with today's date, so a friend can open the same challenge and try to beat you on identical terms. At midnight UTC the seed rolls over and challenge number, spins, and leaderboard start fresh."
+          ]
+        },
+        {
+          "h2": "Why Only One Attempt?",
+          "paragraphs": [
+            "In the classic mode you can replay forever, and that is the point — fishing for a dream draw is half the fun. The daily flips that: because everyone gets the same spins, a record is only comparable if everyone also gets the same number of tries. One attempt makes your 61-21 mean something against your friend's 58-24. No retries also changes how it feels to play: every pick is permanent, so the five decisions carry real weight.",
+            "The one-attempt rule lives in your browser rather than behind a login — this site has no accounts. Clearing site data technically resets it, but there is no prize pool here; the only thing at stake is whether your bragging rights are honest."
+          ]
+        },
+        {
+          "h2": "Daily vs. Classic: A Different Skill",
+          "paragraphs": [
+            "Classic rewards patience across many runs — era knowledge, category balance, and knowing when to burn a skip. The daily is a test of adaptation: you cannot reroll a bad franchise or dodge a thin decade, so the skill is squeezing the strongest five out of whatever the date hands you. A weak draw day is the great equalizer — everyone is building from the same scraps, and the leaderboard shows who adapted best.",
+            "Seasoned players treat the two modes differently: in classic they chase the perfect 82-0; in the daily they chase the best possible record for that specific draw, which some days simply is not 82-0. Recognizing the ceiling of a draw — and building to hit it — is its own game."
+          ]
+        },
+        {
+          "h2": "Tips for Today's Draw",
+          "paragraphs": [
+            "Since there are no skips, think a step ahead: before locking your first pick, glance at which positions the candidate pool covers and leave yourself an escape hatch for the positions that are hardest to fill — rim protection and rebounding tend to be the scarcest categories late in a draft. The simulation gates every category, so a lineup of four scorers and no boards will cap out in the sixties no matter how pretty the points column looks.",
+            "Remember that every stat line is era-adjusted: a 1960s rebounding monster is not being flattered by pace — his number is scaled before it enters the engine. Cross-era fives are judged fairly, so draft the player, not the decade."
+          ]
+        }
+      ]
     },
     "unblocked": {
       "title": "Play 82-0 Unblocked — Free Online, No Download",
       "description": "Play the 82-0 Challenge unblocked and free in your browser. No download, no install, no sign-up — works at school or work. Spin, draft legends, chase 82-0.",
       "h1": "82-0 Unblocked — Play Free in Your Browser",
-      "intro": "The 82-0 Challenge runs entirely in your browser, so there is nothing to block. No download, no install, no account — just spin the slot machine, draft your five legends, and chase the perfect 82-0 season. Start playing below.",
+      "intro": "The 82-0 Challenge runs entirely in your browser, so there is nothing to block. No download, no install, no account — just spin the slot machine, draft your five legends, and chase the perfect 82-0 season. Start playing below. No sign-in walls ever interrupt a run, and there is no limit on how many teams you can build.",
       "sections": [
         {
           "h2": "What does ‘82-0 unblocked’ mean?",
           "paragraphs": [
             "When people search for the 82-0 game unblocked, they want a version they can open and play anywhere — at school, at work, or on a locked-down network — without it being blocked or needing a download. This page is exactly that: the full 82-0 Challenge loads instantly as a normal web page. There is no Flash, no plugin, no app store, and no installer for a firewall to flag.",
             "Because the whole game is just a web page, it behaves like any other site. If you can open this page, you can play. Refresh whenever you want a new run — every spin is different."
+          ]
+        },
+        {
+          "h2": "No sign-in walls, no attempt limits",
+          "paragraphs": [
+            "Plenty of browser team-builder games let you start a run and then interrupt it with a sign-up wall — a few picks in, a login box appears, and your lineup is held hostage behind an account. This site never does that. There is no account system at all: you will never be asked to register, verify an email, or log in to see your result, and there is no daily cap on how many runs you can play in the classic modes.",
+            "Every mode is open from the first visit — Classic, Blind Draft, Hard Mode, Salary Cap, Era Mode and the rest. Even the leaderboard works without an account: pick any display name when you submit a great run. The one deliberate exception is the Daily Challenge, which allows a single attempt per day by design, because everyone in the world faces the same draw and one shot keeps that fair."
           ]
         },
         {
@@ -836,22 +873,29 @@
       ]
     },
     "teamBuilder": {
-      "title": "82-0 Team Builder",
-      "description": "Build your all-time basketball lineup with the 82-0 team builder. Slot machine draws, real legends from seven decades, simulated season record. Can you go undefeated?",
-      "h1": "82-0 Team Builder",
-      "intro": "Draft your five. Chase the perfect season. The team builder is right below — good luck.",
+      "title": "Custom Lineup Builder — Pick Any Five NBA Legends, No Random Draws",
+      "description": "Build any all-time five from 420 legends across seven decades — no spins, no luck. Choose a playstyle, simulate a full 82-game season, and settle lineup debates with numbers.",
+      "h1": "Custom Lineup Builder",
+      "intro": "No spins, no luck of the draw — browse the full pool of 420 legends, hand-pick any five, and simulate the season. The tool for settling all-time lineup debates.",
       "sections": [
         {
-          "h2": "About the 82-0 Team Builder",
+          "h2": "How This Differs From the 82-0 Challenge",
           "paragraphs": [
-            "This team builder is the heart of the 82-0 challenge. Every run spins up five random franchise-and-decade combinations spanning seven decades of basketball history — from the 1960s Celtics dynasty to the 2020s champions. Each draw offers the real players from that team and era, carrying their historical per-game stats across five categories, and the lineup you draft is simulated through a full 82-game season.",
-            "Because the draws are random, no two runs are alike. One game you are choosing between legends; the next you are squeezing wins out of role players with no skips left. The team builder rewards smart drafting: era awareness, category balance, position management, and knowing exactly when to burn a skip. Build, simulate, share, repeat — and see how close you can get to the impossible 82-0."
+            "The main 82-0 Challenge deals you random team-and-era combinations, and the skill is drafting well under constraints you didn't choose. This page removes the randomness entirely: every one of the 420 players in the database is available from the first click. Search by name, filter by decade or franchise, and place anyone into any position he actually played.",
+            "Because there is no constraint, lineups built here don't post to the leaderboard — a hand-picked dream team would swamp every ranked run in seconds. Think of this page as the film room and the home page as the game: test a theory here, then see how far the same instincts carry you when the spins decide what you get."
           ]
         },
         {
-          "h2": "What Makes a Winning Lineup?",
+          "h2": "Settle the Classic Debates",
           "paragraphs": [
-            "The engine aggregates five categories — points, rebounds, assists, steals, and blocks — after adjusting every stat line for its era's pace and scoring environment. The win curve is non-linear, so each additional win costs more roster strength than the last, and every category is gated: one glaring hole caps your projected record no matter how strong the rest of the roster is. Draft like a general manager, not a fan."
+            "Could a starting five of prime Jordan, Magic, Bird, Duncan, and Shaq really go 82-0? Does an all-1990s lineup beat an all-2020s lineup once the pace difference is adjusted away? Can any team survive a full season with no true center? These are the arguments this tool was built for — construct both sides and let the simulation answer.",
+            "Every stat line is era-adjusted before it enters the engine, so a 1960s rebounding number doesn't inflate against a modern one. That means cross-era teams are compared on a level floor — the debates stay about the players, not the pace of their decade."
+          ]
+        },
+        {
+          "h2": "How the Simulation Works",
+          "paragraphs": [
+            "The season engine is identical to the main challenge: your five players' era-adjusted totals in points, rebounds, assists, steals, and blocks are measured against a benchmark in each category, combined into a weighted strength score, and pushed through a non-linear win curve where each extra win costs more than the last. One glaring hole caps the projected record no matter how strong the rest of the roster is, and even an elite, balanced five still needs the final luck roll to land the perfect 82-0. See the How It's Calculated page for the full breakdown."
           ]
         }
       ]
@@ -1239,7 +1283,7 @@
     "terms": "Terms of Use",
     "contact": "Contact",
     "community": "Join our Telegram community",
-    "disclaimer": "X-0 Games and its 82-0 Basketball Builder are independent, fan-made projects. They are not affiliated with, endorsed by, or sponsored by 82-0.com, PlayVault, the NBA, or any professional basketball league or team.",
+    "disclaimer": "X-0 Games and its 82-0 Basketball Builder are independent, fan-made projects. They are not affiliated with, endorsed by, or sponsored by 82-0.com, PlayVault, the NBA, or any professional basketball league or team. Player names and historical statistics are presented for informational and game-simulation purposes only.",
     "copyright": "© 2026 X-0 Games",
     "related": "Related guides",
     "leaderboard": "Leaderboard",
@@ -1369,5 +1413,35 @@
     "hardDesc": "Steeper curve. Only the elite survive 82-0.",
     "eraModeDesc": "One legend per decade. Build an all-time team across every era.",
     "lebronDesc": "LeBron is locked in. Draft the four who finish the job."
+  },
+  "tb": {
+    "yourFive": "Your Five",
+    "pickFor": "Pick a {pos}",
+    "teamComplete": "Team complete — run the season!",
+    "searchPlaceholder": "Search {total} legends by name…",
+    "allDecades": "All decades",
+    "allTeams": "All teams",
+    "noMatches": "No players match — loosen the filters.",
+    "showingOf": "Showing top {shown} of {total} — refine your search to see more.",
+    "remove": "Click to remove",
+    "simulate": "Simulate the 82-game season",
+    "resim": "Run the season again",
+    "clear": "Clear team",
+    "sandboxNote": "Free-pick sandbox: results here don't post to the leaderboard. Play the spin challenge on the home page for a ranked run.",
+    "playReal": "Play the real 82-0 Challenge",
+    "teamTotals": "Team totals (per game)",
+    "emptySlot": "Empty — pick a player"
+  },
+  "homeFigures": {
+    "draftAlt": "82-0 Challenge draft screen: the slot machine landed on Dallas 2000s, showing six real player cards with career stats next to an open court",
+    "draftCaption": "Each round the slot machine draws a franchise and decade — here Dallas in the 2000s — and you pick one player from that team's real roster.",
+    "resultAlt": "82-0 Challenge result screen showing a projected 52-30 record, grade B, best pick, weakness, the five drafted players and team stat totals",
+    "resultCaption": "The season simulation grades your five: projected record, best pick, the weakness that cost you games, and era-adjusted team totals.",
+    "setupAlt": "82-0 Challenge setup screen with four playstyle options and a half-court diagram showing the five positions to fill",
+    "setupCaption": "Your playstyle sets the five positions you must fill — Balanced, Small Ball, Twin Towers, or Run & Gun.",
+    "curveAlt": "Line chart: the probability of winning all 82 games rises steeply only near a 100% per-game win rate — 95% per game gives 1.5%, 99% gives 44%",
+    "curveCaption": "Why 82-0 is nearly impossible: even a team that wins 99% of its games sweeps all 82 less than half the time.",
+    "curveX": "Per-game win probability",
+    "curveY": "Chance of 82-0"
   }
 }
