@@ -3,7 +3,8 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import GameMain from '../Components/Game/GameMain';
 import GameWithSidebarAds from '../Components/GameWithSidebarAds';
-import SquadCta from '../Components/SquadCta';
+import SeoSections from '../Components/SeoSections';
+import DailyInfoBar from '../Components/DailyInfoBar';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -28,13 +29,15 @@ export default async function Daily({ params }) {
           </div>
         </section>
 
+        <DailyInfoBar t={page.challengeNo ? t : en} />
+
         <section id="game" className={styles.gameSection}>
           <GameWithSidebarAds>
             <GameMain t={t} initialMode="daily" />
           </GameWithSidebarAds>
         </section>
 
-        <SquadCta t={t} />
+        <SeoSections sections={page.sections || en.pages.daily.sections} />
       </main>
       <Footer t={t} lang={locale} />
     </>
