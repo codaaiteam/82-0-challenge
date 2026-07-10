@@ -69,6 +69,9 @@ const Footer = ({ t, lang = 'en' }) => {
       <div className={styles.copyright}>
         {t?.footer?.copyright || '© 2026 82-0 Challenge'}
       </div>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "8px 16px", width: "100%", padding: "8px 12px", fontSize: "13px", lineHeight: 1.6, opacity: 0.55, boxSizing: "border-box" }}>
+        <a href="https://thefenomenogame.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Fenomeno Game</a>
+      </div>
     </footer>
   );
 };
