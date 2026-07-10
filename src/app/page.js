@@ -6,9 +6,9 @@ import GameMain from './Components/Game/GameMain';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
 import SeoSections from './Components/SeoSections';
 import RelatedLinks from './Components/RelatedLinks';
-import SquadCta from './Components/SquadCta';
 import MoreModes from './Components/MoreModes';
-import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
+import HomeFigure from './Components/HomeFigure';
+import WinCurveChart from './Components/WinCurveChart';
 import en from '@/locales/en.json';
 import { getTranslation } from '@/lib/i18n';
 import { rootMetadata } from '@/lib/pageMeta';
@@ -56,13 +56,32 @@ export default async function Home({ params }) {
         {/* Entry point to the newer 82-0 modes */}
         <MoreModes t={t} prefix={prefix} />
 
-        {/* Adsterra Native Banner — was paused 2026-06 over deceptive
-            "security alert" creatives; re-enabled at owner request 2026-07.
-            Pull it again if those creatives resurface (AdSense runs site-wide). */}
-        <AdsterraNativeBanner />
-
-        {/* SEO content */}
-        <SeoSections sections={t.homeSeo.sections} />
+        {/* SEO content, interleaved with own-product screenshots and an
+            original chart — visual anchors between the text sections. */}
+        <SeoSections sections={t.homeSeo.sections.slice(0, 1)} />
+        <HomeFigure
+          src="/images/game-draft.webp"
+          alt={t.homeFigures?.draftAlt || en.homeFigures.draftAlt}
+          caption={t.homeFigures?.draftCaption || en.homeFigures.draftCaption}
+          width={800} height={694}
+        />
+        <SeoSections sections={t.homeSeo.sections.slice(1, 2)} />
+        <HomeFigure
+          src="/images/game-result.webp"
+          alt={t.homeFigures?.resultAlt || en.homeFigures.resultAlt}
+          caption={t.homeFigures?.resultCaption || en.homeFigures.resultCaption}
+          width={800} height={775}
+        />
+        <SeoSections sections={t.homeSeo.sections.slice(2, 3)} />
+        <WinCurveChart t={t.homeFigures ? t : en} />
+        <SeoSections sections={t.homeSeo.sections.slice(3, 5)} />
+        <HomeFigure
+          src="/images/game-setup.webp"
+          alt={t.homeFigures?.setupAlt || en.homeFigures.setupAlt}
+          caption={t.homeFigures?.setupCaption || en.homeFigures.setupCaption}
+          width={800} height={742}
+        />
+        <SeoSections sections={t.homeSeo.sections.slice(5)} />
 
         {/* Contextual internal links */}
         <RelatedLinks
@@ -89,8 +108,6 @@ export default async function Home({ params }) {
           </div>
         </section>
 
-        {/* C2Story cross-promo */}
-        <SquadCta t={t} />
 
         <script
           type="application/ld+json"
