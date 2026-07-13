@@ -2,7 +2,6 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
 import CookieNotice from './Components/CookieNotice'
-import AdsterraSidebar from './Components/AdsterraSidebar'
 // Social Bar / Mobile Sticky / Popunder 未在 Adsterra 为本域名建位，勿挂载
 // AnnouncementBar(x-0-game.com 导流条)已于 AdSense 复审期间移除——恢复时
 // 需同步把 Header top 调回 36px、mainContent padding-top 调回 92px
@@ -40,12 +39,6 @@ export default function RootLayout({ children, params }) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5451478429268021"
           crossOrigin="anonymous"
         />
-        <aside className="global-ad-rail global-ad-rail-left" aria-label="Advertisement">
-          <AdsterraSidebar />
-        </aside>
-        <aside className="global-ad-rail global-ad-rail-right" aria-label="Advertisement">
-          <AdsterraSidebar />
-        </aside>
         {children}
         <CookieNotice />
         <noscript>
