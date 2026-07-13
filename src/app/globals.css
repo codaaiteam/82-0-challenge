@@ -89,3 +89,26 @@ ul, li {
   h1 { font-size: 1.5rem; }
   h2 { font-size: 1.2rem; }
 }
+
+.global-ad-rail {
+  display: none;
+}
+
+@media (min-width: 1261px) {
+  .global-ad-rail {
+    display: block;
+    position: fixed;
+    top: 96px;
+    z-index: 40;
+    width: 160px;
+    min-height: 600px;
+  }
+
+  .global-ad-rail-left {
+    left: max(16px, calc((100vw - 1220px) / 2));
+  }
+
+  .global-ad-rail-right {
+    right: max(16px, calc((100vw - 1220px) / 2));
+  }
+}
