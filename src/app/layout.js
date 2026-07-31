@@ -46,6 +46,39 @@ export default function RootLayout({ children, params }) {
             This game requires JavaScript. Please enable JavaScript to play.
           </p>
         </noscript>
+        <Script
+          id="clever-core"
+          strategy="afterInteractive"
+          data-cfasync="false"
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function (document, window) {
+                var a, c = document.createElement("script"), f = window.frameElement;
+
+                c.id = "CleverCoreLoader105732";
+                c.src = "https://scripts.cleverwebserver.com/65a68b4330eeef8db374e76657b795fd.js";
+
+                c.async = true;
+                c.type = "text/javascript";
+                c.setAttribute("data-target", window.name || (f && f.getAttribute("id")));
+                c.setAttribute("data-callback", "put-your-callback-function-here");
+                c.setAttribute("data-callback-url-click", "put-your-click-macro-here");
+                c.setAttribute("data-callback-url-view", "put-your-view-macro-here");
+
+                try {
+                  a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+                } catch (e) {
+                  a = false;
+                }
+
+                a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+                a.parentNode.insertBefore(c, a);
+              })(document, window);
+            `,
+          }}
+        />
+        <div className="clever-core-ads-offerwall" />
       </body>
     </html>
   )
