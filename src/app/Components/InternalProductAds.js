@@ -1,13 +1,13 @@
 const products = [
   {
     name: 'VO3 AI',
-    url: 'https://www.vo3ai.com/?utm_source=game_site&utm_medium=internal_ad&utm_campaign=game_network',
+    url: 'https://www.vo3ai.com/tools/football-career-video?utm_source=game_site&utm_medium=internal_ad&utm_campaign=game_network',
     image: '/internal-ads/vo3ai-card.svg',
-    alt: 'VO3 AI - AI video generator',
-    kicker: 'AI video',
-    title: 'Turn a prompt into a short video',
-    copy: 'Fast text-to-video tools for creators.',
-    cta: 'Create video',
+    alt: 'VO3 AI - AI football career video generator',
+    kicker: 'AI sports video',
+    title: 'Create a football career video',
+    copy: 'Make sports highlight-style AI videos.',
+    cta: 'Make video',
     accent: '#a78bfa',
   },
   {
