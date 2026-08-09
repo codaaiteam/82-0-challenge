@@ -13,12 +13,12 @@ const products = [
   {
     name: 'C2Story',
     url: 'https://www.c2story.com/?utm_source=game_site&utm_medium=internal_ad&utm_campaign=game_network',
-    image: '/internal-ads/c2story-card.svg',
-    alt: 'C2Story - AI storybook maker',
-    kicker: 'AI storybook',
-    title: 'Make a personalized storybook',
-    copy: 'Create illustrated stories from simple ideas.',
-    cta: 'Start a story',
+    image: '/internal-ads/c2story-sports-card.jpg',
+    alt: 'C2Story - AI sports comic maker',
+    kicker: 'AI sports comics',
+    title: 'Create your own sports comic',
+    copy: 'Turn match ideas into illustrated comics.',
+    cta: 'Start free',
     accent: '#5eead4',
   },
 ]
