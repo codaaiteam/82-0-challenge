@@ -7,6 +7,7 @@ import CookieNotice from './Components/CookieNotice'
 // 需同步把 Header top 调回 36px、mainContent padding-top 调回 92px
 
 import en from '../locales/en.json'
+import InternalProductAds from './Components/InternalProductAds'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,6 +41,7 @@ export default function RootLayout({ children, params }) {
           crossOrigin="anonymous"
         />
         {children}
+        <InternalProductAds />
         <CookieNotice />
         <noscript>
           <p style={{ padding: '1rem', textAlign: 'center', fontFamily: 'sans-serif' }}>
