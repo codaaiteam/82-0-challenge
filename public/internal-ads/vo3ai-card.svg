@@ -1,17 +1,8 @@
-<svg width="600" height="315" viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VO3 AI Create AI videos in minutes">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset="0.45" stop-color="#5b21b6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
-    <radialGradient id="r" cx="75%" cy="22%" r="60%"><stop stop-color="#f0abfc" stop-opacity="0.75"/><stop offset="1" stop-color="#f0abfc" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="600" height="315" rx="34" fill="url(#g)"/>
-  <rect width="600" height="315" rx="34" fill="url(#r)"/>
-  <circle cx="458" cy="94" r="64" fill="#fff" opacity="0.12"/>
-  <circle cx="500" cy="126" r="22" fill="#fff" opacity="0.22"/>
-  <path d="M82 92h120c20 0 36 16 36 36v59c0 20-16 36-36 36H82c-20 0-36-16-36-36v-59c0-20 16-36 36-36Z" fill="#020617" opacity="0.66"/>
-  <path d="M135 133v49l46-24.5L135 133Z" fill="#a78bfa"/>
-  <text x="282" y="112" fill="#ffffff" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="900">VO3 AI</text>
-  <text x="282" y="156" fill="#e0f2fe" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="800">Create AI videos</text>
-  <text x="282" y="188" fill="#dbeafe" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="600">from ideas in minutes</text>
-  <rect x="282" y="218" width="136" height="42" rx="21" fill="#ffffff"/>
-  <text x="307" y="246" fill="#4c1d95" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="900">Try Free</text>
+<svg width="600" height="315" viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VO3 AI video generator">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#080b18"/><stop offset=".55" stop-color="#25145c"/><stop offset="1" stop-color="#0f766e"/></linearGradient><radialGradient id="glow" cx="76%" cy="20%" r="62%"><stop stop-color="#a78bfa" stop-opacity=".62"/><stop offset="1" stop-color="#a78bfa" stop-opacity="0"/></radialGradient></defs>
+  <rect width="600" height="315" rx="34" fill="url(#bg)"/><rect width="600" height="315" rx="34" fill="url(#glow)"/>
+  <rect x="48" y="54" width="228" height="156" rx="24" fill="#020617" fill-opacity=".68" stroke="#fff" stroke-opacity=".14"/>
+  <path d="M139 108v48l45-24-45-24Z" fill="#c4b5fd"/><rect x="48" y="226" width="156" height="28" rx="14" fill="#fff" fill-opacity=".10"/><rect x="220" y="226" width="54" height="28" rx="14" fill="#fff" fill-opacity=".18"/>
+  <text x="318" y="110" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="50" font-weight="900">VO3 AI</text><text x="320" y="153" fill="#ddd6fe" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="800">AI video generator</text><text x="320" y="187" fill="#cbd5e1" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="600">Prompt → short video</text>
+  <rect x="320" y="218" width="128" height="40" rx="20" fill="#fff"/><text x="345" y="244" fill="#312e81" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="900">Create</text>
 </svg>

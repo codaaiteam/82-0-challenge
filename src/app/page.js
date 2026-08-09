@@ -1,6 +1,7 @@
 import styles from './page.module.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
+import InternalProductAds from './Components/InternalProductAds';
 import QuestionFAQ from './Components/QuestionFAQ';
 import GameMain from './Components/Game/GameMain';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
@@ -94,6 +95,8 @@ export default async function Home({ params }) {
         />
 
         {/* FAQ */}
+        <InternalProductAds />
+
         <section id="faq" className={styles.faqSection}>
           <div className={styles.container}>
             <h2 className={styles.sectionTitle}>{t.faq.sectionTitle}</h2>

@@ -1,16 +1,7 @@
-<svg width="600" height="315" viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="C2Story Make personalized storybooks with AI">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062c2c"/><stop offset="0.5" stop-color="#0f766e"/><stop offset="1" stop-color="#f59e0b"/></linearGradient>
-    <radialGradient id="r" cx="68%" cy="18%" r="64%"><stop stop-color="#fef3c7" stop-opacity="0.72"/><stop offset="1" stop-color="#fef3c7" stop-opacity="0"/></radialGradient>
-  </defs>
-  <rect width="600" height="315" rx="34" fill="url(#g)"/>
-  <rect width="600" height="315" rx="34" fill="url(#r)"/>
-  <path d="M62 82c0-17 14-31 31-31h86c25 0 45 20 45 45v128c0 12-10 22-22 22H93c-17 0-31-14-31-31V82Z" fill="#fffbeb" opacity="0.92"/>
-  <path d="M102 92h75M102 126h84M102 160h61" stroke="#0f766e" stroke-width="12" stroke-linecap="round" opacity="0.7"/>
-  <path d="M224 96c0-25-20-45-45-45h-9v195h32c12 0 22-10 22-22V96Z" fill="#fbbf24" opacity="0.95"/>
-  <text x="280" y="112" fill="#ffffff" font-family="Inter,Arial,sans-serif" font-size="50" font-weight="900">C2Story</text>
-  <text x="280" y="156" fill="#ecfeff" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="800">AI storybook maker</text>
-  <text x="280" y="188" fill="#fffbeb" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="650">personal stories for kids</text>
-  <rect x="280" y="218" width="142" height="42" rx="21" fill="#ffffff"/>
-  <text x="304" y="246" fill="#0f766e" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="900">Start Free</text>
+<svg width="600" height="315" viewBox="0 0 600 315" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="C2Story AI storybook maker">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06151c"/><stop offset=".55" stop-color="#0f766e"/><stop offset="1" stop-color="#92400e"/></linearGradient><radialGradient id="glow" cx="72%" cy="18%" r="66%"><stop stop-color="#fde68a" stop-opacity=".58"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient></defs>
+  <rect width="600" height="315" rx="34" fill="url(#bg)"/><rect width="600" height="315" rx="34" fill="url(#glow)"/>
+  <rect x="58" y="58" width="158" height="190" rx="20" fill="#fffbeb" fill-opacity=".94"/><path d="M216 82c0-13-11-24-24-24h-24v190h24c13 0 24-11 24-24V82Z" fill="#fbbf24"/><path d="M94 103h66M94 134h82M94 165h54" stroke="#0f766e" stroke-width="10" stroke-linecap="round" opacity=".62"/>
+  <text x="286" y="110" fill="#fff" font-family="Inter,Arial,sans-serif" font-size="48" font-weight="900">C2Story</text><text x="288" y="153" fill="#ccfbf1" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="800">AI storybook maker</text><text x="288" y="187" fill="#fef3c7" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="650">Ideas → illustrated stories</text>
+  <rect x="288" y="218" width="134" height="40" rx="20" fill="#fff"/><text x="313" y="244" fill="#0f766e" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="900">Start</text>
 </svg>
