@@ -7,7 +7,7 @@ const AD_KEY = '981333c41e4196364e4f599f02a6988d';
 export default function AdsterraSidebar() {
   const iframeRef = useRef(null);
   const loaded = useRef(false);
-  const adsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === '1';
+  const adsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED !== '0';
 
   useEffect(() => {
     if (!adsEnabled || !iframeRef.current || loaded.current) return;

@@ -6,7 +6,7 @@ export default function AdsterraBanner300x250() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    if (process.env.NEXT_PUBLIC_ADS_ENABLED !== '1') return;
+    if (process.env.NEXT_PUBLIC_ADS_ENABLED === '0') return;
     if (!containerRef.current) return;
     // Only inject once
     if (containerRef.current.querySelector('script')) return;
@@ -30,7 +30,7 @@ export default function AdsterraBanner300x250() {
     containerRef.current.appendChild(invokeScript);
   }, []);
 
-  if (process.env.NEXT_PUBLIC_ADS_ENABLED !== '1') return null;
+  if (process.env.NEXT_PUBLIC_ADS_ENABLED === '0') return null;
 
   return (
     <div ref={containerRef} style={{ display: 'flex', justifyContent: 'center', margin: '1rem 0' }} />

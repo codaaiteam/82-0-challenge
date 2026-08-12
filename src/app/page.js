@@ -2,6 +2,8 @@ import styles from './page.module.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import InternalProductAds from './Components/InternalProductAds';
+import AdsterraBanner300x250 from './Components/AdsterraBanner300x250';
+import AdsterraNativeBanner from './Components/AdsterraNativeBanner';
 import QuestionFAQ from './Components/QuestionFAQ';
 import GameMain from './Components/Game/GameMain';
 import GameWithSidebarAds from './Components/GameWithSidebarAds';
@@ -54,6 +56,10 @@ export default async function Home({ params }) {
           </GameWithSidebarAds>
         </section>
 
+        <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem 0' }}>
+          <AdsterraBanner300x250 />
+        </div>
+
         {/* Entry point to the newer 82-0 modes */}
         <MoreModes t={t} prefix={prefix} />
 
@@ -95,6 +101,8 @@ export default async function Home({ params }) {
         />
 
         {/* FAQ */}
+        <AdsterraNativeBanner />
+
         <InternalProductAds />
 
         <section id="faq" className={styles.faqSection}>

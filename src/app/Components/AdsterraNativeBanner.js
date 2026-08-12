@@ -3,7 +3,7 @@
 import Script from 'next/script';
 
 export default function AdsterraNativeBanner() {
-  if (process.env.NEXT_PUBLIC_ADS_ENABLED !== '1') return null;
+  if (process.env.NEXT_PUBLIC_ADS_ENABLED === '0') return null;
   return (
     <>
       <Script
