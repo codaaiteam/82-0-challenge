@@ -53,7 +53,8 @@
       "priority": 1,
       "provenance": "Google Trends Worldwide 2026-09-10→09-17 (trends-rising / trends-top-2026-09-17.csv). 4 variants, combined search interest 44. The site has /20-0 but nothing answering the literal 'nfl 82-0' phrasing.",
       "filter_id": "classic",
-      "status": "pending"
+      "status": "done",
+      "created": "2026-09-17"
     },
     {
       "id": 4,

@@ -1317,6 +1317,37 @@
           ]
         }
       ]
+    },
+    "nflMode": {
+      "title": "82-0 NFL: The Perfect Season, Football Version",
+      "description": "82-0 is basketball's perfect season; football's version is 17-0. Here is what 82-0 NFL means, how close the NFL has come, and where to play both.",
+      "h1": "82-0 NFL",
+      "intro": "82-0 is a basketball line — 82 regular-season games, none of them lost. Football does not play 82, so searching 82-0 NFL usually means one of two things: what the football equivalent of a perfect season actually is, or where to play the NFL version of the draft game. Both answers are below, and the basketball original is playable on this page.",
+      "sections": [
+        {
+          "h2": "Why the NFL's 82-0 is really 17-0",
+          "paragraphs": [
+            "The NFL has played a 17-game regular season since 2021. Before that it was 16 games, and before 1978 it was 14. So the football version of 82-0 is 17-0 — every Sunday won, none dropped. Add the three playoff rounds a top seed plays on the way to the Super Bowl and the full perfect run becomes 20-0, which is the number the football challenge is usually named after.",
+            "The 82 comes from basketball: an NBA regular season is 82 games, and the NHL happens to play 82 as well. MLB plays 162 and the Premier League 38. The number moves with the sport, but the idea behind it does not — a whole season, start to finish, without a single loss."
+          ]
+        },
+        {
+          "h2": "How close an NFL team has actually come",
+          "paragraphs": [
+            "It has happened once, under a shorter schedule. The 1972 Miami Dolphins won all 14 of their regular-season games and then kept winning through the playoffs, finishing 17-0 with Super Bowl VII — still the only unbeaten, untied season in NFL history.",
+            "The modern near-miss belongs to the 2007 New England Patriots, who went 16-0 through what was then a 16-game regular season and then lost Super Bowl XLII, ending 18-1. Since the league moved to 17 games, nobody has finished the regular season unbeaten. That is what makes 17-0 the argument football fans keep having, the same way basketball fans keep having the 82-0 one.",
+            "Streaks are the closest anyone gets. The Patriots won 21 straight games across the 2003 and 2004 seasons, and the Colts won 23 regular-season games in a row spanning 2008 and 2009 — both longer than a single 17-game slate, and neither one contained inside a single unbeaten year. Perfection is not about the peak; it is about not having one bad week in a sport where one bad week is normal."
+          ]
+        },
+        {
+          "h2": "Playing the 82-0 challenge",
+          "paragraphs": [
+            "This page runs the basketball version. You draft five players from across NBA history and the engine plays out all 82 games. Every pick moves the odds — a lineup of pure scorers gets punished on the nights it cannot get a stop, and a five built around defence has to survive the games it cannot score its way out of. No NBA team has ever gone 82-0 either; the record is 73-9, set by the 2015-16 Warriors, just ahead of the 1995-96 Bulls at 72-10.",
+            "The longer schedule cuts both ways. Basketball gives you eighty-two chances to slip instead of seventeen, which sounds far harder, but a single NFL Sunday carries much more weight — an upset there is a tenth of the season gone. The 1971-72 Lakers won 33 straight games inside a 69-13 season, the longest streak the sport has, and still finished thirteen losses short of perfect.",
+            "If you would rather stay with football, the site has both NFL formats: 20-0 for a full perfect run ending in the Super Bowl, and 17-0 for the regular season on its own. There is also a page covering how the number changes sport by sport, from the Premier League's 38-0 to baseball's 162-0."
+          ]
+        }
+      ]
     }
   },
   "cta": {

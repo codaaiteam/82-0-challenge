@@ -1,7 +1,6 @@
 ---
 name: next-seo-page
 description: Build the pending SEO pages for 82-0-challenge.com from the keyword queue. Runs WEEKLY and builds the whole pending batch in one go, not one page per run.
-disable-model-invocation: true
 allowed-tools: Read, Write, Edit, Bash, Glob, Grep
 ---
 
