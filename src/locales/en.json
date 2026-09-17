@@ -1259,6 +1259,64 @@
           ]
         }
       ]
+    },
+    "nbaMode": {
+      "title": "82-0 NBA: The Perfect NBA Season Game",
+      "description": "82-0 is an NBA number — 82 regular-season games, zero losses. Draft a five that could run the table and see how close the best real NBA teams ever came.",
+      "h1": "82-0 NBA",
+      "intro": "82-0 is the NBA's impossible line: all 82 regular-season games, none lost. No team has ever done it. Build a five you think could, and the game grades the run against how the league actually behaves.",
+      "sections": [
+        {
+          "h2": "Why 82-0 is an NBA number",
+          "paragraphs": [
+            "An NBA regular season is 82 games, so a perfect season is 82-0. Other leagues have their own version — the Premier League plays 38, the NFL 17, MLB 162 — but 82-0 is the one people say out loud, because basketball is the sport where a handful of players can carry a whole season, which makes 'could this five go undefeated?' an argument worth having.",
+            "It has never happened. The closest anyone came was the 1995-96 Chicago Bulls at 72-10, then the 2015-16 Golden State Warriors at 73-9 — and the Warriors lost the Finals that year, which is part of why the number still gets argued about."
+          ]
+        },
+        {
+          "h2": "How close has an NBA team actually come?",
+          "paragraphs": [
+            "73-9 is the record. Before that it was 72-10, a mark that stood for twenty years. Go back further and the 1971-72 Lakers won 33 straight inside a 69-13 season — the longest winning streak in the sport, and still nine losses short of perfect.",
+            "The gap between 73 wins and 82 sounds small until you remember those nine have to come out of back-to-backs, road trips, injuries, and nights when somebody's bench guard cannot miss. That gap is what this game is about."
+          ]
+        },
+        {
+          "h2": "Playing the NBA version",
+          "paragraphs": [
+            "You draft five players from across NBA history and the game runs the season. Every pick moves the odds — a lineup stacked with scorers gets punished on the nights it cannot get a stop, and a lineup built for defence has to survive the games it cannot score its way out of.",
+            "If you want constraints, there are modes for them: one franchise only, one decade only, no MVPs on the roster, or a cross-era draft where every pick has to come from a different decade."
+          ]
+        }
+      ]
+    },
+    "vsWordle": {
+      "title": "82-0 vs Wordle: Two Daily Games, Two Kinds of Hard",
+      "description": "Wordle gives everyone the same word once a day. 82-0 gives you a draft and a season to survive. Here is how the two daily games differ, and how to play 82-0 if Wordle is your habit.",
+      "h1": "82-0 vs Wordle",
+      "intro": "Both are daily games you can finish in a few minutes and argue about afterwards. They are hard in completely different ways — one is a deduction puzzle with a single right answer, the other is a gamble you cannot fully control.",
+      "sections": [
+        {
+          "h2": "The same puzzle vs your own puzzle",
+          "paragraphs": [
+            "Wordle's whole social contract is that everyone gets the identical word, so comparing scores means something. 82-0's daily run hands everyone the same starting conditions too, but what happens next depends on the five you draft — two people can make completely different teams from the same prompt and both be defensible.",
+            "That changes what sharing a result means. A Wordle 3/6 is straightforwardly better than a 5/6. An 82-0 run is more like a hand of cards you chose to play a certain way."
+          ]
+        },
+        {
+          "h2": "Deduction vs risk",
+          "paragraphs": [
+            "Wordle rewards narrowing. Every guess removes possibilities, and a good player is mostly managing information. Nothing is random once the word is set — if you lose, you misplayed.",
+            "82-0 rewards judgement under uncertainty. You are picking players whose real careers had good and bad nights, and the season simulates those nights. A perfect draft can still drop a game. That is the point: 82-0 has never happened in real life either."
+          ]
+        },
+        {
+          "h2": "If Wordle is your daily habit",
+          "paragraphs": [
+            "Play the daily run first — it is the closest thing here to Wordle's one-shot format, and it takes about the same few minutes. Come back tomorrow for a different set of conditions.",
+            "If you want the deduction feeling instead of the gamble, One Franchise mode narrows the pool to a single team's history, which makes the draft much more about knowing the roster and much less about luck."
+          ]
+        }
+      ]
     }
   },
   "cta": {

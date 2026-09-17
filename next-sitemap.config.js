@@ -2,7 +2,34 @@
 const languages = ['en', 'zh', 'ja', 'ko', 'es', 'fr', 'de', 'pt'];
 const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.82-0-challenge.com';
 
-const contentPages = [
+// Content pages are discovered from src/app/ rather than hand-listed, so a page
+// cannot be shipped and then silently left out of the sitemap. Anything with a
+// page.js under src/app/<slug>/ counts, minus the app/utility routes below.
+const fs = require('fs');
+const path = require('path');
+
+const NON_CONTENT = new Set([
+  'Components', 'api', '[lang]', 'about', 'privacy', 'terms',
+  'leaderboard', 'share',
+]);
+
+function discoverContentPages() {
+  const appDir = path.join(__dirname, 'src', 'app');
+  let found = [];
+  try {
+    found = fs.readdirSync(appDir, { withFileTypes: true })
+      .filter(e => e.isDirectory() && !NON_CONTENT.has(e.name) && !e.name.startsWith('['))
+      .filter(e => fs.existsSync(path.join(appDir, e.name, 'page.js')))
+      .map(e => `/${e.name}`);
+  } catch (err) {
+    console.warn('[next-sitemap] could not scan src/app, falling back to the static list:', err.message);
+  }
+  // Union with the hand-written list so nothing that used to be in the sitemap
+  // can drop out if the scan misses something.
+  return Array.from(new Set([...found, ...LEGACY_CONTENT_PAGES])).sort();
+}
+
+const LEGACY_CONTENT_PAGES = [
   '/82-0',
   '/82-0-cap-mode',
   '/82-0-filter',
@@ -27,6 +54,8 @@ const contentPages = [
   '/162-0',
   '/daily',
 ];
+
+const contentPages = discoverContentPages();
 
 const staticPages = [
   '/privacy',
