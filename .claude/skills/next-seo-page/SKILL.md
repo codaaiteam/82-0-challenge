@@ -46,17 +46,35 @@ Everything in the current queue reuses `classic`.
 Read `src/data/seo/page-queue.json`. If there are no `pending` entries, stop and
 say so — do not invent keywords.
 
-If asked to refresh the queue first: rebuild it from the newest
-`product-dofollow-files/82-0-challenge/trends-*-YYYY-MM-DD.csv`. **If no export
-is newer than the one the queue was last built from, STOP and build nothing.**
-No new data means no new signal, and inventing keywords is how a queue fills up
-with pages nobody searches for.
+If asked to refresh the queue first, rebuild from the newest export under
+`/Users/mila/clawd-personal/trends-keywords/82-0/<YYYY-MM-DD_to_YYYY-MM-DD>/`,
+written by the downloader every Monday at 09:00.
 
-When rebuilding, collapse word-order variants into one intent. "82-0 nba",
-"nba 82-0", "82-0 game nba" and "82-0 nba game" are one page. Also drop bare
-co-search terms with no "82-0" in them — Trends returns `wordle`, `retro bowl`,
-`cool math games` because the same people search those, not because this site
-can rank for them.
+**If no export there is newer than the one the queue was last built from, STOP
+and build nothing.** No new data means no new signal, and inventing keywords to
+fill a queue is how four other sites ended up with 166 pages that all had to be
+skipped by hand.
+
+**Export format** — three files per run, CSVs with 11 columns:
+
+| column | meaning |
+|---|---|
+| `query` | the search term |
+| `heat` | relative interest 0-100 in `top_queries.csv`; empty in rising |
+| `heat_or_breakout` | `Breakout` or a percentage, rising only |
+| `value` | numeric heat in top; the rising multiplier in rising |
+| `direction` | `top` or `rising` |
+
+`top_queries.csv` is what already has volume. `rising_queries.csv` is what is
+climbing, and `Breakout` there means the term had almost no history a week ago —
+cheapest to rank for and the most perishable, so prioritise those.
+`summary.md` is a ready-made Chinese digest of both; read it to orient, then
+work from the CSVs.
+
+When rebuilding, collapse word-order variants into one intent — "82-0 nba", "nba 82-0" and "82-0 game nba" are one page.
+Drop bare co-search terms that do not contain "82-0": Trends returns things like
+wordle, retro bowl, cool math games because the same people search them, not because this
+site can rank for them.
 
 ### Step 2: For each pending entry, in file order
 
@@ -132,4 +150,4 @@ locale files as part of this job; that is a separate pass.
 - Game variants: `src/lib/engine` (`FILTERS`)
 - Metadata helpers: `src/lib/pageMeta.js`
 - Auto-derived, do not hand-edit: `next-sitemap.config.js`
-- Keyword exports: `/Users/mila/code/product-dofollow-files/82-0-challenge/`
+- Keyword exports: `/Users/mila/clawd-personal/trends-keywords/82-0/` (Mondays 09:00)
