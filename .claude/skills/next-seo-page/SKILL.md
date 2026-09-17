@@ -104,10 +104,15 @@ change the import, component name, localeKey and path.
 ### Step 3: Once, after the whole batch
 
 ```bash
-cd /Users/mila/Code/82-0-challenge && npx next build && npx next-sitemap
+cd /Users/mila/Code/82-0-challenge && npx next build
 ```
 
-The build must pass. `next-sitemap.config.js` scans `src/app` for directories
+The build must pass. `package.json` has a `postbuild` hook that runs
+`next-sitemap` automatically, so do NOT invoke it separately — in this shell
+`npx next-sitemap` gets rewritten to `npm run next-sitemap`, which does not
+exist and fails.
+
+`next-sitemap.config.js` scans `src/app` for directories
 containing a `page.js`, so new pages enter the sitemap automatically — **do not
 hand-edit that config**. Confirm the URL count grew by 8 per page.
 
