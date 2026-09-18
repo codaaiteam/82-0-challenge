@@ -40,19 +40,24 @@ Everything in the current queue reuses `classic`.
 
 ## Workflow
 
-### Step 1: Check the queue is fresh
+### Step 1: Decide what to do
 
-Read `src/data/seo/page-queue.json`. If there are no `pending` entries, stop and
-say so — do not invent keywords.
+Two separate decisions. Do not let one block the other.
 
-If asked to refresh the queue first, rebuild from the newest export under
-`/Users/mila/clawd-personal/trends-keywords/82-0/<YYYY-MM-DD_to_YYYY-MM-DD>/`,
-written by the downloader every Monday at 09:00.
+**A. Build the existing queue — always.** Read `src/data/seo/page-queue.json`
+and build every `pending` entry. Those entries already carry their own
+provenance from a previous export; stale keyword data is no reason to leave a
+justified page unbuilt. If there are no pending entries, say so and go to B.
 
-**If no export there is newer than the one the queue was last built from, STOP
-and build nothing.** No new data means no new signal, and inventing keywords to
-fill a queue is how four other sites ended up with 166 pages that all had to be
-skipped by hand.
+**B. Refresh the queue — only with new data.** If the newest export under
+`/Users/mila/clawd-personal/trends-keywords/<term>/<YYYY-MM-DD_to_YYYY-MM-DD>/`
+is NOT newer than the one the queue was last built from, **add nothing** and say
+so. No new data means no new signal, and inventing keywords to fill a queue is
+how four other sites ended up with 166 pages that all had to be skipped by hand.
+
+So a run with a stale export and a non-empty queue still builds the queue. A run
+with a stale export and an empty queue correctly does nothing. Only a genuinely
+new export adds entries.
 
 **Export format** — three files per run, CSVs with 11 columns:
 

@@ -1348,6 +1348,296 @@
           ]
         }
       ]
+    },
+    "footballMode": {
+      "title": "82-0 Football: Which Football, and What It Becomes",
+      "description": "Searching 82-0 football? For the NFL the perfect season is 17-0; for soccer it is 38-0. Here is what each number means, plus the basketball original to play.",
+      "h1": "82-0 Football",
+      "intro": "82-0 is a basketball line — 82 regular-season games, none of them lost. Football does not play 82 games in any of its codes, so \"football 82-0\" is really two questions depending on which football you mean. Both answers are below, and the basketball original is playable on this page.",
+      "sections": [
+        {
+          "h2": "Which football are you asking about?",
+          "paragraphs": [
+            "If football means the NFL, the regular season is 17 games, so the perfect version is 17-0. Add the three playoff rounds a top seed plays to reach the Super Bowl and the full unbeaten run becomes 20-0. If football means soccer, a Premier League season is 38 games, so the perfect season there is 38-0. Neither league plays 82.",
+            "The 82 comes from basketball. An NBA regular season is 82 games, and the NHL happens to play 82 as well, which is why 82-0 became the shorthand for a flawless season even among people who do not watch basketball. MLB plays 162. The number moves with the sport; the idea behind it does not.",
+            "There is a third football as well. Australian rules and rugby league both get called football by their supporters, and neither plays anything close to 82 games. The point is general: season length is a scheduling accident, so the perfect-season number is different everywhere and only the shape of the achievement carries across."
+          ]
+        },
+        {
+          "h2": "How close each football has come",
+          "paragraphs": [
+            "The NFL has produced exactly one unbeaten, untied season: the 1972 Miami Dolphins, who won all 14 regular-season games under the shorter schedule and kept going through the playoffs to finish 17-0 with Super Bowl VII. The modern near-miss is the 2007 New England Patriots, 16-0 through what was then a 16-game regular season before losing Super Bowl XLII to end 18-1.",
+            "Soccer's version is harder in a way the scoreline hides, because a draw is not a win. Arsenal's 2003-04 Invincibles went the entire Premier League season without losing and still finished 26-12-0 — twelve draws short of a perfect 38-0. Going unbeaten and going perfect are different achievements, and only one of them has ever been done.",
+            "Schedule length also flatters the comparison. Seventeen chances to slip is far fewer than eighty-two, so an NFL perfect season sounds more reachable — but each Sunday carries a tenth of the year, and a single upset ends it outright. A longer season gives you more ways to fail and more room to recover, and which is harder is genuinely arguable."
+          ]
+        },
+        {
+          "h2": "Playing the 82-0 version here",
+          "paragraphs": [
+            "This page runs the basketball game. You draft five players from across NBA history and the engine plays out all 82 games, with every pick moving the odds — a five of pure scorers gets punished on the nights it cannot get a stop, and a defensive five has to survive the games it cannot score its way out of.",
+            "No NBA team has gone 82-0 either. The record is 73-9, set by the 2015-16 Golden State Warriors, just ahead of the 1995-96 Chicago Bulls at 72-10; the 1971-72 Lakers won 33 straight inside a 69-13 season and still finished thirteen losses short. If you would rather play your own football, the site has the NFL formats at 20-0 and 17-0 and the Premier League at 38-0.",
+            "Both football versions are one click away if the basketball draft is not what you came for. The 20-0 Challenge covers a full NFL run through the Super Bowl, 17-0 covers the regular season on its own, and 38-0 is the Premier League edition. There is also a page walking through how the number changes sport by sport."
+          ]
+        }
+      ]
+    },
+    "basketballMode": {
+      "title": "82-0 Basketball: The Perfect Season Game",
+      "description": "82-0 basketball means 82 wins and zero losses across a full NBA season. Draft five players from any era and find out whether your five could actually do it.",
+      "h1": "82-0 Basketball",
+      "intro": "82-0 is basketball's number, and it has never been reached. An NBA regular season is 82 games, so a perfect one reads 82-0 — every night won, from October to April. Draft a five and the game plays the season out to see how close you get.",
+      "sections": [
+        {
+          "h2": "Why 82 is the basketball number",
+          "paragraphs": [
+            "The NBA has played an 82-game regular season since 1967-68, which is where the 82 comes from. Basketball is also the sport where a handful of players can carry an entire season, so \"could this five go undefeated?\" is an argument that actually goes somewhere — unlike in sports where the roster is far too large for any five names to decide it.",
+            "Other leagues have their own version of the same idea. The Premier League plays 38, the NFL 17, MLB 162, and the NHL also plays 82 — a coincidence that makes hockey the one other sport where the literal phrase 82-0 is correct. But 82-0 is the one people say out loud, and it is a basketball phrase.",
+            "Before 1967-68 the schedule was shorter and moved around as the league added teams, so the phrase would have been a different number entirely had it caught on earlier. 82 has now been stable for more than half a century, long enough that the figure reads as basketball itself rather than as a scheduling decision that happened to stick."
+          ]
+        },
+        {
+          "h2": "The closest basketball has come",
+          "paragraphs": [
+            "73-9 is the record, set by the 2015-16 Golden State Warriors, who broke a mark that had stood for twenty years: the 1995-96 Chicago Bulls at 72-10. The Warriors then lost the Finals that season, which is a large part of why the number is still argued about rather than settled.",
+            "Streaks get closer than seasons do. The 1971-72 Los Angeles Lakers won 33 consecutive games, the longest run in the sport's history, and still finished 69-13 — thirteen losses short of perfect. Nine losses sounds like very little until you account for back-to-backs, road trips, injuries, and the nights an opposing bench guard cannot miss.",
+            "What both record seasons had in common was depth rather than a single peak. Neither the Bulls nor the Warriors needed one player available every night, and that is the quality the simulation is hardest on — a five that needs everything to go right will find, somewhere in 82 games, that it did not."
+          ]
+        },
+        {
+          "h2": "Drafting a five that could go 82-0",
+          "paragraphs": [
+            "You draft five players from across NBA history, and the simulation grades them against how the league actually behaves rather than against their best games. Balance matters more than raw scoring: a lineup with no rim protection bleeds the close games, and a lineup with no shot creation loses the nights the offence stalls.",
+            "Eras matter too. A dominant 1960s centre and a modern stretch four solve different problems, and the cross-era draft in Era Mode forces you to take one legend per decade, which is a very different puzzle from stacking a single peak. Start with the classic draft on this page, then try the harder variants once 82-0 stops feeling impossible.",
+            "The draft is also where most runs are quietly decided. Once the five are locked there is no in-season management, no trades and no rotation to adjust, so every weakness you accepted at the draft screen gets tested repeatedly. Play a few runs and the pattern becomes obvious: the rosters that get close are rarely the ones that looked most exciting."
+          ]
+        }
+      ]
+    },
+    "betterTeam": {
+      "title": "Building a Better 82-0 Team: Draft Strategy",
+      "description": "How to build a better 82-0 team: what actually moves the simulation, which picks are overrated, and the balance that survives all 82 games instead of 70.",
+      "h1": "What Actually Makes an 82-0 Roster Better",
+      "intro": "Most losing runs are not unlucky, they are unbalanced. Five great players is not the same thing as a great five, and the season is long enough that whatever your lineup cannot do will eventually be the thing that decides a game. Here is what actually moves the result.",
+      "sections": [
+        {
+          "h2": "Balance beats star power",
+          "paragraphs": [
+            "The instinct is to draft the five best players available and assume the rest sorts itself out. Over 82 games it does not. A roster of pure scorers puts up enormous numbers and still drops the nights the shots do not fall, because it has no second way to win a game — and the simulation is built on how teams actually behave, so a team with one mode of winning loses whenever that mode is unavailable.",
+            "The practical version of this is to stop drafting for the highlight and start drafting for the bad night. Ask what your five does when the offence is stuck: who gets a stop, who gets to the line, who creates a shot that was not there. A lineup that has an answer loses fewer close games, and close games are where perfect seasons die.",
+            "It helps to think in terms of floor rather than ceiling. The best possible night for your five barely matters, because you only need it once and you will get it anyway. The worst plausible night matters enormously, because across 82 games you will get several of them, and each one is a coin flip you did not have to take."
+          ]
+        },
+        {
+          "h2": "Why the last few losses are the hardest",
+          "paragraphs": [
+            "Getting to 60 wins is much easier than getting to 73, and getting to 73 is much easier than getting to 82. The record is 73-9, set by the 2015-16 Warriors, one better than the 1995-96 Bulls at 72-10. Those nine losses are not all against good teams — they are back-to-backs, road trips, injuries and flat nights, which no amount of talent removes entirely.",
+            "The 1971-72 Lakers are the cleanest illustration. They won 33 straight games, still the longest streak in the sport, and finished 69-13. A team can be untouchable for two months and still lose thirteen times across a full season. So the goal is not a lineup that peaks higher; it is a lineup with no week in which it can be beaten.",
+            "This is also why chasing a record is a different exercise from chasing a good season. Sixty wins forgives a flaw; eighty-two forgives nothing, and the same roster that comfortably wins sixty can be structurally incapable of winning eighty-two no matter how the games fall. Building for perfection means removing weaknesses, not adding strengths."
+          ]
+        },
+        {
+          "h2": "Practical draft habits",
+          "paragraphs": [
+            "Take your rim protection before you think you need it — it is the easiest thing to run out of, and the pool thins faster there than it does at scoring. Spread your shot creation across at least two players so one cold night is not fatal. And do not spend an early pick on a player whose value was tied to a system the rest of your five is not running.",
+            "Then test the roster against a harder frame. Hard Mode raises the difficulty curve on the same draft, No MVPs removes the obvious names and forces you to know the tier below them, and One Franchise limits you to a single team's history, which turns the whole thing into a knowledge problem instead of a talent problem. A five that survives those is a five that was actually built.",
+            "Finally, use the daily run as a control. It hands everybody the same starting conditions, so it is the cleanest way to test whether a habit you have picked up is actually better or merely different — change one thing about how you draft and see whether the record moves."
+          ]
+        }
+      ]
+    },
+    "hockeyMode": {
+      "title": "82-0 Hockey: The NHL Also Plays 82 Games",
+      "description": "82-0 hockey is not a mistake — an NHL season is also 82 games. Here is what a perfect NHL season would mean, how close it has come, and the 82-0 game itself.",
+      "h1": "82-0 Hockey",
+      "intro": "Almost every sport has to convert 82-0 into its own number. Hockey does not. The NHL regular season is also 82 games, which makes 82-0 literally correct for hockey as well as basketball — and it has never happened in either.",
+      "sections": [
+        {
+          "h2": "The coincidence that makes 82-0 work twice",
+          "paragraphs": [
+            "The NHL has played an 82-game regular season since 1995-96, the same length as the NBA's. So when a hockey fan searches 82-0, no translation is needed: 82 games, 82 wins, zero losses, exactly as written. Every other sport needs its number changed — the Premier League to 38, the NFL to 17, MLB to 162.",
+            "Hockey adds a wrinkle basketball does not have, which is that the league spent decades recording ties and now records overtime losses in a separate column. A perfect hockey season is not simply 82-0 the way a basketball one is; it means never losing in regulation, in overtime, or in a shootout, across a schedule as long as the NBA's.",
+            "The NBA and NHL arriving at the same number was not coordinated. Basketball settled on 82 in 1967-68; hockey settled there in 1995-96 after decades of shorter schedules. Two leagues with different histories, different arena economics and different travel demands landed on the same figure, which is why 82-0 is the rare perfect-season phrase that does double duty."
+          ]
+        },
+        {
+          "h2": "How close the NHL has come",
+          "paragraphs": [
+            "The best regular season in NHL history belongs to the 1976-77 Montreal Canadiens, who went 60-8-12 for 132 points — eight losses across the whole year, from a team that then won the Stanley Cup. That is hockey's equivalent of 73-9, and it is still a long way from 82-0.",
+            "The longest unbeaten run belongs to the 1979-80 Philadelphia Flyers, who went 35 games without a loss at 25-0-10. It remains the longest unbeaten streak in major North American professional sport, and it still covers a little under half a season. Nobody has come close to the whole thing.",
+            "Goaltending is the reason hockey's numbers look the way they do. A single hot goalie can steal a game from a clearly better team in a way that has no real basketball equivalent, and that possibility is present in all 82 games. Perfection would need the other team's best night never to arrive, eighty-two times running."
+          ]
+        },
+        {
+          "h2": "Playing 82-0 here",
+          "paragraphs": [
+            "This page runs the basketball version: you draft five players from across NBA history and the engine plays all 82 games, weighting each pick by how those players actually performed rather than by reputation. The NBA has never managed 82-0 either — the record is 73-9 by the 2015-16 Warriors, ahead of the 1995-96 Bulls at 72-10.",
+            "If you want the hockey framing specifically, the site has a dedicated 82-0 NHL page covering the same 82-game season from the hockey side. And if you are here because you like the format rather than the sport, the same game exists at 38-0 for Premier League soccer, 20-0 for a perfect NFL run and 162-0 for a baseball season.",
+            "Either way the underlying idea is the same across every version on the site: real players, a real schedule length, and a simulation that decides whether your picks survive it. Only the sport and the number change."
+          ]
+        }
+      ]
+    },
+    "soccerMode": {
+      "title": "82-0 Soccer: The 38-0 Version Explained",
+      "description": "There is no 82-0 in soccer — a Premier League season is 38 games, so the perfect season is 38-0. Here is what that takes, and why the Invincibles fell short.",
+      "h1": "82-0 Soccer",
+      "intro": "82-0 is a basketball line, and soccer does not play 82 games. A Premier League season is 38, so soccer's version of the perfect season is 38-0 — and it is arguably harder than the basketball original, for one reason basketball never has to deal with.",
+      "sections": [
+        {
+          "h2": "82-0 for soccer is 38-0",
+          "paragraphs": [
+            "The Premier League plays 38 matches, so a flawless season reads 38-0. The 82 comes from basketball, where an NBA regular season is 82 games long; the NHL happens to play 82 as well, MLB plays 162, and the NFL 17. Every sport keeps the idea and changes the number.",
+            "Soccer's problem is the draw. Basketball has no mechanism for finishing level, so every game resolves into a win or a loss and a perfect season only requires winning. In the league system a draw costs two points without anybody losing, which means 38-0 demands something considerably stronger than being unbeaten.",
+            "The 38 is itself a product of league size. Twenty clubs playing each other home and away is 38 matches; a 24-team division is 46, which is why the Championship's perfect season would be a different number again. Basketball's 82 comes from a fixed schedule rather than from league size, so it stays put as teams come and go."
+          ]
+        },
+        {
+          "h2": "The Invincibles went unbeaten and still missed",
+          "paragraphs": [
+            "Arsenal's 2003-04 side went the entire Premier League season without a defeat and finished 26-12-0 — twenty-six wins, twelve draws, no losses. It is the only unbeaten 38-game season in the competition's history and is rightly remembered as the ceiling, and it is still twelve results short of 38-0.",
+            "That gap is the whole argument. Unbeaten is a record soccer has actually produced; perfect is not, and nothing suggests it is coming. Scorelines make the point from the other direction — goals are scarce enough that the biggest margin in Premier League history is 9-0, in a sport where a single goal decides most matches.",
+            "Cup competitions are where soccer gets closest to a clean sweep, simply because there are fewer games to win. A World Cup run from the group stage to the final is seven matches, which is why 7-0 is a number real teams have actually reached — Brazil won all seven on the way to the 2002 title."
+          ]
+        },
+        {
+          "h2": "Where to play each version",
+          "paragraphs": [
+            "This page runs the basketball game: draft five players from NBA history and the engine plays out all 82 games. The NBA has not managed 82-0 either, with the record standing at 73-9 for the 2015-16 Warriors, just past the 1995-96 Bulls at 72-10.",
+            "For the soccer edition, the 38-0 Challenge is the same format built on Premier League clubs and eras — spin a club, draft an XI of real legends and chase the perfect season Arsenal did not quite reach. There is also a 7-0 version for a World Cup run, which is seven matches from the group stage to the final.",
+            "All the versions share the same structure: a random roll for club or era, a draft built on real players, and a season or tournament simulated to a result. Pick the sport you actually argue about and chase its number."
+          ]
+        }
+      ]
+    },
+    "baseballMode2": {
+      "title": "82-0 Baseball: Why It Is Really 162-0",
+      "description": "82-0 baseball does not quite work — an MLB season is 162 games, so the perfect season is 162-0. Here is what that would take, and where to play both versions.",
+      "h1": "82-0 Baseball",
+      "intro": "82-0 belongs to basketball, where the regular season is 82 games. Baseball plays twice that. An MLB regular season is 162 games, so baseball's perfect season is 162-0 — a number so far from anything the sport has produced that it is almost a different kind of question.",
+      "sections": [
+        {
+          "h2": "Baseball's perfect season is 162-0",
+          "paragraphs": [
+            "MLB has played a 162-game schedule since the early 1960s, so the undefeated version reads 162-0. The 82 is basketball's: an NBA season is 82 games, and the NHL plays 82 as well. The Premier League plays 38 and the NFL 17. Baseball simply has the longest schedule of the four, which makes its perfect season the least plausible of all of them.",
+            "Length is only half of it. Baseball is the sport where the best teams lose constantly by design — a rotation means a different starting pitcher every night, and a single hot opposing arm can beat anybody regardless of how the rosters compare. A great baseball team is one that loses sixty times.",
+            "The schedule also runs almost every day for six months, with no equivalent of a basketball team's built-in rest. A baseball club plays series rather than one-offs, so a bad matchup is not one night but three or four in a row — another reason unbeaten stretches in baseball are measured in a dozen games rather than thirty."
+          ]
+        },
+        {
+          "h2": "How close baseball has come",
+          "paragraphs": [
+            "The best record in the sport's history is 116 wins, reached twice: the 1906 Chicago Cubs at 116-36 and the 2001 Seattle Mariners at 116-46 across the longer modern schedule. The Cubs' winning percentage of .763 is the highest ever posted, and it still leaves thirty-six losses on the board.",
+            "Put that next to basketball and the difference is clear. The 2015-16 Warriors lost nine games all year and that was a record; a record-setting baseball team loses four times as many and nobody considers it a flaw. 162-0 is not a target anyone has approached — it is a thought experiment, which is precisely what makes it worth simulating.",
+            "Winning streaks tell the same story. The longest of the modern era is the 2017 Cleveland club's 22 straight, inside a 102-60 season. Twenty-two consecutive wins is extraordinary in baseball and it still covers only about an eighth of the schedule, where basketball's 33-game Lakers streak covered nearly half of one."
+          ]
+        },
+        {
+          "h2": "Playing both versions",
+          "paragraphs": [
+            "This page runs the basketball game. Draft five players from across NBA history and the engine plays all 82 games, judging each pick on how those players actually performed. The record it is measured against is 73-9, set by the 2015-16 Warriors, one win better than the 1995-96 Bulls at 72-10.",
+            "For the baseball edition, the 162-0 Challenge applies the same format to a full MLB season, with the longer schedule and the extra losses that come with it. The site also carries 38-0 for Premier League soccer, 20-0 for a perfect NFL run and 82-0 NHL for hockey's identical 82-game season.",
+            "The contrast is the interesting part. Play a run here and then a run at 162-0 and the difference in how the two sports punish a flawed roster is immediate — basketball concentrates value in five names, while baseball spreads it thin enough that no five could ever carry it."
+          ]
+        }
+      ]
+    },
+    "vsSnake": {
+      "title": "82-0 vs Snake: Two Very Different Time Killers",
+      "description": "Snake is pure reflex with one inevitable ending. 82-0 is a draft you think about once and then watch play out. Here is how the two games actually compare.",
+      "h1": "82-0 vs Snake",
+      "intro": "Both are games you can pick up in seconds and lose in a few minutes, and both are built around the certainty that you will eventually fail. They get there in opposite ways — one through your hands, the other through a decision you already finished making.",
+      "sections": [
+        {
+          "h2": "Reflex vs decision",
+          "paragraphs": [
+            "Snake is a continuous-input game. You are steering constantly, the tail grows behind you, and the failure is always physical: a wrong turn, a moment of hesitation, a wall you did not leave room for. Skill is measured in reaction time and spatial planning, and improvement is largely muscle memory.",
+            "82-0 asks for the opposite. You make five decisions during the draft, and then you have no input at all — the season plays out and your picks either hold up across 82 games or they do not. It is closer to setting a strategy than to playing one, which is why a run can feel decided before it has finished.",
+            "That difference changes what practice does for you. Getting better at Snake is mechanical and steady — your hands learn the board. Getting better at 82-0 means adjusting what you believe about which players fit together, which is slower, harder to feel, and only visible across a lot of runs."
+          ]
+        },
+        {
+          "h2": "Both games are designed to end",
+          "paragraphs": [
+            "Snake cannot really be won. The board is finite, the tail only grows, and a perfect player eventually fills the space and has nowhere left to go; the only real score is how long you delayed it. That inevitability is the point, and it is what keeps the game readable decades after the arcade original.",
+            "82-0 is not strictly unwinnable, but nothing in real basketball has ever done it. The record is 73-9, set by the 2015-16 Warriors, and before that 72-10 by the 1995-96 Bulls. Even the 1971-72 Lakers, who won 33 straight, finished 69-13. Chasing something that has never happened is a different feeling from chasing a high score, but the pull is similar.",
+            "Both games are therefore about the gap rather than the finish. Snake measures how long you held off an ending you could not avoid; 82-0 measures how close you got to something nobody has reached. Neither is really a game you complete, which is exactly why both survive as things people keep reopening."
+          ]
+        },
+        {
+          "h2": "Which one to open",
+          "paragraphs": [
+            "If you want something to do with your hands for four minutes, Snake is the better fit and always will be — it needs no knowledge, no context, and no opinions about basketball. Nothing here competes with that.",
+            "If you want the argument afterwards, 82-0 is the one. The draft gives you something to defend and the result gives somebody else something to disagree with. Start with the daily run, which is the closest thing here to a single-session score, then try Hard Mode once the standard draft stops surprising you.",
+            "If you want something in between, the daily run has Snake's short single-session shape with 82-0's decisions — one draft, one season, a couple of minutes, and a result you can compare with everybody else playing that day."
+          ]
+        }
+      ]
+    },
+    "vsConnections": {
+      "title": "82-0 vs Connections: Grouping vs Drafting",
+      "description": "Connections hides four groups in sixteen words. 82-0 hands you a draft and an 82-game season. Here is how the two daily games differ and which one suits you.",
+      "h1": "82-0 vs Connections",
+      "intro": "Both are daily games with a fixed shape, finished in a few minutes, and both punish confidence. Connections punishes it immediately and visibly; 82-0 takes a whole simulated season to tell you that a pick you liked was wrong.",
+      "sections": [
+        {
+          "h2": "One right answer vs many defensible ones",
+          "paragraphs": [
+            "Connections has a single correct solution. Sixteen words split into four groups of four, the categories deliberately overlap, and the difficulty comes from traps — words that sit comfortably in the wrong group until the right group appears. Every player who solves it ends up at the same grid.",
+            "82-0 has no single correct draft. Two people given identical conditions can build completely different fives and both be reasonable, because the question is not what the answer is but which risks you accept. That makes comparing results murkier and arguing about them much better.",
+            "Both games do share a shape, which is why the comparison comes up at all: a small fixed number of commitments, made under uncertainty, in a single short sitting. Four groups or five players, the interesting part is the same — deciding when you are confident enough to lock something in."
+          ]
+        },
+        {
+          "h2": "Mistakes you can see vs mistakes you find out about",
+          "paragraphs": [
+            "Connections gives you four mistakes and tells you instantly, and the \"one away\" message is the whole emotional design of the game — you learn you were wrong while you can still fix it. The feedback loop is tight enough that you improve inside a single puzzle.",
+            "82-0 withholds everything until the season runs. A lineup with no rim protection looks fine on the draft screen and then quietly loses the close games, and you only learn which flaw mattered once the record comes back. The lesson arrives at the end rather than in the middle, so it takes more runs to internalise.",
+            "The difference shows in how each game teaches. Connections teaches within the puzzle, because the traps are visible once sprung. 82-0 teaches across puzzles, because a single season tells you very little: a good draft can lose and a sloppy one can reach 70 wins. The signal only separates from the noise after several runs."
+          ]
+        },
+        {
+          "h2": "If Connections is your daily habit",
+          "paragraphs": [
+            "Play the daily run first — same commitment, same once-a-day rhythm, and the same starting conditions for everybody, which is the thing that makes a daily game worth comparing scores on.",
+            "If what you actually like is the constraint-solving rather than the deduction, One Franchise mode narrows the pool to a single team's history and One Decade limits you to a single era. Both turn the draft into a knowledge puzzle with a much smaller solution space, which is a good deal closer to what Connections is doing.",
+            "The site also has a direct comparison with Wordle, which is the other daily habit people arrive from. It covers this same ground from the deduction side if that is the part you care about.",
+            "One last practical difference: Connections is over the moment the grid resolves, while an 82-0 run leaves you with a roster you will want to defend. That is the part people come back for — not the record itself, but the argument about whether the five you picked deserved a better one."
+          ]
+        }
+      ]
+    },
+    "vsImmaculateGrid": {
+      "title": "82-0 vs Immaculate Grid: Sports Daily Games",
+      "description": "Immaculate Grid tests what you remember. 82-0 tests what you would build. The two closest sports daily games compared, and which one to play today.",
+      "h1": "82-0 vs Immaculate Grid",
+      "intro": "This is the closest comparison on the site. Both are daily sports games, both run on real players and real careers, and both are shareable in a single line. The difference is what they ask of you: recall, or judgement.",
+      "sections": [
+        {
+          "h2": "Recall vs judgement",
+          "paragraphs": [
+            "Immaculate Grid is a memory and trivia game. Nine cells, each defined by the intersection of two criteria, and you need a player who satisfies both. The difficulty is whether you can retrieve the right name, and the rarity score rewards finding an obscure one rather than the obvious one.",
+            "82-0 does not test whether you can name players — it shows you the pool. It tests what you would do with them: which five you would put together, and whether that five survives a full 82-game season. You can know every player in NBA history and still build a lineup that loses twelve games.",
+            "The two skills are less related than they look. Grid players build a mental index of careers, teams and season ranges; 82-0 players build a sense of how roles fit together. Someone excellent at one can be ordinary at the other, which is the main reason it is worth playing both."
+          ]
+        },
+        {
+          "h2": "A fixed number of guesses vs a simulation",
+          "paragraphs": [
+            "The grid gives you nine picks and no take-backs, so the pressure is front-loaded and every answer is final the moment you commit. It ends when the grid is full, and the result is a straightforward count of how many you filled and how rare they were.",
+            "82-0 ends when the season does. Your five picks are locked in the same way, but the outcome comes from the simulation rather than from you, which means a good draft can still get a bad answer. That is faithful to the subject: no real team has gone 82-0, and the closest anyone came was 73-9 in 2015-16, just past the 1995-96 Bulls at 72-10.",
+            "Scoring works differently too. The grid rewards obscurity, so the optimal play is often the least famous valid answer. 82-0 has no such incentive — the simulation does not care whether anybody else would have picked your five, only whether it holds up across a full season."
+          ]
+        },
+        {
+          "h2": "If you play the grid daily",
+          "paragraphs": [
+            "The daily run is the natural equivalent — one set of conditions per day, the same for everybody, finished in a few minutes. It is the most direct swap for the grid's rhythm.",
+            "For the trivia feeling specifically, try No MVPs, which removes the obvious superstars and forces you into the tier below, or One Franchise, which limits the pool to a single team's history. Both reward exactly the kind of deep-roster knowledge the grid is built on, while still ending in a season rather than a score.",
+            "Both games are ultimately built on the same raw material: real careers, honestly represented. The grid asks you to find them and 82-0 asks you to assemble them, and there is no reason to choose between the two.",
+            "If you want the grid's constraint feeling applied to a whole season rather than a single cell, One Decade is the closest fit on the site: it locks the pool to a single era, so the draft becomes a question of who was actually available at the time rather than who you would pick in the abstract."
+          ]
+        }
+      ]
     }
   },
   "cta": {
