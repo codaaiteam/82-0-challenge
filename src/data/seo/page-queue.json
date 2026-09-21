@@ -190,6 +190,21 @@
       "filter_id": "classic",
       "status": "done",
       "created": "2026-09-17"
+    },
+    {
+      "id": 13,
+      "slug": "82-0-draft",
+      "localeKey": "draftMode",
+      "route": "/82-0-draft",
+      "title": "82-0 Draft",
+      "keywords": "82-0 draft, 82-0 dream team draft",
+      "h1_hint": "The 82-0 draft — five picks, 420 players, one season",
+      "search_interest": 7,
+      "priority": 1,
+      "provenance": "Google Trends Worldwide 2026-09-14→09-21 (top_queries.csv / rising_queries.csv). '82-0 draft' top heat 7 and rising +110%; '82-0 dream team draft' is Breakout — the strongest rising signal in the export and the only genuinely uncovered 82-0 intent. Collapsed into one page. Differentiated from /82-0-better-team (strategy) by covering the draft mechanic and the dream-team framing.",
+      "filter_id": "classic",
+      "status": "done",
+      "created": "2026-09-21"
     }
   ]
 }

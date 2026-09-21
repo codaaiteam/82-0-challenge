@@ -1638,6 +1638,38 @@
           ]
         }
       ]
+    },
+    "draftMode": {
+      "title": "82-0 Draft: Build Your Dream Team Lineup",
+      "description": "The 82-0 draft gives you five picks from 420 NBA legends across seven decades. Build a dream team, simulate all 82 games, and see if it goes undefeated.",
+      "h1": "The 82-0 Draft",
+      "intro": "The 82-0 draft is the whole game: five picks, 420 players spanning seven decades, and one 82-game season to survive. There are no trades afterwards and no rotation to adjust — whatever you assemble at the draft screen is what plays every night. Draft a five below and find out how close it gets.",
+      "sections": [
+        {
+          "h2": "How the 82-0 draft works",
+          "paragraphs": [
+            "The pool holds 420 players, sixty from each decade between the 1960s and the 2020s, and every card carries production from that specific stretch of a career rather than a career average. That distinction matters more than it sounds: drafting a player at his 2013 peak and drafting the same player at a later stop are two different picks with two different ratings.",
+            "You draft five and the slots want different jobs done. The simulation grades a lineup on balance rather than on the sum of its scoring, so a five with no rim protection leaks the close games, and a five with nobody who can create a shot goes cold in the stretches where the offence stalls. A roster of five identical scorers rates worse than a roster with four good players and one specialist.",
+            "Once the fifth pick is locked the season plays out in full. There is no in-season management in the 82-0 challenge, which is why the draft carries all the weight — every compromise you accepted while picking gets tested again and again across 82 games."
+          ]
+        },
+        {
+          "h2": "Drafting a dream team",
+          "paragraphs": [
+            "The phrase comes from 1992, when the United States sent Michael Jordan, Magic Johnson, Larry Bird, Charles Barkley, Scottie Pippen, Patrick Ewing, Karl Malone, John Stockton, David Robinson, Clyde Drexler, Chris Mullin and Christian Laettner to Barcelona. That team went 8-0 and won gold by an average margin of more than forty points a game, and it remains the reference point for what a stacked roster is supposed to look like.",
+            "An 82-0 dream team is a harder assembly problem, because you get five names instead of twelve and the opposition does not get weaker. Olympic blowouts came against national teams; an NBA season is 82 games against professional rosters, on back-to-backs, on the road, with the schedule working against you in exactly the stretches where a thin lineup shows it.",
+            "The cross-era draft is where the dream-team framing gets interesting. A dominant 1960s centre and a modern stretch four solve genuinely different problems, and Era Mode forces one legend per decade rather than letting you stack a single peak — a different puzzle, and usually a more instructive one."
+          ]
+        },
+        {
+          "h2": "What the draft actually decides",
+          "paragraphs": [
+            "No real team has ever gone 82-0. The record is 73-9, set by the 2015-16 Golden State Warriors, who broke the 72-10 mark the 1995-96 Chicago Bulls had held for twenty years. The longest winning streak in league history belongs to the 1971-72 Los Angeles Lakers at 33 straight games, and even that team finished 69-13.",
+            "Nine losses across six months sounds like almost nothing until you count what has to go right to avoid them. Both record-setting teams got there on depth rather than on a single peak — neither needed one particular player available every night — and depth is the quality the simulation is least willing to overlook.",
+            "Play a few drafts and the pattern shows up quickly: the fives that get closest to 82-0 are rarely the ones that looked most exciting on the draft screen. If you want the specifics of which picks move the number and which are overrated, the strategy breakdown goes through them one at a time."
+          ]
+        }
+      ]
     }
   },
   "cta": {
