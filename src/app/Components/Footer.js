@@ -72,6 +72,9 @@ const Footer = ({ t, lang = 'en' }) => {
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "8px 16px", width: "100%", padding: "8px 12px", fontSize: "13px", lineHeight: 1.6, opacity: 0.55, boxSizing: "border-box" }}>
         <a href="https://copero.app/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Copero Game</a>
       </div>
+      <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: "8px 16px", width: "100%", padding: "8px 12px", fontSize: "13px", lineHeight: 1.6, opacity: 0.55, boxSizing: "border-box" }}>
+        <a href="https://jevtypesafeai.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit", textDecoration: "none" }}>Jev TypeSafe AI</a>
+      </div>
 </footer>
   );
 };
