@@ -205,6 +205,37 @@
       "filter_id": "classic",
       "status": "done",
       "created": "2026-09-21"
+    },
+    {
+      "id": 14,
+      "slug": "82-0-team",
+      "localeKey": "teamMode",
+      "route": "/82-0-team",
+      "title": "82-0 Team",
+      "keywords": "82-0 team, 82-0 nba team, perfect 82-0 roster",
+      "h1_hint": "What an 82-0 team actually looks like",
+      "search_interest": 21,
+      "priority": 1,
+      "provenance": "Google Trends Worldwide 2026-09-28→10-05 (top_queries.csv). '82-0 team' heat 16 plus '82-0 nba team' heat 5 — the second-largest 82-0-containing intent in the export after the core '82-0 game'. No existing page targets the bare phrase '82-0 team' in its title or h1. Deliberately differentiated from the three neighbours to avoid cannibalisation: /82-0-better-team is draft tactics (skips, thresholds), /team-builder is the no-randomness tool, /can-you-go-82-0 is feasibility. This page is about roster SHAPE — the five slots, era/position balance, and the real teams that came closest as a benchmark. Cross-links to all three.",
+      "filter_id": "classic",
+      "status": "done",
+      "created": "2026-10-05"
+    },
+    {
+      "id": 15,
+      "slug": "16-0",
+      "localeKey": "sixteenZero",
+      "route": "/16-0",
+      "title": "16-0 Challenge",
+      "keywords": "16-0 nfl game, 16-0, 16-0 challenge, perfect 16 game season",
+      "h1_hint": "16-0 — the perfect season under the NFL’s old 16-game format",
+      "search_interest": 120,
+      "priority": 1,
+      "provenance": "Google Trends Worldwide 2026-09-28→10-05 (rising_queries.csv). '16-0 nfl game' rising +120% and uncovered. 16-0 is the one missing number in this site's perfect-season family (/7-0, /17-0, /20-0, /38-0, /162-0, /82-0). Reuses the existing NflGame component via its already-parameterised `games` prop (default 20, /17-0 passes 17) — no new game logic, no new FILTERS entry, no player data. nflKey='nfl16' falls back to g.nfl inside NflGame when the string bundle is absent.",
+      "filter_id": "nflGame-16",
+      "status": "done",
+      "created": "2026-10-05"
     }
-  ]
+  ],
+  "_last_export_built_from": "2026-09-28_to_2026-10-05"
 }

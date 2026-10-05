@@ -1670,6 +1670,83 @@
           ]
         }
       ]
+    },
+    "teamMode": {
+      "title": "82-0 Team: What a Perfect NBA Roster Looks Like",
+      "description": "What does an 82-0 team look like? The real NBA teams that came closest, the five slots a perfect roster has to fill, and how to draft your own 82-0 team.",
+      "h1": "What an 82-0 Team Actually Looks Like",
+      "intro": "No NBA team has ever gone 82-0, so an 82-0 team is still hypothetical — but it is a specific kind of hypothetical. It has five slots, it has to cover every position and every weakness, and it has to do that for 82 straight nights. Here is how close real teams have come, what the shape of a perfect roster actually is, and how to draft one yourself below.",
+      "sections": [
+        {
+          "h2": "The Closest Any Real Team Has Come",
+          "paragraphs": [
+            "The best regular season in NBA history is 73-9. The 2015-16 Golden State Warriors lost nine games across the 82-game schedule, which means the single most successful team ever assembled was still losing roughly once every nine nights. The 1995-96 Chicago Bulls went 72-10 before them, and the 1971-72 Los Angeles Lakers put together the longest winning streak the league has seen — 33 consecutive games — and still finished 69-13.",
+            "Those three records frame the problem. A 33-game streak is about four months of basketball without a slip, and it still covers only 40 percent of a season. An 82-0 team would have to stretch that streak two and a half times longer, with no rest nights, no flat shooting evenings and no injuries along the way. That is why the number stays hypothetical: the gap between 73-9 and 82-0 looks small written down and is enormous in practice."
+          ]
+        },
+        {
+          "h2": "The Five Slots an 82-0 Team Has to Fill",
+          "paragraphs": [
+            "An 82-0 roster in this game is five players — a point guard, a shooting guard, a small forward, a power forward and a center — drafted from a pool of 420 legends spread across seven decades, 60 players per decade from the 1960s through the 2020s. Five slots is a tight budget, and it is exactly why stacking is a trap: five scorers leave nobody to rebound, and five defenders never score enough to pull a game away.",
+            "The rosters that survive a full schedule tend to cover all five statistical categories rather than maximising two of them. Scoring wins individual games, but rebounding and defence are what keep one bad night from becoming a loss. Across 82 games every gap on a roster eventually gets found by somebody, so the perfect team is the one with no obvious hole rather than the one with the biggest names."
+          ]
+        },
+        {
+          "h2": "Drafting Your Own 82-0 Team",
+          "paragraphs": [
+            "The game above deals you a random franchise and decade, and you fill the five positions one pick at a time. Every player carries his real production from his own era, adjusted so that a 1960s center and a 2020s guard can be compared on the same scale, and the engine then projects all 82 games on a steep curve. Strong rosters land in the 60s and low 70s; only a genuinely complete five has any chance at 82.",
+            "If you would rather skip the randomness and assemble one specific lineup, the custom lineup builder opens the entire 420-player pool with no spins at all. If you want the tactical side instead — which picks are overrated, where the thresholds sit, when to spend your skips — the draft strategy guide covers that ground."
+          ]
+        }
+      ]
+    },
+    "sixteenZero": {
+      "title": "16-0 Challenge: The Perfect 16-Game NFL Season",
+      "description": "Play the 16-0 challenge free. Draft a roster of NFL legends and chase the perfect 16-game regular season that only the 2007 Patriots ever finished.",
+      "h1": "16-0 Challenge",
+      "intro": "For 43 seasons the NFL played a 16-game schedule, and exactly one team ran the table: the 2007 New England Patriots went 16-0, then lost the Super Bowl. Spin a random franchise and era, draft nine legends into the roster, and find out whether your lineup can finish the perfect sixteen. Play free below.",
+      "playCta": "Play the 17-0 Challenge",
+      "sections": [
+        {
+          "h2": "What Does 16-0 Mean in the NFL?",
+          "paragraphs": [
+            "The NFL ran a 16-game regular season from 1978 through 2020, which made 16-0 the definition of a perfect regular season for 43 years. Only one team ever got there. The 2007 New England Patriots won all sixteen, then lost Super Bowl XLII to the New York Giants 17-14 and finished 18-1 — leaving the only 16-0 regular season in the record books with no championship attached to it.",
+            "The 1972 Miami Dolphins are still the only team to finish an entire season unbeaten, but they did it under a 14-game schedule: 14-0 in the regular season and 17-0 once the playoffs were done. Since 2021 the league has played 17 games, so 16-0 is now a closed record — a number no future team can post, which is part of why it keeps getting searched for. Four other teams have come within a single game of it since the schedule expanded: the 1984 San Francisco 49ers and the 1985 Chicago Bears both went 15-1, as did the 2004 Pittsburgh Steelers and the 2011 Green Bay Packers. One loss, every time."
+          ]
+        },
+        {
+          "h2": "What Is the 16-0 Challenge Game?",
+          "paragraphs": [
+            "The 16-0 challenge is the football cousin of the viral 82-0 basketball challenge. The slot machine deals you a random all-time franchise and era, and you draft one legend at a time into nine roster spots — quarterback, the skill positions, the trenches and the defense — with every player carrying real production numbers from the era he actually played in.",
+            "Once the ninth spot is filled, the engine projects a full 16-game regular season. Quarterback play carries the most weight, but the curve punishes any soft spot on the roster: one weak position group is usually what turns 16-0 into 14-2. Finish perfect and you can download a poster of your roster or share the result for friends to chase. The roster you assemble is the roster that plays all sixteen games — there are no trades, no substitutions and no injuries to manage, so whatever balance you draft is the balance you live with."
+          ]
+        },
+        {
+          "h2": "16-0 vs 17-0 vs 20-0: Three Kinds of Perfect",
+          "paragraphs": [
+            "This site runs all three football versions, and the only thing that changes between them is how many games you have to survive. The 16-0 challenge is the old format's perfect regular season, 17-0 is the same idea under the current 17-game schedule, and 20-0 adds a playoff run and a Super Bowl on top — three extra wins that make it the hardest of the three. All three draw from the same pool of football legends, so a roster that nearly runs the table at 16 games is a useful starting point for judging what the longer formats need.",
+            "The shorter the slate, the more forgiving the simulation, so 16-0 is a sensible place to start before moving up to the longer records. And the original that started the whole family is here too: the 82-0 basketball challenge, five legends drawn from seven decades and eighty-two games without a single loss."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Has any NFL team ever gone 16-0?",
+          "a": "Yes — once. The 2007 New England Patriots won all 16 regular-season games, then lost Super Bowl XLII to the New York Giants 17-14 and finished 18-1. No other team has posted a 16-0 regular season."
+        },
+        {
+          "q": "Why can't a team go 16-0 anymore?",
+          "a": "The NFL expanded to a 17-game regular season in 2021, so a perfect regular season is now 17-0. The 16-game schedule ran from 1978 to 2020, which makes 16-0 a closed record that no current team can match."
+        },
+        {
+          "q": "What is the difference between the 16-0 and 20-0 challenges?",
+          "a": "The drafting is identical — nine positions filled from random franchise-and-era spins. The 16-0 challenge simulates a 16-game regular season, while the 20-0 challenge adds three playoff wins and a Super Bowl on top, making it the harder perfect record."
+        },
+        {
+          "q": "Is the 16-0 challenge free to play?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up, and you can replay it as many times as you like."
+        }
+      ]
     }
   },
   "cta": {
