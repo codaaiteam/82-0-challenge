@@ -237,5 +237,11 @@
       "created": "2026-10-05"
     }
   ],
-  "_last_export_built_from": "2026-09-28_to_2026-10-05"
+  "_last_export_built_from": "2026-10-12_to_2026-10-19",
+  "_last_review": {
+    "date": "2026-10-19",
+    "exports_reviewed": ["2026-10-05_to_2026-10-12", "2026-10-12_to_2026-10-19"],
+    "pages_added": 0,
+    "note": "Consolidation week: no new pages. Every 82-0-containing query in both exports maps onto a page that already exists. 82-0 game->/ and /82-0; 82-0 nba + 82-0 nba game + nba 82-0 + 82-0 game nba->/82-0-nba; 17-0 + 17-0 game->/17-0; 82-0 team->/82-0-team; 82-0 football + 82-0 for football + 82-0 football game->/82-0-football; 82-0 nfl->/82-0-nfl; 82-0 basketball + 82-0 basketball game + 82-0 game basketball->/82-0-basketball; nhl 82-0 + hockey 82-0 + 82-0 hockey->/82-0-nhl and /82-0-hockey; soccer 82-0 + 82-0 soccer version->/82-0-soccer; 82-0 baseball->/82-0-baseball; 162-0->/162-0; better 82-0->/82-0-better-team; go 82-0->/can-you-go-82-0; 82-0 leaderboard (rising +300%)->/leaderboard, already titled \"82-0 Global Leaderboard\"; play 82-0->/unblocked, already titled \"Play 82-0 Unblocked\"; 82-0 challenge->homepage brand term, already in /how-to-play, /daily and /82-0-filter titles. Dropped as bare co-searches with no 82-0 in them: nba, 82, krillion, polytrack, google games, build a bucket, and the truncated fragment \"82-\" (the only rising row in the newest export). Dropped 82-0 reddit as off-site intent. No keyword in either export implied a new FILTERS variant, so nothing was deferred for game logic."
+  }
 }
