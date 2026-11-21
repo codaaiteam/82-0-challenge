@@ -15,6 +15,7 @@ const Footer = ({ t, lang = 'en' }) => {
           <Link href={`${prefix}/how-its-calculated`}>{t?.footer?.howItsCalculated || "How It's Calculated"}</Link>
           <Link href={`${prefix}/can-you-go-82-0`}>{t?.footer?.canYouGo || 'Can You Go 82-0?'}</Link>
           <Link href={`${prefix}/best-82-0-team`}>{t?.footer?.bestTeam || 'Best 82-0 Team'}</Link>
+          <Link href={`${prefix}/82-0-draft`}>{t?.footer?.draftMode || '82-0 Draft'}</Link>
           <Link href={`${prefix}/how-to-beat-82-0`}>{t?.footer?.howToBeat || 'How to Beat 82-0'}</Link>
           <Link href={`${prefix}/games-like-82-0`}>{t?.footer?.gamesLike || 'Games Like 82-0'}</Link>
           <Link href={`${prefix}/unblocked`}>{t?.footer?.unblocked || 'Play Unblocked'}</Link>
@@ -25,6 +26,8 @@ const Footer = ({ t, lang = 'en' }) => {
 
         <div className={styles.footerSection}>
           <h3>{t?.footer?.moreGames || 'More Games'}</h3>
+          <Link href={`${prefix}/82-0-nba`}>{t?.footer?.nbaMode || '82-0 NBA'}</Link>
+          <Link href={`${prefix}/82-0-basketball`}>{t?.footer?.basketballMode || '82-0 Basketball'}</Link>
           <Link href={`${prefix}/82-0-nhl`}>{t?.footer?.nhl || '82-0 NHL (Hockey)'}</Link>
           <Link href={`${prefix}/82-0-soccer`}>{t?.footer?.soccerAlias || '82-0 Soccer'}</Link>
           <Link href={`${prefix}/82-0-baseball`}>{t?.footer?.baseballAlias || '82-0 Baseball'}</Link>
