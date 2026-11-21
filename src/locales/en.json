@@ -2,8 +2,8 @@
   "layout": {
     "language": "en"
   },
-  "seoTitle": "82-0 Basketball Builder — Can Your Roster Go Undefeated?",
-  "seoDescription": "Build a five-player basketball roster, choose a playstyle, and simulate a full 82-game season. Can your lineup finish 82W–0L?",
+  "seoTitle": "82-0 Challenge — Free NBA Basketball Game, No Login, Unblocked",
+  "seoDescription": "Play the 82-0 Challenge free — no login, no sign-up, unblocked in any browser. Spin random NBA teams and eras, draft an all-time starting five, and simulate a full 82-game season. Can your basketball roster go 82-0?",
   "keywords": "82-0, 82-0 basketball, 82-0 season builder, basketball roster builder, basketball season simulator, undefeated season game, lineup builder",
   "header": {
     "siteName": "82-0 Basketball Builder",
@@ -23,8 +23,8 @@
     "navLebron": "LeBron Mode"
   },
   "hero": {
-    "title": "Can Your Roster Go 82-0?",
-    "subtitle": "Build a five-player basketball lineup, choose your playstyle, decide whether to draft with stats or go blind, and simulate a full season to see how close your team gets to perfection.",
+    "title": "The 82-0 Challenge: Can Your NBA Roster Go 82-0?",
+    "subtitle": "Play the viral 82-0 basketball challenge free — no login, no download, unblocked in any browser. Build a five-player NBA lineup, choose your playstyle, and simulate a full 82-game season to see if your team can finish a perfect 82-0.",
     "cta": "Build Your Roster"
   },
   "game": {
@@ -162,10 +162,11 @@
     },
     "shareModal": {
       "open": "Share",
-      "title": "Share your five",
+      "title": "Challenge a friend to beat it",
       "creating": "Creating link…",
       "copyLink": "Copy link",
-      "copied": "Copied!"
+      "copied": "Copied!",
+      "challengeBtn": "Challenge a Friend"
     },
     "setup": {
       "title": "Build Your Five",
@@ -236,6 +237,11 @@
         "weakScoring": "Not enough scoring punch",
         "none": "None — a complete lineup"
       }
+    },
+    "telegramCta": {
+      "title": "Join the Telegram community",
+      "sub": "Post your best teams, get new daily challenges, and see who tops the leaderboard.",
+      "btn": "Join"
     }
   },
   "homeSeo": {
@@ -591,6 +597,14 @@
           "h2": "Same game, new twists: Daily and Blind Draft",
           "paragraphs": [
             "Already love 82-0 itself? Two built-in variations keep it fresh. The Daily Challenge gives everyone the same rolls and one attempt — pure leaderboard bait. Blind Draft mode hides all stats so you draft from memory alone, the fastest way to find out who really knows their basketball history."
+          ]
+        },
+        {
+          "h2": "Other Perfect-Season & Team-Builder Games",
+          "paragraphs": [
+            "A whole wave of build-a-team games has followed 82-0's success, each with its own twist. Era Ball (eraball) uses the same spin-a-team, draft-across-eras loop and simulates a full season — the closest cousin to the original 82-0 format. If you like drafting all-time lineups and watching a season play out, it'll feel instantly familiar.",
+            "A second style skips the season sim and rebuilds a single player. Build-A-Bucket (the basketball spin-off of Build-A-Player) and Build a Hooper both have you spin legends and pick one skill at a time — a jumpshot here, a handle there — to assemble one super-player rather than a five-man lineup. SixRings takes a data-first angle, having you draft a roster to maximize an advanced impact score instead of chasing an unbeaten record.",
+            "The difference with the 82-0 challenge is the fantasy it's built around: not the best player or the highest rating, but whether a perfect lineup could go a full 82-game season without losing once. If that's the version you're after, it — plus the NFL, NHL, soccer and baseball editions — is playable free on this site."
           ]
         }
       ]
@@ -1259,6 +1273,394 @@
           ]
         }
       ]
+    },
+    "baseballAlias": {
+      "title": "82-0 Baseball Challenge: Build a Perfect MLB Season Team",
+      "description": "The baseball version of the 82-0 challenge. Spin random MLB franchises and eras, draft an all-time lineup, and see if they can run the table on a full season. Play free.",
+      "h1": "82-0 Baseball Challenge",
+      "intro": "Fans keep searching '82-0 baseball' after the NBA game went viral — but a baseball season is 162 games, so the real perfect record is 162-0. Same idea, longer grind: spin random MLB franchises and eras, draft an all-time roster, and find out if they could win every single game. Play the baseball version free below.",
+      "playCta": "Play the Original 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "Why Baseball's 82-0 Is Really 162-0",
+          "paragraphs": [
+            "82-0 is an NBA and NHL number — both play 82-game seasons. Baseball plays 162, so a truly perfect MLB season would read 162-0, which is why this game runs the full schedule. No team has come remotely close: the 2001 Mariners and 1906 Cubs share the modern wins record at 116, and even they lost 40-plus times. A perfect baseball season isn't just hard, it's the single most improbable record in team sports.",
+            "This game leans into that fantasy. It doesn't ask whether a stacked roster can win a pennant — it asks whether a perfect all-time lineup could go a full season without a single loss."
+          ]
+        },
+        {
+          "h2": "How the Baseball Challenge Works",
+          "paragraphs": [
+            "The slot machine deals you a random franchise-and-era combo — the 1927 Yankees, the 1975 Reds, the 2016 Cubs — and you draft one player from that team into your lineup. Legends from across baseball history are in the pool, each carrying a real statistical line from his era, from Ruth and Mays to Griffey, Bonds and Ohtani.",
+            "Fill your roster and the engine simulates the season game by game. Pitching and up-the-middle defense carry the heaviest weight, and one weak spot in the order is usually the gap between a record-setting run and an unbeaten season. You get limited re-rolls per draft, so spend them where your lineup is thinnest."
+          ]
+        },
+        {
+          "h2": "The Perfect-Season Fantasy Across Sports",
+          "paragraphs": [
+            "Baseball adds a cruelty the basketball 82-0 doesn't have: even the best team on earth loses roughly a third of its games, because a hot pitcher or one bad bounce can steal any night. That's what makes 162-0 the ultimate what-if — and why simulating it is so addictive.",
+            "If you want to compare sports, the original basketball 82-0 challenge, the 82-0 NHL hockey version, the 17-0 NFL game and the rest of the family are all playable on this site."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Has any MLB team ever gone 82-0 or 162-0?",
+          "a": "No — nothing close. The modern single-season wins record is 116 (1906 Cubs, 2001 Mariners), and both those teams still lost 36-46 games. A perfect baseball season has never happened and almost certainly never will."
+        },
+        {
+          "q": "Is '82-0 baseball' the same as 162-0?",
+          "a": "It's the same idea. 82-0 is the NBA/NHL number because they play 82 games; baseball plays 162, so the true perfect record is 162-0. This game runs the full 162-game schedule."
+        },
+        {
+          "q": "How is the baseball version different from the basketball 82-0 game?",
+          "a": "Same core loop — random team-and-era spins, a draft of legends, a full-season simulation — but you build a baseball lineup over 162 games instead of a five-man basketball starting five over 82."
+        },
+        {
+          "q": "Is the 82-0 baseball challenge free?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up, and you can replay as often as you like."
+        }
+      ]
+    },
+    "hockeyAlias": {
+      "title": "82-0 Hockey Challenge: Build an Unbeatable NHL Lineup",
+      "description": "The hockey version of the 82-0 challenge. Spin random NHL teams and eras, draft a six-man lineup of legends, and see if they can win all 82 games. Play free.",
+      "h1": "82-0 Hockey Challenge",
+      "intro": "Hockey plays the same 82-game season as the NBA, so '82-0 hockey' is a perfect fit. Spin random NHL franchises and eras, draft a six-man lineup of all-time legends — center, wingers, a defense pair and a goalie — and find out if they could go a full season without a single loss. Play free below.",
+      "playCta": "Play the Original 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "82-0 in Hockey: Same Math, More Chaos",
+          "paragraphs": [
+            "The NHL and NBA both play 82 games, so the challenge translates one-to-one — but hockey is harder to run the table. A single hot goalie can steal any game from either side, and roughly half of all NHL games are decided by one goal. The best regular season ever, the 2022-23 Bruins, still lost 17 times. Going 82-0 in hockey would mean surviving back-to-backs, road swings and six months of bounces without one off night.",
+            "That's the fantasy this game simulates: not whether a great team dominates, but whether a perfect lineup could literally never lose a game."
+          ]
+        },
+        {
+          "h2": "Drafting Your Six-Man Lineup",
+          "paragraphs": [
+            "The slot machine hands you a random team-and-era combo — the 1980s Oilers, the 1990s Red Wings, the 2020s Avalanche — and you draft one player into your six slots: a center, both wingers, a defense pair and a goalie. Five decades of legends are in the pool, from Gretzky and Bourque to Crosby, McDavid and Makar, each with a real statistical line from his era.",
+            "Goaltending and center play carry the most weight, and the engine punishes any passenger in the lineup. One soft slot is usually the difference between a Presidents' Trophy run and a perfect 82-0."
+          ]
+        },
+        {
+          "h2": "Play the Whole Perfect-Season Family",
+          "paragraphs": [
+            "The hockey build is one of a family of perfect-season games on this site. The original basketball 82-0 challenge started it, and the 17-0 NFL, 38-0 Premier League and 162-0 baseball versions each translate the same idea to a different sport's schedule.",
+            "Finish a perfect season and you can download a poster of your lineup and challenge a friend to beat it."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Has any NHL team gone 82-0?",
+          "a": "No, and nothing has come close. The wins record is 65 (2022-23 Bruins) and the best season by points percentage was the 1976-77 Canadiens. A perfect 82-0 season has never happened in any major league."
+        },
+        {
+          "q": "Is '82-0 hockey' different from the 82-0 NHL challenge?",
+          "a": "They're the same game — hockey and NHL are just two names people search for. It's an 82-game NHL season with a six-man lineup of legends."
+        },
+        {
+          "q": "Which position matters most?",
+          "a": "Goaltending. A single elite goalie shifts more games than any other slot, and the engine won't hand out a perfect season without one — exactly like real hockey."
+        },
+        {
+          "q": "Is it free to play?",
+          "a": "Yes. It runs in your browser on desktop and mobile with no download or sign-up."
+        }
+      ]
+    },
+    "footballAlias": {
+      "title": "82-0 Football Challenge: NFL & Soccer Perfect-Season Games",
+      "description": "The football version of the 82-0 challenge. Whether you mean American football or soccer, build a perfect-season team and try to go undefeated. Play free.",
+      "h1": "82-0 Football Challenge",
+      "intro": "'Football' means two different games — so the football version of 82-0 comes in two flavors. For American football, the NFL's perfect season is 17-0, playable right here. For soccer, an unbeaten Premier League season is 38-0, and Arsenal's Invincibles are the only club to do it. Pick your sport below.",
+      "playCta": "Play the 38-0 Soccer (Premier League) Version",
+      "sections": [
+        {
+          "h2": "American Football: The 17-0 Perfect Season",
+          "paragraphs": [
+            "In the NFL, a perfect regular season is 17-0 under today's schedule — and only the 2007 Patriots have ever gone 16-0 (the old 16-game length) before losing in the Super Bowl. The 1972 Dolphins remain the only team to finish a full season, playoffs included, without a loss. That's the fantasy the American-football version simulates: spin random NFL franchises and eras, draft a roster of legends, and see if they can run the table.",
+            "Play the 17-0 NFL challenge in the game above, or try the 16-0 version that mirrors the 2007 Patriots' historic regular season."
+          ]
+        },
+        {
+          "h2": "Soccer: The 38-0 Invincible Season",
+          "paragraphs": [
+            "In the rest of the world, football means soccer — and a perfect Premier League season would be 38-0 across 38 matches. Arsenal's 2003-04 Invincibles went the whole season unbeaten, but even they drew 12 times; a true 38-0 with 38 wins has never happened. The soccer version of this challenge lets you draft an all-time XI and chase that perfect record.",
+            "Play the 38-0 Premier League challenge to build your Invincibles and see if they can win every match."
+          ]
+        },
+        {
+          "h2": "One Idea, Every Sport",
+          "paragraphs": [
+            "The football versions are part of a whole family of perfect-season games. It started with the basketball 82-0 challenge — 82 games, one perfect season — and now spans the NFL (17-0 and 16-0), the Premier League (38-0), the NHL (82-0 hockey), MLB (162-0 baseball) and the World Cup (7-0).",
+            "Whichever sport you follow, the loop is the same: spin, draft legends, simulate a season, and find out if a perfect team could really go undefeated."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the 'football' version of 82-0?",
+          "a": "It depends what you mean by football. American football's perfect season is 17-0 (NFL), and soccer's is 38-0 (an unbeaten Premier League season). Both are playable on this site."
+        },
+        {
+          "q": "Has any football team gone undefeated?",
+          "a": "In the NFL, the 1972 Dolphins went a perfect 17-0 including the playoffs; the 2007 Patriots went 16-0 in the regular season. In soccer, Arsenal's 2003-04 Invincibles went a Premier League season unbeaten, though with 12 draws."
+        },
+        {
+          "q": "Why isn't the football version called 82-0?",
+          "a": "82-0 is the NBA/NHL number because those leagues play 82 games. Football seasons are shorter, so the perfect records are 17-0 (NFL) and 38-0 (Premier League) — same challenge, different schedule."
+        },
+        {
+          "q": "Are these football games free?",
+          "a": "Yes. Every version runs in the browser on desktop and mobile with no download or sign-up."
+        }
+      ]
+    },
+    "seventyTwo": {
+      "title": "72-0 Challenge: Build the Perfect NBA Team (82-0 Game)",
+      "description": "Searching 72-0? You're looking for the 82-0 challenge — build an all-time NBA starting five and see if they can go a perfect season. Play free.",
+      "h1": "72-0 Challenge",
+      "intro": "If you typed '72-0,' you're almost certainly looking for the 82-0 challenge — the viral NBA perfect-season game. 72-10 was the Bulls' famous 1995-96 record; 72-0 is what a flawless season would look like. Spin random teams and eras, draft an all-time starting five, and see how close they can get. Play free below.",
+      "playCta": "Play the Full 82-0 Challenge",
+      "sections": [
+        {
+          "h2": "72-0 vs 82-0: What's the Difference?",
+          "paragraphs": [
+            "An NBA regular season is 82 games, so a perfect record is 82-0 — that's the real challenge, and the game above. 72-0 usually comes from one of two places: fans remembering the 1995-96 Chicago Bulls, who set the record at 72-10, or simply mistyping 82-0. Either way, the game is the same: build the greatest starting five you can and see how many of the 82 games they win.",
+            "The Bulls' 72-10 stood as the wins record until the 2015-16 Warriors went 73-9 — and both teams still lost. That's the whole point of this challenge: even the best real teams in history lost games, so going 82-0 (or even 72-0) would take a literally perfect lineup."
+          ]
+        },
+        {
+          "h2": "How the 82-0 Challenge Works",
+          "paragraphs": [
+            "The slot machine spins you a random franchise-and-era combo — the 1996 Bulls, the 1987 Lakers, the 2017 Warriors — and you draft one player from that team into your starting five: point guard, shooting guard, small forward, power forward and center. Legends from five decades are in the pool, each carrying real numbers from his era.",
+            "Fill all five slots and the engine simulates all 82 games. Balanced lineups with no weak position do best — one passenger is usually the difference between a 73-9 season and a perfect 82-0. You get limited re-rolls per draft, so use them where your five is weakest."
+          ]
+        },
+        {
+          "h2": "How Close Can You Get?",
+          "paragraphs": [
+            "No NBA team has ever gone 82-0, or 72-0, or even close to unbeaten — the best regular seasons in history topped out at 73 and 72 wins. This game lets you chase the record that has never been touched, and share your result when you get near it.",
+            "Prefer a specific era or franchise? The 82-0 family includes one-decade, one-franchise, salary-cap and hard modes, plus NFL, NHL, soccer and baseball versions, all playable on this site."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is 72-0 a real NBA record?",
+          "a": "No. 72-10 was the Bulls' 1995-96 record, later broken by the Warriors' 73-9 in 2015-16. 72-0 (or 82-0) has never happened — no NBA team has come close to an unbeaten season."
+        },
+        {
+          "q": "Did I mean 82-0?",
+          "a": "Almost certainly. An NBA season is 82 games, so the perfect record is 82-0. This is that game — spin, draft an all-time five, and see if they can win every night."
+        },
+        {
+          "q": "What's the closest any team has come?",
+          "a": "The 2015-16 Warriors went 73-9 and the 1995-96 Bulls went 72-10. Both are the winningest seasons ever, and both still lost multiple games."
+        },
+        {
+          "q": "Is the game free?",
+          "a": "Yes. It runs in your browser on desktop and mobile with no download or sign-up, and you can replay as often as you like."
+        }
+      ]
+    },
+    "sixteenZero": {
+      "title": "16-0 NFL Challenge: Build a Perfect Regular Season Team",
+      "description": "Play the 16-0 NFL challenge, inspired by the 2007 Patriots' perfect regular season. Spin random teams and eras, draft a roster of legends, and try to go undefeated. Play free.",
+      "h1": "16-0 NFL Challenge",
+      "intro": "16-0 is the record the 2007 New England Patriots set — a perfect regular season under the old 16-game format, the only one in NFL history. Spin random NFL franchises and eras, draft a roster of all-time legends, and see if they can match it. Play free below.",
+      "playCta": "Play the 17-0 Full-Season Version",
+      "sections": [
+        {
+          "h2": "The 16-0 Season: 2007 Patriots",
+          "paragraphs": [
+            "For most of NFL history the regular season was 16 games, so a perfect record was 16-0. Only one team ever did it: the 2007 New England Patriots, who went 16-0 behind an MVP season from Tom Brady and a record-setting offense — before losing Super Bowl XLII to the Giants. That heartbreak is why 16-0 still carries weight: it's the perfect regular season that didn't end perfectly.",
+            "This game lets you chase the 16-0 mark with any lineup in NFL history, not just the 2007 Patriots — spin, draft, and simulate all 16 games."
+          ]
+        },
+        {
+          "h2": "How the 16-0 Challenge Works",
+          "paragraphs": [
+            "The slot machine deals you a random franchise-and-era combo, and you draft one player from that team into each roster slot. Legends from across NFL history are in the pool, each carrying a real statistical line from his era, from Montana and Rice to Brady, Manning and Mahomes.",
+            "Fill your roster and the engine simulates all 16 games. Quarterback play and both lines carry the heaviest weight, and one weak position is usually the gap between a strong season and a perfect 16-0. Spend your re-rolls where the roster is thinnest."
+          ]
+        },
+        {
+          "h2": "16-0 vs 17-0: Which Perfect Season?",
+          "paragraphs": [
+            "The NFL expanded to a 17-game schedule in 2021, so today's perfect regular season is 17-0 — no team has done it yet. 16-0 remains the historic mark from the pre-2021 era, owned solely by the 2007 Patriots. Both are playable here: pick 16-0 to chase the classic record, or the 17-0 version for the modern one.",
+            "Both are part of the perfect-season family that started with the basketball 82-0 challenge and now spans the NHL, Premier League, MLB and World Cup."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Which team went 16-0?",
+          "a": "The 2007 New England Patriots — the only team to go 16-0 in a regular season. They then lost Super Bowl XLII to the New York Giants, finishing 18-1."
+        },
+        {
+          "q": "Is 16-0 or 17-0 the perfect NFL season?",
+          "a": "Both, depending on the era. Before 2021 the season was 16 games, so a perfect record was 16-0. Since 2021 it's a 17-game season, making 17-0 the modern perfect record. No team has gone 17-0."
+        },
+        {
+          "q": "Did the 1972 Dolphins go 16-0?",
+          "a": "No — the 1972 Dolphins went 14-0 in the regular season (a 14-game schedule then) and 17-0 including the playoffs, the only fully perfect season in NFL history. The 2007 Patriots hold the 16-0 regular-season mark."
+        },
+        {
+          "q": "Is the 16-0 challenge free?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up."
+        }
+      ]
+    },
+    "bestTeam": {
+      "title": "Best 82-0 Team: The Lineups Most Likely to Go Perfect",
+      "description": "What does the best 82-0 team look like? A breakdown of the ideal starting five, the positions that matter most, and how to build a lineup that can actually go 82-0.",
+      "h1": "The Best 82-0 Team: How to Build a Perfect Lineup",
+      "intro": "Everyone wants the best 82-0 team — the starting five most likely to win all 82 games. After thousands of simulated seasons, a clear pattern emerges: perfect records don't come from stacking scorers, they come from lineups with no weak link. Here's what the best 82-0 teams have in common, and how to build one.",
+      "sections": [
+        {
+          "h2": "Balance Beats Star Power",
+          "paragraphs": [
+            "The single biggest mistake is drafting five superstars who all do the same thing. The 82-0 engine rewards two-way balance: a lineup that scores efficiently, defends, rebounds and creates without a single passenger. A five with four elite scorers and one weak defender will lose more games than a five that's very good at everything, because that one soft spot gets exposed over 82 nights.",
+            "The best 82-0 teams grade out high on every axis. If any one of your five is dragging a category, that's the position to re-roll first."
+          ]
+        },
+        {
+          "h2": "The Positions That Matter Most",
+          "paragraphs": [
+            "Point guard and center carry the most weight in the simulation. An elite two-way guard controls tempo and limits the opponent's best perimeter scorer, while a dominant center anchors the defense and the glass. Wings are where you can afford your highest-usage scorer, because their weaknesses are easier to hide.",
+            "A reliable template: a two-way lead guard, a knockdown wing, a versatile forward, a stretch four, and a rim-protecting center. Fill those roles with all-time talent and the engine starts handing out 78-plus win seasons."
+          ]
+        },
+        {
+          "h2": "The All-Time Contenders",
+          "paragraphs": [
+            "Lineups built around peak Jordan, Magic, LeBron, Duncan and prime Shaq or Hakeem consistently grade near the top, because each covers a different job. Modern picks like Curry (spacing), Giannis (defense plus rim pressure) and Jokic (playmaking from the five) also test extremely well when paired with defenders who cover their weak spots.",
+            "There's no single 'best' five — the game's random spins mean you're always working with the teams and eras you're dealt. The skill is drafting the most balanced possible lineup from your options, not chasing names."
+          ]
+        },
+        {
+          "h2": "Turn Theory Into a Perfect Season",
+          "paragraphs": [
+            "Reading about the best 82-0 team only gets you so far — the real test is building one under the game's random spins and seeing if it holds up over 82 games. Play the challenge, chase a balanced five, and share your record when you get close to perfect.",
+            "For more on the math behind the ratings, see how the 82-0 result is calculated. To make it harder, try hard mode, salary-cap mode, or the one-decade and one-franchise variants."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "What is the best 82-0 team?",
+          "a": "There's no single best five — the game deals random teams and eras. The best 82-0 teams are the most balanced: strong on offense, defense, rebounding and playmaking with no weak position. Balance beats stacking scorers."
+        },
+        {
+          "q": "Which positions matter most for going 82-0?",
+          "a": "Point guard and center carry the most weight. A two-way lead guard and a rim-protecting center anchor the lineup; wings are the safest place for a high-usage scorer whose weaknesses can be hidden."
+        },
+        {
+          "q": "Can any lineup actually go 82-0?",
+          "a": "It's extremely rare by design — even flawless-looking fives usually drop a few games. A perfect season needs elite talent at every position and zero soft spots, which is exactly why it's the challenge."
+        }
+      ]
+    },
+    "howToBeat": {
+      "title": "How to Beat 82-0: Tips to Win a Perfect Season",
+      "description": "How to beat the 82-0 challenge: the strategy behind drafting a perfect NBA starting five, using your re-rolls, and avoiding the weak spots that cost you games.",
+      "h1": "How to Beat 82-0: A Strategy Guide",
+      "intro": "Going 82-0 is meant to be nearly impossible — but there's real strategy to getting close. The players who post perfect and near-perfect seasons don't get lucky, they draft smart. Here's how to beat the 82-0 challenge, from re-roll timing to the positions that decide your record.",
+      "sections": [
+        {
+          "h2": "Draft for Balance, Not Names",
+          "paragraphs": [
+            "The engine simulates all 82 games across offense, defense, rebounding and playmaking. A lineup that's elite in scoring but weak on defense will lose the games where shots aren't falling — and over 82 nights, that always happens. The winning approach is to build a five with no category left uncovered, even if it means passing on a bigger name for a better fit.",
+            "Before you lock a player in, ask what job that slot needs to do. If your five is already scoring-heavy, your next pick should defend and rebound, not put up more points."
+          ]
+        },
+        {
+          "h2": "Use Your Re-Rolls Wisely",
+          "paragraphs": [
+            "You get a limited number of team and era re-rolls per draft, and how you spend them decides your season. Don't burn them early chasing a favorite player — hold them for the moment your lineup has an obvious hole. If you're dealt a spin that can only fill an already-strong position, that's when a re-roll pays off.",
+            "A good rule: re-roll to fix a weakness, not to upgrade a strength. The difference between 78-4 and 82-0 is almost always the weakest slot, so spend your rolls there."
+          ]
+        },
+        {
+          "h2": "Know What the Engine Rewards",
+          "paragraphs": [
+            "Point guard and center carry the most weight, so prioritize two-way talent at those spots. Efficiency matters more than volume — a player who scores fewer points at high efficiency grades better than a high-usage, low-efficiency scorer. And defense is quietly the biggest separator at the top: nearly every perfect season in the game is anchored by elite defenders.",
+            "If you want the full breakdown of how the grade and win total are computed, read how the 82-0 result is calculated — it shows exactly which stats move your record."
+          ]
+        },
+        {
+          "h2": "Put It Into Practice",
+          "paragraphs": [
+            "The best way to beat 82-0 is to play it with these principles in mind: draft for balance, save your re-rolls for weaknesses, and prioritize two-way play up the middle. Get a near-perfect record and you can download a poster and challenge a friend to beat it.",
+            "Once you've mastered standard mode, test yourself with hard mode, salary-cap mode, or the one-decade and one-franchise variants — each forces a different kind of roster-building."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "How do you beat the 82-0 challenge?",
+          "a": "Draft a balanced starting five with no weak position, save your re-rolls to fix holes rather than upgrade strengths, and prioritize two-way talent at point guard and center. Efficiency and defense matter more than raw scoring."
+        },
+        {
+          "q": "Is it actually possible to go 82-0?",
+          "a": "It's extremely rare by design, but near-perfect seasons are achievable with a flawless, balanced lineup. Even the best fives usually drop a few games — that one weak slot is what the strategy is meant to eliminate."
+        },
+        {
+          "q": "When should I use my re-rolls?",
+          "a": "Save them for when your lineup has an obvious weakness. Re-roll to fix a hole, not to upgrade a position that's already strong — the weakest slot is almost always what costs you a perfect season."
+        }
+      ]
+    },
+    "soccerAlias": {
+      "title": "82-0 Soccer: Play the Perfect Premier League Season Game",
+      "description": "The soccer version of the 82-0 challenge. Spin Premier League clubs and eras, draft an all-time XI, and see if they can go a perfect unbeaten season. Play free.",
+      "h1": "82-0 Soccer Challenge",
+      "intro": "Looking for the soccer version of 82-0? Since a Premier League season is 38 matches, soccer's perfect record is 38-0 — but the challenge is exactly the same. Spin random Premier League clubs and eras, draft an all-time XI of legends, and find out if they could go a full season unbeaten. Play the soccer edition free below.",
+      "playCta": "Play the Original 82-0 Basketball Challenge",
+      "sections": [
+        {
+          "h2": "82-0 in Soccer Means a Perfect 38-0",
+          "paragraphs": [
+            "82-0 is basketball's number — an 82-game NBA season with zero losses. Soccer's top leagues play fewer games, so the equivalent perfect season in the Premier League is 38-0 across 38 matches. It's the same fantasy in a different sport: not whether a great side wins the title, but whether a perfect XI could go a whole season without dropping a single game.",
+            "It has never quite happened. Arsenal's 2003-04 Invincibles went the entire Premier League season unbeaten — the closest anyone has come — but even they drew 12 matches. A true 38-0 with 38 wins remains soccer's great what-if, and that's exactly what this game lets you chase."
+          ]
+        },
+        {
+          "h2": "How the 82-0 Soccer Challenge Works",
+          "paragraphs": [
+            "The slot machine deals you a random Premier League club-and-era combo — the Invincibles-era Arsenal, the treble-winning United, the centurion Manchester City — and you draft one player from that side into your XI. Four decades of legends fill the pool, from Henry, Bergkamp and Shearer to Gerrard, De Bruyne and Haaland, each carrying a real statistical line from his era.",
+            "Fill all eleven slots and the engine simulates the 38-match season. With eleven positions to get right, soccer is the cruelest member of the family — one weak link anywhere on the pitch is usually the difference between a title run and a perfect unbeaten season. Spend your re-rolls where your XI is thinnest."
+          ]
+        },
+        {
+          "h2": "The Whole Perfect-Season Family",
+          "paragraphs": [
+            "The soccer challenge is one of a family of perfect-season games that started with the viral basketball 82-0 challenge. The World Cup version (7-0) chases a perfect knockout run, while the NFL (17-0 and 16-0), NHL (82-0 hockey) and MLB (162-0 baseball) editions each translate the same spin-and-draft loop to their own sport.",
+            "Finish a perfect soccer season and you can download a poster of your XI and challenge a friend to beat it. Prefer the original? The basketball 82-0 challenge is one tap away."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "q": "Is there an 82-0 for soccer?",
+          "a": "Yes — this is it. Because a Premier League season is 38 matches, soccer's perfect record is 38-0 rather than 82-0, but the game plays exactly the same way: spin clubs and eras, draft an all-time XI, and try to go the whole season unbeaten."
+        },
+        {
+          "q": "Has any soccer team gone unbeaten in a season?",
+          "a": "Arsenal's 2003-04 Invincibles went a full 38-match Premier League season without losing — the only club to do it in the modern era. But they drew 12 games, so a true 38-0 with 38 wins has never happened."
+        },
+        {
+          "q": "Why is soccer 38-0 instead of 82-0?",
+          "a": "82-0 comes from the NBA's 82-game season. A Premier League season is 38 matches, so the perfect soccer record is 38-0. Same challenge, different schedule."
+        },
+        {
+          "q": "Is the 82-0 soccer challenge free?",
+          "a": "Yes. It runs in the browser on desktop and mobile with no download or sign-up, and you can replay as often as you like."
+        }
+      ]
     }
   },
   "cta": {
@@ -1398,9 +1800,10 @@
     "weekly": "This Week"
   },
   "sharePage": {
-    "kicker": "Shared result",
-    "challenge": "Think you can build a better five?",
-    "play": "Play the 82-0 Challenge →"
+    "kicker": "A challenger built this five",
+    "challenge": "Draft your own all-time starting five and try to top this record.",
+    "play": "Accept the challenge — build your five →",
+    "headline": "Can you beat it?"
   },
   "homeModes": {
     "title": "82-0 Game Modes",

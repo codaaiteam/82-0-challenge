@@ -11,20 +11,42 @@ const Footer = ({ t, lang = 'en' }) => {
           <h3>{t?.footer?.pages || 'Pages'}</h3>
           <Link href={prefix || '/'}>{t?.header?.home || 'Home'}</Link>
           <Link href={`${prefix}/82-0`}>{t?.header?.whatIs || 'What Is 82-0?'}</Link>
-          <Link href={`${prefix}/leaderboard`}>{t?.footer?.leaderboard || 'Leaderboard'}</Link>
           <Link href={`${prefix}/how-to-play`}>{t?.header?.howToPlay || 'How to Play'}</Link>
-          <Link href={`${prefix}/unblocked`}>{t?.footer?.unblocked || 'Play Unblocked'}</Link>
           <Link href={`${prefix}/how-its-calculated`}>{t?.footer?.howItsCalculated || "How It's Calculated"}</Link>
           <Link href={`${prefix}/can-you-go-82-0`}>{t?.footer?.canYouGo || 'Can You Go 82-0?'}</Link>
-          <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
-          <Link href={`${prefix}/daily`}>{t?.footer?.daily || 'Daily Challenge'}</Link>
+          <Link href={`${prefix}/best-82-0-team`}>{t?.footer?.bestTeam || 'Best 82-0 Team'}</Link>
+          <Link href={`${prefix}/how-to-beat-82-0`}>{t?.footer?.howToBeat || 'How to Beat 82-0'}</Link>
           <Link href={`${prefix}/games-like-82-0`}>{t?.footer?.gamesLike || 'Games Like 82-0'}</Link>
-          <Link href={`${prefix}/82-0-for-other-sports`}>{t?.footer?.otherSports || 'Other Sports'}</Link>
-          <Link href={`${prefix}/82-0-nhl`}>{t?.footer?.nhl || '82-0 NHL Challenge (Hockey)'}</Link>
+          <Link href={`${prefix}/unblocked`}>{t?.footer?.unblocked || 'Play Unblocked'}</Link>
+          <Link href={`${prefix}/team-builder`}>{t?.header?.teamBuilder || 'Team Builder'}</Link>
+          <Link href={`${prefix}/leaderboard`}>{t?.footer?.leaderboard || 'Leaderboard'}</Link>
+          <Link href={`${prefix}/daily`}>{t?.footer?.daily || 'Daily Challenge'}</Link>
+        </div>
+
+        <div className={styles.footerSection}>
+          <h3>{t?.footer?.moreGames || 'More Games'}</h3>
+          <Link href={`${prefix}/82-0-nhl`}>{t?.footer?.nhl || '82-0 NHL (Hockey)'}</Link>
+          <Link href={`${prefix}/82-0-soccer`}>{t?.footer?.soccerAlias || '82-0 Soccer'}</Link>
+          <Link href={`${prefix}/82-0-baseball`}>{t?.footer?.baseballAlias || '82-0 Baseball'}</Link>
+          <Link href={`${prefix}/82-0-football`}>{t?.footer?.footballAlias || '82-0 Football'}</Link>
+          <Link href={`${prefix}/16-0`}>{t?.footer?.sixteenZero || '16-0 Challenge (NFL)'}</Link>
           <Link href={`${prefix}/17-0`}>{t?.footer?.seventeenZero || '17-0 Challenge (NFL)'}</Link>
           <Link href={`${prefix}/20-0`}>{t?.footer?.twentyZero || '20-0 Challenge (NFL)'}</Link>
-          <Link href={`${prefix}/38-0`}>{t?.footer?.thirtyEight || '38-0 Challenge (Premier League)'}</Link>
-          <Link href={`${prefix}/7-0`}>{t?.footer?.sevenZero || '7-0 Challenge (World Cup)'}</Link>
+          <Link href={`${prefix}/38-0`}>{t?.footer?.thirtyEight || '38-0 (Premier League)'}</Link>
+          <Link href={`${prefix}/7-0`}>{t?.footer?.sevenZero || '7-0 (World Cup)'}</Link>
+          <Link href={`${prefix}/162-0`}>{t?.footer?.baseball162 || '162-0 (Baseball)'}</Link>
+          <Link href={`${prefix}/72-0`}>{t?.footer?.seventyTwo || '72-0 Challenge'}</Link>
+          <Link href={`${prefix}/82-0-for-other-sports`}>{t?.footer?.otherSports || 'Other Sports'}</Link>
+        </div>
+
+        <div className={styles.footerSection}>
+          <h3>{t?.footer?.otherSites || 'Our Other Games'}</h3>
+          <a href="https://73-9-game.com" target="_blank" rel="noopener">🏀 73-9 Game (NBA)</a>
+          <a href="https://17-0-game.com" target="_blank" rel="noopener">🏈 17-0 Game (NFL)</a>
+          <a href="https://38-0-game.com" target="_blank" rel="noopener">⚽ 38-0 Game (Soccer)</a>
+          <a href="https://7-0-game.com" target="_blank" rel="noopener">🌎 7-0 Game (World Cup)</a>
+          <a href="https://23-0-game.com" target="_blank" rel="noopener">🏉 23-0 Game (AFL)</a>
+          <a href="https://27-0-game.com" target="_blank" rel="noopener">🏉 27-0 Game (NRL)</a>
         </div>
 
         <div className={styles.footerSection}>

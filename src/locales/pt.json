@@ -167,7 +167,8 @@
       "title": "Compartilhe seu quinteto",
       "creating": "Criando link…",
       "copyLink": "Copiar link",
-      "copied": "Copiado!"
+      "copied": "Copiado!",
+      "challengeBtn": "Desafie um amigo"
     },
     "setup": {
       "title": "Monte seu Quinteto",
@@ -236,6 +237,11 @@
         "weakScoring": "Falta poder de ataque",
         "none": "Nenhuma: escalação completa"
       }
+    },
+    "telegramCta": {
+      "title": "Entre na comunidade do Telegram",
+      "sub": "Poste seus melhores times, receba desafios diários e dispute o topo do ranking.",
+      "btn": "Entrar"
     }
   },
   "homeSeo": {

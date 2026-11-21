@@ -796,10 +796,10 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
             ) : null}
             <button
-              className={isDaily ? styles.primaryBtn : styles.secondaryBtn}
+              className={styles.primaryBtn}
               onClick={() => setShareOpen(true)}
             >
-              {g.shareModal?.open || 'Share'}
+              🏀 {g.shareModal?.challengeBtn || 'Challenge a Friend'}
             </button>
             <button className={styles.secondaryBtn} onClick={handlePoster}>
               {g.poster || 'Download Poster'}
@@ -811,6 +811,23 @@ export default function GameMain({ t, initialMode = null, variant = null }) {
               <button className={styles.secondaryBtn} onClick={backToModes}>{g.switchMode}</button>
             )}
           </div>
+
+          <a
+            className={styles.tgCtaBlock}
+            href="https://t.me/+44Oq47usijFhM2I5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={styles.dailyCtaText}>
+              <span className={styles.dailyCtaTitle}>
+                💬 {g.telegramCta?.title || 'Join the Telegram community'}
+              </span>
+              <span className={styles.dailyCtaSub}>
+                {g.telegramCta?.sub || 'Post your best teams, get new daily challenges, and see who tops the leaderboard.'}
+              </span>
+            </span>
+            <span className={styles.tgCtaBtn}>{g.telegramCta?.btn || 'Join'} →</span>
+          </a>
 
           <ShareModal
             open={shareOpen}

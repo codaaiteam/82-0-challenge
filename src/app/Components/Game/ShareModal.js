@@ -52,7 +52,7 @@ export default function ShareModal({ open, onClose, sh, shareText, payload }) {
     <div className={styles.shareOverlay} onClick={onClose}>
       <div className={styles.shareModal} onClick={ev => ev.stopPropagation()}>
         <div className={styles.shareHead}>
-          <span>{sh.title || 'Share your five'}</span>
+          <span>{sh.title || 'Challenge a friend to beat it'}</span>
           <button className={styles.shareClose} onClick={onClose} aria-label="Close">×</button>
         </div>
 

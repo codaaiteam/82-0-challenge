@@ -830,6 +830,22 @@ export default function BaseballGame({ t }) {
               <button className={styles.primaryBtn} onClick={handleRestart}>{g.playAgain}</button>
               <button className={styles.secondaryBtn} onClick={backToSetup}>{g.newSetup || 'New Setup'}</button>
             </div>
+            <a
+              className={styles.tgCtaBlock}
+              href="https://t.me/+44Oq47usijFhM2I5"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className={styles.tgCtaText}>
+                <span className={styles.tgCtaTitle}>
+                  💬 {g.telegramCta?.title || 'Join the Telegram community'}
+                </span>
+                <span className={styles.tgCtaSub}>
+                  {g.telegramCta?.sub || 'Post your best teams, get new daily challenges, and see who tops the leaderboard.'}
+                </span>
+              </span>
+              <span className={styles.tgCtaBtn}>{g.telegramCta?.btn || 'Join'} →</span>
+            </a>
             <Link href="/tips" className={styles.tipsLink}>
               💡 {e.tipsCta || 'Want a better record? Read the official tips →'}
             </Link>

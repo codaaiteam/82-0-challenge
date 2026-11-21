@@ -167,7 +167,8 @@
       "title": "Teile deine Fünf",
       "creating": "Link wird erstellt…",
       "copyLink": "Link kopieren",
-      "copied": "Kopiert!"
+      "copied": "Kopiert!",
+      "challengeBtn": "Freund herausfordern"
     },
     "setup": {
       "title": "Stell deine Fünf auf",
@@ -236,6 +237,11 @@
         "weakScoring": "Zu wenig Durchschlagskraft im Angriff",
         "none": "Keine — ein komplettes Lineup"
       }
+    },
+    "telegramCta": {
+      "title": "Tritt der Telegram-Community bei",
+      "sub": "Teile deine besten Teams, erhalte tägliche Challenges und erklimme die Rangliste.",
+      "btn": "Beitreten"
     }
   },
   "homeSeo": {

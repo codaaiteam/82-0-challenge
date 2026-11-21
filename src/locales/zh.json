@@ -167,7 +167,8 @@
       "title": "分享你的五人组",
       "creating": "正在生成链接…",
       "copyLink": "复制链接",
-      "copied": "已复制！"
+      "copied": "已复制！",
+      "challengeBtn": "挑战好友"
     },
     "setup": {
       "title": "组建你的五人组",
@@ -236,6 +237,11 @@
         "weakScoring": "进攻火力不足",
         "none": "没有短板——阵容完整"
       }
+    },
+    "telegramCta": {
+      "title": "加入 Telegram 群组",
+      "sub": "晒出你的最强阵容、领取每日挑战、看看谁登顶排行榜。",
+      "btn": "加入"
     }
   },
   "homeSeo": {

@@ -1663,3 +1663,40 @@
 
   .matchScorers { display: none; }
 }
+
+/* Telegram community CTA — pulls finished players into the private group. */
+.tgCtaBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 1.25rem 0 0;
+  padding: 1rem 1.4rem;
+  background: #14212e;
+  border: 1px solid rgba(34, 158, 217, 0.4);
+  border-radius: 14px;
+  text-align: left;
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.tgCtaBlock:hover {
+  border-color: #229ed9;
+  transform: translateY(-1px);
+}
+
+.tgCtaText { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+.tgCtaTitle { font-weight: 700; color: #e7ecf3; }
+.tgCtaSub { color: #a6adba; font-size: 0.85rem; }
+
+.tgCtaBtn {
+  flex-shrink: 0;
+  padding: 0.55rem 1.1rem;
+  background: linear-gradient(135deg, #34b3ec, #229ed9);
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  white-space: nowrap;
+}

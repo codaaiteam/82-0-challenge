@@ -167,7 +167,8 @@
       "title": "Partage ton cinq",
       "creating": "Création du lien…",
       "copyLink": "Copier le lien",
-      "copied": "Copié !"
+      "copied": "Copié !",
+      "challengeBtn": "Défier un ami"
     },
     "setup": {
       "title": "Compose ton Cinq",
@@ -236,6 +237,11 @@
         "weakScoring": "Pas assez de punch offensif",
         "none": "Aucune — un alignement complet"
       }
+    },
+    "telegramCta": {
+      "title": "Rejoindre la communauté Telegram",
+      "sub": "Partage tes meilleures équipes, reçois des défis quotidiens et vise le haut du classement.",
+      "btn": "Rejoindre"
     }
   },
   "homeSeo": {

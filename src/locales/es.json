@@ -167,7 +167,8 @@
       "title": "Comparte tu quinteto",
       "creating": "Creando enlace…",
       "copyLink": "Copiar enlace",
-      "copied": "¡Copiado!"
+      "copied": "¡Copiado!",
+      "challengeBtn": "Desafía a un amigo"
     },
     "setup": {
       "title": "Arma tu Quinteto",
@@ -236,6 +237,11 @@
         "weakScoring": "Falta pegada anotadora",
         "none": "Ninguna: alineación completa"
       }
+    },
+    "telegramCta": {
+      "title": "Únete a la comunidad de Telegram",
+      "sub": "Comparte tus mejores equipos, recibe retos diarios y compite por la cima.",
+      "btn": "Unirse"
     }
   },
   "homeSeo": {

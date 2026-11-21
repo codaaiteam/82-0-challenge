@@ -43,6 +43,7 @@ export default function Header() {
   ];
   const otherGames = [
     { href: `${prefix}/82-0-nhl`, label: '🏒 82-0 NHL' },
+    { href: `${prefix}/16-0`, label: '🏈 16-0' },
     { href: `${prefix}/17-0`, label: '🏈 17-0' },
     { href: `${prefix}/20-0`, label: '🏈 20-0' },
     { href: `${prefix}/38-0`, label: '⚽ 38-0' },

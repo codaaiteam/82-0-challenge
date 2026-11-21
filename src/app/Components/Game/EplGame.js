@@ -243,6 +243,23 @@ export default function EplGame({ t }) {
             </a>
             <button className={styles.secondaryBtn} onClick={backToModes}>{g.switchMode}</button>
           </div>
+
+          <a
+            className={styles.tgCtaBlock}
+            href="https://t.me/+44Oq47usijFhM2I5"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className={styles.dailyCtaText}>
+              <span className={styles.dailyCtaTitle}>
+                💬 {g.telegramCta?.title || 'Join the Telegram community'}
+              </span>
+              <span className={styles.dailyCtaSub}>
+                {g.telegramCta?.sub || 'Post your best teams, get new daily challenges, and see who tops the leaderboard.'}
+              </span>
+            </span>
+            <span className={styles.tgCtaBtn}>{g.telegramCta?.btn || 'Join'} →</span>
+          </a>
         </div>
       </div>
     );

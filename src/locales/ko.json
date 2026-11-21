@@ -179,7 +179,8 @@
       "title": "내 베스트5 공유하기",
       "creating": "링크 생성 중…",
       "copyLink": "링크 복사",
-      "copied": "복사 완료!"
+      "copied": "복사 완료!",
+      "challengeBtn": "친구에게 도전"
     },
     "setup": {
       "title": "베스트5 구성",
@@ -236,7 +237,12 @@
     "sbRaw": "RAW",
     "sbAdj": "SIM",
     "sbTarget": "TARGET",
-    "sbNote": "시즌 결과는 SIM(보정) 합계를 사용합니다."
+    "sbNote": "시즌 결과는 SIM(보정) 합계를 사용합니다.",
+    "telegramCta": {
+      "title": "텔레그램 커뮤니티 참여",
+      "sub": "최고의 팀을 공유하고, 데일리 챌린지를 받고, 랭킹 1위에 도전하세요.",
+      "btn": "참여"
+    }
   },
   "homeSeo": {
     "sections": [
