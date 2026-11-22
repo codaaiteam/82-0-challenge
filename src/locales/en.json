@@ -648,10 +648,15 @@
       ]
     },
     "thirtyEight": {
-      "title": "38-0 Challenge: Play the Premier League Perfect Season Game",
-      "description": "Play the viral 38-0 challenge. Spin random Premier League clubs and eras, draft a starting XI of legends, and see if your team can win all 38 games — beyond the Invincibles.",
+      "title": "38-0 Game: Draft Your XI & Beat the Invincibles (Free)",
+      "description": "Play the 38-0 challenge free — no sign-up. Spin a Premier League club and era, draft your XI, and chase a perfect 38-win season to beat the Invincibles.",
       "h1": "38-0 Challenge",
       "intro": "The Premier League edition of the viral 82-0 challenge: spin the slot machine, draft a starting XI of real legends from four decades, and chase a perfect 38-win season — something even Arsenal's Invincibles never did. Play it right here.",
+      "crossLinks": {
+        "note": "Also called the 82-0 soccer challenge — it's the same game.",
+        "soccer": "82-0 Soccer version →",
+        "sports": "82-0 for other sports →"
+      },
       "playCta": "Play the 82-0 Basketball Challenge",
       "sections": [
         {
@@ -1619,7 +1624,7 @@
       "description": "The soccer version of the 82-0 challenge. Spin Premier League clubs and eras, draft an all-time XI, and see if they can go a perfect unbeaten season. Play free.",
       "h1": "82-0 Soccer Challenge",
       "intro": "Looking for the soccer version of 82-0? Since a Premier League season is 38 matches, soccer's perfect record is 38-0 — but the challenge is exactly the same. Spin random Premier League clubs and eras, draft an all-time XI of legends, and find out if they could go a full season unbeaten. Play the soccer edition free below.",
-      "playCta": "Play the Original 82-0 Basketball Challenge",
+      "playCta": "Or play the original 82-0 basketball challenge →",
       "sections": [
         {
           "h2": "82-0 in Soccer Means a Perfect 38-0",

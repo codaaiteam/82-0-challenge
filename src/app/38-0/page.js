@@ -18,6 +18,7 @@ export default async function ThirtyEight({ params }) {
   const locale = params?.lang || 'en';
   const t = locale === 'en' ? en : (await getTranslation(locale)) || en;
   const page = t.pages.thirtyEight || en.pages.thirtyEight;
+  const cross = page.crossLinks || en.pages.thirtyEight.crossLinks;
   const prefix = locale === 'en' ? '' : `/${locale}`;
 
   const faqJsonLd = {
@@ -38,6 +39,12 @@ export default async function ThirtyEight({ params }) {
           <div className={styles.container}>
             <h1 className={styles.pageTitle}>{page.h1}</h1>
             <p className={styles.pageIntro}>{page.intro}</p>
+            <p className={styles.pageIntro} style={{ fontSize: '0.95rem', opacity: 0.9 }}>
+              {cross.note}{' '}
+              <Link href={`${prefix}/82-0-soccer`} style={{ textDecoration: 'underline', whiteSpace: 'nowrap' }}>{cross.soccer}</Link>
+              {' · '}
+              <Link href={`${prefix}/82-0-for-other-sports`} style={{ textDecoration: 'underline', whiteSpace: 'nowrap' }}>{cross.sports}</Link>
+            </p>
           </div>
         </section>
 
