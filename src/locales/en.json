@@ -988,6 +988,13 @@
       "intro": "A more strategic 82-0 NBA draft turned gauntlet. Every player has a price; you start with a loose budget and roll-and-pick your five. Go 82-0 and the budget tightens for the next level — how deep can you climb before a perfect season is unaffordable?",
       "sections": [
         {
+          "h2": "Which salary cap rules this page uses",
+          "paragraphs": [
+            "This page covers the Salary Cap gauntlet on 82-0 Challenge. Level 1 starts at $120 and each cleared level takes $10 off, down to a $30 floor at Level 10. Player prices run from $5 to $32.",
+            "Other 82-0 games have their own cap modes with different budgets and price scales, so a lineup or budget figure from another game's guide does not carry over here. If a guide quotes a starting cap other than $120, it is describing a different game."
+          ]
+        },
+        {
           "h2": "What is 82-0 Cap Mode?",
           "paragraphs": [
             "Cap Mode is the strategic twist on 82-0. Instead of an unlimited all-time superteam, every player carries a price and you build your starting five under a fixed salary cap. Spend it all on three megastars and you will have nothing left for the other two slots; spread it too thin and your team rating sags. The fun is in the trade-off."
@@ -1005,6 +1012,15 @@
           "paragraphs": [
             "Every player is priced from the same production score the engine uses to rate your team — points, rebounds, assists, steals and blocks, adjusted for era. Prices run from about 5 for role players up to the low-30s for the all-time greats. You roll for teams and eras like classic 82-0, but only players you can still afford appear — and the game always reserves enough for your remaining spots, so you can't spend yourself into a dead end.",
             "It plays as a gauntlet: you start with a generous budget and, every time you go 82-0, the budget tightens for the next level. A season that falls short of 82-0 ends the run, and how deep you climbed is your score. Any budget left unspent becomes a small efficiency bonus to your team rating."
+          ]
+        },
+        {
+          "h2": "Budget example: one five, two levels",
+          "paragraphs": [
+            "Here is one five, priced with the same formula the game uses: Russell Westbrook (2010s) at $25 at point guard, Matthew Dellavedova (2010s) at $5 at shooting guard, LeBron James (2000s) at $26 at small forward, Charles Barkley (1990s) at $24 at power forward and Wilt Chamberlain (1960s) at $30 at center. The total is $110.",
+            "At Level 1 the budget is $120, so this five leaves $10 unspent. Unspent budget adds 0.3 rating points per dollar, so the $10 is worth +3.0 on the team rating. The five's weighted strength works out to 0.95, and its weakest category, scoring, is at 0.89 of the benchmark. Level 1 asks for 0.80 strength with no category under 0.55, so this five is eligible for the 82-0 roll. Once eligible, the roll lands 95% of the time at Level 1.",
+            "Clear Level 1 and the budget for Level 2 drops to $110. The same five still fits exactly, with $0 left and no bonus. Level 2 raises the line to 0.82 strength with no category under 0.58, and the roll lands 90% of the time. At Level 3 the budget is $100, so this five no longer fits and you would have to give up $10 somewhere.",
+            "This is a budget illustration, not a guaranteed 82-0. Players come from spins, so these exact five may never be offered to you in one run. Even an eligible five can miss the roll, and one miss ends the run."
           ]
         },
         {
